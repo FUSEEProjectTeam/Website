@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Graphics.Android.AttributeImp
+  commentId: T:Fusee.Engine.Imp.Graphics.Android.AttributeImp
+  id: AttributeImp
+  parent: Fusee.Engine.Imp.Graphics.Android
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AttributeImp
+  nameWithType: AttributeImp
+  fullName: Fusee.Engine.Imp.Graphics.Android.AttributeImp
+  type: Class
+  source:
+    id: AttributeImp
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Shared\MeshImp.cs
+    startLine: 13
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nContains a handle for any type of attribute buffer stored on GPU memory such as vertices, normals, uvs etc.\n"
+  example: []
+  syntax:
+    content: 'public class AttributeImp : object, IAttribImp'
+    content.vb: >-
+      Public Class AttributeImp
+
+          Inherits Object
+
+          Implements IAttribImp
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IAttribImp
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Fusee.Engine.Imp.Graphics.Android
+  commentId: N:Fusee.Engine.Imp.Graphics.Android
+  name: Fusee.Engine.Imp.Graphics.Android
+  nameWithType: Fusee.Engine.Imp.Graphics.Android
+  fullName: Fusee.Engine.Imp.Graphics.Android
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Common.IAttribImp
+  commentId: T:Fusee.Engine.Common.IAttribImp
+  parent: Fusee.Engine.Common
+  name: IAttribImp
+  nameWithType: IAttribImp
+  fullName: Fusee.Engine.Common.IAttribImp
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common

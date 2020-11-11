@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Fusee.Engine.Imp.Graphics.Android.ShaderHandleImp
+  commentId: T:Fusee.Engine.Imp.Graphics.Android.ShaderHandleImp
+  id: ShaderHandleImp
+  parent: Fusee.Engine.Imp.Graphics.Android
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ShaderHandleImp
+  nameWithType: ShaderHandleImp
+  fullName: Fusee.Engine.Imp.Graphics.Android.ShaderHandleImp
+  type: Class
+  source:
+    id: ShaderHandleImp
+    path: C:\Users\test\Documents\fusee\Fusee\src\Engine\Imp\Graphics\Shared\ShaderHandleImp.cs
+    startLine: 11
+  assemblies:
+  - Fusee.Engine.Imp.Graphics.Android
+  namespace: Fusee.Engine.Imp.Graphics.Android
+  summary: "\nImplementation of <xref href=\"Fusee.Engine.Common.IShaderHandle\" data-throw-if-not-resolved=\"false\"></xref> for usage with OpenTK framework.\n"
+  example: []
+  syntax:
+    content: 'public class ShaderHandleImp : object, IShaderHandle'
+    content.vb: >-
+      Public Class ShaderHandleImp
+
+          Inherits Object
+
+          Implements IShaderHandle
+  inheritance:
+  - System.Object
+  implements:
+  - Fusee.Engine.Common.IShaderHandle
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Fusee.Engine.Common.IShaderHandle
+  commentId: T:Fusee.Engine.Common.IShaderHandle
+  parent: Fusee.Engine.Common
+  name: IShaderHandle
+  nameWithType: IShaderHandle
+  fullName: Fusee.Engine.Common.IShaderHandle
+- uid: Fusee.Engine.Imp.Graphics.Android
+  commentId: N:Fusee.Engine.Imp.Graphics.Android
+  name: Fusee.Engine.Imp.Graphics.Android
+  nameWithType: Fusee.Engine.Imp.Graphics.Android
+  fullName: Fusee.Engine.Imp.Graphics.Android
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Fusee.Engine.Common
+  commentId: N:Fusee.Engine.Common
+  name: Fusee.Engine.Common
+  nameWithType: Fusee.Engine.Common
+  fullName: Fusee.Engine.Common
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
