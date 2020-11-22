@@ -356,7 +356,6 @@ items:
   syntax:
     content: >-
       public static T DeepCopy<T>(T source)
-
           where T : class
     parameters:
     - id: source

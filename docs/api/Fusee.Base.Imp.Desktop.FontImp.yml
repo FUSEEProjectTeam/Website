@@ -23,7 +23,7 @@ items:
   type: Class
   source:
     id: FontImp
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 14
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -34,7 +34,6 @@ items:
     content: 'public class FontImp : IFontImp'
     content.vb: >-
       Public Class FontImp
-
           Implements IFontImp
   inheritance:
   - System.Object
@@ -67,7 +66,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 25
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -99,7 +98,7 @@ items:
   type: Property
   source:
     id: UseKerning
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 50
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -135,7 +134,7 @@ items:
   type: Property
   source:
     id: PixelHeight
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 66
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -171,7 +170,7 @@ items:
   type: Method
   source:
     id: GetGlyphInfo
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 87
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -211,7 +210,7 @@ items:
   type: Method
   source:
     id: GetGlyphCurve
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 107
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -248,7 +247,7 @@ items:
   type: Method
   source:
     id: GetUnscaledAdvance
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 148
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -285,7 +284,7 @@ items:
   type: Method
   source:
     id: RenderGlyph
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 170
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -331,7 +330,7 @@ items:
   type: Method
   source:
     id: GetKerning
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 199
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -371,7 +370,7 @@ items:
   type: Method
   source:
     id: GetUnscaledKerning
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FontImp.cs
     startLine: 216
   assemblies:
   - Fusee.Base.Imp.Desktop

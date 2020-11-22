@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: FileDecoder
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileDecoder.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileDecoder.cs
     startLine: 13
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -56,7 +56,7 @@ items:
   type: Method
   source:
     id: LoadImageAsync
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileDecoder.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileDecoder.cs
     startLine: 20
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -93,7 +93,7 @@ items:
   type: Method
   source:
     id: LoadImage
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileDecoder.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileDecoder.cs
     startLine: 30
   assemblies:
   - Fusee.Base.Imp.Desktop

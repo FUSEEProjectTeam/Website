@@ -39,9 +39,7 @@ items:
       <ProtoContract>
 
       Public Class FusCamera
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

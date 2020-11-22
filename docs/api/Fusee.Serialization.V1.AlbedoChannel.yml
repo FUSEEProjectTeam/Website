@@ -42,7 +42,6 @@ items:
       <ProtoInclude(100, GetType(SpecularChannel))>
 
       Public Class AlbedoChannel
-
           Implements IEquatable(Of AlbedoChannel)
   inheritance:
   - System.Object

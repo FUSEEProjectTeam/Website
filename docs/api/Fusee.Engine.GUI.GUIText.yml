@@ -34,9 +34,7 @@ items:
     content: 'public class GUIText : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class GUIText
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object

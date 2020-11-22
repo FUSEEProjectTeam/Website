@@ -38,7 +38,7 @@ items:
   type: Class
   source:
     id: RigidBodyImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 13
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -49,7 +49,6 @@ items:
     content: 'public class RigidBodyImp : IRigidBodyImp'
     content.vb: >-
       Public Class RigidBodyImp
-
           Implements IRigidBodyImp
   inheritance:
   - System.Object
@@ -82,7 +81,7 @@ items:
   type: Property
   source:
     id: Gravity
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 24
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -118,7 +117,7 @@ items:
   type: Property
   source:
     id: Mass
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 44
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -154,7 +153,7 @@ items:
   type: Property
   source:
     id: Inertia
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 66
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -190,7 +189,7 @@ items:
   type: Property
   source:
     id: WorldTransform
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 86
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -226,7 +225,7 @@ items:
   type: Property
   source:
     id: Position
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 106
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -262,7 +261,7 @@ items:
   type: Property
   source:
     id: Rotation
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 128
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -298,7 +297,7 @@ items:
   type: Method
   source:
     id: ApplyForce
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 141
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -335,7 +334,7 @@ items:
   type: Method
   source:
     id: ApplyTorque
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 151
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -369,7 +368,7 @@ items:
   type: Method
   source:
     id: ApplyImpulse
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 162
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -406,7 +405,7 @@ items:
   type: Method
   source:
     id: ApplyTorqueImpulse
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 173
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -440,7 +439,7 @@ items:
   type: Method
   source:
     id: ApplyCentralForce
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 184
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -474,7 +473,7 @@ items:
   type: Method
   source:
     id: ApplyCentralImpulse
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 194
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -508,7 +507,7 @@ items:
   type: Property
   source:
     id: LinearVelocity
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 206
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -544,7 +543,7 @@ items:
   type: Property
   source:
     id: AngularVelocity
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 226
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -580,7 +579,7 @@ items:
   type: Property
   source:
     id: LinearFactor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 247
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -616,7 +615,7 @@ items:
   type: Property
   source:
     id: AngularFactor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 267
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -652,7 +651,7 @@ items:
   type: Property
   source:
     id: Restitution
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 289
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -688,7 +687,7 @@ items:
   type: Property
   source:
     id: Friction
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 308
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -724,7 +723,7 @@ items:
   type: Method
   source:
     id: SetDrag
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 323
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -761,7 +760,7 @@ items:
   type: Property
   source:
     id: LinearDrag
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 335
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -797,7 +796,7 @@ items:
   type: Property
   source:
     id: AngularDrag
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 347
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -833,7 +832,7 @@ items:
   type: Property
   source:
     id: CollisionShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 359
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -869,7 +868,7 @@ items:
   type: Property
   source:
     id: UserObject
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 536
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -905,7 +904,7 @@ items:
   type: Method
   source:
     id: OnCollision
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\RigidBodyImp.cs
     startLine: 548
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

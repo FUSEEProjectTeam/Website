@@ -17,7 +17,7 @@ items:
   type: Enum
   source:
     id: VerticalTextAlignment
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
     startLine: 29
   assemblies:
   - Fusee.Engine.Core
@@ -46,7 +46,7 @@ items:
   type: Field
   source:
     id: Top
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
     startLine: 34
   assemblies:
   - Fusee.Engine.Core
@@ -76,7 +76,7 @@ items:
   type: Field
   source:
     id: Center
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
     startLine: 39
   assemblies:
   - Fusee.Engine.Core
@@ -106,7 +106,7 @@ items:
   type: Field
   source:
     id: Bottom
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\XFormText.cs
     startLine: 44
   assemblies:
   - Fusee.Engine.Core

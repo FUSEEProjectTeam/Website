@@ -27,7 +27,7 @@ items:
   type: Class
   source:
     id: ShaderEffect
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 113
   assemblies:
   - Fusee.Engine.Core
@@ -38,9 +38,7 @@ items:
     content: 'public class ShaderEffect : SceneComponent, IComponent'
     content.vb: >-
       Public Class ShaderEffect
-
           Inherits SceneComponent
-
           Implements IComponent
   inheritance:
   - System.Object
@@ -77,7 +75,7 @@ items:
   type: Property
   source:
     id: ParamDecl
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 118
   assemblies:
   - Fusee.Engine.Core
@@ -112,7 +110,7 @@ items:
   type: Property
   source:
     id: States
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 123
   assemblies:
   - Fusee.Engine.Core
@@ -147,7 +145,7 @@ items:
   type: Property
   source:
     id: VertexShaderSrc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 128
   assemblies:
   - Fusee.Engine.Core
@@ -182,7 +180,7 @@ items:
   type: Property
   source:
     id: PixelShaderSrc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 133
   assemblies:
   - Fusee.Engine.Core
@@ -217,7 +215,7 @@ items:
   type: Property
   source:
     id: GeometryShaderSrc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 138
   assemblies:
   - Fusee.Engine.Core
@@ -252,7 +250,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 156
   assemblies:
   - Fusee.Engine.Core
@@ -280,7 +278,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 170
   assemblies:
   - Fusee.Engine.Core
@@ -327,7 +325,7 @@ items:
   type: Method
   source:
     id: SetEffectParam
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 209
   assemblies:
   - Fusee.Engine.Core
@@ -362,7 +360,7 @@ items:
   type: Method
   source:
     id: GetEffectParam
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 240
   assemblies:
   - Fusee.Engine.Core
@@ -397,7 +395,7 @@ items:
   type: Method
   source:
     id: GetEffectParam
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 257
   assemblies:
   - Fusee.Engine.Core
@@ -435,7 +433,7 @@ items:
   type: Property
   source:
     id: Count
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 273
   assemblies:
   - Fusee.Engine.Core
@@ -468,7 +466,7 @@ items:
   type: Method
   source:
     id: Dispose
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 278
   assemblies:
   - Fusee.Engine.Core
@@ -496,7 +494,7 @@ items:
   type: Method
   source:
     id: Finalize
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 286
   assemblies:
   - Fusee.Engine.Core

@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: SimpleMeshes
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
     startLine: 73
   assemblies:
   - Fusee.Test.Serialization.V1
@@ -53,7 +53,7 @@ items:
   type: Method
   source:
     id: CreateCuboid
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
     startLine: 75
   assemblies:
   - Fusee.Test.Serialization.V1

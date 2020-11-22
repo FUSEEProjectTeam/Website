@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: Nicetries
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
     startLine: 54
   assemblies:
   - Fusee.Test.Xirkit.NestedAccess
@@ -53,7 +53,7 @@ items:
   type: Method
   source:
     id: NestedProperties
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
     startLine: 56
   assemblies:
   - Fusee.Test.Xirkit.NestedAccess
@@ -79,7 +79,7 @@ items:
   type: Method
   source:
     id: NotifyNestedProperty
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
     startLine: 83
   assemblies:
   - Fusee.Test.Xirkit.NestedAccess

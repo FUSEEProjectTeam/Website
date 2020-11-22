@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: NetworkImplementor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\Implementor.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\Implementor.cs
     startLine: 7
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -54,7 +54,7 @@ items:
   type: Method
   source:
     id: CreateNetworkImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\Implementor.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\Implementor.cs
     startLine: 13
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop

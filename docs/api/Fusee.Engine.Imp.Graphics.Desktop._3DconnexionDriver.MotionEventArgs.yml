@@ -33,7 +33,6 @@ items:
     content: 'public class MotionEventArgs : EventArgs'
     content.vb: >-
       Public Class MotionEventArgs
-
           Inherits EventArgs
   inheritance:
   - System.Object

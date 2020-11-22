@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: AudioImplementor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Sound\Desktop\Implementor.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Sound\Desktop\Implementor.cs
     startLine: 8
   assemblies:
   - Fusee.Engine.Imp.Sound.Desktop
@@ -54,7 +54,7 @@ items:
   type: Method
   source:
     id: CreateAudioImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Sound\Desktop\Implementor.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Sound\Desktop\Implementor.cs
     startLine: 14
   assemblies:
   - Fusee.Engine.Imp.Sound.Desktop

@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: SimpleSerialization
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
     startLine: 10
   assemblies:
   - Fusee.Test.Serialization.V1
@@ -52,7 +52,7 @@ items:
   type: Method
   source:
     id: V1_SimpleScene
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleSerialization.cs
     startLine: 12
   assemblies:
   - Fusee.Test.Serialization.V1

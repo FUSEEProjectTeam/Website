@@ -33,7 +33,6 @@ items:
     content: 'public interface ICompoundShapeImp : ICollisionShapeImp'
     content.vb: >-
       Public Interface ICompoundShapeImp
-
           Inherits ICollisionShapeImp
   inheritedMembers:
   - Fusee.Engine.Common.ICollisionShapeImp.Margin

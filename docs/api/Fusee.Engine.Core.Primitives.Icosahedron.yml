@@ -26,9 +26,7 @@ items:
     content: 'public class Icosahedron : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class Icosahedron
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object

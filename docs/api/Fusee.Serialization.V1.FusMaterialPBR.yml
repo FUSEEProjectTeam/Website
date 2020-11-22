@@ -22,7 +22,7 @@ items:
   type: Class
   source:
     id: FusMaterialPBR
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 9
   assemblies:
   - Fusee.Serialization
@@ -33,9 +33,7 @@ items:
     content: 'public class FusMaterialPBR : FusMaterial, IComponent, IEquatable<FusMaterial>, IEquatable<FusMaterialPBR>'
     content.vb: >-
       Public Class FusMaterialPBR
-
           Inherits FusMaterial
-
           Implements IComponent, IEquatable(Of FusMaterial), IEquatable(Of FusMaterialPBR)
   inheritance:
   - System.Object
@@ -80,7 +78,7 @@ items:
   type: Field
   source:
     id: RoughnessValue
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 17
   assemblies:
   - Fusee.Serialization
@@ -109,7 +107,7 @@ items:
   type: Field
   source:
     id: FresnelReflectance
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 23
   assemblies:
   - Fusee.Serialization
@@ -138,7 +136,7 @@ items:
   type: Field
   source:
     id: DiffuseFraction
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 29
   assemblies:
   - Fusee.Serialization
@@ -167,7 +165,7 @@ items:
   type: Operator
   source:
     id: op_Equality
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 41
   assemblies:
   - Fusee.Serialization
@@ -207,7 +205,7 @@ items:
   type: Operator
   source:
     id: op_Inequality
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 63
   assemblies:
   - Fusee.Serialization
@@ -247,7 +245,7 @@ items:
   type: Method
   source:
     id: Equals
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 75
   assemblies:
   - Fusee.Serialization
@@ -284,7 +282,7 @@ items:
   type: Method
   source:
     id: Equals
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 95
   assemblies:
   - Fusee.Serialization
@@ -322,7 +320,7 @@ items:
   type: Method
   source:
     id: GetHashCode
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterialPBR.cs
     startLine: 107
   assemblies:
   - Fusee.Serialization

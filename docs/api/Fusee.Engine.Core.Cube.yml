@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: Cube
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Cube.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Cube.cs
     startLine: 56
   assemblies:
   - Fusee.Engine.Core
@@ -26,9 +26,7 @@ items:
     content: 'public class Cube : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class Cube
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object
@@ -93,7 +91,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Cube.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Cube.cs
     startLine: 62
   assemblies:
   - Fusee.Engine.Core

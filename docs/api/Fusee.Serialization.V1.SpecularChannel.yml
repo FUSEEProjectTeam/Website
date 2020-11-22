@@ -37,9 +37,7 @@ items:
       <ProtoContract>
 
       Public Class SpecularChannel
-
           Inherits AlbedoChannel
-
           Implements IEquatable(Of AlbedoChannel), IEquatable(Of SpecularChannel)
   inheritance:
   - System.Object

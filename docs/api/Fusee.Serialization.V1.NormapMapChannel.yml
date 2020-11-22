@@ -37,7 +37,6 @@ items:
       <ProtoContract>
 
       Public Class NormapMapChannel
-
           Implements IEquatable(Of NormapMapChannel)
   inheritance:
   - System.Object

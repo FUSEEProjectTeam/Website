@@ -20,7 +20,7 @@ items:
   type: Class
   source:
     id: NetworkConnection
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
     startLine: 10
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -31,7 +31,6 @@ items:
     content: 'public class NetworkConnection : INetworkConnection'
     content.vb: >-
       Public Class NetworkConnection
-
           Implements INetworkConnection
   inheritance:
   - System.Object
@@ -65,7 +64,7 @@ items:
   type: Property
   source:
     id: Fusee.Engine.Common.INetworkConnection.RemoteEndPoint
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
     startLine: 37
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -101,7 +100,7 @@ items:
   type: Property
   source:
     id: RoundtripTime
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
     startLine: 82
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -137,7 +136,7 @@ items:
   type: Method
   source:
     id: Disconnect
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
     startLine: 93
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -167,7 +166,7 @@ items:
   type: Method
   source:
     id: Disconnect
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
     startLine: 102
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -201,7 +200,7 @@ items:
   type: Method
   source:
     id: SendMessage
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
     startLine: 112
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -241,7 +240,7 @@ items:
   type: Method
   source:
     id: SendMessage
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkConnection.cs
     startLine: 124
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop

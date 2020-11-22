@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: IOImp
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\IOImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\IOImp.cs
     startLine: 8
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -26,7 +26,6 @@ items:
     content: 'public class IOImp : IIOImp'
     content.vb: >-
       Public Class IOImp
-
           Implements IIOImp
   inheritance:
   - System.Object
@@ -59,7 +58,7 @@ items:
   type: Method
   source:
     id: StreamFromFile
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\IOImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\IOImp.cs
     startLine: 18
   assemblies:
   - Fusee.Base.Imp.Desktop

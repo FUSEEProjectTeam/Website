@@ -22,7 +22,7 @@ items:
   type: Class
   source:
     id: RenderCanvasInputDriverImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 12
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -33,9 +33,7 @@ items:
     content: 'public class RenderCanvasInputDriverImp : object, IInputDriverImp, IDisposable'
     content.vb: >-
       Public Class RenderCanvasInputDriverImp
-
           Inherits Object
-
           Implements IInputDriverImp, IDisposable
   inheritance:
   - System.Object
@@ -61,7 +59,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 18
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -93,7 +91,7 @@ items:
   type: Property
   source:
     id: Devices
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 43
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -126,7 +124,7 @@ items:
   type: Property
   source:
     id: DriverDesc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 56
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -161,7 +159,7 @@ items:
   type: Property
   source:
     id: DriverId
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 69
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -196,7 +194,7 @@ items:
   type: Event
   source:
     id: DeviceDisconnected
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 77
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -225,7 +223,7 @@ items:
   type: Event
   source:
     id: NewDeviceConnected
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 83
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -254,7 +252,7 @@ items:
   type: Method
   source:
     id: Dispose
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 95
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -288,7 +286,7 @@ items:
   type: Method
   source:
     id: Dispose
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 121
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android

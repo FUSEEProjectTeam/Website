@@ -73,7 +73,6 @@ items:
       <ProtoContract>
 
       Public Structure int3
-
           Implements IEquatable(Of int3)
   implements:
   - System.IEquatable{Fusee.Math.Core.int3}

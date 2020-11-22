@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: EmbeddedResourcesDllHandler
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\EmbeddedResourcesDllHandler.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\EmbeddedResourcesDllHandler.cs
     startLine: 11
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -55,7 +55,7 @@ items:
   type: Method
   source:
     id: LoadEmbeddedDll
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\EmbeddedResourcesDllHandler.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\EmbeddedResourcesDllHandler.cs
     startLine: 20
   assemblies:
   - Fusee.Base.Imp.Desktop

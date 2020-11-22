@@ -17,7 +17,7 @@ items:
   type: Class
   source:
     id: SphereShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -28,9 +28,7 @@ items:
     content: 'public class SphereShapeImp : CollisonShapeImp, ISphereShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class SphereShapeImp
-
           Inherits CollisonShapeImp
-
           Implements ISphereShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -66,7 +64,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
     startLine: 19
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -105,7 +103,7 @@ items:
   type: Property
   source:
     id: LocalScaling
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
     startLine: 39
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -144,7 +142,7 @@ items:
   type: Property
   source:
     id: Radius
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\SphereShapeImp.cs
     startLine: 59
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

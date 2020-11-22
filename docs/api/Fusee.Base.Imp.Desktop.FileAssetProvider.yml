@@ -20,7 +20,7 @@ items:
   type: Class
   source:
     id: FileAssetProvider
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
     startLine: 15
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -31,9 +31,7 @@ items:
     content: 'public class FileAssetProvider : StreamAssetProvider, IAssetProvider'
     content.vb: >-
       Public Class FileAssetProvider
-
           Inherits StreamAssetProvider
-
           Implements IAssetProvider
   inheritance:
   - System.Object
@@ -74,7 +72,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
     startLine: 24
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -109,7 +107,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
     startLine: 34
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -147,7 +145,7 @@ items:
   type: Method
   source:
     id: GetStream
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
     startLine: 132
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -188,7 +186,7 @@ items:
   type: Method
   source:
     id: CheckExists
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
     startLine: 162
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -229,7 +227,7 @@ items:
   type: Method
   source:
     id: GetStreamAsync
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
     startLine: 188
   assemblies:
   - Fusee.Base.Imp.Desktop
@@ -267,7 +265,7 @@ items:
   type: Method
   source:
     id: CheckExistsAsync
-    path: C:\Users\test\Documents\fusee\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Desktop\FileAssetProvider.cs
     startLine: 218
   assemblies:
   - Fusee.Base.Imp.Desktop

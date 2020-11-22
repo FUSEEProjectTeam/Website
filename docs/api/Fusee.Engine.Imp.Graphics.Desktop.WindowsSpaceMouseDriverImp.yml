@@ -33,7 +33,6 @@ items:
     content: 'public class WindowsSpaceMouseDriverImp : IInputDriverImp, IDisposable'
     content.vb: >-
       Public Class WindowsSpaceMouseDriverImp
-
           Implements IInputDriverImp, IDisposable
   inheritance:
   - System.Object

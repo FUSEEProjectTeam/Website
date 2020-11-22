@@ -38,7 +38,6 @@ items:
       <ProtoContract>
 
       Public Class FusNode
-
           Implements INode
   inheritance:
   - System.Object

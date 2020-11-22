@@ -26,7 +26,6 @@ items:
     content: 'public interface IWritableArrayTexture : IWritableTexture, ITextureBase, IImageBase, IDisposable'
     content.vb: >-
       Public Interface IWritableArrayTexture
-
           Inherits IWritableTexture
   inheritedMembers:
   - Fusee.Engine.Common.IWritableTexture.TextureType

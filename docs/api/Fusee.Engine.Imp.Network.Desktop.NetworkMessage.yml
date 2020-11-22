@@ -18,7 +18,7 @@ items:
   type: Class
   source:
     id: NetworkMessage
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
     startLine: 7
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -29,7 +29,6 @@ items:
     content: 'public class NetworkMessage : INetworkMsg'
     content.vb: >-
       Public Class NetworkMessage
-
           Implements INetworkMsg
   inheritance:
   - System.Object
@@ -62,7 +61,7 @@ items:
   type: Property
   source:
     id: Type
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
     startLine: 17
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -98,7 +97,7 @@ items:
   type: Property
   source:
     id: Status
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
     startLine: 24
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -134,7 +133,7 @@ items:
   type: Property
   source:
     id: Sender
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
     startLine: 31
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop
@@ -170,7 +169,7 @@ items:
   type: Property
   source:
     id: Message
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Network\Desktop\NetworkMessage.cs
     startLine: 39
   assemblies:
   - Fusee.Engine.Imp.Network.Desktop

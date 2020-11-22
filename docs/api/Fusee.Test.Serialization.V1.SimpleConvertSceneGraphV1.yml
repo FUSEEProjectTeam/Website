@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: SimpleConvertSceneGraphV1
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
     startLine: 14
   assemblies:
   - Fusee.Test.Serialization.V1
@@ -53,7 +53,7 @@ items:
   type: Method
   source:
     id: V1_SimpleScene_Convert
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
     startLine: 16
   assemblies:
   - Fusee.Test.Serialization.V1
@@ -79,7 +79,7 @@ items:
   type: Method
   source:
     id: SceneShouldGT
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Serialization\Fusee.Serialization.Test\SimpleConvertSceneGraph.cs
     startLine: 677
   assemblies:
   - Fusee.Test.Serialization.V1

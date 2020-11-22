@@ -43,9 +43,7 @@ items:
     content: 'public abstract class SurfaceEffect : Effect, IComponent'
     content.vb: >-
       Public MustInherit Class SurfaceEffect
-
           Inherits Effect
-
           Implements IComponent
   inheritance:
   - System.Object

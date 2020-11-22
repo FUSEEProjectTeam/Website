@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: Icosahedron
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Icosphere.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Icosphere.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Core
@@ -26,9 +26,7 @@ items:
     content: 'public class Icosahedron : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class Icosahedron
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object
@@ -93,7 +91,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Icosphere.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Icosphere.cs
     startLine: 15
   assemblies:
   - Fusee.Engine.Core

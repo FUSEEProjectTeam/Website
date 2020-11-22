@@ -37,9 +37,7 @@ items:
       <ProtoContract>
 
       Public Class FusMaterialBRDF
-
           Inherits FusMaterialBase
-
           Implements IComponent, IEquatable(Of FusMaterialBase), IEquatable(Of FusMaterialBRDF)
   inheritance:
   - System.Object

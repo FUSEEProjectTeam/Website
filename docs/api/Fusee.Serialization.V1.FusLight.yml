@@ -39,9 +39,7 @@ items:
       <ProtoContract>
 
       Public Class FusLight
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

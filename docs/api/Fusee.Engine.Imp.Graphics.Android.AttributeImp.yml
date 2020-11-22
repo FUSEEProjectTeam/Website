@@ -25,9 +25,7 @@ items:
     content: 'public class AttributeImp : object, IAttribImp'
     content.vb: >-
       Public Class AttributeImp
-
           Inherits Object
-
           Implements IAttribImp
   inheritance:
   - System.Object

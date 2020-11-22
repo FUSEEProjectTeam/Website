@@ -17,7 +17,7 @@ items:
   type: Class
   source:
     id: BoxShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -28,9 +28,7 @@ items:
     content: 'public class BoxShapeImp : CollisonShapeImp, IBoxShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class BoxShapeImp
-
           Inherits CollisonShapeImp
-
           Implements IBoxShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -66,7 +64,7 @@ items:
   type: Property
   source:
     id: LocalScaling
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
     startLine: 19
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -105,7 +103,7 @@ items:
   type: Property
   source:
     id: HalfExtents
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
     startLine: 40
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -141,7 +139,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\BoxShapeImp.cs
     startLine: 58
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

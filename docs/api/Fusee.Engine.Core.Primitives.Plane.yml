@@ -26,9 +26,7 @@ items:
     content: 'public class Plane : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class Plane
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object

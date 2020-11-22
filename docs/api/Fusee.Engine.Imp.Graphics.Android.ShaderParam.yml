@@ -25,9 +25,7 @@ items:
     content: 'public class ShaderParam : object, IShaderParam'
     content.vb: >-
       Public Class ShaderParam
-
           Inherits Object
-
           Implements IShaderParam
   inheritance:
   - System.Object

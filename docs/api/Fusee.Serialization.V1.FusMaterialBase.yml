@@ -49,9 +49,7 @@ items:
       <ProtoInclude(201, GetType(FusMaterialBRDF))>
 
       Public Class FusMaterialBase
-
           Inherits FusComponent
-
           Implements IComponent, IEquatable(Of FusMaterialBase)
   inheritance:
   - System.Object

@@ -33,7 +33,6 @@ items:
     content: 'public class KeyboardDevice : InputDevice'
     content.vb: >-
       Public Class KeyboardDevice
-
           Inherits InputDevice
   inheritance:
   - System.Object

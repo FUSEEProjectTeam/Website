@@ -19,7 +19,7 @@ items:
   type: Class
   source:
     id: ConeShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -30,9 +30,7 @@ items:
     content: 'public class ConeShapeImp : CollisonShapeImp, IConeShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class ConeShapeImp
-
           Inherits CollisonShapeImp
-
           Implements IConeShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -68,7 +66,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
     startLine: 18
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -107,7 +105,7 @@ items:
   type: Property
   source:
     id: LocalScaling
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
     startLine: 37
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -146,7 +144,7 @@ items:
   type: Property
   source:
     id: ConeUpIndex
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
     startLine: 57
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -182,7 +180,7 @@ items:
   type: Property
   source:
     id: Height
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
     startLine: 77
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -218,7 +216,7 @@ items:
   type: Property
   source:
     id: Radius
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConeShapeImp.cs
     startLine: 92
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

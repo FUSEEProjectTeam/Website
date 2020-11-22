@@ -32,7 +32,6 @@ items:
     content: 'public class TextureEventArgs : EventArgs'
     content.vb: >-
       Public Class TextureEventArgs
-
           Inherits EventArgs
   inheritance:
   - System.Object

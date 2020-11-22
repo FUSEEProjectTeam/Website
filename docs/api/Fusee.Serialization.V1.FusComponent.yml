@@ -63,7 +63,6 @@ items:
       <ProtoInclude(107, GetType(FusCamera))>
 
       Public Class FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

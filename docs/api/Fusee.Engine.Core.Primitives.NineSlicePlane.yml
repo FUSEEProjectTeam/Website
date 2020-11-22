@@ -26,9 +26,7 @@ items:
     content: 'public class NineSlicePlane : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class NineSlicePlane
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object

@@ -143,7 +143,6 @@ items:
       <ProtoContract>
 
       Public Structure float4x4
-
           Implements IEquatable(Of float4x4)
   implements:
   - System.IEquatable{Fusee.Math.Core.float4x4}

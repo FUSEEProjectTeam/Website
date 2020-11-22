@@ -17,7 +17,7 @@ items:
   type: Class
   source:
     id: ShaderEffectProtoPixel
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 297
   assemblies:
   - Fusee.Engine.Core
@@ -28,9 +28,7 @@ items:
     content: 'public class ShaderEffectProtoPixel : ShaderEffect, IComponent'
     content.vb: >-
       Public Class ShaderEffectProtoPixel
-
           Inherits ShaderEffect
-
           Implements IComponent
   inheritance:
   - System.Object
@@ -76,7 +74,7 @@ items:
   type: Property
   source:
     id: EffectProps
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 302
   assemblies:
   - Fusee.Engine.Core
@@ -109,7 +107,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 311
   assemblies:
   - Fusee.Engine.Core
@@ -147,7 +145,7 @@ items:
   type: Method
   source:
     id: CreateFragmentShader
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Scene\ShaderEffect.cs
     startLine: 350
   assemblies:
   - Fusee.Engine.Core

@@ -26,9 +26,7 @@ items:
     content: 'public class TextNode : SceneNode, INode'
     content.vb: >-
       Public Class TextNode
-
           Inherits SceneNode
-
           Implements INode
   inheritance:
   - System.Object

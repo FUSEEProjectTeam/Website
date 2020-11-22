@@ -22,7 +22,7 @@ items:
   type: Class
   source:
     id: MatChannelContainer
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 10
   assemblies:
   - Fusee.Serialization
@@ -33,7 +33,6 @@ items:
     content: 'public class MatChannelContainer : IEquatable<MatChannelContainer>'
     content.vb: >-
       Public Class MatChannelContainer
-
           Implements IEquatable(Of MatChannelContainer)
   inheritance:
   - System.Object
@@ -66,7 +65,7 @@ items:
   type: Field
   source:
     id: Color
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 20
   assemblies:
   - Fusee.Serialization
@@ -95,7 +94,7 @@ items:
   type: Field
   source:
     id: Texture
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 26
   assemblies:
   - Fusee.Serialization
@@ -124,7 +123,7 @@ items:
   type: Field
   source:
     id: Mix
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 32
   assemblies:
   - Fusee.Serialization
@@ -153,7 +152,7 @@ items:
   type: Operator
   source:
     id: op_Equality
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 44
   assemblies:
   - Fusee.Serialization
@@ -193,7 +192,7 @@ items:
   type: Operator
   source:
     id: op_Inequality
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 67
   assemblies:
   - Fusee.Serialization
@@ -233,7 +232,7 @@ items:
   type: Method
   source:
     id: Equals
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 79
   assemblies:
   - Fusee.Serialization
@@ -270,7 +269,7 @@ items:
   type: Method
   source:
     id: Equals
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 94
   assemblies:
   - Fusee.Serialization
@@ -308,7 +307,7 @@ items:
   type: Method
   source:
     id: GetHashCode
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusMaterial.cs
     startLine: 105
   assemblies:
   - Fusee.Serialization

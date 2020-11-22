@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: IOImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
     startLine: 9
   assemblies:
   - Fusee.Base.Imp.Android
@@ -27,9 +27,7 @@ items:
     content: 'public class IOImp : object, IIOImp'
     content.vb: >-
       Public Class IOImp
-
           Inherits Object
-
           Implements IIOImp
   inheritance:
   - System.Object
@@ -54,7 +52,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
     startLine: 12
   assemblies:
   - Fusee.Base.Imp.Android
@@ -83,7 +81,7 @@ items:
   type: Method
   source:
     id: StreamFromFile
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\IOImp.cs
     startLine: 26
   assemblies:
   - Fusee.Base.Imp.Android

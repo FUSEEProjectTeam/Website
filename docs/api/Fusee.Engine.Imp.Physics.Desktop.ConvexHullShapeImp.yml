@@ -20,7 +20,7 @@ items:
   type: Class
   source:
     id: ConvexHullShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -31,9 +31,7 @@ items:
     content: 'public class ConvexHullShapeImp : CollisonShapeImp, IConvexHullShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class ConvexHullShapeImp
-
           Inherits CollisonShapeImp
-
           Implements IConvexHullShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -69,7 +67,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
     startLine: 19
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -108,7 +106,7 @@ items:
   type: Property
   source:
     id: LocalScaling
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
     startLine: 39
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -147,7 +145,7 @@ items:
   type: Method
   source:
     id: AddPoint
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
     startLine: 57
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -181,7 +179,7 @@ items:
   type: Method
   source:
     id: GetScaledPoint
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
     startLine: 68
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -218,7 +216,7 @@ items:
   type: Method
   source:
     id: GetUnscaledPoints
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
     startLine: 78
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -251,7 +249,7 @@ items:
   type: Method
   source:
     id: GetNumPoints
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\ConvexHullShapeImp.cs
     startLine: 93
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

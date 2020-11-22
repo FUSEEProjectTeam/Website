@@ -31,7 +31,6 @@ items:
     content: 'public interface IInputDriverImp : IDisposable'
     content.vb: >-
       Public Interface IInputDriverImp
-
           Inherits IDisposable
   inheritedMembers:
   - System.IDisposable.Dispose

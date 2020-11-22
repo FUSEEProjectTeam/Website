@@ -19,7 +19,7 @@ items:
   type: Class
   source:
     id: ApkAssetProvider
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 11
   assemblies:
   - Fusee.Base.Imp.Android
@@ -28,9 +28,7 @@ items:
     content: 'public class ApkAssetProvider : StreamAssetProvider, IAssetProvider'
     content.vb: >-
       Public Class ApkAssetProvider
-
           Inherits StreamAssetProvider
-
           Implements IAssetProvider
   inheritance:
   - System.Object
@@ -64,7 +62,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 20
   assemblies:
   - Fusee.Base.Imp.Android
@@ -96,7 +94,7 @@ items:
   type: Method
   source:
     id: GetStream
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 94
   assemblies:
   - Fusee.Base.Imp.Android
@@ -134,7 +132,7 @@ items:
   type: Method
   source:
     id: CheckExists
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 109
   assemblies:
   - Fusee.Base.Imp.Android
@@ -172,7 +170,7 @@ items:
   type: Method
   source:
     id: GetStreamAsync
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 119
   assemblies:
   - Fusee.Base.Imp.Android
@@ -206,7 +204,7 @@ items:
   type: Method
   source:
     id: CheckExistsAsync
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\ApkAssetProvider.cs
     startLine: 126
   assemblies:
   - Fusee.Base.Imp.Android

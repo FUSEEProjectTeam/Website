@@ -35,9 +35,7 @@ items:
       <ProtoContract>
 
       Public Class FusCanvasTransform
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

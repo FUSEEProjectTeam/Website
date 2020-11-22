@@ -23,7 +23,7 @@ items:
   type: Class
   source:
     id: FontImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 14
   assemblies:
   - Fusee.Base.Imp.Android
@@ -34,9 +34,7 @@ items:
     content: 'public class FontImp : object, IFontImp'
     content.vb: >-
       Public Class FontImp
-
           Inherits Object
-
           Implements IFontImp
   inheritance:
   - System.Object
@@ -61,7 +59,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 25
   assemblies:
   - Fusee.Base.Imp.Android
@@ -93,7 +91,7 @@ items:
   type: Property
   source:
     id: UseKerning
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 48
   assemblies:
   - Fusee.Base.Imp.Android
@@ -129,7 +127,7 @@ items:
   type: Property
   source:
     id: PixelHeight
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 64
   assemblies:
   - Fusee.Base.Imp.Android
@@ -165,7 +163,7 @@ items:
   type: Method
   source:
     id: GetGlyphInfo
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 85
   assemblies:
   - Fusee.Base.Imp.Android
@@ -202,7 +200,7 @@ items:
   type: Method
   source:
     id: GetGlyphCurve
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 105
   assemblies:
   - Fusee.Base.Imp.Android
@@ -237,7 +235,7 @@ items:
   type: Method
   source:
     id: GetUnscaledAdvance
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 146
   assemblies:
   - Fusee.Base.Imp.Android
@@ -274,7 +272,7 @@ items:
   type: Method
   source:
     id: RenderGlyph
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 168
   assemblies:
   - Fusee.Base.Imp.Android
@@ -320,7 +318,7 @@ items:
   type: Method
   source:
     id: GetKerning
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 197
   assemblies:
   - Fusee.Base.Imp.Android
@@ -360,7 +358,7 @@ items:
   type: Method
   source:
     id: GetUnscaledKerning
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Base\Imp\Android\FontImp.cs
     startLine: 214
   assemblies:
   - Fusee.Base.Imp.Android

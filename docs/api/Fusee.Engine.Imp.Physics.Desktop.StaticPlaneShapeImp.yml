@@ -17,7 +17,7 @@ items:
   type: Class
   source:
     id: StaticPlaneShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -28,9 +28,7 @@ items:
     content: 'public class StaticPlaneShapeImp : CollisonShapeImp, IStaticPlaneShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class StaticPlaneShapeImp
-
           Inherits CollisonShapeImp
-
           Implements IStaticPlaneShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -67,7 +65,7 @@ items:
   type: Property
   source:
     id: PlaneConstant
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
     startLine: 19
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -103,7 +101,7 @@ items:
   type: Property
   source:
     id: PlaneNormal
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
     startLine: 30
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -139,7 +137,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\StaticPlaneShapeImp.cs
     startLine: 46
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

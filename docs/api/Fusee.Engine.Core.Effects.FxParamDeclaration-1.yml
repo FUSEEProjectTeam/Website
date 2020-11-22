@@ -31,7 +31,6 @@ items:
     - id: T
     content.vb: >-
       Public Structure FxParamDeclaration(Of T)
-
           Implements IFxParamDeclaration
   implements:
   - Fusee.Engine.Core.Effects.IFxParamDeclaration

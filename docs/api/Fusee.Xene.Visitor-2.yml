@@ -37,7 +37,6 @@ items:
   syntax:
     content: >-
       public class Visitor<TNode, TComponent>
-
           where TNode : class, INode where TComponent : class, IComponent
     typeParameters:
     - id: TNode

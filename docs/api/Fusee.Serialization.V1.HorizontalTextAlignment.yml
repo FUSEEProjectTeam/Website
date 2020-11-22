@@ -17,7 +17,7 @@ items:
   type: Enum
   source:
     id: HorizontalTextAlignment
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
     startLine: 29
   assemblies:
   - Fusee.Serialization
@@ -46,7 +46,7 @@ items:
   type: Field
   source:
     id: Left
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
     startLine: 34
   assemblies:
   - Fusee.Serialization
@@ -76,7 +76,7 @@ items:
   type: Field
   source:
     id: Center
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
     startLine: 39
   assemblies:
   - Fusee.Serialization
@@ -106,7 +106,7 @@ items:
   type: Field
   source:
     id: Right
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Serialization\V1\FusXFormText.cs
     startLine: 44
   assemblies:
   - Fusee.Serialization

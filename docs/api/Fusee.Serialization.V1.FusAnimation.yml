@@ -31,9 +31,7 @@ items:
       <ProtoContract>
 
       Public Class FusAnimation
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

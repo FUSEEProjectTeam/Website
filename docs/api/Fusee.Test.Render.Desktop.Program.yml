@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: Program
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\Program.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Render\Desktop\Program.cs
     startLine: 13
   assemblies:
   - Fusee.Test.Render.Desktop
@@ -53,7 +53,7 @@ items:
   type: Property
   source:
     id: Example
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\Program.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Render\Desktop\Program.cs
     startLine: 20
   assemblies:
   - Fusee.Test.Render.Desktop
@@ -86,7 +86,7 @@ items:
   type: Method
   source:
     id: Init
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Render\Desktop\Program.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Render\Desktop\Program.cs
     startLine: 22
   assemblies:
   - Fusee.Test.Render.Desktop

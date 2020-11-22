@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: EmptyShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\EmptyShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\EmptyShapeImp.cs
     startLine: 8
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -26,9 +26,7 @@ items:
     content: 'public class EmptyShapeImp : CollisonShapeImp, IEmptyShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class EmptyShapeImp
-
           Inherits CollisonShapeImp
-
           Implements IEmptyShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -65,7 +63,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\EmptyShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\EmptyShapeImp.cs
     startLine: 18
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

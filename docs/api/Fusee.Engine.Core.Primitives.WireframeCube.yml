@@ -26,9 +26,7 @@ items:
     content: 'public class WireframeCube : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class WireframeCube
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object

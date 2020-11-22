@@ -20,7 +20,7 @@ items:
   type: Class
   source:
     id: Translator
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
     startLine: 8
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -60,7 +60,7 @@ items:
   type: Method
   source:
     id: BtVector3ToFloat3
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
     startLine: 15
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -97,7 +97,7 @@ items:
   type: Method
   source:
     id: Float3ToBtVector3
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
     startLine: 26
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -134,7 +134,7 @@ items:
   type: Method
   source:
     id: BtMatrixToFloat4X4
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
     startLine: 37
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -171,7 +171,7 @@ items:
   type: Method
   source:
     id: Float4X4ToBtMatrix
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
     startLine: 52
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -208,7 +208,7 @@ items:
   type: Method
   source:
     id: BtQuaternionToQuaternion
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
     startLine: 69
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -245,7 +245,7 @@ items:
   type: Method
   source:
     id: QuaternionToBtQuaternion
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Translator.cs
     startLine: 80
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: CNestedInner
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
     startLine: 46
   assemblies:
   - Fusee.Test.Xirkit.NestedAccess
@@ -53,7 +53,7 @@ items:
   type: Field
   source:
     id: Text
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
     startLine: 48
   assemblies:
   - Fusee.Test.Xirkit.NestedAccess
@@ -80,7 +80,7 @@ items:
   type: Field
   source:
     id: Number
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Tests\Xirkit\Fusee.Xirkit.NestedAccess.Test\NestedAccess.cs
     startLine: 49
   assemblies:
   - Fusee.Test.Xirkit.NestedAccess

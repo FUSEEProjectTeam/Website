@@ -26,7 +26,7 @@ items:
   type: Class
   source:
     id: TouchDeviceImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 135
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -37,9 +37,7 @@ items:
     content: 'public class TouchDeviceImp : object, IInputDeviceImp'
     content.vb: >-
       Public Class TouchDeviceImp
-
           Inherits Object
-
           Implements IInputDeviceImp
   inheritance:
   - System.Object
@@ -64,7 +62,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 333
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -99,7 +97,7 @@ items:
   type: Property
   source:
     id: Desc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 462
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -134,7 +132,7 @@ items:
   type: Property
   source:
     id: Id
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 468
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -169,7 +167,7 @@ items:
   type: Event
   source:
     id: AxisValueChanged
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 474
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -198,7 +196,7 @@ items:
   type: Event
   source:
     id: ButtonValueChanged
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 478
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -230,7 +228,7 @@ items:
   type: Property
   source:
     id: Category
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 483
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -265,7 +263,7 @@ items:
   type: Property
   source:
     id: AxesCount
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 493
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -301,7 +299,7 @@ items:
   type: Property
   source:
     id: AxisImpDesc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 498
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -334,7 +332,7 @@ items:
   type: Method
   source:
     id: GetAxis
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 506
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -371,7 +369,7 @@ items:
   type: Property
   source:
     id: ButtonCount
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 535
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -407,7 +405,7 @@ items:
   type: Property
   source:
     id: ButtonImpDesc
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 543
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android
@@ -441,7 +439,7 @@ items:
   type: Method
   source:
     id: GetButton
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Graphics\Android\InputImp.cs
     startLine: 550
   assemblies:
   - Fusee.Engine.Imp.Graphics.Android

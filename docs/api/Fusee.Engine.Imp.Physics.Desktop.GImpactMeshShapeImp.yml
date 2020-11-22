@@ -16,7 +16,7 @@ items:
   type: Class
   source:
     id: GImpactMeshShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\GImpactMeshShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\GImpactMeshShapeImp.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -27,9 +27,7 @@ items:
     content: 'public class GImpactMeshShapeImp : CollisonShapeImp, IGImpactMeshShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class GImpactMeshShapeImp
-
           Inherits CollisonShapeImp
-
           Implements IGImpactMeshShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -65,7 +63,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\GImpactMeshShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\GImpactMeshShapeImp.cs
     startLine: 20
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -104,7 +102,7 @@ items:
   type: Property
   source:
     id: LocalScaling
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\GImpactMeshShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\GImpactMeshShapeImp.cs
     startLine: 39
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

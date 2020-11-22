@@ -23,7 +23,7 @@ items:
   type: Class
   source:
     id: Point2PointConstraintImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 9
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -34,7 +34,6 @@ items:
     content: 'public class Point2PointConstraintImp : IPoint2PointConstraintImp, IConstraintImp'
     content.vb: >-
       Public Class Point2PointConstraintImp
-
           Implements IPoint2PointConstraintImp, IConstraintImp
   inheritance:
   - System.Object
@@ -68,7 +67,7 @@ items:
   type: Property
   source:
     id: PivotInA
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 19
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -104,7 +103,7 @@ items:
   type: Property
   source:
     id: PivotInB
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 39
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -140,7 +139,7 @@ items:
   type: Method
   source:
     id: UpdateRhs
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 59
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -174,7 +173,7 @@ items:
   type: Method
   source:
     id: SetParam
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 71
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -214,7 +213,7 @@ items:
   type: Method
   source:
     id: GetParam
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 103
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -254,7 +253,7 @@ items:
   type: Property
   source:
     id: RigidBodyA
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 134
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -290,7 +289,7 @@ items:
   type: Property
   source:
     id: RigidBodyB
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 148
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -326,7 +325,7 @@ items:
   type: Method
   source:
     id: GetUid
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 160
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -359,7 +358,7 @@ items:
   type: Property
   source:
     id: UserObject
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\Point2PointConstraintImp.cs
     startLine: 172
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

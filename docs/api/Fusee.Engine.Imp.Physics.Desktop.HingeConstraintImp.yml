@@ -36,7 +36,7 @@ items:
   type: Class
   source:
     id: HingeConstraintImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 10
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -47,7 +47,6 @@ items:
     content: 'public class HingeConstraintImp : IHingeConstraintImp, IConstraintImp'
     content.vb: >-
       Public Class HingeConstraintImp
-
           Implements IHingeConstraintImp, IConstraintImp
   inheritance:
   - System.Object
@@ -81,7 +80,7 @@ items:
   type: Property
   source:
     id: AngularOnly
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 20
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -117,7 +116,7 @@ items:
   type: Property
   source:
     id: EnableMotor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 40
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -153,7 +152,7 @@ items:
   type: Method
   source:
     id: EnableAngularMotor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 59
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -193,7 +192,7 @@ items:
   type: Method
   source:
     id: SetMotorTarget
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 70
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -230,7 +229,7 @@ items:
   type: Method
   source:
     id: SetMotorTarget
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 80
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -267,7 +266,7 @@ items:
   type: Property
   source:
     id: MaxMotorImpulse
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 92
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -303,7 +302,7 @@ items:
   type: Property
   source:
     id: MotorTargetVelocity
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 111
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -339,7 +338,7 @@ items:
   type: Property
   source:
     id: FrameA
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 126
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -375,7 +374,7 @@ items:
   type: Property
   source:
     id: FrameB
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 140
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -411,7 +410,7 @@ items:
   type: Property
   source:
     id: FrameOffsetA
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 155
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -447,7 +446,7 @@ items:
   type: Property
   source:
     id: FrameOffsetB
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 169
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -483,7 +482,7 @@ items:
   type: Method
   source:
     id: SetAxis
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 182
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -517,7 +516,7 @@ items:
   type: Method
   source:
     id: GetHingeAngle
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 192
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -550,7 +549,7 @@ items:
   type: Method
   source:
     id: GetHingeAngle
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 203
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -590,7 +589,7 @@ items:
   type: Method
   source:
     id: SetLimit
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 217
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -636,7 +635,7 @@ items:
   type: Property
   source:
     id: SolverLimit
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 228
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -672,7 +671,7 @@ items:
   type: Property
   source:
     id: LowerLimit
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 242
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -708,7 +707,7 @@ items:
   type: Property
   source:
     id: UpperLimit
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 256
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -744,7 +743,7 @@ items:
   type: Property
   source:
     id: RigidBodyA
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 273
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -780,7 +779,7 @@ items:
   type: Property
   source:
     id: RigidBodyB
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 287
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -816,7 +815,7 @@ items:
   type: Method
   source:
     id: GetUid
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 299
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -849,7 +848,7 @@ items:
   type: Property
   source:
     id: UserObject
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\HingeConstraintImp.cs
     startLine: 311
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

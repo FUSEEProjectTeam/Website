@@ -41,9 +41,7 @@ items:
       <ProtoContract>
 
       Public Class FusMesh
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

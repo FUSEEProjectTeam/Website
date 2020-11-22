@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: Plane
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Plane.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Plane.cs
     startLine: 8
   assemblies:
   - Fusee.Engine.Core
@@ -26,9 +26,7 @@ items:
     content: 'public class Plane : Mesh, IComponent, IDisposable'
     content.vb: >-
       Public Class Plane
-
           Inherits Mesh
-
           Implements IComponent, IDisposable
   inheritance:
   - System.Object
@@ -93,7 +91,7 @@ items:
   type: Constructor
   source:
     id: .ctor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Plane.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Core\Primitives\Plane.cs
     startLine: 14
   assemblies:
   - Fusee.Engine.Core

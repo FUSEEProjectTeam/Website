@@ -31,7 +31,6 @@ items:
       <ProtoContract>
 
       Public Class FusAnimationKeyDouble
-
           Inherits FusAnimationKeyBase
   inheritance:
   - System.Object

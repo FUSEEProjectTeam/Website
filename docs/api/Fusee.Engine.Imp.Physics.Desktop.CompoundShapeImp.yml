@@ -23,7 +23,7 @@ items:
   type: Class
   source:
     id: CompoundShapeImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 10
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -34,9 +34,7 @@ items:
     content: 'public class CompoundShapeImp : CollisonShapeImp, ICompoundShapeImp, ICollisionShapeImp'
     content.vb: >-
       Public Class CompoundShapeImp
-
           Inherits CollisonShapeImp
-
           Implements ICompoundShapeImp, ICollisionShapeImp
   inheritance:
   - System.Object
@@ -73,7 +71,7 @@ items:
   type: Property
   source:
     id: Margin
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 20
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -112,7 +110,7 @@ items:
   type: Method
   source:
     id: AddChildShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 40
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -149,7 +147,7 @@ items:
   type: Method
   source:
     id: AddChildShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 53
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -186,7 +184,7 @@ items:
   type: Method
   source:
     id: AddChildShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 65
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -223,7 +221,7 @@ items:
   type: Method
   source:
     id: AddChildShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 76
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -260,7 +258,7 @@ items:
   type: Method
   source:
     id: AddChildShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 87
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -297,7 +295,7 @@ items:
   type: Method
   source:
     id: AddChildShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 99
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -334,7 +332,7 @@ items:
   type: Method
   source:
     id: AddChildShape
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 118
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -371,7 +369,7 @@ items:
   type: Method
   source:
     id: CalculatePrincipalAxisTransform
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\CompoundShapeImp.cs
     startLine: 131
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

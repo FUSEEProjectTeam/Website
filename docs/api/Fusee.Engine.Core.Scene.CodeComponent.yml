@@ -26,9 +26,7 @@ items:
     content: 'public class CodeComponent : SceneComponent, IComponent'
     content.vb: >-
       Public Class CodeComponent
-
           Inherits SceneComponent
-
           Implements IComponent
   inheritance:
   - System.Object

@@ -44,9 +44,7 @@ items:
     content: 'public class MeshImp : object, IMeshImp'
     content.vb: >-
       Public Class MeshImp
-
           Inherits Object
-
           Implements IMeshImp
   inheritance:
   - System.Object

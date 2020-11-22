@@ -15,7 +15,7 @@ items:
   type: Class
   source:
     id: PhysicsImplementor
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\PhysicsImplementor.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\PhysicsImplementor.cs
     startLine: 7
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop
@@ -54,7 +54,7 @@ items:
   type: Method
   source:
     id: CreateDynamicWorldImp
-    path: C:\Users\test\Desktop\Website\WebsiteTest\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\PhysicsImplementor.cs
+    path: C:\Users\test\Desktop\meinfusee\Website\src\DocFX\src\Fusee\src\Engine\Imp\Physics\Desktop\PhysicsImplementor.cs
     startLine: 13
   assemblies:
   - Fusee.Engine.Imp.Physics.Desktop

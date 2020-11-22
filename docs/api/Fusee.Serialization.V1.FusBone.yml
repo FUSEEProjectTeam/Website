@@ -31,9 +31,7 @@ items:
       <ProtoContract>
 
       Public Class FusBone
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object

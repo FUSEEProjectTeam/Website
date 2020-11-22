@@ -33,9 +33,7 @@ items:
       <ProtoContract>
 
       Public Class FusTransform
-
           Inherits FusComponent
-
           Implements IComponent
   inheritance:
   - System.Object
