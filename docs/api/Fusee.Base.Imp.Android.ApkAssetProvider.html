@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ApkAssetProvider
    ">
-    <meta name="generator" content="docfx 2.55.0.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -108,6 +108,27 @@
     <div>
       <a class="xref" href="Fusee.Base.Common.StreamAssetProvider.html#Fusee_Base_Common_StreamAssetProvider_RegisterTypeHandler_Fusee_Base_Common_AssetHandler_">StreamAssetProvider.RegisterTypeHandler(AssetHandler)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Base.Imp.Android.html">Fusee.Base.Imp.Android</a></h6>
   <h6><strong>Assembly</strong>: Fusee.Base.Imp.Android.dll</h6>
@@ -117,10 +138,15 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Base_Imp_Android_ApkAssetProvider__ctor_Android_Content_Context_.md&amp;value=---%0Auid%3A%20Fusee.Base.Imp.Android.ApkAssetProvider.%23ctor(Android.Content.Context)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Base/Imp/Android/ApkAssetProvider.cs/#L21">View Source</a>
+  </span>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider__ctor_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.#ctor*"></a>
-  <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider__ctor_Context_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)">ApkAssetProvider(Context)</h4>
+  <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider__ctor_Android_Content_Context_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)">ApkAssetProvider(Context)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Base.Imp.Android.ApkAssetProvider.html">ApkAssetProvider</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -139,20 +165,40 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Context</span></td>
+        <td><span class="xref">Android.Content.Context</span></td>
         <td><span class="parametername">androidContext</span></td>
         <td><p>The android context.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Base_Imp_Android_ApkAssetProvider_CheckExists_System_String_.md&amp;value=---%0Auid%3A%20Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Base/Imp/Android/ApkAssetProvider.cs/#L110">View Source</a>
+  </span>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExists_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists*"></a>
   <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExists_System_String_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists(System.String)">CheckExists(String)</h4>
-  <div class="markdown level1 summary"><p>Checks the existence of the identified asset using <see cref="!:File.Exists"></see></p>
+  <div class="markdown level1 summary"><p>Checks the existence of the identified asset using <span class="xref">System.IO.File.Exists(System.String)</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -195,8 +241,28 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Fusee.Base.Common.StreamAssetProvider.html#Fusee_Base_Common_StreamAssetProvider_CheckExists_System_String_">StreamAssetProvider.CheckExists(String)</a></div>
-  
-  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Base_Imp_Android_ApkAssetProvider_CheckExistsAsync_System_String_.md&amp;value=---%0Auid%3A%20Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Base/Imp/Android/ApkAssetProvider.cs/#L127">View Source</a>
+  </span>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExistsAsync_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync*"></a>
   <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExistsAsync_System_String_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync(System.String)">CheckExistsAsync(String)</h4>
   <div class="markdown level1 summary"></div>
@@ -232,18 +298,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Fusee.Base.Common.StreamAssetProvider.html#Fusee_Base_Common_StreamAssetProvider_CheckExistsAsync_System_String_">StreamAssetProvider.CheckExistsAsync(String)</a></div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Base_Imp_Android_ApkAssetProvider_GetStream_System_String_.md&amp;value=---%0Auid%3A%20Fusee.Base.Imp.Android.ApkAssetProvider.GetStream(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Base/Imp/Android/ApkAssetProvider.cs/#L95">View Source</a>
+  </span>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider_GetStream_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.GetStream*"></a>
   <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider_GetStream_System_String_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.GetStream(System.String)">GetStream(String)</h4>
-  <div class="markdown level1 summary"><p>Creates a stream for the asset identified by id using <see cref="!:FileStream"></see></p>
+  <div class="markdown level1 summary"><p>Creates a stream for the asset identified by id using <span class="xref">System.IO.FileStream</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -278,7 +349,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><p>A valid stream for reading if the asset ca be retrieved. null otherwise.</p>
 </td>
       </tr>
@@ -286,8 +357,28 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Fusee.Base.Common.StreamAssetProvider.html#Fusee_Base_Common_StreamAssetProvider_GetStream_System_String_">StreamAssetProvider.GetStream(String)</a></div>
-  
-  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Base_Imp_Android_ApkAssetProvider_GetStreamAsync_System_String_.md&amp;value=---%0Auid%3A%20Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Base/Imp/Android/ApkAssetProvider.cs/#L120">View Source</a>
+  </span>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider_GetStreamAsync_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync*"></a>
   <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider_GetStreamAsync_System_String_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync(System.String)">GetStreamAsync(String)</h4>
   <div class="markdown level1 summary"></div>
@@ -323,7 +414,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Stream</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -341,6 +432,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Base_Imp_Android_ApkAssetProvider.md&amp;value=---%0Auid%3A%20Fusee.Base.Imp.Android.ApkAssetProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Base/Imp/Android/ApkAssetProvider.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -359,7 +456,7 @@
       					Generated by <strong>DocFX</strong>
       				</div>
       				<div style="flex:1; justify-content:center; text-align:center">
-      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/../images/github.png" width="auto" height="25" border="0"></a>
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
       				</div>
       				<div style="flex:1; justify-content:flex-end; text-align:right">
       					<a href="#top">Back to top</a>

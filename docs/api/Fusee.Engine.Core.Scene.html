@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Fusee.Engine.Core.Scene
    ">
-    <meta name="generator" content="docfx 2.55.0.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -158,14 +158,6 @@ for various purposes.</p>
       <h4><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></h4>
       <section><p>The building block to create hierarchies.</p>
 </section>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffect.html">ShaderEffect</a></h4>
-      <section><p>A ShaderEffect contains a list of render passes with each pass item being a combination of a set of render states, and Shader Programs (the code running on the GPU).
-In addition a ShaderEffect contains the actual values for all the shaders' (uniform) variables.</p>
-</section>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.ShaderEffectProtoPixel.html">ShaderEffectProtoPixel</a></h4>
-      <section><p>A ShaderEffect contains a list of render passes with each pass item being a combination of a set of render states, and Shader Programs (the code running on the GPU).
-In addition a ShaderEffect contains the actual values for all the shaders' (uniform) variables.</p>
-</section>
       <h4><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></h4>
       <section><p>Transformation (position, orientation and size) of the node.</p>
 </section>
@@ -184,38 +176,16 @@ controlling the geometry.</p>
 </section>
     <h3 id="structs">Structs
   </h3>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.EffectParameterDeclaration.html">EffectParameterDeclaration</a></h4>
-      <section><p>A data type for the list of (uniform) parameters possibly occurring in one of the shaders in the various passes.
-Each of this array entry consists of the parameter's name and its initial value. The concrete type of the object also indicates the
-parameter's type.</p>
-</section>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.EffectPassDeclaration.html">EffectPassDeclaration</a></h4>
-      <section><p>An effect pass declaration contains the vertex, pixel and geometry shader source code as well as a <a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a>
-declaration for the rendering pass declared by this instance.</p>
-</section>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.EffectPassDeclarationProto.html">EffectPassDeclarationProto</a></h4>
-      <section><p>A &quot;proto&quot; effect pass declaration contains the vertex and geometry shader source code as well as a partial  Fragment Shader, that is completed in a pre-pass, depending whether we render forward or deferred.
-It also contains a <a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a> declaration for the rendering pass declared by this instance.</p>
-</section>
       <h4><a class="xref" href="Fusee.Engine.Core.Scene.SceneHeader.html">SceneHeader</a></h4>
       <section><p>The header of a scene.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Core.Scene.VertexWeight.html">VertexWeight</a></h4>
       <section><p>A single entry of a weight table row.</p>
 </section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.IEffectPassDeclarationBase.html">IEffectPassDeclarationBase</a></h4>
-      <section><p>An effect pass declaration contains the relevant shader source code as well as a <a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a>
-declaration for the rendering pass declared by this instance.</p>
-</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="Fusee.Engine.Core.Scene.CanvasRenderMode.html">CanvasRenderMode</a></h4>
       <section><p>The available render modes.</p>
-</section>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.HorizontalTextAlignment.html">HorizontalTextAlignment</a></h4>
-      <section><p>Defines the alignment in x direction.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Core.Scene.LerpType.html">LerpType</a></h4>
       <section><p>Symbolic value describing the type of Lerp (linear interpolation) to perform.</p>
@@ -230,9 +200,6 @@ declaration for the rendering pass declared by this instance.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Core.Scene.TypeId.html">TypeId</a></h4>
       <section><p>Symbolic value describing the data type of stored values.</p>
-</section>
-      <h4><a class="xref" href="Fusee.Engine.Core.Scene.VerticalTextAlignment.html">VerticalTextAlignment</a></h4>
-      <section><p>Defines the alignment in y direction.</p>
 </section>
     <h3 id="delegates">Delegates
   </h3>
@@ -267,7 +234,7 @@ declaration for the rendering pass declared by this instance.</p>
       					Generated by <strong>DocFX</strong>
       				</div>
       				<div style="flex:1; justify-content:center; text-align:center">
-      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/../images/github.png" width="auto" height="25" border="0"></a>
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
       				</div>
       				<div style="flex:1; justify-content:flex-end; text-align:right">
       					<a href="#top">Back to top</a>
