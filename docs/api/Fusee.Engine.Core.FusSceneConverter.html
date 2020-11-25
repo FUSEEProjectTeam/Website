@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Engine_Core_FusSceneConverter" data-uid="Fusee.Engine.Core.FusSceneConverter" class="text-break">Class FusSceneConverter
   </h1>
-  <div class="markdown level0 summary"><p>Use <a class="xref" href="Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_System_String_">ConvertFrom(FusFile, String)</a> and <a class="xref" href="Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertTo_Fusee_Engine_Core_Scene_SceneContainer_">ConvertTo(SceneContainer)</a>, to create new high/low level graph from a low/high level graph (made out of scene nodes and components)
+  <div class="markdown level0 summary"><p>Use <a class="xref" href="Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_">ConvertFrom(FusFile)</a> and <a class="xref" href="Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertTo_Fusee_Engine_Core_Scene_SceneContainer_">ConvertTo(SceneContainer)</a>, to create new high/low level graph from a low/high level graph (made out of scene nodes and components)
 in order to have each visited element converted and/or split into its high/low level, render-ready/serialization-ready components.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -114,21 +114,16 @@ in order to have each visited element converted and/or split into its high/low l
   </div>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_System_String_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/FusSceneConverter.cs/#L26">View Source</a>
-  </span>
+  
+  
   <a id="Fusee_Engine_Core_FusSceneConverter_ConvertFrom_" data-uid="Fusee.Engine.Core.FusSceneConverter.ConvertFrom*"></a>
-  <h4 id="Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_System_String_" data-uid="Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)">ConvertFrom(FusFile, String)</h4>
+  <h4 id="Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_" data-uid="Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)">ConvertFrom(FusFile)</h4>
   <div class="markdown level1 summary"><p>Traverses the given SceneContainer and creates new high level graph <a class="xref" href="Fusee.Engine.Core.Scene.html">Fusee.Engine.Core.Scene</a> by converting and/or splitting its components into the high level equivalents.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SceneContainer ConvertFrom(FusFile fus, string id = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SceneContainer ConvertFrom(FusFile fus)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,11 +140,6 @@ in order to have each visited element converted and/or split into its high/low l
         <td><span class="parametername">fus</span></td>
         <td><p>The FusFile to convert.</p>
 </td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -168,13 +158,8 @@ in order to have each visited element converted and/or split into its high/low l
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_FusSceneConverter_ConvertTo_Fusee_Engine_Core_Scene_SceneContainer_.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/FusSceneConverter.cs/#L100">View Source</a>
-  </span>
+  
+  
   <a id="Fusee_Engine_Core_FusSceneConverter_ConvertTo_" data-uid="Fusee.Engine.Core.FusSceneConverter.ConvertTo*"></a>
   <h4 id="Fusee_Engine_Core_FusSceneConverter_ConvertTo_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.Core.FusSceneConverter.ConvertTo(Fusee.Engine.Core.Scene.SceneContainer)">ConvertTo(SceneContainer)</h4>
   <div class="markdown level1 summary"><p>Traverses the given SceneContainer and creates new high low level graph <a class="xref" href="Fusee.Serialization.FusFile.html">FusFile</a> by converting and/or splitting its components into the low level equivalents.</p>
@@ -224,12 +209,6 @@ in order to have each visited element converted and/or split into its high/low l
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Engine_Core_FusSceneConverter.md&amp;value=---%0Auid%3A%20Fusee.Engine.Core.FusSceneConverter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/FusSceneConverter.cs/#L20" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

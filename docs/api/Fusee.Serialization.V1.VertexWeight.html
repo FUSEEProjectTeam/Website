@@ -101,24 +101,21 @@
   <h6><strong>Assembly</strong>: Fusee.Serialization.dll</h6>
   <h5 id="Fusee_Serialization_V1_VertexWeight_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct VertexWeight</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoContract]
+public struct VertexWeight</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_VertexWeight_JointIndex.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.VertexWeight.JointIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/FusWeight.cs/#L44">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_VertexWeight_JointIndex" data-uid="Fusee.Serialization.V1.VertexWeight.JointIndex">JointIndex</h4>
   <div class="markdown level1 summary"><p>The joint index controlling the vertex.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int JointIndex</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(1)]
+public int JointIndex</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -135,20 +132,16 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_VertexWeight_Weight.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.VertexWeight.Weight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/FusWeight.cs/#L50">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_VertexWeight_Weight" data-uid="Fusee.Serialization.V1.VertexWeight.Weight">Weight</h4>
   <div class="markdown level1 summary"><p>The weight (the influence) of the bone on the vertex's transformation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Weight</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(2)]
+public float Weight</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,12 +165,6 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_VertexWeight.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.VertexWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/FusWeight.cs/#L37" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -74,7 +74,7 @@
   <h1 id="Fusee_Serialization_FusContents" data-uid="Fusee.Serialization.FusContents" class="text-break">Class FusContents
   </h1>
   <div class="markdown level0 summary"><p>Polymorphic contents of a fus file. The actual contents is contained in a sub-class. Possible sub-classes are listed
-in <see cref="!:ProtoIncludeAttribute"></see> decorators preceding this class declaration. This mechanism allows fus files
+in <span class="xref">ProtoBuf.ProtoIncludeAttribute</span> decorators preceding this class declaration. This mechanism allows fus files
 to contain different types of contents as well as different versions of contents.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -112,7 +112,9 @@ to contain different types of contents as well as different versions of contents
   <h6><strong>Assembly</strong>: Fusee.Serialization.dll</h6>
   <h5 id="Fusee_Serialization_FusContents_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FusContents</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoInclude(201, typeof(FusScene))]
+[ProtoContract]
+public class FusContents</code></pre>
   </div>
 </article>
           </div>
@@ -121,12 +123,6 @@ to contain different types of contents as well as different versions of contents
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_FusContents.md&amp;value=---%0Auid%3A%20Fusee.Serialization.FusContents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/FusFile.cs/#L57" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

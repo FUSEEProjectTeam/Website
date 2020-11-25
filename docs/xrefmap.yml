@@ -1632,6 +1632,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Base.Common.ColorUint.ToCss
   nameWithType: ColorUint.ToCss
+- uid: Fusee.Base.Common.ColorUint.Tofloat3
+  name: Tofloat3()
+  href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat3
+  commentId: M:Fusee.Base.Common.ColorUint.Tofloat3
+  fullName: Fusee.Base.Common.ColorUint.Tofloat3()
+  nameWithType: ColorUint.Tofloat3()
 - uid: Fusee.Base.Common.ColorUint.Tofloat3(Fusee.Base.Common.ColorUint)
   name: Tofloat3(ColorUint)
   href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat3_Fusee_Base_Common_ColorUint_
@@ -1645,6 +1651,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Base.Common.ColorUint.Tofloat3
   nameWithType: ColorUint.Tofloat3
+- uid: Fusee.Base.Common.ColorUint.Tofloat4
+  name: Tofloat4()
+  href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat4
+  commentId: M:Fusee.Base.Common.ColorUint.Tofloat4
+  fullName: Fusee.Base.Common.ColorUint.Tofloat4()
+  nameWithType: ColorUint.Tofloat4()
 - uid: Fusee.Base.Common.ColorUint.Tofloat4(Fusee.Base.Common.ColorUint)
   name: Tofloat4(ColorUint)
   href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat4_Fusee_Base_Common_ColorUint_
@@ -3700,11 +3712,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.ApkAssetProvider
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider
   nameWithType: ApkAssetProvider
-- uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)
+- uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)
   name: ApkAssetProvider(Context)
-  href: api/Fusee.Base.Imp.Android.ApkAssetProvider.html#Fusee_Base_Imp_Android_ApkAssetProvider__ctor_Android_Content_Context_
-  commentId: M:Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)
-  fullName: Fusee.Base.Imp.Android.ApkAssetProvider.ApkAssetProvider(Android.Content.Context)
+  href: api/Fusee.Base.Imp.Android.ApkAssetProvider.html#Fusee_Base_Imp_Android_ApkAssetProvider__ctor_Context_
+  commentId: M:Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)
+  fullName: Fusee.Base.Imp.Android.ApkAssetProvider.ApkAssetProvider(Context)
   nameWithType: ApkAssetProvider.ApkAssetProvider(Context)
 - uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor*
   name: ApkAssetProvider
@@ -3771,11 +3783,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.FileDecoder
   fullName: Fusee.Base.Imp.Android.FileDecoder
   nameWithType: FileDecoder
-- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage(Stream)
   name: LoadImage(Stream)
-  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImage_System_IO_Stream_
-  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
-  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
+  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImage_Stream_
+  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImage(Stream)
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage(Stream)
   nameWithType: FileDecoder.LoadImage(Stream)
 - uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage*
   name: LoadImage
@@ -3784,11 +3796,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage
   nameWithType: FileDecoder.LoadImage
-- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(Stream)
   name: LoadImageAsync(Stream)
-  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImageAsync_System_IO_Stream_
-  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
-  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
+  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImageAsync_Stream_
+  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(Stream)
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(Stream)
   nameWithType: FileDecoder.LoadImageAsync(Stream)
 - uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync*
   name: LoadImageAsync
@@ -3803,11 +3815,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.FontImp
   fullName: Fusee.Base.Imp.Android.FontImp
   nameWithType: FontImp
-- uid: Fusee.Base.Imp.Android.FontImp.#ctor(System.IO.Stream)
+- uid: Fusee.Base.Imp.Android.FontImp.#ctor(Stream)
   name: FontImp(Stream)
-  href: api/Fusee.Base.Imp.Android.FontImp.html#Fusee_Base_Imp_Android_FontImp__ctor_System_IO_Stream_
-  commentId: M:Fusee.Base.Imp.Android.FontImp.#ctor(System.IO.Stream)
-  fullName: Fusee.Base.Imp.Android.FontImp.FontImp(System.IO.Stream)
+  href: api/Fusee.Base.Imp.Android.FontImp.html#Fusee_Base_Imp_Android_FontImp__ctor_Stream_
+  commentId: M:Fusee.Base.Imp.Android.FontImp.#ctor(Stream)
+  fullName: Fusee.Base.Imp.Android.FontImp.FontImp(Stream)
   nameWithType: FontImp.FontImp(Stream)
 - uid: Fusee.Base.Imp.Android.FontImp.#ctor*
   name: FontImp
@@ -3929,11 +3941,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.IOImp
   fullName: Fusee.Base.Imp.Android.IOImp
   nameWithType: IOImp
-- uid: Fusee.Base.Imp.Android.IOImp.#ctor(Android.Content.Context)
+- uid: Fusee.Base.Imp.Android.IOImp.#ctor(Context)
   name: IOImp(Context)
-  href: api/Fusee.Base.Imp.Android.IOImp.html#Fusee_Base_Imp_Android_IOImp__ctor_Android_Content_Context_
-  commentId: M:Fusee.Base.Imp.Android.IOImp.#ctor(Android.Content.Context)
-  fullName: Fusee.Base.Imp.Android.IOImp.IOImp(Android.Content.Context)
+  href: api/Fusee.Base.Imp.Android.IOImp.html#Fusee_Base_Imp_Android_IOImp__ctor_Context_
+  commentId: M:Fusee.Base.Imp.Android.IOImp.#ctor(Context)
+  fullName: Fusee.Base.Imp.Android.IOImp.IOImp(Context)
   nameWithType: IOImp.IOImp(Context)
 - uid: Fusee.Base.Imp.Android.IOImp.#ctor*
   name: IOImp
@@ -15530,12 +15542,6 @@ references:
   commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Struct
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Struct
   nameWithType: ShardCategory.Struct
-- uid: Fusee.Engine.Core.Effects.ShardCategory.SurfOut
-  name: SurfOut
-  href: api/Fusee.Engine.Core.Effects.ShardCategory.html#Fusee_Engine_Core_Effects_ShardCategory_SurfOut
-  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.SurfOut
-  fullName: Fusee.Engine.Core.Effects.ShardCategory.SurfOut
-  nameWithType: ShardCategory.SurfOut
 - uid: Fusee.Engine.Core.Effects.ShardCategory.Uniform
   name: Uniform
   href: api/Fusee.Engine.Core.Effects.ShardCategory.html#Fusee_Engine_Core_Effects_ShardCategory_Uniform
@@ -16126,12 +16132,12 @@ references:
   commentId: T:Fusee.Engine.Core.FusSceneConverter
   fullName: Fusee.Engine.Core.FusSceneConverter
   nameWithType: FusSceneConverter
-- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
-  name: ConvertFrom(FusFile, String)
-  href: api/Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_System_String_
-  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
-  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile, System.String)
-  nameWithType: FusSceneConverter.ConvertFrom(FusFile, String)
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  name: ConvertFrom(FusFile)
+  href: api/Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
+  nameWithType: FusSceneConverter.ConvertFrom(FusFile)
 - uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom*
   name: ConvertFrom
   href: api/Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_
@@ -25600,32 +25606,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
   nameWithType: Lighting.BRDFSpecularComponent
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
-  name: ColorManagementMethods()
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_ColorManagementMethods
-  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods()
-  nameWithType: Lighting.ColorManagementMethods()
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods*
-  name: ColorManagementMethods
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_ColorManagementMethods_
-  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
-  nameWithType: Lighting.ColorManagementMethods
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
-  name: DecodeSRGB()
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DecodeSRGB
-  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB()
-  nameWithType: Lighting.DecodeSRGB()
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB*
-  name: DecodeSRGB
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DecodeSRGB_
-  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
-  nameWithType: Lighting.DecodeSRGB
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
   name: DiffuseComponent()
   href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DiffuseComponent
@@ -25639,32 +25619,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
   nameWithType: Lighting.DiffuseComponent
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
-  name: EncodeSRGB()
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_EncodeSRGB
-  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB()
-  nameWithType: Lighting.EncodeSRGB()
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB*
-  name: EncodeSRGB
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_EncodeSRGB_
-  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
-  nameWithType: Lighting.EncodeSRGB
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
-  name: GammaCorrection()
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_GammaCorrection
-  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection()
-  nameWithType: Lighting.GammaCorrection()
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection*
-  name: GammaCorrection
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_GammaCorrection_
-  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
-  nameWithType: Lighting.GammaCorrection
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
   name: LightStructDeclaration
   href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_LightStructDeclaration
@@ -29571,11 +29525,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp
   nameWithType: MouseDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(Android.Views.View)
+- uid: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(View)
   name: MouseDeviceImp(View)
-  href: api/Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_MouseDeviceImp__ctor_Android_Views_View_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(Android.Views.View)
-  fullName: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.MouseDeviceImp(Android.Views.View)
+  href: api/Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_MouseDeviceImp__ctor_View_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(View)
+  fullName: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.MouseDeviceImp(View)
   nameWithType: MouseDeviceImp.MouseDeviceImp(View)
 - uid: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor*
   name: MouseDeviceImp
@@ -29725,11 +29679,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView
   nameWithType: RenderCanvasGameView
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Android.Content.Context,Android.Util.IAttributeSet,System.Action)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Context,IAttributeSet,Action)
   name: RenderCanvasGameView(RenderCanvasImp, Boolean, Context, IAttributeSet, Action)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView__ctor_Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_System_Boolean_Android_Content_Context_Android_Util_IAttributeSet_System_Action_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Android.Content.Context,Android.Util.IAttributeSet,System.Action)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.RenderCanvasGameView(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp, System.Boolean, Android.Content.Context, Android.Util.IAttributeSet, System.Action)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView__ctor_Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_System_Boolean_Context_IAttributeSet_Action_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Context,IAttributeSet,Action)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.RenderCanvasGameView(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp, System.Boolean, Context, IAttributeSet, Action)
   nameWithType: RenderCanvasGameView.RenderCanvasGameView(RenderCanvasImp, Boolean, Context, IAttributeSet, Action)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor*
   name: RenderCanvasGameView
@@ -29764,11 +29718,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.DeltaTime
   nameWithType: RenderCanvasGameView.DeltaTime
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(System.EventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(EventArgs)
   name: OnLoad(EventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnLoad_System_EventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(System.EventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(System.EventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnLoad_EventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(EventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(EventArgs)
   nameWithType: RenderCanvasGameView.OnLoad(EventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad*
   name: OnLoad
@@ -29777,11 +29731,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad
   nameWithType: RenderCanvasGameView.OnLoad
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(OpenTK.FrameEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
   name: OnRenderFrame(FrameEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnRenderFrame_OpenTK_FrameEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(OpenTK.FrameEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(OpenTK.FrameEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnRenderFrame_FrameEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
   nameWithType: RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame*
   name: OnRenderFrame
@@ -29790,11 +29744,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame
   nameWithType: RenderCanvasGameView.OnRenderFrame
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(System.EventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(EventArgs)
   name: OnResize(EventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnResize_System_EventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(System.EventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(System.EventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnResize_EventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(EventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(EventArgs)
   nameWithType: RenderCanvasGameView.OnResize(EventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize*
   name: OnResize
@@ -29803,11 +29757,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize
   nameWithType: RenderCanvasGameView.OnResize
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(System.EventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(EventArgs)
   name: OnUnload(EventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnUnload_System_EventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(System.EventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(System.EventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnUnload_EventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(EventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(EventArgs)
   nameWithType: RenderCanvasGameView.OnUnload(EventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload*
   name: OnUnload
@@ -29822,11 +29776,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   nameWithType: RenderCanvasImp
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Context,IAttributeSet,Action)
   name: RenderCanvasImp(Context, IAttributeSet, Action)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp__ctor_Android_Content_Context_Android_Util_IAttributeSet_System_Action_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.RenderCanvasImp(Android.Content.Context, Android.Util.IAttributeSet, System.Action)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp__ctor_Context_IAttributeSet_Action_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Context,IAttributeSet,Action)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.RenderCanvasImp(Context, IAttributeSet, Action)
   nameWithType: RenderCanvasImp.RenderCanvasImp(Context, IAttributeSet, Action)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor*
   name: RenderCanvasImp
@@ -30253,11 +30207,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.RenderContextImp
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp
   nameWithType: RenderContextImp
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)
   name: RenderContextImp(IRenderCanvasImp, Context)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderContextImp.html#Fusee_Engine_Imp_Graphics_Android_RenderContextImp__ctor_Fusee_Engine_Common_IRenderCanvasImp_Android_Content_Context_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RenderContextImp(Fusee.Engine.Common.IRenderCanvasImp, Android.Content.Context)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderContextImp.html#Fusee_Engine_Imp_Graphics_Android_RenderContextImp__ctor_Fusee_Engine_Common_IRenderCanvasImp_Context_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RenderContextImp(Fusee.Engine.Common.IRenderCanvasImp, Context)
   nameWithType: RenderContextImp.RenderContextImp(IRenderCanvasImp, Context)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor*
   name: RenderContextImp
@@ -31194,11 +31148,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp
   nameWithType: TouchDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(Android.Views.View)
+- uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(View)
   name: TouchDeviceImp(View)
-  href: api/Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_TouchDeviceImp__ctor_Android_Views_View_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(Android.Views.View)
-  fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.TouchDeviceImp(Android.Views.View)
+  href: api/Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_TouchDeviceImp__ctor_View_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(View)
+  fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.TouchDeviceImp(View)
   nameWithType: TouchDeviceImp.TouchDeviceImp(View)
 - uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor*
   name: TouchDeviceImp
@@ -31618,11 +31572,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.Id
   nameWithType: KeyboardDeviceImp.Id
-- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
   name: OnGameWinKeyDown(Object, KeyboardKeyEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyDown_System_Object_KeyboardKeyEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object, KeyboardKeyEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyDown_System_Object_OpenTK_Input_KeyboardKeyEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object, OpenTK.Input.KeyboardKeyEventArgs)
   nameWithType: KeyboardDeviceImp.OnGameWinKeyDown(Object, KeyboardKeyEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown*
   name: OnGameWinKeyDown
@@ -31631,11 +31585,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown
   nameWithType: KeyboardDeviceImp.OnGameWinKeyDown
-- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
   name: OnGameWinKeyUp(Object, KeyboardKeyEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyUp_System_Object_KeyboardKeyEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object, KeyboardKeyEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyUp_System_Object_OpenTK_Input_KeyboardKeyEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object, OpenTK.Input.KeyboardKeyEventArgs)
   nameWithType: KeyboardDeviceImp.OnGameWinKeyUp(Object, KeyboardKeyEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp*
   name: OnGameWinKeyUp
@@ -31903,11 +31857,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   nameWithType: MouseDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(GameWindow)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(OpenTK.GameWindow)
   name: MouseDeviceImp(GameWindow)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp__ctor_GameWindow_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.MouseDeviceImp(GameWindow)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp__ctor_OpenTK_GameWindow_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(OpenTK.GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.MouseDeviceImp(OpenTK.GameWindow)
   nameWithType: MouseDeviceImp.MouseDeviceImp(GameWindow)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor*
   name: MouseDeviceImp
@@ -32045,11 +31999,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.Id
   nameWithType: MouseDeviceImp.Id
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
   name: OnGameWinMouseDown(Object, MouseButtonEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseDown_System_Object_MouseButtonEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object, MouseButtonEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseDown_System_Object_OpenTK_Input_MouseButtonEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object, OpenTK.Input.MouseButtonEventArgs)
   nameWithType: MouseDeviceImp.OnGameWinMouseDown(Object, MouseButtonEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown*
   name: OnGameWinMouseDown
@@ -32058,11 +32012,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown
   nameWithType: MouseDeviceImp.OnGameWinMouseDown
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
   name: OnGameWinMouseUp(Object, MouseButtonEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseUp_System_Object_MouseButtonEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object, MouseButtonEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseUp_System_Object_OpenTK_Input_MouseButtonEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object, OpenTK.Input.MouseButtonEventArgs)
   nameWithType: MouseDeviceImp.OnGameWinMouseUp(Object, MouseButtonEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp*
   name: OnGameWinMouseUp
@@ -32071,11 +32025,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp
   nameWithType: MouseDeviceImp.OnGameWinMouseUp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,MouseMoveEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
   name: OnMouseMove(Object, MouseMoveEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnMouseMove_System_Object_MouseMoveEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,MouseMoveEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object, MouseMoveEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnMouseMove_System_Object_OpenTK_Input_MouseMoveEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object, OpenTK.Input.MouseMoveEventArgs)
   nameWithType: MouseDeviceImp.OnMouseMove(Object, MouseMoveEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove*
   name: OnMouseMove
@@ -32102,11 +32056,11 @@ references:
   commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor
   fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp()
   nameWithType: RenderCanvasImp.RenderCanvasImp()
-- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
   name: RenderCanvasImp(Icon)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_Icon_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(Icon)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_System_Drawing_Icon_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(System.Drawing.Icon)
   nameWithType: RenderCanvasImp.RenderCanvasImp(Icon)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Int32,System.Int32)
   name: RenderCanvasImp(Int32, Int32)
@@ -33900,11 +33854,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp
   nameWithType: WindowsSpaceMouseInputDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
   name: WindowsSpaceMouseInputDeviceImp(GameWindow)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__ctor_GameWindow_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__ctor_OpenTK_GameWindow_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(OpenTK.GameWindow)
   nameWithType: WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor*
   name: WindowsSpaceMouseInputDeviceImp
@@ -34097,11 +34051,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
   nameWithType: WindowsTouchInputDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(OpenTK.GameWindow)
   name: WindowsTouchInputDeviceImp(GameWindow)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsTouchInputDeviceImp__ctor_GameWindow_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsTouchInputDeviceImp__ctor_OpenTK_GameWindow_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(OpenTK.GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(OpenTK.GameWindow)
   nameWithType: WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor*
   name: WindowsTouchInputDeviceImp
@@ -39549,12 +39503,6 @@ references:
   commentId: T:Fusee.Math.Core.float2
   fullName: Fusee.Math.Core.float2
   nameWithType: float2
-- uid: Fusee.Math.Core.float2.#ctor(System.Single)
-  name: float2(Single)
-  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2__ctor_System_Single_
-  commentId: M:Fusee.Math.Core.float2.#ctor(System.Single)
-  fullName: Fusee.Math.Core.float2.float2(System.Single)
-  nameWithType: float2.float2(Single)
 - uid: Fusee.Math.Core.float2.#ctor(System.Single,System.Single)
   name: float2(Single, Single)
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2__ctor_System_Single_System_Single_
@@ -39781,12 +39729,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float2.LengthSquared
   nameWithType: float2.LengthSquared
-- uid: Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2,Fusee.Math.Core.float2,Fusee.Math.Core.float2)
-  name: Lerp(float2, float2, float2)
-  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Lerp_Fusee_Math_Core_float2_Fusee_Math_Core_float2_Fusee_Math_Core_float2_
-  commentId: M:Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2,Fusee.Math.Core.float2,Fusee.Math.Core.float2)
-  fullName: Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2, Fusee.Math.Core.float2, Fusee.Math.Core.float2)
-  nameWithType: float2.Lerp(float2, float2, float2)
 - uid: Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2,Fusee.Math.Core.float2,System.Single)
   name: Lerp(float2, float2, Single)
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Lerp_Fusee_Math_Core_float2_Fusee_Math_Core_float2_System_Single_
@@ -40072,19 +40014,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float2.PointInTriangle
   nameWithType: float2.PointInTriangle
-- uid: Fusee.Math.Core.float2.Pow(Fusee.Math.Core.float2,System.Single)
-  name: Pow(float2, Single)
-  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Pow_Fusee_Math_Core_float2_System_Single_
-  commentId: M:Fusee.Math.Core.float2.Pow(Fusee.Math.Core.float2,System.Single)
-  fullName: Fusee.Math.Core.float2.Pow(Fusee.Math.Core.float2, System.Single)
-  nameWithType: float2.Pow(float2, Single)
-- uid: Fusee.Math.Core.float2.Pow*
-  name: Pow
-  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Pow_
-  commentId: Overload:Fusee.Math.Core.float2.Pow
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float2.Pow
-  nameWithType: float2.Pow
 - uid: Fusee.Math.Core.float2.r
   name: r
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_r
@@ -40111,19 +40040,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float2.rg
   nameWithType: float2.rg
-- uid: Fusee.Math.Core.float2.Step(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
-  name: Step(float2, float2)
-  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Step_Fusee_Math_Core_float2_Fusee_Math_Core_float2_
-  commentId: M:Fusee.Math.Core.float2.Step(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
-  fullName: Fusee.Math.Core.float2.Step(Fusee.Math.Core.float2, Fusee.Math.Core.float2)
-  nameWithType: float2.Step(float2, float2)
-- uid: Fusee.Math.Core.float2.Step*
-  name: Step
-  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Step_
-  commentId: Overload:Fusee.Math.Core.float2.Step
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float2.Step
-  nameWithType: float2.Step
 - uid: Fusee.Math.Core.float2.Subtract(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
   name: Subtract(float2, float2)
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Subtract_Fusee_Math_Core_float2_Fusee_Math_Core_float2_
@@ -40255,12 +40171,6 @@ references:
   commentId: M:Fusee.Math.Core.float3.#ctor(Fusee.Math.Core.float4)
   fullName: Fusee.Math.Core.float3.float3(Fusee.Math.Core.float4)
   nameWithType: float3.float3(float4)
-- uid: Fusee.Math.Core.float3.#ctor(System.Single)
-  name: float3(Single)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3__ctor_System_Single_
-  commentId: M:Fusee.Math.Core.float3.#ctor(System.Single)
-  fullName: Fusee.Math.Core.float3.float3(System.Single)
-  nameWithType: float3.float3(Single)
 - uid: Fusee.Math.Core.float3.#ctor(System.Single,System.Single,System.Single)
   name: float3(Single, Single, Single)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3__ctor_System_Single_System_Single_System_Single_
@@ -40545,12 +40455,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.LengthSquared
   nameWithType: float3.LengthSquared
-- uid: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
-  name: Lerp(float3, float3, float3)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Lerp_Fusee_Math_Core_float3_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
-  commentId: M:Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
-  fullName: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
-  nameWithType: float3.Lerp(float3, float3, float3)
 - uid: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
   name: Lerp(float3, float3, Single)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Lerp_Fusee_Math_Core_float3_Fusee_Math_Core_float3_System_Single_
@@ -40564,43 +40468,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.Lerp
   nameWithType: float3.Lerp
-- uid: Fusee.Math.Core.float3.LinearColorFromSRgb
-  name: LinearColorFromSRgb()
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb
-  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb
-  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb()
-  nameWithType: float3.LinearColorFromSRgb()
-- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
-  name: LinearColorFromSRgb(float3)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_Fusee_Math_Core_float3_
-  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
-  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
-  nameWithType: float3.LinearColorFromSRgb(float3)
-- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
-  name: LinearColorFromSRgb(Int32, Int32, Int32)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_System_Int32_System_Int32_System_Int32_
-  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
-  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32, System.Int32, System.Int32)
-  nameWithType: float3.LinearColorFromSRgb(Int32, Int32, Int32)
-- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
-  name: LinearColorFromSRgb(String)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_System_String_
-  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
-  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
-  nameWithType: float3.LinearColorFromSRgb(String)
-- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
-  name: LinearColorFromSRgb(UInt32)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_System_UInt32_
-  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
-  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
-  nameWithType: float3.LinearColorFromSRgb(UInt32)
-- uid: Fusee.Math.Core.float3.LinearColorFromSRgb*
-  name: LinearColorFromSRgb
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_
-  commentId: Overload:Fusee.Math.Core.float3.LinearColorFromSRgb
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb
-  nameWithType: float3.LinearColorFromSRgb
 - uid: Fusee.Math.Core.float3.Max(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   name: Max(float3, float3)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Max_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
@@ -40889,19 +40756,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.PositiveInfinity
   nameWithType: float3.PositiveInfinity
-- uid: Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3,System.Single)
-  name: Pow(float3, Single)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Pow_Fusee_Math_Core_float3_System_Single_
-  commentId: M:Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3,System.Single)
-  fullName: Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3, System.Single)
-  nameWithType: float3.Pow(float3, Single)
-- uid: Fusee.Math.Core.float3.Pow*
-  name: Pow
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Pow_
-  commentId: Overload:Fusee.Math.Core.float3.Pow
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float3.Pow
-  nameWithType: float3.Pow
 - uid: Fusee.Math.Core.float3.r
   name: r
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_r
@@ -40934,56 +40788,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.Rotate
   nameWithType: float3.Rotate
-- uid: Fusee.Math.Core.float3.SRgbFromLinearColor
-  name: SRgbFromLinearColor()
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor
-  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor
-  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor()
-  nameWithType: float3.SRgbFromLinearColor()
-- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
-  name: SRgbFromLinearColor(float3)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_Fusee_Math_Core_float3_
-  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
-  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
-  nameWithType: float3.SRgbFromLinearColor(float3)
-- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
-  name: SRgbFromLinearColor(Int32, Int32, Int32)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_System_Int32_System_Int32_System_Int32_
-  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
-  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32, System.Int32, System.Int32)
-  nameWithType: float3.SRgbFromLinearColor(Int32, Int32, Int32)
-- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
-  name: SRgbFromLinearColor(String)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_System_String_
-  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
-  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
-  nameWithType: float3.SRgbFromLinearColor(String)
-- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
-  name: SRgbFromLinearColor(UInt32)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_System_UInt32_
-  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
-  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
-  nameWithType: float3.SRgbFromLinearColor(UInt32)
-- uid: Fusee.Math.Core.float3.SRgbFromLinearColor*
-  name: SRgbFromLinearColor
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_
-  commentId: Overload:Fusee.Math.Core.float3.SRgbFromLinearColor
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor
-  nameWithType: float3.SRgbFromLinearColor
-- uid: Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
-  name: Step(float3, float3)
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Step_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
-  commentId: M:Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
-  fullName: Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
-  nameWithType: float3.Step(float3, float3)
-- uid: Fusee.Math.Core.float3.Step*
-  name: Step
-  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Step_
-  commentId: Overload:Fusee.Math.Core.float3.Step
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float3.Step
-  nameWithType: float3.Step
 - uid: Fusee.Math.Core.float3.Subtract(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   name: Subtract(float3, float3)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Subtract_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
@@ -41780,12 +41584,6 @@ references:
   commentId: M:Fusee.Math.Core.float4.#ctor(Fusee.Math.Core.float4)
   fullName: Fusee.Math.Core.float4.float4(Fusee.Math.Core.float4)
   nameWithType: float4.float4(float4)
-- uid: Fusee.Math.Core.float4.#ctor(System.Single)
-  name: float4(Single)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4__ctor_System_Single_
-  commentId: M:Fusee.Math.Core.float4.#ctor(System.Single)
-  fullName: Fusee.Math.Core.float4.float4(System.Single)
-  nameWithType: float4.float4(Single)
 - uid: Fusee.Math.Core.float4.#ctor(System.Single,System.Single,System.Single,System.Single)
   name: float4(Single, Single, Single, Single)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4__ctor_System_Single_System_Single_System_Single_System_Single_
@@ -41996,12 +41794,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.LengthSquared
   nameWithType: float4.LengthSquared
-- uid: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
-  name: Lerp(float4, float4, float4)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Lerp_Fusee_Math_Core_float4_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
-  commentId: M:Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
-  fullName: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Math.Core.float4)
-  nameWithType: float4.Lerp(float4, float4, float4)
 - uid: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single)
   name: Lerp(float4, float4, Single)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Lerp_Fusee_Math_Core_float4_Fusee_Math_Core_float4_System_Single_
@@ -42015,43 +41807,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.Lerp
   nameWithType: float4.Lerp
-- uid: Fusee.Math.Core.float4.LinearColorFromSRgb
-  name: LinearColorFromSRgb()
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb
-  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb
-  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb()
-  nameWithType: float4.LinearColorFromSRgb()
-- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
-  name: LinearColorFromSRgb(float4)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_Fusee_Math_Core_float4_
-  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
-  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
-  nameWithType: float4.LinearColorFromSRgb(float4)
-- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
-  name: LinearColorFromSRgb(Int32, Int32, Int32, Int32)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_System_Int32_System_Int32_System_Int32_System_Int32_
-  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
-  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32, System.Int32, System.Int32, System.Int32)
-  nameWithType: float4.LinearColorFromSRgb(Int32, Int32, Int32, Int32)
-- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
-  name: LinearColorFromSRgb(String)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_System_String_
-  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
-  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
-  nameWithType: float4.LinearColorFromSRgb(String)
-- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
-  name: LinearColorFromSRgb(UInt32)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_System_UInt32_
-  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
-  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
-  nameWithType: float4.LinearColorFromSRgb(UInt32)
-- uid: Fusee.Math.Core.float4.LinearColorFromSRgb*
-  name: LinearColorFromSRgb
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_
-  commentId: Overload:Fusee.Math.Core.float4.LinearColorFromSRgb
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb
-  nameWithType: float4.LinearColorFromSRgb
 - uid: Fusee.Math.Core.float4.Max(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   name: Max(float4, float4)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Max_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
@@ -42308,19 +42063,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.ParseConverter
   nameWithType: float4.ParseConverter
-- uid: Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4,System.Single)
-  name: Pow(float4, Single)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Pow_Fusee_Math_Core_float4_System_Single_
-  commentId: M:Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4,System.Single)
-  fullName: Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4, System.Single)
-  nameWithType: float4.Pow(float4, Single)
-- uid: Fusee.Math.Core.float4.Pow*
-  name: Pow
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Pow_
-  commentId: Overload:Fusee.Math.Core.float4.Pow
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float4.Pow
-  nameWithType: float4.Pow
 - uid: Fusee.Math.Core.float4.r
   name: r
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_r
@@ -42379,56 +42121,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.Round
   nameWithType: float4.Round
-- uid: Fusee.Math.Core.float4.SRgbFromLinearColor
-  name: SRgbFromLinearColor()
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor
-  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor
-  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor()
-  nameWithType: float4.SRgbFromLinearColor()
-- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
-  name: SRgbFromLinearColor(float4)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_Fusee_Math_Core_float4_
-  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
-  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
-  nameWithType: float4.SRgbFromLinearColor(float4)
-- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
-  name: SRgbFromLinearColor(Int32, Int32, Int32, Int32)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_System_Int32_System_Int32_System_Int32_System_Int32_
-  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
-  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32, System.Int32, System.Int32, System.Int32)
-  nameWithType: float4.SRgbFromLinearColor(Int32, Int32, Int32, Int32)
-- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
-  name: SRgbFromLinearColor(String)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_System_String_
-  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
-  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
-  nameWithType: float4.SRgbFromLinearColor(String)
-- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
-  name: SRgbFromLinearColor(UInt32)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_System_UInt32_
-  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
-  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
-  nameWithType: float4.SRgbFromLinearColor(UInt32)
-- uid: Fusee.Math.Core.float4.SRgbFromLinearColor*
-  name: SRgbFromLinearColor
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_
-  commentId: Overload:Fusee.Math.Core.float4.SRgbFromLinearColor
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor
-  nameWithType: float4.SRgbFromLinearColor
-- uid: Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
-  name: Step(float4, float4)
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Step_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
-  commentId: M:Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
-  fullName: Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
-  nameWithType: float4.Step(float4, float4)
-- uid: Fusee.Math.Core.float4.Step*
-  name: Step
-  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Step_
-  commentId: Overload:Fusee.Math.Core.float4.Step
-  isSpec: "True"
-  fullName: Fusee.Math.Core.float4.Step
-  nameWithType: float4.Step
 - uid: Fusee.Math.Core.float4.Subtract(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   name: Subtract(float4, float4)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Subtract_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
@@ -44895,19 +44587,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.M.SmoothStep
   nameWithType: M.SmoothStep
-- uid: Fusee.Math.Core.M.Step(System.Single,System.Single)
-  name: Step(Single, Single)
-  href: api/Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_System_Single_System_Single_
-  commentId: M:Fusee.Math.Core.M.Step(System.Single,System.Single)
-  fullName: Fusee.Math.Core.M.Step(System.Single, System.Single)
-  nameWithType: M.Step(Single, Single)
-- uid: Fusee.Math.Core.M.Step*
-  name: Step
-  href: api/Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_
-  commentId: Overload:Fusee.Math.Core.M.Step
-  isSpec: "True"
-  fullName: Fusee.Math.Core.M.Step
-  nameWithType: M.Step
 - uid: Fusee.Math.Core.M.Swap(System.Double@,System.Double@)
   name: Swap(ref Double, ref Double)
   href: api/Fusee.Math.Core.M.html#Fusee_Math_Core_M_Swap_System_Double__System_Double__
@@ -46643,18 +46322,6 @@ references:
   commentId: F:Fusee.Serialization.FusHeader.Generator
   fullName: Fusee.Serialization.FusHeader.Generator
   nameWithType: FusHeader.Generator
-- uid: Fusee.Serialization.FusHeader.LoadFilename
-  name: LoadFilename
-  href: api/Fusee.Serialization.FusHeader.html#Fusee_Serialization_FusHeader_LoadFilename
-  commentId: F:Fusee.Serialization.FusHeader.LoadFilename
-  fullName: Fusee.Serialization.FusHeader.LoadFilename
-  nameWithType: FusHeader.LoadFilename
-- uid: Fusee.Serialization.FusHeader.LoadPath
-  name: LoadPath
-  href: api/Fusee.Serialization.FusHeader.html#Fusee_Serialization_FusHeader_LoadPath
-  commentId: F:Fusee.Serialization.FusHeader.LoadPath
-  fullName: Fusee.Serialization.FusHeader.LoadPath
-  nameWithType: FusHeader.LoadPath
 - uid: Fusee.Serialization.V1
   name: Fusee.Serialization.V1
   href: api/Fusee.Serialization.V1.html

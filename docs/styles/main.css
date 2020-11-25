@@ -5,6 +5,7 @@
 
 .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{color: white ; background-color:#88B04B}
 
+.navbar-nav>li>a{height: 54px}
 .toc .nav>li.active>a:link,.toc .nav>li.active>a:visited { color: rgb(136, 176, 75)}
 .toc .nav > li.active > a {color: rgb(136, 176, 75)}
 .affix > ul > li.active > a, .affix > ul > li.active > a:before {color: rgb(136, 176, 75);font-weight: bold}
@@ -17,7 +18,8 @@
 }
 
 html {
-	font-family: Lato-Black;	
+	font-family: Lato-Black;
+	display: inline-grid;
 }
 header .navbar {
   border-width: 0 0 0px;

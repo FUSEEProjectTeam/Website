@@ -107,24 +107,21 @@
   <h6><strong>Assembly</strong>: Fusee.Serialization.dll</h6>
   <h5 id="Fusee_Serialization_V1_BRDFChannel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BRDFChannel : IEquatable&lt;BRDFChannel&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoContract]
+public class BRDFChannel : IEquatable&lt;BRDFChannel&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_IOR.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.IOR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L17">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_BRDFChannel_IOR" data-uid="Fusee.Serialization.V1.BRDFChannel.IOR">IOR</h4>
   <div class="markdown level1 summary"><p>The index of refraction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float IOR</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(1)]
+public float IOR</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,13 +138,8 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_Metallic.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.Metallic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L25">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_BRDFChannel_Metallic" data-uid="Fusee.Serialization.V1.BRDFChannel.Metallic">Metallic</h4>
   <div class="markdown level1 summary"><p>Blends between a non-metallic and metallic material model. Must be a value between 0 and 1.
 0: The material is dielectric: has a diffuse and a non-tinted specular component.
@@ -156,7 +148,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Metallic</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(2)]
+public float Metallic</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,20 +166,16 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_Roughness.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.Roughness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L37">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_BRDFChannel_Roughness" data-uid="Fusee.Serialization.V1.BRDFChannel.Roughness">Roughness</h4>
   <div class="markdown level1 summary"><p>Specifies microfacet roughness of the surface for diffuse and specular reflection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Roughness</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(4)]
+public float Roughness</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -203,20 +192,16 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_Specular.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.Specular%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L31">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_BRDFChannel_Specular" data-uid="Fusee.Serialization.V1.BRDFChannel.Specular">Specular</h4>
   <div class="markdown level1 summary"><p>Amount of dielectric specular reflection. Must be a value between 0 and 1.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Specular</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(3)]
+public float Specular</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,20 +218,16 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_Subsurface.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.Subsurface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L43">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_BRDFChannel_Subsurface" data-uid="Fusee.Serialization.V1.BRDFChannel.Subsurface">Subsurface</h4>
   <div class="markdown level1 summary"><p>Mix between diffuse and subsurface scattering.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Subsurface</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(5)]
+public float Subsurface</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,20 +244,16 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_SubsurfaceColor.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.SubsurfaceColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L49">View Source</a>
-  </span>
+  
+  
   <h4 id="Fusee_Serialization_V1_BRDFChannel_SubsurfaceColor" data-uid="Fusee.Serialization.V1.BRDFChannel.SubsurfaceColor">SubsurfaceColor</h4>
   <div class="markdown level1 summary"><p>Mix between diffuse and subsurface scattering.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 SubsurfaceColor</code></pre>
+    <pre><code class="lang-csharp hljs">[ProtoMember(6)]
+public float3 SubsurfaceColor</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -295,13 +272,8 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_Equals_Fusee_Serialization_V1_BRDFChannel_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.Equals(Fusee.Serialization.V1.BRDFChannel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L96">View Source</a>
-  </span>
+  
+  
   <a id="Fusee_Serialization_V1_BRDFChannel_Equals_" data-uid="Fusee.Serialization.V1.BRDFChannel.Equals*"></a>
   <h4 id="Fusee_Serialization_V1_BRDFChannel_Equals_Fusee_Serialization_V1_BRDFChannel_" data-uid="Fusee.Serialization.V1.BRDFChannel.Equals(Fusee.Serialization.V1.BRDFChannel)">Equals(BRDFChannel)</h4>
   <div class="markdown level1 summary"><p>Indicates whether the MatChannelContainer is equal to another one.</p>
@@ -345,13 +317,8 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L116">View Source</a>
-  </span>
+  
+  
   <a id="Fusee_Serialization_V1_BRDFChannel_Equals_" data-uid="Fusee.Serialization.V1.BRDFChannel.Equals*"></a>
   <h4 id="Fusee_Serialization_V1_BRDFChannel_Equals_System_Object_" data-uid="Fusee.Serialization.V1.BRDFChannel.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
@@ -397,13 +364,8 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.Equals(System.Object)</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_GetHashCode.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L127">View Source</a>
-  </span>
+  
+  
   <a id="Fusee_Serialization_V1_BRDFChannel_GetHashCode_" data-uid="Fusee.Serialization.V1.BRDFChannel.GetHashCode*"></a>
   <h4 id="Fusee_Serialization_V1_BRDFChannel_GetHashCode" data-uid="Fusee.Serialization.V1.BRDFChannel.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns the hash for this instance.</p>
@@ -432,13 +394,8 @@
   <div><span class="xref">System.Object.GetHashCode()</span></div>
   <h3 id="operators">Operators
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_op_Equality_Fusee_Serialization_V1_BRDFChannel_Fusee_Serialization_V1_BRDFChannel_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.op_Equality(Fusee.Serialization.V1.BRDFChannel%2CFusee.Serialization.V1.BRDFChannel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L61">View Source</a>
-  </span>
+  
+  
   <a id="Fusee_Serialization_V1_BRDFChannel_op_Equality_" data-uid="Fusee.Serialization.V1.BRDFChannel.op_Equality*"></a>
   <h4 id="Fusee_Serialization_V1_BRDFChannel_op_Equality_Fusee_Serialization_V1_BRDFChannel_Fusee_Serialization_V1_BRDFChannel_" data-uid="Fusee.Serialization.V1.BRDFChannel.op_Equality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)">Equality(BRDFChannel, BRDFChannel)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for equality.</p>
@@ -488,13 +445,8 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel_op_Inequality_Fusee_Serialization_V1_BRDFChannel_Fusee_Serialization_V1_BRDFChannel_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel.op_Inequality(Fusee.Serialization.V1.BRDFChannel%2CFusee.Serialization.V1.BRDFChannel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L84">View Source</a>
-  </span>
+  
+  
   <a id="Fusee_Serialization_V1_BRDFChannel_op_Inequality_" data-uid="Fusee.Serialization.V1.BRDFChannel.op_Inequality*"></a>
   <h4 id="Fusee_Serialization_V1_BRDFChannel_op_Inequality_Fusee_Serialization_V1_BRDFChannel_Fusee_Serialization_V1_BRDFChannel_" data-uid="Fusee.Serialization.V1.BRDFChannel.op_Inequality(Fusee.Serialization.V1.BRDFChannel,Fusee.Serialization.V1.BRDFChannel)">Inequality(BRDFChannel, BRDFChannel)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
@@ -555,12 +507,6 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/master/apiSpec/new?filename=Fusee_Serialization_V1_BRDFChannel.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.BRDFChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Serialization/V1/MatChannels.cs/#L10" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
