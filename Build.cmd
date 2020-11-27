@@ -15,7 +15,9 @@ echo fusee3d.org > %OUTPUTPATH%\CNAME
 
 :SkipCNAME
 
-rem %GHWSTDFX% docfx_project\wiki\_Sidebar.md docfx_project\wiki
+git submodule update --recursive --remote
+
+%GHWSTDFX% docfx_project\wiki\_Sidebar.md docfx_project\wiki
 %DOCFX% docfx_project\docfx.json
 
 endlocal
