@@ -40,14 +40,15 @@ jobs:
       - name: Create wiki toc.yml from _Sidebar.md
         run: bin\GitHubWikiSidbarToDocFX\GitHubWikiSidbarToDocFX.exe docfx_project\wiki\_Sidebar.md docfx_project\wiki
 
+      - name: Build website
+        run: bin\DocFX\docfx.exe docfx_project\docfx.json
+
       - name: Upload toc.yml artifact
+        if: ${{ failure() }}
         uses: actions/upload-artifact@v2
         with:
           name: toc.yml
           path: docfx_project\wiki\toc.yml
-
-      - name: Build website
-        run: bin\DocFX\docfx.exe docfx_project\docfx.json
 
       - name: Commiting changes
         uses: stefanzweifel/git-auto-commit-action@v4
