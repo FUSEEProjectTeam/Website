@@ -84,6 +84,8 @@ This base material does not contain any information about specular reflection ca
     <div class="level1"><a class="xref" href="Fusee.Serialization.V1.FusComponent.html">FusComponent</a></div>
     <div class="level2"><span class="xref">FusMaterialBase</span></div>
       <div class="level3"><a class="xref" href="Fusee.Serialization.V1.FusMaterialBRDF.html">FusMaterialBRDF</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html">FusMaterialDiffuseBRDF</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Serialization.V1.FusMaterialGlossyBRDF.html">FusMaterialGlossyBRDF</a></div>
       <div class="level3"><a class="xref" href="Fusee.Serialization.V1.FusMaterialStandard.html">FusMaterialStandard</a></div>
   </div>
   <div classs="implements">
@@ -116,23 +118,24 @@ This base material does not contain any information about specular reflection ca
   <h6><strong>Assembly</strong>: Fusee.Serialization.dll</h6>
   <h5 id="Fusee_Serialization_V1_FusMaterialBase_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoContract]
-[ProtoInclude(200, typeof(FusMaterialStandard))]
-[ProtoInclude(201, typeof(FusMaterialBRDF))]
-public class FusMaterialBase : FusComponent, IComponent, IEquatable&lt;FusMaterialBase&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class FusMaterialBase : FusComponent, IComponent, IEquatable&lt;FusMaterialBase&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_Albedo.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.Albedo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L31">View Source</a>
+  </span>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_Albedo" data-uid="Fusee.Serialization.V1.FusMaterialBase.Albedo">Albedo</h4>
   <div class="markdown level1 summary"><p>The albedo channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoMember(1)]
-public AlbedoChannel Albedo</code></pre>
+    <pre><code class="lang-csharp hljs">public AlbedoChannel Albedo</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,16 +152,20 @@ public AlbedoChannel Albedo</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_Emissive.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.Emissive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L47">View Source</a>
+  </span>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_Emissive" data-uid="Fusee.Serialization.V1.FusMaterialBase.Emissive">Emissive</h4>
   <div class="markdown level1 summary"><p>The emissive channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoMember(3)]
-public AlbedoChannel Emissive</code></pre>
+    <pre><code class="lang-csharp hljs">public AlbedoChannel Emissive</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,16 +182,20 @@ public AlbedoChannel Emissive</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_NormalMap.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.NormalMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L63">View Source</a>
+  </span>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_NormalMap" data-uid="Fusee.Serialization.V1.FusMaterialBase.NormalMap">NormalMap</h4>
   <div class="markdown level1 summary"><p>The normal map channel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ProtoMember(4)]
-public NormapMapChannel NormalMap</code></pre>
+    <pre><code class="lang-csharp hljs">public NormapMapChannel NormalMap</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -203,8 +214,13 @@ public NormapMapChannel NormalMap</code></pre>
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_HasAlbedoChannel.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.HasAlbedoChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L25">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_HasAlbedoChannel_" data-uid="Fusee.Serialization.V1.FusMaterialBase.HasAlbedoChannel*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_HasAlbedoChannel" data-uid="Fusee.Serialization.V1.FusMaterialBase.HasAlbedoChannel">HasAlbedoChannel</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether this instance has an albedo channel.</p>
@@ -230,8 +246,13 @@ public NormapMapChannel NormalMap</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_HasEmissiveChannel.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.HasEmissiveChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L41">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_HasEmissiveChannel_" data-uid="Fusee.Serialization.V1.FusMaterialBase.HasEmissiveChannel*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_HasEmissiveChannel" data-uid="Fusee.Serialization.V1.FusMaterialBase.HasEmissiveChannel">HasEmissiveChannel</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether this instance has an emissive channel.</p>
@@ -257,8 +278,13 @@ public NormapMapChannel NormalMap</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_HasNormalMapChannel.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.HasNormalMapChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L57">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_HasNormalMapChannel_" data-uid="Fusee.Serialization.V1.FusMaterialBase.HasNormalMapChannel*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_HasNormalMapChannel" data-uid="Fusee.Serialization.V1.FusMaterialBase.HasNormalMapChannel">HasNormalMapChannel</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether this instance has a normal map channel.</p>
@@ -286,8 +312,13 @@ public NormapMapChannel NormalMap</code></pre>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_Equals_Fusee_Serialization_V1_FusMaterialBase_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.Equals(Fusee.Serialization.V1.FusMaterialBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L110">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_Equals_" data-uid="Fusee.Serialization.V1.FusMaterialBase.Equals*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_Equals_Fusee_Serialization_V1_FusMaterialBase_" data-uid="Fusee.Serialization.V1.FusMaterialBase.Equals(Fusee.Serialization.V1.FusMaterialBase)">Equals(FusMaterialBase)</h4>
   <div class="markdown level1 summary"><p>Indicates whether the NormapMapChannel is equal to another one.</p>
@@ -331,8 +362,13 @@ public NormapMapChannel NormalMap</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L124">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_Equals_" data-uid="Fusee.Serialization.V1.FusMaterialBase.Equals*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_Equals_System_Object_" data-uid="Fusee.Serialization.V1.FusMaterialBase.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
@@ -378,8 +414,13 @@ public NormapMapChannel NormalMap</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.Equals(System.Object)</span></div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_GetHashCode.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L136">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_GetHashCode_" data-uid="Fusee.Serialization.V1.FusMaterialBase.GetHashCode*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_GetHashCode" data-uid="Fusee.Serialization.V1.FusMaterialBase.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns the hash for this instance.</p>
@@ -408,8 +449,13 @@ public NormapMapChannel NormalMap</code></pre>
   <div><span class="xref">System.Object.GetHashCode()</span></div>
   <h3 id="operators">Operators
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_op_Equality_Fusee_Serialization_V1_FusMaterialBase_Fusee_Serialization_V1_FusMaterialBase_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.op_Equality(Fusee.Serialization.V1.FusMaterialBase%2CFusee.Serialization.V1.FusMaterialBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L76">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_op_Equality_" data-uid="Fusee.Serialization.V1.FusMaterialBase.op_Equality*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_op_Equality_Fusee_Serialization_V1_FusMaterialBase_Fusee_Serialization_V1_FusMaterialBase_" data-uid="Fusee.Serialization.V1.FusMaterialBase.op_Equality(Fusee.Serialization.V1.FusMaterialBase,Fusee.Serialization.V1.FusMaterialBase)">Equality(FusMaterialBase, FusMaterialBase)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for equality.</p>
@@ -459,8 +505,13 @@ public NormapMapChannel NormalMap</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase_op_Inequality_Fusee_Serialization_V1_FusMaterialBase_Fusee_Serialization_V1_FusMaterialBase_.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase.op_Inequality(Fusee.Serialization.V1.FusMaterialBase%2CFusee.Serialization.V1.FusMaterialBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L98">View Source</a>
+  </span>
   <a id="Fusee_Serialization_V1_FusMaterialBase_op_Inequality_" data-uid="Fusee.Serialization.V1.FusMaterialBase.op_Inequality*"></a>
   <h4 id="Fusee_Serialization_V1_FusMaterialBase_op_Inequality_Fusee_Serialization_V1_FusMaterialBase_Fusee_Serialization_V1_FusMaterialBase_" data-uid="Fusee.Serialization.V1.FusMaterialBase.op_Inequality(Fusee.Serialization.V1.FusMaterialBase,Fusee.Serialization.V1.FusMaterialBase)">Inequality(FusMaterialBase, FusMaterialBase)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
@@ -524,6 +575,12 @@ public NormapMapChannel NormalMap</code></pre>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/new/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/apiSpec/new?filename=Fusee_Serialization_V1_FusMaterialBase.md&amp;value=---%0Auid%3A%20Fusee.Serialization.V1.FusMaterialBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/3a7619575fd39bb6f9e19c98cfdb83bca7a04c19/src/Serialization/V1/FusMaterialBase.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

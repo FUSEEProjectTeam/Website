@@ -1632,12 +1632,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Base.Common.ColorUint.ToCss
   nameWithType: ColorUint.ToCss
-- uid: Fusee.Base.Common.ColorUint.Tofloat3
-  name: Tofloat3()
-  href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat3
-  commentId: M:Fusee.Base.Common.ColorUint.Tofloat3
-  fullName: Fusee.Base.Common.ColorUint.Tofloat3()
-  nameWithType: ColorUint.Tofloat3()
 - uid: Fusee.Base.Common.ColorUint.Tofloat3(Fusee.Base.Common.ColorUint)
   name: Tofloat3(ColorUint)
   href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat3_Fusee_Base_Common_ColorUint_
@@ -1651,12 +1645,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Base.Common.ColorUint.Tofloat3
   nameWithType: ColorUint.Tofloat3
-- uid: Fusee.Base.Common.ColorUint.Tofloat4
-  name: Tofloat4()
-  href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat4
-  commentId: M:Fusee.Base.Common.ColorUint.Tofloat4
-  fullName: Fusee.Base.Common.ColorUint.Tofloat4()
-  nameWithType: ColorUint.Tofloat4()
 - uid: Fusee.Base.Common.ColorUint.Tofloat4(Fusee.Base.Common.ColorUint)
   name: Tofloat4(ColorUint)
   href: api/Fusee.Base.Common.ColorUint.html#Fusee_Base_Common_ColorUint_Tofloat4_Fusee_Base_Common_ColorUint_
@@ -3376,6 +3364,12 @@ references:
   commentId: F:Fusee.Base.Core.Diagnostics.SeverityLevel.None
   fullName: Fusee.Base.Core.Diagnostics.SeverityLevel.None
   nameWithType: Diagnostics.SeverityLevel.None
+- uid: Fusee.Base.Core.Diagnostics.SeverityLevel.Verbose
+  name: Verbose
+  href: api/Fusee.Base.Core.Diagnostics.SeverityLevel.html#Fusee_Base_Core_Diagnostics_SeverityLevel_Verbose
+  commentId: F:Fusee.Base.Core.Diagnostics.SeverityLevel.Verbose
+  fullName: Fusee.Base.Core.Diagnostics.SeverityLevel.Verbose
+  nameWithType: Diagnostics.SeverityLevel.Verbose
 - uid: Fusee.Base.Core.Diagnostics.SeverityLevel.Warn
   name: Warn
   href: api/Fusee.Base.Core.Diagnostics.SeverityLevel.html#Fusee_Base_Core_Diagnostics_SeverityLevel_Warn
@@ -3395,6 +3389,22 @@ references:
   isSpec: "True"
   fullName: Fusee.Base.Core.Diagnostics.Timer
   nameWithType: Diagnostics.Timer
+- uid: Fusee.Base.Core.Diagnostics.Verbose(System.Object,System.Exception,System.Object[],System.String,System.Int32,System.String)
+  name: Verbose(Object, Exception, Object[], String, Int32, String)
+  href: api/Fusee.Base.Core.Diagnostics.html#Fusee_Base_Core_Diagnostics_Verbose_System_Object_System_Exception_System_Object___System_String_System_Int32_System_String_
+  commentId: M:Fusee.Base.Core.Diagnostics.Verbose(System.Object,System.Exception,System.Object[],System.String,System.Int32,System.String)
+  name.vb: Verbose(Object, Exception, Object(), String, Int32, String)
+  fullName: Fusee.Base.Core.Diagnostics.Verbose(System.Object, System.Exception, System.Object[], System.String, System.Int32, System.String)
+  fullName.vb: Fusee.Base.Core.Diagnostics.Verbose(System.Object, System.Exception, System.Object(), System.String, System.Int32, System.String)
+  nameWithType: Diagnostics.Verbose(Object, Exception, Object[], String, Int32, String)
+  nameWithType.vb: Diagnostics.Verbose(Object, Exception, Object(), String, Int32, String)
+- uid: Fusee.Base.Core.Diagnostics.Verbose*
+  name: Verbose
+  href: api/Fusee.Base.Core.Diagnostics.html#Fusee_Base_Core_Diagnostics_Verbose_
+  commentId: Overload:Fusee.Base.Core.Diagnostics.Verbose
+  isSpec: "True"
+  fullName: Fusee.Base.Core.Diagnostics.Verbose
+  nameWithType: Diagnostics.Verbose
 - uid: Fusee.Base.Core.Diagnostics.Warn(System.Object,System.Exception,System.Object[],System.String,System.Int32,System.String)
   name: Warn(Object, Exception, Object[], String, Int32, String)
   href: api/Fusee.Base.Core.Diagnostics.html#Fusee_Base_Core_Diagnostics_Warn_System_Object_System_Exception_System_Object___System_String_System_Int32_System_String_
@@ -3712,11 +3722,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.ApkAssetProvider
   fullName: Fusee.Base.Imp.Android.ApkAssetProvider
   nameWithType: ApkAssetProvider
-- uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)
+- uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)
   name: ApkAssetProvider(Context)
-  href: api/Fusee.Base.Imp.Android.ApkAssetProvider.html#Fusee_Base_Imp_Android_ApkAssetProvider__ctor_Context_
-  commentId: M:Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Context)
-  fullName: Fusee.Base.Imp.Android.ApkAssetProvider.ApkAssetProvider(Context)
+  href: api/Fusee.Base.Imp.Android.ApkAssetProvider.html#Fusee_Base_Imp_Android_ApkAssetProvider__ctor_Android_Content_Context_
+  commentId: M:Fusee.Base.Imp.Android.ApkAssetProvider.#ctor(Android.Content.Context)
+  fullName: Fusee.Base.Imp.Android.ApkAssetProvider.ApkAssetProvider(Android.Content.Context)
   nameWithType: ApkAssetProvider.ApkAssetProvider(Context)
 - uid: Fusee.Base.Imp.Android.ApkAssetProvider.#ctor*
   name: ApkAssetProvider
@@ -3783,11 +3793,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.FileDecoder
   fullName: Fusee.Base.Imp.Android.FileDecoder
   nameWithType: FileDecoder
-- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage(Stream)
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
   name: LoadImage(Stream)
-  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImage_Stream_
-  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImage(Stream)
-  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage(Stream)
+  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImage_System_IO_Stream_
+  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage(System.IO.Stream)
   nameWithType: FileDecoder.LoadImage(Stream)
 - uid: Fusee.Base.Imp.Android.FileDecoder.LoadImage*
   name: LoadImage
@@ -3796,11 +3806,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImage
   nameWithType: FileDecoder.LoadImage
-- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(Stream)
+- uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
   name: LoadImageAsync(Stream)
-  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImageAsync_Stream_
-  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(Stream)
-  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(Stream)
+  href: api/Fusee.Base.Imp.Android.FileDecoder.html#Fusee_Base_Imp_Android_FileDecoder_LoadImageAsync_System_IO_Stream_
+  commentId: M:Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
+  fullName: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync(System.IO.Stream)
   nameWithType: FileDecoder.LoadImageAsync(Stream)
 - uid: Fusee.Base.Imp.Android.FileDecoder.LoadImageAsync*
   name: LoadImageAsync
@@ -3815,11 +3825,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.FontImp
   fullName: Fusee.Base.Imp.Android.FontImp
   nameWithType: FontImp
-- uid: Fusee.Base.Imp.Android.FontImp.#ctor(Stream)
+- uid: Fusee.Base.Imp.Android.FontImp.#ctor(System.IO.Stream)
   name: FontImp(Stream)
-  href: api/Fusee.Base.Imp.Android.FontImp.html#Fusee_Base_Imp_Android_FontImp__ctor_Stream_
-  commentId: M:Fusee.Base.Imp.Android.FontImp.#ctor(Stream)
-  fullName: Fusee.Base.Imp.Android.FontImp.FontImp(Stream)
+  href: api/Fusee.Base.Imp.Android.FontImp.html#Fusee_Base_Imp_Android_FontImp__ctor_System_IO_Stream_
+  commentId: M:Fusee.Base.Imp.Android.FontImp.#ctor(System.IO.Stream)
+  fullName: Fusee.Base.Imp.Android.FontImp.FontImp(System.IO.Stream)
   nameWithType: FontImp.FontImp(Stream)
 - uid: Fusee.Base.Imp.Android.FontImp.#ctor*
   name: FontImp
@@ -3941,11 +3951,11 @@ references:
   commentId: T:Fusee.Base.Imp.Android.IOImp
   fullName: Fusee.Base.Imp.Android.IOImp
   nameWithType: IOImp
-- uid: Fusee.Base.Imp.Android.IOImp.#ctor(Context)
+- uid: Fusee.Base.Imp.Android.IOImp.#ctor(Android.Content.Context)
   name: IOImp(Context)
-  href: api/Fusee.Base.Imp.Android.IOImp.html#Fusee_Base_Imp_Android_IOImp__ctor_Context_
-  commentId: M:Fusee.Base.Imp.Android.IOImp.#ctor(Context)
-  fullName: Fusee.Base.Imp.Android.IOImp.IOImp(Context)
+  href: api/Fusee.Base.Imp.Android.IOImp.html#Fusee_Base_Imp_Android_IOImp__ctor_Android_Content_Context_
+  commentId: M:Fusee.Base.Imp.Android.IOImp.#ctor(Android.Content.Context)
+  fullName: Fusee.Base.Imp.Android.IOImp.IOImp(Android.Content.Context)
   nameWithType: IOImp.IOImp(Context)
 - uid: Fusee.Base.Imp.Android.IOImp.#ctor*
   name: IOImp
@@ -14816,6 +14826,19 @@ references:
   commentId: T:Fusee.Engine.Core.Effects.BRDFInput
   fullName: Fusee.Engine.Core.Effects.BRDFInput
   nameWithType: BRDFInput
+- uid: Fusee.Engine.Core.Effects.BRDFInput.Emission
+  name: Emission
+  href: api/Fusee.Engine.Core.Effects.BRDFInput.html#Fusee_Engine_Core_Effects_BRDFInput_Emission
+  commentId: P:Fusee.Engine.Core.Effects.BRDFInput.Emission
+  fullName: Fusee.Engine.Core.Effects.BRDFInput.Emission
+  nameWithType: BRDFInput.Emission
+- uid: Fusee.Engine.Core.Effects.BRDFInput.Emission*
+  name: Emission
+  href: api/Fusee.Engine.Core.Effects.BRDFInput.html#Fusee_Engine_Core_Effects_BRDFInput_Emission_
+  commentId: Overload:Fusee.Engine.Core.Effects.BRDFInput.Emission
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.BRDFInput.Emission
+  nameWithType: BRDFInput.Emission
 - uid: Fusee.Engine.Core.Effects.BRDFInput.IOR
   name: IOR
   href: api/Fusee.Engine.Core.Effects.BRDFInput.html#Fusee_Engine_Core_Effects_BRDFInput_IOR
@@ -14842,19 +14865,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.Effects.BRDFInput.Metallic
   nameWithType: BRDFInput.Metallic
-- uid: Fusee.Engine.Core.Effects.BRDFInput.Roughness
-  name: Roughness
-  href: api/Fusee.Engine.Core.Effects.BRDFInput.html#Fusee_Engine_Core_Effects_BRDFInput_Roughness
-  commentId: P:Fusee.Engine.Core.Effects.BRDFInput.Roughness
-  fullName: Fusee.Engine.Core.Effects.BRDFInput.Roughness
-  nameWithType: BRDFInput.Roughness
-- uid: Fusee.Engine.Core.Effects.BRDFInput.Roughness*
-  name: Roughness
-  href: api/Fusee.Engine.Core.Effects.BRDFInput.html#Fusee_Engine_Core_Effects_BRDFInput_Roughness_
-  commentId: Overload:Fusee.Engine.Core.Effects.BRDFInput.Roughness
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.BRDFInput.Roughness
-  nameWithType: BRDFInput.Roughness
 - uid: Fusee.Engine.Core.Effects.BRDFInput.Specular
   name: Specular
   href: api/Fusee.Engine.Core.Effects.BRDFInput.html#Fusee_Engine_Core_Effects_BRDFInput_Specular
@@ -14913,19 +14923,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.Effects.ColorInput.Albedo
   nameWithType: ColorInput.Albedo
-- uid: Fusee.Engine.Core.Effects.ColorInput.Emission
-  name: Emission
-  href: api/Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_Emission
-  commentId: P:Fusee.Engine.Core.Effects.ColorInput.Emission
-  fullName: Fusee.Engine.Core.Effects.ColorInput.Emission
-  nameWithType: ColorInput.Emission
-- uid: Fusee.Engine.Core.Effects.ColorInput.Emission*
-  name: Emission
-  href: api/Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_Emission_
-  commentId: Overload:Fusee.Engine.Core.Effects.ColorInput.Emission
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.ColorInput.Emission
-  nameWithType: ColorInput.Emission
 - uid: Fusee.Engine.Core.Effects.ColorInput.NotifyPropertyChanged(System.Type,System.String,System.Object)
   name: NotifyPropertyChanged(Type, String, Object)
   href: api/Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_NotifyPropertyChanged_System_Type_System_String_System_Object_
@@ -14945,6 +14942,19 @@ references:
   commentId: E:Fusee.Engine.Core.Effects.ColorInput.PropertyChanged
   fullName: Fusee.Engine.Core.Effects.ColorInput.PropertyChanged
   nameWithType: ColorInput.PropertyChanged
+- uid: Fusee.Engine.Core.Effects.ColorInput.Roughness
+  name: Roughness
+  href: api/Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_Roughness
+  commentId: P:Fusee.Engine.Core.Effects.ColorInput.Roughness
+  fullName: Fusee.Engine.Core.Effects.ColorInput.Roughness
+  nameWithType: ColorInput.Roughness
+- uid: Fusee.Engine.Core.Effects.ColorInput.Roughness*
+  name: Roughness
+  href: api/Fusee.Engine.Core.Effects.ColorInput.html#Fusee_Engine_Core_Effects_ColorInput_Roughness_
+  commentId: Overload:Fusee.Engine.Core.Effects.ColorInput.Roughness
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.ColorInput.Roughness
+  nameWithType: ColorInput.Roughness
 - uid: Fusee.Engine.Core.Effects.DefaultSurfaceEffect
   name: DefaultSurfaceEffect
   href: api/Fusee.Engine.Core.Effects.DefaultSurfaceEffect.html
@@ -15542,6 +15552,12 @@ references:
   commentId: F:Fusee.Engine.Core.Effects.ShardCategory.Struct
   fullName: Fusee.Engine.Core.Effects.ShardCategory.Struct
   nameWithType: ShardCategory.Struct
+- uid: Fusee.Engine.Core.Effects.ShardCategory.SurfOut
+  name: SurfOut
+  href: api/Fusee.Engine.Core.Effects.ShardCategory.html#Fusee_Engine_Core_Effects_ShardCategory_SurfOut
+  commentId: F:Fusee.Engine.Core.Effects.ShardCategory.SurfOut
+  fullName: Fusee.Engine.Core.Effects.ShardCategory.SurfOut
+  nameWithType: ShardCategory.SurfOut
 - uid: Fusee.Engine.Core.Effects.ShardCategory.Uniform
   name: Uniform
   href: api/Fusee.Engine.Core.Effects.ShardCategory.html#Fusee_Engine_Core_Effects_ShardCategory_Uniform
@@ -15554,6 +15570,19 @@ references:
   commentId: T:Fusee.Engine.Core.Effects.SpecularInput
   fullName: Fusee.Engine.Core.Effects.SpecularInput
   nameWithType: SpecularInput
+- uid: Fusee.Engine.Core.Effects.SpecularInput.Emission
+  name: Emission
+  href: api/Fusee.Engine.Core.Effects.SpecularInput.html#Fusee_Engine_Core_Effects_SpecularInput_Emission
+  commentId: P:Fusee.Engine.Core.Effects.SpecularInput.Emission
+  fullName: Fusee.Engine.Core.Effects.SpecularInput.Emission
+  nameWithType: SpecularInput.Emission
+- uid: Fusee.Engine.Core.Effects.SpecularInput.Emission*
+  name: Emission
+  href: api/Fusee.Engine.Core.Effects.SpecularInput.html#Fusee_Engine_Core_Effects_SpecularInput_Emission_
+  commentId: Overload:Fusee.Engine.Core.Effects.SpecularInput.Emission
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.SpecularInput.Emission
+  nameWithType: SpecularInput.Emission
 - uid: Fusee.Engine.Core.Effects.SpecularInput.Shininess
   name: Shininess
   href: api/Fusee.Engine.Core.Effects.SpecularInput.html#Fusee_Engine_Core_Effects_SpecularInput_Shininess
@@ -15759,77 +15788,6 @@ references:
   commentId: F:Fusee.Engine.Core.Effects.SurfaceEffectEventArgs.Value
   fullName: Fusee.Engine.Core.Effects.SurfaceEffectEventArgs.Value
   nameWithType: SurfaceEffectEventArgs.Value
-- uid: Fusee.Engine.Core.Effects.TextureInput
-  name: TextureInput
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html
-  commentId: T:Fusee.Engine.Core.Effects.TextureInput
-  fullName: Fusee.Engine.Core.Effects.TextureInput
-  nameWithType: TextureInput
-- uid: Fusee.Engine.Core.Effects.TextureInput.AlbedoMix
-  name: AlbedoMix
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_AlbedoMix
-  commentId: P:Fusee.Engine.Core.Effects.TextureInput.AlbedoMix
-  fullName: Fusee.Engine.Core.Effects.TextureInput.AlbedoMix
-  nameWithType: TextureInput.AlbedoMix
-- uid: Fusee.Engine.Core.Effects.TextureInput.AlbedoMix*
-  name: AlbedoMix
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_AlbedoMix_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInput.AlbedoMix
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInput.AlbedoMix
-  nameWithType: TextureInput.AlbedoMix
-- uid: Fusee.Engine.Core.Effects.TextureInput.AlbedoTex
-  name: AlbedoTex
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_AlbedoTex
-  commentId: P:Fusee.Engine.Core.Effects.TextureInput.AlbedoTex
-  fullName: Fusee.Engine.Core.Effects.TextureInput.AlbedoTex
-  nameWithType: TextureInput.AlbedoTex
-- uid: Fusee.Engine.Core.Effects.TextureInput.AlbedoTex*
-  name: AlbedoTex
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_AlbedoTex_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInput.AlbedoTex
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInput.AlbedoTex
-  nameWithType: TextureInput.AlbedoTex
-- uid: Fusee.Engine.Core.Effects.TextureInput.NormalMappingStrength
-  name: NormalMappingStrength
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_NormalMappingStrength
-  commentId: P:Fusee.Engine.Core.Effects.TextureInput.NormalMappingStrength
-  fullName: Fusee.Engine.Core.Effects.TextureInput.NormalMappingStrength
-  nameWithType: TextureInput.NormalMappingStrength
-- uid: Fusee.Engine.Core.Effects.TextureInput.NormalMappingStrength*
-  name: NormalMappingStrength
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_NormalMappingStrength_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInput.NormalMappingStrength
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInput.NormalMappingStrength
-  nameWithType: TextureInput.NormalMappingStrength
-- uid: Fusee.Engine.Core.Effects.TextureInput.NormalTex
-  name: NormalTex
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_NormalTex
-  commentId: P:Fusee.Engine.Core.Effects.TextureInput.NormalTex
-  fullName: Fusee.Engine.Core.Effects.TextureInput.NormalTex
-  nameWithType: TextureInput.NormalTex
-- uid: Fusee.Engine.Core.Effects.TextureInput.NormalTex*
-  name: NormalTex
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_NormalTex_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInput.NormalTex
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInput.NormalTex
-  nameWithType: TextureInput.NormalTex
-- uid: Fusee.Engine.Core.Effects.TextureInput.TexTiles
-  name: TexTiles
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_TexTiles
-  commentId: P:Fusee.Engine.Core.Effects.TextureInput.TexTiles
-  fullName: Fusee.Engine.Core.Effects.TextureInput.TexTiles
-  nameWithType: TextureInput.TexTiles
-- uid: Fusee.Engine.Core.Effects.TextureInput.TexTiles*
-  name: TexTiles
-  href: api/Fusee.Engine.Core.Effects.TextureInput.html#Fusee_Engine_Core_Effects_TextureInput_TexTiles_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInput.TexTiles
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInput.TexTiles
-  nameWithType: TextureInput.TexTiles
 - uid: Fusee.Engine.Core.Effects.TextureInputBRDF
   name: TextureInputBRDF
   href: api/Fusee.Engine.Core.Effects.TextureInputBRDF.html
@@ -15901,51 +15859,154 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.Effects.TextureInputBRDF.TexTiles
   nameWithType: TextureInputBRDF.TexTiles
-- uid: Fusee.Engine.Core.Effects.TextureInputUnlit
-  name: TextureInputUnlit
-  href: api/Fusee.Engine.Core.Effects.TextureInputUnlit.html
-  commentId: T:Fusee.Engine.Core.Effects.TextureInputUnlit
-  fullName: Fusee.Engine.Core.Effects.TextureInputUnlit
-  nameWithType: TextureInputUnlit
-- uid: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix
+- uid: Fusee.Engine.Core.Effects.TextureInputColor
+  name: TextureInputColor
+  href: api/Fusee.Engine.Core.Effects.TextureInputColor.html
+  commentId: T:Fusee.Engine.Core.Effects.TextureInputColor
+  fullName: Fusee.Engine.Core.Effects.TextureInputColor
+  nameWithType: TextureInputColor
+- uid: Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength
+  name: NormalMappingStrength
+  href: api/Fusee.Engine.Core.Effects.TextureInputColor.html#Fusee_Engine_Core_Effects_TextureInputColor_NormalMappingStrength
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength
+  fullName: Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength
+  nameWithType: TextureInputColor.NormalMappingStrength
+- uid: Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength*
+  name: NormalMappingStrength
+  href: api/Fusee.Engine.Core.Effects.TextureInputColor.html#Fusee_Engine_Core_Effects_TextureInputColor_NormalMappingStrength_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.TextureInputColor.NormalMappingStrength
+  nameWithType: TextureInputColor.NormalMappingStrength
+- uid: Fusee.Engine.Core.Effects.TextureInputColor.NormalTex
+  name: NormalTex
+  href: api/Fusee.Engine.Core.Effects.TextureInputColor.html#Fusee_Engine_Core_Effects_TextureInputColor_NormalTex
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputColor.NormalTex
+  fullName: Fusee.Engine.Core.Effects.TextureInputColor.NormalTex
+  nameWithType: TextureInputColor.NormalTex
+- uid: Fusee.Engine.Core.Effects.TextureInputColor.NormalTex*
+  name: NormalTex
+  href: api/Fusee.Engine.Core.Effects.TextureInputColor.html#Fusee_Engine_Core_Effects_TextureInputColor_NormalTex_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputColor.NormalTex
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.TextureInputColor.NormalTex
+  nameWithType: TextureInputColor.NormalTex
+- uid: Fusee.Engine.Core.Effects.TextureInputColorUnlit
+  name: TextureInputColorUnlit
+  href: api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html
+  commentId: T:Fusee.Engine.Core.Effects.TextureInputColorUnlit
+  fullName: Fusee.Engine.Core.Effects.TextureInputColorUnlit
+  nameWithType: TextureInputColorUnlit
+- uid: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoMix
   name: AlbedoMix
-  href: api/Fusee.Engine.Core.Effects.TextureInputUnlit.html#Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoMix
-  commentId: P:Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix
-  fullName: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix
-  nameWithType: TextureInputUnlit.AlbedoMix
-- uid: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix*
+  href: api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_AlbedoMix
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoMix
+  fullName: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoMix
+  nameWithType: TextureInputColorUnlit.AlbedoMix
+- uid: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoMix*
   name: AlbedoMix
-  href: api/Fusee.Engine.Core.Effects.TextureInputUnlit.html#Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoMix_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix
+  href: api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_AlbedoMix_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoMix
   isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoMix
-  nameWithType: TextureInputUnlit.AlbedoMix
-- uid: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex
+  fullName: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoMix
+  nameWithType: TextureInputColorUnlit.AlbedoMix
+- uid: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoTex
   name: AlbedoTex
-  href: api/Fusee.Engine.Core.Effects.TextureInputUnlit.html#Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoTex
-  commentId: P:Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex
-  fullName: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex
-  nameWithType: TextureInputUnlit.AlbedoTex
-- uid: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex*
+  href: api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_AlbedoTex
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoTex
+  fullName: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoTex
+  nameWithType: TextureInputColorUnlit.AlbedoTex
+- uid: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoTex*
   name: AlbedoTex
-  href: api/Fusee.Engine.Core.Effects.TextureInputUnlit.html#Fusee_Engine_Core_Effects_TextureInputUnlit_AlbedoTex_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex
+  href: api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_AlbedoTex_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoTex
   isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInputUnlit.AlbedoTex
-  nameWithType: TextureInputUnlit.AlbedoTex
-- uid: Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles
+  fullName: Fusee.Engine.Core.Effects.TextureInputColorUnlit.AlbedoTex
+  nameWithType: TextureInputColorUnlit.AlbedoTex
+- uid: Fusee.Engine.Core.Effects.TextureInputColorUnlit.TexTiles
   name: TexTiles
-  href: api/Fusee.Engine.Core.Effects.TextureInputUnlit.html#Fusee_Engine_Core_Effects_TextureInputUnlit_TexTiles
-  commentId: P:Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles
-  fullName: Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles
-  nameWithType: TextureInputUnlit.TexTiles
-- uid: Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles*
+  href: api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_TexTiles
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputColorUnlit.TexTiles
+  fullName: Fusee.Engine.Core.Effects.TextureInputColorUnlit.TexTiles
+  nameWithType: TextureInputColorUnlit.TexTiles
+- uid: Fusee.Engine.Core.Effects.TextureInputColorUnlit.TexTiles*
   name: TexTiles
-  href: api/Fusee.Engine.Core.Effects.TextureInputUnlit.html#Fusee_Engine_Core_Effects_TextureInputUnlit_TexTiles_
-  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles
+  href: api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html#Fusee_Engine_Core_Effects_TextureInputColorUnlit_TexTiles_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputColorUnlit.TexTiles
   isSpec: "True"
-  fullName: Fusee.Engine.Core.Effects.TextureInputUnlit.TexTiles
-  nameWithType: TextureInputUnlit.TexTiles
+  fullName: Fusee.Engine.Core.Effects.TextureInputColorUnlit.TexTiles
+  nameWithType: TextureInputColorUnlit.TexTiles
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular
+  name: TextureInputSpecular
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html
+  commentId: T:Fusee.Engine.Core.Effects.TextureInputSpecular
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular
+  nameWithType: TextureInputSpecular
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoMix
+  name: AlbedoMix
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_AlbedoMix
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoMix
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoMix
+  nameWithType: TextureInputSpecular.AlbedoMix
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoMix*
+  name: AlbedoMix
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_AlbedoMix_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoMix
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoMix
+  nameWithType: TextureInputSpecular.AlbedoMix
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoTex
+  name: AlbedoTex
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_AlbedoTex
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoTex
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoTex
+  nameWithType: TextureInputSpecular.AlbedoTex
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoTex*
+  name: AlbedoTex
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_AlbedoTex_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoTex
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.AlbedoTex
+  nameWithType: TextureInputSpecular.AlbedoTex
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalMappingStrength
+  name: NormalMappingStrength
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_NormalMappingStrength
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputSpecular.NormalMappingStrength
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalMappingStrength
+  nameWithType: TextureInputSpecular.NormalMappingStrength
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalMappingStrength*
+  name: NormalMappingStrength
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_NormalMappingStrength_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputSpecular.NormalMappingStrength
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalMappingStrength
+  nameWithType: TextureInputSpecular.NormalMappingStrength
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalTex
+  name: NormalTex
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_NormalTex
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputSpecular.NormalTex
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalTex
+  nameWithType: TextureInputSpecular.NormalTex
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalTex*
+  name: NormalTex
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_NormalTex_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputSpecular.NormalTex
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.NormalTex
+  nameWithType: TextureInputSpecular.NormalTex
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.TexTiles
+  name: TexTiles
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_TexTiles
+  commentId: P:Fusee.Engine.Core.Effects.TextureInputSpecular.TexTiles
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.TexTiles
+  nameWithType: TextureInputSpecular.TexTiles
+- uid: Fusee.Engine.Core.Effects.TextureInputSpecular.TexTiles*
+  name: TexTiles
+  href: api/Fusee.Engine.Core.Effects.TextureInputSpecular.html#Fusee_Engine_Core_Effects_TextureInputSpecular_TexTiles_
+  commentId: Overload:Fusee.Engine.Core.Effects.TextureInputSpecular.TexTiles
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.Effects.TextureInputSpecular.TexTiles
+  nameWithType: TextureInputSpecular.TexTiles
 - uid: Fusee.Engine.Core.Effects.UniformChangedEnum
   name: UniformChangedEnum
   href: api/Fusee.Engine.Core.Effects.UniformChangedEnum.html
@@ -16132,12 +16193,12 @@ references:
   commentId: T:Fusee.Engine.Core.FusSceneConverter
   fullName: Fusee.Engine.Core.FusSceneConverter
   nameWithType: FusSceneConverter
-- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
-  name: ConvertFrom(FusFile)
-  href: api/Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_
-  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
-  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile)
-  nameWithType: FusSceneConverter.ConvertFrom(FusFile)
+- uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
+  name: ConvertFrom(FusFile, String)
+  href: api/Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_Fusee_Serialization_FusFile_System_String_
+  commentId: M:Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile,System.String)
+  fullName: Fusee.Engine.Core.FusSceneConverter.ConvertFrom(Fusee.Serialization.FusFile, System.String)
+  nameWithType: FusSceneConverter.ConvertFrom(FusFile, String)
 - uid: Fusee.Engine.Core.FusSceneConverter.ConvertFrom*
   name: ConvertFrom
   href: api/Fusee.Engine.Core.FusSceneConverter.html#Fusee_Engine_Core_FusSceneConverter_ConvertFrom_
@@ -18632,12 +18693,51 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.MakeEffect.FromBRDFTexture
   nameWithType: MakeEffect.FromBRDFTexture
-- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
-  name: FromDiffuseSpecular(float4, float4, Single, Single)
-  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecular_Fusee_Math_Core_float4_Fusee_Math_Core_float4_System_Single_System_Single_
-  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single)
-  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single)
-  nameWithType: MakeEffect.FromDiffuseSpecular(float4, float4, Single, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuse(Fusee.Math.Core.float4,System.Single)
+  name: FromDiffuse(float4, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuse_Fusee_Math_Core_float4_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuse(Fusee.Math.Core.float4,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuse(Fusee.Math.Core.float4, System.Single)
+  nameWithType: MakeEffect.FromDiffuse(float4, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuse*
+  name: FromDiffuse
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuse_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuse
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuse
+  nameWithType: MakeEffect.FromDiffuse
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single,System.Single)
+  name: FromDiffuseAlbedoTexture(float4, Texture, float2, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseAlbedoTexture_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_Fusee_Math_Core_float2_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseAlbedoTexture(Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, Fusee.Math.Core.float2, System.Single, System.Single)
+  nameWithType: MakeEffect.FromDiffuseAlbedoTexture(float4, Texture, float2, Single, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseAlbedoTexture*
+  name: FromDiffuseAlbedoTexture
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseAlbedoTexture_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuseAlbedoTexture
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseAlbedoTexture
+  nameWithType: MakeEffect.FromDiffuseAlbedoTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseNormalTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  name: FromDiffuseNormalTexture(float4, Texture, Single, float2, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseNormalTexture_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseNormalTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseNormalTexture(Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single)
+  nameWithType: MakeEffect.FromDiffuseNormalTexture(float4, Texture, Single, float2, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseNormalTexture*
+  name: FromDiffuseNormalTexture
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseNormalTexture_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuseNormalTexture
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseNormalTexture
+  nameWithType: MakeEffect.FromDiffuseNormalTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single)
+  name: FromDiffuseSpecular(float4, float4, Single, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecular_Fusee_Math_Core_float4_Fusee_Math_Core_float4_System_Single_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, System.Single, System.Single)
+  nameWithType: MakeEffect.FromDiffuseSpecular(float4, float4, Single, Single, Single)
 - uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular*
   name: FromDiffuseSpecular
   href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecular_
@@ -18645,12 +18745,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecular
   nameWithType: MakeEffect.FromDiffuseSpecular
-- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
-  name: FromDiffuseSpecularAlbedoTexture(float4, float4, Single, Texture, Single, float2, Single)
-  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularAlbedoTexture_Fusee_Math_Core_float4_Fusee_Math_Core_float4_System_Single_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_
-  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
-  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single)
-  nameWithType: MakeEffect.FromDiffuseSpecularAlbedoTexture(float4, float4, Single, Texture, Single, float2, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single,System.Single)
+  name: FromDiffuseSpecularAlbedoTexture(float4, float4, Texture, Single, float2, Single, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularAlbedoTexture_Fusee_Math_Core_float4_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single, System.Single, System.Single)
+  nameWithType: MakeEffect.FromDiffuseSpecularAlbedoTexture(float4, float4, Texture, Single, float2, Single, Single, Single)
 - uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture*
   name: FromDiffuseSpecularAlbedoTexture
   href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularAlbedoTexture_
@@ -18658,12 +18758,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularAlbedoTexture
   nameWithType: MakeEffect.FromDiffuseSpecularAlbedoTexture
-- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
-  name: FromDiffuseSpecularNormalTexture(float4, float4, Single, Texture, Single, float2, Single)
-  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularNormalTexture_Fusee_Math_Core_float4_Fusee_Math_Core_float4_System_Single_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_
-  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
-  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single)
-  nameWithType: MakeEffect.FromDiffuseSpecularNormalTexture(float4, float4, Single, Texture, Single, float2, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single,System.Single)
+  name: FromDiffuseSpecularNormalTexture(float4, float4, Texture, Single, float2, Single, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularNormalTexture_Fusee_Math_Core_float4_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single, System.Single, System.Single)
+  nameWithType: MakeEffect.FromDiffuseSpecularNormalTexture(float4, float4, Texture, Single, float2, Single, Single, Single)
 - uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture*
   name: FromDiffuseSpecularNormalTexture
   href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularNormalTexture_
@@ -18671,12 +18771,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularNormalTexture
   nameWithType: MakeEffect.FromDiffuseSpecularNormalTexture
-- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
-  name: FromDiffuseSpecularTexture(float4, float4, Single, Texture, Texture, Single, float2, Single, Single)
-  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularTexture_Fusee_Math_Core_float4_Fusee_Math_Core_float4_System_Single_Fusee_Engine_Core_Texture_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_System_Single_
-  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
-  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, System.Single, Fusee.Engine.Core.Texture, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single, System.Single)
-  nameWithType: MakeEffect.FromDiffuseSpecularTexture(float4, float4, Single, Texture, Texture, Single, float2, Single, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single,System.Single,System.Single)
+  name: FromDiffuseSpecularTexture(float4, float4, Texture, Texture, Single, float2, Single, Single, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularTexture_Fusee_Math_Core_float4_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single, System.Single, System.Single, System.Single)
+  nameWithType: MakeEffect.FromDiffuseSpecularTexture(float4, float4, Texture, Texture, Single, float2, Single, Single, Single, Single)
 - uid: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture*
   name: FromDiffuseSpecularTexture
   href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseSpecularTexture_
@@ -18684,6 +18784,71 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseSpecularTexture
   nameWithType: MakeEffect.FromDiffuseSpecularTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  name: FromDiffuseTexture(float4, Texture, Texture, Single, float2, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseTexture_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromDiffuseTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseTexture(Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single, System.Single)
+  nameWithType: MakeEffect.FromDiffuseTexture(float4, Texture, Texture, Single, float2, Single, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromDiffuseTexture*
+  name: FromDiffuseTexture
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromDiffuseTexture_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromDiffuseTexture
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromDiffuseTexture
+  nameWithType: MakeEffect.FromDiffuseTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossy(Fusee.Math.Core.float4,System.Single)
+  name: FromGlossy(float4, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossy_Fusee_Math_Core_float4_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromGlossy(Fusee.Math.Core.float4,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossy(Fusee.Math.Core.float4, System.Single)
+  nameWithType: MakeEffect.FromGlossy(float4, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossy*
+  name: FromGlossy
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossy_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromGlossy
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossy
+  nameWithType: MakeEffect.FromGlossy
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossyAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single,System.Single)
+  name: FromGlossyAlbedoTexture(float4, Texture, float2, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossyAlbedoTexture_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_Fusee_Math_Core_float2_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromGlossyAlbedoTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Math.Core.float2,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossyAlbedoTexture(Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, Fusee.Math.Core.float2, System.Single, System.Single)
+  nameWithType: MakeEffect.FromGlossyAlbedoTexture(float4, Texture, float2, Single, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossyAlbedoTexture*
+  name: FromGlossyAlbedoTexture
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossyAlbedoTexture_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromGlossyAlbedoTexture
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossyAlbedoTexture
+  nameWithType: MakeEffect.FromGlossyAlbedoTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossyNormalTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  name: FromGlossyNormalTexture(float4, Texture, Single, float2, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossyNormalTexture_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromGlossyNormalTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossyNormalTexture(Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single)
+  nameWithType: MakeEffect.FromGlossyNormalTexture(float4, Texture, Single, float2, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossyNormalTexture*
+  name: FromGlossyNormalTexture
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossyNormalTexture_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromGlossyNormalTexture
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossyNormalTexture
+  nameWithType: MakeEffect.FromGlossyNormalTexture
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossyTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  name: FromGlossyTexture(float4, Texture, Texture, Single, float2, Single, Single)
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossyTexture_Fusee_Math_Core_float4_Fusee_Engine_Core_Texture_Fusee_Engine_Core_Texture_System_Single_Fusee_Math_Core_float2_System_Single_System_Single_
+  commentId: M:Fusee.Engine.Core.MakeEffect.FromGlossyTexture(Fusee.Math.Core.float4,Fusee.Engine.Core.Texture,Fusee.Engine.Core.Texture,System.Single,Fusee.Math.Core.float2,System.Single,System.Single)
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossyTexture(Fusee.Math.Core.float4, Fusee.Engine.Core.Texture, Fusee.Engine.Core.Texture, System.Single, Fusee.Math.Core.float2, System.Single, System.Single)
+  nameWithType: MakeEffect.FromGlossyTexture(float4, Texture, Texture, Single, float2, Single, Single)
+- uid: Fusee.Engine.Core.MakeEffect.FromGlossyTexture*
+  name: FromGlossyTexture
+  href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromGlossyTexture_
+  commentId: Overload:Fusee.Engine.Core.MakeEffect.FromGlossyTexture
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.MakeEffect.FromGlossyTexture
+  nameWithType: MakeEffect.FromGlossyTexture
 - uid: Fusee.Engine.Core.MakeEffect.FromUnlit(Fusee.Math.Core.float4)
   name: FromUnlit(float4)
   href: api/Fusee.Engine.Core.MakeEffect.html#Fusee_Engine_Core_MakeEffect_FromUnlit_Fusee_Math_Core_float4_
@@ -25484,18 +25649,18 @@ references:
   commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_Color
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_Color
   nameWithType: FragShards.SurfOutBody_Color
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_DiffSpecular
+  name: SurfOutBody_DiffSpecular
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.FragShards.html#Fusee_Engine_Core_ShaderShards_Fragment_FragShards_SurfOutBody_DiffSpecular
+  commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_DiffSpecular
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_DiffSpecular
+  nameWithType: FragShards.SurfOutBody_DiffSpecular
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_GBuffer
   name: SurfOutBody_GBuffer
   href: api/Fusee.Engine.Core.ShaderShards.Fragment.FragShards.html#Fusee_Engine_Core_ShaderShards_Fragment_FragShards_SurfOutBody_GBuffer
   commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_GBuffer
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_GBuffer
   nameWithType: FragShards.SurfOutBody_GBuffer
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_SpecularStd
-  name: SurfOutBody_SpecularStd
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.FragShards.html#Fusee_Engine_Core_ShaderShards_Fragment_FragShards_SurfOutBody_SpecularStd
-  commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_SpecularStd
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_SpecularStd
-  nameWithType: FragShards.SurfOutBody_SpecularStd
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.FragShards.SurfOutBody_Textures(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)
   name: SurfOutBody_Textures(LightingSetupFlags)
   href: api/Fusee.Engine.Core.ShaderShards.Fragment.FragShards.html#Fusee_Engine_Core_ShaderShards_Fragment_FragShards_SurfOutBody_Textures_Fusee_Engine_Core_ShaderShards_LightingSetupFlags_
@@ -25580,19 +25745,6 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.AttenuationPointComponent
   nameWithType: Lighting.AttenuationPointComponent
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
-  name: BRDFDiffuseComponent()
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_BRDFDiffuseComponent
-  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent()
-  nameWithType: Lighting.BRDFDiffuseComponent()
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent*
-  name: BRDFDiffuseComponent
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_BRDFDiffuseComponent_
-  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
-  isSpec: "True"
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFDiffuseComponent
-  nameWithType: Lighting.BRDFDiffuseComponent
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
   name: BRDFSpecularComponent()
   href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_BRDFSpecularComponent
@@ -25606,19 +25758,84 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.BRDFSpecularComponent
   nameWithType: Lighting.BRDFSpecularComponent
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
-  name: DiffuseComponent()
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DiffuseComponent
-  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent()
-  nameWithType: Lighting.DiffuseComponent()
-- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent*
-  name: DiffuseComponent
-  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DiffuseComponent_
-  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
+  name: ColorManagementMethods()
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_ColorManagementMethods
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods()
+  nameWithType: Lighting.ColorManagementMethods()
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods*
+  name: ColorManagementMethods
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_ColorManagementMethods_
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
   isSpec: "True"
-  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DiffuseComponent
-  nameWithType: Lighting.DiffuseComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ColorManagementMethods
+  nameWithType: Lighting.ColorManagementMethods
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+  name: DecodeSRGB()
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DecodeSRGB
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB()
+  nameWithType: Lighting.DecodeSRGB()
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB*
+  name: DecodeSRGB
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DecodeSRGB_
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DecodeSRGB
+  nameWithType: Lighting.DecodeSRGB
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DisneyDiffuseComponent
+  name: DisneyDiffuseComponent()
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DisneyDiffuseComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DisneyDiffuseComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DisneyDiffuseComponent()
+  nameWithType: Lighting.DisneyDiffuseComponent()
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DisneyDiffuseComponent*
+  name: DisneyDiffuseComponent
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_DisneyDiffuseComponent_
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DisneyDiffuseComponent
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.DisneyDiffuseComponent
+  nameWithType: Lighting.DisneyDiffuseComponent
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  name: EncodeSRGB()
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_EncodeSRGB
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB()
+  nameWithType: Lighting.EncodeSRGB()
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB*
+  name: EncodeSRGB
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_EncodeSRGB_
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.EncodeSRGB
+  nameWithType: Lighting.EncodeSRGB
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
+  name: GammaCorrection()
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_GammaCorrection
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection()
+  nameWithType: Lighting.GammaCorrection()
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection*
+  name: GammaCorrection
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_GammaCorrection_
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.GammaCorrection
+  nameWithType: Lighting.GammaCorrection
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LambertDiffuseComponent
+  name: LambertDiffuseComponent()
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_LambertDiffuseComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LambertDiffuseComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LambertDiffuseComponent()
+  nameWithType: Lighting.LambertDiffuseComponent()
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LambertDiffuseComponent*
+  name: LambertDiffuseComponent
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_LambertDiffuseComponent_
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LambertDiffuseComponent
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LambertDiffuseComponent
+  nameWithType: Lighting.LambertDiffuseComponent
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.LightStructDeclaration
   name: LightStructDeclaration
   href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_LightStructDeclaration
@@ -25631,6 +25848,19 @@ references:
   commentId: F:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
   fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.NumberOfLightsForward
   nameWithType: Lighting.NumberOfLightsForward
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.OrenNayarDiffuseComponent
+  name: OrenNayarDiffuseComponent()
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_OrenNayarDiffuseComponent
+  commentId: M:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.OrenNayarDiffuseComponent
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.OrenNayarDiffuseComponent()
+  nameWithType: Lighting.OrenNayarDiffuseComponent()
+- uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.OrenNayarDiffuseComponent*
+  name: OrenNayarDiffuseComponent
+  href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_OrenNayarDiffuseComponent_
+  commentId: Overload:Fusee.Engine.Core.ShaderShards.Fragment.Lighting.OrenNayarDiffuseComponent
+  isSpec: "True"
+  fullName: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.OrenNayarDiffuseComponent
+  nameWithType: Lighting.OrenNayarDiffuseComponent
 - uid: Fusee.Engine.Core.ShaderShards.Fragment.Lighting.ShadowCalculation
   name: ShadowCalculation()
   href: api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html#Fusee_Engine_Core_ShaderShards_Fragment_Lighting_ShadowCalculation
@@ -25757,12 +25987,6 @@ references:
   commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.AlbedoTex
   fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.AlbedoTex
   nameWithType: LightingSetupFlags.AlbedoTex
-- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BlinnPhong
-  name: BlinnPhong
-  href: api/Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html#Fusee_Engine_Core_ShaderShards_LightingSetupFlags_BlinnPhong
-  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BlinnPhong
-  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BlinnPhong
-  nameWithType: LightingSetupFlags.BlinnPhong
 - uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.BRDF
   name: BRDF
   href: api/Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html#Fusee_Engine_Core_ShaderShards_LightingSetupFlags_BRDF
@@ -25775,6 +25999,18 @@ references:
   commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseOnly
   fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseOnly
   nameWithType: LightingSetupFlags.DiffuseOnly
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseSpecular
+  name: DiffuseSpecular
+  href: api/Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html#Fusee_Engine_Core_ShaderShards_LightingSetupFlags_DiffuseSpecular
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseSpecular
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.DiffuseSpecular
+  nameWithType: LightingSetupFlags.DiffuseSpecular
+- uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.Glossy
+  name: Glossy
+  href: api/Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html#Fusee_Engine_Core_ShaderShards_LightingSetupFlags_Glossy
+  commentId: F:Fusee.Engine.Core.ShaderShards.LightingSetupFlags.Glossy
+  fullName: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.Glossy
+  nameWithType: LightingSetupFlags.Glossy
 - uid: Fusee.Engine.Core.ShaderShards.LightingSetupFlags.NormalMap
   name: NormalMap
   href: api/Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html#Fusee_Engine_Core_ShaderShards_LightingSetupFlags_NormalMap
@@ -27630,19 +27866,19 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.Time.InstTimeSinceStart
   nameWithType: Time.InstTimeSinceStart
-- uid: Fusee.Engine.Core.Time.RealDeltaTimeMs
-  name: RealDeltaTimeMs
-  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_RealDeltaTimeMs
-  commentId: P:Fusee.Engine.Core.Time.RealDeltaTimeMs
-  fullName: Fusee.Engine.Core.Time.RealDeltaTimeMs
-  nameWithType: Time.RealDeltaTimeMs
-- uid: Fusee.Engine.Core.Time.RealDeltaTimeMs*
-  name: RealDeltaTimeMs
-  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_RealDeltaTimeMs_
-  commentId: Overload:Fusee.Engine.Core.Time.RealDeltaTimeMs
+- uid: Fusee.Engine.Core.Time.RealDeltaTime
+  name: RealDeltaTime
+  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_RealDeltaTime
+  commentId: P:Fusee.Engine.Core.Time.RealDeltaTime
+  fullName: Fusee.Engine.Core.Time.RealDeltaTime
+  nameWithType: Time.RealDeltaTime
+- uid: Fusee.Engine.Core.Time.RealDeltaTime*
+  name: RealDeltaTime
+  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_RealDeltaTime_
+  commentId: Overload:Fusee.Engine.Core.Time.RealDeltaTime
   isSpec: "True"
-  fullName: Fusee.Engine.Core.Time.RealDeltaTimeMs
-  nameWithType: Time.RealDeltaTimeMs
+  fullName: Fusee.Engine.Core.Time.RealDeltaTime
+  nameWithType: Time.RealDeltaTime
 - uid: Fusee.Engine.Core.Time.RealTimeSinceStart
   name: RealTimeSinceStart
   href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_RealTimeSinceStart
@@ -27708,19 +27944,19 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Core.Time.TimeFramesPerSecondAverage
   nameWithType: Time.TimeFramesPerSecondAverage
-- uid: Fusee.Engine.Core.Time.TimeRealDeltaTimeMs
-  name: TimeRealDeltaTimeMs
-  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_TimeRealDeltaTimeMs
-  commentId: P:Fusee.Engine.Core.Time.TimeRealDeltaTimeMs
-  fullName: Fusee.Engine.Core.Time.TimeRealDeltaTimeMs
-  nameWithType: Time.TimeRealDeltaTimeMs
-- uid: Fusee.Engine.Core.Time.TimeRealDeltaTimeMs*
-  name: TimeRealDeltaTimeMs
-  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_TimeRealDeltaTimeMs_
-  commentId: Overload:Fusee.Engine.Core.Time.TimeRealDeltaTimeMs
+- uid: Fusee.Engine.Core.Time.TimeRealDeltaTime
+  name: TimeRealDeltaTime
+  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_TimeRealDeltaTime
+  commentId: P:Fusee.Engine.Core.Time.TimeRealDeltaTime
+  fullName: Fusee.Engine.Core.Time.TimeRealDeltaTime
+  nameWithType: Time.TimeRealDeltaTime
+- uid: Fusee.Engine.Core.Time.TimeRealDeltaTime*
+  name: TimeRealDeltaTime
+  href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_TimeRealDeltaTime_
+  commentId: Overload:Fusee.Engine.Core.Time.TimeRealDeltaTime
   isSpec: "True"
-  fullName: Fusee.Engine.Core.Time.TimeRealDeltaTimeMs
-  nameWithType: Time.TimeRealDeltaTimeMs
+  fullName: Fusee.Engine.Core.Time.TimeRealDeltaTime
+  nameWithType: Time.TimeRealDeltaTime
 - uid: Fusee.Engine.Core.Time.TimeRealTimeSinceStart
   name: TimeRealTimeSinceStart
   href: api/Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_TimeRealTimeSinceStart
@@ -29525,11 +29761,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp
   nameWithType: MouseDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(View)
+- uid: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(Android.Views.View)
   name: MouseDeviceImp(View)
-  href: api/Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_MouseDeviceImp__ctor_View_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(View)
-  fullName: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.MouseDeviceImp(View)
+  href: api/Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_MouseDeviceImp__ctor_Android_Views_View_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor(Android.Views.View)
+  fullName: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.MouseDeviceImp(Android.Views.View)
   nameWithType: MouseDeviceImp.MouseDeviceImp(View)
 - uid: Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.#ctor*
   name: MouseDeviceImp
@@ -29679,11 +29915,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView
   nameWithType: RenderCanvasGameView
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Context,IAttributeSet,Action)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Android.Content.Context,Android.Util.IAttributeSet,System.Action)
   name: RenderCanvasGameView(RenderCanvasImp, Boolean, Context, IAttributeSet, Action)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView__ctor_Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_System_Boolean_Context_IAttributeSet_Action_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Context,IAttributeSet,Action)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.RenderCanvasGameView(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp, System.Boolean, Context, IAttributeSet, Action)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView__ctor_Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_System_Boolean_Android_Content_Context_Android_Util_IAttributeSet_System_Action_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp,System.Boolean,Android.Content.Context,Android.Util.IAttributeSet,System.Action)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.RenderCanvasGameView(Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp, System.Boolean, Android.Content.Context, Android.Util.IAttributeSet, System.Action)
   nameWithType: RenderCanvasGameView.RenderCanvasGameView(RenderCanvasImp, Boolean, Context, IAttributeSet, Action)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.#ctor*
   name: RenderCanvasGameView
@@ -29718,11 +29954,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.DeltaTime
   nameWithType: RenderCanvasGameView.DeltaTime
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(EventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(System.EventArgs)
   name: OnLoad(EventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnLoad_EventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(EventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(EventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnLoad_System_EventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(System.EventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad(System.EventArgs)
   nameWithType: RenderCanvasGameView.OnLoad(EventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad*
   name: OnLoad
@@ -29731,11 +29967,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnLoad
   nameWithType: RenderCanvasGameView.OnLoad
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(OpenTK.FrameEventArgs)
   name: OnRenderFrame(FrameEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnRenderFrame_FrameEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnRenderFrame_OpenTK_FrameEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(OpenTK.FrameEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame(OpenTK.FrameEventArgs)
   nameWithType: RenderCanvasGameView.OnRenderFrame(FrameEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame*
   name: OnRenderFrame
@@ -29744,11 +29980,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnRenderFrame
   nameWithType: RenderCanvasGameView.OnRenderFrame
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(EventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(System.EventArgs)
   name: OnResize(EventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnResize_EventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(EventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(EventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnResize_System_EventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(System.EventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize(System.EventArgs)
   nameWithType: RenderCanvasGameView.OnResize(EventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize*
   name: OnResize
@@ -29757,11 +29993,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnResize
   nameWithType: RenderCanvasGameView.OnResize
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(EventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(System.EventArgs)
   name: OnUnload(EventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnUnload_EventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(EventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(EventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasGameView_OnUnload_System_EventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(System.EventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload(System.EventArgs)
   nameWithType: RenderCanvasGameView.OnUnload(EventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.OnUnload*
   name: OnUnload
@@ -29776,11 +30012,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp
   nameWithType: RenderCanvasImp
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Context,IAttributeSet,Action)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)
   name: RenderCanvasImp(Context, IAttributeSet, Action)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp__ctor_Context_IAttributeSet_Action_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Context,IAttributeSet,Action)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.RenderCanvasImp(Context, IAttributeSet, Action)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp__ctor_Android_Content_Context_Android_Util_IAttributeSet_System_Action_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor(Android.Content.Context,Android.Util.IAttributeSet,System.Action)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.RenderCanvasImp(Android.Content.Context, Android.Util.IAttributeSet, System.Action)
   nameWithType: RenderCanvasImp.RenderCanvasImp(Context, IAttributeSet, Action)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.#ctor*
   name: RenderCanvasImp
@@ -30207,11 +30443,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.RenderContextImp
   fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp
   nameWithType: RenderContextImp
-- uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)
+- uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)
   name: RenderContextImp(IRenderCanvasImp, Context)
-  href: api/Fusee.Engine.Imp.Graphics.Android.RenderContextImp.html#Fusee_Engine_Imp_Graphics_Android_RenderContextImp__ctor_Fusee_Engine_Common_IRenderCanvasImp_Context_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Context)
-  fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RenderContextImp(Fusee.Engine.Common.IRenderCanvasImp, Context)
+  href: api/Fusee.Engine.Imp.Graphics.Android.RenderContextImp.html#Fusee_Engine_Imp_Graphics_Android_RenderContextImp__ctor_Fusee_Engine_Common_IRenderCanvasImp_Android_Content_Context_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor(Fusee.Engine.Common.IRenderCanvasImp,Android.Content.Context)
+  fullName: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.RenderContextImp(Fusee.Engine.Common.IRenderCanvasImp, Android.Content.Context)
   nameWithType: RenderContextImp.RenderContextImp(IRenderCanvasImp, Context)
 - uid: Fusee.Engine.Imp.Graphics.Android.RenderContextImp.#ctor*
   name: RenderContextImp
@@ -31148,11 +31384,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp
   nameWithType: TouchDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(View)
+- uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(Android.Views.View)
   name: TouchDeviceImp(View)
-  href: api/Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_TouchDeviceImp__ctor_View_
-  commentId: M:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(View)
-  fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.TouchDeviceImp(View)
+  href: api/Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.html#Fusee_Engine_Imp_Graphics_Android_TouchDeviceImp__ctor_Android_Views_View_
+  commentId: M:Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor(Android.Views.View)
+  fullName: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.TouchDeviceImp(Android.Views.View)
   nameWithType: TouchDeviceImp.TouchDeviceImp(View)
 - uid: Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.#ctor*
   name: TouchDeviceImp
@@ -31572,11 +31808,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.Id
   nameWithType: KeyboardDeviceImp.Id
-- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
   name: OnGameWinKeyDown(Object, KeyboardKeyEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyDown_System_Object_OpenTK_Input_KeyboardKeyEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object, OpenTK.Input.KeyboardKeyEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyDown_System_Object_KeyboardKeyEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object,KeyboardKeyEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown(System.Object, KeyboardKeyEventArgs)
   nameWithType: KeyboardDeviceImp.OnGameWinKeyDown(Object, KeyboardKeyEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown*
   name: OnGameWinKeyDown
@@ -31585,11 +31821,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyDown
   nameWithType: KeyboardDeviceImp.OnGameWinKeyDown
-- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
   name: OnGameWinKeyUp(Object, KeyboardKeyEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyUp_System_Object_OpenTK_Input_KeyboardKeyEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,OpenTK.Input.KeyboardKeyEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object, OpenTK.Input.KeyboardKeyEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_KeyboardDeviceImp_OnGameWinKeyUp_System_Object_KeyboardKeyEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object,KeyboardKeyEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp(System.Object, KeyboardKeyEventArgs)
   nameWithType: KeyboardDeviceImp.OnGameWinKeyUp(Object, KeyboardKeyEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.OnGameWinKeyUp*
   name: OnGameWinKeyUp
@@ -31857,11 +32093,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp
   nameWithType: MouseDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(OpenTK.GameWindow)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(GameWindow)
   name: MouseDeviceImp(GameWindow)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp__ctor_OpenTK_GameWindow_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(OpenTK.GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.MouseDeviceImp(OpenTK.GameWindow)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp__ctor_GameWindow_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor(GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.MouseDeviceImp(GameWindow)
   nameWithType: MouseDeviceImp.MouseDeviceImp(GameWindow)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.#ctor*
   name: MouseDeviceImp
@@ -31999,11 +32235,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.Id
   nameWithType: MouseDeviceImp.Id
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
   name: OnGameWinMouseDown(Object, MouseButtonEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseDown_System_Object_OpenTK_Input_MouseButtonEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object, OpenTK.Input.MouseButtonEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseDown_System_Object_MouseButtonEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object,MouseButtonEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown(System.Object, MouseButtonEventArgs)
   nameWithType: MouseDeviceImp.OnGameWinMouseDown(Object, MouseButtonEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown*
   name: OnGameWinMouseDown
@@ -32012,11 +32248,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseDown
   nameWithType: MouseDeviceImp.OnGameWinMouseDown
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
   name: OnGameWinMouseUp(Object, MouseButtonEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseUp_System_Object_OpenTK_Input_MouseButtonEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,OpenTK.Input.MouseButtonEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object, OpenTK.Input.MouseButtonEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnGameWinMouseUp_System_Object_MouseButtonEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object,MouseButtonEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp(System.Object, MouseButtonEventArgs)
   nameWithType: MouseDeviceImp.OnGameWinMouseUp(Object, MouseButtonEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp*
   name: OnGameWinMouseUp
@@ -32025,11 +32261,11 @@ references:
   isSpec: "True"
   fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnGameWinMouseUp
   nameWithType: MouseDeviceImp.OnGameWinMouseUp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,MouseMoveEventArgs)
   name: OnMouseMove(Object, MouseMoveEventArgs)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnMouseMove_System_Object_OpenTK_Input_MouseMoveEventArgs_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,OpenTK.Input.MouseMoveEventArgs)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object, OpenTK.Input.MouseMoveEventArgs)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_MouseDeviceImp_OnMouseMove_System_Object_MouseMoveEventArgs_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object,MouseMoveEventArgs)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove(System.Object, MouseMoveEventArgs)
   nameWithType: MouseDeviceImp.OnMouseMove(Object, MouseMoveEventArgs)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.OnMouseMove*
   name: OnMouseMove
@@ -32056,11 +32292,11 @@ references:
   commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor
   fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp()
   nameWithType: RenderCanvasImp.RenderCanvasImp()
-- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
   name: RenderCanvasImp(Icon)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_System_Drawing_Icon_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Drawing.Icon)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(System.Drawing.Icon)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_Icon_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.RenderCanvasImp(Icon)
   nameWithType: RenderCanvasImp.RenderCanvasImp(Icon)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Int32,System.Int32)
   name: RenderCanvasImp(Int32, Int32)
@@ -33854,11 +34090,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp
   nameWithType: WindowsSpaceMouseInputDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
   name: WindowsSpaceMouseInputDeviceImp(GameWindow)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__ctor_OpenTK_GameWindow_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(OpenTK.GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(OpenTK.GameWindow)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsSpaceMouseInputDeviceImp__ctor_GameWindow_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor(GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
   nameWithType: WindowsSpaceMouseInputDeviceImp.WindowsSpaceMouseInputDeviceImp(GameWindow)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.#ctor*
   name: WindowsSpaceMouseInputDeviceImp
@@ -34051,11 +34287,11 @@ references:
   commentId: T:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
   fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp
   nameWithType: WindowsTouchInputDeviceImp
-- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(OpenTK.GameWindow)
+- uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
   name: WindowsTouchInputDeviceImp(GameWindow)
-  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsTouchInputDeviceImp__ctor_OpenTK_GameWindow_
-  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(OpenTK.GameWindow)
-  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(OpenTK.GameWindow)
+  href: api/Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.html#Fusee_Engine_Imp_Graphics_Desktop_WindowsTouchInputDeviceImp__ctor_GameWindow_
+  commentId: M:Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor(GameWindow)
+  fullName: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
   nameWithType: WindowsTouchInputDeviceImp.WindowsTouchInputDeviceImp(GameWindow)
 - uid: Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.#ctor*
   name: WindowsTouchInputDeviceImp
@@ -39503,6 +39739,12 @@ references:
   commentId: T:Fusee.Math.Core.float2
   fullName: Fusee.Math.Core.float2
   nameWithType: float2
+- uid: Fusee.Math.Core.float2.#ctor(System.Single)
+  name: float2(Single)
+  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2__ctor_System_Single_
+  commentId: M:Fusee.Math.Core.float2.#ctor(System.Single)
+  fullName: Fusee.Math.Core.float2.float2(System.Single)
+  nameWithType: float2.float2(Single)
 - uid: Fusee.Math.Core.float2.#ctor(System.Single,System.Single)
   name: float2(Single, Single)
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2__ctor_System_Single_System_Single_
@@ -39729,6 +39971,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float2.LengthSquared
   nameWithType: float2.LengthSquared
+- uid: Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2,Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  name: Lerp(float2, float2, float2)
+  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Lerp_Fusee_Math_Core_float2_Fusee_Math_Core_float2_Fusee_Math_Core_float2_
+  commentId: M:Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2,Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  fullName: Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2, Fusee.Math.Core.float2, Fusee.Math.Core.float2)
+  nameWithType: float2.Lerp(float2, float2, float2)
 - uid: Fusee.Math.Core.float2.Lerp(Fusee.Math.Core.float2,Fusee.Math.Core.float2,System.Single)
   name: Lerp(float2, float2, Single)
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Lerp_Fusee_Math_Core_float2_Fusee_Math_Core_float2_System_Single_
@@ -40014,6 +40262,19 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float2.PointInTriangle
   nameWithType: float2.PointInTriangle
+- uid: Fusee.Math.Core.float2.Pow(Fusee.Math.Core.float2,System.Single)
+  name: Pow(float2, Single)
+  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Pow_Fusee_Math_Core_float2_System_Single_
+  commentId: M:Fusee.Math.Core.float2.Pow(Fusee.Math.Core.float2,System.Single)
+  fullName: Fusee.Math.Core.float2.Pow(Fusee.Math.Core.float2, System.Single)
+  nameWithType: float2.Pow(float2, Single)
+- uid: Fusee.Math.Core.float2.Pow*
+  name: Pow
+  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Pow_
+  commentId: Overload:Fusee.Math.Core.float2.Pow
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float2.Pow
+  nameWithType: float2.Pow
 - uid: Fusee.Math.Core.float2.r
   name: r
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_r
@@ -40040,6 +40301,19 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float2.rg
   nameWithType: float2.rg
+- uid: Fusee.Math.Core.float2.Step(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  name: Step(float2, float2)
+  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Step_Fusee_Math_Core_float2_Fusee_Math_Core_float2_
+  commentId: M:Fusee.Math.Core.float2.Step(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
+  fullName: Fusee.Math.Core.float2.Step(Fusee.Math.Core.float2, Fusee.Math.Core.float2)
+  nameWithType: float2.Step(float2, float2)
+- uid: Fusee.Math.Core.float2.Step*
+  name: Step
+  href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Step_
+  commentId: Overload:Fusee.Math.Core.float2.Step
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float2.Step
+  nameWithType: float2.Step
 - uid: Fusee.Math.Core.float2.Subtract(Fusee.Math.Core.float2,Fusee.Math.Core.float2)
   name: Subtract(float2, float2)
   href: api/Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_Subtract_Fusee_Math_Core_float2_Fusee_Math_Core_float2_
@@ -40171,6 +40445,12 @@ references:
   commentId: M:Fusee.Math.Core.float3.#ctor(Fusee.Math.Core.float4)
   fullName: Fusee.Math.Core.float3.float3(Fusee.Math.Core.float4)
   nameWithType: float3.float3(float4)
+- uid: Fusee.Math.Core.float3.#ctor(System.Single)
+  name: float3(Single)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3__ctor_System_Single_
+  commentId: M:Fusee.Math.Core.float3.#ctor(System.Single)
+  fullName: Fusee.Math.Core.float3.float3(System.Single)
+  nameWithType: float3.float3(Single)
 - uid: Fusee.Math.Core.float3.#ctor(System.Single,System.Single,System.Single)
   name: float3(Single, Single, Single)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3__ctor_System_Single_System_Single_System_Single_
@@ -40455,6 +40735,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.LengthSquared
   nameWithType: float3.LengthSquared
+- uid: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  name: Lerp(float3, float3, float3)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Lerp_Fusee_Math_Core_float3_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
+  commentId: M:Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  fullName: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3, Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  nameWithType: float3.Lerp(float3, float3, float3)
 - uid: Fusee.Math.Core.float3.Lerp(Fusee.Math.Core.float3,Fusee.Math.Core.float3,System.Single)
   name: Lerp(float3, float3, Single)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Lerp_Fusee_Math_Core_float3_Fusee_Math_Core_float3_System_Single_
@@ -40468,6 +40754,43 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.Lerp
   nameWithType: float3.Lerp
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb
+  name: LinearColorFromSRgb()
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb()
+  nameWithType: float3.LinearColorFromSRgb()
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
+  name: LinearColorFromSRgb(float3)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_Fusee_Math_Core_float3_
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(Fusee.Math.Core.float3)
+  nameWithType: float3.LinearColorFromSRgb(float3)
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
+  name: LinearColorFromSRgb(Int32, Int32, Int32)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_System_Int32_System_Int32_System_Int32_
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.Int32, System.Int32, System.Int32)
+  nameWithType: float3.LinearColorFromSRgb(Int32, Int32, Int32)
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
+  name: LinearColorFromSRgb(String)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_System_String_
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.String)
+  nameWithType: float3.LinearColorFromSRgb(String)
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
+  name: LinearColorFromSRgb(UInt32)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_System_UInt32_
+  commentId: M:Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb(System.UInt32)
+  nameWithType: float3.LinearColorFromSRgb(UInt32)
+- uid: Fusee.Math.Core.float3.LinearColorFromSRgb*
+  name: LinearColorFromSRgb
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_LinearColorFromSRgb_
+  commentId: Overload:Fusee.Math.Core.float3.LinearColorFromSRgb
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float3.LinearColorFromSRgb
+  nameWithType: float3.LinearColorFromSRgb
 - uid: Fusee.Math.Core.float3.Max(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   name: Max(float3, float3)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Max_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
@@ -40756,6 +41079,19 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.PositiveInfinity
   nameWithType: float3.PositiveInfinity
+- uid: Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3,System.Single)
+  name: Pow(float3, Single)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Pow_Fusee_Math_Core_float3_System_Single_
+  commentId: M:Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3,System.Single)
+  fullName: Fusee.Math.Core.float3.Pow(Fusee.Math.Core.float3, System.Single)
+  nameWithType: float3.Pow(float3, Single)
+- uid: Fusee.Math.Core.float3.Pow*
+  name: Pow
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Pow_
+  commentId: Overload:Fusee.Math.Core.float3.Pow
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float3.Pow
+  nameWithType: float3.Pow
 - uid: Fusee.Math.Core.float3.r
   name: r
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_r
@@ -40788,6 +41124,56 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float3.Rotate
   nameWithType: float3.Rotate
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor
+  name: SRgbFromLinearColor()
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor()
+  nameWithType: float3.SRgbFromLinearColor()
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
+  name: SRgbFromLinearColor(float3)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_Fusee_Math_Core_float3_
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(Fusee.Math.Core.float3)
+  nameWithType: float3.SRgbFromLinearColor(float3)
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
+  name: SRgbFromLinearColor(Int32, Int32, Int32)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_System_Int32_System_Int32_System_Int32_
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.Int32, System.Int32, System.Int32)
+  nameWithType: float3.SRgbFromLinearColor(Int32, Int32, Int32)
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
+  name: SRgbFromLinearColor(String)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_System_String_
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.String)
+  nameWithType: float3.SRgbFromLinearColor(String)
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
+  name: SRgbFromLinearColor(UInt32)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_System_UInt32_
+  commentId: M:Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor(System.UInt32)
+  nameWithType: float3.SRgbFromLinearColor(UInt32)
+- uid: Fusee.Math.Core.float3.SRgbFromLinearColor*
+  name: SRgbFromLinearColor
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_SRgbFromLinearColor_
+  commentId: Overload:Fusee.Math.Core.float3.SRgbFromLinearColor
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float3.SRgbFromLinearColor
+  nameWithType: float3.SRgbFromLinearColor
+- uid: Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  name: Step(float3, float3)
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Step_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
+  commentId: M:Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
+  fullName: Fusee.Math.Core.float3.Step(Fusee.Math.Core.float3, Fusee.Math.Core.float3)
+  nameWithType: float3.Step(float3, float3)
+- uid: Fusee.Math.Core.float3.Step*
+  name: Step
+  href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Step_
+  commentId: Overload:Fusee.Math.Core.float3.Step
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float3.Step
+  nameWithType: float3.Step
 - uid: Fusee.Math.Core.float3.Subtract(Fusee.Math.Core.float3,Fusee.Math.Core.float3)
   name: Subtract(float3, float3)
   href: api/Fusee.Math.Core.float3.html#Fusee_Math_Core_float3_Subtract_Fusee_Math_Core_float3_Fusee_Math_Core_float3_
@@ -41584,6 +41970,12 @@ references:
   commentId: M:Fusee.Math.Core.float4.#ctor(Fusee.Math.Core.float4)
   fullName: Fusee.Math.Core.float4.float4(Fusee.Math.Core.float4)
   nameWithType: float4.float4(float4)
+- uid: Fusee.Math.Core.float4.#ctor(System.Single)
+  name: float4(Single)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4__ctor_System_Single_
+  commentId: M:Fusee.Math.Core.float4.#ctor(System.Single)
+  fullName: Fusee.Math.Core.float4.float4(System.Single)
+  nameWithType: float4.float4(Single)
 - uid: Fusee.Math.Core.float4.#ctor(System.Single,System.Single,System.Single,System.Single)
   name: float4(Single, Single, Single, Single)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4__ctor_System_Single_System_Single_System_Single_System_Single_
@@ -41794,6 +42186,12 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.LengthSquared
   nameWithType: float4.LengthSquared
+- uid: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  name: Lerp(float4, float4, float4)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Lerp_Fusee_Math_Core_float4_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
+  commentId: M:Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  fullName: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4, Fusee.Math.Core.float4, Fusee.Math.Core.float4)
+  nameWithType: float4.Lerp(float4, float4, float4)
 - uid: Fusee.Math.Core.float4.Lerp(Fusee.Math.Core.float4,Fusee.Math.Core.float4,System.Single)
   name: Lerp(float4, float4, Single)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Lerp_Fusee_Math_Core_float4_Fusee_Math_Core_float4_System_Single_
@@ -41807,6 +42205,43 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.Lerp
   nameWithType: float4.Lerp
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb
+  name: LinearColorFromSRgb()
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb()
+  nameWithType: float4.LinearColorFromSRgb()
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
+  name: LinearColorFromSRgb(float4)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_Fusee_Math_Core_float4_
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(Fusee.Math.Core.float4)
+  nameWithType: float4.LinearColorFromSRgb(float4)
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: LinearColorFromSRgb(Int32, Int32, Int32, Int32)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: float4.LinearColorFromSRgb(Int32, Int32, Int32, Int32)
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
+  name: LinearColorFromSRgb(String)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_System_String_
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.String)
+  nameWithType: float4.LinearColorFromSRgb(String)
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
+  name: LinearColorFromSRgb(UInt32)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_System_UInt32_
+  commentId: M:Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb(System.UInt32)
+  nameWithType: float4.LinearColorFromSRgb(UInt32)
+- uid: Fusee.Math.Core.float4.LinearColorFromSRgb*
+  name: LinearColorFromSRgb
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_LinearColorFromSRgb_
+  commentId: Overload:Fusee.Math.Core.float4.LinearColorFromSRgb
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float4.LinearColorFromSRgb
+  nameWithType: float4.LinearColorFromSRgb
 - uid: Fusee.Math.Core.float4.Max(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   name: Max(float4, float4)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Max_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
@@ -42063,6 +42498,19 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.ParseConverter
   nameWithType: float4.ParseConverter
+- uid: Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4,System.Single)
+  name: Pow(float4, Single)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Pow_Fusee_Math_Core_float4_System_Single_
+  commentId: M:Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4,System.Single)
+  fullName: Fusee.Math.Core.float4.Pow(Fusee.Math.Core.float4, System.Single)
+  nameWithType: float4.Pow(float4, Single)
+- uid: Fusee.Math.Core.float4.Pow*
+  name: Pow
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Pow_
+  commentId: Overload:Fusee.Math.Core.float4.Pow
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float4.Pow
+  nameWithType: float4.Pow
 - uid: Fusee.Math.Core.float4.r
   name: r
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_r
@@ -42121,6 +42569,56 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.float4.Round
   nameWithType: float4.Round
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor
+  name: SRgbFromLinearColor()
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor()
+  nameWithType: float4.SRgbFromLinearColor()
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
+  name: SRgbFromLinearColor(float4)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_Fusee_Math_Core_float4_
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(Fusee.Math.Core.float4)
+  nameWithType: float4.SRgbFromLinearColor(float4)
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: SRgbFromLinearColor(Int32, Int32, Int32, Int32)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: float4.SRgbFromLinearColor(Int32, Int32, Int32, Int32)
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
+  name: SRgbFromLinearColor(String)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_System_String_
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.String)
+  nameWithType: float4.SRgbFromLinearColor(String)
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
+  name: SRgbFromLinearColor(UInt32)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_System_UInt32_
+  commentId: M:Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor(System.UInt32)
+  nameWithType: float4.SRgbFromLinearColor(UInt32)
+- uid: Fusee.Math.Core.float4.SRgbFromLinearColor*
+  name: SRgbFromLinearColor
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_SRgbFromLinearColor_
+  commentId: Overload:Fusee.Math.Core.float4.SRgbFromLinearColor
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float4.SRgbFromLinearColor
+  nameWithType: float4.SRgbFromLinearColor
+- uid: Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  name: Step(float4, float4)
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Step_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
+  commentId: M:Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
+  fullName: Fusee.Math.Core.float4.Step(Fusee.Math.Core.float4, Fusee.Math.Core.float4)
+  nameWithType: float4.Step(float4, float4)
+- uid: Fusee.Math.Core.float4.Step*
+  name: Step
+  href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Step_
+  commentId: Overload:Fusee.Math.Core.float4.Step
+  isSpec: "True"
+  fullName: Fusee.Math.Core.float4.Step
+  nameWithType: float4.Step
 - uid: Fusee.Math.Core.float4.Subtract(Fusee.Math.Core.float4,Fusee.Math.Core.float4)
   name: Subtract(float4, float4)
   href: api/Fusee.Math.Core.float4.html#Fusee_Math_Core_float4_Subtract_Fusee_Math_Core_float4_Fusee_Math_Core_float4_
@@ -44587,6 +45085,19 @@ references:
   isSpec: "True"
   fullName: Fusee.Math.Core.M.SmoothStep
   nameWithType: M.SmoothStep
+- uid: Fusee.Math.Core.M.Step(System.Single,System.Single)
+  name: Step(Single, Single)
+  href: api/Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_System_Single_System_Single_
+  commentId: M:Fusee.Math.Core.M.Step(System.Single,System.Single)
+  fullName: Fusee.Math.Core.M.Step(System.Single, System.Single)
+  nameWithType: M.Step(Single, Single)
+- uid: Fusee.Math.Core.M.Step*
+  name: Step
+  href: api/Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_
+  commentId: Overload:Fusee.Math.Core.M.Step
+  isSpec: "True"
+  fullName: Fusee.Math.Core.M.Step
+  nameWithType: M.Step
 - uid: Fusee.Math.Core.M.Swap(System.Double@,System.Double@)
   name: Swap(ref Double, ref Double)
   href: api/Fusee.Math.Core.M.html#Fusee_Math_Core_M_Swap_System_Double__System_Double__
@@ -46322,6 +46833,18 @@ references:
   commentId: F:Fusee.Serialization.FusHeader.Generator
   fullName: Fusee.Serialization.FusHeader.Generator
   nameWithType: FusHeader.Generator
+- uid: Fusee.Serialization.FusHeader.LoadFilename
+  name: LoadFilename
+  href: api/Fusee.Serialization.FusHeader.html#Fusee_Serialization_FusHeader_LoadFilename
+  commentId: F:Fusee.Serialization.FusHeader.LoadFilename
+  fullName: Fusee.Serialization.FusHeader.LoadFilename
+  nameWithType: FusHeader.LoadFilename
+- uid: Fusee.Serialization.FusHeader.LoadPath
+  name: LoadPath
+  href: api/Fusee.Serialization.FusHeader.html#Fusee_Serialization_FusHeader_LoadPath
+  commentId: F:Fusee.Serialization.FusHeader.LoadPath
+  fullName: Fusee.Serialization.FusHeader.LoadPath
+  nameWithType: FusHeader.LoadPath
 - uid: Fusee.Serialization.V1
   name: Fusee.Serialization.V1
   href: api/Fusee.Serialization.V1.html
@@ -46528,6 +47051,18 @@ references:
   commentId: F:Fusee.Serialization.V1.CanvasRenderMode.World
   fullName: Fusee.Serialization.V1.CanvasRenderMode.World
   nameWithType: CanvasRenderMode.World
+- uid: Fusee.Serialization.V1.Distribution
+  name: Distribution
+  href: api/Fusee.Serialization.V1.Distribution.html
+  commentId: T:Fusee.Serialization.V1.Distribution
+  fullName: Fusee.Serialization.V1.Distribution
+  nameWithType: Distribution
+- uid: Fusee.Serialization.V1.Distribution.GGX
+  name: GGX
+  href: api/Fusee.Serialization.V1.Distribution.html#Fusee_Serialization_V1_Distribution_GGX
+  commentId: F:Fusee.Serialization.V1.Distribution.GGX
+  fullName: Fusee.Serialization.V1.Distribution.GGX
+  nameWithType: Distribution.GGX
 - uid: Fusee.Serialization.V1.FusAnimation
   name: FusAnimation
   href: api/Fusee.Serialization.V1.FusAnimation.html
@@ -47075,6 +47610,152 @@ references:
   isSpec: "True"
   fullName: Fusee.Serialization.V1.FusMaterialBRDF.Inequality
   nameWithType: FusMaterialBRDF.Inequality
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF
+  name: FusMaterialDiffuseBRDF
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html
+  commentId: T:Fusee.Serialization.V1.FusMaterialDiffuseBRDF
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF
+  nameWithType: FusMaterialDiffuseBRDF
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  name: Equals(FusMaterialDiffuseBRDF)
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_
+  commentId: M:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  nameWithType: FusMaterialDiffuseBRDF.Equals(FusMaterialDiffuseBRDF)
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_System_Object_
+  commentId: M:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(System.Object)
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals(System.Object)
+  nameWithType: FusMaterialDiffuseBRDF.Equals(Object)
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals*
+  name: Equals
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Equals_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equals
+  nameWithType: FusMaterialDiffuseBRDF.Equals
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode
+  name: GetHashCode()
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_GetHashCode
+  commentId: M:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode()
+  nameWithType: FusMaterialDiffuseBRDF.GetHashCode()
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode*
+  name: GetHashCode
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_GetHashCode_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.GetHashCode
+  nameWithType: FusMaterialDiffuseBRDF.GetHashCode
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Equality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF,Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  name: Equality(FusMaterialDiffuseBRDF, FusMaterialDiffuseBRDF)
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Equality_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_
+  commentId: M:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Equality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF,Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF, Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  nameWithType: FusMaterialDiffuseBRDF.Equality(FusMaterialDiffuseBRDF, FusMaterialDiffuseBRDF)
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Equality*
+  name: Equality
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Equality_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Equality
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Equality
+  nameWithType: FusMaterialDiffuseBRDF.Equality
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Inequality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF,Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  name: Inequality(FusMaterialDiffuseBRDF, FusMaterialDiffuseBRDF)
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Inequality_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Fusee_Serialization_V1_FusMaterialDiffuseBRDF_
+  commentId: M:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Inequality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF,Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Inequality(Fusee.Serialization.V1.FusMaterialDiffuseBRDF, Fusee.Serialization.V1.FusMaterialDiffuseBRDF)
+  nameWithType: FusMaterialDiffuseBRDF.Inequality(FusMaterialDiffuseBRDF, FusMaterialDiffuseBRDF)
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Inequality*
+  name: Inequality
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_op_Inequality_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.op_Inequality
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Inequality
+  nameWithType: FusMaterialDiffuseBRDF.Inequality
+- uid: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Roughness
+  name: Roughness
+  href: api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html#Fusee_Serialization_V1_FusMaterialDiffuseBRDF_Roughness
+  commentId: F:Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Roughness
+  fullName: Fusee.Serialization.V1.FusMaterialDiffuseBRDF.Roughness
+  nameWithType: FusMaterialDiffuseBRDF.Roughness
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF
+  name: FusMaterialGlossyBRDF
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html
+  commentId: T:Fusee.Serialization.V1.FusMaterialGlossyBRDF
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF
+  nameWithType: FusMaterialGlossyBRDF
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Distribution
+  name: Distribution
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_Distribution
+  commentId: F:Fusee.Serialization.V1.FusMaterialGlossyBRDF.Distribution
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Distribution
+  nameWithType: FusMaterialGlossyBRDF.Distribution
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals(Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  name: Equals(FusMaterialGlossyBRDF)
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_Equals_Fusee_Serialization_V1_FusMaterialGlossyBRDF_
+  commentId: M:Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals(Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals(Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  nameWithType: FusMaterialGlossyBRDF.Equals(FusMaterialGlossyBRDF)
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_Equals_System_Object_
+  commentId: M:Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals(System.Object)
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals(System.Object)
+  nameWithType: FusMaterialGlossyBRDF.Equals(Object)
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals*
+  name: Equals
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_Equals_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equals
+  nameWithType: FusMaterialGlossyBRDF.Equals
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.GetHashCode
+  name: GetHashCode()
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_GetHashCode
+  commentId: M:Fusee.Serialization.V1.FusMaterialGlossyBRDF.GetHashCode
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.GetHashCode()
+  nameWithType: FusMaterialGlossyBRDF.GetHashCode()
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.GetHashCode*
+  name: GetHashCode
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_GetHashCode_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialGlossyBRDF.GetHashCode
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.GetHashCode
+  nameWithType: FusMaterialGlossyBRDF.GetHashCode
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Equality(Fusee.Serialization.V1.FusMaterialGlossyBRDF,Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  name: Equality(FusMaterialGlossyBRDF, FusMaterialGlossyBRDF)
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_op_Equality_Fusee_Serialization_V1_FusMaterialGlossyBRDF_Fusee_Serialization_V1_FusMaterialGlossyBRDF_
+  commentId: M:Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Equality(Fusee.Serialization.V1.FusMaterialGlossyBRDF,Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equality(Fusee.Serialization.V1.FusMaterialGlossyBRDF, Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  nameWithType: FusMaterialGlossyBRDF.Equality(FusMaterialGlossyBRDF, FusMaterialGlossyBRDF)
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Equality*
+  name: Equality
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_op_Equality_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Equality
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Equality
+  nameWithType: FusMaterialGlossyBRDF.Equality
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Inequality(Fusee.Serialization.V1.FusMaterialGlossyBRDF,Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  name: Inequality(FusMaterialGlossyBRDF, FusMaterialGlossyBRDF)
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_op_Inequality_Fusee_Serialization_V1_FusMaterialGlossyBRDF_Fusee_Serialization_V1_FusMaterialGlossyBRDF_
+  commentId: M:Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Inequality(Fusee.Serialization.V1.FusMaterialGlossyBRDF,Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Inequality(Fusee.Serialization.V1.FusMaterialGlossyBRDF, Fusee.Serialization.V1.FusMaterialGlossyBRDF)
+  nameWithType: FusMaterialGlossyBRDF.Inequality(FusMaterialGlossyBRDF, FusMaterialGlossyBRDF)
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Inequality*
+  name: Inequality
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_op_Inequality_
+  commentId: Overload:Fusee.Serialization.V1.FusMaterialGlossyBRDF.op_Inequality
+  isSpec: "True"
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Inequality
+  nameWithType: FusMaterialGlossyBRDF.Inequality
+- uid: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Roughness
+  name: Roughness
+  href: api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html#Fusee_Serialization_V1_FusMaterialGlossyBRDF_Roughness
+  commentId: F:Fusee.Serialization.V1.FusMaterialGlossyBRDF.Roughness
+  fullName: Fusee.Serialization.V1.FusMaterialGlossyBRDF.Roughness
+  nameWithType: FusMaterialGlossyBRDF.Roughness
 - uid: Fusee.Serialization.V1.FusMaterialStandard
   name: FusMaterialStandard
   href: api/Fusee.Serialization.V1.FusMaterialStandard.html
