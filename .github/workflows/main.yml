@@ -35,6 +35,7 @@ jobs:
         run: |
           Remove-Item 'docs' -Recurse
           mkdir docs
+          echo fusee3d.org > docs/CNAME
 
       - name: Create wiki toc.yml from _Sidebar.md
         run: bin\GitHubWikiSidbarToDocFX\GitHubWikiSidbarToDocFX.exe docfx_project\wiki\_Sidebar.md docfx_project\wiki
