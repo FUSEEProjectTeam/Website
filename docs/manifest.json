@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.AssetChecker.html",
-          "hash": "hTmiWdLbbwLPEfWk3A+EGg=="
+          "hash": "smcCKuANj/bUvfv4yaGIMA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.AssetDecoder.html",
-          "hash": "LigwmnHzEFSVdb17sd+A9Q=="
+          "hash": "mpvu1DqWm4E3beBIgTMQNQ=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.AssetDecoderAsync.html",
-          "hash": "SiU9pyudJZuugIFIEixK+w=="
+          "hash": "E0OJ7xIHaJfT5CmOHbuDUg=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.AssetHandler.html",
-          "hash": "PTjAmUVIhQrbnOTOc1d5Tw=="
+          "hash": "1Oq4KUDUY/muknQIiaDJHQ=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.ColorFormat.html",
-          "hash": "3kb/l5dOtohuQ6PIxtKqJw=="
+          "hash": "5zMUx5r0EwEs6F3zootsyQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.ColorUint.html",
-          "hash": "idOK/YrOIcqxDEFgApQv0Q=="
+          "hash": "vW+BaEUpMXk/zqhXaqk46w=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.FileMode.html",
-          "hash": "ljlTUqWxgPjS/rZIIF4zIg=="
+          "hash": "5NYtPljIc676UCSvvObplA=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.GetCallback.html",
-          "hash": "36nCLeRya1U1ewyyUycf7Q=="
+          "hash": "G0KbAa0dGAPwV5POuOV01Q=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.GetCallbackState.html",
-          "hash": "1bSZkI6zEKL169g9i8uFtg=="
+          "hash": "HcAjRF42MbELCNjRgRZxRA=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.GlyphInfo.html",
-          "hash": "cDgGLIGoCWkfQsIdwwiZ1A=="
+          "hash": "ytTN2CDELWj+z6TTE02clA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.IAssetProvider.html",
-          "hash": "we/Fzy24Y7EbdBoqEJrRvg=="
+          "hash": "NNwYqqwKWGaClB0CZMcYIA=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.IFontImp.html",
-          "hash": "PLXHzG/AjvscjVrfuWoyQw=="
+          "hash": "IK/HrAeUy2/M2+FbTimMNQ=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.IIOImp.html",
-          "hash": "tYZJbXXbieH2VvBBIfmEUg=="
+          "hash": "bihJ8LBhmpi5XCQifseHbA=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.IImageBase.html",
-          "hash": "YlHnYxzRj9iOZWrCrXMBdg=="
+          "hash": "6sunYG4COZt2qkqOgGhMUg=="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.IImageData.html",
-          "hash": "NgdkkFmrq3dHSUqCIhG03w=="
+          "hash": "y1Nl18NnzAivXDh05PsLBg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.ImagePixelChannel.html",
-          "hash": "ccTutbbCWAdRkc/3UAkKcg=="
+          "hash": "8ioVIGtMRlLIKrwTCAAzmw=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.ImagePixelFormat.html",
-          "hash": "sEPcdCYJB93vebHwdcp4Rg=="
+          "hash": "luGBfwt3WdqjWtQ13nbY/w=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.InjectMeAttribute.html",
-          "hash": "GXAvAKQjuAEyzjxvP1VsbQ=="
+          "hash": "Njbn69m1DGHEpMit2440iQ=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.LightType.html",
-          "hash": "1keEWU5zS1rP0GIYVmkcQA=="
+          "hash": "3VsSBGN3EfDN0dIEHByvow=="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.Path.html",
-          "hash": "L3lOMyvA/EIFNbkxjzE3eg=="
+          "hash": "AGsmG+gbrQksF2kV5ZPkbw=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.PixelEncoding.html",
-          "hash": "nfbZlHLeKwigWz+jcO2VZA=="
+          "hash": "OitthX3WryG2Qa9tonf07g=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.ScanLine.html",
-          "hash": "SWxXzBQxQj+ZukASRfHXlA=="
+          "hash": "wrUDEWJ7K3dAkLXbgKoMzw=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.SplitToCurveSegmentHelper.html",
-          "hash": "GLa+6nYHmdQu22HIcVBmjg=="
+          "hash": "0glbvJOZS+si5RqOpFknLQ=="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.StreamAssetProvider.html",
-          "hash": "TCZAdnSSrgg3CZxgrf4U1Q=="
+          "hash": "duP+S3Ps2e5XLHeKGDFHEA=="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.html",
-          "hash": "QK8PB+fet3RuOT4urJuMoQ=="
+          "hash": "hxTeHhc2UpgDmCGLl1qp0w=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.AssetStorage.html",
-          "hash": "IeapQMHFlE2aLEFpUeMGyA=="
+          "hash": "aDM3EGbpDYli9oc/JXIK6Q=="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.AsyncAssetDecoder.html",
-          "hash": "z8vsRSzdEmTO4GEy2WKL1Q=="
+          "hash": "oyZmRQ5qGFu6Dd6OxOCsUA=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.AsyncAssetHandler.html",
-          "hash": "J76ghjIeIXRScyNKFoiIVg=="
+          "hash": "ik8moyqqlGeElXI0cwrumw=="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.AsyncAssetState.html",
-          "hash": "JcKTvRzRAzn21tkgTXTzIA=="
+          "hash": "jMAvxkmPhv8MwE1x+slvYw=="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.AsyncHttpAsset.html",
-          "hash": "ie+7OU/DK0FBz2cXFUWshQ=="
+          "hash": "Ji7Lkw2Y4VKkIwA6entFyA=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.Diagnostics.Formater.html",
-          "hash": "wDHhIwdG1qK1t+c5hHKJXQ=="
+          "hash": "xehi4ksg/JJpWJ70W2zaRw=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.Diagnostics.SeverityLevel.html",
-          "hash": "A3BNrojVmzoqNcwNQzUlcQ=="
+          "hash": "ZVTVap6Fw5VUptDAGFLJ3w=="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.Diagnostics.html",
-          "hash": "MNDgOkVSrgPRN+ooetmOPA=="
+          "hash": "3VqT3EmYUxq9UTwm31MsYw=="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.Font.html",
-          "hash": "OMUF0w3FeTqPc+8ok7OtyA=="
+          "hash": "YBvzVYtosZwIxmEF4MpUyg=="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.IO.html",
-          "hash": "yhW0ipsnzBQ33PVWan31Lg=="
+          "hash": "jX756AXYUW1CqBmGlF75jw=="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.ImageData.html",
-          "hash": "9J2YVtkPjYcApB16RMCCGA=="
+          "hash": "Xwvs0Tk8FctlemzV8ffhKA=="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.html",
-          "hash": "l8sRA9DZrNs5T1AVjzJnpQ=="
+          "hash": "DMxdx/KFqRn2FyugE8b7OQ=="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Android.ApkAssetProvider.html",
-          "hash": "5jKefoz1aq1aKCNVRM21eg=="
+          "hash": "NQ+OeQ3VesQHcvCg7PjaYA=="
         }
       },
       "is_incremental": false,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Android.FileDecoder.html",
-          "hash": "L9XhsU/EoHOmivYwmZ+LYA=="
+          "hash": "emgbbBfguFOmvNyc+vdTNg=="
         }
       },
       "is_incremental": false,
@@ -477,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Android.FontImp.html",
-          "hash": "LVivlFG95EV2WlUVsXpUvw=="
+          "hash": "eHOcXb5E2fZNDiEmbD+INw=="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Android.IOImp.html",
-          "hash": "ptssHuVgrW+HuzF4Nh3jeg=="
+          "hash": "IwSOr++G3y6cg0YDbK6xjQ=="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Android.html",
-          "hash": "QNKG7b4BLrIUwFi6LRph7Q=="
+          "hash": "hF+7TnT8wQ5sYr6XFVfmvQ=="
         }
       },
       "is_incremental": false,
@@ -513,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Desktop.EmbeddedResourcesDllHandler.html",
-          "hash": "WmtWZPtL7sERTp2Xt1lLdg=="
+          "hash": "wmKTN9clCH3l2p+7NjB/GA=="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Desktop.FileAssetProvider.html",
-          "hash": "Xn8iCB/unydY4skl2s4O9w=="
+          "hash": "q9xwYshkV/RfIOvFhn8q/g=="
         }
       },
       "is_incremental": false,
@@ -537,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Desktop.FileDecoder.html",
-          "hash": "HDw+2yLg9XEHmYd3au1JLA=="
+          "hash": "ABr3aMSllVyHmPh/tezQgw=="
         }
       },
       "is_incremental": false,
@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Desktop.FontImp.html",
-          "hash": "EcxbgWsSOddtu2tiFQrI3w=="
+          "hash": "j5sPVtqVAN8iorUuVv/6UQ=="
         }
       },
       "is_incremental": false,
@@ -561,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Desktop.IOImp.html",
-          "hash": "YKW/XRPneudYrvOaElvCuw=="
+          "hash": "ByjhQC/aalUJAnNOLBs/Pw=="
         }
       },
       "is_incremental": false,
@@ -573,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Desktop.html",
-          "hash": "iJtJQT37vuyZnPLqH4LGFg=="
+          "hash": "ZvRBCKZPMEJ1atp1cIKHFw=="
         }
       },
       "is_incremental": false,
@@ -585,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.AttributeLocations.html",
-          "hash": "HULFHougyLoccH1lp5j4ww=="
+          "hash": "iLQ/oXsNuLiKRpkrY5zB4A=="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.AxisBoundedType.html",
-          "hash": "E/fGcM6EaoxXs76xsL+o8w=="
+          "hash": "JYaUWaMflzvJ+KQGLzKsuA=="
         }
       },
       "is_incremental": false,
@@ -609,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.AxisDescription.html",
-          "hash": "6eLUKM1qRbJEQwOL315lEw=="
+          "hash": "5wrJ71Ovjk7sLWuPR4tkhA=="
         }
       },
       "is_incremental": false,
@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.AxisDirection.html",
-          "hash": "aU5fD82tdfoOqvC7Enemrg=="
+          "hash": "08lPveupV9XrgyP5JBEhXg=="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.AxisImpDescription.html",
-          "hash": "xBdHkRGdbhwu3HBbij4FIg=="
+          "hash": "N/oREEUb0gF3XNdl8gzTIA=="
         }
       },
       "is_incremental": false,
@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.AxisNature.html",
-          "hash": "mQiki6hXRm0QT++A9uSIWw=="
+          "hash": "qvS/TybunOmxOWlGRU3GKg=="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.AxisValueChangedArgs.html",
-          "hash": "diCeUhS7ZycXzEmmnrFngw=="
+          "hash": "J/+gqahFjpGUPIUemgYZRg=="
         }
       },
       "is_incremental": false,
@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Blend.html",
-          "hash": "RVYoDNlqGpWol/eYYP3ZlQ=="
+          "hash": "Wk4EONHgW2VOGI6UHfdK9Q=="
         }
       },
       "is_incremental": false,
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.BlendOperation.html",
-          "hash": "XxUoCZzHWrIvhza8U9jiGw=="
+          "hash": "oNy40J2TomUiBb9mD0J6BA=="
         }
       },
       "is_incremental": false,
@@ -693,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ButtonDescription.html",
-          "hash": "mZFKWpeHvgtT9I7NgQMJAQ=="
+          "hash": "r6nLr57QdQd+jIVxcXhiMQ=="
         }
       },
       "is_incremental": false,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ButtonImpDescription.html",
-          "hash": "oVg0ENwkNlNkZb3fd9uOYA=="
+          "hash": "iwtgPM7ak+QvyAN1CcVqlg=="
         }
       },
       "is_incremental": false,
@@ -717,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ButtonValueChangedArgs.html",
-          "hash": "fY7pL7hesalB1M4WLoG18Q=="
+          "hash": "ZJpXBDsFRTk0qJ2VSaDv5g=="
         }
       },
       "is_incremental": false,
@@ -729,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.CharInfoStruct.html",
-          "hash": "zFXjqq3ksV1IG4MCEffsMw=="
+          "hash": "uv8i394FqBEnrAprU5EiQg=="
         }
       },
       "is_incremental": false,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ClearFlags.html",
-          "hash": "PQZ71eGbxldMJrniuGsaEQ=="
+          "hash": "8uQQ5x4hSt255u1ptQVQCg=="
         }
       },
       "is_incremental": false,
@@ -753,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Compare.html",
-          "hash": "k+Z2CRIdy+D5Mg/nx4fCfA=="
+          "hash": "L1yDWflX/hv3cT1e5xtkvQ=="
         }
       },
       "is_incremental": false,
@@ -765,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ConnectionStatus.html",
-          "hash": "R8jgtZ8obaR0tAsrWei2HA=="
+          "hash": "t8oEz6OSSxwAoaYnaG+9VQ=="
         }
       },
       "is_incremental": false,
@@ -777,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ConnectionUpdateEvent.html",
-          "hash": "r7pZf3QseCm/EHi/GOJbUg=="
+          "hash": "pTyOpkkyekg9JsFb43YHyQ=="
         }
       },
       "is_incremental": false,
@@ -789,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ControllerButton.html",
-          "hash": "w63qix0b/9e4/2IfQOj3og=="
+          "hash": "e/nip7beNmFDnjeFCuiQPw=="
         }
       },
       "is_incremental": false,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Cull.html",
-          "hash": "xF7e8EkHxvf5fhP+s8mOnQ=="
+          "hash": "X40HU5945kBbp5lbLfK1Kg=="
         }
       },
       "is_incremental": false,
@@ -813,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.CursorType.html",
-          "hash": "pPq6R5NFVKnJJnDGbYQ3Iw=="
+          "hash": "Y/2JxgXr6bfOAgs4zY/f+Q=="
         }
       },
       "is_incremental": false,
@@ -825,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.DeviceCategory.html",
-          "hash": "0wpojioH3dTu2YwibC5opQ=="
+          "hash": "rK2yKrU3e6/qRUcj2jBOZA=="
         }
       },
       "is_incremental": false,
@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.DeviceImpDisconnectedArgs.html",
-          "hash": "iPGwbE8bznhMwaszImHmBg=="
+          "hash": "65dRi3xmtrKDcoa8H9Q91Q=="
         }
       },
       "is_incremental": false,
@@ -849,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.FillMode.html",
-          "hash": "3DfhFeqOwT185Y992u2B2w=="
+          "hash": "rMYEja+KEuHbv/LeCo/lJw=="
         }
       },
       "is_incremental": false,
@@ -861,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.FuseeApplicationAttribute.html",
-          "hash": "pNt87hApmIiE3Wpe5eItNA=="
+          "hash": "0NhZ2S7DMvsk8f4dL9IKXQ=="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Gamepad.html",
-          "hash": "XhEKNvS01aDk/m8sMq+tiw=="
+          "hash": "IbFyBhWUUUYDn01S4I6Y9w=="
         }
       },
       "is_incremental": false,
@@ -885,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.HardwareCapability.html",
-          "hash": "alKwhW/QTZnorBdHJhhBbA=="
+          "hash": "4sNI0Yyh5ususuKM9hisfw=="
         }
       },
       "is_incremental": false,
@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.HingeFlags.html",
-          "hash": "/EfiXDJ8ExFzvjTAUpPulQ=="
+          "hash": "OlhKWMYfmTefdXhuGEpDFg=="
         }
       },
       "is_incremental": false,
@@ -909,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.HorizontalTextAlignment.html",
-          "hash": "WYhq6Omdy4SUduSPqq4PbQ=="
+          "hash": "Ev5WpGb1DCwFiRpaiH97mQ=="
         }
       },
       "is_incremental": false,
@@ -921,7 +921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IAttribImp.html",
-          "hash": "zSpLlgTpSfq2nDIQiNSS0Q=="
+          "hash": "sEBSXt0T0bSAwVqx720UUA=="
         }
       },
       "is_incremental": false,
@@ -933,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IAudioImp.html",
-          "hash": "rY6sQQh2ytxHLdx72nEIxA=="
+          "hash": "hVMMDZK/9XyS79KG7MgVGg=="
         }
       },
       "is_incremental": false,
@@ -945,7 +945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IAudioStreamImp.html",
-          "hash": "+kAGSYv1Y2LjbHR4gezT0g=="
+          "hash": "YLxGjNhQgx7EJkSc5Y7QiQ=="
         }
       },
       "is_incremental": false,
@@ -957,7 +957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IBoxShapeImp.html",
-          "hash": "ozMRZY06sC4gC22Jnwd2zQ=="
+          "hash": "vkx7QCDMqHGWnqYm34PKtQ=="
         }
       },
       "is_incremental": false,
@@ -969,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IBufferHandle.html",
-          "hash": "/6I8/GVNXzoAroPoDxgUtg=="
+          "hash": "5gt6fmtMOIS4AuebXty3ZA=="
         }
       },
       "is_incremental": false,
@@ -981,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ICapsuleShapeImp.html",
-          "hash": "ZsvJuHI8LVNxmLishc3rVQ=="
+          "hash": "xLreqr5UwYsCTkCmEmSYdQ=="
         }
       },
       "is_incremental": false,
@@ -993,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ICollisionShapeImp.html",
-          "hash": "Yo+cQJXta/afEio8Hke2qw=="
+          "hash": "5ZYlXtaNFriPI85RdZwHAA=="
         }
       },
       "is_incremental": false,
@@ -1005,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ICompoundShapeImp.html",
-          "hash": "wOqkfkqCnvYimL/2wKbgmA=="
+          "hash": "aTJJbA1y8karcIw+YHabeg=="
         }
       },
       "is_incremental": false,
@@ -1017,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IConeShapeImp.html",
-          "hash": "ki2LSFsHcS2x/cBBmm3sww=="
+          "hash": "v4ZpK3COHVb/UFBRqQzZ3g=="
         }
       },
       "is_incremental": false,
@@ -1029,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IConeTwistConstraintImp.html",
-          "hash": "GCa3VF2IgQlTXgztrgL1vg=="
+          "hash": "jhwxhps7Zqen6RnqZOHjVQ=="
         }
       },
       "is_incremental": false,
@@ -1041,7 +1041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IConstraintImp.html",
-          "hash": "nczfvn8TPb27HZ4FBW9ZAQ=="
+          "hash": "H/Jebhn7w2TqQ4KqvawzHA=="
         }
       },
       "is_incremental": false,
@@ -1053,7 +1053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IConvexHullShapeImp.html",
-          "hash": "e892rYxWz5crAsxcf556gw=="
+          "hash": "nNDd6uqsnL9y6Lz3CEvY1g=="
         }
       },
       "is_incremental": false,
@@ -1065,7 +1065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ICylinderShapeImp.html",
-          "hash": "rrIBQRxI3xY5g37XJ0oIVQ=="
+          "hash": "JVRQ81MOpt++CTqLX9WOCw=="
         }
       },
       "is_incremental": false,
@@ -1077,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IDynamicWorldImp.html",
-          "hash": "qHpPtJDQ6fBCSlJZwSuTqA=="
+          "hash": "+UnbWOm5DAJZs4qY4R4XXg=="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IEmptyShapeImp.html",
-          "hash": "npyk3t6glNe30Uxw5BHygw=="
+          "hash": "e1BomVH/0vcNuJsGtOjYtw=="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IFont.html",
-          "hash": "6Ymyreg3BYBgFT1CUb+pTw=="
+          "hash": "AS5b8HpdT/CJuLiPqRaQkg=="
         }
       },
       "is_incremental": false,
@@ -1113,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IGImpactMeshShapeImp.html",
-          "hash": "B2wZqgp23t3pFxKf0XS0oA=="
+          "hash": "PMYUP+qTfftgi9ul0zcwyA=="
         }
       },
       "is_incremental": false,
@@ -1125,7 +1125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IGearConstraintImp.html",
-          "hash": "H3hrzI1+Zt48NkWl/M5DIg=="
+          "hash": "nlEa9w5OU8Mcty8HzespoA=="
         }
       },
       "is_incremental": false,
@@ -1137,7 +1137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IGeneric6DofConstraintImp.html",
-          "hash": "rhsfs25PtRl9OoltW/AryQ=="
+          "hash": "QPZE9/lfcIQ09Sqh8Qpmhg=="
         }
       },
       "is_incremental": false,
@@ -1149,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IHingeConstraintImp.html",
-          "hash": "fnepQ5m+EvLEAsIQKm3Jdw=="
+          "hash": "/+6DFS4QagFDIaHaPxBT3Q=="
         }
       },
       "is_incremental": false,
@@ -1161,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IInputDeviceImp.html",
-          "hash": "OZR5ZPZuDwHW719PC5gKIA=="
+          "hash": "IikOTzquqljFsJ0n714CZw=="
         }
       },
       "is_incremental": false,
@@ -1173,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IInputDeviceImpOld.html",
-          "hash": "+fqsvYw6PEh9JtkZIrO4fQ=="
+          "hash": "D3bbyh5/3UkX4Hsb8b7vEQ=="
         }
       },
       "is_incremental": false,
@@ -1185,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IInputDriverImp.html",
-          "hash": "Nw15eqtTugyVPnU/GpnWVA=="
+          "hash": "b23TUggT68MiP15jVynN6w=="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IMeshImp.html",
-          "hash": "hDXlVFRTgTS+AHBkBn5vaA=="
+          "hash": "eZnik6Tru5my5WkVhZ7iVQ=="
         }
       },
       "is_incremental": false,
@@ -1209,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IMultiSphereShapeImp.html",
-          "hash": "Vs7u+HIXNx6bKkOViujjpA=="
+          "hash": "5g6hTvaaaXRX1xQmyh8F0Q=="
         }
       },
       "is_incremental": false,
@@ -1221,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.INetworkConnection.html",
-          "hash": "OAPsiW3BahNtUlDRQ9WBAg=="
+          "hash": "eIv7r/SBy0fZLoifgTJGYw=="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.INetworkImp.html",
-          "hash": "Fr+Y8/BWjsTGPJtVeVYxRw=="
+          "hash": "F092Huk442xNGQRruH2QcA=="
         }
       },
       "is_incremental": false,
@@ -1245,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.INetworkMsg.html",
-          "hash": "QJLIl2NT6ZRFpR7H4JcYEw=="
+          "hash": "LDNCK3N0hsHY8xAyct/gzg=="
         }
       },
       "is_incremental": false,
@@ -1257,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IPEndpointData.html",
-          "hash": "FcHZWnowsnjHazL6iyV3cw=="
+          "hash": "Jx5147AF3gQ05AhWB6W6KQ=="
         }
       },
       "is_incremental": false,
@@ -1269,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IPoint2PointConstraintImp.html",
-          "hash": "bzwJni+JLaUdnaUNKlwAOw=="
+          "hash": "PRWcG1hQU+Rv+I/QkAbv6A=="
         }
       },
       "is_incremental": false,
@@ -1281,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IRenderCanvasImp.html",
-          "hash": "XHyprSYvfoSZUBoEgkzMUA=="
+          "hash": "MahyaVrvn33H63skZR2fzQ=="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IRenderContextImp.html",
-          "hash": "DGx+tuWcQP65TrFoY0rY1Q=="
+          "hash": "DrspkuIQw+RoBZ3gHLlqoA=="
         }
       },
       "is_incremental": false,
@@ -1305,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IRenderTarget.html",
-          "hash": "+b9OOay/tqWscLUUEeRZFA=="
+          "hash": "RvDBbV5UEZSeemGBYaslCA=="
         }
       },
       "is_incremental": false,
@@ -1317,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IRigidBodyImp.html",
-          "hash": "Oukh1BsXYc5pGpgaFh8oTQ=="
+          "hash": "p9ryOsJ1Xy/uddqzsxaEjA=="
         }
       },
       "is_incremental": false,
@@ -1329,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IShaderHandle.html",
-          "hash": "G9tkNKufsAt4MwMNOhmCew=="
+          "hash": "Yxq8PvRwQcwzJAk2i8/1Fg=="
         }
       },
       "is_incremental": false,
@@ -1341,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IShaderParam.html",
-          "hash": "gvMeGfirLUwpjy5VK1HXRQ=="
+          "hash": "tzrl5Cj/ENRxNsFro8bvXw=="
         }
       },
       "is_incremental": false,
@@ -1353,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ISliderConstraintImp.html",
-          "hash": "JPEDX41v72uIn7m+Sy0GaA=="
+          "hash": "FJMpyMMWDHzGrFiWIcBBvA=="
         }
       },
       "is_incremental": false,
@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ISphereShapeImp.html",
-          "hash": "J8dVOGIyFmCMp6KxDfglIw=="
+          "hash": "918NCQux9cACKwikZAOSvw=="
         }
       },
       "is_incremental": false,
@@ -1377,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IStaticPlaneShapeImp.html",
-          "hash": "wwkNnhvM2VBI5ySRc/FDgQ=="
+          "hash": "7XFGFm1VhBWVDMxbHkETGA=="
         }
       },
       "is_incremental": false,
@@ -1389,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ITexture.html",
-          "hash": "2yu8m/VFS9U201kgxLcC3A=="
+          "hash": "wlBAnx/hoCPqzdJPjluEhA=="
         }
       },
       "is_incremental": false,
@@ -1401,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ITextureBase.html",
-          "hash": "mcE4ZX8miFspP3izVMzgxw=="
+          "hash": "in2WCEefWU0R/J/7XOpgtg=="
         }
       },
       "is_incremental": false,
@@ -1413,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ITextureHandle.html",
-          "hash": "PRqx54Ka+ehsaWzKZriQ7Q=="
+          "hash": "l/vQgQW1tTnotfOJxct5MQ=="
         }
       },
       "is_incremental": false,
@@ -1425,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ITexturePixelInfo.html",
-          "hash": "CJJSNWsUfxvbnn5881qAoA=="
+          "hash": "6Gnix/2H+/mXCdAg7ayhZQ=="
         }
       },
       "is_incremental": false,
@@ -1437,7 +1437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IVideoManagerImp.html",
-          "hash": "wkMkHQUvEcMSDJgAYBApqg=="
+          "hash": "aCN+X7yZro5tum1W+Wol4g=="
         }
       },
       "is_incremental": false,
@@ -1449,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IVideoStreamImp.html",
-          "hash": "XiCSWaHXPKhsO7rMp0xuQw=="
+          "hash": "pDAtYVqFBEuauUxI94Takg=="
         }
       },
       "is_incremental": false,
@@ -1461,7 +1461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IWritableArrayTexture.html",
-          "hash": "RbcxdqpGCCtCeakwtqHDzA=="
+          "hash": "qqWCBWr7GzVZE6TpXP8FxQ=="
         }
       },
       "is_incremental": false,
@@ -1473,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IWritableCubeMap.html",
-          "hash": "F4BIDMaRYcCjyYbZL5uchg=="
+          "hash": "IsSHNsyNoimIfHistwnb1w=="
         }
       },
       "is_incremental": false,
@@ -1485,7 +1485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.IWritableTexture.html",
-          "hash": "1XMZX6wUldf39N0jbxRN8g=="
+          "hash": "3AL/vCUR8K5+N9Pduyb9LQ=="
         }
       },
       "is_incremental": false,
@@ -1497,7 +1497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.InitEventArgs.html",
-          "hash": "S6Ikh/QjDUFr26WPjLzbIA=="
+          "hash": "3sIMdAbf70LFt9wHqfYqCw=="
         }
       },
       "is_incremental": false,
@@ -1509,7 +1509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.KeyCodes.html",
-          "hash": "yOsetzzMFuPYNdD78YZUDw=="
+          "hash": "OOrflejscCCaX1HKsc4NCw=="
         }
       },
       "is_incremental": false,
@@ -1521,7 +1521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.KeyEventArgs.html",
-          "hash": "m8D5crMQqoHyzgT9z72r4g=="
+          "hash": "8eYb56QG1fp42t1Wy+Gibg=="
         }
       },
       "is_incremental": false,
@@ -1533,7 +1533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.MessageDelivery.html",
-          "hash": "rkE+iGFoaGSy6p4IzPTBcg=="
+          "hash": "bKsB6rlTEhYmYtea8F10sw=="
         }
       },
       "is_incremental": false,
@@ -1545,7 +1545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.MessageType.html",
-          "hash": "yGVAQ57MAUM+fLIKSOV84g=="
+          "hash": "6I9k+V3NPeCViSImJo/3/Q=="
         }
       },
       "is_incremental": false,
@@ -1557,7 +1557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.MouseAxes.html",
-          "hash": "q2NmW26rA1EbiMqknOTEFg=="
+          "hash": "VbyDmaLyNp/VvoVuTYJQ6w=="
         }
       },
       "is_incremental": false,
@@ -1569,7 +1569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.MouseButtons.html",
-          "hash": "WbhzIixcuPtOeeN7kuDV1w=="
+          "hash": "0H19PFWoN+zHhyXY/Ij1ZQ=="
         }
       },
       "is_incremental": false,
@@ -1581,7 +1581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.MouseEventArgs.html",
-          "hash": "ZdlCEGTNTwE5RVNMTu9DLw=="
+          "hash": "bQCEXPXkKWW3RB917te9aQ=="
         }
       },
       "is_incremental": false,
@@ -1593,7 +1593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.MsgDataTypes.html",
-          "hash": "0WHlBbV7pFdnGGtdCFZwMQ=="
+          "hash": "5OavP1ovDxF8t4Bq3+2G7w=="
         }
       },
       "is_incremental": false,
@@ -1605,7 +1605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.NetConfigValues.html",
-          "hash": "aGFCFcYzK3gQNik1U1WiXw=="
+          "hash": "hz5SgvGOoxfiGgkk3aEHLQ=="
         }
       },
       "is_incremental": false,
@@ -1617,7 +1617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.NetStatusValues.html",
-          "hash": "hr2bqKKP+Zbcl32mbjCNSg=="
+          "hash": "fKgFE1CzL4Ra16Sm9K4/Jg=="
         }
       },
       "is_incremental": false,
@@ -1629,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.NetworkMsgType.html",
-          "hash": "jFaNCYRqjW3pooHD5HJAww=="
+          "hash": "zUVnG6QL5VcL5rTJcbR4RA=="
         }
       },
       "is_incremental": false,
@@ -1641,7 +1641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.NewDeviceImpConnectedArgs.html",
-          "hash": "PJGegWQ/+CPTf25ARaWwCg=="
+          "hash": "PjLaO04e3Ko0tR3mSXI8TA=="
         }
       },
       "is_incremental": false,
@@ -1653,7 +1653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.OpenGLPrimitiveType.html",
-          "hash": "/2CqMudH2hwSdLXbK6+y3g=="
+          "hash": "ACm9nl3MzebEUqsgdJ1Jgg=="
         }
       },
       "is_incremental": false,
@@ -1665,7 +1665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Point.html",
-          "hash": "ZClYINLxYfMq4JZWQ2Ka3g=="
+          "hash": "/ByoKDFj/HbpWH4i4P+Onw=="
         }
       },
       "is_incremental": false,
@@ -1677,7 +1677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.PointToPointFlags.html",
-          "hash": "aOKKiM+ar7C/d6DVPYyp+w=="
+          "hash": "G3uCd/O8i6BiOqY9aofaJA=="
         }
       },
       "is_incremental": false,
@@ -1689,7 +1689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Rectangle.html",
-          "hash": "pyhFZ5y0J2dxpWP4/jYFzQ=="
+          "hash": "sRD+R6MCim8DOFng+x0sWg=="
         }
       },
       "is_incremental": false,
@@ -1701,7 +1701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.RenderEventArgs.html",
-          "hash": "S32WzE0vgF9BjKMkcrrCuQ=="
+          "hash": "pblte0XRKDku2vZWQ5oRvQ=="
         }
       },
       "is_incremental": false,
@@ -1713,7 +1713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.RenderState.html",
-          "hash": "rF3T8j+YsoOnZgVD1Lo3ig=="
+          "hash": "JEnSljcIZV8ckX1xMYDppQ=="
         }
       },
       "is_incremental": false,
@@ -1725,7 +1725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.RenderTargetTextureTypes.html",
-          "hash": "rtUg/KOv9PpSagvh0jLtRQ=="
+          "hash": "BibCebbG/m4GBIfIEex1Ag=="
         }
       },
       "is_incremental": false,
@@ -1737,7 +1737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ResizeEventArgs.html",
-          "hash": "soVOcGYhrH9TwEmaR4PAtQ=="
+          "hash": "lbBmEp72l3OS8/l7FCnXfQ=="
         }
       },
       "is_incremental": false,
@@ -1749,7 +1749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.ShaderParamInfo.html",
-          "hash": "7M6vxLK2uEZ1Yitg70D4Sg=="
+          "hash": "jWJEjHuELj7sNsPxpcvxVQ=="
         }
       },
       "is_incremental": false,
@@ -1761,7 +1761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.SixDOFAxis.html",
-          "hash": "5O3jk6BSSyc3lDbR8v/F1w=="
+          "hash": "HEX50bpy14SmSsop+xzykQ=="
         }
       },
       "is_incremental": false,
@@ -1773,7 +1773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Suid.html",
-          "hash": "5dGHakMe8JFg8+xpZVyoAA=="
+          "hash": "mpPHyh0OSjuiReR4fvigUA=="
         }
       },
       "is_incremental": false,
@@ -1785,7 +1785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.SysType.html",
-          "hash": "g+p+rRvdkykQ++o2DQYgPw=="
+          "hash": "5CTGY50h5qom1C4sQtlg7Q=="
         }
       },
       "is_incremental": false,
@@ -1797,7 +1797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TexRes.html",
-          "hash": "46ct9mCZO508aRfDngXRLQ=="
+          "hash": "PyYRrBBsLCMGMjp5qUtwOA=="
         }
       },
       "is_incremental": false,
@@ -1809,7 +1809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TextureChangedEnum.html",
-          "hash": "Cbc0BfmgSkfFXyWEIV10wQ=="
+          "hash": "3c96fJUA14aPIcP+6ANCfw=="
         }
       },
       "is_incremental": false,
@@ -1821,7 +1821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TextureCompareMode.html",
-          "hash": "HosX1tZApn6kpHJMShD/rg=="
+          "hash": "JjHrapm+OraDqC6Ch90tKw=="
         }
       },
       "is_incremental": false,
@@ -1833,7 +1833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TextureEventArgs.html",
-          "hash": "0PRbuZPXIc6/j2oaOQdH3Q=="
+          "hash": "mbubB/3McE7lpthywCONLA=="
         }
       },
       "is_incremental": false,
@@ -1845,7 +1845,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TextureFilterMode.html",
-          "hash": "KsPvIcjIULrbmsdqizdF4g=="
+          "hash": "LFwoaPATNUaCQH0CSDp3Sw=="
         }
       },
       "is_incremental": false,
@@ -1857,7 +1857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TextureType.html",
-          "hash": "B94WZaTuQn3PD26rfTD7qQ=="
+          "hash": "islYRfpE6cCHt8kbksPKUw=="
         }
       },
       "is_incremental": false,
@@ -1869,7 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TextureWrapMode.html",
-          "hash": "za6IxDOqTu3EqxPZvgL6iQ=="
+          "hash": "SIsY1RA0hwuKCkPLOIwIXA=="
         }
       },
       "is_incremental": false,
@@ -1881,7 +1881,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TouchAxes.html",
-          "hash": "oqX3m4jukQvrrEefLAtMOw=="
+          "hash": "vfK+aKWBaDHr+ws2HgK72w=="
         }
       },
       "is_incremental": false,
@@ -1893,7 +1893,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.TouchPoints.html",
-          "hash": "TzGsjJXvjjpkhMmCh6hTBg=="
+          "hash": "ewvDuuKtAn+7UpzJ7T2UtA=="
         }
       },
       "is_incremental": false,
@@ -1905,7 +1905,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.VerticalTextAlignment.html",
-          "hash": "8UftkyYiUhBQjvwhCLjG5Q=="
+          "hash": "AFAVQBEU2VMJmyFEIU1a4A=="
         }
       },
       "is_incremental": false,
@@ -1917,7 +1917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.html",
-          "hash": "u0Mk0UO7XoGxk2vhJoBeNA=="
+          "hash": "TSsvNKLlTloScVGtBSQghg=="
         }
       },
       "is_incremental": false,
@@ -1929,7 +1929,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.AABBCalculator.AABBState.html",
-          "hash": "/OrVzqtJfKUX3u016Er2ig=="
+          "hash": "m7JVXQZTRF5v0lCcF35gMA=="
         }
       },
       "is_incremental": false,
@@ -1941,7 +1941,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.AABBCalculator.html",
-          "hash": "sVqmZueJAUMOaIwU+zjn4A=="
+          "hash": "tVO+oJWcDzhaJhirhR9jOA=="
         }
       },
       "is_incremental": false,
@@ -1953,7 +1953,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Audio.html",
-          "hash": "gUU/t53zMtrbn0O98oufNA=="
+          "hash": "vGNu+vpdQXmYqDL9fASo3w=="
         }
       },
       "is_incremental": false,
@@ -1965,7 +1965,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.BoxShape.html",
-          "hash": "ABBl3QQnaV9MPv0n3CFrig=="
+          "hash": "NrYZQg+dFljQv1kpTFqs4g=="
         }
       },
       "is_incremental": false,
@@ -1977,7 +1977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Bucket-1.html",
-          "hash": "PeEUd6xWSUErUv38AIJVqg=="
+          "hash": "ulJ3l1ZhRtMlyo30hSFkWA=="
         }
       },
       "is_incremental": false,
@@ -1989,7 +1989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.CapsuleShape.html",
-          "hash": "2PViSj/aaoqDZ/9YZb2aEg=="
+          "hash": "nzxL4Imc5/oDrwmyGll+7Q=="
         }
       },
       "is_incremental": false,
@@ -2001,7 +2001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.CollisionShape.html",
-          "hash": "M8vqVEeKtNw/+w4ONRA7QQ=="
+          "hash": "3IYqzrP/MoDkWdAVUXvvdw=="
         }
       },
       "is_incremental": false,
@@ -2013,7 +2013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.CompoundShape.html",
-          "hash": "RHjusoBTHNqpLQeQUjF4pw=="
+          "hash": "weeewFhvSucLctisEYvK1w=="
         }
       },
       "is_incremental": false,
@@ -2025,7 +2025,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ConeShape.html",
-          "hash": "hQoQd2BMQ5alLt/UtNZy3w=="
+          "hash": "lAwih2ci/r/E2WGHxLM/9g=="
         }
       },
       "is_incremental": false,
@@ -2037,7 +2037,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ConeTwistConstraint.html",
-          "hash": "G5h5Qo0Kns5OVFEUJTEfxw=="
+          "hash": "bJwg6/bnMLQUtYjiEMbosg=="
         }
       },
       "is_incremental": false,
@@ -2049,7 +2049,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ConvexHullShape.html",
-          "hash": "4nMrKJ8UGsWPiKJQfFaKQg=="
+          "hash": "uYYhYSaJTCwolVhUMZtUIQ=="
         }
       },
       "is_incremental": false,
@@ -2061,7 +2061,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.CreatorFunc.html",
-          "hash": "NTzT8iEEnziJsMiC0DjLcQ=="
+          "hash": "er142MH0ictV4reOkWYZoQ=="
         }
       },
       "is_incremental": false,
@@ -2073,7 +2073,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.CylinderShape.html",
-          "hash": "kCBO/QhZcirn9+uF91wr5g=="
+          "hash": "bKqfTUvwKCYSEJ7cYRKtDw=="
         }
       },
       "is_incremental": false,
@@ -2085,7 +2085,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.DeviceConnectionArgs.html",
-          "hash": "nhVxMJk2TtowDwV3aHA0jw=="
+          "hash": "3FtmSFH4/L2EK+N0XDsNLw=="
         }
       },
       "is_incremental": false,
@@ -2097,7 +2097,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.DynamicWorld.html",
-          "hash": "CuVrKQ1QFMfUovRUiKOYkQ=="
+          "hash": "VD8lti8bLL+8HRyrNqQVeg=="
         }
       },
       "is_incremental": false,
@@ -2109,7 +2109,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.BRDFInput.html",
-          "hash": "z4TX23gCB52srdtxKeJEvA=="
+          "hash": "l4fZgeLD95b2jSV+MtIeIw=="
         }
       },
       "is_incremental": false,
@@ -2121,7 +2121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.ColorInput.html",
-          "hash": "HXHco1HKEcyEe6gbGODfGA=="
+          "hash": "DwwaTsQnbz+X2tSIIKuI2g=="
         }
       },
       "is_incremental": false,
@@ -2133,7 +2133,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.DefaultSurfaceEffect.html",
-          "hash": "hkb6aGiyde13GvfAHrmSIQ=="
+          "hash": "mGa0Z6w0dOXKKl4/VZVuig=="
         }
       },
       "is_incremental": false,
@@ -2145,7 +2145,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.Effect.html",
-          "hash": "jEbjLoQMYe3pVRU48TaiUw=="
+          "hash": "ZCOMyrB7QlvOiF9EklcpdA=="
         }
       },
       "is_incremental": false,
@@ -2157,7 +2157,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.EffectManagerEventArgs.html",
-          "hash": "tJpYK2vOMH1kUaTFEa7cvw=="
+          "hash": "VjFfII8faXNjT9kViJm+rQ=="
         }
       },
       "is_incremental": false,
@@ -2169,7 +2169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.FxParamDeclaration-1.html",
-          "hash": "phqaQXAmADVxcBGJI4SYuw=="
+          "hash": "HcHUh3JU7/adivalHZlfUw=="
         }
       },
       "is_incremental": false,
@@ -2181,7 +2181,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.FxPassDeclaration.html",
-          "hash": "5ruWWmz1Q9XKehQgb4KXVA=="
+          "hash": "LXM+HLKPicZ213jcGHbBxA=="
         }
       },
       "is_incremental": false,
@@ -2193,7 +2193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.IFxParamDeclaration.html",
-          "hash": "1J5DK2yW7LA62euz3ULYqw=="
+          "hash": "bIO5iv344FLkKSf6bSTLsw=="
         }
       },
       "is_incremental": false,
@@ -2205,7 +2205,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.IFxPassDeclarationBase.html",
-          "hash": "sO9JPuoNz8/pIowT5CCauA=="
+          "hash": "rapm2BKTfOpC2D8p4NOUMA=="
         }
       },
       "is_incremental": false,
@@ -2217,7 +2217,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.INotifyInputChange.html",
-          "hash": "AJ61KGCgSEWBzbyCUpfd3w=="
+          "hash": "pvC7zY6xqhjNxT2f1XZqDg=="
         }
       },
       "is_incremental": false,
@@ -2229,7 +2229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.ShaderCategory.html",
-          "hash": "1acexPETtZRMTzeMTECXrw=="
+          "hash": "IDIB2mAAkPM68TsDFKMRVw=="
         }
       },
       "is_incremental": false,
@@ -2241,7 +2241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.ShaderEffect.html",
-          "hash": "CNVmIBC+fcj2f1LgufvyhA=="
+          "hash": "ACv/ou/4ptQrZ5k92qiVvQ=="
         }
       },
       "is_incremental": false,
@@ -2253,7 +2253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.ShardCategory.html",
-          "hash": "Q2Pdz31ZgR+Izdm+S6LpiA=="
+          "hash": "AvFNeiTIh0Qef7gbdiE0+g=="
         }
       },
       "is_incremental": false,
@@ -2265,7 +2265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.SpecularInput.html",
-          "hash": "Sa4cjFjoDOHq0P4UUFFTbQ=="
+          "hash": "OXLwX2NQNLj/2sZ8PBI4+Q=="
         }
       },
       "is_incremental": false,
@@ -2277,7 +2277,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.SurfaceEffect.html",
-          "hash": "MQmW4ynW6+Es8gdJoF+zVQ=="
+          "hash": "w7g27pFL7KBkzTQ1Yimlzw=="
         }
       },
       "is_incremental": false,
@@ -2289,7 +2289,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.SurfaceEffectEventArgs.html",
-          "hash": "nT6wmAEbuGFBOFjIpc15Jg=="
+          "hash": "FQnFxzge3p8Dhs6P4G20Cg=="
         }
       },
       "is_incremental": false,
@@ -2301,7 +2301,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.TextureInputBRDF.html",
-          "hash": "OvD3qdDh8oPDRdbzigHusQ=="
+          "hash": "8hdlut3jC21jx6tVWoxPuw=="
         }
       },
       "is_incremental": false,
@@ -2313,7 +2313,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.TextureInputColor.html",
-          "hash": "+tIjIWspTrrrvVDZoLG5Vw=="
+          "hash": "xiYJpVJ8JmyM3tANMcgARw=="
         }
       },
       "is_incremental": false,
@@ -2325,7 +2325,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.TextureInputColorUnlit.html",
-          "hash": "Z31ORLzUGnmplq3jCdGGrg=="
+          "hash": "zfcS7EX2hL/rRIdjwAxEXQ=="
         }
       },
       "is_incremental": false,
@@ -2337,7 +2337,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.TextureInputSpecular.html",
-          "hash": "ET7AOCBH30oP0sZCpGnnhw=="
+          "hash": "qbbdp5ipiSvO4+FtyTBbmQ=="
         }
       },
       "is_incremental": false,
@@ -2349,7 +2349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.UniformChangedEnum.html",
-          "hash": "OyzT3/ZMIHPbTcxq1CpU5g=="
+          "hash": "SJj4udGorpWbqErO7nXvMg=="
         }
       },
       "is_incremental": false,
@@ -2361,7 +2361,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Effects.html",
-          "hash": "pdKVimhpPuMP8bglFt2sDg=="
+          "hash": "6wg+66xX58HxWTLqNqJ8BA=="
         }
       },
       "is_incremental": false,
@@ -2373,7 +2373,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.EmptyShape.html",
-          "hash": "PRANx6VuBiyk8e8bnZ42Iw=="
+          "hash": "Cyr/JK3eIMmGLQI8K4qXyg=="
         }
       },
       "is_incremental": false,
@@ -2385,7 +2385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Face.html",
-          "hash": "gXJUb9YfGpHOWUuf0g7obg=="
+          "hash": "Ye/vA/zqGUM1x9MCpas0Rw=="
         }
       },
       "is_incremental": false,
@@ -2397,7 +2397,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.FontMap.html",
-          "hash": "kEY8hVIP00fm6tjFQ2rJkA=="
+          "hash": "l0nzagTFw9Rny52K1msHjQ=="
         }
       },
       "is_incremental": false,
@@ -2409,7 +2409,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.FusSceneConverter.html",
-          "hash": "eb3ZmdkbhxIsSXXAI5hVWA=="
+          "hash": "U98l2hSPAJNI+JC9D4AR8w=="
         }
       },
       "is_incremental": false,
@@ -2421,7 +2421,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.FxParam.html",
-          "hash": "v8kRdHYZzuLZT4h/9RHrGg=="
+          "hash": "UxUsxF71eIyF2q2WoGF1kA=="
         }
       },
       "is_incremental": false,
@@ -2433,7 +2433,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.GImpactMeshShape.html",
-          "hash": "vnmw8rVKxnb6v5ZunzrI5w=="
+          "hash": "Rr1hQUmKDUv0WKxYxejUxw=="
         }
       },
       "is_incremental": false,
@@ -2445,7 +2445,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.GamePadDevice.html",
-          "hash": "Py/ZHC3WjwVENY2V0D0lbA=="
+          "hash": "5R6yGw/IRTUgRonOt6aSEQ=="
         }
       },
       "is_incremental": false,
@@ -2457,7 +2457,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.GearConstraint.html",
-          "hash": "EaakkpJxZ/jQ1GupJ8tQwA=="
+          "hash": "3DMbMHKxtPQ5YpYiaJeKyQ=="
         }
       },
       "is_incremental": false,
@@ -2469,7 +2469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Generic6DofConstraint.html",
-          "hash": "AbSMfra1e4zcHpNZhJPIyg=="
+          "hash": "zXQE1GJYFw553m5lo+zPKA=="
         }
       },
       "is_incremental": false,
@@ -2481,7 +2481,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Geometry.html",
-          "hash": "ueWCPq/XNuKe22P1/e/33w=="
+          "hash": "5yVM3JHQKmuDx4T8lusP5Q=="
         }
       },
       "is_incremental": false,
@@ -2493,7 +2493,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.GlyphOnMap.html",
-          "hash": "so91gXfqPfHF4WyHeocbLQ=="
+          "hash": "vQsMemsoMc+PBQZyPbVlWg=="
         }
       },
       "is_incremental": false,
@@ -2505,7 +2505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.HingeConstraint.html",
-          "hash": "PCl2+aXYVZf1+yl2LlXmtA=="
+          "hash": "eWAHqkUQvLjbXn9/7OURUQ=="
         }
       },
       "is_incremental": false,
@@ -2517,7 +2517,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Input.html",
-          "hash": "na3f58h86+hKLsAy7bpgLA=="
+          "hash": "Ly6OkNBmNhgsVIJiO1694A=="
         }
       },
       "is_incremental": false,
@@ -2529,7 +2529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.InputDevice.AxisValueCalculator.html",
-          "hash": "204pBix8IHl1N7ZHHu/uwQ=="
+          "hash": "xIjr1vkKEvHhji562zmsWw=="
         }
       },
       "is_incremental": false,
@@ -2541,7 +2541,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.InputDevice.html",
-          "hash": "EUAQGXtFIT911P6C3yow+A=="
+          "hash": "tzeSXP/YwQYIn0GjU4ullA=="
         }
       },
       "is_incremental": false,
@@ -2553,7 +2553,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.JometriMesh.html",
-          "hash": "HNbfVBP/S0P6g5XUfqFqNA=="
+          "hash": "He7AGHGXsQqSkVNK3lUmJg=="
         }
       },
       "is_incremental": false,
@@ -2565,7 +2565,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.KeyboardDevice.html",
-          "hash": "0of4s6uajAP6ptNIcUYnpg=="
+          "hash": "8Cipn0Tbuw756v95wFXUnw=="
         }
       },
       "is_incremental": false,
@@ -2577,7 +2577,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.LightResult.html",
-          "hash": "G+XBXcDIZUhNBGVDHdgBKg=="
+          "hash": "hQYZNjtDvOQH5L7jslMOhg=="
         }
       },
       "is_incremental": false,
@@ -2589,7 +2589,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.MakeEffect.html",
-          "hash": "pCDyXEZI31J83uVhXZrfvw=="
+          "hash": "GOfzNDekCJJu18xZI+N/Qw=="
         }
       },
       "is_incremental": false,
@@ -2601,7 +2601,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.MatchFunc.html",
-          "hash": "PfnB9XZ0Zm0S2TsHebEniQ=="
+          "hash": "VjkK+7fGKPwKqYhJQv6jSg=="
         }
       },
       "is_incremental": false,
@@ -2613,7 +2613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.MeshChangedEnum.html",
-          "hash": "+YjTFvYP8YsDCewso/WxEQ=="
+          "hash": "3PYmNpzmlLrZEqHOA+6OsA=="
         }
       },
       "is_incremental": false,
@@ -2625,7 +2625,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.MeshDataEventArgs.html",
-          "hash": "lkpBfVG17bX/kFdE7Xwd8g=="
+          "hash": "WnTYY7HIeHbK0HLLYH887Q=="
         }
       },
       "is_incremental": false,
@@ -2637,7 +2637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.MeshReader.html",
-          "hash": "36F5qFY+4mwdUaNa6pkSaA=="
+          "hash": "NEs8xpkwicMatVaWqBiRgQ=="
         }
       },
       "is_incremental": false,
@@ -2649,7 +2649,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.MouseDevice.html",
-          "hash": "PPIn1CEg1zGdTmaeoXLwRg=="
+          "hash": "+fRuefElbcpFIdzC7DEWPg=="
         }
       },
       "is_incremental": false,
@@ -2661,7 +2661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.MultiSphereShape.html",
-          "hash": "9/AAypHLBtQgZXZsll05sg=="
+          "hash": "ijbnzKR6z6yJ4YTbT7RVNw=="
         }
       },
       "is_incremental": false,
@@ -2673,7 +2673,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Network.html",
-          "hash": "HG2CYzPs0QnlJTf3Kn+TvQ=="
+          "hash": "zHujlOEBWX4PVlJ9GtKUuQ=="
         }
       },
       "is_incremental": false,
@@ -2685,7 +2685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.OBBCalculator.OBBState.html",
-          "hash": "YHC4HyEMpLeMx0oZ8ijiTA=="
+          "hash": "M38F0zOwq+ombU3Jvo2vQA=="
         }
       },
       "is_incremental": false,
@@ -2697,7 +2697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.OBBCalculator.html",
-          "hash": "b9JTFeGP81HfsqQnYkKH8g=="
+          "hash": "3N3XQ6LrPbQgVUH5X+GdpQ=="
         }
       },
       "is_incremental": false,
@@ -2709,7 +2709,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Octant-1.html",
-          "hash": "/dt4SD/emdWJaELbvICb/Q=="
+          "hash": "RBBirGWcKnwuRzMQB23Rpg=="
         }
       },
       "is_incremental": false,
@@ -2721,7 +2721,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ParticleEmitter.html",
-          "hash": "OBGVE21y9cXgXNEWVmvViA=="
+          "hash": "gOpb5xmfex8Kq6GipRogHg=="
         }
       },
       "is_incremental": false,
@@ -2733,7 +2733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.PickResult.html",
-          "hash": "jrqoz7eaT4UV4EbCzvGjKw=="
+          "hash": "lHQ6sovNirmIhr9EVx5EeA=="
         }
       },
       "is_incremental": false,
@@ -2745,7 +2745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Point2PointConstraint.html",
-          "hash": "hxKb5XmSX5HyZaH3mrVfzw=="
+          "hash": "mIIfA/viQMEF+e7/jaamSw=="
         }
       },
       "is_incremental": false,
@@ -2757,7 +2757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Circle.html",
-          "hash": "aI4EEjAPeJJKsomCmAyyWg=="
+          "hash": "PT7BlIJiUloOBb96HGPt8g=="
         }
       },
       "is_incremental": false,
@@ -2769,7 +2769,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Cube.html",
-          "hash": "HnLejfF/5FI3OwCm9tNh+Q=="
+          "hash": "ITNFvIewxjLmuCeXDI39wg=="
         }
       },
       "is_incremental": false,
@@ -2781,7 +2781,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Icosahedron.html",
-          "hash": "0RBZs/5GqmrP6n7Fx7es5A=="
+          "hash": "jH7FT/hh/mCklciWNVLRfQ=="
         }
       },
       "is_incremental": false,
@@ -2793,7 +2793,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Icosphere.html",
-          "hash": "jPef63T/E57n/c8395zH8Q=="
+          "hash": "kp/FUHLFllal+sVTCDlfPg=="
         }
       },
       "is_incremental": false,
@@ -2805,7 +2805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Line.html",
-          "hash": "/DW+jjM+hbWhx4aE0NDDoA=="
+          "hash": "psFE1f3WWrW2+PCkSvf3jw=="
         }
       },
       "is_incremental": false,
@@ -2817,7 +2817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.NineSlicePlane.html",
-          "hash": "rCHneXb9cRONheXGWNb/HA=="
+          "hash": "jV270F2RUaEY7CPfsiGvgQ=="
         }
       },
       "is_incremental": false,
@@ -2829,7 +2829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Plane.html",
-          "hash": "nCWOZIOa7gXdrQqyLFUpRg=="
+          "hash": "voR5u2/HfO/YN9x/ImRH1Q=="
         }
       },
       "is_incremental": false,
@@ -2841,7 +2841,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Rocket.html",
-          "hash": "trqqZ8Q2L82UEtesPk3uKg=="
+          "hash": "azmijRN0FFp2XG7NPiWn3Q=="
         }
       },
       "is_incremental": false,
@@ -2853,7 +2853,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.Sphere.html",
-          "hash": "77MZqcMnpCyBcyqwEz3uiA=="
+          "hash": "pbL3wQwjYSFft9k0Moes6A=="
         }
       },
       "is_incremental": false,
@@ -2865,7 +2865,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.WireframeCube.html",
-          "hash": "w0TdDzoonw+L2Vd4zKSZBw=="
+          "hash": "zevYvIvBfbF8vQvKjfUj+Q=="
         }
       },
       "is_incremental": false,
@@ -2877,7 +2877,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Primitives.html",
-          "hash": "vjimZjzZhKEQf8tKEOlq+A=="
+          "hash": "gzY9wYokeeVU9odnYAKt2Q=="
         }
       },
       "is_incremental": false,
@@ -2889,7 +2889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RenderCanvas.html",
-          "hash": "uMRFOclbxb4miL02azaw1A=="
+          "hash": "DPOQaNke0EdvunW+V49eQg=="
         }
       },
       "is_incremental": false,
@@ -2901,7 +2901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RenderContext.html",
-          "hash": "v7Ww/oU5CozaHAQkR79b6w=="
+          "hash": "O94uH657YlFYe8T2xbNAuQ=="
         }
       },
       "is_incremental": false,
@@ -2913,7 +2913,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RenderContextDefaultState.html",
-          "hash": "veqbpby9fe8TcO7l8+cn9A=="
+          "hash": "0LIm0ehMLz2amZ8F7NttdQ=="
         }
       },
       "is_incremental": false,
@@ -2925,7 +2925,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RenderPasses.html",
-          "hash": "mL3nmB0jd8La3tZ4Lz1DaQ=="
+          "hash": "In1rwNHpmL4EYrSH1cz8lg=="
         }
       },
       "is_incremental": false,
@@ -2937,7 +2937,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RenderStateSet.html",
-          "hash": "had2n/ptGqCGk6DHfEO18A=="
+          "hash": "M/pJSBIg18GNxhlczcQmCw=="
         }
       },
       "is_incremental": false,
@@ -2949,7 +2949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RenderTarget.html",
-          "hash": "0zUKr/Ff17kqixUOMZy5fw=="
+          "hash": "Q+XDGyOFsQeAVK1ZWohF0Q=="
         }
       },
       "is_incremental": false,
@@ -2961,7 +2961,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RendererState.html",
-          "hash": "jhd2msnI1IOZ9eZHca+4kA=="
+          "hash": "igCYtf8g/fn+upmTtislyA=="
         }
       },
       "is_incremental": false,
@@ -2973,7 +2973,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RigidBody.html",
-          "hash": "uy9dtHPSLqwwrKmE71LNLw=="
+          "hash": "Dv5KsA7jzqp3Ey0ohGpVlA=="
         }
       },
       "is_incremental": false,
@@ -2985,7 +2985,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SSAOHelper.html",
-          "hash": "S/ekimQPkUqy/iiQp2XHEQ=="
+          "hash": "98avkNxcf0fJWkjvWlboWw=="
         }
       },
       "is_incremental": false,
@@ -2997,7 +2997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AddChildEventArgs.html",
-          "hash": "kPU6tOV+j/2ynZfgL8cBgQ=="
+          "hash": "TTfgR/8Zqe25xtwrz85DrA=="
         }
       },
       "is_incremental": false,
@@ -3009,7 +3009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Animation.html",
-          "hash": "Ca5tH+L6nHnGbv2F+xy5wA=="
+          "hash": "xHqqGaioM0IAO0eMVWIXhg=="
         }
       },
       "is_incremental": false,
@@ -3021,7 +3021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationKeyBase.html",
-          "hash": "PaEqqkrGJmq+hjOAAEklyw=="
+          "hash": "5nFQnk/LjxJrfhSgBAv+iA=="
         }
       },
       "is_incremental": false,
@@ -3033,7 +3033,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationKeyDouble.html",
-          "hash": "KInBqfomlUJf6fCc2RWvEA=="
+          "hash": "rNF7NUmrRra+5uYlCYsmdg=="
         }
       },
       "is_incremental": false,
@@ -3045,7 +3045,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationKeyFloat.html",
-          "hash": "i0nG1fVzQmu7/JY4fpCK4g=="
+          "hash": "ZRx3/FogtkN6sFYW0Ttr1w=="
         }
       },
       "is_incremental": false,
@@ -3057,7 +3057,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationKeyFloat2.html",
-          "hash": "EYSboHkt1T24r22UnlGqjQ=="
+          "hash": "BVokht1uoGCM+n9G7S4eeQ=="
         }
       },
       "is_incremental": false,
@@ -3069,7 +3069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationKeyFloat3.html",
-          "hash": "vg59gAjQTZuOJ0Yycw3/Wg=="
+          "hash": "wfHtKTjCkarGB2lcenX+tQ=="
         }
       },
       "is_incremental": false,
@@ -3081,7 +3081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationKeyFloat4.html",
-          "hash": "o44lXFBIvqfSuKyIzGXwug=="
+          "hash": "jYnZRPja21zIV5uyYZlBTA=="
         }
       },
       "is_incremental": false,
@@ -3093,7 +3093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationKeyInt.html",
-          "hash": "I+sXGZT4y8ZGFgZ8Jfm1gA=="
+          "hash": "B3/Hbcgqk5pO9gAkzVY2Uw=="
         }
       },
       "is_incremental": false,
@@ -3105,7 +3105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.AnimationTrack.html",
-          "hash": "deJcHK2fYpZNUjvdUxCoRw=="
+          "hash": "pExYfq5MKsZSP1aS7ZwoAQ=="
         }
       },
       "is_incremental": false,
@@ -3117,7 +3117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Bone.html",
-          "hash": "3xEihO8Z6nSeTYzoTZaNLA=="
+          "hash": "BUimrvOsKp3MP1vgmrEDwA=="
         }
       },
       "is_incremental": false,
@@ -3129,7 +3129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Camera.html",
-          "hash": "rXsqDx9dhhHfvU8kmTAwvw=="
+          "hash": "xNJk80j7MfVc7Rm+GiH0gA=="
         }
       },
       "is_incremental": false,
@@ -3141,7 +3141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.CanvasRenderMode.html",
-          "hash": "/iAZuj2a+ZqXa5LOtwK+9g=="
+          "hash": "mM48Mf0vkHAvkVegZLDZ8A=="
         }
       },
       "is_incremental": false,
@@ -3153,7 +3153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.CanvasTransform.html",
-          "hash": "NCIkskEXjZ7GlHAQcueqwQ=="
+          "hash": "UDzs8wANKzlOjfKtHQe2xw=="
         }
       },
       "is_incremental": false,
@@ -3165,7 +3165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.ChildList.html",
-          "hash": "Cyu1xe9JIMlv5Zhqr0cMww=="
+          "hash": "X8LUmu16bV6aVtzm7gt5Zw=="
         }
       },
       "is_incremental": false,
@@ -3177,7 +3177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.CodeComponent.InteractionHandler.html",
-          "hash": "SzgkkzjkfdvYuylAmyGtnw=="
+          "hash": "HVnWeSk4+da9U1+UHAXOnw=="
         }
       },
       "is_incremental": false,
@@ -3189,7 +3189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.CodeComponent.html",
-          "hash": "HmbepVogaDlPO7GnWSYzBQ=="
+          "hash": "1x12Ne0AryiijYIgjutN7w=="
         }
       },
       "is_incremental": false,
@@ -3201,7 +3201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.CustomCameraUpdate.html",
-          "hash": "8rHVZlCL31ICeT/WsgZ9Mg=="
+          "hash": "BwNE58UQrzH1QBNUu+7MRQ=="
         }
       },
       "is_incremental": false,
@@ -3213,7 +3213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.LerpType.html",
-          "hash": "rN6tMqvwbFt8YmKGromeYg=="
+          "hash": "fjx5dhxOmQLUgzUUs64S2Q=="
         }
       },
       "is_incremental": false,
@@ -3225,7 +3225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Light.html",
-          "hash": "WaD6t6RkRXYY6v1FEW6z4Q=="
+          "hash": "Qsl7uMB5fC2wF+bJZNTcDw=="
         }
       },
       "is_incremental": false,
@@ -3237,7 +3237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Mesh.html",
-          "hash": "tUcVVcuxAvlfpNrDc93yfw=="
+          "hash": "ARdlQakDI5oQeA69ExCeWA=="
         }
       },
       "is_incremental": false,
@@ -3249,7 +3249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Octant.html",
-          "hash": "R3KxLbTWfe2cC7oia3zJ1A=="
+          "hash": "NtnHi56URQt+RV2sqn52xA=="
         }
       },
       "is_incremental": false,
@@ -3261,7 +3261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.ProjectionMethod.html",
-          "hash": "nIiZCDgpYYs0vuY3E9zYpg=="
+          "hash": "0m2iwNhJOndmBeCfBJ9Qlg=="
         }
       },
       "is_incremental": false,
@@ -3273,7 +3273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.RectTransform.html",
-          "hash": "W+AhQUbo03JunlEHI3bjRw=="
+          "hash": "0c33KeqVMimqH11IM8Q9Xw=="
         }
       },
       "is_incremental": false,
@@ -3285,7 +3285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.RenderLayer.html",
-          "hash": "mSK5MiIImkXN9G841h9QIw=="
+          "hash": "z6ct8QJn33M4rbUIpa2zdw=="
         }
       },
       "is_incremental": false,
@@ -3297,7 +3297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.RenderLayers.html",
-          "hash": "c39+kPFNY3CV5/gzI2HUBg=="
+          "hash": "rVaerTwGkqBBAouriAVf6A=="
         }
       },
       "is_incremental": false,
@@ -3309,7 +3309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.SceneComponent.html",
-          "hash": "6uBueVw9cDIMH4eb+CqiDA=="
+          "hash": "y7KtTewUyMVyrftAL6+/Sg=="
         }
       },
       "is_incremental": false,
@@ -3321,7 +3321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.SceneContainer.html",
-          "hash": "09rfKB34RGBIz5gSUaS0Iw=="
+          "hash": "cMxMfWxOJAdP1PwrJ0j62g=="
         }
       },
       "is_incremental": false,
@@ -3333,7 +3333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.SceneExtensions.Space.html",
-          "hash": "M9ConIJKoBj2qqzl5sjQ0g=="
+          "hash": "vyYRDVL6V3jX/hdZnbCZjA=="
         }
       },
       "is_incremental": false,
@@ -3345,7 +3345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.SceneExtensions.html",
-          "hash": "Q6vKgHhc2v61D8bt2autIg=="
+          "hash": "xJFfwl/aoolpxRj7Mi09Iw=="
         }
       },
       "is_incremental": false,
@@ -3357,7 +3357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.SceneHeader.html",
-          "hash": "82K86SHJYXjkfRfx4wOexw=="
+          "hash": "iWh45Pomlk7I0V2567crlg=="
         }
       },
       "is_incremental": false,
@@ -3369,7 +3369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.SceneNode.html",
-          "hash": "IP0h/I5LmQSboQdSBW/pSg=="
+          "hash": "0eIxitNwXWu5JBa3X7U80Q=="
         }
       },
       "is_incremental": false,
@@ -3381,7 +3381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Transform.html",
-          "hash": "AMIimgSu5FLMNQqEyO5/nQ=="
+          "hash": "3QXBq/s7wtSZgWpQQdQluw=="
         }
       },
       "is_incremental": false,
@@ -3393,7 +3393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.TypeId.html",
-          "hash": "5Ob7fP9boauLVkrAIUEo7g=="
+          "hash": "RRLuFVgDc0B+BYegOX2+Ng=="
         }
       },
       "is_incremental": false,
@@ -3405,7 +3405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.VertexWeight.html",
-          "hash": "/rgstgTUcUFZsU8ldFcicQ=="
+          "hash": "zWTyqf57c4cvNg/3Wevvog=="
         }
       },
       "is_incremental": false,
@@ -3417,7 +3417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.VertexWeightList.html",
-          "hash": "O65b6GVtlWI6y0jL6H3PVA=="
+          "hash": "KTso4Kk1L+IzSx3EfW7o2A=="
         }
       },
       "is_incremental": false,
@@ -3429,7 +3429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.Weight.html",
-          "hash": "kWIdx+8iBpxyp7wjTZEMrA=="
+          "hash": "T9dGsZ0n8XbI1MH1zWFxkg=="
         }
       },
       "is_incremental": false,
@@ -3441,7 +3441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.XForm.html",
-          "hash": "F04KmB0oN1SBQXhn9ItiJw=="
+          "hash": "l4mX4OF2IuFPrSsWLa+xRA=="
         }
       },
       "is_incremental": false,
@@ -3453,7 +3453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.XFormText.html",
-          "hash": "uhioMUR4Jl4svP8/oAz4eg=="
+          "hash": "G5htyGaZ/5jautmDdIRgfQ=="
         }
       },
       "is_incremental": false,
@@ -3465,7 +3465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.html",
-          "hash": "2IKgFDGNUv2rsZ4zdSffeg=="
+          "hash": "ZjbfeLiT5l5OJdps6s+L0Q=="
         }
       },
       "is_incremental": false,
@@ -3477,7 +3477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ScenePicker.PickerState.html",
-          "hash": "KyFRbF1dIYPUnw/vDEhO7Q=="
+          "hash": "ytsyYfA6zaglnGv7e6NUog=="
         }
       },
       "is_incremental": false,
@@ -3489,7 +3489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ScenePicker.html",
-          "hash": "cT9p83jznEqbMLw807s5fw=="
+          "hash": "W5LDrtcdhwRvLD3o6bdPgA=="
         }
       },
       "is_incremental": false,
@@ -3501,7 +3501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SceneRendererDeferred.html",
-          "hash": "QFRo9GEttzKo8X5QbHrn5A=="
+          "hash": "i6Gv9FLr2KfaQWWliCYvWw=="
         }
       },
       "is_incremental": false,
@@ -3513,7 +3513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SceneRendererForward.html",
-          "hash": "39OCHktwfQf1mzQDrWTT0g=="
+          "hash": "eVWJu9Gc46bhAju6VuBIJQ=="
         }
       },
       "is_incremental": false,
@@ -3525,7 +3525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Fragment.FragMain.html",
-          "hash": "AWFqmmtw/AMT/1+LpGbphw=="
+          "hash": "Grm0WwiL3EsCyoZfu4KESg=="
         }
       },
       "is_incremental": false,
@@ -3537,7 +3537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Fragment.FragProperties.html",
-          "hash": "R6p7BsI8L1vH+B57kKXcJA=="
+          "hash": "zkYL4J0qphLHjTZtI3rmHg=="
         }
       },
       "is_incremental": false,
@@ -3549,7 +3549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Fragment.FragShards.html",
-          "hash": "Gl9hKJWSqHtYejmseKD5ww=="
+          "hash": "phTm36AttYFIaZoTA3Zx+Q=="
         }
       },
       "is_incremental": false,
@@ -3561,7 +3561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Fragment.Lighting.html",
-          "hash": "6lCMVW9qMySdHVzrieRx5g=="
+          "hash": "SRcue17t8iklgB5nsARAQg=="
         }
       },
       "is_incremental": false,
@@ -3573,7 +3573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Fragment.html",
-          "hash": "VopQxyBMO7cjvak68YmEZg=="
+          "hash": "VJaR2dqjNYkRZDuHf9zilg=="
         }
       },
       "is_incremental": false,
@@ -3585,7 +3585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Header.html",
-          "hash": "CQ9JQMdeLp2mMQEZ80q6mw=="
+          "hash": "/VjYD7Vcgy+1ncF7pI21Bg=="
         }
       },
       "is_incremental": false,
@@ -3597,7 +3597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Include.html",
-          "hash": "CbGQ2X99s1K/TResyP6OHA=="
+          "hash": "T9W4+kOQdUp3b+Lc1ep8Fw=="
         }
       },
       "is_incremental": false,
@@ -3609,7 +3609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html",
-          "hash": "IAx5t6GgRmYb23WIsgS5Ig=="
+          "hash": "GEtC0hjuf2NNRg/lTW+p/A=="
         }
       },
       "is_incremental": false,
@@ -3621,7 +3621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.LightingSetupShards.html",
-          "hash": "EE1Lb5oIWiW/VT1ukKpV9Q=="
+          "hash": "xHcyjhOaqZBKUtAgxw5rUg=="
         }
       },
       "is_incremental": false,
@@ -3633,7 +3633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.SurfaceOut.html",
-          "hash": "fkplT8YJpEE/dZpyYqlzqg=="
+          "hash": "41eAXKg/2MwzckndShB4kA=="
         }
       },
       "is_incremental": false,
@@ -3645,7 +3645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html",
-          "hash": "a+ev+pUjE9pJMs+/jttTJg=="
+          "hash": "EkaaMnMLI1u78yjmYa35PA=="
         }
       },
       "is_incremental": false,
@@ -3657,7 +3657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.VaryingNameDeclarations.html",
-          "hash": "jHu3LaTRurW+NIKVkqUYHA=="
+          "hash": "+JHOIBfQg1yiM5b3b3apqw=="
         }
       },
       "is_incremental": false,
@@ -3669,7 +3669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Vertex.VertMain.html",
-          "hash": "gZcI9osFXbA6msU/Se8BOQ=="
+          "hash": "uBuU8t1SfxH1MXm0C5gAbA=="
         }
       },
       "is_incremental": false,
@@ -3681,7 +3681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Vertex.VertProperties.html",
-          "hash": "P0ZQNEZl9pb9O/MUnZ+2AA=="
+          "hash": "BPstTh3MQ6X70jguUBBVvA=="
         }
       },
       "is_incremental": false,
@@ -3693,7 +3693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Vertex.VertShards.html",
-          "hash": "X3cZ/XIbl09nsTQtNvb6qQ=="
+          "hash": "2LQYoq2R95F3oaiZUDpW6Q=="
         }
       },
       "is_incremental": false,
@@ -3705,7 +3705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.Vertex.html",
-          "hash": "ewOHo+4nvBnhTjwGzZ+XGQ=="
+          "hash": "wIcaUs2WrOBwTquCONSDwQ=="
         }
       },
       "is_incremental": false,
@@ -3717,7 +3717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ShaderShards.html",
-          "hash": "nVSxvMkm9OLcT0W88BNlDQ=="
+          "hash": "Gwn9oOFh/rhyMODKMAM2mg=="
         }
       },
       "is_incremental": false,
@@ -3729,7 +3729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SixDOFDevice.html",
-          "hash": "/SlWgx2vmW81d2JSt6d9mQ=="
+          "hash": "ZoWZTP85CjwoUFyjcQ1gIQ=="
         }
       },
       "is_incremental": false,
@@ -3741,7 +3741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SliderConstraint.html",
-          "hash": "dvVrG4s7J6ybqeHg0sFxfw=="
+          "hash": "zTdKbi4ZjsNHvBUB/uXDjA=="
         }
       },
       "is_incremental": false,
@@ -3753,7 +3753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SphereShape.html",
-          "hash": "szd6S5cK1gFeFdzM7BV3gQ=="
+          "hash": "LTkJIpblm5zHvsGYhtW5Bg=="
         }
       },
       "is_incremental": false,
@@ -3765,7 +3765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.StaticPlaneShape.html",
-          "hash": "dWvLUtDWVVQsANJYn7ZAfw=="
+          "hash": "2AZMawQC2ql6A/soCpmHFA=="
         }
       },
       "is_incremental": false,
@@ -3777,7 +3777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.TangentSpaceCalulator.html",
-          "hash": "e03/7l6Re+iMPDzgLYIdgQ=="
+          "hash": "LFaPW5rgNviMWd5PbDFATw=="
         }
       },
       "is_incremental": false,
@@ -3789,7 +3789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Texture.html",
-          "hash": "IESGXnvkuEqR8vGqAuB51A=="
+          "hash": "BAuwqeDMe8ryV+a7F2ilEw=="
         }
       },
       "is_incremental": false,
@@ -3801,7 +3801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Time.html",
-          "hash": "VwDlmLQnciZfttG76mggXA=="
+          "hash": "29+2iQSvD0P3lxEVPenngw=="
         }
       },
       "is_incremental": false,
@@ -3813,7 +3813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.TouchDevice.html",
-          "hash": "DWn1LIZqSD2fRaXwiiG40g=="
+          "hash": "QEpY/3LB0b1nLy5LIWfC7Q=="
         }
       },
       "is_incremental": false,
@@ -3825,7 +3825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.TwoPointAction.html",
-          "hash": "mVlKnCxSpHh/Rgpadb/bpA=="
+          "hash": "Euvi6oLF5yy3ehMTRIXOTg=="
         }
       },
       "is_incremental": false,
@@ -3837,7 +3837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.VideoManager.html",
-          "hash": "48BWRuRhCcI8h+KZcG1+MQ=="
+          "hash": "SstltuR3ikZJj1oBAq4Lpg=="
         }
       },
       "is_incremental": false,
@@ -3849,7 +3849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.VideoStream.html",
-          "hash": "a+Ks0CYMRRkEmmeH2IWBQw=="
+          "hash": "RmFKpsksjiveTu7NaIk/8g=="
         }
       },
       "is_incremental": false,
@@ -3861,7 +3861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.WritableArrayTexture.html",
-          "hash": "K/ErhQ3a04ZUf4492O7jOw=="
+          "hash": "ftIF2oRvIKw5fSw9g6QMhg=="
         }
       },
       "is_incremental": false,
@@ -3873,7 +3873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.WritableCubeMap.html",
-          "hash": "WlmTjr67MFe1bTAbsQWPVA=="
+          "hash": "+YGttxI1Kxw26UT6vly/aQ=="
         }
       },
       "is_incremental": false,
@@ -3885,7 +3885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.WritableTexture.html",
-          "hash": "LK3VNUb+oy7LCrNf0impMQ=="
+          "hash": "VmP06Sp7sSjV3JjVPFuV8w=="
         }
       },
       "is_incremental": false,
@@ -3897,7 +3897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.html",
-          "hash": "GpbQhGLk0AGqpYLXzAikqw=="
+          "hash": "WqEAhTUASkbLTiw6UKmFZg=="
         }
       },
       "is_incremental": false,
@@ -3909,7 +3909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.AnchorPos.html",
-          "hash": "UALGJU1HfbT9oeNm9D5m6w=="
+          "hash": "fwSahm25LmFO8/cAyUxXYA=="
         }
       },
       "is_incremental": false,
@@ -3921,7 +3921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.CanvasNode.html",
-          "hash": "Dqd692O9ZQFsAgKeF0sj4Q=="
+          "hash": "uAdh/Rm/V4rhF0M6nP7bqA=="
         }
       },
       "is_incremental": false,
@@ -3933,7 +3933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.GUIButton.html",
-          "hash": "WnQpEZj/o9tgZsk2qTOb/g=="
+          "hash": "iFXWamzSIiFONS6M5Wme7Q=="
         }
       },
       "is_incremental": false,
@@ -3945,7 +3945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.GUIText.html",
-          "hash": "YZm9nLN6sxShRYvmzsYBfA=="
+          "hash": "BtwQXJYhvDE9kRfcINEEaA=="
         }
       },
       "is_incremental": false,
@@ -3957,7 +3957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.SceneInteractionHandler.html",
-          "hash": "BvLD4reV5I2OKri4Ex823g=="
+          "hash": "Bhd4sHIlsbmzNKEP/Y1mMg=="
         }
       },
       "is_incremental": false,
@@ -3969,7 +3969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.TextNode.html",
-          "hash": "Z5QoO9sLF4lvtSQQPGUHXQ=="
+          "hash": "GnI2QpQOeT7qlG1DyOOT/g=="
         }
       },
       "is_incremental": false,
@@ -3981,7 +3981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.TextureNode.html",
-          "hash": "/rFIC/8wqw4eLNe50c+61g=="
+          "hash": "KVL0JIimGTZSt8V5UisIIw=="
         }
       },
       "is_incremental": false,
@@ -3993,7 +3993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.UIElementPosition.html",
-          "hash": "W5xuX065Rpz2GWRMHkwt0w=="
+          "hash": "ISMSlxI6HQtU1RxxCnRqkw=="
         }
       },
       "is_incremental": false,
@@ -4005,7 +4005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.GUI.html",
-          "hash": "cAHaceTLQGdbHcwCaJ6oqw=="
+          "hash": "y4z4jtHwG8VirXQNrdEGvA=="
         }
       },
       "is_incremental": false,
@@ -4017,7 +4017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.AttributeImp.html",
-          "hash": "iewJggsbFjOUIGNMeoqcDw=="
+          "hash": "gDY0eoSy73e5IFV4fB/OCA=="
         }
       },
       "is_incremental": false,
@@ -4029,7 +4029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.KeyboardDeviceImp.html",
-          "hash": "LKPTxbB6Y87QSJTNt/Efyg=="
+          "hash": "WBJ3/K7L5oC6LBbeXC0HkA=="
         }
       },
       "is_incremental": false,
@@ -4041,7 +4041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.MeshImp.html",
-          "hash": "JRhbbH4Zrkge1U3PmlpEDQ=="
+          "hash": "qB8bagySNLKL85PjARKM8w=="
         }
       },
       "is_incremental": false,
@@ -4053,7 +4053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.MouseDeviceImp.html",
-          "hash": "2ExFmInaDFpYblRTv+xaXA=="
+          "hash": "SSOTRE2bR7nkic4SCv5UCg=="
         }
       },
       "is_incremental": false,
@@ -4065,7 +4065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.RenderBufferHandle.html",
-          "hash": "fzvuwrXUOBZ9/xy6KZ+DnQ=="
+          "hash": "LyaLqxTSXWQuk09myHT4Yw=="
         }
       },
       "is_incremental": false,
@@ -4077,7 +4077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html",
-          "hash": "pR3z3XNrrG3pH6nDErIXWg=="
+          "hash": "+3GiJJ+lgNuJNkcrQU/7vA=="
         }
       },
       "is_incremental": false,
@@ -4089,7 +4089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.html",
-          "hash": "dW/y3lxVr+IbCGg7PX5/lg=="
+          "hash": "ovaO/t8kD6/C5cFzbDQO/Q=="
         }
       },
       "is_incremental": false,
@@ -4101,7 +4101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasInputDriverImp.html",
-          "hash": "bqmCtpkGmauUnQn78nzBuw=="
+          "hash": "687EIHddZfBquitoRLpkEw=="
         }
       },
       "is_incremental": false,
@@ -4113,7 +4113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.RenderContextImp.html",
-          "hash": "iJFtvRhWdOE0aEw3NmmZuQ=="
+          "hash": "9Ww/bbbAwdZm6452AKByRQ=="
         }
       },
       "is_incremental": false,
@@ -4125,7 +4125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.ShaderHandleImp.html",
-          "hash": "be+EHpiwmA6l4erBLKjs1Q=="
+          "hash": "UVJenACGZzPW166VU0PrlA=="
         }
       },
       "is_incremental": false,
@@ -4137,7 +4137,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.ShaderParam.html",
-          "hash": "rs8Wzumy1HrbMi7PJ+27Cg=="
+          "hash": "847ALZ25PGsJFqb27Bd7bQ=="
         }
       },
       "is_incremental": false,
@@ -4149,7 +4149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.TouchDeviceImp.html",
-          "hash": "DGE4WFSpZgIByKecThbuRQ=="
+          "hash": "nszWZskZVfRKV21XirkPbg=="
         }
       },
       "is_incremental": false,
@@ -4161,7 +4161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.html",
-          "hash": "mTnzjUPqaZPXdf4n+GOb6Q=="
+          "hash": "H03xu68GbN1cXMXIlKJy2g=="
         }
       },
       "is_incremental": false,
@@ -4173,7 +4173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.AttributeImp.html",
-          "hash": "EMa1zCMmnLirOWybu8byyQ=="
+          "hash": "qow7VSNXGzO8fX9YKudF2g=="
         }
       },
       "is_incremental": false,
@@ -4185,7 +4185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.GamePadDeviceImp.html",
-          "hash": "qczHkgxsGYwNyL7c+EOpAg=="
+          "hash": "i8EjS+Tp39maMB8J1upfAQ=="
         }
       },
       "is_incremental": false,
@@ -4197,7 +4197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html",
-          "hash": "l8IxXEK48QbrurSN22rgWQ=="
+          "hash": "S/hZ3th+ZdgJhF7tFew2Tw=="
         }
       },
       "is_incremental": false,
@@ -4209,7 +4209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.MeshImp.html",
-          "hash": "5y5nEt0YP7J7OEa6iUND/w=="
+          "hash": "dslefKyyggE4kfZDOJf73w=="
         }
       },
       "is_incremental": false,
@@ -4221,7 +4221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html",
-          "hash": "/KGmTqyKZxaXb0v1H6oaWA=="
+          "hash": "+ujRaEmZTu+3gVdSwyI5+A=="
         }
       },
       "is_incremental": false,
@@ -4233,7 +4233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderBufferHandle.html",
-          "hash": "lFWtJ0av6g27577Mg9UrYA=="
+          "hash": "pFeZIbvBbr44X8ZQ9Ed2SQ=="
         }
       },
       "is_incremental": false,
@@ -4245,7 +4245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html",
-          "hash": "Y80wEmpd/dEtJdTtGE/yJg=="
+          "hash": "84H0fVGiLAvn6wyVJ/uVWg=="
         }
       },
       "is_incremental": false,
@@ -4257,7 +4257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html",
-          "hash": "3mJNy3YNff9wueOvCjPYaA=="
+          "hash": "7n5SPw4pVEWoyPVStX/Hcg=="
         }
       },
       "is_incremental": false,
@@ -4269,7 +4269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasInputDriverImp.html",
-          "hash": "Y4yg/BaihDGvmmLHDTbF4Q=="
+          "hash": "RQgHZoCR6X5c7I8PW93o6g=="
         }
       },
       "is_incremental": false,
@@ -4281,7 +4281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasWindowImp.html",
-          "hash": "X0pSCrjYS1j184ZZcXrbZw=="
+          "hash": "7j9H27hzvG1vbuCJKz1M2g=="
         }
       },
       "is_incremental": false,
@@ -4293,7 +4293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp.html",
-          "hash": "GNBFlDgSRjRPTJm8aS7pZw=="
+          "hash": "9YaGh0Hs9C0cwuxevw3qDQ=="
         }
       },
       "is_incremental": false,
@@ -4305,7 +4305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.ShaderHandleImp.html",
-          "hash": "wKrexpzHH++Sx3ohs7Ynng=="
+          "hash": "VWeJQJ01Ax7ZQ8tDPnyjmg=="
         }
       },
       "is_incremental": false,
@@ -4317,7 +4317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.ShaderParam.html",
-          "hash": "tDqXYZNZUXTkP6U9qWNP8g=="
+          "hash": "xQzbwEcspOGg76rByeKnRg=="
         }
       },
       "is_incremental": false,
@@ -4329,7 +4329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseDriverImp.html",
-          "hash": "6/awKcTYeE0CPjMcSWmV2g=="
+          "hash": "OLLcO5ykHiqc6k6aivV2hA=="
         }
       },
       "is_incremental": false,
@@ -4341,7 +4341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.WindowsSpaceMouseInputDeviceImp.html",
-          "hash": "1Y3/0XBSEMhseT/RqHRpBw=="
+          "hash": "BOCMhxXJZH0PSWoszCjhpw=="
         }
       },
       "is_incremental": false,
@@ -4353,7 +4353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.POINT.html",
-          "hash": "UiYQQPr1wP8N2o568tivJg=="
+          "hash": "9moU+TpemLWLnD9W7n00KA=="
         }
       },
       "is_incremental": false,
@@ -4365,7 +4365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDeviceImp.html",
-          "hash": "m01btjYtHgYI40aCCvw3Ow=="
+          "hash": "7F0MkXAqLRpVxCrWbcjZMQ=="
         }
       },
       "is_incremental": false,
@@ -4377,7 +4377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.WindowsTouchInputDriverImp.html",
-          "hash": "Kik+y/PlGQfx5/Gxq0rdqw=="
+          "hash": "mzLO9U9yHC3W4cfevzSfdQ=="
         }
       },
       "is_incremental": false,
@@ -4389,7 +4389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.html",
-          "hash": "5Mu7Q82786GMCTXwdkbsjg=="
+          "hash": "PqLCElFz+n2dEQeWfA5wMA=="
         }
       },
       "is_incremental": false,
@@ -4401,7 +4401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.BinarySearchTree-2.html",
-          "hash": "kAr8LDkgrv+NrrbUjCImFg=="
+          "hash": "KUbNr1O26jdnkqMmeu3JXw=="
         }
       },
       "is_incremental": false,
@@ -4413,7 +4413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.CreatePrimitiveGeometry.html",
-          "hash": "+IwVLz40pcyN6rKbe+BxxQ=="
+          "hash": "XrokUBcbMu7bhNTpOT1ZHA=="
         }
       },
       "is_incremental": false,
@@ -4425,7 +4425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.Extrude.html",
-          "hash": "0vjdi6LPACGDijrf3m2YUQ=="
+          "hash": "5pvqtY0wEYyAN/v120xs4A=="
         }
       },
       "is_incremental": false,
@@ -4437,7 +4437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.Face.html",
-          "hash": "4LYROzjDYHbXbndxq8VF7g=="
+          "hash": "fLaQJtdsY7R+3C/302vikQ=="
         }
       },
       "is_incremental": false,
@@ -4449,7 +4449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.FaceData.html",
-          "hash": "jqFHeYTLeIGWliV33fperA=="
+          "hash": "K2oSJycSa93vWG0ToQPEYg=="
         }
       },
       "is_incremental": false,
@@ -4461,7 +4461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.GeomEditing.html",
-          "hash": "EoSpeK7hldNM5ypw3bVDSQ=="
+          "hash": "lc0EHy1qac51oRbrlGFEcA=="
         }
       },
       "is_incremental": false,
@@ -4473,7 +4473,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.GeomInitializeHelper.html",
-          "hash": "oxeN52ME0P5xkB4GAa1f8g=="
+          "hash": "rwQnUtHdG8hqaUtS+AcAkw=="
         }
       },
       "is_incremental": false,
@@ -4485,7 +4485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.GeometricOperations.html",
-          "hash": "TfNKhyMq3JbauRu6BBS3vQ=="
+          "hash": "/1oUb4PJSc+OEhwhJymDKw=="
         }
       },
       "is_incremental": false,
@@ -4497,7 +4497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.Geometry.html",
-          "hash": "Tk8JOQEaVGHR8CiRAkFXgg=="
+          "hash": "jtJu0ANOlDMKgJaj8k1f9Q=="
         }
       },
       "is_incremental": false,
@@ -4509,7 +4509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.HalfEdge.html",
-          "hash": "OWhFlNs0yMSffG2D2o8GdQ=="
+          "hash": "El+rs2xN8UUnIM+kBoMM/Q=="
         }
       },
       "is_incremental": false,
@@ -4521,7 +4521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.HalfEdgeData.html",
-          "hash": "YcijT/EUdv0sdXRI3ZjMhA=="
+          "hash": "jYrtFYqwwwsKa7Tpl7ulug=="
         }
       },
       "is_incremental": false,
@@ -4533,7 +4533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.Node-2.html",
-          "hash": "bF5m9UcKrkOq9KK/OKWyyg=="
+          "hash": "7RnBNY+PRm0cbXzqo9QeuA=="
         }
       },
       "is_incremental": false,
@@ -4545,7 +4545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.PolyBoundary.html",
-          "hash": "rLvNwY3EQV6G3jD2uvrNaQ=="
+          "hash": "s5p2VcCosDfLBj6VaY6yVg=="
         }
       },
       "is_incremental": false,
@@ -4557,7 +4557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.SubdivisionSurface.html",
-          "hash": "h33Q/S48mFWoeiaogLZURA=="
+          "hash": "cw8ueAf1E63D40n7O4IDzw=="
         }
       },
       "is_incremental": false,
@@ -4569,7 +4569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.Triangulation.html",
-          "hash": "D36aeaydePl0io0j2u/kBg=="
+          "hash": "rwTLDZsCqrbV9jdOPdk1fg=="
         }
       },
       "is_incremental": false,
@@ -4581,7 +4581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.Vertex.html",
-          "hash": "GqGSFtWVPw2aPJAdYjO9Jw=="
+          "hash": "cRxsTT3GU9YFby0hmP+7WA=="
         }
       },
       "is_incremental": false,
@@ -4593,7 +4593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.VertexData.html",
-          "hash": "MZRFGNW4Ycib0LHE8rdlzg=="
+          "hash": "VUkVR4YdcF7kft+1nGaDcQ=="
         }
       },
       "is_incremental": false,
@@ -4605,7 +4605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.VertexType.html",
-          "hash": "xYAJL1l2PlMoc0j4/VsMxg=="
+          "hash": "G2KijqNDkET5ijb7xocVdQ=="
         }
       },
       "is_incremental": false,
@@ -4617,7 +4617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Jometri.html",
-          "hash": "y2mW/u/emcivYkodtJbTGA=="
+          "hash": "MoF4UCnK89VoFFPt5EZdYg=="
         }
       },
       "is_incremental": false,
@@ -4629,7 +4629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.AABBd.html",
-          "hash": "Gi5lqGqsTqblw35exECMXw=="
+          "hash": "TOlSMyXYlJWsG5KYCo2eRA=="
         }
       },
       "is_incremental": false,
@@ -4641,7 +4641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.AABBf.html",
-          "hash": "I1NHPTVtJwmfRmVRcGNAGQ=="
+          "hash": "0WN6QsQYHHUkUPnneKZEmw=="
         }
       },
       "is_incremental": false,
@@ -4653,7 +4653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.BezierConicSegment.html",
-          "hash": "tYknlt94t2kc1bHF5xLLLw=="
+          "hash": "j7zSE9DBOHRtM/YUS8UhdA=="
         }
       },
       "is_incremental": false,
@@ -4665,7 +4665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.BezierCubicSegment.html",
-          "hash": "naniOmduGMgYG0WZPWtnlA=="
+          "hash": "yyRv3neQxfXeKD3VuLAdcw=="
         }
       },
       "is_incremental": false,
@@ -4677,7 +4677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.Converter-2.html",
-          "hash": "GUHAmsLXFcXCu8UUB2QtJg=="
+          "hash": "AcoYM/djeQauAgIqKsXfsg=="
         }
       },
       "is_incremental": false,
@@ -4689,7 +4689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.Curve.html",
-          "hash": "xjhloKfhd97du49BsG9yKw=="
+          "hash": "euvIg11O3noQcmJ97emu8g=="
         }
       },
       "is_incremental": false,
@@ -4701,7 +4701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.CurvePart.html",
-          "hash": "5oWQ1xPzdrA3Mudz7RNc5g=="
+          "hash": "+5BrGVOfmsT7PIq/qlMo2Q=="
         }
       },
       "is_incremental": false,
@@ -4713,7 +4713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.CurveSegment.html",
-          "hash": "JqeNtYkxuKtWDYcEqOo4Ww=="
+          "hash": "U9d3c6LggQVevR8Rzi/QCw=="
         }
       },
       "is_incremental": false,
@@ -4725,7 +4725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.EigenD.html",
-          "hash": "NnSPx/gytRxSHohl2UYBDA=="
+          "hash": "nqDHx0hK2hF3Ik4ZZpBu0w=="
         }
       },
       "is_incremental": false,
@@ -4737,7 +4737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.EigenF.html",
-          "hash": "2Cpj5xgdX7K5dxZngrqyag=="
+          "hash": "cbStOpEpINavrYhjgh4XJg=="
         }
       },
       "is_incremental": false,
@@ -4749,7 +4749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.Frustum.html",
-          "hash": "51Xla73FUD3RVgCo1GX1vw=="
+          "hash": "pLFPPl/VP6pEo34Fp3d3xA=="
         }
       },
       "is_incremental": false,
@@ -4761,7 +4761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.LinearSegment.html",
-          "hash": "H773f0IhhX5j68WOoiFfhQ=="
+          "hash": "JfD6uVoJj0vJPEag8FYcXQ=="
         }
       },
       "is_incremental": false,
@@ -4773,7 +4773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.M.html",
-          "hash": "rCawazYQndNZGuau6nl0mQ=="
+          "hash": "u6Hft976nfOeoMthrtD1Dw=="
         }
       },
       "is_incremental": false,
@@ -4785,7 +4785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.MinMaxRect.html",
-          "hash": "29f4Cs2zBZCI1S7vT8+Cew=="
+          "hash": "eImlcsgS22d6dESkiwP6nQ=="
         }
       },
       "is_incremental": false,
@@ -4797,7 +4797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.OBBd.html",
-          "hash": "NbWDzV71CrHDp8j8dTgi0w=="
+          "hash": "+Kd53NIKwsmHR5kWWtztQw=="
         }
       },
       "is_incremental": false,
@@ -4809,7 +4809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.OBBf.html",
-          "hash": "4sa7oCKwIGZq+61/0txPhw=="
+          "hash": "ykCp378zcPFOXB6BjpJg9A=="
         }
       },
       "is_incremental": false,
@@ -4821,7 +4821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.PlaneD.html",
-          "hash": "oaP/JukZwIzXqrBNQfRT4w=="
+          "hash": "VTAP3QLoWZlYrBK5yRDLtw=="
         }
       },
       "is_incremental": false,
@@ -4833,7 +4833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.PlaneF.html",
-          "hash": "zvKnFvVTD1XIlWqfyIZsMw=="
+          "hash": "4eoj6zEL9ezaZtnnl1PUWQ=="
         }
       },
       "is_incremental": false,
@@ -4845,7 +4845,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.Quaternion.html",
-          "hash": "cvJg8t24WtGC6nR1lIpZJw=="
+          "hash": "q7ns1zwYr/FoTTZw6TIG9A=="
         }
       },
       "is_incremental": false,
@@ -4857,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.QuaternionD.html",
-          "hash": "dr1D/jsjzrMrTYsfg1rZVQ=="
+          "hash": "5kScORJNJYIjfyZKR0calg=="
         }
       },
       "is_incremental": false,
@@ -4869,7 +4869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.double2.html",
-          "hash": "bF7ZfF0DksLDyiUUSCrKmg=="
+          "hash": "sXfh3p6wpyWdi2WeUxFERg=="
         }
       },
       "is_incremental": false,
@@ -4881,7 +4881,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.double3.html",
-          "hash": "+HLpF07CYBGPpPr9bwd1DQ=="
+          "hash": "GBQxl3M0s/40Cu3BV1CYdQ=="
         }
       },
       "is_incremental": false,
@@ -4893,7 +4893,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.double4.html",
-          "hash": "HhPr2wSv0UPuSt8biGQ9jg=="
+          "hash": "e2cQ/66vP1zTnDCRAZ++GQ=="
         }
       },
       "is_incremental": false,
@@ -4905,7 +4905,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.double4x4.html",
-          "hash": "3sJJGF5iyMGKK1PMP0/xjQ=="
+          "hash": "GtZQ0YoLk5vVRsZ4xszWTw=="
         }
       },
       "is_incremental": false,
@@ -4917,7 +4917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.float2.html",
-          "hash": "/A1qgjjfAvIoTDJSblGsYQ=="
+          "hash": "Ilqm9JsSx/8sKcMokchHNg=="
         }
       },
       "is_incremental": false,
@@ -4929,7 +4929,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.float3.html",
-          "hash": "7GrdsbisM/9Dobh0xVap3g=="
+          "hash": "JpnKk8kzhhwakBtmJLnshQ=="
         }
       },
       "is_incremental": false,
@@ -4941,7 +4941,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.float3x3.html",
-          "hash": "C3wfUUeAWoBt8WDXZ5UkbA=="
+          "hash": "Qv7izL/f7RfUY+fuBIYtQA=="
         }
       },
       "is_incremental": false,
@@ -4953,7 +4953,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.float4.html",
-          "hash": "WpFbu71gRpYXzTnRZMUoQA=="
+          "hash": "jV2GBBGAjSBgxnvhNuRKmQ=="
         }
       },
       "is_incremental": false,
@@ -4965,7 +4965,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.float4x4.html",
-          "hash": "2RKTX2xX4P+/Fd8DBrQxdg=="
+          "hash": "s3udsnE2GUwO/wigwix85w=="
         }
       },
       "is_incremental": false,
@@ -4977,7 +4977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.int3.html",
-          "hash": "KIvchwAHz2TG4hOdezHnhw=="
+          "hash": "4xP+LcSOdIEsAuUg5rVoHQ=="
         }
       },
       "is_incremental": false,
@@ -4989,7 +4989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.html",
-          "hash": "JR5Be5udZQgfl3rEB7jb6Q=="
+          "hash": "XwOcpI3otfR4gN9iM4jFiw=="
         }
       },
       "is_incremental": false,
@@ -5001,7 +5001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.FusContents.html",
-          "hash": "DLKwWbf4JmXBgb35nxLyFw=="
+          "hash": "4/Tnl2P4j9PUFRzipOAmwQ=="
         }
       },
       "is_incremental": false,
@@ -5013,7 +5013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.FusFile.html",
-          "hash": "/gTER6RAWhTynM7pRrmwgg=="
+          "hash": "oPy9usemRVeWNykv3hnQ1A=="
         }
       },
       "is_incremental": false,
@@ -5025,7 +5025,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.FusHeader.html",
-          "hash": "5ejNcvPn1xy+eRmiJVk01Q=="
+          "hash": "vx1GUTONywwxDxDRkS5RoQ=="
         }
       },
       "is_incremental": false,
@@ -5037,7 +5037,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.AlbedoChannel.html",
-          "hash": "HBaOmTSofGCNyQF2lYmzXg=="
+          "hash": "lbBJUi/q/0ZMLhGD84HFaw=="
         }
       },
       "is_incremental": false,
@@ -5049,7 +5049,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.BRDFChannel.html",
-          "hash": "TBNYvY8y+BbfkvwocZDRYQ=="
+          "hash": "8nGN17+Gwkc5E/dEhvK5Rg=="
         }
       },
       "is_incremental": false,
@@ -5061,7 +5061,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.CanvasRenderMode.html",
-          "hash": "zDEGAWzV+yEou0g8g/2XqQ=="
+          "hash": "0B4tJ2JHHQpdplqnefhHnw=="
         }
       },
       "is_incremental": false,
@@ -5073,7 +5073,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.Distribution.html",
-          "hash": "x7eaMICBR4RNoqbEtB2odw=="
+          "hash": "eTPxvsXOhEmak2FlyrZSRQ=="
         }
       },
       "is_incremental": false,
@@ -5085,7 +5085,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimation.html",
-          "hash": "kPGGnIaE6IW6Rdx9BajsUA=="
+          "hash": "xpTeLLLpAEUIou6s7xkNiA=="
         }
       },
       "is_incremental": false,
@@ -5097,7 +5097,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationKeyBase.html",
-          "hash": "R3s8/qT0nnt6VZlTubcqMQ=="
+          "hash": "hBwPAjZs1puDwHuFdJwiSw=="
         }
       },
       "is_incremental": false,
@@ -5109,7 +5109,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationKeyDouble.html",
-          "hash": "ijgV965gRi5TwCXLUjQ09Q=="
+          "hash": "Xet/+wlqOxBIOSi/PZbFqw=="
         }
       },
       "is_incremental": false,
@@ -5121,7 +5121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationKeyFloat.html",
-          "hash": "qv1uQxcWdOEbJHF6GI+XyQ=="
+          "hash": "X7ZL6wY/91W35Oc8ycGdjQ=="
         }
       },
       "is_incremental": false,
@@ -5133,7 +5133,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationKeyFloat2.html",
-          "hash": "Bo6rpGWLUbDh2oNN0oan6Q=="
+          "hash": "AA/J73aM4X8ckjD5mXIA1g=="
         }
       },
       "is_incremental": false,
@@ -5145,7 +5145,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationKeyFloat3.html",
-          "hash": "x9I0+IKx6UpBTfTjrzd7aQ=="
+          "hash": "PMzn3s70JSt2BREy4DeUUg=="
         }
       },
       "is_incremental": false,
@@ -5157,7 +5157,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationKeyFloat4.html",
-          "hash": "JVp3GzDphvztrzOd+qa2Lw=="
+          "hash": "/iXlkkDd49iUYGLKya8mDw=="
         }
       },
       "is_incremental": false,
@@ -5169,7 +5169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationKeyInt.html",
-          "hash": "3nYRT0plgO2tttbAbQ226Q=="
+          "hash": "R5kmCTVwisWnzroiEB5XHg=="
         }
       },
       "is_incremental": false,
@@ -5181,7 +5181,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusAnimationTrack.html",
-          "hash": "n33vx8gtPt/UaA7W9QAoJg=="
+          "hash": "etphNR1sglztk5QdC0FIDw=="
         }
       },
       "is_incremental": false,
@@ -5193,7 +5193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusBone.html",
-          "hash": "wjqpkcqzJhI7ArRYmY7+sw=="
+          "hash": "LeWRCydo3AFlP5fQ8cOQ/Q=="
         }
       },
       "is_incremental": false,
@@ -5205,7 +5205,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusCamera.html",
-          "hash": "4+THAmzKCMOWUwIBw03XQQ=="
+          "hash": "4XnmZORbbHpmG9KFMMXJJw=="
         }
       },
       "is_incremental": false,
@@ -5217,7 +5217,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusCanvasTransform.html",
-          "hash": "muRoj6jRFPSUhx+/EfM1Mg=="
+          "hash": "WdQRRAHWVMRNIUQmgEUCDA=="
         }
       },
       "is_incremental": false,
@@ -5229,7 +5229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusComponent.html",
-          "hash": "vnneVyQ7K64+y+Rxst95zw=="
+          "hash": "9VQ0CleL0I5GgRpxjNgLlg=="
         }
       },
       "is_incremental": false,
@@ -5241,7 +5241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusHorizontalTextAlignment.html",
-          "hash": "ANN2aRTo0tMa2J6csY+hPQ=="
+          "hash": "Axf/qx5/aAc5V5qaJQVCeQ=="
         }
       },
       "is_incremental": false,
@@ -5253,7 +5253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusLight.html",
-          "hash": "J76fb1ePvFnp9H/KibMjsA=="
+          "hash": "xF1PzfjOpG7Z9lZCaKkkRA=="
         }
       },
       "is_incremental": false,
@@ -5265,7 +5265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusMaterialBRDF.html",
-          "hash": "JUIYrU6mGqCLjmplNAVD1g=="
+          "hash": "R2/YoZ4gcY0We+tW8Maxrw=="
         }
       },
       "is_incremental": false,
@@ -5277,7 +5277,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusMaterialBase.html",
-          "hash": "/ykPzModwv/cR8VTfOWNhQ=="
+          "hash": "DB2qjAr8rmuvMxcsS6ZJOQ=="
         }
       },
       "is_incremental": false,
@@ -5289,7 +5289,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusMaterialDiffuseBRDF.html",
-          "hash": "Fr+S4nNxyZAMZLcfRkVZJA=="
+          "hash": "gtjxBa4FcmjVhbGj3hBpKA=="
         }
       },
       "is_incremental": false,
@@ -5301,7 +5301,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusMaterialGlossyBRDF.html",
-          "hash": "2lh6Bdk2EZ3bDgSXZ+HThQ=="
+          "hash": "j1GV/Zt1f9TsZO6OSBq0pQ=="
         }
       },
       "is_incremental": false,
@@ -5313,7 +5313,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusMaterialStandard.html",
-          "hash": "9v3Q7HG+ebgTtUvj05TxAQ=="
+          "hash": "h/QDSF27O2SluqOKnYlVfw=="
         }
       },
       "is_incremental": false,
@@ -5325,7 +5325,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusMesh.html",
-          "hash": "mPVrKMoBD0EM4leCwxZfmw=="
+          "hash": "vu6HUI7Le0E/cHGwA3Gcxg=="
         }
       },
       "is_incremental": false,
@@ -5337,7 +5337,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusNode.html",
-          "hash": "lGCu9VxXbTrDm+ZIXn3Xqg=="
+          "hash": "upcE6VHSZEYGqtxfbeGIaA=="
         }
       },
       "is_incremental": false,
@@ -5349,7 +5349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusOctant.html",
-          "hash": "g7lYgWtmomm66/1qTyyJGQ=="
+          "hash": "NmEu2FEqFedmVsjDgSyr/A=="
         }
       },
       "is_incremental": false,
@@ -5361,7 +5361,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusRectTransform.html",
-          "hash": "gIXtdwbY2lrUmVQHExUPjA=="
+          "hash": "HQMXkIGWhl6bDCp+EZNEkw=="
         }
       },
       "is_incremental": false,
@@ -5373,7 +5373,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusScene.html",
-          "hash": "+fEoud+WfQBkx3a8AE6LdA=="
+          "hash": "tlpDn6AFbAl6HmChEATGsg=="
         }
       },
       "is_incremental": false,
@@ -5385,7 +5385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusTransform.html",
-          "hash": "h5jLE3QDMK/jZ0dZ2U6JIA=="
+          "hash": "8kVhkYg++OIFvjnY5O0u/g=="
         }
       },
       "is_incremental": false,
@@ -5397,7 +5397,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusVerticalTextAlignment.html",
-          "hash": "Z0mM5ZjOJSjt4ZIr8m1/1g=="
+          "hash": "gXFVyeAkrCkk268zEBXMVQ=="
         }
       },
       "is_incremental": false,
@@ -5409,7 +5409,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusWeight.html",
-          "hash": "BGmh+mZxLthNA7Eun5cA0g=="
+          "hash": "g9btAqur481wK4zTN+BuuQ=="
         }
       },
       "is_incremental": false,
@@ -5421,7 +5421,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusXForm.html",
-          "hash": "HZR9BwzKV47qrkgi85l6DQ=="
+          "hash": "weePOaAK+ddH4Jg5G2rESQ=="
         }
       },
       "is_incremental": false,
@@ -5433,7 +5433,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusXFormText.html",
-          "hash": "Sc8OxVKAPlZ5elLf3b3pTQ=="
+          "hash": "D/zsyymHfauPZSjzpgu1Vw=="
         }
       },
       "is_incremental": false,
@@ -5445,7 +5445,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.JointWeightColumn.html",
-          "hash": "rcp0Z7JYKNdnfHVMrrNXrQ=="
+          "hash": "3tNEOL4KeZNfb1Z+3t0+bA=="
         }
       },
       "is_incremental": false,
@@ -5457,7 +5457,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.LerpType.html",
-          "hash": "IgUFAYADp5BVW5cgsJSTMg=="
+          "hash": "4Amk66jeLLv+uvVpUPkZwQ=="
         }
       },
       "is_incremental": false,
@@ -5469,7 +5469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.NormapMapChannel.html",
-          "hash": "ffDmrFmu36Mg9gww5ab+/w=="
+          "hash": "sU0kvMll2kxoGAO2emcDqg=="
         }
       },
       "is_incremental": false,
@@ -5481,7 +5481,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.ProjectionMethod.html",
-          "hash": "YFm/m6e4DaH+it5s+7BE4Q=="
+          "hash": "HK2uAd/GLlDHy/CFW6a8tA=="
         }
       },
       "is_incremental": false,
@@ -5493,7 +5493,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.SpecularChannel.html",
-          "hash": "LSdXm2cJCvSxSeL4gQURGw=="
+          "hash": "s/QwcIM40+1zNmBy7yPA8g=="
         }
       },
       "is_incremental": false,
@@ -5505,7 +5505,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.TypeId.html",
-          "hash": "F352t4OW4FDw2bMfZ5yk1A=="
+          "hash": "tGO1gTepMJ3kZ/WYTEgoUA=="
         }
       },
       "is_incremental": false,
@@ -5517,7 +5517,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.VertexWeight.html",
-          "hash": "hxms5t9LGT91pjpLR1N1eQ=="
+          "hash": "pvm9y5fsaLXhuxcm6mVYhQ=="
         }
       },
       "is_incremental": false,
@@ -5529,7 +5529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.VertexWeightList.html",
-          "hash": "4vrMqycbU9Jq5mz8+VqDDw=="
+          "hash": "hjyZ+Vf7ZelIe7rcxCOoLQ=="
         }
       },
       "is_incremental": false,
@@ -5541,7 +5541,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.html",
-          "hash": "bh/2daOw9PbToInpoGW2EQ=="
+          "hash": "X+PvbxkrDRjnGjupH3bDPg=="
         }
       },
       "is_incremental": false,
@@ -5553,7 +5553,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.html",
-          "hash": "jAgtfS3kA7O8nhtsHh4bbA=="
+          "hash": "yX26BikknkgsgQzvLx6z1g=="
         }
       },
       "is_incremental": false,
@@ -5565,7 +5565,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.CollapsingStateStack-1.html",
-          "hash": "AAIyAL6DkBK9WFKTg0bHSQ=="
+          "hash": "tHFBYa0IS/k6jXaBeb0ZhQ=="
         }
       },
       "is_incremental": false,
@@ -5577,7 +5577,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.EmptyState.html",
-          "hash": "hYX8vA5rs4wzTpX7/9rEng=="
+          "hash": "eoFYrg/HxNTw+fzrVwADPQ=="
         }
       },
       "is_incremental": false,
@@ -5589,7 +5589,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.IComponent.html",
-          "hash": "KxA/34Uj1mMCz+nqMnRYKw=="
+          "hash": "/bkWxPpr/CHHZyu+7M386A=="
         }
       },
       "is_incremental": false,
@@ -5601,7 +5601,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.INode.html",
-          "hash": "9nDPtRYmH/7XMTqiPq7sXA=="
+          "hash": "dWUPNrOtU0brzfFqKUiaOQ=="
         }
       },
       "is_incremental": false,
@@ -5613,7 +5613,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.IStateStack.html",
-          "hash": "y5XPEifWX1xvXI7aGwaGlw=="
+          "hash": "SVlSxKLiwnu9nCf596nKBg=="
         }
       },
       "is_incremental": false,
@@ -5625,7 +5625,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.SceneComponentFinder-3.html",
-          "hash": "E5e8mPEnrTfmVTab4htrrA=="
+          "hash": "YeDK9vs6mcvnpvNE2Fno8Q=="
         }
       },
       "is_incremental": false,
@@ -5637,7 +5637,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.SceneFinderBase-3.html",
-          "hash": "4VYsNTtAQQJSJNhli8So/g=="
+          "hash": "eGlq6golkrqR0FbVww4CXg=="
         }
       },
       "is_incremental": false,
@@ -5649,7 +5649,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.SceneFinderExtensions.html",
-          "hash": "7s0NJ4VHDjsWkLpBHZuTIw=="
+          "hash": "c6SvW/2qraQpQz4XaPT+Iw=="
         }
       },
       "is_incremental": false,
@@ -5661,7 +5661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.SceneNodeFinder-3.html",
-          "hash": "mjQx802f6e51CPjK6AaD0A=="
+          "hash": "yxgwRVLI5IHT6hRxcG1OZw=="
         }
       },
       "is_incremental": false,
@@ -5673,7 +5673,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.SceneNodeWhereComponentFinder-3.html",
-          "hash": "DkVn+P+TyYgtEjdjyNGEUQ=="
+          "hash": "gX628DDOWkL1GFk2x9wUEA=="
         }
       },
       "is_incremental": false,
@@ -5685,7 +5685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.StandardState.html",
-          "hash": "zQcgVqfWs6SGOOOakGymdQ=="
+          "hash": "3YFuY4BJ1UXxbfj/zxzB+A=="
         }
       },
       "is_incremental": false,
@@ -5697,7 +5697,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.StateStack-1.html",
-          "hash": "fOq/4ZYUd9fbcQ/iy8Kybg=="
+          "hash": "0SrFI6SOha6O5V/pVVJoqA=="
         }
       },
       "is_incremental": false,
@@ -5709,7 +5709,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.Viserator-4.html",
-          "hash": "HRHzshVgN/pre3a4wPOOdA=="
+          "hash": "quswqSDsONOdsMk+4u/VAg=="
         }
       },
       "is_incremental": false,
@@ -5721,7 +5721,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.ViseratorBase-3.html",
-          "hash": "BWrpxKnG/on1z+XFjosYwQ=="
+          "hash": "CK0MnoVbk3eW8lE5B7+T9A=="
         }
       },
       "is_incremental": false,
@@ -5733,7 +5733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.ViseratorExtensions.html",
-          "hash": "mgGJ+bakkKqdjNf85V2ZWg=="
+          "hash": "ie3GHRrARoSrKTm5Eovzrg=="
         }
       },
       "is_incremental": false,
@@ -5745,7 +5745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.VisitMethodAttribute.html",
-          "hash": "veR6igVd88Ffdzy1d++Itw=="
+          "hash": "1SCbZmUwrD3v3CrvANPntQ=="
         }
       },
       "is_incremental": false,
@@ -5757,7 +5757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.Visitor-2.html",
-          "hash": "eng0e4zqediA4JRCLMgXhA=="
+          "hash": "WQATCQzqeUgtnw9II9kYYA=="
         }
       },
       "is_incremental": false,
@@ -5769,7 +5769,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.VisitorHelpers.html",
-          "hash": "A2LAPx9rb4sNYRIAn2HTcQ=="
+          "hash": "SY4XQRezan5CrqFyfK9m4Q=="
         }
       },
       "is_incremental": false,
@@ -5781,7 +5781,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.VisitorState.html",
-          "hash": "FIkrfKIn7R6n/QXwPqVy3w=="
+          "hash": "5J5lI8ZPwc3MPKIys5v67w=="
         }
       },
       "is_incremental": false,
@@ -5793,7 +5793,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.html",
-          "hash": "14qOmZOHmfVl/psqLYo0hg=="
+          "hash": "0gFuVgpqKybZAq70ZaFiFg=="
         }
       },
       "is_incremental": false,
@@ -5805,7 +5805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Animation.html",
-          "hash": "v8yz4KHnkUxrv5KWzDhb0A=="
+          "hash": "oBfIHwMvzIK44q0rTzwzNQ=="
         }
       },
       "is_incremental": false,
@@ -5817,7 +5817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.ChainedMemberAccessor-2.html",
-          "hash": "oo4K09haMfC7EM1HC2CZ3w=="
+          "hash": "BGihd4glBoIKyxFMxkVufw=="
         }
       },
       "is_incremental": false,
@@ -5829,7 +5829,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Channel-1.LerpFunc.html",
-          "hash": "1OOk9S4HsAvzjxhU6aWp3w=="
+          "hash": "fgFjFWHbgm/WYcA00K+bPw=="
         }
       },
       "is_incremental": false,
@@ -5841,7 +5841,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Channel-1.SetChanelValue.html",
-          "hash": "THV5Rnw614Nk6bCTS2SjdA=="
+          "hash": "1bXF03xAVU/Zj4bQyH7UMA=="
         }
       },
       "is_incremental": false,
@@ -5853,7 +5853,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Channel-1.html",
-          "hash": "SJx6vNRd20AcyyJizQFHeA=="
+          "hash": "kA1J53J/cqDwdoysGEEdCA=="
         }
       },
       "is_incremental": false,
@@ -5865,7 +5865,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.ChannelBase.html",
-          "hash": "JB1c3SirMvlDoNAr5uKeFg=="
+          "hash": "9kkkdOW+bLkz6ia1vzU0NQ=="
         }
       },
       "is_incremental": false,
@@ -5877,7 +5877,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Circuit.html",
-          "hash": "if9ScENmssGn++BBDUv37g=="
+          "hash": "rj02JyqZwOSX6/BXGC8l+Q=="
         }
       },
       "is_incremental": false,
@@ -5889,7 +5889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.ConvertingFieldAccessor-2.html",
-          "hash": "1cyPiqjy0Je9nuebuNt/Qw=="
+          "hash": "kxmhyWnpbfD4OcST6YDo1w=="
         }
       },
       "is_incremental": false,
@@ -5901,7 +5901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.ConvertingPropertyAccessor-2.html",
-          "hash": "t2XVmnzzbfqqQLfAjLIxuA=="
+          "hash": "qQbZr3n5Mkjacdpm+Drg3w=="
         }
       },
       "is_incremental": false,
@@ -5913,7 +5913,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.FieldAccesssor-1.html",
-          "hash": "C/L1D1KatNULreV37LbRyw=="
+          "hash": "059gmrR3WlBJX+TBW95dyg=="
         }
       },
       "is_incremental": false,
@@ -5925,7 +5925,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.ICalculationPerformer.html",
-          "hash": "1WEwUFf0c6kNAA89rOb06A=="
+          "hash": "y6tCNXCHOvCtRCeR8+DY9Q=="
         }
       },
       "is_incremental": false,
@@ -5937,7 +5937,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.IInPin.html",
-          "hash": "Cq82Ssb6BRuFMps46VrOzQ=="
+          "hash": "HgItz9xGRuuBcKEruAlLMA=="
         }
       },
       "is_incremental": false,
@@ -5949,7 +5949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.IMemberAccessor-1.html",
-          "hash": "90X6brnz8PcPzlpKSl7Dlw=="
+          "hash": "S+9fJZu/yK8Tz5/yefj3IA=="
         }
       },
       "is_incremental": false,
@@ -5961,7 +5961,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.IOutPin.html",
-          "hash": "UHbrXJnSmq3qlFm3d1v99g=="
+          "hash": "3YcVDrPEBjt7s94OBDzGNg=="
         }
       },
       "is_incremental": false,
@@ -5973,7 +5973,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.InPin-1.html",
-          "hash": "RFcRvoDplUgAqChd2CtutA=="
+          "hash": "WDjwqL8Ip4MLLAT4V4UlVA=="
         }
       },
       "is_incremental": false,
@@ -5985,7 +5985,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Keyframe-1.html",
-          "hash": "4HI+OrwEz7hjwQoVvqK+Xw=="
+          "hash": "gUgGlRNZFc7ByD5N8XBxjw=="
         }
       },
       "is_incremental": false,
@@ -5997,7 +5997,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Lerp.html",
-          "hash": "+uEPAkZ79OWF73Nb5JTRmw=="
+          "hash": "0JMhw/DU04KVr52KsyJJRw=="
         }
       },
       "is_incremental": false,
@@ -6009,7 +6009,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.ListSort-1.html",
-          "hash": "5fri89FiuuQnRDojr8U7Lg=="
+          "hash": "3qMqoKmXfrjnW+s85xU3uw=="
         }
       },
       "is_incremental": false,
@@ -6021,7 +6021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Node.html",
-          "hash": "by/T33DY7BxrdgFL8qIqtQ=="
+          "hash": "1GVhN7Fzg/ZROd66prUjmw=="
         }
       },
       "is_incremental": false,
@@ -6033,7 +6033,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.OutPin-1.html",
-          "hash": "2DBrXDZ++4i1ygNkVUe21A=="
+          "hash": "CttHNCL6CGjKg8tGDoJZgw=="
         }
       },
       "is_incremental": false,
@@ -6045,7 +6045,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.Pin.html",
-          "hash": "cMD4+KyQuBOv8Gdokl8ZyQ=="
+          "hash": "+1WLM8KEX+bcHDumOh2x0g=="
         }
       },
       "is_incremental": false,
@@ -6057,7 +6057,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.PropertyAccessor-1.html",
-          "hash": "9P4w1niup90f4n1PdfsL0Q=="
+          "hash": "xkVD4t6iWw/DDzvGZ7CCkw=="
         }
       },
       "is_incremental": false,
@@ -6069,7 +6069,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.ReceivedValueHandler.html",
-          "hash": "IMXW3M+h0qAzuMHYliShtg=="
+          "hash": "2DK+yDjgfMMfe3QJ/Aez2A=="
         }
       },
       "is_incremental": false,
@@ -6081,7 +6081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xirkit.html",
-          "hash": "qmzeqDVEK5IXCCtMT30Rfg=="
+          "hash": "/tmXBe5ZEYs3cG0Y2P2mCg=="
         }
       },
       "is_incremental": false,
@@ -6093,7 +6093,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "NHtExjXZ5guCrb7FotX2AA=="
+          "hash": "O7d0C6mU8Kv5yAZk5Q//Cg=="
         }
       },
       "is_incremental": false,
@@ -6117,7 +6117,7 @@
       "output": {
         ".html": {
           "relative_path": "examples/examples.html",
-          "hash": "/Ymqt6E53wLUqQ3s65vH4Q=="
+          "hash": "iJj62iQS8UkKV4PfJkgtrQ=="
         }
       },
       "is_incremental": false,
@@ -8088,7 +8088,7 @@
       "output": {
         ".html": {
           "relative_path": "getting-started/firstfuseeapp.html",
-          "hash": "vqKjCvreVEs/mO9p1ADKwA=="
+          "hash": "+iMgmEHfhJjPGseAUSy8jg=="
         }
       },
       "is_incremental": false,
@@ -8144,7 +8144,7 @@
       "output": {
         ".html": {
           "relative_path": "getting-started/install-fusee.html",
-          "hash": "cHLKrFrmdbmqKZO3AcfXcA=="
+          "hash": "SRIG8MX1YMpSBRKwO3m/YA=="
         }
       },
       "is_incremental": false,
@@ -8156,7 +8156,7 @@
       "output": {
         ".html": {
           "relative_path": "getting-started/necessary-tools.html",
-          "hash": "ot+Tje8+2x0pPTewbhuT4w=="
+          "hash": "+Kc3PhsJSxRu5hjv2P81HQ=="
         }
       },
       "is_incremental": false,
@@ -8202,7 +8202,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "UpgAVRAaa2oXkQjtXgNMVA=="
+          "hash": "Rd+WR3DLpTuG6TQRbTtXWw=="
         }
       },
       "is_incremental": false,
@@ -8226,7 +8226,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Assets.html",
-          "hash": "QWi/32JESlZtOyV5BHwRsQ=="
+          "hash": "v6DrlcjiAbNh8+2DxOrM3Q=="
         }
       },
       "is_incremental": false,
@@ -8238,7 +8238,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Axis-Aligned-Bounding-Box.html",
-          "hash": "+LO9gBdH5J1PQPlg7isi2A=="
+          "hash": "3bF3pENsSmnreTnB2NHIUg=="
         }
       },
       "is_incremental": false,
@@ -8250,7 +8250,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Camera.html",
-          "hash": "J+Q1zqYiaOAuxWKl/yVe8Q=="
+          "hash": "lurNyDM2rzdXVlzueXApzQ=="
         }
       },
       "is_incremental": false,
@@ -8262,7 +8262,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Code-Documentation-Workflow.html",
-          "hash": "/DGHB2LL3ybi0U45zXXSOg=="
+          "hash": "EUeGbJGVt6behhY9y20K8g=="
         }
       },
       "is_incremental": false,
@@ -8274,7 +8274,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Deferred-Rendering.html",
-          "hash": "Odzd7GuiAYnAEjOUUPO/Lg=="
+          "hash": "wGc8BIcz+AQ7FcPUQw09sA=="
         }
       },
       "is_incremental": false,
@@ -8286,7 +8286,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Editing-Website.html",
-          "hash": "W9CVa2Voav0hOfko9HqlQw=="
+          "hash": "MHWxlaQMp5AcpAQkVMUlaA=="
         }
       },
       "is_incremental": false,
@@ -8298,7 +8298,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/FUSEE-Exporter-Blender-Add-on.html",
-          "hash": "c4f1vxj55FKmyvOBPHRdhA=="
+          "hash": "Y1DSKHTcZqfoDTHRJ+1oGA=="
         }
       },
       "is_incremental": false,
@@ -8310,7 +8310,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/FUSEE-Xene.html",
-          "hash": "+oCx2OKHtbO7Qha59KyzZA=="
+          "hash": "L6p3gksEaQz2MeUFz4zrXQ=="
         }
       },
       "is_incremental": false,
@@ -8322,7 +8322,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/FUSEE-in-different-Browsers-(locally).html",
-          "hash": "ftIh70lgiqe1tN9uWEASEQ=="
+          "hash": "D0v7u1w+e2UbAuCeOOachg=="
         }
       },
       "is_incremental": false,
@@ -8334,7 +8334,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/First-Steps-Scene-Management.html",
-          "hash": "C9+TUYbjJnm84pOJzndVjQ=="
+          "hash": "+FEWPpNQSnmBjIU1CVFnpQ=="
         }
       },
       "is_incremental": false,
@@ -8346,7 +8346,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/First-Steps.html",
-          "hash": "rL+0zjXBqdYyG/HqII9zLg=="
+          "hash": "6vOFUOl1iEqtqIh9hIB1eg=="
         }
       },
       "is_incremental": false,
@@ -8358,7 +8358,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Getting-Started.html",
-          "hash": "/45q7Po1WC5YnLlzXRgHbQ=="
+          "hash": "TWxYLruuq0wdM2tIOf+m2Q=="
         }
       },
       "is_incremental": false,
@@ -8370,7 +8370,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Git-flow.html",
-          "hash": "Wisp2+Oi6IGeEFRHNitiZA=="
+          "hash": "9CYW1O4KDLwpsUiMVKecHg=="
         }
       },
       "is_incremental": false,
@@ -8382,7 +8382,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Home.html",
-          "hash": "28t/lVAeBZ5jXP8xachzAQ=="
+          "hash": "SSOVkjx1UfhI+7X3kThdyg=="
         }
       },
       "is_incremental": false,
@@ -8394,7 +8394,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/How-FUSEE-builds.html",
-          "hash": "0IPn/YipuzY3vyFcWsxu+A=="
+          "hash": "tyymODLKzUKn12eokX5MIw=="
         }
       },
       "is_incremental": false,
@@ -8901,7 +8901,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Input-and-Input-Devices.html",
-          "hash": "KeeudKVs26t8ZrnEiBo7xA=="
+          "hash": "X4paQe36wH9nSfX/OgjaYg=="
         }
       },
       "is_incremental": false,
@@ -8913,7 +8913,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Keyframe-Animation.html",
-          "hash": "qREJQDrOrjZTqCphlxzWbg=="
+          "hash": "OE15jaqNi7Jo/aQ4IL1UVQ=="
         }
       },
       "is_incremental": false,
@@ -8928,7 +8928,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Light-and-Shadow.html",
-          "hash": "nVpZpL0zDsocfsm+4NaukA=="
+          "hash": "Fzb3VQttlRDTUM0/h7ICHw=="
         }
       },
       "is_incremental": false,
@@ -8940,7 +8940,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Logging.html",
-          "hash": "+wRHrBs12SOwYm41Pn8tEA=="
+          "hash": "7dvrdj31IWSSUmjJhVzT8g=="
         }
       },
       "is_incremental": false,
@@ -8952,7 +8952,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Matrices.html",
-          "hash": "ICILArniqr9dSMIemgSVqw=="
+          "hash": "/kuOsspjBHovdmglUE0IGQ=="
         }
       },
       "is_incremental": false,
@@ -8964,7 +8964,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Multipass-Rendering---quick-start-guide.html",
-          "hash": "nIER2LHaJhrG3KSYG2p2DQ=="
+          "hash": "C9d1IAhgGtKo/zHg97A+Aw=="
         }
       },
       "is_incremental": false,
@@ -8976,7 +8976,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Overall-Project-Structure.html",
-          "hash": "Q7ak2J8eAKF53WnBi33pdg=="
+          "hash": "SzMBLM+LWIzt+cndMp8fCw=="
         }
       },
       "is_incremental": false,
@@ -8991,7 +8991,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Project-Management.html",
-          "hash": "ywRDDsPTXDazXgj72HR0Pg=="
+          "hash": "OQ14byBRpYYOOr2aSWaNjQ=="
         }
       },
       "is_incremental": false,
@@ -9003,7 +9003,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Release-Checklist.html",
-          "hash": "Bc7hjFvVe3VkHFa4oOE9Xw=="
+          "hash": "ps3SHD2WUJ+81+fS1XW2fg=="
         }
       },
       "is_incremental": false,
@@ -9015,7 +9015,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Serialization-and-protobuf-net.html",
-          "hash": "m5iN6daJCegampt+6ZgPLQ=="
+          "hash": "BwlB5noykkgmcPAlaADzxA=="
         }
       },
       "is_incremental": false,
@@ -9027,7 +9027,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Setup-the-Particle-System.html",
-          "hash": "g6GjaUTwzsXNNxXl4d0YoQ=="
+          "hash": "tuBJ4GXKlDgqoQM1pd/bAQ=="
         }
       },
       "is_incremental": false,
@@ -9039,7 +9039,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Studi-Themen.html",
-          "hash": "sXo6ropBIBrgGDUYCiydog=="
+          "hash": "+JnRdp1EpiYixZoZKG8lxg=="
         }
       },
       "is_incremental": false,
@@ -9051,7 +9051,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Texture-types-and-their-usage.html",
-          "hash": "lpDDp2JfKepiQ7DIptA9DQ=="
+          "hash": "cN/tHdlCVG1wadY/wm2Ifg=="
         }
       },
       "is_incremental": false,
@@ -9063,7 +9063,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Update-External-Projects.html",
-          "hash": "WitZ6H2zGkUrSkxsqN73CQ=="
+          "hash": "t1M/z1Eg/er9MakcnTZCqg=="
         }
       },
       "is_incremental": false,
@@ -9075,7 +9075,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Using-FUSEE-in-Visual-Studio-Code.html",
-          "hash": "YCML37XErKpDIfLQe/FYUg=="
+          "hash": "lLee503Fb+sGoS3V0uqGLw=="
         }
       },
       "is_incremental": false,
@@ -9087,7 +9087,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Using-videos-as-texture.html",
-          "hash": "Gq2DvE3OHGtLv9xNQGoOeA=="
+          "hash": "s4fVbzaWux9+UbPw4Izrig=="
         }
       },
       "is_incremental": false,
@@ -9099,7 +9099,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/WebAssembly.html",
-          "hash": "Ath7jL+T6+9Rd/0+rUhKug=="
+          "hash": "NHzKIZvIJEXTo/G1ltHYpA=="
         }
       },
       "is_incremental": false,
