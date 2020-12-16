@@ -5,7 +5,7 @@ comments: false
 date: 2019-10-18
 weight: 5
 ---
-
+  > ⚠️ **This page shows some examples of our upcoming Web Assembly support enabling FUSEE applications to run in web browsers**  
 
 ## [Rocket](rocket/index.html)
 __[FUSEE Rocket](rocket/index.html) is a simple example which demonstrates asset loading (shaders, serialized *.fu scene files, textures, fonts) as well as our responsive GUI system.__
@@ -14,7 +14,7 @@ __[FUSEE Rocket](rocket/index.html) is a simple example which demonstrates asset
 ![Rocket example image](images/simple_img.png)
 
 
-The source code can be found here: [Github](https://github.com/FUSEEProjectTeam/Fusee/tree/feature/wasm/Examples/Complete/WASM)
+The source code can be found here: [Github](https://github.com/FUSEEProjectTeam/Fusee/tree/develop_wasm/Examples/Complete/Simple/WebAsm)
 
 ---
 
@@ -25,4 +25,4 @@ The source code can be found here: [Github](https://github.com/FUSEEProjectTeam/
 ![Rocket picking image](images/picking_img.png)
 
 
-The source code can be found here: [Github](https://github.com/FUSEEProjectTeam/Fusee/tree/feature/wasm/Examples/Complete/Picking)
+The source code can be found here: [Github](https://github.com/FUSEEProjectTeam/Fusee/tree/develop_wasm/Examples/Complete/Picking/WebAsm)
