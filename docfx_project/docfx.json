@@ -74,7 +74,7 @@
 		"cleanupCacheHistory":false,
 		"disableGitFeatures":false,
 		"globalMetadata": {
-			"_disableContribution": false,
+			"_disableContribution": true,
 		}
 	}
 }
