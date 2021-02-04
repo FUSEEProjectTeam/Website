@@ -85,7 +85,7 @@ contents may already obey to these rules.</p>
 <li>Additional dll versions for different platforms (like shared implementation dlls - probably
 RenderContextImp for OpenTK/Desktop vs OpenTK/Android)</li>
 </ul>
-<p>##FUSEE Project Details</p>
+<h2 id="fusee-project-details">FUSEE Project Details</h2>
 <p>FUSEE's goal is to provide a software infrastructure for platform independent 3D realtime
 applications. Mainly this infrastructure consists of libraries (dlls) providing pre-defined
 functionality. In some cases FUSEE also contains deliverables like build-tools, plug-ins etc.
@@ -99,7 +99,7 @@ for translating .NET IL code to javascript, in order to make FUSEE run plugin-fr
 in web browsers and a modified version of protobuf-net for automatic serialization.
 These different technologies all come with a set of requirements
 which have to be taken into account when designing a project strucure.</p>
-<h2 id="android--ios-requirements">Android / iOS Requirements</h2>
+<h3 id="android--ios-requirements">Android / iOS Requirements</h3>
 <p>To enable C# code to run on Android / iOS, it must be compiled using special project
 settings. Either C# code is re-used in different projects directly aimed at each
 platform (desktop, Android, iOS) - so called &quot;shared libraries&quot; - or code is compiled into
@@ -156,7 +156,7 @@ e.g. by the platform-specific application (in the future maybe by some dependenc
 </ul>
 </li>
 </ul>
-<h2 id="jsil-requirements">JSIL requirements</h2>
+<h3 id="jsil-requirements">JSIL requirements</h3>
 <p>JSIL can handle most of the code by directly translating it from the dll's IL code to
 javascript, maintaining functionality of most of the standard .NET platform libraries
 (mscorlib, system, ...). This holds particularly for portable libraries, so <em>Dec-Libs</em> as well as
@@ -172,7 +172,7 @@ or in the very rare cases where JSIL is not capable of translating the logic. In
 members (mostly methods) that need hand-coded javacript implementations are decorated with the
 <code>[JSExternal]</code> attribute in the C# source. These libraries can then be accompanied by a hand-coded
 .js file containing implementations for the  members declared <code>[JSExternal]</code>.</p>
-<h2 id="application-projects">Application Projects</h2>
+<h3 id="application-projects">Application Projects</h3>
 <p>In addition to FUSEE Library projects creating dlls, another family of project types exist producing
 applications for the various platforms supported by FUSEE: Desktop-Apps (exe), Web-Apps (html/js),
 Android (apk). These projects are platform dependent by nature. Still, applications determined to run
@@ -181,10 +181,10 @@ on different platforms should be setup similar to library projects by centralizi
 projects as thin as possible. Ideally, a platform dependent Application contains nothing more but
 instantiations of the <em>Imp-Libs</em> matching their platform and used by the application. Take a look at the &quot;Simple&quot;
 example to see how a multi-platform application can be set up.</p>
-<p>##Tools</p>
+<h3 id="tools">Tools</h3>
 <p>tbd.</p>
 <h2 id="fusee-project-conventions">FUSEE Project Conventions</h2>
-<h2 id="root-folder-structure">Root Folder structure</h2>
+<h3 id="root-folder-structure">Root Folder structure</h3>
 <p>The FUSEE development root folder contains (at least) the following directories</p>
 <ul>
 <li><em>bin</em>: Contains all output. Generated DLLs, EXEs, comment-xml-files and javascript cross-compiled
@@ -195,7 +195,7 @@ by JSIL is written to <em>Bin</em>.</li>
 <li><em>ext</em>: Contains binaries, such as the JSIL compiler, used for the FUSEE build process.</li>
 <li><em>hlp</em>: Contains help files and documentation.</li>
 </ul>
-<h2 id="contents-of-the-src-folder">Contents of the <em>src</em> Folder</h2>
+<h3 id="contents-of-the-src-folder">Contents of the <em>src</em> Folder</h3>
 <p>The <em>src</em> folder contains individual projects (called <em><strong>root projects</strong></em> from now on).
 There may be dependencies among these root projects. Actually each root project may be made up
 out of several <em><strong>sub projects</strong></em>, so there are cases where there is no single .csproj file
@@ -212,7 +212,7 @@ FUSEE project. Root projects that can be found directly below <em>src</em> are</
 <li><em>Serialization</em>: Central repository of all container classes in entire FUSEE.</li>
 <li>...</li>
 </ul>
-<h2 id="project-granularity">Project Granularity</h2>
+<h3 id="project-granularity">Project Granularity</h3>
 <p>To keep the number of projects and files low, there shouldn't be too many <em>Dec-Lib</em> style projects.
 As a recommendation, there should be only one such project per sub-project below <em>src</em>. In addition,
 any <em>Log-Lib</em> style project should only expose zero or one single javascript file containting all the
@@ -226,32 +226,32 @@ of consistent rules. The goal is to keep developers from inventing new naming sc
 (or refactored) which will lead to inconsistency over time. Especially the namespace naming rule will bloat
 FUSEE with a very fine granular spate of namespaces, but this drawback is outweighed by a clear and easy-to-obey
 convention keeping a concise project structure even after years of development.</p>
-<h2 id="namespaces--class-names--file-names">Namespaces / Class names / File names</h2>
+<h3 id="namespaces--class-names--file-names">Namespaces / Class names / File names</h3>
 <p>Mainly like in Java - Namespace: project folder name below <em>src</em>, starting with Fusee. <em>src</em> is omitted!
 Each subfolder generates a new namespace. File names and class names: Exceptions to the Java rule may occur.
 Public Enums, Delegates and simple structs, especially if used as parameters or return types, may be declared
 within some &quot;heavyweight&quot; class file.</p>
-<h2 id="folders">Folders</h2>
+<h3 id="folders">Folders</h3>
 <p>Each folder resembles a sub-namespace. Strict 1 on 1 correspondence between folder names and namespaces. If
 possible, no sub-folders within projects (as this will generate namespaces). Consider flattening the project or
 creating sub-projects. Keep exceptions to this rule minimal.</p>
-<h2 id="declaration-libraries-must-be-common">Declaration Libraries must be <em>Common</em></h2>
+<h3 id="declaration-libraries-must-be-common">Declaration Libraries must be <em>Common</em></h3>
 <p>Since the number of <em>Dec-Libs</em> should be kept minimal (if possible, only one per sub-project below <em>src</em>), these
 <em>Dec-Libs</em> must use the special name &quot;Fusee.<subproject>.<em>Common</em>&quot;. As the other conventions require, this name is
 used as the name of the project as well as the name of the resulting dll.<p>
-<h2 id="logic-libraries-may-be-core">Logic Libraries may be <em>Core</em></h2>
+<h3 id="logic-libraries-may-be-core">Logic Libraries may be <em>Core</em></h3>
 <p>If a sub project below <em>src</em> needs to be separated into declaration, logic and implementation parts (because the
 logic accesses platform-specific functionality), it might be appropriate to centralize common logic into one single
 library. The name of such a general library containing logic should be &quot;core&quot;. It might as well be appropriate
 to separate the a sub project below <em>src</em> into more than one logic library. This might be helpful in cases where
 a self-contained set of functionality is likely to be used only in some applications (and <em>not</em> in others).</p>
-<h2 id="project-file-names">Project file names</h2>
+<h3 id="project-file-names">Project file names</h3>
 <p>Project file names contain the complete name dot-separated starting with Fusee (and omitting <em>src</em>). Thus a
 project file is exactly the same as the namespace it defines (and where the classes/types it defines reside in).</p>
-<h2 id="generated-dll-names">Generated dll names</h2>
+<h3 id="generated-dll-names">Generated dll names</h3>
 <p>Same as project file name: The project Fusee.SomeNamespace.SomeSubNamespace.csproj will build
 Fusee.SomeNamespace.SomeSubNamespace.dll (and most likely Fusee.SomeNamespace.SomeSubNamespace.xml).</p>
-<h2 id="implementation-variants-of-imp-libs-for-different-platforms">Implementation variants of <em>Imp-Libs</em> for different platforms</h2>
+<h3 id="implementation-variants-of-imp-libs-for-different-platforms">Implementation variants of <em>Imp-Libs</em> for different platforms</h3>
 <p>Generally implementation libraries should reside below some Imp directory and thus both, the project file as well as the built dll file name (and the name space) will contain
 &quot;Imp&quot; in their respective name. Below &quot;Imp&quot; there might be a number of subdirectories
 for the different platforms. Common platform names are</p>
@@ -273,7 +273,7 @@ should bear the accompanying Dll's full name with the &quot;.Ext.js&quot; extens
 (where XYZ stands for the namespace, e.g. &quot;Fusee.Xirkit.Ext.js&quot;). According to this rule only one js file
 implementing externals per library is recommended. additional javascript libraries containing implementation
 required by imp-js or ext-js files.</p>
-<h2 id="project-dependencies">Project dependencies</h2>
+<h3 id="project-dependencies">Project dependencies</h3>
 <p>Obviously, as enforced by Visual Studio, portable projects can only reference other portable projects.
 As <em>Dec-Libs</em> and <em>Log-Libs</em> must be portable, this restriction holds for these types of libraries.
 Generally, projects must not reference other projects in lower sub-directories than the referencing
