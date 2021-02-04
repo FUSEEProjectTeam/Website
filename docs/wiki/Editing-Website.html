@@ -69,27 +69,27 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="editing-website">Editing Website</h1>
 
-<h3 id="what-is-docfx">What is DocFX</h3>
+<h2 id="what-is-docfx">What is DocFX</h2>
 <p>DocFX is an API documentation generator for .NET, which currently supports C#, VB and F#. It generates API reference documentation from triple-slash comments in your source code. It also allows you to use Markdown files to create additional topics such as tutorials and how-tos, and to customize the generated reference documentation. DocFX builds a static HTML website from your source code and Markdown files, which can be easily hosted on any web server (for example, github.io). Also, DocFX provides you the flexibility to customize the layout and style of your website through templates.</p>
-<h3 id="install-docfx">Install DocFX</h3>
+<h2 id="install-docfx">Install DocFX</h2>
 <p>Add the <code>bin</code> folder to the PATH environment variable so you can run it anywhere.</p>
-<h3 id="edit-the-page">Edit the page</h3>
+<h2 id="edit-the-page">Edit the page</h2>
 <p>Cloning the website repository</p>
 <p>All editing takes place in the <code>docfx_project</code> folder.</p>
 <p>If you want to Change something in the Wiki or the API(besides the Index.md) you need to go to the corresponding repositories.</p>
-<h3 id="change-the-css-of-the-page">Change the CSS of the page</h3>
+<h2 id="change-the-css-of-the-page">Change the CSS of the page</h2>
 <p><code>templates -&gt; default -&gt; styles</code> edit the main.css</p>
 <p>If you are looking for a specific class, the CSS class is found using the browser's inspector.</p>
-<h3 id="editing-the-content-in-the-template">Editing the content in the template</h3>
+<h2 id="editing-the-content-in-the-template">Editing the content in the template</h2>
 <p>open <code>templates -&gt; default -&gt; partials</code> folder</p>
 <p>here you can find all templates e.g. the footer or the navbar
 these .partial are written in HTML and can be edited.</p>
-<h3 id="testing-the-website">Testing the Website</h3>
+<h2 id="testing-the-website">Testing the Website</h2>
 <p>Clone the folder so you don't change the API or the Wiki submodules</p>
 <p>In the root directory execute the <code>build.cmd</code> and let it run</p>
 <p>Go to the docs folder and enter the <code>docfx serve</code> command</p>
 <p>Page is now running locally under <code>localhost:8080</code></p>
-<h3 id="website-push">Website push</h3>
+<h2 id="website-push">Website push</h2>
 <p>If everything works and looks good, push your changes from the cloned repository.</p>
 <h2 id="implementation-details">Implementation details</h2>
 <blockquote>
