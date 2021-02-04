@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>On this page </title>
+    <title>How FUSEE builds </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="On this page ">
+    <meta name="title" content="How FUSEE builds ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,18 +67,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-fusee-builds">How FUSEE builds</h1>
 
 <p>This page describes how the FUSEE build system works. If you want to understand the build system, either because you
 want to change it or add to it, or because you want to apply similar techniques in your own project's build, you will
 find some information here.</p>
-<h3 id="on-this-page">On this page</h3>
-<ul>
-<li><a href="#background">Background</a></li>
-<li><a href="#general-solution-and-project-structure">General Solution and Project Structure</a></li>
-<li><a href="#desktop-builds">Desktop Builds</a></li>
-<li><a href="#web-builds">Web Builds</a></li>
-</ul>
-<h1 id="background">Background</h1>
+<h2 id="background">Background</h2>
 <p>The FUSEE build system is built on top of msbuild, which is the build engine running inside Visual Studio. msbuild
 can also be run stand-alone, e.g. in automated build environments. Due to FUSEE's multiplatform nature, its integration
 with cross-compiled Java-Script and the need to control and transform digital assets with tools other than the standard
@@ -87,7 +81,7 @@ a consistent, usable, maintainable and extendable build system. All FUSEE custom
 in [FuseeRoot]\src\FuseeBuildActions.targets.xml. This file is included in all projects in the FUSEE source tree
 (with some exceptions below Tools and Uniplug...). This file should also be included in all custom projects
 <em>using</em> FUSEE.</p>
-<h1 id="general-solution-and-project-structure">General Solution and Project Structure</h1>
+<h2 id="general-solution-and-project-structure">General Solution and Project Structure</h2>
 <p>The entire FUSEE source code is located below [FuseeRoot]\src. Solutions for various aspects containing different
 sub-sets of FUSEE projects are located directly below src. From there subfolders contain projects (mainly .csproj
 files for C# projects; Some .vcproj files for C++ projects exist). All output is built into folders below
@@ -96,12 +90,12 @@ files for C# projects; Some .vcproj files for C++ projects exist). All output is
 any output to folders directly within the source tree. All temporary and binary output is written into special
 folders outside of src. To evoke a clean build users should be able to simply delete all contents below
 [FuseeRoot]\bin and [FuseeRoot]\tmp.</p>
-<h2 id="solutions">Solutions</h2>
+<h3 id="solutions">Solutions</h3>
 <p>There may be more than one solution referencing a subset of FUSEE projects. Solutions frequently used for
 different purposes may be placed in the FUSEE development root folder. Solution names should start with FUSEE
 and then a dot-separated specification of the purpose. This could be the name of a root project, e.g.
 Fusee.Engine.sln. Solutions should reside directly in the &quot;[FuseeRoot]/src&quot; directory.</p>
-<h2 id="projects">Projects</h2>
+<h3 id="projects">Projects</h3>
 <p>The following alterations to standard projects exist in all FUSEE .csproj files. These alterations should be made
 to any new FUSEE project.
 Open any .csproj-file in the FUSEE source tree and identify these settings.</p>
@@ -141,7 +135,7 @@ libraries may define
 <pre><code class="lang-XML">		&lt;Import Project=&quot;$(FuseeBuildRoot)\src\FuseeBuildActions.target.xml&quot; /&gt;
 	&lt;/Project&gt;
 </code></pre>
-<h2 id="references-and-dependencies">References and Dependencies</h2>
+<h3 id="references-and-dependencies">References and Dependencies</h3>
 <p>FUSEE projects referencing other FUSEE projects should be created using &quot;Project References&quot; (using the
 <code>&lt;ProjectReference&gt;</code> msbuild item). In earlier FUSEE implementations direct DLL file references were
 favored over project references. The benefits of solution references are</p>
@@ -163,13 +157,13 @@ implemented in <em>Imp-Libs</em> but these dependcies are injected at run-time (
 code). Make sure that FUSEE solutions explicitely define injected dependencies since Visual Studion cannot keep
 track of dependencies resulting from run-time injection. See the Platform-Dependent Application Projects of the
 &quot;Simple&quot; example to see how to inject dependencies.</p>
-<h2 id="processor-platform">Processor Platform</h2>
+<h3 id="processor-platform">Processor Platform</h3>
 <p>Whenever possible, use <code>AnyCPU</code> as the only available processor platform. This might be impossible in cases where
 a processor-platform-specific native (unmanaged) dll is referenced. This should happen ONLY to either <em>Imp-Libs</em>
 or platform-dependent Application projects. In these cases there should be NO <code>AnyCPU</code> processor defined within the
 .csproj at all. Instead, an <code>x86</code> platform condition should exist, and possible other conditions if
 imlementations of the nativ library exist for other platforms.</p>
-<h1 id="desktop-builds">Desktop Builds</h1>
+<h2 id="desktop-builds">Desktop Builds</h2>
 <p>The FUSEE project types most similar to standard Visual Studio C# projects are Desktop projects. There are
 <em>Imp-Lib</em> as well as Application projects targeted towards the Desktop platform. Sometimes <em>Imp-Libs</em> reference
 third-party libraries providing functionality needed by the implementation. These (managed) third party libs
@@ -177,7 +171,7 @@ in turn sometimes require unmanaged functionality from native dlls. While msbuil
 references to the output, this is not the case for unmanaged dlls. The FUSEE build system provides functionality
 to also copy native references whenever managed dlls referencing them are written to some output path during
 the build.</p>
-<h2 id="declaring-native-references">Declaring Native References</h2>
+<h3 id="declaring-native-references">Declaring Native References</h3>
 <p>A C# project requiring native references can include references by adding the following code directly to their
 respective C# project file (.csproj):</p>
 <pre><code class="lang-XML">	&lt;ItemGroup&gt;
@@ -205,7 +199,7 @@ where the dll is needed at run-time from an application.</p>
 <li><code>FuseeCopyNativeLibrary</code> - performs step 1 of the above listed steps.</li>
 <li><code>FuseeResolveNativeDependencies</code> - performs steps 2 (dll) or 3 (exe) of the above listed steps.</li>
 </ul>
-<h1 id="web-builds">Web Builds</h1>
+<h2 id="web-builds">Web Builds</h2>
 <p>Web builds are projects that are cross-compiled by the JSIL IL-to-JavaScript compiler written by K. Gadd. To integrate JSIL into the
 FUSEE build process, some custom actions need to be performed. This includes</p>
 <ol>
@@ -222,7 +216,7 @@ This process is very similar to how native libraries are handled above.</li>
 <li>Declare accompanying JavaScript files for <em>Log-Libs</em> and <em>Imp-Libs</em></li>
 <li>Setup Application projects for the Web platform in the proper way.</li>
 </ol>
-<h2 id="declaring-javascript-files">Declaring JavaScript files</h2>
+<h3 id="declaring-javascript-files">Declaring JavaScript files</h3>
 <p>Put all JavaScript files below a Scripts subfolder under your .csproj and mark them as <code>FUSEE_External_JavaScript</code>. You can
 do this directly in Visual Studio's Solution Explorer as long as the .js files physically reside in the Scripts folder:</p>
 <p><img src="Images/How-FUSEE-builds/ScriptsFolder.png" alt="JavaScript in a Project Scripts folder"></p>
@@ -243,7 +237,7 @@ external native libraries explained above. Here's how the resulting .csproj cont
 </ul>
 <p>implemented in [FuseeRoot]\src\FuseeBuildActions.targets.xml perform the (recursive) propagation of .js files up
 to the final destination (typcally a Web application project).</p>
-<h2 id="setup-an-application-project-html-for-the-web-platform">Setup an Application Project (html) for the Web Platform</h2>
+<h3 id="setup-an-application-project-html-for-the-web-platform">Setup an Application Project (html) for the Web Platform</h3>
 <p>Any application project that should generate html/js output to be displayed in a web browser must be setup for JSIL cross
 compilation. To do this, the application project must generate an executable (instead of a dll). The only purpose of
 this generated executable is to be passed as input to the JSIL cross-compiler. So this (dummy-) executable with all its

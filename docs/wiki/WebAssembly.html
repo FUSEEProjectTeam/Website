@@ -79,7 +79,7 @@
 <p>These tools enable Fusee to compile web applications without relying on <a href="http://www.jsil.org/">JSIL</a> cross compilation anymore (from v0.8 onward).</p>
 <h2 id="usage">Usage</h2>
 <p>A minimal Fusee Wasm project needs, besides the actual Fusee core application, at least, the following two user generated files:</p>
-<h3 id="1-indexhtml">1) index.html</h3>
+<h3 id="indexhtml">index.html</h3>
 <p>The following <code>*.js</code> files needs to be included within <code>&lt;head&gt;</code>:</p>
 <pre><code class="lang-javascript">&lt;script src=&quot;runtime.js&quot;&gt;&lt;/script&gt;
 &lt;script defer src=&quot;Scripts/mono_support.js&quot;&gt;&lt;/script&gt;
@@ -95,7 +95,7 @@
             },
         };
 </code></pre>
-<h3 id="2-a-c-class-with-this-or-a-similar-content-replace-namespace-and-class_name-accordingly">2) A C# class with this or a similar content (replace <em>NAMESPACE</em> and <em>CLASS_NAME</em> accordingly)</h3>
+<h3 id="a-c-class-with-this-or-a-similar-content-replace-namespace-and-class_name-accordingly">A C# class with this or a similar content (replace <em>NAMESPACE</em> and <em>CLASS_NAME</em> accordingly)</h3>
 <pre><code class="lang-csharp">
 namespace Fusee.NAMESPACE
 {

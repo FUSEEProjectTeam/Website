@@ -188,13 +188,13 @@ var blueSpotLight = new SceneNodeContainer()
 </code></pre>
 <h2 id="differences-between-forward-and-deferred-rendering">Differences between forward and deferred rendering</h2>
 <blockquote>
-<p>⚠️ The <strong>forward</strong> rendering pipeline supports <strong>eight</strong> light sources at the most!<br>
+<p>💡 <strong>Note:</strong> The <strong>forward</strong> rendering pipeline supports <strong>eight</strong> light sources at the most!<br>
 Further lights will simply not be rendered.</p>
 </blockquote>
 <p>In the deferred pipeline the number of lights is only limited by our hardware.</p>
-<h1 id="shadow">Shadow</h1>
+<h2 id="shadow">Shadow</h2>
 <blockquote>
-<p>⚠️ Shadow casting is only available in the <strong>deferred</strong> pipeline!<br>
+<p>💡 <strong>Note:</strong> Shadow casting is only available in the <strong>deferred</strong> pipeline!<br>
 See the <a href="Deferred-Rendering">Deferred Rendering Page</a> on how to use it.</p>
 </blockquote>
 <p>FUSEE is able to render shadows for every light in the scene. For this the engine uses <em>Shadow Mapping</em>. In short this done as follows:</p>
@@ -209,16 +209,16 @@ See the <a href="Deferred-Rendering">Deferred Rendering Page</a> on how to use i
 </ol>
 <p>For further information and OpenGL implementation details refer to this <a href="https://learnopengl.com/Advanced-Lighting/Shadows/Shadow-Mapping">tutorial</a> on learnopengl.com.</p>
 <p>To enable shadow casting for a specific light, we need to set the property <code>IsCastingShadows</code> of the <code>LightComponent</code> to <code>true</code>. Furthermore it may be possible to adjust the <code>Bias</code> of the <code>LightComponent</code>.</p>
-<h2 id="bias">Bias</h2>
+<h3 id="bias">Bias</h3>
 <p>The bias can have a massive impact on the quality of the shadow.</p>
 <p>If it is too small it can lead to incorrect self shadowing or shadow acne.<br>
 If it is to big, peter panning (the shadow isn't attached to associated object anymore) or light leaking can occur.</p>
 <p>In the event that we do not see a shadow, but are sure that we have set all parameters of the light correctly, this may also be due to a incorrect bias. Try playing around with it to get the best results in terms of shadow quality.</p>
-<h2 id="shadow-map-resolution">Shadow Map resolution</h2>
+<h3 id="shadow-map-resolution">Shadow Map resolution</h3>
 <p>We can choose the resolution of the shadow maps in the <code>SceneRendererDeferred</code> by setting the value of <code>ShadowMapRes</code>.<br>
 The higher the resolution we choose the clearer the shadow will appear, because we have a better texel to fragment assignment (step three of the short description above).<br>
 Keep in mind, that a higher resolution may have an impact on the performance of the application.</p>
-<h2 id="cascades-shadow-mapping---shadows-for-parallel-lights">Cascades Shadow Mapping - shadows for parallel lights</h2>
+<h3 id="cascades-shadow-mapping---shadows-for-parallel-lights">Cascades Shadow Mapping - shadows for parallel lights</h3>
 <p>If we encounter bad quality shadows coming from parallel lights (like those seen in the picture below), it may help to increase the <code>numberOfCascades</code> in the <code>SceneRendererDeferred</code>. This will increase the number of shadow maps that are created for each parallel light. A number to great may result in performance loss.</p>
 <h3 id="tldr-background">[TLDR] Background</h3>
 <p>As described above, parallel lights light the whole scene. In the basic shadow mapping algorithm we would have one shadow map with (in a worst case scenario) 512 x 512 pixel that needs to cover a big scene, maybe spanning several kilometers in world space - or at least the part of it, that is inside the viewing frustum, which can also have a big volume. This leads to shadows with a very bad quality as seen in the picture below.</p>

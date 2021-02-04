@@ -78,7 +78,7 @@ To do this we need two passes. The first one does not render to the screen but t
 <p>In more advanced scenarios like deferred rendering, it will become neccesary to render into a Framebuffer Object, which is represented as a <code>RenderTarget</code> in FUSEE and is able to store multiple textures. The instructions given here focus on the basics, the usage of <code>RenderTargets</code> are covered in [[Deferred-Rendering]].</p>
 <p>The following sections describe how to extend a standard Fusee app (for the creation see [[NuGet-Fusee]], in order to render a blurred scene, like it is described above.</p>
 <h2 id="step-by-step">Step by Step</h2>
-<h3 id="1-initialization">1. Initialization</h3>
+<h3 id="initialization">Initialization</h3>
 <p>First we need to create a new, standard Fusee app. Secondly we need to add five additional fields to the example class and initialize them in the <code>Init</code> method:</p>
 <pre><code class="lang-C#">public class MultipassExample : RenderCanvas
 {
@@ -143,7 +143,7 @@ _sceneRendererBlur = new SceneRendererForward(_quadScene);
 The <code>_blurPassEffect</code> is the ShaderEffect for rendering the second pass, that does the blur on the output texture of the first pass. It receives the <code>_renderTex</code> and passes it to the blur shader as a uniform parameter. You can find the two shaders <em>screenFilledQuad.vert</em> and <em>blur.frag</em> in section 4 at the end of the page.<br>
 To render the the blurred texture to the screen, we map it to a screen filled quad. Therefor we create the <code>_quadScene</code>, consisting of a simple projection component, the <code>_blurPassEffect</code> and a Plane mesh. We do not need a TransformComponent here because the vertices are mapped to the screen via the vertex shader.<br>
 As the last step of the initialization we wrap a SceneRenderer around our <code>_quadScene</code>.</p>
-<h3 id="2-rendering">2. Rendering</h3>
+<h3 id="rendering">Rendering</h3>
 <p>If all of our additional components are initialized we are ready to render the two passes.
 To create the correct texture on the GPU we need to set the Viewport width and height to the texture resolution we defined above (<code>_texRes</code>). The boolean parameter in the Viewport method is called <code>renderToScreen</code>. If we render to a texture we set this to false, to tell the engine it shouldn't adjust the projection matrix. To be able to set the widht and height back to the window size we cache the values first.<br>
 To render the first pass, all we need to do now is to hand the <code>_renderTex</code> over to the <code>Render</code> call in <code>RenderAFrame</code>, to let the engine know we want to render into the texture and not to the screen:</p>
@@ -159,7 +159,7 @@ _sceneRendererBlur.Render(RC);           //Pass 2: render a screen filled quad, 
 <p>Note: advanced users may create their own SceneRenderer class, that derives from <code>SceneVisitor</code>, and implement the two passes there. The effect would be a single <code>Render</code> call in the app itself, but multiple scene traversals in the custom SceneRenderer.</p>
 <p>If you run this now, you should see the blurred Fusee Rocket, as shown in the following picture.</p>
 <p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Multipass-Rendering/blur.jpg" alt="The blurred render output"></p>
-<h3 id="3-debugging">3. Debugging</h3>
+<h3 id="debugging">Debugging</h3>
 <p>For debugging multipass apps we can use the OpenSource tool <a href="https://renderdoc.org/">RenderDoc</a>. To do this we start our app in RenderDoc via <code>File -&gt; Launch Application</code>.<br>
 The Executable Path needs to be the path to the fusee.exe.<br>
 The Working Directory needs to be the path to our examples root directory.
@@ -172,7 +172,7 @@ To debug the graphical output we can open the <code>Texture Viewer</code> by cli
 <p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Multipass-Rendering/renderDoc_TextureViewer.jpg" alt="Open the Texture Viewer in RenderDoc"></p>
 <p>To check the shader code we need to open up the <code>glUseProgram</code> field in the <em>API Inspector</em> at the bottom left of the RenderDoc window. With a click at <em>Program xy</em> there and <em>Shader xy</em> in the <em>Related Resources</em> tab in the middle of the window, we get a new button <code>View Content</code> and a green arrow at the top right. Clicking on it opens the shader code.</p>
 <p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Multipass-Rendering/renderDoc_ShaderCode.jpg" alt="View Shader code in RenderDoc"></p>
-<h3 id="4-the-vertex-and-fragment-shaders-used-in-the-blur-pass">4. The vertex and fragment shaders used in the blur pass</h3>
+<h3 id="the-vertex-and-fragment-shaders-used-in-the-blur-pass">The vertex and fragment shaders used in the blur pass</h3>
 <p>The vertex shader maps the vertices of the quad to the screen:</p>
 <pre><code class="lang-glsl">#version 300 es
 
