@@ -328,10 +328,8 @@ It expects the following parameters:</p>
 }
 </code></pre>
 <p>If we don't set the parameters at all FUSEE will use predefined default values. Those can be read from <code>RenderContext.DefaultState</code>.</p>
-<h2 id="implementation-details">Implementation details</h2>
-<blockquote>
-<p>👷 <strong>Engine Developer</strong></p>
-</blockquote>
+<h2 id="-engine-developer">👷 Engine Developer</h2>
+<h3 id="implementation-details">Implementation details</h3>
 <p>In order for the camera to work in the expected way, each <code>SceneRenderer</code> – whether it is a Forward, Deferred or a custom one – needs a pre-rendering pass (one traversal of the scene). This pre-pass is responsible for collecting the <code>CameraComponents</code> and calculating the view matrix for each one.</p>
 <p>This is implemented in the <code>PrePassVisitor</code>. For each <code>CameraComponent</code> that is found while traversing the scene, we calculate the View matrix from the cumulated Model matrix by eliminating its scale (get the scale factor and divide the 3x3 rotation/scale part of the matrix by it) and inverting it (<code>view = _state.Model.Invert()</code>).<br>
 The <code>CameraComponent</code> and its View matrix is then saved as a <code>CameraResult</code> to a public list and can therefore be accessed from the <code>SceneRenderer</code>.</p>

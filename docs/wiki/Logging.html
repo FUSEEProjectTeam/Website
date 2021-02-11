@@ -70,7 +70,7 @@
 <h1 id="logging">Logging</h1>
 
 <p>Logging is implemented within <code>Fusee.Base.Core.Diagnostics.cs</code>.</p>
-<h2 id="1-log-levels">1. Log levels</h2>
+<h2 id="log-levels">Log levels</h2>
 <p>The following log levels are usable:</p>
 <ul>
 <li><code>Diagnostics.Debug</code> (used for generic, short, debug messages)</li>
@@ -85,18 +85,18 @@
 <li><code>Exception ex</code>, a possible exception (can be <code>null</code>)</li>
 <li><code>object[] args</code>, additional arguments that can and/or should be displayed during logging (can be <code>null</code>)</li>
 </ul>
-<h2 id="11-examples">1.1 Examples</h2>
-<h3 id="111-debug">1.1.1 Debug</h3>
+<h2 id="examples">Examples</h2>
+<h3 id="debug">Debug</h3>
 <pre><code class="lang-C#">var t = float4x4.Identity;
 Diagnostics.Debug(&quot;Identity matrix created&quot;);
 </code></pre>
-<h3 id="112-warning-with-args">1.1.2 Warning (with args)</h3>
+<h3 id="warning-with-args">Warning (with args)</h3>
 <pre><code class="lang-C#">var invMat = float4x4.Invert(mat);
 var invMat2 = float4x4.Invert(mat2);
 if(invMat.Equals(mat) &amp;&amp; invMat2.Equals(mat2))
     Diagnostics.Warn($&quot;The following matrices could not be inverted!&quot;, null, new float4x4[] { mat, mat2 });
 </code></pre>
-<h3 id="113-error-with-exception-and-args">1.1.3 Error (with exception and args)</h3>
+<h3 id="error-with-exception-and-args">Error (with exception and args)</h3>
 <pre><code class="lang-C#">try 
 {
    var compiledShader = CreateShader(ef.VertexShaderSrc, ef.PixelShaderSrc);
@@ -106,7 +106,7 @@ catch(Exception ex)
     Diagnostics.Error(&quot;Error while compiling the shader.&quot;, ex, new string[] { ef.VertexShaderSrc, ef.PixelShaderSrc });
 }
 </code></pre>
-<h2 id="2-format">2. Format</h2>
+<h2 id="format">Format</h2>
 <p>Per default each debug message follows this pattern:</p>
 <blockquote>
 <p><code>[CallingMethod():LineNumber] Message</code></p>
@@ -116,7 +116,7 @@ catch(Exception ex)
 <p><code>DD.MM.YYYY HH:MM:SS, [SeverityLevel] [FileName.cs] [CallingMethod():LineNumber] Message</code></p>
 </blockquote>
 <p>One can overwrite the format of every log message by setting the <code>Formater</code> delegate via <code>SetFormat(Formater formater)</code>.</p>
-<h3 id="21-example">2.1 Example</h3>
+<h3 id="example">Example</h3>
 <pre><code class="lang-C#">Diagnostics.SetFormat((caller, lineNmbr, sourceFile, logLvl, msg, ex, args) =&gt; {
 
     var l = $&quot;{sourceFile} said: within my method {caller} at the line number {lineNmbr}, the following message, with the severity level {logLvl} appeared: {msg}.&quot;;
@@ -127,7 +127,7 @@ catch(Exception ex)
     return l;
 });
 </code></pre>
-<h3 id="3-log-targets">3. Log targets</h3>
+<h3 id="log-targets">Log targets</h3>
 <p>There are three log targets:</p>
 <ul>
 <li>Console output</li>
@@ -135,7 +135,7 @@ catch(Exception ex)
 <li>File</li>
 </ul>
 <p>Console and debug output are enabled by default. The file target is disabled and can be activated with <code>Diagnostics.LogToTextFile(bool log, string logFileName = &quot;&quot;)</code>.</p>
-<h2 id="4-targets-and-severity-levels-with-different-build-configurations">4. Targets and severity levels with different build configurations</h2>
+<h2 id="targets-and-severity-levels-with-different-build-configurations">Targets and severity levels with different build configurations</h2>
 <p>Within a <em>debug build</em>, every log message is displayed for every available target.
 A <em>release build</em> also displays every log message per default but the <code>Diagnostics.Debug()</code> method is removed completely.</p>
 <p>Furthermore, one can adapt every minimal log level for every target with the following three methods:</p>
@@ -147,19 +147,19 @@ A <em>release build</em> also displays every log message per default but the <co
 <blockquote>
 <p>💡 <strong>Note:</strong> this does not bring back the output of the <code>Diagnostics.Debug()</code> method within a release build! This functionality is implemented differently with the help of pre-compiler flags.</p>
 </blockquote>
-<h3 id="41-examples">4.1 Examples</h3>
-<h4 id="411-display-no-debug-messages-on-the-console">4.1.1 Display no debug messages on the console</h4>
+<h3 id="examples-1">Examples</h3>
+<h4 id="display-no-debug-messages-on-the-console">Display no debug messages on the console</h4>
 <pre><code class="lang-C#">Diagnostics.SetMinConsoleLoggingSeverityLevel(SeverityLevel.INFO);
 </code></pre>
-<h4 id="412-display-only-error-messages-on-the-console-and-display-no-debug-messages-on-the-debug-output">4.1.2 Display only error messages on the console and display no debug messages on the debug output</h4>
+<h4 id="display-only-error-messages-on-the-console-and-display-no-debug-messages-on-the-debug-output">Display only error messages on the console and display no debug messages on the debug output</h4>
 <pre><code class="lang-C#">Diagnostics.SetMinConsoleLoggingSeverityLevel(SeverityLevel.ERROR);
 Diagnostics.SetMinDebugOutputLoggingSeverityLevel(SeverityLevel.INFO);
 </code></pre>
-<h4 id="413-display-nothing-on-the-console-and-display-only-warning-and-error-messages-on-the-debug-output">4.1.3 Display nothing on the console and display only warning and error messages on the debug output</h4>
+<h4 id="display-nothing-on-the-console-and-display-only-warning-and-error-messages-on-the-debug-output">Display nothing on the console and display only warning and error messages on the debug output</h4>
 <pre><code class="lang-C#">Diagnostics.SetMinConsoleLoggingSeverityLevel(SeverityLevel.NONE);
 Diagnostics.SetMinDebugOutputLoggingSeverityLevel(SeverityLevel.WARN);
 </code></pre>
-<h4 id="414-enable-file-logging-for-warnings-and-errors-display-no-debug-messages-on-the-console">4.1.4 Enable file logging for warnings and errors, display no debug messages on the console</h4>
+<h4 id="enable-file-logging-for-warnings-and-errors-display-no-debug-messages-on-the-console">Enable file logging for warnings and errors, display no debug messages on the console</h4>
 <pre><code class="lang-C#">// enable file logging to Fusee.Log.txt
 Diagnostics.LogToTextFile(true, &quot;Fusee.Log.txt&quot;); 
 // log warnings and errors to file 
