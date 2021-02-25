@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Tutorial 1 Assets </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Tutorial 1 Assets ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,97 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="tutorial-1-assets">Tutorial 1 Assets</h1>
 
-<p>to-be-authored</p>
+<h2 id="tutorial-programm">Tutorial Programm</h2>
+<p><a href="Files/Tutorial_1_Assets/Tut1_Assets.zip">Tutorial 1 Assets</a></p>
+<h2 id="requirement-fusee-export-add-on-for-blender">Requirement: FUSEE export add-on for Blender</h2>
+<p>Hierarchies in FUSEE scene graph format (consisting of nodes and components)
+can be saved and loaded as <code>.fus</code> files. To save 3D models created with Blender as .fus files, the FUSEE Export AddOn for Blender must be installed.</p>
+<p>If Blender has been installed at the default location, the command <code>fusee install --blender</code> creates the Blender-Add-On at that location. It then has to be in the list in Blender under Preferences -&gt; Add-Ons
+the add-on should be in <code>Testing</code> and is activated with a tick.</p>
+<h3 id="features-of-the-fusee-exporter">Features of the FUSEE exporter</h3>
+<p>With the FUSEE Export AddOn for Blender, some features that are possible in Blender can be exported as FUSEE content. What exactly these are is described in the <a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/FUSEE-Exporter-Blender-Add-on#exported-features">FUSEE Wiki</a> - here is a short summary:</p>
+<ul>
+<li>Parent-child relationships of Blender objects as hierarchies of <code>SceneNode</code> instances.</li>
+<li>The names of the Blender objects as the <code>Name</code> property of the respective<code> SceneNode</code> object</li>
+<li>3D geometries as <code>mesh</code>
+<ul>
+<li>corner positions (<code>vertices</code>)</li>
+<li>Normals (<code>Normals</code>) depending on the&quot; Smooth / Flat &quot;setting</li>
+<li>Texture coordinates (<code>UVs</code>)</li>
+<li>Areas divided into triangles (<code>Triangles</code>)</li>
+</ul>
+</li>
+<li>Position, rotation and scaling relative to the parent settings and
+to the coordinate origin (pivot point) as <code>Transform</code></li>
+<li>Colors from the Blender material settings for Principled BSDF or Diffuse BSDF Nodes</li>
+</ul>
+<h2 id="models-as-assets">Models as assets</h2>
+<p>Content that was not created by programming is usually called <em>Assets</em> in 3D real-time environments (game engines). In a FUSEE application, assets in the form of Blender 3D scenes exported as .fus files can be integrated as follows.</p>
+<ul>
+<li>Creates a scene in Blender</li>
+<li>Exports the scene as a .fus file</li>
+<li>Copy the .fus file into the &quot;Assets&quot; subfolder of your FUSEE project</li>
+</ul>
+<p>Assets added in this way can then be accessed in a FUSEE application using the method <code>AssetStorage.Get&lt;&gt;()</code>. The method must be written in angle brackets (<code>&lt;&gt;</code>), the type and the name must be passed in the method parameter list (<code>()</code>).</p>
+<p>In our case, a .fus file always contains an object of the type <code>SceneContainer</code>.
+The name of the asset corresponds to the file name (WITH file name extension).</p>
+<ul>
+<li>Replaces the call in the <code>Init</code> method</li>
+</ul>
+<pre><code class="lang-C"> _scene = CreateScene ();
+</code></pre>
+<p>through</p>
+<pre><code class="lang-C"> _scene = AssetStorage.Get &lt;SceneContainer&gt; (&quot;CubeCar.fus&quot;);
+</code></pre>
+<p>If necessary, replace the name &quot;CubeCar.fus&quot; with the name of your own file.</p>
+<ul>
+<li>Since <code>CreateScene ()</code> is no longer called, <code>_baseTransform</code> is not called either more initialized. Comment on the line for now</li>
+</ul>
+<pre><code class="lang-C">// _baseTransform.Rotation = new float3 (0, M.MinAngle (TimeSinceStart), 0);
+</code></pre>
+<p>simply from (prefix <code>//</code>).</p>
+<p>The scene now consists of the content of the <code>.fus</code> file created in Blender.</p>
+<p><img src="Images/Create-Assets-with-Blender/BlenderFusee.png" alt="Blender next to FUSEE"></p>
+<p>To better understand how the FUSEE Export AddOn for Blender creates the scene,
+let's look at the contents of the .fus file after loading it in the application.</p>
+<blockquote>
+<h4 id="-todo">👨‍🔧 TODO</h4>
+<ul>
+<li>Sets a breakpoint BEHIND the line in which the model is loaded.
+<code>C # _scene = AssetStorage.Get &lt;SceneContainer&gt; (&quot;CubeCar.fus&quot;);</code></li>
+</ul>
+</blockquote>
+<p><img src="Images/Create-Assets-with-Blender/Hierarchies.png" alt="Blender next to FUSEE"></p>
+<p>Here can you see the hierarchies of Fusee and Blender. As you can see they are the same.</p>
+<p>In order to change our object interactively, e.g. colors, positions, rotations, we want to be able to access individual components.</p>
+<p>Since we no longer create the scene in the code itself, we have to define the components to which the we want to access. We can do that by take advantage of the hierarchy, for example, access the third grandchildren object in the first child of the fifth Object in the scene.</p>
+<p>However, it is easier to identify the objects by their names and after loading them The scene simply looks for the components in the objects whose names we know.</p>
+<h4 id="change-position--rotation--orientation">Change position / rotation / orientation</h4>
+<p>For example, to find transform component of the right rear wheel in the above example scene, it can be searched for in the scene using the following call and saved in the <code>_rightRearTransform</code> field:</p>
+<p><code>C # private Transform _rightRearTransform; ... _rightRearTransform = _scene.Children.FindNodes (node ​​=&gt; node.Name == &quot;RightRearWheel&quot;) ?. FirstOrDefault () ?. GetTransform ();</code></p>
+<p>The statement put together in one line says something like:</p>
+<ul>
+<li>Comb through the hierarchy of all objects in the scene (<code>_scene.Children.FindNodes</code>).</li>
+<li>Search for nodes whose name is &quot;RightRearWheel&quot; (<code>node =&gt; node.Name ==&quot; RightRearWheel &quot;</code>)</li>
+<li>Of the nodes found in this way, take the first one, if one exists (<code>.FirstOrDefault ()</code>).</li>
+<li>Deliver the transform component contained there (<code>.GetTransform ()</code>)</li>
+</ul>
+<p>The strange-looking &quot;<code>? .</code> &quot;operators are called <em>Elvis-Operator</em>. And mean
+that only the object returned in the preceding call should be accessed,
+if one actually exists, otherwise <code>null</code> should be returned.
+So if no object was found, that has the name you are looking for OR an object was found but doesn't have a transform component, the entire call results in <code>_rightRearTransform</code> being assigned the value<code> null</code>
+and not in a crash because an attempt was made to look for a
+Transform component.</p>
+<h4 id="change-colors">Change colors</h4>
+<p>If a material has been assigned to an object in Blender, it has a <code>SurfaceEffect</code> component when it is exported via the FUS exporter when imported into FUSEE. These can be used to change the coloring parameters such as the diffuse color:</p>
+<pre><code class="lang-C">  private SurfaceEffect _rightRearEffect;
+...
+  _rightRearEffect = _scene.Children.FindNodes (node ​​=&gt; node.Name == &quot;RightRearWheel&quot;) ?. FirstOrDefault () ?. GetComponent &lt;SurfaceEffect&gt; ();
+  _rightRearEffect.SurfaceInput.Albedo = (float4) ColorUint.OrangeRed;
+
+</code></pre>
 </article>
           </div>
           

@@ -8269,12 +8269,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/Create-Assets-with-Blender.md",
       "output": {
         ".html": {
           "relative_path": "wiki/Create-Assets-with-Blender.html",
-          "hash": "7nKDMeN6ywkav+CQFdap0Q=="
+          "hash": "n91yzxrQEK7bcCwSxWqLYQ=="
         }
       },
       "is_incremental": false,
@@ -8383,18 +8386,6 @@
         ".html": {
           "relative_path": "wiki/Git-flow.html",
           "hash": "aDSSC42bgbM5qBzV4dwGXA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "wiki/Hierarchy.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/Hierarchy.html",
-          "hash": "TKMjAzNtpjUgy8eJoyi4Tg=="
         }
       },
       "is_incremental": false,
@@ -8518,6 +8509,28 @@
       "output": {
         "resource": {
           "relative_path": "wiki/Images/Code-Documentation-Workflow/preparesandcastlebuilder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/Images/Create-Assets-with-Blender/BlenderFusee.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/Images/Create-Assets-with-Blender/BlenderFusee.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/Images/Create-Assets-with-Blender/Hierarchies.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/Images/Create-Assets-with-Blender/Hierarchies.png"
         }
       },
       "is_incremental": false,
@@ -9156,7 +9169,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/toc.html",
-          "hash": "+yXYLuFtnBbmqWcz5jE2Ew=="
+          "hash": "t+0QMlBBI3xshR4kn447rw=="
         }
       },
       "is_incremental": false,
@@ -9177,7 +9190,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 42,
+          "total_file_count": 41,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
