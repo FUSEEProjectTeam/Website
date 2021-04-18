@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Picking </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Picking ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,85 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="picking">Picking</h1>
 
-<p>to-be-authored</p>
+<h2 id="tutorial-programm">Tutorial Programm</h2>
+<p><a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_3_Picking/Tut3_Picking.zip">Tutorial 3 Picking</a></p>
+<p>A common task in realtime 3D applications is to find out which objects in the 3D scene are located below a certain 2D pixel position on the screen, e.g. where a user has just clicked with the mouse or performed a touch gesture with his finger. FUSEE provides the class
+<a href="https://github.com/FUSEEProjectTeam/Fusee/blob/develop/src/Engine/Core/ScenePicker.cs#L155"><code>ScenePicker</code></a> which can be used to accomplish this task.</p>
+<p>Like the <code>SceneRenderer</code> and also the described <code>FindNodes()</code> method, picking performs a traversal of the scene graph, i.e. all nodes and all necessary components are visited. While in rendering the visit results in each component making its contribution to the image to be rendered and in searching a search criterion is checked during the visit, in picking - similar to rendering - the vertices of each triangle of the geometry are converted into screen coordinates so that a point-in-triangle test can then be performed.</p>
+<p>Whenever this test is positive (point is in the triangle), a set of information is collected that can then be evaluated by the user. This information includes:</p>
+<ul>
+<li>The straight traversed node</li>
+<li>The straight traversed (mesh) component</li>
+<li>The index of the first point of the triangle in the 'triangles' list, for which the point-in-triangle test
+was positive</li>
+<li>The so-called barycentric coordinates, which indicate where exactly within the triangle the
+point lies</li>
+<li>Model, view and projection matrix, with which the transformation of the model coordinates in
+screen coordinates.</li>
+</ul>
+<p>This information is stored in the class <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/develop/src/Engine/Core/ScenePicker.cs#L8"><code>PickResult</code></a>summarized.</p>
+<p>With this information not only the 3D objects lying under a screen pixel can be identified, these can also be sorted along the z-coordinate, so that e.g. the object lying furthest in front can be found out. In addition, the triangle that was hit can also be identified, as well as the exact position of the &quot;point of impact&quot; can be calculated, in model world or screen coordinates.</p>
+<blockquote>
+<h4 id="-todo">👨🔧 TODO</h4>
+<ul>
+<li>Add the following three fields (&quot;class variables&quot;) to the app class:</li>
+</ul>
+<pre><code class="lang-C#">private ScenePicker _scenePicker
+private PickResult _currentPick;
+private float4 _oldColor;
+</code></pre>
+<p>and inserts the following code in the <code>Init()</code> method <em>after</em> loading the scene:</p>
+<pre><code class="lang-C#">_scenePicker = new ScenePicker(_scene);
+</code></pre>
+<ul>
+<li>Inserts the following code into the <code>RenderAFrame()</code> method AFTER the camera has been set .</li>
+</ul>
+<pre><code class="lang-C#">// Setup the camera 
+RC.View = float4x4.CreateTranslation(0, 0, 40) * float4x4.CreateRotationX(-&gt;(float) Math.Atan(15.0 / 40.0));
+if (Mouse.LeftButton)
+{
+float2 pickPosClip = Mouse.Position * new float2(2.0f / Width, -2.0f / Height) + new float2(-1, 1);
+
+PickResult newPick = _scenePicker.Pick(RC, pickPosClip).OrderBy(pr =&gt; pr.ClipPos.z).FirstOrDefault();
+
+if (newPick?.Node != _currentPick?.Node)
+{
+if (_currentPick != null)
+{
+var ef = _currentPick.Node.GetComponent&lt;DefaultSurfaceEffect&gt;();
+ef.SurfaceInput.Albedo = _oldColor;
+}
+if (newPick != null)
+{
+var ef = newPick.Node.GetComponent&lt;SurfaceEffect&gt;();
+_oldColor = ef.SurfaceInput.Albedo;
+ef.SurfaceInput.Albedo = (float4) ColorUint.OrangeRed;
+}
+_currentPick = newPick;
+}
+}
+</code></pre>
+<ul>
+<li>First, the current mouse position, which contains pixel coordinates, is converted into so-called
+2D clip coordinates. These have the origin in the center of the output window and
+at the window border respectively 1 (right and top), and -1 (left and bottom).</li>
+<li>The call to <code>_scenePicker.Pick()</code> performs the traversal and returns an unsorted list &gt; of pick results.
+of pick results.</li>
+<li>In doing so, <code>Pick()</code> is passed the RenderContext as a parameter, so that it can
+calculate valid screen coordinates from the model coordinates.</li>
+<li>If the list is not empty, it will be sorted (<code>OrderBy()</code>) according to the
+z screen coordinate of the pick events (<code>pr =&gt; pr.ClipPos.z</code>). Smaller z values come to the front. The pick
+event with the smallest z value is the one closest to the viewer.</li>
+<li>The first pick event if any (<code>FirstOrDefault()</code>) is stored in the <code>newPick</code> variable.</li>
+<li>The name of the node associated to the pick event is displayed on the screen.
+objects of your 3D scene. The clicked single parts should be marked by the
+highlight color <code>(1, 0.4f, 0.4f)</code>.</li>
+</ul>
+</blockquote>
+<p>Congratulations you have completed the tutorial. Here you can find the finished application with all three functions
+Tutorial Finished](<a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_Finished/Tut_Finished.zip">https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_Finished/Tut_Finished.zip</a>)</p>
 </article>
           </div>
           

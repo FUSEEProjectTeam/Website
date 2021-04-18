@@ -70,7 +70,7 @@
 <h1 id="tutorial-1-assets">Tutorial 1 Assets</h1>
 
 <h2 id="tutorial-programm">Tutorial Programm</h2>
-<p><a href="Files/Tutorial_1_Assets/Tut1_Assets.zip">Tutorial 1 Assets</a></p>
+<p><a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_1_Assets/Tut1_Assets.zip">Tutorial 1 Assets</a></p>
 <h2 id="requirement-fusee-export-add-on-for-blender">Requirement: FUSEE export add-on for Blender</h2>
 <p>Hierarchies in FUSEE scene graph format (consisting of nodes and components)
 can be saved and loaded as <code>.fus</code> files. To save 3D models created with Blender as .fus files, the FUSEE Export AddOn for Blender must be installed.</p>
@@ -103,40 +103,42 @@ to the coordinate origin (pivot point) as <code>Transform</code></li>
 <p>Assets added in this way can then be accessed in a FUSEE application using the method <code>AssetStorage.Get&lt;&gt;()</code>. The method must be written in angle brackets (<code>&lt;&gt;</code>), the type and the name must be passed in the method parameter list (<code>()</code>).</p>
 <p>In our case, a .fus file always contains an object of the type <code>SceneContainer</code>.
 The name of the asset corresponds to the file name (WITH file name extension).</p>
+<blockquote>
+<h4 id="-todo">👨‍🔧 TODO</h4>
 <ul>
-<li>Replaces the call in the <code>Init</code> method</li>
+<li><p>Replaces the call in the <code>Init</code> method</p>
+<pre><code class="lang-C">_scene = CreateScene();
+</code></pre>
+</li>
+<li><p>through</p>
+<pre><code class="lang-C">_scene = AssetStorage.Get&lt;SceneContainer&gt;(&quot;CubeCar.fus&quot;);
+</code></pre>
+</li>
+<li><p>If necessary, replace the name &quot;CubeCar.fus&quot; with the name of your own file.</p>
+</li>
+<li><p>Since <code>CreateScene ()</code> is no longer called, <code>_baseTransform</code> is not called either more initialized. Comment on the line for now</p>
+<pre><code class="lang-C">// _baseTransform.Rotation = new float3(0, M.MinAngle (TimeSinceStart), 0);
+</code></pre>
+</li>
+<li><p>simply from (prefix <code>//</code>).</p>
+</li>
 </ul>
-<pre><code class="lang-C"> _scene = CreateScene ();
-</code></pre>
-<p>through</p>
-<pre><code class="lang-C"> _scene = AssetStorage.Get &lt;SceneContainer&gt; (&quot;CubeCar.fus&quot;);
-</code></pre>
-<p>If necessary, replace the name &quot;CubeCar.fus&quot; with the name of your own file.</p>
-<ul>
-<li>Since <code>CreateScene ()</code> is no longer called, <code>_baseTransform</code> is not called either more initialized. Comment on the line for now</li>
-</ul>
-<pre><code class="lang-C">// _baseTransform.Rotation = new float3 (0, M.MinAngle (TimeSinceStart), 0);
-</code></pre>
-<p>simply from (prefix <code>//</code>).</p>
+</blockquote>
 <p>The scene now consists of the content of the <code>.fus</code> file created in Blender.</p>
 <p><img src="Images/Create-Assets-with-Blender/BlenderFusee.png" alt="Blender next to FUSEE"></p>
 <p>To better understand how the FUSEE Export AddOn for Blender creates the scene,
 let's look at the contents of the .fus file after loading it in the application.</p>
-<blockquote>
-<h4 id="-todo">👨‍🔧 TODO</h4>
-<ul>
-<li>Sets a breakpoint BEHIND the line in which the model is loaded.
-<code>C # _scene = AssetStorage.Get &lt;SceneContainer&gt; (&quot;CubeCar.fus&quot;);</code></li>
-</ul>
-</blockquote>
 <p><img src="Images/Create-Assets-with-Blender/Hierarchies.png" alt="Blender next to FUSEE"></p>
 <p>Here can you see the hierarchies of Fusee and Blender. As you can see they are the same.</p>
 <p>In order to change our object interactively, e.g. colors, positions, rotations, we want to be able to access individual components.</p>
 <p>Since we no longer create the scene in the code itself, we have to define the components to which the we want to access. We can do that by take advantage of the hierarchy, for example, access the third grandchildren object in the first child of the fifth Object in the scene.</p>
 <p>However, it is easier to identify the objects by their names and after loading them The scene simply looks for the components in the objects whose names we know.</p>
 <h4 id="change-position--rotation--orientation">Change position / rotation / orientation</h4>
-<p>For example, to find transform component of the right rear wheel in the above example scene, it can be searched for in the scene using the following call and saved in the <code>_rightRearTransform</code> field:</p>
-<p><code>C # private Transform _rightRearTransform; ... _rightRearTransform = _scene.Children.FindNodes (node ​​=&gt; node.Name == &quot;RightRearWheel&quot;) ?. FirstOrDefault () ?. GetTransform ();</code></p>
+<p>For example, to find transform component of the right rear wheel in the above example scene, it can be searched for in the scene using the following call in the <code>Init</code> method and saved in the <code>_rightRearTransform</code> field:</p>
+<pre><code class="lang-C">  private Transform _rightRearTransform;
+...
+  _rightRearTransform = _scene.Children.FindNodes(node =&gt; node.Name == &quot;RightRearWheel&quot;)?.FirstOrDefault()?.GetTransform();
+</code></pre>
 <p>The statement put together in one line says something like:</p>
 <ul>
 <li>Comb through the hierarchy of all objects in the scene (<code>_scene.Children.FindNodes</code>).</li>
@@ -154,9 +156,8 @@ Transform component.</p>
 <p>If a material has been assigned to an object in Blender, it has a <code>SurfaceEffect</code> component when it is exported via the FUS exporter when imported into FUSEE. These can be used to change the coloring parameters such as the diffuse color:</p>
 <pre><code class="lang-C">  private SurfaceEffect _rightRearEffect;
 ...
-  _rightRearEffect = _scene.Children.FindNodes (node ​​=&gt; node.Name == &quot;RightRearWheel&quot;) ?. FirstOrDefault () ?. GetComponent &lt;SurfaceEffect&gt; ();
-  _rightRearEffect.SurfaceInput.Albedo = (float4) ColorUint.OrangeRed;
-
+  _rightRearEffect = _scene.Children.FindNodes(node =&gt; node.Name == &quot;RightRearWheel&quot;)?.FirstOrDefault()?.GetComponent&lt;SurfaceEffect&gt;();
+  _rightRearEffect.SurfaceInput.Albedo = (float4)ColorUint.OrangeRed;
 </code></pre>
 </article>
           </div>

@@ -4077,7 +4077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Android.RenderCanvasGameView.html",
-          "hash": "Mv9PmwpKISuYpCr+kGh3tw=="
+          "hash": "cju3wQVb6iYRO0GGUVBQ9g=="
         }
       },
       "is_incremental": false,
@@ -8246,6 +8246,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "wiki/Build-Options-in-Visual-Studio.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Build-Options-in-Visual-Studio.html",
+          "hash": "7ObZlGNo62NL16r8tmQnag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "wiki/Camera.md",
       "output": {
         ".html": {
@@ -8269,15 +8281,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/Create-Assets-with-Blender.md",
       "output": {
         ".html": {
           "relative_path": "wiki/Create-Assets-with-Blender.html",
-          "hash": "n91yzxrQEK7bcCwSxWqLYQ=="
+          "hash": "WPbKnzVbMsQtOcGwXkRMlg=="
         }
       },
       "is_incremental": false,
@@ -8950,7 +8959,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Input.html",
-          "hash": "OAIfyj7AaRZfMQHfOuHBHQ=="
+          "hash": "7a7VUXOaMIi1kYfovOHMug=="
         }
       },
       "is_incremental": false,
@@ -9037,7 +9046,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Picking.html",
-          "hash": "jPVcwjmQhYok1ZrB6E5FeA=="
+          "hash": "KeAm99LkQsPqS1GbCUXDCw=="
         }
       },
       "is_incremental": false,
@@ -9164,12 +9173,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Welcome.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Welcome.html",
+          "hash": "oMJ3bP2nXbb39+nQDYZMZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "wiki/toc.yml",
       "output": {
         ".html": {
           "relative_path": "wiki/toc.html",
-          "hash": "t+0QMlBBI3xshR4kn447rw=="
+          "hash": "Nf78JNsE8nEe8+7tOEU38w=="
         }
       },
       "is_incremental": false,
@@ -9190,7 +9211,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 41,
+          "total_file_count": 43,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

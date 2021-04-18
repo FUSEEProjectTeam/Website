@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Tutorial 2 Input </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Tutorial 2 Input ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,136 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="tutorial-2-input">Tutorial 2 Input</h1>
 
-<p>to-be-authored</p>
+<h2 id="tutorial-programm">Tutorial Programm</h2>
+<p><a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_2_Input/Tut2_Input.zip">Tutorial 2 Input</a></p>
+<p>Now we want to control the car's wheels interactively. To do this, we have to take user input and convert it into rotations.</p>
+<p>In FUSEE we can access user input from various input devices via the <code>Input</code> class. This already has static fields (class variables) for the most common input devices, such as</p>
+<ul>
+<li>Mouse</li>
+<li>Keyboard</li>
+<li>Touch</li>
+</ul>
+<p>With the command</p>
+<pre><code class="lang-C#">using static Fusee.Engine.Core.Input;
+</code></pre>
+<p>at the top of the file we can access the input devices in the code.</p>
+<p>The following shows the most important properties that can be read out for the mouse and keyboard input devices. These can be read out in <code>RenderAFrame ()</code> and the values ​​returned can be used for the interaction.</p>
+<h3 id="mouse">Mouse</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Datatype</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Mouse.LeftButton</code></td>
+<td><code>bool</code></td>
+<td>Indicates whether the left mouse button is currently pressed (<code>true</code>) or not (<code> false</code>).</td>
+</tr>
+<tr>
+<td><code>Mouse.MiddleButton</code></td>
+<td><code>bool</code></td>
+<td>Indicates whether the middle mouse button is currently pressed (<code>true</code>) or not (<code> false</code>).</td>
+</tr>
+<tr>
+<td><code>Mouse.RightButton</code></td>
+<td><code>bool</code></td>
+<td>Indicates whether the right mouse button is currently pressed (<code>true</code>) or not (<code> false</code>).</td>
+</tr>
+<tr>
+<td><code>Mouse.Position</code></td>
+<td><code>float2</code></td>
+<td>Current position of the mouse cursor in pixels ((0, 0) = top left corner of the render window).</td>
+</tr>
+<tr>
+<td><code>Mouse.Velocity</code></td>
+<td><code>float2</code></td>
+<td>Current speed of the mouse cursor in pixels / second along the X and Y axes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="keyboard">Keyboard</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Datatype</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Keyboard.GetKey(&lt;KeyCode&gt;)</code></td>
+<td><code>bool</code></td>
+<td>Indicates whether the transferred key is currently pressed (<code>true</code>) or not (<code> false</code>).</td>
+</tr>
+<tr>
+<td><code>Keyboard.IsKeyDown(&lt;KeyCode&gt;)</code></td>
+<td><code>bool</code></td>
+<td>Indicates whether the key was pressed in the current frame (<code>true</code>) or not (<code> false</code>). The return value is <code>false</code> even if the key is still held down but has not been pressed in the current frame.</td>
+</tr>
+<tr>
+<td><code>Keyboard.IsKeyUp(&lt;KeyCode&gt;)</code></td>
+<td><code>bool</code></td>
+<td>Indicates whether the given key was released in the current frame (<code>true</code>) or not (<code> false</code>). The return value is also <code>false</code> if the key is not currently pressed, but not released in the current frame.</td>
+</tr>
+<tr>
+<td><code>Keyboard.LeftRightAxis</code></td>
+<td><code>float</code></td>
+<td>'Virtual' axis controlled by the left and right arrow. Value between -1 and 1.</td>
+</tr>
+<tr>
+<td><code>Keyboard.UpDownAxis</code></td>
+<td><code>float</code></td>
+<td>'Virtual 'axis controlled by the up and down arrow. Value between -1 and 1.</td>
+</tr>
+<tr>
+<td><code>Keyboard.ADAxis</code></td>
+<td><code>float</code></td>
+<td>'Virtual' axis controlled by the 'A' key and the 'D' key. Value between -1 and 1.</td>
+</tr>
+<tr>
+<td><code>Keyboard.WSAxis</code></td>
+<td><code>float</code></td>
+<td>'Virtual' axis controlled by the 'W' key and the 'S' key. Value between -1 and 1.</td>
+</tr>
+</tbody>
+</table>
+<p>With the <code>... Axis</code>, game-like control for the arrows and the 'WASD' keys can be implemented via the keyboard, without time-consuming individual queries via&quot; GetKey &quot;. The values of the axes in the interval [-1 ... 1] can be used as speed. The current axis value is also accelerated / decelerated with a certain amount of inertia when the key is changed.</p>
+<p>We now want to use the current value of the <code>WSAxis</code> to control the rotation of the wheels on the car and simulate the car driving forward. We also want to turn the car with the <code>ADAxis</code></p>
+<blockquote>
+<h4 id="-todo">👨‍🔧 TODO</h4>
+<ul>
+<li><p>Add the following code to the beginning of the body of <code>RenderAFrame ()</code></p>
+<pre><code class="lang-C#">public override void RenderAFrame()
+{
+    //Rotate both Axles forward or backwards
+     _frontAxleTransform.Rotation.x = (wsSpeed + _frontAxleTransform.Rotation.x) % M.TwoPi;
+     _rearAxleTransform.Rotation.x = (wsSpeed + _rearAxleTransform.Rotation.x) % M.TwoPi;
+
+     //Rotate the right Wheels
+     _frontRightWheelTransform.Rotation.x = (_frontRightWheelTransform.Rotation.x - 2 * adSpeed) % M.TwoPi;
+     _rearRightWheelTransform.Rotation.x = (_rearRightWheelTransform.Rotation.x - 2 * adSpeed) % M.TwoPi;
+
+    //Rotate the left Wheels
+    _frontLeftWheelTransform.Rotation.x = (2 * adSpeed + _frontLeftWheelTransform.Rotation.x) % M.TwoPi;
+     _rearLeftWheelTransform.Rotation.x = (2 * adSpeed + _rearLeftWheelTransform.Rotation.x) % M.TwoPi;
+
+     //Rotate the car Left and Right (Tank-Controls)
+     _baseTransform.Rotation.y = (adSpeed + _baseTransform.Rotation.y) % M.TwoPi;
+
+     //Simulate car driving
+     _baseTransform.Translation += new float3(wsSpeed * M.Sin(_baseTransform.Rotation.y), 0, wsSpeed * M.Cos(_baseTransform.Rotation.y));
+     ...
+</code></pre>
+</li>
+</ul>
+</blockquote>
 </article>
           </div>
           
