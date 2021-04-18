@@ -6,7 +6,7 @@
   homepage: examples/examples.md
 - name: Wiki
   href: wiki/
-  homepage: wiki/Overall-Project-Structure.md
+  homepage: wiki/Welcome.md
 - name: Api Documentation
   href: api/
   homepage: api/index.md
