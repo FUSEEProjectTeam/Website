@@ -64,3 +64,4 @@ img[src*="Fusee"] {
   margin-right: auto;
   width: 30%;
 }
+pre code{padding:0;font-size:inherit;color:inherit; white-space:inherit; border-radius:0}
