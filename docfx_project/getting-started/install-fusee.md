@@ -36,7 +36,7 @@ On HFU Pcs you in addition have to `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`
 `fusee` and follow the help text.
 
 
-### Install/Enable the FUSEE Export Add-On within Blender
+### Install/Enable the FUSEE Blender Add-on within Blender
 
 1. Download the [io_export_fus.zip](https://github.com/FUSEEProjectTeam/Fusee/releases/latest/download/io_export_fus.zip)
 1. Open Blender
@@ -50,8 +50,8 @@ On HFU Pcs you in addition have to `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`
 1. Save User Settings and close the User Preferences window.
 1. Blender's File->Export menu should now contain the FUS (.fus) option capable of writing FUSEE's .fus file format for 3D Assets.
 
-#### Screen Cast: Enable the FUSEE Export Add-On within Blender.
-![Enable FUSEE Blender Add-On](images/enableblenderaddon.gif)
+#### Screen Cast: Enable the FUSEE Blender Add-on within Blender.
+![Enable FUSEE Blender Add-on](images/enableblenderaddon.gif)
 
 
 
