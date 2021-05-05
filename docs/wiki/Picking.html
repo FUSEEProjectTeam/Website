@@ -69,8 +69,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="picking">Picking</h1>
 
-<h2 id="tutorial-programm">Tutorial Programm</h2>
+<blockquote>
+<h4 id="section">📥</h4>
 <p><a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_3_Picking/Tut3_Picking.zip">Tutorial 3 Picking</a></p>
+</blockquote>
 <p>A common task in realtime 3D applications is to find out which objects in the 3D scene are located below a certain 2D pixel position on the screen, e.g. where a user has just clicked with the mouse or performed a touch gesture with his finger. FUSEE provides the class
 <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/develop/src/Engine/Core/ScenePicker.cs#L155"><code>ScenePicker</code></a> which can be used to accomplish this task.</p>
 <p>Like the <code>SceneRenderer</code> and also the described <code>FindNodes()</code> method, picking performs a traversal of the scene graph, i.e. all nodes and all necessary components are visited. While in rendering the visit results in each component making its contribution to the image to be rendered and in searching a search criterion is checked during the visit, in picking - similar to rendering - the vertices of each triangle of the geometry are converted into screen coordinates so that a point-in-triangle test can then be performed.</p>
@@ -88,7 +90,7 @@ screen coordinates.</li>
 <p>This information is stored in the class <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/develop/src/Engine/Core/ScenePicker.cs#L8"><code>PickResult</code></a>summarized.</p>
 <p>With this information not only the 3D objects lying under a screen pixel can be identified, these can also be sorted along the z-coordinate, so that e.g. the object lying furthest in front can be found out. In addition, the triangle that was hit can also be identified, as well as the exact position of the &quot;point of impact&quot; can be calculated, in model world or screen coordinates.</p>
 <blockquote>
-<h4 id="-todo">👨🔧 TODO</h4>
+<h4 id="-todo">👨‍🔧 TODO</h4>
 <ul>
 <li>Add the following three fields (&quot;class variables&quot;) to the app class:</li>
 </ul>

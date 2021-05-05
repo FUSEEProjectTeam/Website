@@ -8144,7 +8144,7 @@
       "output": {
         ".html": {
           "relative_path": "getting-started/install-fusee.html",
-          "hash": "TxyJSuRPwcq348w2Sk6iDQ=="
+          "hash": "YRcqz0tcHLQLm14QFdoNnQ=="
         }
       },
       "is_incremental": false,
@@ -8246,18 +8246,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "wiki/Build-Options-in-Visual-Studio.md",
-      "output": {
-        ".html": {
-          "relative_path": "wiki/Build-Options-in-Visual-Studio.html",
-          "hash": "7ObZlGNo62NL16r8tmQnag=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "wiki/Camera.md",
       "output": {
         ".html": {
@@ -8281,12 +8269,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/Create-Assets-with-Blender.md",
       "output": {
         ".html": {
           "relative_path": "wiki/Create-Assets-with-Blender.html",
-          "hash": "WPbKnzVbMsQtOcGwXkRMlg=="
+          "hash": "6vkoo7+TrY0zD3QpQAvgcw=="
         }
       },
       "is_incremental": false,
@@ -8959,7 +8950,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Input.html",
-          "hash": "7a7VUXOaMIi1kYfovOHMug=="
+          "hash": "Q2+Uey46nsZ5WKsE/TSFaA=="
         }
       },
       "is_incremental": false,
@@ -9046,7 +9037,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Picking.html",
-          "hash": "JudqDMt9ML8fIiwX6U3joQ=="
+          "hash": "h5nFpotQMwcHnAlrAL+cug=="
         }
       },
       "is_incremental": false,
@@ -9106,7 +9097,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Styleguide-for-Wiki-Pages.html",
-          "hash": "R6AjOt9qZx25cQ09XDxusg=="
+          "hash": "qDs2fcm8Mp0ZqsHylDDMzg=="
         }
       },
       "is_incremental": false,
@@ -9190,7 +9181,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/toc.html",
-          "hash": "Nf78JNsE8nEe8+7tOEU38w=="
+          "hash": "uVYp1iRfjC05MumefnRmRA=="
         }
       },
       "is_incremental": false,
@@ -9211,7 +9202,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 43,
+          "total_file_count": 42,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

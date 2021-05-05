@@ -69,15 +69,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="tutorial-1-assets">Tutorial 1 Assets</h1>
 
-<h2 id="tutorial-programm">Tutorial Programm</h2>
+<blockquote>
+<h4 id="section">📥</h4>
 <p><a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_1_Assets/Tut1_Assets.zip">Tutorial 1 Assets</a></p>
-<h2 id="requirement-fusee-export-add-on-for-blender">Requirement: FUSEE export add-on for Blender</h2>
-<p>Hierarchies in FUSEE scene graph format (consisting of nodes and components)
-can be saved and loaded as <code>.fus</code> files. To save 3D models created with Blender as .fus files, the FUSEE Export AddOn for Blender must be installed.</p>
-<p>If Blender has been installed at the default location, the command <code>fusee install --blender</code> creates the Blender-Add-On at that location. It then has to be in the list in Blender under Preferences -&gt; Add-Ons
-the add-on should be in <code>Testing</code> and is activated with a tick.</p>
+</blockquote>
+<h2 id="requirement-fusee-blender-add-on-for-blender">Requirement: FUSEE Blender Add-on for Blender</h2>
+<p>To use the FUSEE Blender Add-on you need to install and enable it for instructions click on the following link <a href="http://fusee3d.org/getting-started/install-fusee.html#installenable-the-fusee-export-add-on-within-blender">Install FUSEE Blender Add-on</a></p>
 <h3 id="features-of-the-fusee-exporter">Features of the FUSEE exporter</h3>
-<p>With the FUSEE Export AddOn for Blender, some features that are possible in Blender can be exported as FUSEE content. What exactly these are is described in the <a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/FUSEE-Exporter-Blender-Add-on#exported-features">FUSEE Wiki</a> - here is a short summary:</p>
+<p>With the FUSEE Blender Add-on for Blender, some features that are possible in Blender can be exported as FUSEE content. What exactly these are is described in the <a href="FUSEE-Exporter-Blender-Add-on.html">FUSEE Exporter Blender Add on</a> - here is a short summary:</p>
 <ul>
 <li>Parent-child relationships of Blender objects as hierarchies of <code>SceneNode</code> instances.</li>
 <li>The names of the Blender objects as the <code>Name</code> property of the respective<code> SceneNode</code> object</li>
@@ -126,7 +125,7 @@ The name of the asset corresponds to the file name (WITH file name extension).</
 </blockquote>
 <p>The scene now consists of the content of the <code>.fus</code> file created in Blender.</p>
 <p><img src="Images/Create-Assets-with-Blender/BlenderFusee.png" alt="Blender next to FUSEE"></p>
-<p>To better understand how the FUSEE Export AddOn for Blender creates the scene,
+<p>To better understand how the FUSEE Blender Add-on creates the scene,
 let's look at the contents of the .fus file after loading it in the application.</p>
 <p><img src="Images/Create-Assets-with-Blender/Hierarchies.png" alt="Blender next to FUSEE"></p>
 <p>Here can you see the hierarchies of Fusee and Blender. As you can see they are the same.</p>
