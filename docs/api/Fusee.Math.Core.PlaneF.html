@@ -383,8 +383,110 @@ because FUSEE defines a point with a negative signed distance to be inside.</p>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_PlaneF_InsideOrIntersecting_" data-uid="Fusee.Math.Core.PlaneF.InsideOrIntersecting*"></a>
+  <h4 id="Fusee_Math_Core_PlaneF_InsideOrIntersecting_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.PlaneF.InsideOrIntersecting(Fusee.Math.Core.float3,Fusee.Math.Core.float3)">InsideOrIntersecting(float3, float3)</h4>
+  <div class="markdown level1 summary"><p>Test whether a cuboid intersects this plane.
+See: Ericson 2005, Real Time Collision Detection, p. 161 - 164
+CAREFUL: the definition whats completely inside and outside is flipped in comparison to Ericson,
+because FUSEE defines a point with a negative signed distance to be inside.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsideOrIntersecting(float3 center, float3 size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The center of the cuboid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The width, height and length of the cuboid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_PlaneF_InsideOrIntersecting_" data-uid="Fusee.Math.Core.PlaneF.InsideOrIntersecting*"></a>
+  <h4 id="Fusee_Math_Core_PlaneF_InsideOrIntersecting_Fusee_Math_Core_float3_System_Single_" data-uid="Fusee.Math.Core.PlaneF.InsideOrIntersecting(Fusee.Math.Core.float3,System.Single)">InsideOrIntersecting(float3, Single)</h4>
+  <div class="markdown level1 summary"><p>Test whether a cuboid intersects this plane.
+See: Ericson 2005, Real Time Collision Detection, p. 161 - 164
+CAREFUL: the definition whats completely inside and outside is flipped in comparison to Ericson,
+because FUSEE defines a point with a negative signed distance to be inside.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsideOrIntersecting(float3 center, float size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The center of the cuboid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The width, height and length of the cuboid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_PlaneF_InsideOrIntersecting_" data-uid="Fusee.Math.Core.PlaneF.InsideOrIntersecting*"></a>
   <h4 id="Fusee_Math_Core_PlaneF_InsideOrIntersecting_Fusee_Math_Core_OBBf_" data-uid="Fusee.Math.Core.PlaneF.InsideOrIntersecting(Fusee.Math.Core.OBBf)">InsideOrIntersecting(OBBf)</h4>
-  <div class="markdown level1 summary"><p>Test whether a <a class="xref" href="Fusee.Math.Core.AABBf.html">AABBf</a> intersects this plane.
+  <div class="markdown level1 summary"><p>Test whether a <a class="xref" href="Fusee.Math.Core.OBBf.html">OBBf</a> intersects this plane.
 See: Ericson 2005, Real Time Collision Detection, p. 161 - 164
 CAREFUL: the definition whats completely inside and outside is flipped in comparison to Ericson,
 because FUSEE defines a point with a negative signed distance to be inside.</p>
@@ -451,6 +553,55 @@ See: Ericson 2005, Real Time Collision Detection, p. 161 - 164</p>
         <td><a class="xref" href="Fusee.Math.Core.AABBf.html">AABBf</a></td>
         <td><span class="parametername">aabb</span></td>
         <td><p>The axis aligned bounding box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_PlaneF_Intersects_" data-uid="Fusee.Math.Core.PlaneF.Intersects*"></a>
+  <h4 id="Fusee_Math_Core_PlaneF_Intersects_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.PlaneF.Intersects(Fusee.Math.Core.float3,Fusee.Math.Core.float3)">Intersects(float3, float3)</h4>
+  <div class="markdown level1 summary"><p>Test whether a cuboid intersects this plane.
+See: Ericson 2005, Real Time Collision Detection, p. 161 - 164</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Intersects(float3 center, float3 size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The center of the cuboid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The width, height and length of the cuboid.</p>
 </td>
       </tr>
     </tbody>

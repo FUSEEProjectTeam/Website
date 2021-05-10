@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ScenePicker.PickerState
+    <title>Interface IOctant&lt;T, K, P&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ScenePicker.PickerState
+    <meta name="title" content="Interface IOctant&lt;T, K, P&gt;
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -68,90 +68,65 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.ScenePicker.PickerState">
+            <article class="content wrap" id="_content" data-uid="Fusee.Structures.IOctant`3">
   
   
-  <h1 id="Fusee_Engine_Core_ScenePicker_PickerState" data-uid="Fusee.Engine.Core.ScenePicker.PickerState" class="text-break">Class ScenePicker.PickerState
+  <h1 id="Fusee_Structures_IOctant_3" data-uid="Fusee.Structures.IOctant`3" class="text-break">Interface IOctant&lt;T, K, P&gt;
   </h1>
-  <div class="markdown level0 summary"><p>The picker state upon scene traversal.</p>
+  <div class="markdown level0 summary"><p>Interface for implementing an octant (1/8 of a cube and node in an Octree).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Fusee.Xene.VisitorState.html">VisitorState</a></div>
-    <div class="level2"><span class="xref">ScenePicker.PickerState</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Fusee.Xene.IStateStack.html">IStateStack</a></div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Fusee.Xene.VisitorState.html#Fusee_Xene_VisitorState_RegisterState_Fusee_Xene_IStateStack_">VisitorState.RegisterState(IStateStack)</a>
+      <a class="xref" href="Fusee.Structures.IBucket-2.html#Fusee_Structures_IBucket_2_Center">IBucket&lt;T, K&gt;.Center</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Xene.VisitorState.html#Fusee_Xene_VisitorState_Push">VisitorState.Push()</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Xene.VisitorState.html#Fusee_Xene_VisitorState_Pop">VisitorState.Pop()</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Xene.VisitorState.html#Fusee_Xene_VisitorState_Clear">VisitorState.Clear()</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Xene.VisitorState.html#Fusee_Xene_VisitorState_Depth">VisitorState.Depth</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="Fusee.Structures.IBucket-2.html#Fusee_Structures_IBucket_2_Size">IBucket&lt;T, K&gt;.Size</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.html">Fusee.Engine.Core</a></h6>
-  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
-  <h5 id="Fusee_Engine_Core_ScenePicker_PickerState_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Structures.html">Fusee.Structures</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Structures.dll</h6>
+  <h5 id="Fusee_Structures_IOctant_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PickerState : VisitorState, IStateStack</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IOctant&lt;T, K, P&gt; : IBucket&lt;T, K&gt;</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <a id="Fusee_Engine_Core_ScenePicker_PickerState__ctor_" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.#ctor*"></a>
-  <h4 id="Fusee_Engine_Core_ScenePicker_PickerState__ctor" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.#ctor">PickerState()</h4>
-  <div class="markdown level1 summary"><p>The default constructor for the <a class="xref" href="Fusee.Engine.Core.ScenePicker.PickerState.html">ScenePicker.PickerState</a> class, which registers state stacks for model, UI rectangle, and canvas transform, as well as cull mode.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PickerState()</code></pre>
-  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the center point of this octant.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">K</span></td>
+        <td><p>Type of the size of this octant.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td><p>Type of the payload of this octant.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Engine_Core_ScenePicker_PickerState_CanvasXForm_" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.CanvasXForm*"></a>
-  <h4 id="Fusee_Engine_Core_ScenePicker_PickerState_CanvasXForm" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.CanvasXForm">CanvasXForm</h4>
-  <div class="markdown level1 summary"><p>The registered canvas transform.</p>
+  <a id="Fusee_Structures_IOctant_3_Children_" data-uid="Fusee.Structures.IOctant`3.Children*"></a>
+  <h4 id="Fusee_Structures_IOctant_3_Children" data-uid="Fusee.Structures.IOctant`3.Children">Children</h4>
+  <div class="markdown level1 summary"><p>Children of this Octant. Must contain eight or null (leaf node) children.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float4x4 CanvasXForm { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">IOctant&lt;T, K, P&gt;[] Children { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,19 +138,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;T, K, P&gt;[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_ScenePicker_PickerState_CullMode_" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.CullMode*"></a>
-  <h4 id="Fusee_Engine_Core_ScenePicker_PickerState_CullMode" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.CullMode">CullMode</h4>
-  <div class="markdown level1 summary"><p>The registered cull mode.</p>
+  <a id="Fusee_Structures_IOctant_3_IsLeaf_" data-uid="Fusee.Structures.IOctant`3.IsLeaf*"></a>
+  <h4 id="Fusee_Structures_IOctant_3_IsLeaf" data-uid="Fusee.Structures.IOctant`3.IsLeaf">IsLeaf</h4>
+  <div class="markdown level1 summary"><p>Is this octant a leaf node in the octree?</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Cull CullMode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsLeaf { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,19 +162,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.Common.Cull.html">Cull</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_ScenePicker_PickerState_Model_" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.Model*"></a>
-  <h4 id="Fusee_Engine_Core_ScenePicker_PickerState_Model" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.Model">Model</h4>
-  <div class="markdown level1 summary"><p>The registered model.</p>
+  <a id="Fusee_Structures_IOctant_3_Level_" data-uid="Fusee.Structures.IOctant`3.Level*"></a>
+  <h4 id="Fusee_Structures_IOctant_3_Level" data-uid="Fusee.Structures.IOctant`3.Level">Level</h4>
+  <div class="markdown level1 summary"><p>The level of the octree this octant belongs to.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float4x4 Model { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">int Level { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,19 +186,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_ScenePicker_PickerState_UiRect_" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.UiRect*"></a>
-  <h4 id="Fusee_Engine_Core_ScenePicker_PickerState_UiRect" data-uid="Fusee.Engine.Core.ScenePicker.PickerState.UiRect">UiRect</h4>
-  <div class="markdown level1 summary"><p>The registered UI rectangle.</p>
+  <a id="Fusee_Structures_IOctant_3_Payload_" data-uid="Fusee.Structures.IOctant`3.Payload*"></a>
+  <h4 id="Fusee_Structures_IOctant_3_Payload" data-uid="Fusee.Structures.IOctant`3.Payload">Payload</h4>
+  <div class="markdown level1 summary"><p>The payload of this octant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MinMaxRect UiRect { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">List&lt;P&gt; Payload { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -235,15 +210,79 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.MinMaxRect.html">MinMaxRect</a></td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;P&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Fusee.Xene.IStateStack.html">IStateStack</a>
+  <a id="Fusee_Structures_IOctant_3_PosInParent_" data-uid="Fusee.Structures.IOctant`3.PosInParent*"></a>
+  <h4 id="Fusee_Structures_IOctant_3_PosInParent" data-uid="Fusee.Structures.IOctant`3.PosInParent">PosInParent</h4>
+  <div class="markdown level1 summary"><p>Integer that defines this octants position (1 to 8) in its parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PosInParent { get; }</code></pre>
   </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_Structures_IOctant_3_CreateChild_" data-uid="Fusee.Structures.IOctant`3.CreateChild*"></a>
+  <h4 id="Fusee_Structures_IOctant_3_CreateChild_System_Int32_" data-uid="Fusee.Structures.IOctant`3.CreateChild(System.Int32)">CreateChild(Int32)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a child octant at the given position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IOctant&lt;T, K, P&gt; CreateChild(int atPosInParent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">atPosInParent</span></td>
+        <td><p>The <a class="xref" href="Fusee.Structures.IOctant-3.html#Fusee_Structures_IOctant_3_PosInParent">PosInParent</a> the new child has.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;T, K, P&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Common.StreamAssetProvider.html",
-          "hash": "+uinZpgXX5CIfr64YabN+g=="
+          "hash": "ckuymm/sd50tQqPxHMK9xQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Core.AssetStorage.html",
-          "hash": "UJzSvRy3ZGjSdnAYXkJn/g=="
+          "hash": "awJ5xtRfh8lAdkkN8MqLfQ=="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Android.ApkAssetProvider.html",
-          "hash": "a68gOcELzcvCWrviJSPbJQ=="
+          "hash": "8nSQthluqU5ZT4wKp/csIg=="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Android.html",
-          "hash": "Ws6vgKL2lMMLaV9eNOY43g=="
+          "hash": "BVkCjQLPAxsi/JEo+nsmdQ=="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Base.Imp.Desktop.FileAssetProvider.html",
-          "hash": "jO0FAWqXkYmQbhzv5souBA=="
+          "hash": "FQuOtAWdBVVEtFK3mbTAeg=="
         }
       },
       "is_incremental": false,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.Cull.html",
-          "hash": "skNms3Kcur9XkeEkkEqz3w=="
+          "hash": "QeOiPwMgakZpx2TnqN0HBg=="
         }
       },
       "is_incremental": false,
@@ -1917,7 +1917,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Common.html",
-          "hash": "YIM+hcgTx0t4Fp86UHvXVw=="
+          "hash": "J53gQA9hA0sTvhyJyxmR9A=="
         }
       },
       "is_incremental": false,
@@ -1966,18 +1966,6 @@
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.BoxShape.html",
           "hash": "tT/3u872+fSFFSLwXPP7Rg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Fusee.Engine.Core.Bucket-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Fusee.Engine.Core.Bucket-1.html",
-          "hash": "F205q+4y3D6mBhtdzSLSrw=="
         }
       },
       "is_incremental": false,
@@ -2705,18 +2693,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Fusee.Engine.Core.Octant-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Fusee.Engine.Core.Octant-1.html",
-          "hash": "KjVRFzAlMNEdvc9HL2ExuA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Fusee.Engine.Core.ParticleEmitter.yml",
       "output": {
         ".html": {
@@ -2733,7 +2709,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.PickResult.html",
-          "hash": "UApjmKSpJ1w3ACUnjehF7Q=="
+          "hash": "CZYHMYR9hbclpMmQ3lwZzA=="
         }
       },
       "is_incremental": false,
@@ -2885,6 +2861,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Engine.Core.RayCastResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Engine.Core.RayCastResult.html",
+          "hash": "4tuw1Ws3toUULaXDJ5Jygw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Fusee.Engine.Core.RenderCanvas.yml",
       "output": {
         ".html": {
@@ -2901,7 +2889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.RenderContext.html",
-          "hash": "nma0oJQhksoWVmlP7SNCNQ=="
+          "hash": "3Uv+n5gLT8vns/wLjl0r/w=="
         }
       },
       "is_incremental": false,
@@ -3245,11 +3233,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Fusee.Engine.Core.Scene.Octant.yml",
+      "source_relative_path": "api/Fusee.Engine.Core.Scene.OctantD.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Fusee.Engine.Core.Scene.Octant.html",
-          "hash": "m468mCsTCOMldyb2CrIYVQ=="
+          "relative_path": "api/Fusee.Engine.Core.Scene.OctantD.html",
+          "hash": "2MCPWFtWg6kwjkcJXowehQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Engine.Core.Scene.OctantF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Engine.Core.Scene.OctantF.html",
+          "hash": "KR0VmMZb+cdi4icc4jlB7Q=="
         }
       },
       "is_incremental": false,
@@ -3309,7 +3309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.SceneComponent.html",
-          "hash": "ajA74C/DtyE93UOPf7PkSA=="
+          "hash": "YXJMT7Jbm3vWzucI2WYCaw=="
         }
       },
       "is_incremental": false,
@@ -3465,7 +3465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.Scene.html",
-          "hash": "R1esLEjBKb01crF83e/jXg=="
+          "hash": "stZKaLCHV6cUWQMbId84fA=="
         }
       },
       "is_incremental": false,
@@ -3477,7 +3477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.ScenePicker.PickerState.html",
-          "hash": "qftP7NtGvD9HaquE5AbiUw=="
+          "hash": "HNmoH8YaxQ0Cs/X5ZlMWAA=="
         }
       },
       "is_incremental": false,
@@ -3497,11 +3497,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Engine.Core.SceneRayCaster.RayCasterState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Engine.Core.SceneRayCaster.RayCasterState.html",
+          "hash": "yi5jsE5MRdlslL/TplSRsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Engine.Core.SceneRayCaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Engine.Core.SceneRayCaster.html",
+          "hash": "XEhRaKJYC8xznn65A9f5bQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Fusee.Engine.Core.SceneRendererDeferred.yml",
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SceneRendererDeferred.html",
-          "hash": "Zu80MeqPr/1+dubRu/lwjQ=="
+          "hash": "/e6dxiX7s7qOJadJymUHFg=="
         }
       },
       "is_incremental": false,
@@ -3513,7 +3537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.SceneRendererForward.html",
-          "hash": "ka3m99fmdrzZrnqieBDDjg=="
+          "hash": "DVKm6A+zIOfpBFKx1iLCaA=="
         }
       },
       "is_incremental": false,
@@ -3897,7 +3921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Core.html",
-          "hash": "5Qznwav2l4ySHkF8+n0oFA=="
+          "hash": "8gMxSpy9DPwUSvtBjjyGow=="
         }
       },
       "is_incremental": false,
@@ -4197,7 +4221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.KeyboardDeviceImp.html",
-          "hash": "K2cfE16nhhI+/rEZFiTiVA=="
+          "hash": "p85N75/Yx6QMslqEXZdwrw=="
         }
       },
       "is_incremental": false,
@@ -4221,7 +4245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.MouseDeviceImp.html",
-          "hash": "ilp/qDG6wChbkne5slMQ3A=="
+          "hash": "geGjls2uB2WVGRYwMbkmQA=="
         }
       },
       "is_incremental": false,
@@ -4257,7 +4281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html",
-          "hash": "oDjatPEuQyNVoXgBFONa2Q=="
+          "hash": "yPAMxq36+kTaKFUKMwLGIw=="
         }
       },
       "is_incremental": false,
@@ -4270,18 +4294,6 @@
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasInputDriverImp.html",
           "hash": "+hrhqtpi1oCW3Zaxop2b8A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasWindowImp.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasWindowImp.html",
-          "hash": "OyGYyFzjYK7hxh2iJa+/Mg=="
         }
       },
       "is_incremental": false,
@@ -4389,7 +4401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Engine.Imp.Graphics.Desktop.html",
-          "hash": "//AYvp+UlobXb3luXxcgAQ=="
+          "hash": "Dn5iElKaOHpwtjyWxhCNGw=="
         }
       },
       "is_incremental": false,
@@ -4641,7 +4653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.AABBf.html",
-          "hash": "t/YHDLPJj5h2NeYpjn2owQ=="
+          "hash": "Ywdv8jTJpmrrmItGUXkk0Q=="
         }
       },
       "is_incremental": false,
@@ -4745,11 +4757,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Fusee.Math.Core.Frustum.yml",
+      "source_relative_path": "api/Fusee.Math.Core.FrustumD.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Fusee.Math.Core.Frustum.html",
-          "hash": "VgTCoz2EDPN1HNsu7GjobA=="
+          "relative_path": "api/Fusee.Math.Core.FrustumD.html",
+          "hash": "9d2gGM1nr8OF/w+bdfk5DA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Math.Core.FrustumF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Math.Core.FrustumF.html",
+          "hash": "xrNwAZUui5fcJfVGEpJCBQ=="
         }
       },
       "is_incremental": false,
@@ -4821,7 +4845,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.PlaneD.html",
-          "hash": "rdZ7IVX3KDb1KtZBQt34FQ=="
+          "hash": "E4AANkZVUQpdDjBCLJQ6VQ=="
         }
       },
       "is_incremental": false,
@@ -4833,7 +4857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.PlaneF.html",
-          "hash": "2w1RkQ6MDpvD+Q3yn+ft6g=="
+          "hash": "7vWnLw+dVXL+HpyvwKjTXQ=="
         }
       },
       "is_incremental": false,
@@ -4929,7 +4953,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.float3.html",
-          "hash": "CAO3phC0lDiaxA81bPNcNA=="
+          "hash": "Qk4Bm+oerkzrFl9stAc0Hg=="
         }
       },
       "is_incremental": false,
@@ -4989,7 +5013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Math.Core.html",
-          "hash": "npxOk6z7FrBvYL9jHtJpdQ=="
+          "hash": "yjnF0EVoO1TaZeBf7jV4ow=="
         }
       },
       "is_incremental": false,
@@ -5229,7 +5253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.FusComponent.html",
-          "hash": "jNiPCakRFR2DLtLergYnVQ=="
+          "hash": "xf6LPdjdKeyXOcar7VNTvQ=="
         }
       },
       "is_incremental": false,
@@ -5345,11 +5369,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Fusee.Serialization.V1.FusOctant.yml",
+      "source_relative_path": "api/Fusee.Serialization.V1.FusOctantD.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Fusee.Serialization.V1.FusOctant.html",
-          "hash": "9R754IZTbzJxosSl1xF+Vg=="
+          "relative_path": "api/Fusee.Serialization.V1.FusOctantD.html",
+          "hash": "Df6fTBEVRQkcoKWkWd/qPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Serialization.V1.FusOctantF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Serialization.V1.FusOctantF.html",
+          "hash": "C5W1J9pIcFqJ7sdXVMLDGw=="
         }
       },
       "is_incremental": false,
@@ -5541,7 +5577,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Serialization.V1.html",
-          "hash": "gcnOmLiRMv/gZZJ5ql67TQ=="
+          "hash": "cHAZndnKYivgf2iajeg20Q=="
         }
       },
       "is_incremental": false,
@@ -5554,6 +5590,138 @@
         ".html": {
           "relative_path": "api/Fusee.Serialization.html",
           "hash": "7A/5YtK7sr2FMwr2y1cHKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.GridCellD-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.GridCellD-1.html",
+          "hash": "1GxhGuq1EHuUi2BblhttAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.GridCellF-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.GridCellF-1.html",
+          "hash": "aYtPrIO5hPLwyb06zmi1cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.GridD-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.GridD-1.html",
+          "hash": "1DE55at4IpQeavWxTYUMJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.GridF-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.GridF-1.html",
+          "hash": "xp8tmst99nPXR3EcmSN/yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.IBucket-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.IBucket-2.html",
+          "hash": "MA0EY6oehkvh2bxYMoze9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.IOctant-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.IOctant-3.html",
+          "hash": "KVeAA15VynlXbVBo7mBvzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.OctantD-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.OctantD-1.html",
+          "hash": "IadVdMxQXnGo5fdvcQV8Aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.OctantF-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.OctantF-1.html",
+          "hash": "EYUggazq2eb8OxcYs1ZK3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.OctreeD-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.OctreeD-1.html",
+          "hash": "//zQwSmQuca5M4Z2Ew/bGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.OctreeF-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.OctreeF-1.html",
+          "hash": "MmbmtekCrTJ9q/ShTpx3dA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Fusee.Structures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Fusee.Structures.html",
+          "hash": "Kt4TOkUpO2vSp2s74lJ8pA=="
         }
       },
       "is_incremental": false,
@@ -5709,7 +5877,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.Viserator-4.html",
-          "hash": "KlT6lPVGvtxRNjauysnXsQ=="
+          "hash": "cBsY77czyOsZS5v+DSaTuw=="
         }
       },
       "is_incremental": false,
@@ -5781,7 +5949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Fusee.Xene.VisitorState.html",
-          "hash": "XRw6DM8PB7/5La/10xGFbw=="
+          "hash": "5O2dLKGJ6qV3s8D3DR5/tw=="
         }
       },
       "is_incremental": false,
@@ -6105,7 +6273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "pvwcYtdKRjZDYd8f6yEBag=="
+          "hash": "TNIJI4tDU2SfptRXjgmJlw=="
         }
       },
       "is_incremental": false,
@@ -8156,7 +8324,7 @@
       "output": {
         ".html": {
           "relative_path": "getting-started/necessary-tools.html",
-          "hash": "2icA83O/idznYh+FFUMLKg=="
+          "hash": "zRXcRKm3fOFHE4DPyzunZw=="
         }
       },
       "is_incremental": false,
@@ -9208,7 +9376,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 507,
+          "total_file_count": 521,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

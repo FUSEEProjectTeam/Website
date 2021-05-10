@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RenderCanvasImpBase
+    <title>Class FrustumF
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RenderCanvasImpBase
+    <meta name="title" content="Class FrustumF
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -68,19 +68,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase">
+            <article class="content wrap" id="_content" data-uid="Fusee.Math.Core.FrustumF">
   
   
-  <h1 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase" class="text-break">Class RenderCanvasImpBase
+  <h1 id="Fusee_Math_Core_FrustumF" data-uid="Fusee.Math.Core.FrustumF" class="text-break">Class FrustumF
   </h1>
-  <div class="markdown level0 summary"><p>OpenTK implementation of RenderCanvas for the window output.</p>
+  <div class="markdown level0 summary"><p>Describes a frustum by using six <a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a>s.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RenderCanvasImpBase</span></div>
-      <div class="level2"><a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html">RenderCanvasImp</a></div>
+    <div class="level1"><span class="xref">FrustumF</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -106,23 +105,24 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.html">Fusee.Engine.Imp.Graphics.Desktop</a></h6>
-  <h6><strong>Assembly</strong>: Fusee.Engine.Imp.Graphics.Desktop.dll</h6>
-  <h5 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Math.Core.html">Fusee.Math.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Math.Core.dll</h6>
+  <h5 id="Fusee_Math_Core_FrustumF_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RenderCanvasImpBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class FrustumF</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_BaseHeight" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseHeight">BaseHeight</h4>
-  <div class="markdown level1 summary"><p>The Height</p>
+  <a id="Fusee_Math_Core_FrustumF_Bottom_" data-uid="Fusee.Math.Core.FrustumF.Bottom*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_Bottom" data-uid="Fusee.Math.Core.FrustumF.Bottom">Bottom</h4>
+  <div class="markdown level1 summary"><p>The bottom plane of the frustum.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected int BaseHeight</code></pre>
+    <pre><code class="lang-csharp hljs">public PlaneF Bottom { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -132,20 +132,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_BaseLeft" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseLeft">BaseLeft</h4>
-  <div class="markdown level1 summary"><p>The Left Position</p>
+  <a id="Fusee_Math_Core_FrustumF_Far_" data-uid="Fusee.Math.Core.FrustumF.Far*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_Far" data-uid="Fusee.Math.Core.FrustumF.Far">Far</h4>
+  <div class="markdown level1 summary"><p>The far plane of the frustum.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected int BaseLeft</code></pre>
+    <pre><code class="lang-csharp hljs">public PlaneF Far { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -155,20 +156,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_BaseTop" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseTop">BaseTop</h4>
-  <div class="markdown level1 summary"><p>The Top Position</p>
+  <a id="Fusee_Math_Core_FrustumF_Left_" data-uid="Fusee.Math.Core.FrustumF.Left*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_Left" data-uid="Fusee.Math.Core.FrustumF.Left">Left</h4>
+  <div class="markdown level1 summary"><p>The left plane of the frustum.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected int BaseTop</code></pre>
+    <pre><code class="lang-csharp hljs">public PlaneF Left { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -178,20 +180,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_BaseWidth" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.BaseWidth">BaseWidth</h4>
-  <div class="markdown level1 summary"><p>The Width</p>
+  <a id="Fusee_Math_Core_FrustumF_Near_" data-uid="Fusee.Math.Core.FrustumF.Near*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_Near" data-uid="Fusee.Math.Core.FrustumF.Near">Near</h4>
+  <div class="markdown level1 summary"><p>The near plane of the frustum.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected int BaseWidth</code></pre>
+    <pre><code class="lang-csharp hljs">public PlaneF Near { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -201,39 +204,69 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_FrustumF_Right_" data-uid="Fusee.Math.Core.FrustumF.Right*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_Right" data-uid="Fusee.Math.Core.FrustumF.Right">Right</h4>
+  <div class="markdown level1 summary"><p>The right plane of the frustum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlaneF Right { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_FrustumF_Top_" data-uid="Fusee.Math.Core.FrustumF.Top*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_Top" data-uid="Fusee.Math.Core.FrustumF.Top">Top</h4>
+  <div class="markdown level1 summary"><p>The top plane of the frustum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlaneF Top { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoInit_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit*"></a>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoInit" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoInit">DoInit()</h4>
-  <div class="markdown level1 summary"><p>Does the initialize of this instance.</p>
+  <a id="Fusee_Math_Core_FrustumF_CalculateFrustumCorners_" data-uid="Fusee.Math.Core.FrustumF.CalculateFrustumCorners*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_CalculateFrustumCorners_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.FrustumF.CalculateFrustumCorners(Fusee.Math.Core.float4x4)">CalculateFrustumCorners(float4x4)</h4>
+  <div class="markdown level1 summary"><p>Calculates the eight frustum corners from an input matrix. In most cases this matrix will be the View-Projection-Matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void DoInit()</code></pre>
-  </div>
-  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoRender_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender*"></a>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoRender" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoRender">DoRender()</h4>
-  <div class="markdown level1 summary"><p>Does the render of this instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void DoRender()</code></pre>
-  </div>
-  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoResize_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize*"></a>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoResize_System_Int32_System_Int32_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoResize(System.Int32,System.Int32)">DoResize(Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Does the resize on this instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void DoResize(int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;float3&gt; CalculateFrustumCorners(float4x4 mat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -246,37 +279,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">width</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The matrix from which to calculate the frustum corners.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoUnLoad_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad*"></a>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoUnLoad" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.DoUnLoad">DoUnLoad()</h4>
-  <div class="markdown level1 summary"><p>Does the unload of this instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void DoUnLoad()</code></pre>
-  </div>
-  <h3 id="events">Events
-  </h3>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_Init" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Init">Init</h4>
-  <div class="markdown level1 summary"><p>Occurs when [initialize].</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler&lt;InitEventArgs&gt; Init</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -286,77 +296,39 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.InitEventArgs.html">InitEventArgs</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_Render" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Render">Render</h4>
-  <div class="markdown level1 summary"><p>Occurs when [render].</p>
+  <a id="Fusee_Math_Core_FrustumF_CalculateFrustumPlanes_" data-uid="Fusee.Math.Core.FrustumF.CalculateFrustumPlanes*"></a>
+  <h4 id="Fusee_Math_Core_FrustumF_CalculateFrustumPlanes_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.FrustumF.CalculateFrustumPlanes(Fusee.Math.Core.float4x4)">CalculateFrustumPlanes(float4x4)</h4>
+  <div class="markdown level1 summary"><p>(Re)Calculates the frustum planes.
+If feeded with a projection matrix, the frustum planes are in View Space.
+If feeded with a view projection matrix, the frustum planes are in World Space.
+If feeded with a model view projection matrix, the frustum planes are in Model Space.
+See: <a href="http://www8.cs.umu.se/kurser/5DV051/HT12/lab/plane_extraction.pdf">http://www8.cs.umu.se/kurser/5DV051/HT12/lab/plane_extraction.pdf</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RenderEventArgs&gt; Render</code></pre>
+    <pre><code class="lang-csharp hljs">public void CalculateFrustumPlanes(float4x4 mat)</code></pre>
   </div>
-  <h5 class="eventType">Event Type</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.RenderEventArgs.html">RenderEventArgs</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_Resize" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.Resize">Resize</h4>
-  <div class="markdown level1 summary"><p>Occurs when [resize].</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ResizeEventArgs&gt; Resize</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.ResizeEventArgs.html">ResizeEventArgs</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_UnLoad" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.UnLoad">UnLoad</h4>
-  <div class="markdown level1 summary"><p>Occurs when [unload].</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler&lt;InitEventArgs&gt; UnLoad</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.InitEventArgs.html">InitEventArgs</a>&gt;</td>
-        <td></td>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The matrix from which to extract the planes.</p>
+</td>
       </tr>
     </tbody>
   </table>

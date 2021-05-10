@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Frustum
+    <title>Class FusOctantF
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Frustum
+    <meta name="title" content="Class FusOctantF
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -68,21 +68,29 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Fusee.Math.Core.Frustum">
+            <article class="content wrap" id="_content" data-uid="Fusee.Serialization.V1.FusOctantF">
   
   
-  <h1 id="Fusee_Math_Core_Frustum" data-uid="Fusee.Math.Core.Frustum" class="text-break">Class Frustum
+  <h1 id="Fusee_Serialization_V1_FusOctantF" data-uid="Fusee.Serialization.V1.FusOctantF" class="text-break">Class FusOctantF
   </h1>
-  <div class="markdown level0 summary"><p>Describes a frustum by using six <a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a>s.</p>
+  <div class="markdown level0 summary"><p>Not yet implemented - Octant serialization currently not used.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Frustum</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Serialization.V1.FusComponent.html">FusComponent</a></div>
+    <div class="level2"><span class="xref">FusOctantF</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusComponent.html#Fusee_Serialization_V1_FusComponent_Name">FusComponent.Name</a>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -105,24 +113,23 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Math.Core.html">Fusee.Math.Core</a></h6>
-  <h6><strong>Assembly</strong>: Fusee.Math.Core.dll</h6>
-  <h5 id="Fusee_Math_Core_Frustum_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Serialization.V1.html">Fusee.Serialization.V1</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Serialization.dll</h6>
+  <h5 id="Fusee_Serialization_V1_FusOctantF_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Frustum</code></pre>
+    <pre><code class="lang-csharp hljs">public class FusOctantF : FusComponent, IComponent</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
   </h3>
-  <a id="Fusee_Math_Core_Frustum_Bottom_" data-uid="Fusee.Math.Core.Frustum.Bottom*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_Bottom" data-uid="Fusee.Math.Core.Frustum.Bottom">Bottom</h4>
-  <div class="markdown level1 summary"><p>The bottom plane of the frustum.</p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_Center" data-uid="Fusee.Serialization.V1.FusOctantF.Center">Center</h4>
+  <div class="markdown level1 summary"><p>Center in world space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaneF Bottom { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float3 Center</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -132,21 +139,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Frustum_Far_" data-uid="Fusee.Math.Core.Frustum.Far*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_Far" data-uid="Fusee.Math.Core.Frustum.Far">Far</h4>
-  <div class="markdown level1 summary"><p>The far plane of the frustum.</p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_Guid" data-uid="Fusee.Serialization.V1.FusOctantF.Guid">Guid</h4>
+  <div class="markdown level1 summary"><p>Unique identifier of the node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaneF Far { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Guid Guid</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -156,21 +162,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td><span class="xref">System.Guid</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Frustum_Left_" data-uid="Fusee.Math.Core.Frustum.Left*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_Left" data-uid="Fusee.Math.Core.Frustum.Left">Left</h4>
-  <div class="markdown level1 summary"><p>The left plane of the frustum.</p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_IsLeaf" data-uid="Fusee.Serialization.V1.FusOctantF.IsLeaf">IsLeaf</h4>
+  <div class="markdown level1 summary"><p>Defines if the node is a leaf node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaneF Left { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsLeaf</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -180,21 +185,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Frustum_Near_" data-uid="Fusee.Math.Core.Frustum.Near*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_Near" data-uid="Fusee.Math.Core.Frustum.Near">Near</h4>
-  <div class="markdown level1 summary"><p>The near plane of the frustum.</p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_Level" data-uid="Fusee.Serialization.V1.FusOctantF.Level">Level</h4>
+  <div class="markdown level1 summary"><p>The level of the octree the node lies in.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaneF Near { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Level</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -204,21 +208,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Frustum_Right_" data-uid="Fusee.Math.Core.Frustum.Right*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_Right" data-uid="Fusee.Math.Core.Frustum.Right">Right</h4>
-  <div class="markdown level1 summary"><p>The right plane of the frustum.</p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_NumberOfPointsInNode" data-uid="Fusee.Serialization.V1.FusOctantF.NumberOfPointsInNode">NumberOfPointsInNode</h4>
+  <div class="markdown level1 summary"><p>Number of point cloud points, this node holds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaneF Right { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int NumberOfPointsInNode</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -228,21 +231,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Frustum_Top_" data-uid="Fusee.Math.Core.Frustum.Top*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_Top" data-uid="Fusee.Math.Core.Frustum.Top">Top</h4>
-  <div class="markdown level1 summary"><p>The top plane of the frustum.</p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_PosInHierarchyTex" data-uid="Fusee.Serialization.V1.FusOctantF.PosInHierarchyTex">PosInHierarchyTex</h4>
+  <div class="markdown level1 summary"><p>TBD</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaneF Top { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int PosInHierarchyTex</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -252,41 +254,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <a id="Fusee_Math_Core_Frustum_CalculateFrustumCorners_" data-uid="Fusee.Math.Core.Frustum.CalculateFrustumCorners*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_CalculateFrustumCorners_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.Frustum.CalculateFrustumCorners(Fusee.Math.Core.float4x4)">CalculateFrustumCorners(float4x4)</h4>
-  <div class="markdown level1 summary"><p>Calculates the eight frustum corners from an input matrix. In most cases this matrix will be the View-Projection-Matrix.</p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_PosInParent" data-uid="Fusee.Serialization.V1.FusOctantF.PosInParent">PosInParent</h4>
+  <div class="markdown level1 summary"><p>Defines the position in the parent octant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;float3&gt; CalculateFrustumCorners(float4x4 mat)</code></pre>
+    <pre><code class="lang-csharp hljs">public int PosInParent</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
-        <td><span class="parametername">mat</span></td>
-        <td><p>The matrix from which to calculate the frustum corners.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -296,42 +277,88 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Frustum_CalculateFrustumPlanes_" data-uid="Fusee.Math.Core.Frustum.CalculateFrustumPlanes*"></a>
-  <h4 id="Fusee_Math_Core_Frustum_CalculateFrustumPlanes_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.Frustum.CalculateFrustumPlanes(Fusee.Math.Core.float4x4)">CalculateFrustumPlanes(float4x4)</h4>
-  <div class="markdown level1 summary"><p>(Re)Calculates the frustum planes.
-If feeded with a projection matrix, the frustum planes are in View Space.
-If feeded with a view projection matrix, the frustum planes are in World Space.
-If feeded with a model view projection matrix, the frustum planes are in Model Space.
-See: <a href="http://www8.cs.umu.se/kurser/5DV051/HT12/lab/plane_extraction.pdf">http://www8.cs.umu.se/kurser/5DV051/HT12/lab/plane_extraction.pdf</a></p>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_Size" data-uid="Fusee.Serialization.V1.FusOctantF.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Length of on side of the cubical node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CalculateFrustumPlanes(float4x4 mat)</code></pre>
+    <pre><code class="lang-csharp hljs">public float Size</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
-        <td><span class="parametername">mat</span></td>
-        <td><p>The matrix from which to extract the planes.</p>
-</td>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_VisibleChildIndices" data-uid="Fusee.Serialization.V1.FusOctantF.VisibleChildIndices">VisibleChildIndices</h4>
+  <div class="markdown level1 summary"><p>TBD</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte VisibleChildIndices</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Serialization_V1_FusOctantF_WasLoaded" data-uid="Fusee.Serialization.V1.FusOctantF.WasLoaded">WasLoaded</h4>
+  <div class="markdown level1 summary"><p>Defines if the node was loaded into memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WasLoaded</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Serialization.V1.FusComponent.html">FusComponent</a></div>
+  </div>
 </article>
           </div>
           

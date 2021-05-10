@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Octant
+    <title>Class OctreeF&lt;P&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Octant
+    <meta name="title" content="Class OctreeF&lt;P&gt;
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -68,29 +68,22 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Scene.Octant">
+            <article class="content wrap" id="_content" data-uid="Fusee.Structures.OctreeF`1">
   
   
-  <h1 id="Fusee_Engine_Core_Scene_Octant" data-uid="Fusee.Engine.Core.Scene.Octant" class="text-break">Class Octant
+  <h1 id="Fusee_Structures_OctreeF_1" data-uid="Fusee.Structures.OctreeF`1" class="text-break">Class OctreeF&lt;P&gt;
   </h1>
-  <div class="markdown level0 summary"><p>Component that allows a SceneNode to save information usually associated with a &quot;PtOctant&quot;.</p>
+  <div class="markdown level0 summary"><p>Tree data structure in which each internal node has up to eight children.
+Octrees are most often used to partition a three-dimensional space by recursively subdividing it into eight octants.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></div>
-    <div class="level2"><span class="xref">Octant</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
+    <div class="level1"><span class="xref">OctreeF&lt;P&gt;</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -113,90 +106,38 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.Scene.html">Fusee.Engine.Core.Scene</a></h6>
-  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
-  <h5 id="Fusee_Engine_Core_Scene_Octant_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Structures.html">Fusee.Structures</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Structures.dll</h6>
+  <h5 id="Fusee_Structures_OctreeF_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Octant : SceneComponent, IComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class OctreeF&lt;P&gt;</code></pre>
   </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td><p>The type of an octants payload.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_Center" data-uid="Fusee.Engine.Core.Scene.Octant.Center">Center</h4>
-  <div class="markdown level1 summary"><p>Center in world space.</p>
+  <h4 id="Fusee_Structures_OctreeF_1_MaxLevel" data-uid="Fusee.Structures.OctreeF`1.MaxLevel">MaxLevel</h4>
+  <div class="markdown level1 summary"><p>The maximum level this octree has - corresponds to the maximum number of subdivisions of an Octant.
+Can be used as subdivision termination condition or be set in the method <a class="xref" href="Fusee.Structures.OctreeF-1.html#Fusee_Structures_OctreeF_1_SubdivTerminationCondition_Fusee_Structures_OctantF__0__">SubdivTerminationCondition(OctantF&lt;P&gt;)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double3 Center</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_Guid" data-uid="Fusee.Engine.Core.Scene.Octant.Guid">Guid</h4>
-  <div class="markdown level1 summary"><p>Unique identifier of the node.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Guid Guid</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Guid</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_IsLeaf" data-uid="Fusee.Engine.Core.Scene.Octant.IsLeaf">IsLeaf</h4>
-  <div class="markdown level1 summary"><p>Defines if the node is a leaf node.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsLeaf</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_Level" data-uid="Fusee.Engine.Core.Scene.Octant.Level">Level</h4>
-  <div class="markdown level1 summary"><p>The level of the octree the node lies in.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Level</code></pre>
+    <pre><code class="lang-csharp hljs">public int MaxLevel</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,13 +154,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_NumberOfPointsInNode" data-uid="Fusee.Engine.Core.Scene.Octant.NumberOfPointsInNode">NumberOfPointsInNode</h4>
-  <div class="markdown level1 summary"><p>Number of point cloud points, this node holds.</p>
+  <h4 id="Fusee_Structures_OctreeF_1_Root" data-uid="Fusee.Structures.OctreeF`1.Root">Root</h4>
+  <div class="markdown level1 summary"><p>The root Octant of this Octree.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int NumberOfPointsInNode</code></pre>
+    <pre><code class="lang-csharp hljs">public OctantF&lt;P&gt; Root</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,160 +172,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_PosInHierarchyTex" data-uid="Fusee.Engine.Core.Scene.Octant.PosInHierarchyTex">PosInHierarchyTex</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int PosInHierarchyTex</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_PosInParent" data-uid="Fusee.Engine.Core.Scene.Octant.PosInParent">PosInParent</h4>
-  <div class="markdown level1 summary"><p>Defines the position in the parent octant.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int PosInParent</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_Size" data-uid="Fusee.Engine.Core.Scene.Octant.Size">Size</h4>
-  <div class="markdown level1 summary"><p>Length of on side of the cubical node.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Size</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_VisibleChildIndices" data-uid="Fusee.Engine.Core.Scene.Octant.VisibleChildIndices">VisibleChildIndices</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte VisibleChildIndices</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Byte</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_WasLoaded" data-uid="Fusee.Engine.Core.Scene.Octant.WasLoaded">WasLoaded</h4>
-  <div class="markdown level1 summary"><p>Defines if the node was loaded into memory.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool WasLoaded</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="Fusee_Engine_Core_Scene_Octant_ProjectedScreenSize_" data-uid="Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_ProjectedScreenSize" data-uid="Fusee.Engine.Core.Scene.Octant.ProjectedScreenSize">ProjectedScreenSize</h4>
-  <div class="markdown level1 summary"><p>The size, projected into screen space. Set with <a class="xref" href="Fusee.Engine.Core.Scene.Octant.html#Fusee_Engine_Core_Scene_Octant_ComputeScreenProjectedSize_Fusee_Math_Core_double3_System_Int32_System_Single_">ComputeScreenProjectedSize(double3, Int32, Single)</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double ProjectedScreenSize { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
+        <td><a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Fusee_Engine_Core_Scene_Octant_ComputeScreenProjectedSize_" data-uid="Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_Octant_ComputeScreenProjectedSize_Fusee_Math_Core_double3_System_Int32_System_Single_" data-uid="Fusee.Engine.Core.Scene.Octant.ComputeScreenProjectedSize(Fusee.Math.Core.double3,System.Int32,System.Single)">ComputeScreenProjectedSize(double3, Int32, Single)</h4>
-  <div class="markdown level1 summary"><p>Calculates the size, projected into screen space.</p>
+  <a id="Fusee_Structures_OctreeF_1_GetChildPosition_" data-uid="Fusee.Structures.OctreeF`1.GetChildPosition*"></a>
+  <h4 id="Fusee_Structures_OctreeF_1_GetChildPosition_Fusee_Structures_OctantF__0___0_" data-uid="Fusee.Structures.OctreeF`1.GetChildPosition(Fusee.Structures.OctantF{`0},`0)">GetChildPosition(OctantF&lt;P&gt;, P)</h4>
+  <div class="markdown level1 summary"><p>Needed for subdivision - method that provides functionality to determine and return the index (position) of the child a payload item will fall into.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ComputeScreenProjectedSize(double3 camPos, int screenHeight, float fov)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract int GetChildPosition(OctantF&lt;P&gt; octant, P payloadItem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -397,29 +199,200 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">camPos</span></td>
-        <td><p>Position of the camera.</p>
+        <td><a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;</td>
+        <td><span class="parametername">octant</span></td>
+        <td><p>The octant to subdivide.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">screenHeight</span></td>
-        <td><p>Hight of the canvas.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">fov</span></td>
-        <td><p>Field of view.</p>
+        <td><span class="xref">P</span></td>
+        <td><span class="parametername">payloadItem</span></td>
+        <td><p>The payload item for which the child index is determined.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctreeF_1_HandlePayload_" data-uid="Fusee.Structures.OctreeF`1.HandlePayload*"></a>
+  <h4 id="Fusee_Structures_OctreeF_1_HandlePayload_Fusee_Structures_OctantF__0__Fusee_Structures_OctantF__0___0_" data-uid="Fusee.Structures.OctreeF`1.HandlePayload(Fusee.Structures.OctantF{`0},Fusee.Structures.OctantF{`0},`0)">HandlePayload(OctantF&lt;P&gt;, OctantF&lt;P&gt;, P)</h4>
+  <div class="markdown level1 summary"><p>Needed for subdivision - method that determines what happens to a payload item after the generation of an octants children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void HandlePayload(OctantF&lt;P&gt; parent, OctantF&lt;P&gt; child, P payloadItem)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;</td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent octant.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;</td>
+        <td><span class="parametername">child</span></td>
+        <td><p>The child octant a payload item falls into.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">P</span></td>
+        <td><span class="parametername">payloadItem</span></td>
+        <td><p>The payload item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctreeF_1_Subdivide_" data-uid="Fusee.Structures.OctreeF`1.Subdivide*"></a>
+  <h4 id="Fusee_Structures_OctreeF_1_Subdivide_Fusee_Structures_OctantF__0__" data-uid="Fusee.Structures.OctreeF`1.Subdivide(Fusee.Structures.OctantF{`0})">Subdivide(OctantF&lt;P&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subdivision creates the children of an Octant. Here the payload of an Octant will be iterated and for each item it is determined in which child it will fall.
+If there isn't a child already it will be created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Subdivide(OctantF&lt;P&gt; octant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;</td>
+        <td><span class="parametername">octant</span></td>
+        <td><p>The Octant to subdivide.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctreeF_1_SubdivTerminationCondition_" data-uid="Fusee.Structures.OctreeF`1.SubdivTerminationCondition*"></a>
+  <h4 id="Fusee_Structures_OctreeF_1_SubdivTerminationCondition_Fusee_Structures_OctantF__0__" data-uid="Fusee.Structures.OctreeF`1.SubdivTerminationCondition(Fusee.Structures.OctantF{`0})">SubdivTerminationCondition(OctantF&lt;P&gt;)</h4>
+  <div class="markdown level1 summary"><p>Needed for subdivision - Method that returns a condition that terminates the subdivision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool SubdivTerminationCondition(OctantF&lt;P&gt; octant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;</td>
+        <td><span class="parametername">octant</span></td>
+        <td><p>The octant to subdivide.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctreeF_1_Traverse_" data-uid="Fusee.Structures.OctreeF`1.Traverse*"></a>
+  <h4 id="Fusee_Structures_OctreeF_1_Traverse_Fusee_Structures_OctantF__0__System_Action_Fusee_Structures_OctantF__0___" data-uid="Fusee.Structures.OctreeF`1.Traverse(Fusee.Structures.OctantF{`0},System.Action{Fusee.Structures.OctantF{`0}})">Traverse(OctantF&lt;P&gt;, Action&lt;OctantF&lt;P&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Start traversing (breadth first) from a given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Traverse(OctantF&lt;P&gt; node, Action&lt;OctantF&lt;P&gt;&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;</td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctreeF_1_Traverse_" data-uid="Fusee.Structures.OctreeF`1.Traverse*"></a>
+  <h4 id="Fusee_Structures_OctreeF_1_Traverse_System_Action_Fusee_Structures_OctantF__0___" data-uid="Fusee.Structures.OctreeF`1.Traverse(System.Action{Fusee.Structures.OctantF{`0}})">Traverse(Action&lt;OctantF&lt;P&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Start traversing (breadth first) from the root node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Traverse(Action&lt;OctantF&lt;P&gt;&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Fusee.Structures.OctantF-1.html">OctantF</a>&lt;P&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

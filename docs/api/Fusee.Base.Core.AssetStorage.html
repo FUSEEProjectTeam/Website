@@ -123,6 +123,30 @@ exist.</p>
 </div>
   <h3 id="properties">Properties
   </h3>
+  <a id="Fusee_Base_Core_AssetStorage_AllAssetsFinishedLoading_" data-uid="Fusee.Base.Core.AssetStorage.AllAssetsFinishedLoading*"></a>
+  <h4 id="Fusee_Base_Core_AssetStorage_AllAssetsFinishedLoading" data-uid="Fusee.Base.Core.AssetStorage.AllAssetsFinishedLoading">AllAssetsFinishedLoading</h4>
+  <div class="markdown level1 summary"><p>Returns true if all assets have finished loading, independent of failed or success state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AllAssetsFinishedLoading { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Base_Core_AssetStorage_Instance_" data-uid="Fusee.Base.Core.AssetStorage.Instance*"></a>
   <h4 id="Fusee_Base_Core_AssetStorage_Instance" data-uid="Fusee.Base.Core.AssetStorage.Instance">Instance</h4>
   <div class="markdown level1 summary"><p>Implements the Singleton pattern.</p>
@@ -335,7 +359,7 @@ uniqueness of asset identifiers among all assets and asset providers.</p>
 </div>
   <a id="Fusee_Base_Core_AssetStorage_GetAssetAsync_" data-uid="Fusee.Base.Core.AssetStorage.GetAssetAsync*"></a>
   <h4 id="Fusee_Base_Core_AssetStorage_GetAssetAsync__1_System_String_" data-uid="Fusee.Base.Core.AssetStorage.GetAssetAsync``1(System.String)">GetAssetAsync&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"><p>Retrieves the asset identified by id.</p>
+  <div class="markdown level1 summary"><p>Retrieves a <span class="xref">System.Threading.Tasks.Task</span> which loads the asset identified by id, eventually.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -397,6 +421,65 @@ uniqueness of asset identifiers among all assets and asset providers.</p>
 The first asset provider capable of retrieving the asset &quot;wins&quot;. It's up to any application to guarantee
 uniqueness of asset identifiers among all assets and asset providers.</p>
 </div>
+  <a id="Fusee_Base_Core_AssetStorage_GetAssetsAsync_" data-uid="Fusee.Base.Core.AssetStorage.GetAssetsAsync*"></a>
+  <h4 id="Fusee_Base_Core_AssetStorage_GetAssetsAsync__1_System_Collections_Generic_IEnumerable_System_String__" data-uid="Fusee.Base.Core.AssetStorage.GetAssetsAsync``1(System.Collections.Generic.IEnumerable{System.String})">GetAssetsAsync&lt;T&gt;(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the assets identified by ids in an completely async parallel matter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T[]&gt; GetAssetsAsync&lt;T&gt;(IEnumerable&lt;string&gt; ids)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p>The identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T[]&gt;</td>
+        <td><p>The assets, if found. Otherwise null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The expected types of the asset to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Base_Core_AssetStorage_GetAsync_" data-uid="Fusee.Base.Core.AssetStorage.GetAsync*"></a>
   <h4 id="Fusee_Base_Core_AssetStorage_GetAsync__1_System_String_" data-uid="Fusee.Base.Core.AssetStorage.GetAsync``1(System.String)">GetAsync&lt;T&gt;(String)</h4>
   <div class="markdown level1 summary"><p>Staticton implementation of <a class="xref" href="Fusee.Base.Core.AssetStorage.html#Fusee_Base_Core_AssetStorage_GetAsset__1_System_String_">GetAsset&lt;T&gt;(String)</a>.</p>
@@ -450,6 +533,89 @@ uniqueness of asset identifiers among all assets and asset providers.</p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Base_Core_AssetStorage_IsAssetLoaded_" data-uid="Fusee.Base.Core.AssetStorage.IsAssetLoaded*"></a>
+  <h4 id="Fusee_Base_Core_AssetStorage_IsAssetLoaded_System_String_" data-uid="Fusee.Base.Core.AssetStorage.IsAssetLoaded(System.String)">IsAssetLoaded(String)</h4>
+  <div class="markdown level1 summary"><p>Returns true if an asset has finished loading successfully,
+returns false if not present, see <a class="xref" href="Fusee.Base.Core.AssetStorage.html#Fusee_Base_Core_AssetStorage_IsAssetPresent_System_String_">IsAssetPresent(String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAssetLoaded(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Base_Core_AssetStorage_IsAssetPresent_" data-uid="Fusee.Base.Core.AssetStorage.IsAssetPresent*"></a>
+  <h4 id="Fusee_Base_Core_AssetStorage_IsAssetPresent_System_String_" data-uid="Fusee.Base.Core.AssetStorage.IsAssetPresent(System.String)">IsAssetPresent(String)</h4>
+  <div class="markdown level1 summary"><p>Returns true if an asset is currently loading or already loaded, independent of failed or success state!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAssetPresent(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -509,6 +675,15 @@ for the platform (desktop, mobile, web) your main application should run on.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Base_Core_AssetStorage_UnRegisterAllAssetProviders_" data-uid="Fusee.Base.Core.AssetStorage.UnRegisterAllAssetProviders*"></a>
+  <h4 id="Fusee_Base_Core_AssetStorage_UnRegisterAllAssetProviders" data-uid="Fusee.Base.Core.AssetStorage.UnRegisterAllAssetProviders">UnRegisterAllAssetProviders()</h4>
+  <div class="markdown level1 summary"><p>Unregisters all asset providers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnRegisterAllAssetProviders()</code></pre>
+  </div>
 </article>
           </div>
           

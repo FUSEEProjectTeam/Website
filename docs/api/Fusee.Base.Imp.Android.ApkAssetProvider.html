@@ -73,7 +73,8 @@
   
   <h1 id="Fusee_Base_Imp_Android_ApkAssetProvider" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider" class="text-break">Class ApkAssetProvider
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p><a class="xref" href="Fusee.Base.Common.StreamAssetProvider.html">StreamAssetProvider</a> implementation for the Android platform</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -346,11 +347,12 @@
   </table>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider_GetStreamAsync_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync*"></a>
   <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider_GetStreamAsync_System_String_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.GetStreamAsync(System.String)">GetStreamAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a stream for the asset identified by id using <span class="xref">System.IO.FileStream</span></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task&lt;Stream&gt; GetStreamAsync(string id)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override Stream GetStreamAsync(string id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -365,7 +367,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The asset identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -379,13 +382,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><p>A valid stream for reading if the asset ca be retrieved. null otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Fusee.Base.Common.StreamAssetProvider.html#Fusee_Base_Common_StreamAssetProvider_GetStreamAsync_System_String_">StreamAssetProvider.GetStreamAsync(String)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Fusee.Base.Common.IAssetProvider.html">IAssetProvider</a>
