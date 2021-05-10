@@ -14,7 +14,7 @@ https://www.blender.org/download/
 
 ### .NET Core SDK (_required_)
 
-FUSEE Apps are created using the .NET Core SDK (version 2.0 or higher) - the platform-independent .NET Framework built on
+FUSEE Apps are created using the .NET Core SDK (version 3.1 or higher) - the platform-independent .NET Framework built on
 OpenSource. 
 
 Install .NET Core from
