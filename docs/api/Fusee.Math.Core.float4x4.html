@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct float4x4
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -592,7 +592,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Determinant { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly float Determinant { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -616,7 +616,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAffine { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool IsAffine { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1072,7 +1072,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Offset { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly float3 Offset { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1124,7 +1124,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Trace { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly float Trace { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1144,7 +1144,7 @@ of methods are postfixed with &quot;RH&quot;.
   <h3 id="methods">Methods
   </h3>
   <a id="Fusee_Math_Core_float4x4_Add_" data-uid="Fusee.Math.Core.float4x4.Add*"></a>
-  <h4 id="Fusee_Math_Core_float4x4_Add_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__" data-uid="Fusee.Math.Core.float4x4.Add(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)">Add(float4x4, float4x4)</h4>
+  <h4 id="Fusee_Math_Core_float4x4_Add_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__" data-uid="Fusee.Math.Core.float4x4.Add(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)">Add(in float4x4, in float4x4)</h4>
   <div class="markdown level1 summary"><p>Adds two instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3073,7 +3073,7 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
     </tbody>
   </table>
   <a id="Fusee_Math_Core_float4x4_Mult_" data-uid="Fusee.Math.Core.float4x4.Mult*"></a>
-  <h4 id="Fusee_Math_Core_float4x4_Mult_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__" data-uid="Fusee.Math.Core.float4x4.Mult(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)">Mult(float4x4, float4x4)</h4>
+  <h4 id="Fusee_Math_Core_float4x4_Mult_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__" data-uid="Fusee.Math.Core.float4x4.Mult(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)">Mult(in float4x4, in float4x4)</h4>
   <div class="markdown level1 summary"><p>Multiplies two instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3572,7 +3572,7 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
     </tbody>
   </table>
   <a id="Fusee_Math_Core_float4x4_Subtract_" data-uid="Fusee.Math.Core.float4x4.Subtract*"></a>
-  <h4 id="Fusee_Math_Core_float4x4_Subtract_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__" data-uid="Fusee.Math.Core.float4x4.Subtract(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)">Subtract(float4x4, float4x4)</h4>
+  <h4 id="Fusee_Math_Core_float4x4_Subtract_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__" data-uid="Fusee.Math.Core.float4x4.Subtract(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)">Subtract(in float4x4, in float4x4)</h4>
   <div class="markdown level1 summary"><p>Subtracts the right instance from the left instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

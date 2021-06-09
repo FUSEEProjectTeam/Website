@@ -43100,13 +43100,13 @@ references:
   fullName: Fusee.Math.Core.float4x4.float4x4
   nameWithType: float4x4.float4x4
 - uid: Fusee.Math.Core.float4x4.Add(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)
-  name: Add(float4x4, float4x4)
+  name: Add(in float4x4, in float4x4)
   href: api/Fusee.Math.Core.float4x4.html#Fusee_Math_Core_float4x4_Add_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__
   commentId: M:Fusee.Math.Core.float4x4.Add(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)
   name.vb: Add(ByRef float4x4, ByRef float4x4)
-  fullName: Fusee.Math.Core.float4x4.Add(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  fullName: Fusee.Math.Core.float4x4.Add(in Fusee.Math.Core.float4x4, in Fusee.Math.Core.float4x4)
   fullName.vb: Fusee.Math.Core.float4x4.Add(ByRef Fusee.Math.Core.float4x4, ByRef Fusee.Math.Core.float4x4)
-  nameWithType: float4x4.Add(float4x4, float4x4)
+  nameWithType: float4x4.Add(in float4x4, in float4x4)
   nameWithType.vb: float4x4.Add(ByRef float4x4, ByRef float4x4)
 - uid: Fusee.Math.Core.float4x4.Add*
   name: Add
@@ -43824,13 +43824,13 @@ references:
   fullName: Fusee.Math.Core.float4x4.M44
   nameWithType: float4x4.M44
 - uid: Fusee.Math.Core.float4x4.Mult(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)
-  name: Mult(float4x4, float4x4)
+  name: Mult(in float4x4, in float4x4)
   href: api/Fusee.Math.Core.float4x4.html#Fusee_Math_Core_float4x4_Mult_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__
   commentId: M:Fusee.Math.Core.float4x4.Mult(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)
   name.vb: Mult(ByRef float4x4, ByRef float4x4)
-  fullName: Fusee.Math.Core.float4x4.Mult(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  fullName: Fusee.Math.Core.float4x4.Mult(in Fusee.Math.Core.float4x4, in Fusee.Math.Core.float4x4)
   fullName.vb: Fusee.Math.Core.float4x4.Mult(ByRef Fusee.Math.Core.float4x4, ByRef Fusee.Math.Core.float4x4)
-  nameWithType: float4x4.Mult(float4x4, float4x4)
+  nameWithType: float4x4.Mult(in float4x4, in float4x4)
   nameWithType.vb: float4x4.Mult(ByRef float4x4, ByRef float4x4)
 - uid: Fusee.Math.Core.float4x4.Mult*
   name: Mult
@@ -44126,13 +44126,13 @@ references:
   fullName: Fusee.Math.Core.float4x4.ScaleDecomposition
   nameWithType: float4x4.ScaleDecomposition
 - uid: Fusee.Math.Core.float4x4.Subtract(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)
-  name: Subtract(float4x4, float4x4)
+  name: Subtract(in float4x4, in float4x4)
   href: api/Fusee.Math.Core.float4x4.html#Fusee_Math_Core_float4x4_Subtract_Fusee_Math_Core_float4x4__Fusee_Math_Core_float4x4__
   commentId: M:Fusee.Math.Core.float4x4.Subtract(Fusee.Math.Core.float4x4@,Fusee.Math.Core.float4x4@)
   name.vb: Subtract(ByRef float4x4, ByRef float4x4)
-  fullName: Fusee.Math.Core.float4x4.Subtract(Fusee.Math.Core.float4x4, Fusee.Math.Core.float4x4)
+  fullName: Fusee.Math.Core.float4x4.Subtract(in Fusee.Math.Core.float4x4, in Fusee.Math.Core.float4x4)
   fullName.vb: Fusee.Math.Core.float4x4.Subtract(ByRef Fusee.Math.Core.float4x4, ByRef Fusee.Math.Core.float4x4)
-  nameWithType: float4x4.Subtract(float4x4, float4x4)
+  nameWithType: float4x4.Subtract(in float4x4, in float4x4)
   nameWithType.vb: float4x4.Subtract(ByRef float4x4, ByRef float4x4)
 - uid: Fusee.Math.Core.float4x4.Subtract*
   name: Subtract
