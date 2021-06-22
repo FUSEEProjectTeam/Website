@@ -71,24 +71,24 @@
 
 <p>In this example, a predefined bitmap is used to create a maze that the User in shape of a robot must traverse. With the help of this example the collision detection is tested.</p>
 <p><img src="Images/Examples/Labyrinth.png" alt="Labyrinth Image"></p>
-<p>Auf GitHub
+<p>On GitHub
 <a href="https://github.com/FUSEEProjectTeam/Fusee/tree/develop/Examples/Complete/Labyrinth/Core">Labyrinth Example</a></p>
 <h2 id="controls">Controls</h2>
 <ul>
 <li>AD move the robot to the left or right</li>
-<li>WS AD move the robot to the forward or backward</li>
+<li>WS move the robot to the forward or backward</li>
 <li>While the left mouse button is pressed and the mouse is moved, you can look around.</li>
 <li>With a click of the right mouse button you can switch between first person and third person.</li>
 <li>With E you can see the maze from above, but you can't move during it.</li>
 </ul>
 <h2 id="creating-the-labyrinth-using-the-bitmap">Creating the labyrinth using the bitmap</h2>
-<p>The bitmap is created by hand in any image editor. After that, the image is loaded into the program and it is traced with loops that have predefined height and width steps and the color of the pixel is read. Each different color has a different value. Thus, you can create a 2D array using a bitmap.</p>
+<p>The bitmap is created by hand in any image editor. After that, the image is loaded into the program and it is traced with loops that have predefined height and width steps and the color of the pixel is read. Each different color has a different value. Thus, you can create a 2D-Array using a bitmap.</p>
 <h2 id="collision-detection">Collision detection</h2>
-<p>This works with the help of the above mentioned 2D array and bounding boxes of the walls. For simplicity, the 2D array can be thought of as a chessboard. Each x and y value is a square on the chessboard.</p>
+<p>This works with the help of the above mentioned 2D-Array and bounding boxes of the walls. For simplicity, the 2D-Array can be thought of as a chessboard. Each x and y value is a square on the chessboard.</p>
 <ul>
 <li>First the position of the character, in this case the robot, is converted so that you know on which checkerboard square it is located.</li>
 <li>Then the squares around it are read to see if there is a wall.</li>
-<li>If yes, with the help of the bounding box and the position of the robot the distance is calculated, if this is half of the width of the robot, or less it remains standing.</li>
+<li>If the statement above is true, it calculates the distance with the help of the bounding box and the position. If it is half of the width of the robot, or less it remains standing.</li>
 <li>If it collides with a corner pillar, it calculates the distance from the corner pillar using the Pythagorean theorem. If it also gets too close, it tries to roll around the corner.</li>
 </ul>
 </article>
