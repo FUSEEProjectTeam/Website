@@ -108,25 +108,25 @@ private float4 _oldColor;
 RC.View = float4x4.CreateTranslation(0, 0, 40) * float4x4.CreateRotationX(-&gt;(float) Math.Atan(15.0 / 40.0));
 if (Mouse.LeftButton)
 {
-float2 pickPosClip = Mouse.Position * new float2(2.0f / Width, -2.0f / Height) + new float2(-1, 1);
+  float2 pickPosClip = Mouse.Position * new float2(2.0f / Width, -2.0f / Height) + new float2(-1, 1);
 
-PickResult newPick = _scenePicker.Pick(RC, pickPosClip).OrderBy(pr =&gt; pr.ClipPos.z).FirstOrDefault();
+  PickResult newPick = _scenePicker.Pick(RC, pickPosClip).OrderBy(pr =&gt; pr.ClipPos.z).FirstOrDefault();
 
-if (newPick?.Node != _currentPick?.Node)
-{
-if (_currentPick != null)
-{
-var ef = _currentPick.Node.GetComponent&lt;DefaultSurfaceEffect&gt;();
-ef.SurfaceInput.Albedo = _oldColor;
-}
-if (newPick != null)
-{
-var ef = newPick.Node.GetComponent&lt;SurfaceEffect&gt;();
-_oldColor = ef.SurfaceInput.Albedo;
-ef.SurfaceInput.Albedo = (float4) ColorUint.OrangeRed;
-}
-_currentPick = newPick;
-}
+  if (newPick?.Node != _currentPick?.Node)
+  {
+    if (_currentPick != null)
+    {
+      var ef = _currentPick.Node.GetComponent&lt;DefaultSurfaceEffect&gt;();
+      ef.SurfaceInput.Albedo = _oldColor;
+    }
+    if (newPick != null)
+    {
+      var ef = newPick.Node.GetComponent&lt;SurfaceEffect&gt;();
+      _oldColor = ef.SurfaceInput.Albedo;
+      ef.SurfaceInput.Albedo = (float4) ColorUint.OrangeRed;
+    }
+    _currentPick = newPick;
+  }
 }
 </code></pre>
 <ul>

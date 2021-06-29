@@ -80,95 +80,7 @@ To render the scene we can add a Camera to the <code>SceneContainer</code>. Note
 <p>As with every other <code>TransformComponent</code> the Translation, Rotation and Scale values are relative to the ones of the parent nodes.
 The cumulated Translation and Rotation values describe the cameras position in world space and therefore are the basis for calculating the View matrix (which is done in the background).</p>
 <h3 id="cameracomponent">CameraComponent</h3>
-<p>The CameraComponent consists of the following properties:</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>bool</code></td>
-<td>Active</td>
-<td>If set to <code>true</code> this camera generates a render output.</td>
-</tr>
-<tr>
-<td><code>WritableTexture</code></td>
-<td>RenderTexture</td>
-<td>If this is not <code>null</code> the output gets rendered into the texture, otherwise to the screen.</td>
-</tr>
-<tr>
-<td><code>float4</code></td>
-<td>Viewport</td>
-<td>The output is rendered to the section of the application window defined by the Viewport values (see <a href="#Viewport">table below</a>).</td>
-</tr>
-<tr>
-<td><code>float2</code></td>
-<td>ClippingPlanes</td>
-<td>Distance to the near (x value) and far (y value) clipping planes.</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>Fov</td>
-<td>Vertical field of view in radians.</td>
-</tr>
-<tr>
-<td><code>ProjectionMethod</code></td>
-<td>ProjectionMethod</td>
-<td>Sets the projection method. At the moment we can choose between perspective and orthographic.</td>
-</tr>
-<tr>
-<td><code>int</code></td>
-<td>Layer</td>
-<td>If there is more than one CameraComponent in one scene, the rendered output of the camera with a higher layer will be drawn above the output of a camera with a lower layer.</td>
-</tr>
-<tr>
-<td><code>float4</code></td>
-<td>BackgroundColor</td>
-<td>The background color of the render output.</td>
-</tr>
-<tr>
-<td><code>bool</code></td>
-<td>ClearColor</td>
-<td>Is <code>true</code> per default. If set to <code>false</code>, the color bit won't be cleared before this camera is rendered. Set this to <code>false</code> if the background color should be transparent.</td>
-</tr>
-<tr>
-<td><code>bool</code></td>
-<td>ClearDepth</td>
-<td>Is <code>true</code> per default. If set to <code>false</code>, the depth bit won't be cleared before this camera is rendered.</td>
-</tr>
-<tr>
-<td><code>CustomCameraUpdate</code></td>
-<td>CustomCameraUpdate</td>
-<td>Is <code>null</code> by default. This delegate enables us to add a custom projection method. If we choose to use this delegate we need to provide a method that calculates a projection matrix and outputs a Viewport in percent in the range [0, 100]. Note that this is <strong>optional</strong> but if this delegate is not <code>null</code> its <code>out</code> values (Projection matrix and Viewport) will overwrite  the ones calculated from the other camera parameters.</td>
-</tr>
-</tbody>
-</table>
-<h4 id="viewport">Viewport</h4>
-<p>The values are given in percent in the range [0, 100].</p>
-<table>
-<thead>
-<tr>
-<th><code>float4</code></th>
-<th>x</th>
-<th>y</th>
-<th>z</th>
-<th>w</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>x value of the lower left corner</td>
-<td>y value of the lower left corner</td>
-<td>width</td>
-<td>height</td>
-</tr>
-</tbody>
-</table>
+<p>To see the properties of the CameraComponent click <a href="http://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">here</a> to get to the API documentation of the camera.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="creating-the-camera-scenenodecontainer">Creating the Camera SceneNodeContainer</h3>
 <p>The constructor of the <code>CameraComponent</code> expects a projection method, the distances to the clipping planes and the field of view in radians.<br>
@@ -257,44 +169,8 @@ In this case we rotate the pivot around its origin. This method may prove more s
 }
 </code></pre>
 <h3 id="first-person-camera">First Person Camera</h3>
-<p>To achieve a fps camera we can use <code>TransformComponent.FpsView()</code>. This method will modify the <code>Translation</code> and <code>Rotation</code> of the camera according to the parameters we pass.<br>
-It expects the following parameters:</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>float</code></td>
-<td>angleHorz</td>
-<td>The horizontal rotation angle in radians. Should probably come from Mouse input (<code>Mouse.XVel</code>).</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>angleVert</td>
-<td>The vertical rotation angle in radians. Should probably come from Mouse input (<code>Mouse.YVel</code>).</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>inputWSAxis</td>
-<td>The value we want to translate the camera when pressing the W or S key (<code>Keyboard.WSAxis</code>).</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>inputADAxis</td>
-<td>The value we want to translate the camera when pressing the A or D key (<code>Keyboard.ADAxis</code>).</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>speed</td>
-<td>Changes the speed of the camera movement.</td>
-</tr>
-</tbody>
-</table>
+<p>To achieve a fps camera we can use <code>TransformComponent.FpsView()</code>. This method will modify the <code>Translation</code> and <code>Rotation</code> of the camera according to the parameters we pass.
+To see the properties of the FpsView click <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_FpsView_Fusee_Engine_Core_Scene_Transform_System_Single_System_Single_System_Single_System_Single_System_Single_">here</a> to get to the API documentation.</p>
 <pre><code class="lang-C#">public override void RenderAFrame()
 {
     [...] 

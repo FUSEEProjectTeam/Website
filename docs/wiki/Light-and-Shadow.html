@@ -70,97 +70,13 @@
 <h1 id="light">Light</h1>
 
 <h2 id="types">Types</h2>
-<p>In FUSEE we are capable to place various light sources in the scene by using <code>LightComponents</code>. They can be of the following  <code>LightTypes</code>:</p>
-<h3 id="point">Point</h3>
-<p>Point lights are omnidirectional lights; they cast light in every direction. Additionally the light strength decreases the farther away we are from its source. This reduction is calculated in the background with a so-called attenuation function. To be able to calculate the light strength at a certain point in the scene, this kind of light source also needs a position.</p>
-<p>Important, type dependent properties of the light component:</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>float</code></td>
-<td>MaxDistance</td>
-<td>The distance from the light source at which the light strength becomes zero (attenuation = 0).</td>
-</tr>
-</tbody>
-</table>
-<p>Examples for point lights are light bulbs or torches.</p>
-<h3 id="spot">Spot</h3>
-<p>Spot lights cast their light in a cone into a specific direction. Like point lights, the strength of the light decreases with increasing distance from the source.<br>
-The cone is described based on an cutoff angle. Nothing that falls outside the cone will be lit. Additionally we define a inner cone angle. This lets us calculate a spot light with smooth edges.</p>
-<p>Important, type dependent properties of the light component:</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>float</code></td>
-<td>MaxDistance</td>
-<td>The distance from the light source at which the light strength becomes zero (attenuation = 0).</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>OuterConeAngle</td>
-<td>The cutoff angle in radians.</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>InnerConeAngle</td>
-<td>Needed to smooth the cone edges. Given in radians.</td>
-</tr>
-</tbody>
-</table>
-<p>The best example for a spot light is a flashlight.</p>
-<h3 id="parallel">Parallel</h3>
-<p>Parallel lights are used to light the whole scene, for example to simulate the sun. If a light is away far enough, its light rays can be thought to be parallel, hence the name of the light. This type has a direction but its strength does not decrease with the distance to the source and therefor it doesn't need a specified position.</p>
-<p>Important, type dependent properties of the light component:</p>
-<p>None.</p>
-<h3 id="legacy">Legacy</h3>
-<p>The legacy light is a kind of parallel light, whose direction is always equal to the positive z-axis of the active camera (line of sight). This kind of light is inserted to the scene if no other <code>LightComponents</code> are detected.<br>
-It isn't meant to be used manually, use the above types instead.</p>
+<p>In FUSEE we are capable to place various light sources in the scene by using <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html">LightComponent</a>. They can be of the following  <a href="https://fusee3d.org/api/Fusee.Base.Common.LightType.html">LightTypes</a>:</p>
 <h3 id="universal-properties">Universal properties</h3>
-<p>Other useful properties of the <code>LightComponent</code> are described in the table below, they also can be animated at runtime.</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>bool</code></td>
-<td>Active</td>
-<td>Turns the light on and off.</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>Color</td>
-<td>The light color.</td>
-</tr>
-<tr>
-<td><code>float</code></td>
-<td>Strength</td>
-<td>The overall intensity of the light. Needs to be a value between 0 and 1.</td>
-</tr>
-</tbody>
-</table>
+<p>Other useful properties of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html">LightComponent</a> are <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html#Fusee_Engine_Core_Scene_Light_Active">Active</a>, <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html#Fusee_Engine_Core_Scene_Light_Color">Color</a> and <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html#Fusee_Engine_Core_Scene_Light_Strength">Strength</a>.</p>
 <h2 id="position-and-direction">Position and Direction</h2>
-<p>As described above, some light types need a position and/or a direction to light the scene in the intended way. Those are not properties of the <code>LightComponent</code> itself, but calculated based on the <code>TransformComponent</code>, associated with the light. This enables us to use one <code>LightComponent</code> multiple times in the scene graph.</p>
-<p>The position of the light in world space -- if used in a Scene Graph, also relative to the parent node -- is simply set by the translation property of the <code>TransformComponent</code>.</p>
-<p>The default direction of a light is the positive z-axis of the world space. To change it, we need to add a rotation to the <code>TransformComponent</code>. For example: if we set a rotation of 90 degree around the positive x-axis, the lights direction will become equal to the negative y axis.</p>
+<p>As described above, some light types need a position and/or a direction to light the scene in the intended way. Those are not properties of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html">LightComponent</a> itself, but calculated based on the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">TransformComponent</a>, associated with the light. This enables us to use one <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html">LightComponent</a> multiple times in the scene graph.</p>
+<p>The position of the light in world space -- if used in a Scene Graph, also relative to the parent node -- is simply set by the translation property of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">TransformComponent</a>.</p>
+<p>The default direction of a light is the positive z-axis of the world space. To change it, we need to add a rotation to the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">TransformComponent</a>. For example: if we set a rotation of 90 degree around the positive x-axis, the lights direction will become equal to the negative y axis.</p>
 <p>Exemplary setup of a spot light:</p>
 <pre><code class="lang-C#">var blueSpotLightComponent = new LightComponent() 
 { 
@@ -200,7 +116,7 @@ See the <a href="Deferred-Rendering">Deferred Rendering Page</a> on how to use i
 <p>FUSEE is able to render shadows for every light in the scene. For this the engine uses <em>Shadow Mapping</em>. In short this done as follows:</p>
 <p>For every light source</p>
 <ol>
-<li>render a depth map (= shadow map) of the scene from the light's position. For spot and point lights this will be the position given in the <code>TransformComponent</code>. For parallel lights it is calculated internally.</li>
+<li>render a depth map (= shadow map) of the scene from the light's position. For spot and point lights this will be the position given in the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">TransformComponent</a>. For parallel lights it is calculated internally.</li>
 </ol>
 <p>In the lighting pass</p>
 <ol start="2">
@@ -208,23 +124,23 @@ See the <a href="Deferred-Rendering">Deferred Rendering Page</a> on how to use i
 <li>Check whether the position's z value is lesser or greater than the associated texel of the shadow map. If it is greater, this fragment lies in shadow.</li>
 </ol>
 <p>For further information and OpenGL implementation details refer to this <a href="https://learnopengl.com/Advanced-Lighting/Shadows/Shadow-Mapping">tutorial</a> on learnopengl.com.</p>
-<p>To enable shadow casting for a specific light, we need to set the property <code>IsCastingShadows</code> of the <code>LightComponent</code> to <code>true</code>. Furthermore it may be possible to adjust the <code>Bias</code> of the <code>LightComponent</code>.</p>
+<p>To enable shadow casting for a specific light, we need to set the property <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html#Fusee_Engine_Core_Scene_Light_IsCastingShadows">IsCastingShadows</a> of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html">Light</a> to <code>true</code>. Furthermore it may be possible to adjust the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html#Fusee_Engine_Core_Scene_Light_Bias">Bias</a> of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Light.html">LightComponent</a>.</p>
 <h3 id="bias">Bias</h3>
 <p>The bias can have a massive impact on the quality of the shadow.</p>
 <p>If it is too small it can lead to incorrect self shadowing or shadow acne.<br>
 If it is to big, peter panning (the shadow isn't attached to associated object anymore) or light leaking can occur.</p>
 <p>In the event that we do not see a shadow, but are sure that we have set all parameters of the light correctly, this may also be due to a incorrect bias. Try playing around with it to get the best results in terms of shadow quality.</p>
 <h3 id="shadow-map-resolution">Shadow Map resolution</h3>
-<p>We can choose the resolution of the shadow maps in the <code>SceneRendererDeferred</code> by setting the value of <code>ShadowMapRes</code>.<br>
+<p>We can choose the resolution of the shadow maps in the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a> by setting the value of <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html#Fusee_Engine_Core_SceneRendererDeferred_ShadowMapRes">ShadowMapRes</a>.<br>
 The higher the resolution we choose the clearer the shadow will appear, because we have a better texel to fragment assignment (step three of the short description above).<br>
 Keep in mind, that a higher resolution may have an impact on the performance of the application.</p>
 <h3 id="cascades-shadow-mapping---shadows-for-parallel-lights">Cascades Shadow Mapping - shadows for parallel lights</h3>
-<p>If we encounter bad quality shadows coming from parallel lights (like those seen in the picture below), it may help to increase the <code>numberOfCascades</code> in the <code>SceneRendererDeferred</code>. This will increase the number of shadow maps that are created for each parallel light. A number to great may result in performance loss.</p>
+<p>If we encounter bad quality shadows coming from parallel lights (like those seen in the picture below), it may help to increase the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html#Fusee_Engine_Core_SceneRendererDeferred_NumberOfCascades">numberOfCascades</a> in the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a>. This will increase the number of shadow maps that are created for each parallel light. A number to great may result in performance loss.</p>
 <h3 id="tldr-background">[TLDR] Background</h3>
 <p>As described above, parallel lights light the whole scene. In the basic shadow mapping algorithm we would have one shadow map with (in a worst case scenario) 512 x 512 pixel that needs to cover a big scene, maybe spanning several kilometers in world space - or at least the part of it, that is inside the viewing frustum, which can also have a big volume. This leads to shadows with a very bad quality as seen in the picture below.</p>
 <p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Light-and-Shadow/noCascade.jpg" alt="Un-cascaded shadow"></p>
 <p>We can also see, that the farther away a point is from our point of view, the less noticeable the bad quality gets. This leads to the idea of Cascaded Shadow Mapping.</p>
-<p>With this, the viewing frustum is split into <em>n</em> cascades, here given by the <code>numberOfCascades</code>. The algorithm used to split the frustum is <a href="https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch10.html">Parallel-Split Shadow Maps</a>.</p>
+<p>With this, the viewing frustum is split into <em>n</em> cascades, here given by the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html#Fusee_Engine_Core_SceneRendererDeferred_NumberOfCascades">numberOfCascades</a>. The algorithm used to split the frustum is <a href="https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch10.html">Parallel-Split Shadow Maps</a>.</p>
 <p>For each cascade the algorithm calculates the axis aligned bounding box, which encloses the cascade. This bounding box is used as the (orthographic) viewing frustum for rendering the shadow map for this cascade. This results in shadow maps with a better texel to fragment assignment, because each shadow map only displays a subset of the scene.</p>
 <p>The picture below shows the cascades (C0 - C2) and the bounding boxes (green).</p>
 <p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Light-and-Shadow/cascades.png" alt="Frustum and Cascades"></p>
