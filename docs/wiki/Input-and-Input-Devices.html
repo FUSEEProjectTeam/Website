@@ -74,7 +74,7 @@ and centralized way to user code. Users can easily integrate existing handlers f
 devices and also can provide input device handlers (&quot;drivers&quot;) for new hardware.</p>
 <h2 id="concepts">Concepts</h2>
 <h3 id="the-input-singleton">The Input singleton</h3>
-<p>From the user code point of view all input access starts at the <code>Input</code> singleton object <code>Input.Instance</code>.
+<p>From the user code point of view all input access starts at the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html">Input</a> singleton object <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_Instance">Input.Instance</a>.
 Use this object for the following use cases:</p>
 <ul>
 <li>Directly access the most usual input devices: Mouse, Keyboard and Touch</li>
@@ -84,14 +84,14 @@ Use this object for the following use cases:</p>
 <li>Add device handlers (&quot;drivers&quot;)</li>
 <li>Add well-known input device types.</li>
 </ul>
-<p>The Input class implements the classic singleton pattern (using the <code>Instance</code> static property) while at the
+<p>The Input class implements the classic singleton pattern (using the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_Instance">Instance</a> static property) while at the
 same time granting direct access to all functionality through static methods (internally accessing the singleton).
 In the FUSEE reference docs, this is sometimes called the &quot;staticton&quot; pattern.
 This way, you can pass around an instance of input (whenever needed in the future) while at the same time
 use shortcut acces to all functionality. Use the C# 6 <code>using static Fusee.Engine.Core.Input;</code> feature to directly
-access the the <code>Input</code> instance's static methods and properties.</p>
+access the the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html">Input</a> instance's static methods and properties.</p>
 <h3 id="input-devices">Input Devices</h3>
-<p>An instance of the class <code>InputDevice</code> represents a single, typically physical, input device. Input
+<p>An instance of the class <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_InputDevices">InputDevices</a> represents a single, typically physical, input device. Input
 devices expose axes and buttons providing an their current state. An axis consists of one single precision
 floating point value while a button provides a boolean value representing the button state
 (pressed: <code>true</code>, released: <code>false</code>). Input devices are involved in the following use cases:</p>
@@ -116,21 +116,21 @@ buttons.</li>
 </li>
 </ul>
 <h3 id="well-known-input-device-types">Well-Known Input Device Types</h3>
-<p>While user code can access any device listed by the Input singleton (<code>Input.Devices</code>) using the basic functionality
-provided by the <code>InputDevice</code> class, some common input devicves deserve special handlig. A mouse, for example, will
+<p>While user code can access any device listed by the Input singleton (<a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_Devices">Input.Devices</a> using the basic functionality
+provided by the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_InputDevices">InputDevices</a> class, some common input devicves deserve special handlig. A mouse, for example, will
 expose its position in a two-dimensional manner rather than using two individual scalar axes. In addition, some
 devices will probably expose calcuated/derived/button-axes by default, without having a user define these axes from
 scratch. Certain device types might expose additional functionality.</p>
-<p>Users can provide classes derived from <code>InputDevice</code> to implement such special features. FUSEE already provides three classes
-derived from <code>InputDevice</code> for the most common input categories:</p>
+<p>Users can provide classes derived from <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_InputDevices">InputDevices</a> to implement such special features. FUSEE already provides three classes
+derived from <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_InputDevices">InputDevices</a> for the most common input categories:</p>
 <ul>
 <li>Mouse</li>
 <li>Keyboard, and</li>
 <li>Touch</li>
 </ul>
 <p>The input class already registers and connects the first found instance for each of those input device types so that
-you may directly access them using <code>Input.Mouse</code>, <code>Input.Keyboard</code> and <code>Input.Touch</code>. Any other special device can be implemented
-in user code by deriving your own class from <code>InputDevice</code> and registere it with the <code>Input.RegisterInputDeviceType</code> method to be
+you may directly access them using <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_Mouse">Input.Mouse</a>, <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_Keyboard">Input.Keyboard</a> and <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_Touch">Input.Touch</a>. Any other special device can be implemented
+in user code by deriving your own class from <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_InputDevices">InputDevices</a> and registere it with the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html#Fusee_Engine_Core_Input_RegisterInputDeviceType_Fusee_Engine_Core_MatchFunc_Fusee_Engine_Core_CreatorFunc_">Input.RegisterInputDeviceType</a> method to be
 used whenever a device is connected meeting a certain condition.</p>
 </article>
           </div>

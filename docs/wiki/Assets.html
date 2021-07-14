@@ -94,7 +94,7 @@
 <pre><code class="lang-csharp">Task&lt;T[]&gt; AssetStorage.GetAssetsAsync&lt;T&gt;(IEnumerable&lt;string&gt; ids);
 </code></pre>
 <h2 id="check-status-of-assets">Check status of assets</h2>
-<p>When using the <code>async/await</code> pattern, a user usually wants to check if all files the <code>AssetStorage</code> should load are present:</p>
+<p>When using the <code>async/await</code> pattern, a user usually wants to check if all files the <a href="https://fusee3d.org/api/Fusee.Base.Core.AssetStorage.html">AssetStorage</a> should load are present:</p>
 <pre><code class="lang-csharp">bool AssetsStorage.AllAssetsFinishedLoading { get; }
 </code></pre>
 <p>Furthermore, the method</p>
@@ -107,7 +107,7 @@
 </code></pre>
 <p>which returns <code>true</code> only upon a successful and complete load.</p>
 <h2 id="implementing-an-asset-decoder">Implementing an asset decoder</h2>
-<p>For convenience, Fusee already implements the file handling logic for a few selected file types (images, text, fonts, SceneContainer) within the examples. Usually, this is done once per build target (Desktop, Android, etc.) via the creation of an <code>AssetHandler</code> in which the information on how to decode and handle a filetype is deposited. All <code>AssetHandler</code>s are then registered at a <code>FileAssetProvider</code> which itself is registered at the <code>AssetStorage</code>,  eventually.
+<p>For convenience, Fusee already implements the file handling logic for a few selected file types (images, text, fonts, SceneContainer) within the examples. Usually, this is done once per build target (Desktop, Android, etc.) via the creation of an [AssetHandler](<a href="https://fusee3d.org/api/Fusee.Base.Common.AssetHandler.html">https://fusee3d.org/api/Fusee.Base.Common.AssetHandler.html</a> in which the information on how to decode and handle a filetype is deposited. All [AssetHandler](<a href="https://fusee3d.org/api/Fusee.Base.Common.AssetHandler.htmls">https://fusee3d.org/api/Fusee.Base.Common.AssetHandler.htmls</a> are then registered at a <a href="https://fusee3d.org/api/Fusee.Base.Imp.Desktop.FileAssetProvider.html">FileAssetProvider</a> which itself is registered at the <a href="https://fusee3d.org/api/Fusee.Base.Core.AssetStorage.html">AssetStorage</a>,  eventually.
 The <code>FileAssetStorage</code> is platform-specific, too, and provides the logic on how to read a file from the build target's file storage.</p>
 <p>A full example could look like this</p>
 <pre><code class="lang-csharp">// Create an AssetHandler to load text files

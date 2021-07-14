@@ -74,7 +74,7 @@
 <p><a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Files/Tutorial_2_Input/Tut2_Input.zip">Tutorial 2 Input</a></p>
 </blockquote>
 <p>Now we want to control the car's wheels interactively. To do this, we have to take user input and convert it into rotations.</p>
-<p>In FUSEE we can access user input from various input devices via the <code>Input</code> class. This already has static fields (class variables) for the most common input devices, such as</p>
+<p>In FUSEE we can access user input from various input devices via the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Input.html">Input</a> class. This already has static fields (class variables) for the most common input devices, such as</p>
 <ul>
 <li>Mouse</li>
 <li>Keyboard</li>
@@ -84,7 +84,7 @@
 <pre><code class="lang-C#">using static Fusee.Engine.Core.Input;
 </code></pre>
 <p>at the top of the file we can access the input devices in the code.</p>
-<p>The following shows the most important properties that can be read out for the mouse and keyboard input devices. These can be read out in <code>RenderAFrame ()</code> and the values ​​returned can be used for the interaction.</p>
+<p>The following shows the most important properties that can be read out for the mouse and keyboard input devices. These can be read out in <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame()</a> and the values ​​returned can be used for the interaction.</p>
 <h3 id="mouse">Mouse</h3>
 <table>
 <thead>
@@ -170,11 +170,11 @@
 </tbody>
 </table>
 <p>With the <code>... Axis</code>, game-like control for the arrows and the 'WASD' keys can be implemented via the keyboard, without time-consuming individual queries via&quot; GetKey &quot;. The values of the axes in the interval [-1 ... 1] can be used as speed. The current axis value is also accelerated / decelerated with a certain amount of inertia when the key is changed.</p>
-<p>We now want to use the current value of the <code>WSAxis</code> to control the rotation of the wheels on the car and simulate the car driving forward. We also want to turn the car with the <code>ADAxis</code></p>
+<p>We now want to use the current value of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.KeyboardDevice.html#Fusee_Engine_Core_KeyboardDevice_WSAxis">WSAxis</a> to control the rotation of the wheels on the car and simulate the car driving forward. We also want to turn the car with the <a href="https://fusee3d.org/api/Fusee.Engine.Core.KeyboardDevice.html#Fusee_Engine_Core_KeyboardDevice_ADAxis">ADAxis</a>.</p>
 <blockquote>
 <p>👨‍🔧 <strong>TODO</strong></p>
 <ul>
-<li><p>Add the following code to the beginning of the body of <code>RenderAFrame ()</code></p>
+<li><p>Add the following code to the beginning of the body of <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame()</a></p>
 <pre><code class="lang-C#">public override void RenderAFrame()
 {
     //Rotate both Axles forward or backwards

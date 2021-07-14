@@ -71,19 +71,19 @@
 
 <h2 id="overview">Overview</h2>
 <p>At the moment FUSEE supports two types of textures. Standard textures, that offer access to the pixel data and Writable Textures, that don't.<br>
-The latter are used if we want to render to a texture or a G-Buffer, standard textures are used e. g. in <code>ShaderEffects</code> as albedo or normal texture.</p>
+The latter are used if we want to render to a texture or a G-Buffer, standard textures are used e. g. in <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffects</a> as albedo or normal texture.</p>
 <p>The following class diagram breaks down the implementation:</p>
 <p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Textures/textures.png" alt="Class Diagram: Textures"></p>
-<p><code>Textures</code>, <code>WritableTextures</code> and <code>WritableCubeMaps</code> are meant to be used directly in application code.
-Furthermore the associated interfaces <code>ITexture</code>, <code>IWritableTexture</code> and <code>IWritableCubeMap</code> -- here marked in green -- serve as their abstraction and allow us to use the texture classes in a cross-platform context.</p>
+<p><a href="https://fusee3d.org/api/Fusee.Engine.Core.Texture.html">Textures</a>, <a href="https://fusee3d.org/api/Fusee.Engine.Core.WritableTexture.html">WritableTextures</a> and <a href="https://fusee3d.org/api/Fusee.Engine.Common.IWritableCubeMap.html">WritableCubeMaps</a> are meant to be used directly in application code.
+Furthermore the associated interfaces <a href="https://fusee3d.org/api/Fusee.Engine.Common.ITexture.html">ITexture</a>, <a href="https://fusee3d.org/api/Fusee.Engine.Common.IWritableTexture.html">IWritableTexture</a> and <a href="https://fusee3d.org/api/Fusee.Engine.Common.IWritableCubeMap.html">IWritableCubeMap</a> -- here marked in green -- serve as their abstraction and allow us to use the texture classes in a cross-platform context.</p>
 <h2 id="textures">Textures</h2>
 <h3 id="loading">Loading</h3>
-<p>Images can be loaded via the <code>AssetStorage</code>:</p>
+<p>Images can be loaded via the <a href="https://fusee3d.org/api/Fusee.Base.Core.AssetStorage.html">AssetStorage</a>:</p>
 <pre><code class="lang-C#">var imgData = AssetStorage.Get&lt;ImageData&gt;(&quot;someTexture.png&quot;);
 var tex = new Texture(imgData);
 </code></pre>
-<p>The first line creates a object of type <code>ImageData</code>, which carries the payload of the image (the pixel data) and offers <code>Blt</code> functionality, which is also inherited by the standard <code>Texture</code>. The second wraps it into a texture object.</p>
-<p>Currently the engine supports the following image formats to be loaded by the <code>AssetStorage</code>:</p>
+<p>The first line creates a object of type <a href="https://fusee3d.org/api/Fusee.Base.Core.ImageData.html">ImageData</a>, which carries the payload of the image (the pixel data) and offers <a href="https://fusee3d.org/api/Fusee.Base.Core.ImageData.html#Fusee_Base_Core_ImageData_Blt_System_Int32_System_Int32_Fusee_Base_Common_IImageData_System_Int32_System_Int32_System_Int32_System_Int32_">Blt</a> functionality, which is also inherited by the standard <a href="https://fusee3d.org/api/Fusee.Engine.Core.Texture.html">Texture</a>. The second wraps it into a texture object.</p>
+<p>Currently the engine supports the following image formats to be loaded by the <a href="https://fusee3d.org/api/Fusee.Base.Core.AssetStorage.html">AssetStorage</a>:</p>
 <ul>
 <li>jpg</li>
 <li>jpeg</li>
@@ -92,7 +92,7 @@ var tex = new Texture(imgData);
 </ul>
 <h2 id="writable-textures">Writable Textures</h2>
 <p>They are not meant to be manipulated directly by the user, but can serve as render target, e. g. in multipass rendering. Therefor we do not have access to the actual pixel data here.
-To create a <code>WritableTexture</code> the class offers a handful of static methods for special types, that make sure the texture is created correctly on the gpu. The types reflect the ones used in the deferred rendering pipeline:</p>
+To create a <a href="https://fusee3d.org/api/Fusee.Engine.Core.WritableTexture.html">WritableTexture</a> the class offers a handful of static methods for special types, that make sure the texture is created correctly on the gpu. The types reflect the ones used in the deferred rendering pipeline:</p>
 <ul>
 <li>Albedo</li>
 <li>Position</li>
@@ -101,9 +101,9 @@ To create a <code>WritableTexture</code> the class offers a handful of static me
 <li>SSAO</li>
 <li>Depth</li>
 </ul>
-<p>If we want to use a <code>WritableTexture</code> in an arbitrary case, <code>CreateAlbedoTex</code> may be the safest choice. Alternatively we can call the constructor directly, but we have to pass a set of texture options (see <a href="#Texture-Options">Texture Options</a>)</p>
+<p>If we want to use a <a href="https://fusee3d.org/api/Fusee.Engine.Core.WritableTexture.html">WritableTexture</a> in an arbitrary case, <a href="https://fusee3d.org/api/Fusee.Engine.Core.WritableTexture.html#Fusee_Engine_Core_WritableTexture_CreateAlbedoTex_System_Int32_System_Int32_">CreateAlbedoTex</a> may be the safest choice. Alternatively we can call the constructor directly, but we have to pass a set of texture options (see <a href="#Texture-Options">Texture Options</a>)</p>
 <h2 id="using-textures-in-shadereffects">Using textures in ShaderEffects</h2>
-<p>To feed a texture to a <code>ShaderEffect</code> and use it as a uniform variable in the associated shader code,  we can pass it a <code>EffectParameterDeclaration</code> to the constructor of the <code>ShaderEffect</code>:</p>
+<p>To feed a texture to a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a> and use it as a uniform variable in the associated shader code,  we can pass it a <code>EffectParameterDeclaration</code> to the constructor of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a>:</p>
 <pre><code class="lang-C#">
 var effectParams = new EffectParameterDeclaration[]
 {
@@ -121,7 +121,7 @@ var effect = new ShaderEffect(effectPassDeclarations, effectParams);
 </code></pre>
 <p>Make sure to set the name of the <code>EffectParameterDeclaration</code> to the name of the uniform variable.</p>
 <h2 id="texture-options">Texture Options</h2>
-<p>The options of a texture define how it is created and handled on the gpu. The engine offers the following:</p>
+<p>The options of a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Texture.html">texture </a> define how it is created and handled on the gpu. The engine offers the following:</p>
 <table>
 <thead>
 <tr>

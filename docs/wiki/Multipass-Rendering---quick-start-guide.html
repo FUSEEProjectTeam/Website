@@ -75,7 +75,7 @@ Basic knowledge about the computer graphics pipeline and shader programming.</p>
 <h2 id="what-is-multipass-rendering">What is Multipass Rendering?</h2>
 <p>Usually we have one <code>Render</code>call per frame to draw the scene to the screen. With Multipass Rendering we perform two to <em>n</em> <code>Render</code> calls, depending on what we want to achieve. A simple example is a blur effect, applied to our whole render output.<br>
 To do this we need two passes. The first one does not render to the screen but to a texture. The second one gets this render texture as input, applies the blur and renders to the screen.</p>
-<p>In more advanced scenarios like deferred rendering, it will become neccesary to render into a Framebuffer Object, which is represented as a <code>RenderTarget</code> in FUSEE and is able to store multiple textures. The instructions given here focus on the basics, the usage of <code>RenderTargets</code> are covered in [[Deferred-Rendering]].</p>
+<p>In more advanced scenarios like deferred rendering, it will become neccesary to render into a Framebuffer Object, which is represented as a <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html">RenderTarget</a> in FUSEE and is able to store multiple textures. The instructions given here focus on the basics, the usage of <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html">RenderTargets</a> are covered in [[Deferred-Rendering]].</p>
 <p>The following sections describe how to extend a standard Fusee app (for the creation see [[NuGet-Fusee]], in order to render a blurred scene, like it is described above.</p>
 <h2 id="step-by-step">Step by Step</h2>
 <h3 id="initialization">Initialization</h3>
@@ -146,7 +146,7 @@ As the last step of the initialization we wrap a SceneRenderer around our <code>
 <h3 id="rendering">Rendering</h3>
 <p>If all of our additional components are initialized we are ready to render the two passes.
 To create the correct texture on the GPU we need to set the Viewport width and height to the texture resolution we defined above (<code>_texRes</code>). The boolean parameter in the Viewport method is called <code>renderToScreen</code>. If we render to a texture we set this to false, to tell the engine it shouldn't adjust the projection matrix. To be able to set the widht and height back to the window size we cache the values first.<br>
-To render the first pass, all we need to do now is to hand the <code>_renderTex</code> over to the <code>Render</code> call in <code>RenderAFrame</code>, to let the engine know we want to render into the texture and not to the screen:</p>
+To render the first pass, all we need to do now is to hand the <code>_renderTex</code> over to the <code>Render</code> call in <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame</a>`, to let the engine know we want to render into the texture and not to the screen:</p>
 <pre><code class="lang-C#">var width = Width;
 var height = Height;
 RC.Viewport(0, 0, _texRes, _texRes, false);

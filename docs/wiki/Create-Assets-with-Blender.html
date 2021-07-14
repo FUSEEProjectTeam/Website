@@ -78,8 +78,8 @@
 <h3 id="features-of-the-fusee-exporter">Features of the FUSEE exporter</h3>
 <p>With the FUSEE Blender Add-on for Blender, some features that are possible in Blender can be exported as FUSEE content. What exactly these are is described in the <a href="FUSEE-Exporter-Blender-Add-on.html">FUSEE Exporter Blender Add on</a> - here is a short summary:</p>
 <ul>
-<li>Parent-child relationships of Blender objects as hierarchies of <code>SceneNode</code> instances.</li>
-<li>The names of the Blender objects as the <code>Name</code> property of the respective<code> SceneNode</code> object</li>
+<li>Parent-child relationships of Blender objects as hierarchies of <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> instances.</li>
+<li>The names of the Blender objects as the <code>Name</code> property of the respective <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> object</li>
 <li>3D geometries as <code>mesh</code>
 <ul>
 <li>corner positions (<code>vertices</code>)</li>
@@ -89,7 +89,7 @@
 </ul>
 </li>
 <li>Position, rotation and scaling relative to the parent settings and
-to the coordinate origin (pivot point) as <code>Transform</code></li>
+to the coordinate origin (pivot point) as <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">Transform</a></li>
 <li>Colors from the Blender material settings for Principled BSDF or Diffuse BSDF Nodes</li>
 </ul>
 <h2 id="models-as-assets">Models as assets</h2>
@@ -99,13 +99,13 @@ to the coordinate origin (pivot point) as <code>Transform</code></li>
 <li>Exports the scene as a .fus file</li>
 <li>Copy the .fus file into the &quot;Assets&quot; subfolder of your FUSEE project</li>
 </ul>
-<p>Assets added in this way can then be accessed in a FUSEE application using the method <code>AssetStorage.Get&lt;&gt;()</code>. The method must be written in angle brackets (<code>&lt;&gt;</code>), the type and the name must be passed in the method parameter list (<code>()</code>).</p>
-<p>In our case, a .fus file always contains an object of the type <code>SceneContainer</code>.
+<p>Assets added in this way can then be accessed in a FUSEE application using the method <a href="https://fusee3d.org/api/Fusee.Base.Core.AssetStorage.html#Fusee_Base_Core_AssetStorage_GetAsset__1_System_String_">AssetStorage.Get&lt;&gt;()</a>. The method must be written in angle brackets (<code>&lt;&gt;</code>), the type and the name must be passed in the method parameter list (<code>()</code>).</p>
+<p>In our case, a .fus file always contains an object of the type <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a>.
 The name of the asset corresponds to the file name (WITH file name extension).</p>
 <blockquote>
 <p>👨‍🔧 <strong>TODO</strong></p>
 <ul>
-<li><p>Replaces the call in the <code>Init</code> method</p>
+<li><p>Replaces the call in the <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_Init">Init()</a> method</p>
 <pre><code class="lang-C">_scene = CreateScene();
 </code></pre>
 </li>
@@ -133,17 +133,17 @@ let's look at the contents of the .fus file after loading it in the application.
 <p>Since we no longer create the scene in the code itself, we have to define the components to which the we want to access. We can do that by take advantage of the hierarchy, for example, access the third grandchildren object in the first child of the fifth Object in the scene.</p>
 <p>However, it is easier to identify the objects by their names and after loading them The scene simply looks for the components in the objects whose names we know.</p>
 <h4 id="change-position--rotation--orientation">Change position / rotation / orientation</h4>
-<p>For example, to find transform component of the right rear wheel in the above example scene, it can be searched for in the scene using the following call in the <code>Init</code> method and saved in the <code>_rightRearTransform</code> field:</p>
+<p>For example, to find transform component of the right rear wheel in the above example scene, it can be searched for in the scene using the following call in the <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_Init">Init()</a> method and saved in the <code>_rightRearTransform</code> field:</p>
 <pre><code class="lang-C">  private Transform _rightRearTransform;
 ...
   _rightRearTransform = _scene.Children.FindNodes(node =&gt; node.Name == &quot;RightRearWheel&quot;)?.FirstOrDefault()?.GetTransform();
 </code></pre>
 <p>The statement put together in one line says something like:</p>
 <ul>
-<li>Comb through the hierarchy of all objects in the scene (<code>_scene.Children.FindNodes</code>).</li>
+<li>Comb through the hierarchy of all objects in the scene <a href="https://fusee3d.org/api/Fusee.Xene.SceneFinderExtensions.html#Fusee_Xene_SceneFinderExtensions_FindNodes__1___0_System_Predicate___0__">_scene.Children.FindNodes</a>.</li>
 <li>Search for nodes whose name is &quot;RightRearWheel&quot; (<code>node =&gt; node.Name ==&quot; RightRearWheel &quot;</code>)</li>
 <li>Of the nodes found in this way, take the first one, if one exists (<code>.FirstOrDefault ()</code>).</li>
-<li>Deliver the transform component contained there (<code>.GetTransform ()</code>)</li>
+<li>Deliver the transform component contained there (<a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetTransform_Fusee_Engine_Core_Scene_SceneNode_System_Int32_">.GetTransform ()</a>)</li>
 </ul>
 <p>The strange-looking &quot;<code>? .</code> &quot;operators are called <em>Elvis-Operator</em>. And mean
 that only the object returned in the preceding call should be accessed,
@@ -152,7 +152,7 @@ So if no object was found, that has the name you are looking for OR an object wa
 and not in a crash because an attempt was made to look for a
 Transform component.</p>
 <h4 id="change-colors">Change colors</h4>
-<p>If a material has been assigned to an object in Blender, it has a <code>SurfaceEffect</code> component when it is exported via the FUS exporter when imported into FUSEE. These can be used to change the coloring parameters such as the diffuse color:</p>
+<p>If a material has been assigned to an object in Blender, it has a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.SurfaceEffect.html">SurfaceEffect</a> component when it is exported via the FUS exporter when imported into FUSEE. These can be used to change the coloring parameters such as the diffuse color:</p>
 <pre><code class="lang-C">  private SurfaceEffect _rightRearEffect;
 ...
   _rightRearEffect = _scene.Children.FindNodes(node =&gt; node.Name == &quot;RightRearWheel&quot;)?.FirstOrDefault()?.GetComponent&lt;SurfaceEffect&gt;();

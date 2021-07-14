@@ -80,7 +80,7 @@ To render the lighted scene to the screen we do not use the original scene geome
 This kind of render pipeline can also easily be extended by various effects like SSAO (Screen Space Ambient Occlusion) or FXAA (Fast Approximate Anti Aliasing).</p>
 <p>The following sections are focused on how to setup and use deferred Rendering in FUSEE. For a more detailed background and a description on how deferred rendering works with plane OpenGL we refer to this <a href="https://learnopengl.com/Advanced-Lighting/Deferred-Shading">tutorial</a> on learnopengl.com.</p>
 <h2 id="application-setup-and-built-in-pipeline-customizations">Application setup and built-in pipeline customizations</h2>
-<p>Every FUSEE Application is able to render deferred by just using a <code>SceneRendererDeferred</code> instead of a <code>SceneRendererForward</code> and that's just it. The G-Buffer used in this scene renderer is composed as follows (geometric information is stored in screen space):</p>
+<p>Every FUSEE Application is able to render deferred by just using a <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a> instead of a <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererForward.html">SceneRendererForward</a> and that's just it. The G-Buffer used in this scene renderer is composed as follows (geometric information is stored in screen space):</p>
 <p>Geometric information</p>
 <ul>
 <li>Position  (x, y, z, w)</li>
@@ -98,46 +98,12 @@ This kind of render pipeline can also easily be extended by various effects like
 </ul>
 <p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Deferred-Rendering/GBuffer.png" alt="The FUSEE GBuffer"></p>
 <p>The image above shows the G-Buffer textures as follows (top to bottom and left to right): position, normal, albedo, specular.</p>
-<p>Additionally the <code>SceneRendererDeferred</code> offers some public parameters to customize the rendering output and the the pipeline itself:</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th style="text-align: left;">Functionality</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TexRes</td>
-<td style="text-align: left;">The texture resolution in pixel, that is used for the G-Buffer textures.</td>
-</tr>
-<tr>
-<td>ShadowMapRes</td>
-<td style="text-align: left;">The texture resolution in pixel, that is used to create the shadow maps for light sources that cast shadows. Note that shadow casting is only available with deferred rendering.</td>
-</tr>
-<tr>
-<td>FxaaOn</td>
-<td style="text-align: left;">Boolean, that controls whether the render output is anti aliased using FXAA. This is done in an additional pass that is turned of if this is set to false.</td>
-</tr>
-<tr>
-<td>SsaoOn</td>
-<td style="text-align: left;">Boolean, that controls whether SSAO is calculated. This is done in an additional pass that is turned of if this is set to false. In this case the ambient component of the lighting is a static value.</td>
-</tr>
-<tr>
-<td>NoOfCascades</td>
-<td style="text-align: left;">This int is only relevant for the shadow calculation of parallel lights. Details will be covered in the <a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Light-and-Shadow">Light and Shadow</a> Wiki page.</td>
-</tr>
-<tr>
-<td>PssmLambda</td>
-<td style="text-align: left;">This float is only relevant for the shadow calculation of parallel lights. Details will be covered in the <a href="https://github.com/FUSEEProjectTeam/Fusee/wiki/Light-and-Shadow">Light and Shadow</a> Wiki page.</td>
-</tr>
-</tbody>
-</table>
-<p>Additionally you can customize the background color, as in forward rendered apps, via <code>RC.ClearColor</code>. This color can be animated in <code>RenderAFrame</code>.</p>
+<p>Additionally the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a> offers some public parameters to customize the rendering output and the the pipeline itself.</p>
+<p>Additionally you can customize the background color, as in forward rendered apps, via <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_ClearColor">RC.ClearColor</a>. This color can be animated in <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame</a>.</p>
 <h2 id="the-g-buffer-in-fusee-rendertarget">The G-Buffer in FUSEE: RenderTarget</h2>
-<p>The object we use to abstract the G-Buffer in the engine is called <code>RenderTarget</code>. If we create a new instance of this type we have to give the constructor a texture resolution. This ensures, that all our G-Buffer textures will have the same size, which is mandatory here.</p>
-<p>The heart of the <code>RenderTarget</code> is the <code>RenderTextures</code> array. We can fill this by using the appropriate methods. For a albedo texture this is <code>SetAlbedoTex</code>, for a depth texture <code>SetDepthTex</code> and so on. Those calls will create a <code>WritableTexture</code> with the correct format for their type.</p>
-<p>A <code>RenderTarget</code> is used in the Geometry Pass in the <code>SceneRendererDeferred</code>, but we may also use it with forward rendering directly in a FUSEE Application by calling <code>Render(renderContext, renderTarget)</code> or in a self-made SceneRenderer by calling <code>RenderContext.SetRenderTarget(renderTarget)</code>. If a render target is set, a Framebuffer Object is created on the GPU and its textures are bound. In the last two mentioned cases we have to make sure to use a appropriate fragment shader, that does not have a single output color but as much as our <code>RenderTarget</code> has textures. For a complete G-Buffer it may look like this:</p>
+<p>The object we use to abstract the G-Buffer in the engine is called <a href="[RenderTarget](https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html)">RenderTarget</a>. If we create a new instance of this type we have to give the constructor a texture resolution. This ensures, that all our G-Buffer textures will have the same size, which is mandatory here.</p>
+<p>The heart of the <a href="[RenderTarget](https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html)">RenderTarget</a> is the <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html#Fusee_Engine_Core_RenderTarget_RenderTextures">RenderTextures</a> array. We can fill this by using the appropriate methods. For a albedo texture this is <code>SetAlbedoTex</code>, for a depth texture <code>SetDepthTex</code> and so on. Those calls will create a <code>WritableTexture</code> with the correct format for their type.</p>
+<p>A <a href="[RenderTarget](https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html)">RenderTarget</a> is used in the Geometry Pass in the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a>, but we may also use it with forward rendering directly in a FUSEE Application by calling <code>Render(renderContext, renderTarget)</code> or in a self-made SceneRenderer by calling <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Core_RenderTarget_">RenderContext.SetRenderTarget(renderTarget)</a>. If a render target is set, a Framebuffer Object is created on the GPU and its textures are bound. In the last two mentioned cases we have to make sure to use a appropriate fragment shader, that does not have a single output color but as much as our <a href="[RenderTarget](https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html)">RenderTarget</a> has textures. For a complete G-Buffer it may look like this:</p>
 <pre><code class="lang-glsl">
 layout (location = 0) out vec4 PositionTexture;
 layout (location = 1) out vec4 NormalTexture;
@@ -146,7 +112,7 @@ layout (location = 3) out vec4 SpecularTexture;
 layout (location = 4) out vec4 DepthTexture;
 
 </code></pre>
-<p>Note that we do not have to handle the shaders ourself if we use the <code>SceneRendererDeferred</code>!</p>
+<p>Note that we do not have to handle the shaders ourself if we use the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a>!</p>
 </article>
           </div>
           

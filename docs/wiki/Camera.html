@@ -70,78 +70,77 @@
 <h1 id="camera">Camera</h1>
 
 <h2 id="prerequisites"><strong>[Prerequisites]</strong></h2>
-<p>Understood FUSEE's Scene Graph concept, especially how <code>SceneNodeContainers</code> and <code>SceneComponentContainers</code> work together.<br>
+<p>Understood FUSEE's Scene Graph concept, especially how <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> and <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a> work together.<br>
 Basic knowledge on matrix transformations in Computer Graphics (View and Projection matrices).</p>
 <h2 id="using-cameras-in-the-scene-graph">Using Cameras in the Scene Graph</h2>
-<p>Building a scene from code or loading a scene from a fus file will result in a <code>SceneContainer</code>, containing Nodes and Components.<br>
-To render the scene we can add a Camera to the <code>SceneContainer</code>. Note that this is no must but, for example, makes the implementation of follow or orbit cameras much easier (see the <a href="#Examples">Examples section</a>).</p>
-<p>A camera consists of a <code>SceneNodeContainer</code> which contains a <code>TransformComponent</code> and a <code>CameraComponent</code>.</p>
-<h3 id="transformcomponent">TransformComponent</h3>
-<p>As with every other <code>TransformComponent</code> the Translation, Rotation and Scale values are relative to the ones of the parent nodes.
+<p>Building a scene from code or loading a scene from a fus file will result in a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a>, containing Nodes and Components.<br>
+To render the scene we can add a Camera to the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a>. Note that this is no must but, for example, makes the implementation of follow or orbit cameras much easier (see the <a href="#Examples">Examples section</a>).</p>
+<p>A camera consists of a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> which contains a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">Transform</a> and a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Camera</a>.</p>
+<h3 id="transform">Transform</h3>
+<p>As with every other <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">Transform</a> the Translation, Rotation and Scale values are relative to the ones of the parent nodes.
 The cumulated Translation and Rotation values describe the cameras position in world space and therefore are the basis for calculating the View matrix (which is done in the background).</p>
-<h3 id="cameracomponent">CameraComponent</h3>
-<p>To see the properties of the CameraComponent click <a href="http://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">here</a> to get to the API documentation of the camera.</p>
+<h3 id="camera-1">Camera</h3>
+<p>You can find the properties of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Camera</a> in the API documentation of the camera.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="creating-the-camera-scenenodecontainer">Creating the Camera SceneNodeContainer</h3>
-<p>The constructor of the <code>CameraComponent</code> expects a projection method, the distances to the clipping planes and the field of view in radians.<br>
-When creating the <code>TransformComponent</code> we can add a Scale value. This doesn't have an effect on the View matrix calculation, but can be useful if the camera node has a <code>Mesh</code> attached.</p>
-<pre><code class="lang-C#">//1. Create a TransformComponent and a CameraComponent.
-private TransformComponent _mainCamTransform;
-private CameraComponent _mainCam = new CameraComponent(ProjectionMethod.PERSPECTIVE, 1, 1000, M.PiOver4);
+<p>The constructor of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Camera</a> expects a projection method, the distances to the clipping planes and the field of view in radians.<br>
+When creating the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Transform.html">Transform</a> we can add a Scale value. This doesn't have an effect on the View matrix calculation, but can be useful if the camera node has a <code>Mesh</code> attached.</p>
+<pre><code class="lang-C#">//1. Create a Transform and a Camera.
+private Transform _mainCamTransform;
+private Camera _mainCam = new Camera(ProjectionMethod.Perspective, 1, 1000, M.PiOver4);
 
-public override async Task&lt;bool&gt; Init()
+public override void Init()
 {
-  _mainCam.Viewport = new float4(0, 0, 100, 100);
-  _mainCam.BackgroundColor = new float4(1, 1, 1, 1);
-  _mainCam.Layer = -1; 
+    _mainCam.Viewport = new float4(0, 0, 100, 100);
+    _mainCam.BackgroundColor = new float4(1, 1, 1, 1);
+    _mainCam.Layer = -1;
 
-  _mainCamTransform = _guiCamTransform = new TransformComponent()
-  {
-      Rotation = float3.Zero,
-      Translation = new float3(0, 2, -10),
-      Scale = new float3(0.33f, 0.33f, 0.5f)
-  };
-
-  [...]
-
-  //2. Create the SceneNodeContainer.
-  var cam = new SceneNodeContainer()
-  {
-      Name = &quot;MainCam&quot;,
-      Components = new List&lt;SceneComponentContainer&gt;()
-      {
-          _mainCamTransform,
-          _mainCam,
-          new Cube()
-      },
-      Children = new ChildList()
-      {
-          new SceneNodeContainer()
-          {
-              Components = new List&lt;SceneComponentContainer&gt;()
-              {
-                  new TransformComponent()
-                  {
-                      Scale = new float3(1, 1, 1),
-                      Translation = new float3(0,0,-1.4f)
-                  },
-                  new Cube()
-              }
-          }
-      }
-  };
-
-  //3. Add the camera to the scene.
-  _rocketScene.Children.Add(cam);
-
-  [...]
-
+    _mainCamTransform = _guiCamTransform = new Transform()
+    {
+        Rotation = float3.Zero,
+        Translation = new float3(0, 2, -10),
+        Scale = new float3(0.33f, 0.33f, 0.5f)
+    };
+    
+    [...]
+    
+    //2. Create the SceneNodeContainer.
+    var cam = new SceneNode()
+    {
+        Name = &quot;MainCam&quot;,
+        Components = new List&lt;SceneContainer&gt;()
+        {
+            _mainCamTransform,
+            _mainCam,
+            new Cube()
+        },
+        Children = new ChildList()
+        {
+            new SceneNode()
+            {
+                Components = new List&lt;SceneContainer&gt;()
+                {
+                    new Transform()
+                    {
+                        Scale = new float3(1, 1, 1),
+                        Translation = new float3(0,0,-1.4f)
+                    },
+                    new Cube()
+                }
+            }
+        }
+    };
 }
+
+//3. Add the camera to the scene.
+_rocketScene.Children.Add(cam);
+
+[...]
 </code></pre>
 <h3 id="orbit-camera">Orbit Camera</h3>
-<p>In the code below we use the method <code>TransformComponent.RotateAround</code> to create an orbit camera. This method expects a point (<code>float3</code>), that is used as the rotation center, and a rotation in angle-axis representation (<code>float3</code> up-axis, <code>float</code> angle).</p>
+<p>In the code below we use the method <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_RotateAround_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_Fusee_Math_Core_float3_">Transform.RotateAround</a> to create an orbit camera. This method expects a point (<a href="https://fusee3d.org/api/Fusee.Math.Core.float3.html">float3</a>), that is used as the rotation center, and a rotation in angle-axis representation (<a href="https://fusee3d.org/api/Fusee.Math.Core.float3.html">float3</a> up-axis, <code>float</code> angle).</p>
 <blockquote>
-<p>💡 <strong>Note:</strong> In the example the rotation center is <code>(0, 0, 0)</code>, in practice it is useful to take the world space position of the object we want to rotate around. We can get this position for example by using <code>SceneNodeContainer.GetGlobalTranslation()</code>.</p>
+<p>💡 <strong>Note:</strong> In the example the rotation center is <code>(0, 0, 0)</code>, in practice it is useful to take the world space position of the object we want to rotate around. We can get this position for example by using <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetGlobalTranslation_Fusee_Engine_Core_Scene_SceneNode_">SceneNodeContainer.GetGlobalTranslation()</a>.</p>
 </blockquote>
 <pre><code class="lang-C#">public override void RenderAFrame()
 {
@@ -155,12 +154,12 @@ public override async Task&lt;bool&gt; Init()
 }
 </code></pre>
 <blockquote>
-<p>💡 <strong>Note:</strong> We can also achive achieve an orbit camera by not rotating the camera itself, but by placing it under a <code>SceneNodeContainer</code>, which serves as a pivot point.<br>
+<p>💡 <strong>Note:</strong> We can also achive achieve an orbit camera by not rotating the camera itself, but by placing it under a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneNode.html">SceneNodeContainer</a>, which serves as a pivot point.<br>
 In this case we rotate the pivot around its origin. This method may prove more stable against cummulative rounding errors.</p>
 </blockquote>
 <h3 id="follower-camera">Follower Camera</h3>
-<p>A follower Camera can be achieved simply by adding the Camera <code>SceneNodeContainer</code> as a child to the object we want it to follow instead of putting it directly under the <code>SceneContainer</code> itself.</p>
-<pre><code class="lang-C#">public override async Task&lt;bool&gt; Init()
+<p>A follower Camera can be achieved simply by adding the Camera <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneNode.html">SceneNodeContainer</a> as a child to the object we want it to follow instead of putting it directly under the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a> itself.</p>
+<pre><code class="lang-C#">public override void Init()
 {
   [...]
 
@@ -169,7 +168,7 @@ In this case we rotate the pivot around its origin. This method may prove more s
 }
 </code></pre>
 <h3 id="first-person-camera">First Person Camera</h3>
-<p>To achieve a fps camera we can use <code>TransformComponent.FpsView()</code>. This method will modify the <code>Translation</code> and <code>Rotation</code> of the camera according to the parameters we pass.
+<p>To achieve a fps camera we can use <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_FpsView_Fusee_Engine_Core_Scene_Transform_System_Single_System_Single_System_Single_System_Single_System_Single_">Transform.FpsView()</a>. This method will modify the <code>Translation</code> and <code>Rotation</code> of the camera according to the parameters we pass.
 To see the properties of the FpsView click <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_FpsView_Fusee_Engine_Core_Scene_Transform_System_Single_System_Single_System_Single_System_Single_System_Single_">here</a> to get to the API documentation.</p>
 <pre><code class="lang-C#">public override void RenderAFrame()
 {
@@ -181,7 +180,7 @@ To see the properties of the FpsView click <a href="https://fusee3d.org/api/Fuse
 }
 </code></pre>
 <h2 id="view-and-projection-matrices-without-a-scenegraph">View and Projection matrices without a SceneGraph</h2>
-<p>If we render without a scene graph or do not want to use a camera for whatever reason, we can set the Viewport, Projection matrix and View matrix directly on the <code>RenderContext</code>.</p>
+<p>If we render without a scene graph or do not want to use a camera for whatever reason, we can set the Viewport, Projection matrix and View matrix directly on the <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
 <pre><code class="lang-C#">public override void RenderAFrame()
 {
     RC.Viewport(0, 0, Width, Height);
@@ -203,13 +202,13 @@ To see the properties of the FpsView click <a href="https://fusee3d.org/api/Fuse
     [...]
 }
 </code></pre>
-<p>If we don't set the parameters at all FUSEE will use predefined default values. Those can be read from <code>RenderContext.DefaultState</code>.</p>
+<p>If we don't set the parameters at all FUSEE will use predefined default values. Those can be read from <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_DefaultState">RenderContext.DefaultState</a>.</p>
 <h2 id="-engine-developer">👷 Engine Developer</h2>
 <h3 id="implementation-details">Implementation details</h3>
-<p>In order for the camera to work in the expected way, each <code>SceneRenderer</code> – whether it is a Forward, Deferred or a custom one – needs a pre-rendering pass (one traversal of the scene). This pre-pass is responsible for collecting the <code>CameraComponents</code> and calculating the view matrix for each one.</p>
-<p>This is implemented in the <code>PrePassVisitor</code>. For each <code>CameraComponent</code> that is found while traversing the scene, we calculate the View matrix from the cumulated Model matrix by eliminating its scale (get the scale factor and divide the 3x3 rotation/scale part of the matrix by it) and inverting it (<code>view = _state.Model.Invert()</code>).<br>
-The <code>CameraComponent</code> and its View matrix is then saved as a <code>CameraResult</code> to a public list and can therefore be accessed from the <code>SceneRenderer</code>.</p>
-<p>Back in the scene renderer we render one time for each camera we've found in the pre-pass, taking the <code>CameraComponents'</code> <code>Viewport</code> the resulting Projection matrix and the <code>CameraResults'</code> View matrix into account.</p>
+<p>In order for the camera to work in the expected way, each <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererForward.html">SceneRendererForward</a> – whether it is a Forward, Deferred or a custom one – needs a pre-rendering pass (one traversal of the scene). This pre-pass is responsible for collecting the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Cameras</a> and calculating the view matrix for each one.</p>
+<p>This is implemented in the <code>PrePassVisitor</code>. For each <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Camera</a> that is found while traversing the scene, we calculate the View matrix from the cumulated Model matrix by eliminating its scale (get the scale factor and divide the 3x3 rotation/scale part of the matrix by it) and inverting it (<code>view = _state.Model.Invert()</code>).<br>
+The <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Camera</a> and its View matrix is then saved as a <code>CameraResult</code> to a public list and can therefore be accessed from the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererForward.html">SceneRendererForward</a>.</p>
+<p>Back in the scene renderer we render one time for each camera we've found in the pre-pass, taking the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Cameras</a> <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html#Fusee_Engine_Core_Scene_Camera_Viewport">Viewport</a> the resulting Projection matrix and the <code>CameraResults'</code> View matrix into account.</p>
 </article>
           </div>
           

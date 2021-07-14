@@ -75,7 +75,7 @@
 </blockquote>
 <p>A common task in realtime 3D applications is to find out which objects in the 3D scene are located below a certain 2D pixel position on the screen, e.g. where a user has just clicked with the mouse or performed a touch gesture with his finger. FUSEE provides the class
 <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/develop/src/Engine/Core/ScenePicker.cs#L155"><code>ScenePicker</code></a> which can be used to accomplish this task.</p>
-<p>Like the <code>SceneRenderer</code> and also the described <code>FindNodes()</code> method, picking performs a traversal of the scene graph, i.e. all nodes and all necessary components are visited. While in rendering the visit results in each component making its contribution to the image to be rendered and in searching a search criterion is checked during the visit, in picking - similar to rendering - the vertices of each triangle of the geometry are converted into screen coordinates so that a point-in-triangle test can then be performed.</p>
+<p>Like the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererForward.html">SceneRendererForward</a> and also the described <a href="https://fusee3d.org/api/Fusee.Xene.SceneFinderExtensions.html#Fusee_Xene_SceneFinderExtensions_FindNodes__1___0_System_Predicate___0__">FindNodes()</a> method, picking performs a traversal of the scene graph, i.e. all nodes and all necessary components are visited. While in rendering the visit results in each component making its contribution to the image to be rendered and in searching a search criterion is checked during the visit, in picking - similar to rendering - the vertices of each triangle of the geometry are converted into screen coordinates so that a point-in-triangle test can then be performed.</p>
 <p>Whenever this test is positive (point is in the triangle), a set of information is collected that can then be evaluated by the user. This information includes:</p>
 <ul>
 <li>The straight traversed node</li>
@@ -133,9 +133,9 @@ if (Mouse.LeftButton)
 <li>First, the current mouse position, which contains pixel coordinates, is converted into so-called
 2D clip coordinates. These have the origin in the center of the output window and
 at the window border respectively 1 (right and top), and -1 (left and bottom).</li>
-<li>The call to <code>_scenePicker.Pick()</code> performs the traversal and returns an unsorted list &gt; of pick results.
+<li>The call to <a href="https://fusee3d.org/api/Fusee.Engine.Core.ScenePicker.html#Fusee_Engine_Core_ScenePicker_Pick_Fusee_Engine_Core_RenderContext_Fusee_Math_Core_float2_">_scenePicker.Pick()</a> performs the traversal and returns an unsorted list &gt; of pick results.
 of pick results.</li>
-<li>In doing so, <code>Pick()</code> is passed the RenderContext as a parameter, so that it can
+<li>In doing so, <a href="https://fusee3d.org/api/Fusee.Engine.Core.ScenePicker.html#Fusee_Engine_Core_ScenePicker_Pick_Fusee_Engine_Core_RenderContext_Fusee_Math_Core_float2_">Pick()</a> is passed the RenderContext as a parameter, so that it can
 calculate valid screen coordinates from the model coordinates.</li>
 <li>If the list is not empty, it will be sorted (<code>OrderBy()</code>) according to the
 z screen coordinate of the pick events (<code>pr =&gt; pr.ClipPos.z</code>). Smaller z values come to the front. The pick
