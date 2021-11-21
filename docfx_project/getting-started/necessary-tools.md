@@ -12,12 +12,12 @@ Install blender from
 https://www.blender.org/download/
 
 
-### .NET Core SDK (_required_)
+### .NET SDK (_required_)
 
-FUSEE Apps are created using the .NET Core SDK (version 3.1 or higher) - the platform-independent .NET Framework built on
+FUSEE Apps are created using the .NET SDK (version 6 or higher) - the platform-independent .NET Framework built on
 OpenSource. 
 
-Install .NET Core from
+Install .NET **SDK** from
 https://www.microsoft.com/net/download/
 
 
