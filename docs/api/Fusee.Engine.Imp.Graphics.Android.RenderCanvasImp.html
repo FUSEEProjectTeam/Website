@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RenderCanvasImp
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -190,6 +190,33 @@ This value can be used to determine the frames per second of the application.</p
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float DeltaTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The delta time in milliseconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_DeltaTimeUpdate_" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DeltaTimeUpdate*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_DeltaTimeUpdate" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DeltaTimeUpdate">DeltaTimeUpdate</h4>
+  <div class="markdown level1 summary"><p>Gets the delta time.
+The delta time is the time that was required to render the last frame in milliseconds.
+This value can be used to determine the frames per second of the application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DeltaTimeUpdate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -431,6 +458,30 @@ This option is used to reduce &quot;Glitches&quot; during rendering.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_WindowHandle_" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.WindowHandle*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_WindowHandle" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.WindowHandle">WindowHandle</h4>
+  <div class="markdown level1 summary"><p>Window handle for the window the engine renders to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWindowHandle WindowHandle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWindowHandle.html">IWindowHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_CloseGameWindow_" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.CloseGameWindow*"></a>
@@ -508,6 +559,15 @@ This option is used to reduce &quot;Glitches&quot; during rendering.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void DoUnLoad()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_DoUpdate_" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DoUpdate*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_DoUpdate" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.DoUpdate">DoUpdate()</h4>
+  <div class="markdown level1 summary"><p>Does the update of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DoUpdate()</code></pre>
   </div>
   <a id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_OpenLink_" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.OpenLink*"></a>
   <h4 id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_OpenLink_System_String_" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.OpenLink(System.String)">OpenLink(String)</h4>
@@ -768,6 +828,29 @@ After Present is called the render buffers get flushed.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.InitEventArgs.html">InitEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Imp_Graphics_Android_RenderCanvasImp_Update" data-uid="Fusee.Engine.Imp.Graphics.Android.RenderCanvasImp.Update">Update</h4>
+  <div class="markdown level1 summary"><p>Occurs when [update].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RenderEventArgs&gt; Update</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.RenderEventArgs.html">RenderEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

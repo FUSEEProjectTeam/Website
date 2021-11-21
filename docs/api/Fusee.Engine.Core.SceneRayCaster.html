@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SceneRayCaster
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -201,13 +201,13 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Fusee_Engine_Core_SceneRayCaster__ctor_" data-uid="Fusee.Engine.Core.SceneRayCaster.#ctor*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRayCaster__ctor_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.Core.SceneRayCaster.#ctor(Fusee.Engine.Core.Scene.SceneContainer)">SceneRayCaster(SceneContainer)</h4>
+  <h4 id="Fusee_Engine_Core_SceneRayCaster__ctor_Fusee_Engine_Core_Scene_SceneContainer_Fusee_Engine_Common_Cull_" data-uid="Fusee.Engine.Core.SceneRayCaster.#ctor(Fusee.Engine.Core.Scene.SceneContainer,Fusee.Engine.Common.Cull)">SceneRayCaster(SceneContainer, Cull)</h4>
   <div class="markdown level1 summary"><p>The constructor to initialize a new SceneRayCaster.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SceneRayCaster(SceneContainer scene)</code></pre>
+    <pre><code class="lang-csharp hljs">public SceneRayCaster(SceneContainer scene, Cull cullMode = Cull.None)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -225,42 +225,23 @@
         <td><p>The <a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a> to use.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="Fusee_Engine_Core_SceneRayCaster_Direction_" data-uid="Fusee.Engine.Core.SceneRayCaster.Direction*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRayCaster_Direction" data-uid="Fusee.Engine.Core.SceneRayCaster.Direction">Direction</h4>
-  <div class="markdown level1 summary"><p>The direction of the ray (in world space).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Direction { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><a class="xref" href="Fusee.Engine.Common.Cull.html">Cull</a></td>
+        <td><span class="parametername">cullMode</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_SceneRayCaster_Origin_" data-uid="Fusee.Engine.Core.SceneRayCaster.Origin*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRayCaster_Origin" data-uid="Fusee.Engine.Core.SceneRayCaster.Origin">Origin</h4>
-  <div class="markdown level1 summary"><p>The origin of the ray (in world space).</p>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_Engine_Core_SceneRayCaster_CullMode_" data-uid="Fusee.Engine.Core.SceneRayCaster.CullMode*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRayCaster_CullMode" data-uid="Fusee.Engine.Core.SceneRayCaster.CullMode">CullMode</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Engine.Common.Cull.html">Cull</a> mode to use by the SceneRayCaster</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Origin { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Cull CullMode { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,7 +253,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><a class="xref" href="Fusee.Engine.Common.Cull.html">Cull</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_SceneRayCaster_Ray_" data-uid="Fusee.Engine.Core.SceneRayCaster.Ray*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRayCaster_Ray" data-uid="Fusee.Engine.Core.SceneRayCaster.Ray">Ray</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a> to check intersections with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rayf Ray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -318,13 +323,13 @@
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">Fusee.Xene.Viserator&lt;Fusee.Engine.Core.RayCastResult, Fusee.Engine.Core.SceneRayCaster.RayCasterState, Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.InitState()</span></div>
   <a id="Fusee_Engine_Core_SceneRayCaster_RayCast_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayCast*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRayCaster_RayCast_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayCast(Fusee.Math.Core.float3,Fusee.Math.Core.float3)">RayCast(float3, float3)</h4>
+  <h4 id="Fusee_Engine_Core_SceneRayCaster_RayCast_Fusee_Math_Core_Rayf_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayCast(Fusee.Math.Core.Rayf)">RayCast(Rayf)</h4>
   <div class="markdown level1 summary"><p>Returns a collection of objects that are hit by the ray and that can be iterated over.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RayCastResult&gt; RayCast(float3 origin, float3 direction)</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RayCastResult&gt; RayCast(Rayf ray)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -337,16 +342,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td><span class="parametername">origin</span></td>
-        <td><p>The origin of the ray (in world space).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td><span class="parametername">direction</span></td>
-        <td><p>The direction of the ray (in world space).</p>
-</td>
+        <td><a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

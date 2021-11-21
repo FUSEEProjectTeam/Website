@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IRenderContextImp
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -147,6 +147,30 @@ component values ranging from 0.0f to 1.0f.</p>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_ClearDepth_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This is the depth (z-) value that will be copied to all pixels in the depth (z-) buffer when Clear is called on the render context.</p>
 </div>
+  <a id="Fusee_Engine_Common_IRenderContextImp_FuseePlatformId_" data-uid="Fusee.Engine.Common.IRenderContextImp.FuseePlatformId*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_FuseePlatformId" data-uid="Fusee.Engine.Common.IRenderContextImp.FuseePlatformId">FuseePlatformId</h4>
+  <div class="markdown level1 summary"><p>Constant id that describes the renderer. This can be used in shaders to do platform dependent things.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FuseePlatformId FuseePlatformId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.FuseePlatformId.html">FuseePlatformId</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="Fusee_Engine_Common_IRenderContextImp_AttacheTextureToFbo_" data-uid="Fusee.Engine.Common.IRenderContextImp.AttacheTextureToFbo*"></a>
@@ -274,6 +298,87 @@ Use this function as a color channel filter for the final image.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_ConnectBufferToShaderStorage_" data-uid="Fusee.Engine.Common.IRenderContextImp.ConnectBufferToShaderStorage*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_ConnectBufferToShaderStorage_Fusee_Engine_Common_IShaderHandle_Fusee_Engine_Common_IStorageBuffer_System_String_" data-uid="Fusee.Engine.Common.IRenderContextImp.ConnectBufferToShaderStorage(Fusee.Engine.Common.IShaderHandle,Fusee.Engine.Common.IStorageBuffer,System.String)">ConnectBufferToShaderStorage(IShaderHandle, IStorageBuffer, String)</h4>
+  <div class="markdown level1 summary"><p>Connects the given SSBO to the currently active shader program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ConnectBufferToShaderStorage(IShaderHandle currentProgram, IStorageBuffer buffer, string ssboName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IShaderHandle.html">IShaderHandle</a></td>
+        <td><span class="parametername">currentProgram</span></td>
+        <td><p>The handle of the current shader program.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IStorageBuffer.html">IStorageBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The Storage Buffer object on the CPU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ssboName</span></td>
+        <td><p>The SSBO's name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_CreateGBufferTarget_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateGBufferTarget*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_CreateGBufferTarget_Fusee_Engine_Common_TexRes_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateGBufferTarget(Fusee.Engine.Common.TexRes)">CreateGBufferTarget(TexRes)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Fusee.Engine.Common.IRenderTarget.html">IRenderTarget</a> with the purpose of being used as CPU GBuffer representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRenderTarget CreateGBufferTarget(TexRes res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TexRes.html">TexRes</a></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>The texture resolution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRenderTarget.html">IRenderTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_CreateMeshImp_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateMeshImp*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_CreateMeshImp" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateMeshImp">CreateMeshImp()</h4>
   <div class="markdown level1 summary"><p>Creates the mesh implementation.</p>
@@ -359,6 +464,48 @@ Use this function as a color channel filter for the final image.</p>
 The result is already compiled to code executable on the GPU. <a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_SetShader_Fusee_Engine_Common_IShaderHandle_">SetShader(IShaderHandle)</a>
 to activate the result as the current shader used for rendering geometry passed to the RenderContext.</p>
 </div>
+  <a id="Fusee_Engine_Common_IRenderContextImp_CreateShaderProgramCompute_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateShaderProgramCompute*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_CreateShaderProgramCompute_System_String_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateShaderProgramCompute(System.String)">CreateShaderProgramCompute(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a shader object from compute shader source code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IShaderHandle CreateShaderProgramCompute(string cs = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cs</span></td>
+        <td><p>A string containing the compute shader source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IShaderHandle.html">IShaderHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_CreateTexture_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateTexture*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_CreateTexture_Fusee_Engine_Common_ITexture_" data-uid="Fusee.Engine.Common.IRenderContextImp.CreateTexture(Fusee.Engine.Common.ITexture)">CreateTexture(ITexture)</h4>
   <div class="markdown level1 summary"><p>Creates a new texture and binds it to the shader.</p>
@@ -572,7 +719,7 @@ the BitmapData an make them available for the shader.</p>
   </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_DeleteFrameBuffer_" data-uid="Fusee.Engine.Common.IRenderContextImp.DeleteFrameBuffer*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_DeleteFrameBuffer_Fusee_Engine_Common_IBufferHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.DeleteFrameBuffer(Fusee.Engine.Common.IBufferHandle)">DeleteFrameBuffer(IBufferHandle)</h4>
-  <div class="markdown level1 summary"><p>Free all allocated gpu memory that belong to a framebuffer object.</p>
+  <div class="markdown level1 summary"><p>Free all allocated gpu memory that belong to a frame buffer object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -599,7 +746,7 @@ the BitmapData an make them available for the shader.</p>
   </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_DeleteRenderBuffer_" data-uid="Fusee.Engine.Common.IRenderContextImp.DeleteRenderBuffer*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_DeleteRenderBuffer_Fusee_Engine_Common_IBufferHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.DeleteRenderBuffer(Fusee.Engine.Common.IBufferHandle)">DeleteRenderBuffer(IBufferHandle)</h4>
-  <div class="markdown level1 summary"><p>Free all allocated gpu memory belonging to a renderbuffer object.</p>
+  <div class="markdown level1 summary"><p>Free all allocated gpu memory belonging to a render buffer object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -620,6 +767,33 @@ the BitmapData an make them available for the shader.</p>
         <td><a class="xref" href="Fusee.Engine.Common.IBufferHandle.html">IBufferHandle</a></td>
         <td><span class="parametername">bh</span></td>
         <td><p>The platform dependent abstraction of the gpu buffer handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_DeleteStorageBuffer_" data-uid="Fusee.Engine.Common.IRenderContextImp.DeleteStorageBuffer*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_DeleteStorageBuffer_Fusee_Engine_Common_IBufferHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.DeleteStorageBuffer(Fusee.Engine.Common.IBufferHandle)">DeleteStorageBuffer(IBufferHandle)</h4>
+  <div class="markdown level1 summary"><p>Deletes the shader storage buffer on the GPU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteStorageBuffer(IBufferHandle storageBufferHandle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IBufferHandle.html">IBufferHandle</a></td>
+        <td><span class="parametername">storageBufferHandle</span></td>
+        <td><p>The buffer object.</p>
 </td>
       </tr>
     </tbody>
@@ -672,6 +846,50 @@ the BitmapData an make them available for the shader.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void DisableDepthClamp()</code></pre>
   </div>
+  <a id="Fusee_Engine_Common_IRenderContextImp_DispatchCompute_" data-uid="Fusee.Engine.Common.IRenderContextImp.DispatchCompute*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_DispatchCompute_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Engine.Common.IRenderContextImp.DispatchCompute(System.Int32,System.Int32,System.Int32,System.Int32)">DispatchCompute(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Launch the bound Compute Shader Program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DispatchCompute(int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threadGroupsX</span></td>
+        <td><p>The number of work groups to be launched in the X dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threadGroupsY</span></td>
+        <td><p>The number of work groups to be launched in the Y dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threadGroupsZ</span></td>
+        <td><p>he number of work groups to be launched in the Z dimension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_EnableDepthClamp_" data-uid="Fusee.Engine.Common.IRenderContextImp.EnableDepthClamp*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_EnableDepthClamp" data-uid="Fusee.Engine.Common.IRenderContextImp.EnableDepthClamp">EnableDepthClamp()</h4>
   <div class="markdown level1 summary"><p>The clipping behavior against the Z position of a vertex can be turned off by activating depth clamping.
@@ -683,6 +901,52 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void EnableDepthClamp()</code></pre>
   </div>
+  <a id="Fusee_Engine_Common_IRenderContextImp_GetActiveUniformsList_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetActiveUniformsList*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_GetActiveUniformsList_Fusee_Engine_Common_IShaderHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetActiveUniformsList(Fusee.Engine.Common.IShaderHandle)">GetActiveUniformsList(IShaderHandle)</h4>
+  <div class="markdown level1 summary"><p>Get a list of (uniform) shader parameters accessed by the given shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;ShaderParamInfo&gt; GetActiveUniformsList(IShaderHandle shaderProgram)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IShaderHandle.html">IShaderHandle</a></td>
+        <td><span class="parametername">shaderProgram</span></td>
+        <td><p>The shader program to query for parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Fusee.Engine.Common.ShaderParamInfo.html">ShaderParamInfo</a>&gt;</td>
+        <td><p>A list of shader parameters accessed by the shader code of the given shader program. The parameters listed here
+are the so-called uniform parameters of the shader (in contrast to the varying parameters). The list contains all
+uniform parameters that are accessed by either the vertex shader, the pixel shader, or both shaders compiled into
+the given shader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_GetBufferContent_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetBufferContent*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_GetBufferContent_Fusee_Engine_Common_Rectangle_Fusee_Engine_Common_ITextureHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetBufferContent(Fusee.Engine.Common.Rectangle,Fusee.Engine.Common.ITextureHandle)">GetBufferContent(Rectangle, ITextureHandle)</h4>
   <div class="markdown level1 summary"><p>Gets the content of the buffer.</p>
@@ -937,14 +1201,56 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Common_IRenderContextImp_GetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderParam*"></a>
-  <h4 id="Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderParam(Fusee.Engine.Common.IShaderHandle,System.String)">GetShaderParam(IShaderHandle, String)</h4>
+  <a id="Fusee_Engine_Common_IRenderContextImp_GetShaderStorageBufferList_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderStorageBufferList*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_GetShaderStorageBufferList_Fusee_Engine_Common_IShaderHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderStorageBufferList(Fusee.Engine.Common.IShaderHandle)">GetShaderStorageBufferList(IShaderHandle)</h4>
+  <div class="markdown level1 summary"><p>Get a list of shader storage buffer variables accessed by the given shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;ShaderParamInfo&gt; GetShaderStorageBufferList(IShaderHandle shaderProgram)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IShaderHandle.html">IShaderHandle</a></td>
+        <td><span class="parametername">shaderProgram</span></td>
+        <td><p>The shader program to query for parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Fusee.Engine.Common.ShaderParamInfo.html">ShaderParamInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderUniformParam*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderUniformParam(Fusee.Engine.Common.IShaderHandle,System.String)">GetShaderUniformParam(IShaderHandle, String)</h4>
   <div class="markdown level1 summary"><p>Returns an identifier for the named (uniform) parameter used in the specified shader program.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IShaderParam GetShaderParam(IShaderHandle shaderProgram, string paramName)</code></pre>
+    <pre><code class="lang-csharp hljs">IShaderParam GetShaderUniformParam(IShaderHandle shaderProgram, string paramName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -986,59 +1292,23 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
       </tr>
     </tbody>
   </table>
-  <h5 id="Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String__remarks">Remarks</h5>
+  <h5 id="Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The returned handle can be used to assign values to a (uniform) shader parameter.</p>
 </div>
-  <h5 id="Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String__seealso">See Also</h5>
+  <h5 id="Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_System_Single_">SetShaderParam(IShaderParam, Single)</a></div>
   </div>
-  <a id="Fusee_Engine_Common_IRenderContextImp_GetShaderParamList_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderParamList*"></a>
-  <h4 id="Fusee_Engine_Common_IRenderContextImp_GetShaderParamList_Fusee_Engine_Common_IShaderHandle_" data-uid="Fusee.Engine.Common.IRenderContextImp.GetShaderParamList(Fusee.Engine.Common.IShaderHandle)">GetShaderParamList(IShaderHandle)</h4>
-  <div class="markdown level1 summary"><p>Get a list of (uniform) shader parameters accessed by the given shader.</p>
+  <a id="Fusee_Engine_Common_IRenderContextImp_MemoryBarrier_" data-uid="Fusee.Engine.Common.IRenderContextImp.MemoryBarrier*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_MemoryBarrier" data-uid="Fusee.Engine.Common.IRenderContextImp.MemoryBarrier">MemoryBarrier()</h4>
+  <div class="markdown level1 summary"><p>Defines a barrier ordering memory transactions. At the moment it will insert all supported barriers.
+TODO: Define GLbitfield enum</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IList&lt;ShaderParamInfo&gt; GetShaderParamList(IShaderHandle shaderProgram)</code></pre>
+    <pre><code class="lang-csharp hljs">void MemoryBarrier()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Common.IShaderHandle.html">IShaderHandle</a></td>
-        <td><span class="parametername">shaderProgram</span></td>
-        <td><p>The shader program to query for parameters.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Fusee.Engine.Common.ShaderParamInfo.html">ShaderParamInfo</a>&gt;</td>
-        <td><p>A list of shader parameters accessed by the shader code of the given shader program. The parameters listed here
-are the so-called uniform parameters of the shader (in contrast to the varying parameters). The list contains all
-uniform parameters that are accessed by either the vertex shader, the pixel shader, or both shaders compiled into
-the given shader.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_RemoveBiTangents_" data-uid="Fusee.Engine.Common.IRenderContextImp.RemoveBiTangents*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_RemoveBiTangents_Fusee_Engine_Common_IMeshImp_" data-uid="Fusee.Engine.Common.IRenderContextImp.RemoveBiTangents(Fusee.Engine.Common.IMeshImp)">RemoveBiTangents(IMeshImp)</h4>
   <div class="markdown level1 summary"><p>Deletes the buffer associated with the mesh implementation.</p>
@@ -1128,6 +1398,60 @@ the given shader.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void RemoveColors(IMeshImp mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td><p>The mesh which buffer respectively GPU memory should be deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_RemoveColors1_" data-uid="Fusee.Engine.Common.IRenderContextImp.RemoveColors1*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_RemoveColors1_Fusee_Engine_Common_IMeshImp_" data-uid="Fusee.Engine.Common.IRenderContextImp.RemoveColors1(Fusee.Engine.Common.IMeshImp)">RemoveColors1(IMeshImp)</h4>
+  <div class="markdown level1 summary"><p>Deletes the buffer associated with the mesh implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveColors1(IMeshImp mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td><p>The mesh which buffer respectively GPU memory should be deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_RemoveColors2_" data-uid="Fusee.Engine.Common.IRenderContextImp.RemoveColors2*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_RemoveColors2_Fusee_Engine_Common_IMeshImp_" data-uid="Fusee.Engine.Common.IRenderContextImp.RemoveColors2(Fusee.Engine.Common.IMeshImp)">RemoveColors2(IMeshImp)</h4>
+  <div class="markdown level1 summary"><p>Deletes the buffer associated with the mesh implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveColors2(IMeshImp mesh)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1783,6 +2107,104 @@ Note that the Scissor test must be enabled for this to work.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetColors1_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetColors1*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetColors1_Fusee_Engine_Common_IMeshImp_System_UInt32___" data-uid="Fusee.Engine.Common.IRenderContextImp.SetColors1(Fusee.Engine.Common.IMeshImp,System.UInt32[])">SetColors1(IMeshImp, UInt32[])</h4>
+  <div class="markdown level1 summary"><p>Binds the colors onto the GL render context and assigns an ColorBuffer index to the passed <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetColors1(IMeshImp mr, uint[] colors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></td>
+        <td><span class="parametername">mr</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>The colors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>colors must not be null or empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetColors2_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetColors2*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetColors2_Fusee_Engine_Common_IMeshImp_System_UInt32___" data-uid="Fusee.Engine.Common.IRenderContextImp.SetColors2(Fusee.Engine.Common.IMeshImp,System.UInt32[])">SetColors2(IMeshImp, UInt32[])</h4>
+  <div class="markdown level1 summary"><p>Binds the colors onto the GL render context and assigns an ColorBuffer index to the passed <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetColors2(IMeshImp mr, uint[] colors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></td>
+        <td><span class="parametername">mr</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>The colors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>colors must not be null or empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetLineWidth_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetLineWidth*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_SetLineWidth_System_Single_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetLineWidth(System.Single)">SetLineWidth(Single)</h4>
   <div class="markdown level1 summary"><p>Sets the line width when drawing a mesh with primitive mode line</p>
@@ -1805,7 +2227,8 @@ Note that the Scissor test must be enabled for this to work.</p>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td><span class="parametername">width</span></td>
-        <td></td>
+        <td><p>The width of the line.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2094,7 +2517,7 @@ Note that the Scissor test must be enabled for this to work.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float2__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2131,7 +2554,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float2____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2168,7 +2591,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float3__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2205,7 +2628,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float3____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2242,7 +2665,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float4__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2279,7 +2702,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float4____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2316,7 +2739,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float4x4__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2353,7 +2776,44 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_Fusee_Math_Core_float4x4____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+a given uniform parameter name used in a shader program.</p>
+</div>
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_System_Double_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam(Fusee.Engine.Common.IShaderParam,System.Double)">SetShaderParam(IShaderParam, Double)</h4>
+  <div class="markdown level1 summary"><p>Sets the specified shader parameter to a double value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetShaderParam(IShaderParam param, double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IShaderParam.html">IShaderParam</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>The shader parameter identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The float value that should be assigned to the shader parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2390,7 +2850,7 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParam*"></a>
@@ -2427,9 +2887,54 @@ a given uniform parameter name used in a shader program.</p>
     </tbody>
   </table>
   <h5 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParam_Fusee_Engine_Common_IShaderParam_System_Single__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
+  <div class="markdown level1 remarks"><p><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html#Fusee_Engine_Common_IRenderContextImp_GetShaderUniformParam_Fusee_Engine_Common_IShaderHandle_System_String_">GetShaderUniformParam(IShaderHandle, String)</a> to see how to retrieve an identifier for
 a given uniform parameter name used in a shader program.</p>
 </div>
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParamImage_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParamImage*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParamImage_Fusee_Engine_Common_IShaderParam_Fusee_Engine_Common_ITextureHandle_Fusee_Engine_Common_TextureType_Fusee_Base_Common_ImagePixelFormat_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParamImage(Fusee.Engine.Common.IShaderParam,Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureType,Fusee.Base.Common.ImagePixelFormat)">SetShaderParamImage(IShaderParam, ITextureHandle, TextureType, ImagePixelFormat)</h4>
+  <div class="markdown level1 summary"><p>Sets a Shader Parameter to a created texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetShaderParamImage(IShaderParam param, ITextureHandle texId, TextureType texTarget, ImagePixelFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IShaderParam.html">IShaderParam</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>Shader Parameter used for texture binding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.ITextureHandle.html">ITextureHandle</a></td>
+        <td><span class="parametername">texId</span></td>
+        <td><p>An ITexture probably returned from CreateTexture() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TextureType.html">TextureType</a></td>
+        <td><span class="parametername">texTarget</span></td>
+        <td><p>The texture type, describing to which texture target the texture gets bound to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Base.Common.ImagePixelFormat.html">ImagePixelFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The internal sized format of the texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetShaderParamTexture_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParamTexture*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_SetShaderParamTexture_Fusee_Engine_Common_IShaderParam_Fusee_Engine_Common_ITextureHandle_Fusee_Engine_Common_TextureType_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetShaderParamTexture(Fusee.Engine.Common.IShaderParam,Fusee.Engine.Common.ITextureHandle,Fusee.Engine.Common.TextureType)">SetShaderParamTexture(IShaderParam, ITextureHandle, TextureType)</h4>
   <div class="markdown level1 summary"><p>Sets a Shader Parameter to a created texture.</p>
@@ -2725,6 +3230,33 @@ a given uniform parameter name used in a shader program.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_SetVertexArrayObject_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetVertexArrayObject*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_SetVertexArrayObject_Fusee_Engine_Common_IMeshImp_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetVertexArrayObject(Fusee.Engine.Common.IMeshImp)">SetVertexArrayObject(IMeshImp)</h4>
+  <div class="markdown level1 summary"><p>Binds the VertexArrayPbject onto the GL render context and assigns its index to the passed <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetVertexArrayObject(IMeshImp mr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></td>
+        <td><span class="parametername">mr</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Common_IRenderContextImp_SetVertices_" data-uid="Fusee.Engine.Common.IRenderContextImp.SetVertices*"></a>
   <h4 id="Fusee_Engine_Common_IRenderContextImp_SetVertices_Fusee_Engine_Common_IMeshImp_Fusee_Math_Core_float3___" data-uid="Fusee.Engine.Common.IRenderContextImp.SetVertices(Fusee.Engine.Common.IMeshImp,Fusee.Math.Core.float3[])">SetVertices(IMeshImp, float3[])</h4>
   <div class="markdown level1 summary"><p>Binds the vertices onto the GL render context and assigns an VertexBuffer index to the passed <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a> instance.</p>
@@ -2770,6 +3302,56 @@ a given uniform parameter name used in a shader program.</p>
       <tr>
         <td><span class="xref">System.ArgumentException</span></td>
         <td><p>Vertices must not be null or empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderContextImp_StorageBufferSetData_" data-uid="Fusee.Engine.Common.IRenderContextImp.StorageBufferSetData*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderContextImp_StorageBufferSetData__1_Fusee_Engine_Common_IStorageBuffer___0___" data-uid="Fusee.Engine.Common.IRenderContextImp.StorageBufferSetData``1(Fusee.Engine.Common.IStorageBuffer,``0[])">StorageBufferSetData&lt;T&gt;(IStorageBuffer, T[])</h4>
+  <div class="markdown level1 summary"><p>Uploads the given data to the SSBO. If the buffer is not created on the GPU by no it will be.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StorageBufferSetData&lt;T&gt;(IStorageBuffer storageBuffer, T[] data)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IStorageBuffer.html">IStorageBuffer</a></td>
+        <td><span class="parametername">storageBuffer</span></td>
+        <td><p>The Storage Buffer Object on the CPU.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data that will be uploaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The data type.</p>
 </td>
       </tr>
     </tbody>

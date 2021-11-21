@@ -8,7 +8,7 @@
     <title>Texture types and their usage </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Texture types and their usage ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -103,7 +103,7 @@ To create a <a href="https://fusee3d.org/api/Fusee.Engine.Core.WritableTexture.h
 </ul>
 <p>If we want to use a <a href="https://fusee3d.org/api/Fusee.Engine.Core.WritableTexture.html">WritableTexture</a> in an arbitrary case, <a href="https://fusee3d.org/api/Fusee.Engine.Core.WritableTexture.html#Fusee_Engine_Core_WritableTexture_CreateAlbedoTex_System_Int32_System_Int32_">CreateAlbedoTex</a> may be the safest choice. Alternatively we can call the constructor directly, but we have to pass a set of texture options (see <a href="#Texture-Options">Texture Options</a>)</p>
 <h2 id="using-textures-in-shadereffects">Using textures in ShaderEffects</h2>
-<p>To feed a texture to a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a> and use it as a uniform variable in the associated shader code,  we can pass it a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.FxParamDeclaration-1.html">EffectParameterDeclaration</a> to the constructor of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a>:</p>
+<p>To feed a texture to a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a> and use it as a uniform variable in the associated shader code,  we can pass it a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.FxParamDeclaration-1.html">FxParamDeclaration</a> to the constructor of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a>:</p>
 <pre><code class="lang-C#">
 var effectParams = new IFxParamDeclaration[]
 {
@@ -119,7 +119,7 @@ var effectParams = new IFxParamDeclaration[]
 var effect = new ShaderEffect(fxPassDeclaration, effectParams);
 
 </code></pre>
-<p>Make sure to set the name of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.FxParamDeclaration-1.html">EffectParameterDeclaration</a> to the name of the uniform variable.</p>
+<p>Make sure to set the name of the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Effects.FxParamDeclaration-1.html">FxParamDeclaration</a> to the name of the uniform variable.</p>
 <h2 id="texture-options">Texture Options</h2>
 <p>The options of a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Texture.html">texture </a> define how it is created and handled on the gpu. The engine offers the following:</p>
 <table>

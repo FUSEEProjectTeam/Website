@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class OctantD
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Engine_Core_Scene_OctantD" data-uid="Fusee.Engine.Core.Scene.OctantD" class="text-break">Class OctantD
   </h1>
-  <div class="markdown level0 summary"><p>Component that allows a SceneNode to save information from a <a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant&lt;T, K, P&gt;</a>.</p>
+  <div class="markdown level0 summary"><p>Component that allows a SceneNode to save octant information.&quot;/&gt;.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -85,8 +85,6 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
-    <div><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>, <span class="xref">System.Double</span>, <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>&gt;</div>
-    <div><a class="xref" href="Fusee.Structures.IBucket-2.html">IBucket</a>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>, <span class="xref">System.Double</span>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,7 +117,7 @@
   <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
   <h5 id="Fusee_Engine_Core_Scene_OctantD_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OctantD : SceneComponent, IComponent, IOctant&lt;double3, double, Mesh&gt;, IBucket&lt;double3, double&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class OctantD : SceneComponent, IComponent</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -133,49 +131,13 @@
     <pre><code class="lang-csharp hljs">public OctantD()</code></pre>
   </div>
   <a id="Fusee_Engine_Core_Scene_OctantD__ctor_" data-uid="Fusee.Engine.Core.Scene.OctantD.#ctor*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_OctantD__ctor_Fusee_Math_Core_double3_System_Double_Fusee_Structures_IOctant_Fusee_Math_Core_double3_System_Double_Fusee_Engine_Core_Scene_Mesh____" data-uid="Fusee.Engine.Core.Scene.OctantD.#ctor(Fusee.Math.Core.double3,System.Double,Fusee.Structures.IOctant{Fusee.Math.Core.double3,System.Double,Fusee.Engine.Core.Scene.Mesh}[])">OctantD(double3, Double, IOctant&lt;double3, Double, Mesh&gt;[])</h4>
-  <div class="markdown level1 summary"><p>Create a new instance of type Octant.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OctantD(double3 center, double size, IOctant&lt;double3, double, Mesh&gt;[] children = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">center</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">size</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>, <span class="xref">System.Double</span>, <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>&gt;[]</td>
-        <td><span class="parametername">children</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Engine_Core_Scene_OctantD__ctor_" data-uid="Fusee.Engine.Core.Scene.OctantD.#ctor*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_OctantD__ctor_Fusee_Math_Core_double3_System_Double_System_Collections_Generic_List_Fusee_Engine_Core_Scene_Mesh__Fusee_Structures_IOctant_Fusee_Math_Core_double3_System_Double_Fusee_Engine_Core_Scene_Mesh____" data-uid="Fusee.Engine.Core.Scene.OctantD.#ctor(Fusee.Math.Core.double3,System.Double,System.Collections.Generic.List{Fusee.Engine.Core.Scene.Mesh},Fusee.Structures.IOctant{Fusee.Math.Core.double3,System.Double,Fusee.Engine.Core.Scene.Mesh}[])">OctantD(double3, Double, List&lt;Mesh&gt;, IOctant&lt;double3, Double, Mesh&gt;[])</h4>
+  <h4 id="Fusee_Engine_Core_Scene_OctantD__ctor_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Engine.Core.Scene.OctantD.#ctor(Fusee.Math.Core.double3,System.Double)">OctantD(double3, Double)</h4>
   <div class="markdown level1 summary"><p>Creates a new instance of type Octant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OctantD(double3 center, double size, List&lt;Mesh&gt; payload, IOctant&lt;double3, double, Mesh&gt;[] children = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public OctantD(double3 center, double size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,16 +157,6 @@
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>&gt;</td>
-        <td><span class="parametername">payload</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>, <span class="xref">System.Double</span>, <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>&gt;[]</td>
-        <td><span class="parametername">children</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -352,30 +304,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_Scene_OctantD_Children_" data-uid="Fusee.Engine.Core.Scene.OctantD.Children*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_OctantD_Children" data-uid="Fusee.Engine.Core.Scene.OctantD.Children">Children</h4>
-  <div class="markdown level1 summary"><p>Children of this Octant. Must contain eight or null (leaf node) children.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IOctant&lt;double3, double, Mesh&gt;[] Children { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>, <span class="xref">System.Double</span>, <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>&gt;[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Engine_Core_Scene_OctantD_IsLeaf_" data-uid="Fusee.Engine.Core.Scene.OctantD.IsLeaf*"></a>
   <h4 id="Fusee_Engine_Core_Scene_OctantD_IsLeaf" data-uid="Fusee.Engine.Core.Scene.OctantD.IsLeaf">IsLeaf</h4>
   <div class="markdown level1 summary"><p>Is this octant a leaf node in the octree?</p>
@@ -420,30 +348,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Engine_Core_Scene_OctantD_Payload_" data-uid="Fusee.Engine.Core.Scene.OctantD.Payload*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_OctantD_Payload" data-uid="Fusee.Engine.Core.Scene.OctantD.Payload">Payload</h4>
-  <div class="markdown level1 summary"><p>The payload of this octant.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Mesh&gt; Payload { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -561,48 +465,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_Scene_OctantD_CreateChild_" data-uid="Fusee.Engine.Core.Scene.OctantD.CreateChild*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_OctantD_CreateChild_System_Int32_" data-uid="Fusee.Engine.Core.Scene.OctantD.CreateChild(System.Int32)">CreateChild(Int32)</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="Fusee.Structures.IOctant-3.html#Fusee_Structures_IOctant_3_CreateChild_System_Int32_">CreateChild(Int32)</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IOctant&lt;double3, double, Mesh&gt; CreateChild(int atPosInParent)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">atPosInParent</span></td>
-        <td><p>The <a class="xref" href="Fusee.Engine.Core.Scene.OctantD.html#Fusee_Engine_Core_Scene_OctantD_PosInParent">PosInParent</a> the new child has.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>, <span class="xref">System.Double</span>, <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Engine_Core_Scene_OctantD_InsideOrIntersectingFrustum_" data-uid="Fusee.Engine.Core.Scene.OctantD.InsideOrIntersectingFrustum*"></a>
   <h4 id="Fusee_Engine_Core_Scene_OctantD_InsideOrIntersectingFrustum_Fusee_Math_Core_FrustumD_" data-uid="Fusee.Engine.Core.Scene.OctantD.InsideOrIntersectingFrustum(Fusee.Math.Core.FrustumD)">InsideOrIntersectingFrustum(FrustumD)</h4>
   <div class="markdown level1 summary"><p>Checks if a viewing frustum lies within or intersects this Octant.</p>
@@ -689,101 +551,9 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_Scene_OctantD_InsideOrIntersectingPlane_" data-uid="Fusee.Engine.Core.Scene.OctantD.InsideOrIntersectingPlane*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_OctantD_InsideOrIntersectingPlane_Fusee_Math_Core_PlaneD_" data-uid="Fusee.Engine.Core.Scene.OctantD.InsideOrIntersectingPlane(Fusee.Math.Core.PlaneD)">InsideOrIntersectingPlane(PlaneD)</h4>
-  <div class="markdown level1 summary"><p>Checks if a viewing frustum lies within or intersects this Octant.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingPlane(PlaneD plane)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneD.html">PlaneD</a></td>
-        <td><span class="parametername">plane</span></td>
-        <td><p>The plane to test against.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>false if fully outside, true if inside or intersecting.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Engine_Core_Scene_OctantD_InsideOrIntersectingPlane_" data-uid="Fusee.Engine.Core.Scene.OctantD.InsideOrIntersectingPlane*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_OctantD_InsideOrIntersectingPlane_Fusee_Math_Core_PlaneF_" data-uid="Fusee.Engine.Core.Scene.OctantD.InsideOrIntersectingPlane(Fusee.Math.Core.PlaneF)">InsideOrIntersectingPlane(PlaneF)</h4>
-  <div class="markdown level1 summary"><p>Checks if a viewing frustum lies within or intersects this Octant.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingPlane(PlaneF plane)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
-        <td><span class="parametername">plane</span></td>
-        <td><p>The plane to test against.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>false if fully outside, true if inside or intersecting.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
-  </div>
-  <div>
-      <a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant&lt;T, K, P&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="Fusee.Structures.IBucket-2.html">IBucket&lt;T, K&gt;</a>
   </div>
 </article>
           </div>

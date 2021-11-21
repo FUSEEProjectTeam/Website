@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IRenderTarget
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -203,6 +203,151 @@ Careful: it is better to use a <a class="xref" href="Fusee.Engine.Common.IWritab
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.TexRes.html">TexRes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetAlbedoTex_" data-uid="Fusee.Engine.Common.IRenderTarget.SetAlbedoTex*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetAlbedoTex" data-uid="Fusee.Engine.Common.IRenderTarget.SetAlbedoTex">SetAlbedoTex()</h4>
+  <div class="markdown level1 summary"><p>Generates a albedo and specular (alpha channel) texture and sets it at the correct position in the RenderTextures Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetAlbedoTex()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetDepthTex_" data-uid="Fusee.Engine.Common.IRenderTarget.SetDepthTex*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetDepthTex_Fusee_Engine_Common_TextureCompareMode_Fusee_Engine_Common_Compare_" data-uid="Fusee.Engine.Common.IRenderTarget.SetDepthTex(Fusee.Engine.Common.TextureCompareMode,Fusee.Engine.Common.Compare)">SetDepthTex(TextureCompareMode, Compare)</h4>
+  <div class="markdown level1 summary"><p>Generates a depth texture and sets it at the correct position in the RenderTextures Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetDepthTex(TextureCompareMode texCompareMode, Compare depthCompare)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TextureCompareMode.html">TextureCompareMode</a></td>
+        <td><span class="parametername">texCompareMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.Compare.html">Compare</a></td>
+        <td><span class="parametername">depthCompare</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetEmissiveTex_" data-uid="Fusee.Engine.Common.IRenderTarget.SetEmissiveTex*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetEmissiveTex" data-uid="Fusee.Engine.Common.IRenderTarget.SetEmissiveTex">SetEmissiveTex()</h4>
+  <div class="markdown level1 summary"><p>Generates a emissive texture and sets it at the correct position in the RenderTextures Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetEmissiveTex()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetNormalTex_" data-uid="Fusee.Engine.Common.IRenderTarget.SetNormalTex*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetNormalTex" data-uid="Fusee.Engine.Common.IRenderTarget.SetNormalTex">SetNormalTex()</h4>
+  <div class="markdown level1 summary"><p>Generates a normal texture and sets it at the correct position in the RenderTextures Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetNormalTex()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetPositionTex_" data-uid="Fusee.Engine.Common.IRenderTarget.SetPositionTex*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetPositionTex" data-uid="Fusee.Engine.Common.IRenderTarget.SetPositionTex">SetPositionTex()</h4>
+  <div class="markdown level1 summary"><p>Generates a position texture and sets it at the correct position in the RenderTextures Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetPositionTex()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetSpecularTex_" data-uid="Fusee.Engine.Common.IRenderTarget.SetSpecularTex*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetSpecularTex" data-uid="Fusee.Engine.Common.IRenderTarget.SetSpecularTex">SetSpecularTex()</h4>
+  <div class="markdown level1 summary"><p>Generates a specular texture and sets it at the correct position in the RenderTextures Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetSpecularTex()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetSubsurfaceTex_" data-uid="Fusee.Engine.Common.IRenderTarget.SetSubsurfaceTex*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetSubsurfaceTex" data-uid="Fusee.Engine.Common.IRenderTarget.SetSubsurfaceTex">SetSubsurfaceTex()</h4>
+  <div class="markdown level1 summary"><p>Generates a texture containing subsurface color and strength and sets it at the correct position in the RenderTextures Array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetSubsurfaceTex()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Common_IRenderTarget_SetTexture_" data-uid="Fusee.Engine.Common.IRenderTarget.SetTexture*"></a>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_SetTexture_Fusee_Engine_Common_IWritableTexture_Fusee_Engine_Common_RenderTargetTextureTypes_" data-uid="Fusee.Engine.Common.IRenderTarget.SetTexture(Fusee.Engine.Common.IWritableTexture,Fusee.Engine.Common.RenderTargetTextureTypes)">SetTexture(IWritableTexture, RenderTargetTextureTypes)</h4>
+  <div class="markdown level1 summary"><p>Sets a RenderTexture into the correct position in the RenderTexture array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetTexture(IWritableTexture src, RenderTargetTextureTypes tex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWritableTexture.html">IWritableTexture</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source RenderTexture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.RenderTargetTextureTypes.html">RenderTargetTextureTypes</a></td>
+        <td><span class="parametername">tex</span></td>
+        <td><p>The type of the texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="Fusee_Engine_Common_IRenderTarget_DeleteBuffers" data-uid="Fusee.Engine.Common.IRenderTarget.DeleteBuffers">DeleteBuffers</h4>
+  <div class="markdown level1 summary"><p>Event that deletes unmanaged buffer objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;EventArgs&gt; DeleteBuffers</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

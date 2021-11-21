@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GridD&lt;P&gt;
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -80,6 +80,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">GridD&lt;P&gt;</span></div>
+      <div class="level2"><a class="xref" href="Fusee.PointCloud.Core.PtGrid-1.html">PtGrid&lt;TPoint&gt;</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -253,14 +254,14 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Structures_GridD_1_GridCells_" data-uid="Fusee.Structures.GridD`1.GridCells*"></a>
-  <h4 id="Fusee_Structures_GridD_1_GridCells" data-uid="Fusee.Structures.GridD`1.GridCells">GridCells</h4>
-  <div class="markdown level1 summary"><p>All grid cells as three dimensional array.</p>
+  <a id="Fusee_Structures_GridD_1_GridCellsDict_" data-uid="Fusee.Structures.GridD`1.GridCellsDict*"></a>
+  <h4 id="Fusee_Structures_GridD_1_GridCellsDict" data-uid="Fusee.Structures.GridD`1.GridCellsDict">GridCellsDict</h4>
+  <div class="markdown level1 summary"><p>All grid cells as Dictionary, using the three dimensional index as key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GridCellD&lt;P&gt;[,, ] GridCells { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int3, GridCellD&lt;P&gt;&gt; GridCellsDict { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,7 +273,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Structures.GridCellD-1.html">GridCellD</a>&lt;P&gt;[,,]</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="Fusee.Math.Core.int3.html">int3</a>, <a class="xref" href="Fusee.Structures.GridCellD-1.html">GridCellD</a>&lt;P&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -303,6 +304,33 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  <a id="Fusee_Structures_GridD_1_CreateCell_" data-uid="Fusee.Structures.GridD`1.CreateCell*"></a>
+  <h4 id="Fusee_Structures_GridD_1_CreateCell_Fusee_Math_Core_int3_" data-uid="Fusee.Structures.GridD`1.CreateCell(Fusee.Math.Core.int3)">CreateCell(int3)</h4>
+  <div class="markdown level1 summary"><p>Creates the cell for a given index with default(P) as Payload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateCell(int3 idx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Structures_GridD_1_CreateCellForItem_" data-uid="Fusee.Structures.GridD`1.CreateCellForItem*"></a>
   <h4 id="Fusee_Structures_GridD_1_CreateCellForItem_System_Func__0_Fusee_Math_Core_double3___0_" data-uid="Fusee.Structures.GridD`1.CreateCellForItem(System.Func{`0,Fusee.Math.Core.double3},`0)">CreateCellForItem(Func&lt;P, double3&gt;, P)</h4>
   <div class="markdown level1 summary"><p>Sorts a payload item into a grid cell. This method needs to determine if the respective cell already exists and create it if that's not the case.</p>
@@ -372,67 +400,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Structures_GridD_1_GetCellForPos_" data-uid="Fusee.Structures.GridD`1.GetCellForPos*"></a>
-  <h4 id="Fusee_Structures_GridD_1_GetCellForPos_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_int3__" data-uid="Fusee.Structures.GridD`1.GetCellForPos(Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.int3@)">GetCellForPos(double3, double3, double3, out int3)</h4>
-  <div class="markdown level1 summary"><p>Gets the GridCell and its index for a given position. The GridCell can be null if it hasn't been created yet.
-See <a href="https://math.stackexchange.com/questions/528501/how-to-determine-which-cell-in-a-grid-a-point-belongs-to">https://math.stackexchange.com/questions/528501/how-to-determine-which-cell-in-a-grid-a-point-belongs-to</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GridCellD&lt;P&gt; GetCellForPos(double3 gridSize, double3 gridCenter, double3 pos, out int3 cellIdx)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">gridSize</span></td>
-        <td><p>The size of the whole grid.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">gridCenter</span></td>
-        <td><p>The center of the grid.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">pos</span></td>
-        <td><p>The position to get the cell for.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></td>
-        <td><span class="parametername">cellIdx</span></td>
-        <td><p>The index of the GridCell this point falls into.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Structures.GridCellD-1.html">GridCellD</a>&lt;P&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Structures_GridD_1_GetGridNeighbourIndices_" data-uid="Fusee.Structures.GridD`1.GetGridNeighbourIndices*"></a>
   <h4 id="Fusee_Structures_GridD_1_GetGridNeighbourIndices_Fusee_Math_Core_int3_System_Int32_" data-uid="Fusee.Structures.GridD`1.GetGridNeighbourIndices(Fusee.Math.Core.int3,System.Int32)">GetGridNeighbourIndices(int3, Int32)</h4>
   <div class="markdown level1 summary"><p>Gets the indices of the direct or indirect neighbor.</p>
@@ -440,7 +407,7 @@ See <a href="https://math.stackexchange.com/questions/528501/how-to-determine-wh
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;int3&gt; GetGridNeighbourIndices(int3 startIdx, int dist = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">protected static List&lt;int3&gt; GetGridNeighbourIndices(int3 startIdx, int dist = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -519,6 +486,67 @@ See <a href="https://math.stackexchange.com/questions/528501/how-to-determine-wh
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_GridD_1_TryGetCellForPos_" data-uid="Fusee.Structures.GridD`1.TryGetCellForPos*"></a>
+  <h4 id="Fusee_Structures_GridD_1_TryGetCellForPos_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_int3__" data-uid="Fusee.Structures.GridD`1.TryGetCellForPos(Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.int3@)">TryGetCellForPos(double3, double3, double3, out int3)</h4>
+  <div class="markdown level1 summary"><p>Gets the GridCell and its index for a given position. The GridCell can be null if it hasn't been created yet.
+See <a href="https://math.stackexchange.com/questions/528501/how-to-determine-which-cell-in-a-grid-a-point-belongs-to">https://math.stackexchange.com/questions/528501/how-to-determine-which-cell-in-a-grid-a-point-belongs-to</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridCellD&lt;P&gt; TryGetCellForPos(double3 gridSize, double3 gridCenter, double3 pos, out int3 cellIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">gridSize</span></td>
+        <td><p>The size of the whole grid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">gridCenter</span></td>
+        <td><p>The center of the grid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>The position to get the cell for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></td>
+        <td><span class="parametername">cellIdx</span></td>
+        <td><p>The index of the GridCell this point falls into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.GridCellD-1.html">GridCellD</a>&lt;P&gt;</td>
         <td></td>
       </tr>
     </tbody>

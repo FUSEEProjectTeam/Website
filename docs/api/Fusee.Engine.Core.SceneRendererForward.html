@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SceneRendererForward
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -236,29 +236,6 @@ This scene renderer is used for forward rendering.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Engine_Core_SceneRendererForward__lightResults" data-uid="Fusee.Engine.Core.SceneRendererForward._lightResults">_lightResults</h4>
-  <div class="markdown level1 summary"><p>List of <a class="xref" href="Fusee.Engine.Core.LightResult.html">LightResult</a>, created by the <span class="xref">Fusee.Engine.Core.PrePassVisitor</span>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;Tuple&lt;SceneNode, LightResult&gt;&gt; _lightResults</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Tuple</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>, <a class="xref" href="Fusee.Engine.Core.LightResult.html">LightResult</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Fusee_Engine_Core_SceneRendererForward__rc" data-uid="Fusee.Engine.Core.SceneRendererForward._rc">_rc</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>, used to render the scene. This will be ignored if cameras are used.</p>
 </div>
@@ -378,30 +355,6 @@ If we render with one or more cameras this value will be overwritten by <a class
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Engine_Core_SceneRendererForward_LightViseratorResults_" data-uid="Fusee.Engine.Core.SceneRendererForward.LightViseratorResults*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRendererForward_LightViseratorResults" data-uid="Fusee.Engine.Core.SceneRendererForward.LightViseratorResults">LightViseratorResults</h4>
-  <div class="markdown level1 summary"><p>Light results, collected from the scene in the <span class="xref">Fusee.Engine.Core.PrePassVisitor</span>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Tuple&lt;SceneNode, LightResult&gt;&gt; LightViseratorResults { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Tuple</span>&lt;<a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a>, <a class="xref" href="Fusee.Engine.Core.LightResult.html">LightResult</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Engine_Core_SceneRendererForward_RenderLayer_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderLayer*"></a>
   <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderLayer" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderLayer">RenderLayer</h4>
   <div class="markdown level1 summary"><p>The RenderLayer this renderer should render.</p>
@@ -890,7 +843,7 @@ It additionally updates the view matrix of the RenderContext.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetContext(RenderContext rc)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void SetContext(RenderContext rc)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

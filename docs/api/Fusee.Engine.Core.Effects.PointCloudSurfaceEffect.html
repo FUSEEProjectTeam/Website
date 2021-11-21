@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PointCloudSurfaceEffect
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PointCloudSurfaceEffect
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect">
+  
+  
+  <h1 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect" class="text-break">Class PointCloudSurfaceEffect
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html">SurfaceEffectBase</a> for Rendering Point Clouds.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></div>
+    <div class="level2"><a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a></div>
+    <div class="level3"><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html">SurfaceEffectBase</a></div>
+    <div class="level4"><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html">SurfaceEffect</a></div>
+    <div class="level5"><span class="xref">PointCloudSurfaceEffect</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_FUSEE_MVP">SurfaceEffect.FUSEE_MVP</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_FUSEE_ITMV">SurfaceEffect.FUSEE_ITMV</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_FUSEE_MV">SurfaceEffect.FUSEE_MV</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_FUSEE_P">SurfaceEffect.FUSEE_P</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_FUSEE_ClippingPlanes">SurfaceEffect.FUSEE_ClippingPlanes</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_FUSEE_ViewportPx">SurfaceEffect.FUSEE_ViewportPx</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_Version">SurfaceEffectBase.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_Pi">SurfaceEffectBase.Pi</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_Precision">SurfaceEffectBase.Precision</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceInput">SurfaceEffectBase.SurfaceInput</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceOutput">SurfaceEffectBase.SurfaceOutput</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfVaryingFrag">SurfaceEffectBase.SurfVaryingFrag</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfVaryingVert">SurfaceEffectBase.SurfVaryingVert</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfOutFragMethod">SurfaceEffectBase.SurfOutFragMethod</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfOutVertMethod">SurfaceEffectBase.SurfOutVertMethod</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_UvIn">SurfaceEffectBase.UvIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_UvOut">SurfaceEffectBase.UvOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_VertColorIn">SurfaceEffectBase.VertColorIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_VertColorOut">SurfaceEffectBase.VertColorOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_VertColor1In">SurfaceEffectBase.VertColor1In</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_VertColor1Out">SurfaceEffectBase.VertColor1Out</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_VertColor2In">SurfaceEffectBase.VertColor2In</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_VertColor2Out">SurfaceEffectBase.VertColor2Out</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_TBNIn">SurfaceEffectBase.TBNIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_TBNOut">SurfaceEffectBase.TBNOut</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_VertIn">SurfaceEffectBase.VertIn</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_HandleFieldsAndProps">SurfaceEffectBase.HandleFieldsAndProps()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_PropertyChangedHandler_System_Object_Fusee_Engine_Core_Effects_SurfaceEffectEventArgs_System_String_">SurfaceEffectBase.PropertyChangedHandler(Object, SurfaceEffectEventArgs, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_Dispose">SurfaceEffectBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_Dispose_System_Boolean_">SurfaceEffectBase.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_ParamDecl">Effect.ParamDecl</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_RendererStates">Effect.RendererStates</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_EffectChanged">Effect.EffectChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_EffectManagerEventArgs">Effect.EffectManagerEventArgs</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_SessionUniqueIdentifier">Effect.SessionUniqueIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_SetFxParam__1_System_String___0_">Effect.SetFxParam&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_SetFxParam__1_System_Int32___0_">Effect.SetFxParam&lt;T&gt;(Int32, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_GetFxParam__1_System_String_">Effect.GetFxParam&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_Equals_System_Object_">Effect.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_Equals_Fusee_Engine_Core_Effects_Effect_">Effect.Equals(Effect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html#Fusee_Engine_Core_Effects_Effect_GetHashCode">Effect.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.Effects.html">Fusee.Engine.Core.Effects</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
+  <h5 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PointCloudSurfaceEffect : SurfaceEffect, IComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect__ctor_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect__ctor_Fusee_Engine_Core_RenderStateSet_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.#ctor(Fusee.Engine.Core.RenderStateSet)">PointCloudSurfaceEffect(RenderStateSet)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of type PointCloudSurfaceEffect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointCloudSurfaceEffect(RenderStateSet rendererStates = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderStateSet.html">RenderStateSet</a></td>
+        <td><span class="parametername">rendererStates</span></td>
+        <td><p>The renderer state set for this effect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_ViewPosIn" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.ViewPosIn">ViewPosIn</h4>
+  <div class="markdown level1 summary"><p>The in variable for the view position in the fragment shader.
+Used for paraboloid shaped points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ViewPosIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_ViewPosOut" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.ViewPosOut">ViewPosOut</h4>
+  <div class="markdown level1 summary"><p>The out variable for the view position in the vertex shader.
+Used for paraboloid shaped points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ViewPosOut</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_WorldSpacePointRadIn" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.WorldSpacePointRadIn">WorldSpacePointRadIn</h4>
+  <div class="markdown level1 summary"><p>The in variable for the point radius in the fragment shader.
+Used for paraboloid shaped points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string WorldSpacePointRadIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_WorldSpacePointRadOut" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.WorldSpacePointRadOut">WorldSpacePointRadOut</h4>
+  <div class="markdown level1 summary"><p>The out variable for the point radius in the vertex shader.
+Used for paraboloid shaped points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string WorldSpacePointRadOut</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_ColorMode_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.ColorMode*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_ColorMode" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.ColorMode">ColorMode</h4>
+  <div class="markdown level1 summary"><p>The shader shard containing the Color Mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ColorMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_DepthTex_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.DepthTex*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_DepthTex" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.DepthTex">DepthTex</h4>
+  <div class="markdown level1 summary"><p>The depth texture, used for eye dome lighting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WritableTexture DepthTex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.WritableTexture.html">WritableTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_EDLNeighbourPixels_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.EDLNeighbourPixels*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_EDLNeighbourPixels" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.EDLNeighbourPixels">EDLNeighbourPixels</h4>
+  <div class="markdown level1 summary"><p>Determines how many neighbouring pixels shall be used in the eye dome lighting calculation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EDLNeighbourPixels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_EDLStrength_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.EDLStrength*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_EDLStrength" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.EDLStrength">EDLStrength</h4>
+  <div class="markdown level1 summary"><p>The shader shard containing the strength of the eye dome lighting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EDLStrength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_PointShape_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.PointShape*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_PointShape" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.PointShape">PointShape</h4>
+  <div class="markdown level1 summary"><p>The shader shard containing the Point Size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PointShape { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_PointSize_" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.PointSize*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_PointCloudSurfaceEffect_PointSize" data-uid="Fusee.Engine.Core.Effects.PointCloudSurfaceEffect.PointSize">PointSize</h4>
+  <div class="markdown level1 summary"><p>Shape of the points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PointSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

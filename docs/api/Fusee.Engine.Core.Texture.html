@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Texture
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -568,13 +568,39 @@ in case clipping results in a smaller or an empty block.</p>
 </div>
   <a id="Fusee_Engine_Core_Texture_Dispose_" data-uid="Fusee.Engine.Core.Texture.Dispose*"></a>
   <h4 id="Fusee_Engine_Core_Texture_Dispose" data-uid="Fusee.Engine.Core.Texture.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Implementation of the <span class="xref">System.IDisposable</span> interface.</p>
+  <div class="markdown level1 summary"><p>Fire dispose mesh event</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
+  <a id="Fusee_Engine_Core_Texture_Dispose_" data-uid="Fusee.Engine.Core.Texture.Dispose*"></a>
+  <h4 id="Fusee_Engine_Core_Texture_Dispose_System_Boolean_" data-uid="Fusee.Engine.Core.Texture.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Fire dispose mesh event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Core_Texture_Finalize_" data-uid="Fusee.Engine.Core.Texture.Finalize*"></a>
   <h4 id="Fusee_Engine_Core_Texture_Finalize" data-uid="Fusee.Engine.Core.Texture.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"><p>Destructor calls <a class="xref" href="Fusee.Engine.Core.Texture.html#Fusee_Engine_Core_Texture_Dispose">Dispose()</a> in order to fire TextureChanged event.</p>

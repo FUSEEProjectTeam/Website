@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ApkAssetProvider
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -185,7 +185,7 @@
   </h3>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExists_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists*"></a>
   <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExists_System_String_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExists(System.String)">CheckExists(String)</h4>
-  <div class="markdown level1 summary"><p>Checks the existence of the identified asset using <span class="xref">System.IO.File.Exists(System.String)</span></p>
+  <div class="markdown level1 summary"><p>Checks the existence of the identified asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -221,7 +221,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if a stream can be created.</p>
+        <td><p>true if the asset exists.</p>
 </td>
       </tr>
     </tbody>
@@ -245,7 +245,8 @@
   </table>
   <a id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExistsAsync_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync*"></a>
   <h4 id="Fusee_Base_Imp_Android_ApkAssetProvider_CheckExistsAsync_System_String_" data-uid="Fusee.Base.Imp.Android.ApkAssetProvider.CheckExistsAsync(System.String)">CheckExistsAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks the existence of the identified asset</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -264,7 +265,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The asset identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -279,7 +281,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td></td>
+        <td><p>true if the asset exists.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -352,7 +355,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Stream GetStreamAsync(string id)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override async Task&lt;Stream&gt; GetStreamAsync(string id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -382,7 +385,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
         <td><p>A valid stream for reading if the asset ca be retrieved. null otherwise.</p>
 </td>
       </tr>

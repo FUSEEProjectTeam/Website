@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct FxParamDeclaration&lt;T&gt;
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -151,14 +151,38 @@ parameter's type.</p>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Name_" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Name*"></a>
-  <h4 id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Name" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The name of the parameter.</p>
+  <a id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Hash_" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Hash*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Hash" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Hash">Hash</h4>
+  <div class="markdown level1 summary"><p>Hash code of the Name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Hash { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Name_" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Name*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Name" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of the parameter. Must be unique in the used Effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,16 +223,35 @@ parameter's type.</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="eii">Explicit Interface Implementations
+  <h3 id="methods">Methods
   </h3>
-  <a id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Fusee_Engine_Core_Effects_IFxParamDeclaration_UsedInShaders_" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Fusee#Engine#Core#Effects#IFxParamDeclaration#UsedInShaders*"></a>
-  <h4 id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_Fusee_Engine_Core_Effects_IFxParamDeclaration_UsedInShaders" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.Fusee#Engine#Core#Effects#IFxParamDeclaration#UsedInShaders">IFxParamDeclaration.UsedInShaders</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_SetValue_" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.SetValue*"></a>
+  <h4 id="Fusee_Engine_Core_Effects_FxParamDeclaration_1_SetValue_System_Object_" data-uid="Fusee.Engine.Core.Effects.FxParamDeclaration`1.SetValue(System.Object)">SetValue(Object)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of this parameter declaration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">readonly IEnumerable&lt;ShaderCategory&gt; IFxParamDeclaration.UsedInShaders { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool SetValue(object val)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The new parameter value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -219,7 +262,7 @@ parameter's type.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.Effects.ShaderCategory.html">ShaderCategory</a>&gt;</td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

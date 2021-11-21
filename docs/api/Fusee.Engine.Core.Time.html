@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Time
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -117,14 +117,14 @@ static interface).</p>
 object to pass around (although there is no such use case in FUSEE code at all).
 Use the static access in all other cases to reduce typing Input.Instance
 over and over again. Use <pre><code>using static Fusee.Engine.Core.Time</code></pre> to
-directly access <a class="xref" href="Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_FramePerSecond">FramePerSecond</a>, <a class="xref" href="Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_DeltaTime">DeltaTime</a> etc.
+directly access <a class="xref" href="Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_FramesPerSecond">FramesPerSecond</a>, <a class="xref" href="Fusee.Engine.Core.Time.html#Fusee_Engine_Core_Time_DeltaTime">DeltaTime</a> etc.
 without even typing a namespace or class name.</p>
 </div>
   <h3 id="properties">Properties
   </h3>
   <a id="Fusee_Engine_Core_Time_DeltaTime_" data-uid="Fusee.Engine.Core.Time.DeltaTime*"></a>
   <h4 id="Fusee_Engine_Core_Time_DeltaTime" data-uid="Fusee.Engine.Core.Time.DeltaTime">DeltaTime</h4>
-  <div class="markdown level1 summary"><p>Provides the DeltaTime since the last frame in seconds that is effected by the TimeScale (read only).</p>
+  <div class="markdown level1 summary"><p>Provides the DeltaTime, for the <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame()</a> loop, since the last frame in seconds that is effected by the TimeScale (read only).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -146,14 +146,14 @@ without even typing a namespace or class name.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_Time_FramePerSecond_" data-uid="Fusee.Engine.Core.Time.FramePerSecond*"></a>
-  <h4 id="Fusee_Engine_Core_Time_FramePerSecond" data-uid="Fusee.Engine.Core.Time.FramePerSecond">FramePerSecond</h4>
-  <div class="markdown level1 summary"><p>Provides the peek framerate, updated every frame (read only).</p>
+  <a id="Fusee_Engine_Core_Time_DeltaTimeUpdate_" data-uid="Fusee.Engine.Core.Time.DeltaTimeUpdate*"></a>
+  <h4 id="Fusee_Engine_Core_Time_DeltaTimeUpdate" data-uid="Fusee.Engine.Core.Time.DeltaTimeUpdate">DeltaTimeUpdate</h4>
+  <div class="markdown level1 summary"><p>Provides the DeltaTime, for the <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_Update">Update()</a> loop, since the last frame in seconds that is not effected by the TimeScale (read only).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float FramePerSecond { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static float DeltaTimeUpdate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,6 +190,30 @@ without even typing a namespace or class name.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Time_FramesPerSecond_" data-uid="Fusee.Engine.Core.Time.FramesPerSecond*"></a>
+  <h4 id="Fusee_Engine_Core_Time_FramesPerSecond" data-uid="Fusee.Engine.Core.Time.FramesPerSecond">FramesPerSecond</h4>
+  <div class="markdown level1 summary"><p>Provides the peek framerate, updated every frame (read only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float FramesPerSecond { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -298,7 +322,7 @@ Bigger then 1 time passes faster.</p>
   </table>
   <a id="Fusee_Engine_Core_Time_RealDeltaTime_" data-uid="Fusee.Engine.Core.Time.RealDeltaTime*"></a>
   <h4 id="Fusee_Engine_Core_Time_RealDeltaTime" data-uid="Fusee.Engine.Core.Time.RealDeltaTime">RealDeltaTime</h4>
-  <div class="markdown level1 summary"><p>Provides the DeltaTime since the last frame in seconds that is unaffected by the TimeScale (read only).</p>
+  <div class="markdown level1 summary"><p>Provides the DeltaTime, for the <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame()</a> loop, since the last frame in seconds that is unaffected by the TimeScale (read only).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -346,12 +370,36 @@ Bigger then 1 time passes faster.</p>
   </table>
   <a id="Fusee_Engine_Core_Time_TimeDeltaTime_" data-uid="Fusee.Engine.Core.Time.TimeDeltaTime*"></a>
   <h4 id="Fusee_Engine_Core_Time_TimeDeltaTime" data-uid="Fusee.Engine.Core.Time.TimeDeltaTime">TimeDeltaTime</h4>
-  <div class="markdown level1 summary"><p>Provides the DeltaTime since the last frame in seconds that is effected by the TimeScale (read only).</p>
+  <div class="markdown level1 summary"><p>Provides the DeltaTime, for the <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame()</a> loop, since the last frame in seconds that is effected by the TimeScale (read only).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float TimeDeltaTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Time_TimeDeltaTimeUpdate_" data-uid="Fusee.Engine.Core.Time.TimeDeltaTimeUpdate*"></a>
+  <h4 id="Fusee_Engine_Core_Time_TimeDeltaTimeUpdate" data-uid="Fusee.Engine.Core.Time.TimeDeltaTimeUpdate">TimeDeltaTimeUpdate</h4>
+  <div class="markdown level1 summary"><p>Provides the DeltaTime, for the <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_Update">Update()</a> loop, since the last frame in seconds that is not effected by the TimeScale (read only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeDeltaTimeUpdate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -442,7 +490,7 @@ Bigger then 1 time passes faster.</p>
   </table>
   <a id="Fusee_Engine_Core_Time_TimeRealDeltaTime_" data-uid="Fusee.Engine.Core.Time.TimeRealDeltaTime*"></a>
   <h4 id="Fusee_Engine_Core_Time_TimeRealDeltaTime" data-uid="Fusee.Engine.Core.Time.TimeRealDeltaTime">TimeRealDeltaTime</h4>
-  <div class="markdown level1 summary"><p>Provides the DeltaTime since the last frame in seconds that is unaffected by the TimeScale (read only).</p>
+  <div class="markdown level1 summary"><p>Provides the DeltaTime, for the <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame()</a> loop, since the last frame in seconds that is unaffected by the TimeScale (read only).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

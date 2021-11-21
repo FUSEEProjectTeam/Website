@@ -1,0 +1,648 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPcRendering
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPcRendering
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.PointCloud.Common.IPcRendering">
+  
+  
+  <h1 id="Fusee_PointCloud_Common_IPcRendering" data-uid="Fusee.PointCloud.Common.IPcRendering" class="text-break">Interface IPcRendering
+  </h1>
+  <div class="markdown level0 summary"><p>Implement this interface into wpf apps that use point cloud ooc rendering.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.PointCloud.Common.html">Fusee.PointCloud.Common</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.PointCloud.Common.dll</h6>
+  <h5 id="Fusee_PointCloud_Common_IPcRendering_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPcRendering</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_PointCloud_Common_IPcRendering_CanvasImplementor_" data-uid="Fusee.PointCloud.Common.IPcRendering.CanvasImplementor*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_CanvasImplementor" data-uid="Fusee.PointCloud.Common.IPcRendering.CanvasImplementor">CanvasImplementor</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_CanvasImplementor">CanvasImplementor</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRenderCanvasImp CanvasImplementor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRenderCanvasImp.html">IRenderCanvasImp</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_ClosingRequested_" data-uid="Fusee.PointCloud.Common.IPcRendering.ClosingRequested*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_ClosingRequested" data-uid="Fusee.PointCloud.Common.IPcRendering.ClosingRequested">ClosingRequested</h4>
+  <div class="markdown level1 summary"><p>Set to true if closing the app was requested from wpf.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ClosingRequested { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_ContextImplementor_" data-uid="Fusee.PointCloud.Common.IPcRendering.ContextImplementor*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_ContextImplementor" data-uid="Fusee.PointCloud.Common.IPcRendering.ContextImplementor">ContextImplementor</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_ContextImplementor">ContextImplementor</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRenderContextImp ContextImplementor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html">IRenderContextImp</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_DoShowOctants_" data-uid="Fusee.PointCloud.Common.IPcRendering.DoShowOctants*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_DoShowOctants" data-uid="Fusee.PointCloud.Common.IPcRendering.DoShowOctants">DoShowOctants</h4>
+  <div class="markdown level1 summary"><p>Set to true if the outlines of visible octants shall be rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DoShowOctants { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_InitCameraPos_" data-uid="Fusee.PointCloud.Common.IPcRendering.InitCameraPos*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_InitCameraPos" data-uid="Fusee.PointCloud.Common.IPcRendering.InitCameraPos">InitCameraPos</h4>
+  <div class="markdown level1 summary"><p>The initial camera position. E.g. for resetting the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float3 InitCameraPos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_IsAlive_" data-uid="Fusee.PointCloud.Common.IPcRendering.IsAlive*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_IsAlive" data-uid="Fusee.PointCloud.Common.IPcRendering.IsAlive">IsAlive</h4>
+  <div class="markdown level1 summary"><p>Needed when using UI / WPF. Set to false on DeInit().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsAlive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_IsInitialized_" data-uid="Fusee.PointCloud.Common.IPcRendering.IsInitialized*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_IsInitialized" data-uid="Fusee.PointCloud.Common.IPcRendering.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>Allows to check if the app has finished its Init() call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_IsSceneLoaded_" data-uid="Fusee.PointCloud.Common.IPcRendering.IsSceneLoaded*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_IsSceneLoaded" data-uid="Fusee.PointCloud.Common.IPcRendering.IsSceneLoaded">IsSceneLoaded</h4>
+  <div class="markdown level1 summary"><p>Set to false before changing something in your scene and to false after.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSceneLoaded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_OocFileReader_" data-uid="Fusee.PointCloud.Common.IPcRendering.OocFileReader*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_OocFileReader" data-uid="Fusee.PointCloud.Common.IPcRendering.OocFileReader">OocFileReader</h4>
+  <div class="markdown level1 summary"><p>The file reader is responsible for reading the point cloud data to an Octree (LOD data strucutre used for rendering).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPtOctreeFileReader OocFileReader { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.IPtOctreeFileReader.html">IPtOctreeFileReader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_OocLoader_" data-uid="Fusee.PointCloud.Common.IPcRendering.OocLoader*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_OocLoader" data-uid="Fusee.PointCloud.Common.IPcRendering.OocLoader">OocLoader</h4>
+  <div class="markdown level1 summary"><p>The octant loader is responsible for the out of core loading of point cloud chunks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPtOctantLoader OocLoader { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.IPtOctantLoader.html">IPtOctantLoader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_ReadyToLoadNewFile_" data-uid="Fusee.PointCloud.Common.IPcRendering.ReadyToLoadNewFile*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_ReadyToLoadNewFile" data-uid="Fusee.PointCloud.Common.IPcRendering.ReadyToLoadNewFile">ReadyToLoadNewFile</h4>
+  <div class="markdown level1 summary"><p>Needed when using UI / WPF. Determines if a new file can be loaded. E.g. when</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ReadyToLoadNewFile { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_UseWPF_" data-uid="Fusee.PointCloud.Common.IPcRendering.UseWPF*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_UseWPF" data-uid="Fusee.PointCloud.Common.IPcRendering.UseWPF">UseWPF</h4>
+  <div class="markdown level1 summary"><p>Allows different logic if you use WPF (or another UI).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UseWPF { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_PointCloud_Common_IPcRendering_CloseGameWindow_" data-uid="Fusee.PointCloud.Common.IPcRendering.CloseGameWindow*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_CloseGameWindow" data-uid="Fusee.PointCloud.Common.IPcRendering.CloseGameWindow">CloseGameWindow()</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_CloseGameWindow">CloseGameWindow()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseGameWindow()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Common_IPcRendering_DeleteOctants_" data-uid="Fusee.PointCloud.Common.IPcRendering.DeleteOctants*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_DeleteOctants" data-uid="Fusee.PointCloud.Common.IPcRendering.DeleteOctants">DeleteOctants()</h4>
+  <div class="markdown level1 summary"><p>Method to delete the octants from the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteOctants()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Common_IPcRendering_DeletePointCloud_" data-uid="Fusee.PointCloud.Common.IPcRendering.DeletePointCloud*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_DeletePointCloud" data-uid="Fusee.PointCloud.Common.IPcRendering.DeletePointCloud">DeletePointCloud()</h4>
+  <div class="markdown level1 summary"><p>Method to delete the point cloud from the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeletePointCloud()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderMinProjSizeMod_" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderMinProjSizeMod*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderMinProjSizeMod" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderMinProjSizeMod">GetOocLoaderMinProjSizeMod()</h4>
+  <div class="markdown level1 summary"><p>Wrapper to get the minimal screen projected size from the app's File Loader./&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float GetOocLoaderMinProjSizeMod()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderPointThreshold_" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderPointThreshold*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderPointThreshold" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderPointThreshold">GetOocLoaderPointThreshold()</h4>
+  <div class="markdown level1 summary"><p>Wrapper to get the Point Threshold from the app's File Loader./&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetOocLoaderPointThreshold()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderRootNode_" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderRootNode*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderRootNode" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderRootNode">GetOocLoaderRootNode()</h4>
+  <div class="markdown level1 summary"><p>Wrapper to get the Root Node from the app's File Loader./&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SceneNode GetOocLoaderRootNode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderWasSceneUpdated_" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderWasSceneUpdated*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_GetOocLoaderWasSceneUpdated" data-uid="Fusee.PointCloud.Common.IPcRendering.GetOocLoaderWasSceneUpdated">GetOocLoaderWasSceneUpdated()</h4>
+  <div class="markdown level1 summary"><p>Wrapper to get the WasSceneUpdated bool from the app's File Loader./&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetOocLoaderWasSceneUpdated()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_GetRc_" data-uid="Fusee.PointCloud.Common.IPcRendering.GetRc*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_GetRc" data-uid="Fusee.PointCloud.Common.IPcRendering.GetRc">GetRc()</h4>
+  <div class="markdown level1 summary"><p>Wrapper to get the app's RenderContext.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RenderContext GetRc()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_InitApp_" data-uid="Fusee.PointCloud.Common.IPcRendering.InitApp*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_InitApp" data-uid="Fusee.PointCloud.Common.IPcRendering.InitApp">InitApp()</h4>
+  <div class="markdown level1 summary"><p>Initializes the application and prepares it for the rendering loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InitApp()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Common_IPcRendering_LoadPointCloudFromFile_" data-uid="Fusee.PointCloud.Common.IPcRendering.LoadPointCloudFromFile*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_LoadPointCloudFromFile" data-uid="Fusee.PointCloud.Common.IPcRendering.LoadPointCloudFromFile">LoadPointCloudFromFile()</h4>
+  <div class="markdown level1 summary"><p>Method to load the point cloud from an ooc file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LoadPointCloudFromFile()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Common_IPcRendering_ResetCamera_" data-uid="Fusee.PointCloud.Common.IPcRendering.ResetCamera*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_ResetCamera" data-uid="Fusee.PointCloud.Common.IPcRendering.ResetCamera">ResetCamera()</h4>
+  <div class="markdown level1 summary"><p>Method to reset the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResetCamera()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Common_IPcRendering_Run_" data-uid="Fusee.PointCloud.Common.IPcRendering.Run*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_Run" data-uid="Fusee.PointCloud.Common.IPcRendering.Run">Run()</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_Run">Run()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Run()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Common_IPcRendering_SetOocLoaderMinProjSizeMod_" data-uid="Fusee.PointCloud.Common.IPcRendering.SetOocLoaderMinProjSizeMod*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_SetOocLoaderMinProjSizeMod_System_Single_" data-uid="Fusee.PointCloud.Common.IPcRendering.SetOocLoaderMinProjSizeMod(System.Single)">SetOocLoaderMinProjSizeMod(Single)</h4>
+  <div class="markdown level1 summary"><p>Wrapper to set the minimal screen projected size in the app's File Loader./&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetOocLoaderMinProjSizeMod(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPcRendering_SetOocLoaderPointThreshold_" data-uid="Fusee.PointCloud.Common.IPcRendering.SetOocLoaderPointThreshold*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPcRendering_SetOocLoaderPointThreshold_System_Int32_" data-uid="Fusee.PointCloud.Common.IPcRendering.SetOocLoaderPointThreshold(System.Int32)">SetOocLoaderPointThreshold(Int32)</h4>
+  <div class="markdown level1 summary"><p>Wrapper to set the Point Threshold in the app's File Loader./&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetOocLoaderPointThreshold(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

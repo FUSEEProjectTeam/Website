@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct double4x4
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -138,7 +138,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double4x4(double4 row0, double4 row1, double4 row2, double4 row3)</code></pre>
+    <pre><code class="lang-csharp hljs">public double4x4(double4 row1, double4 row2, double4 row3, double4 row4)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -152,25 +152,25 @@ of methods are postfixed with &quot;RH&quot;.
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><span class="parametername">row0</span></td>
+        <td><span class="parametername">row1</span></td>
         <td><p>Top row of the matrix</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><span class="parametername">row1</span></td>
+        <td><span class="parametername">row2</span></td>
         <td><p>Second row of the matrix</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><span class="parametername">row2</span></td>
+        <td><span class="parametername">row3</span></td>
         <td><p>Third row of the matrix</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><span class="parametername">row3</span></td>
+        <td><span class="parametername">row4</span></td>
         <td><p>Bottom row of the matrix</p>
 </td>
       </tr>
@@ -183,7 +183,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double4x4(double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13, double m20, double m21, double m22, double m23, double m30, double m31, double m32, double m33)</code></pre>
+    <pre><code class="lang-csharp hljs">public double4x4(double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double m41, double m42, double m43, double m44)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,97 +197,97 @@ of methods are postfixed with &quot;RH&quot;.
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m00</span></td>
+        <td><span class="parametername">m11</span></td>
         <td><p>First item of the first row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m01</span></td>
+        <td><span class="parametername">m12</span></td>
         <td><p>Second item of the first row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m02</span></td>
+        <td><span class="parametername">m13</span></td>
         <td><p>Third item of the first row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m03</span></td>
+        <td><span class="parametername">m14</span></td>
         <td><p>Fourth item of the first row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m10</span></td>
+        <td><span class="parametername">m21</span></td>
         <td><p>First item of the second row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m11</span></td>
+        <td><span class="parametername">m22</span></td>
         <td><p>Second item of the second row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m12</span></td>
+        <td><span class="parametername">m23</span></td>
         <td><p>Third item of the second row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m13</span></td>
+        <td><span class="parametername">m24</span></td>
         <td><p>Fourth item of the second row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m20</span></td>
-        <td><p>First item of the third row of the matrix.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m21</span></td>
-        <td><p>Second item of the third row of the matrix.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m22</span></td>
-        <td><p>Third item of the third row of the matrix.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m23</span></td>
-        <td><p>First item of the third row of the matrix.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">m30</span></td>
-        <td><p>Fourth item of the fourth row of the matrix.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">m31</span></td>
-        <td><p>Second item of the fourth row of the matrix.</p>
+        <td><p>First item of the third row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">m32</span></td>
-        <td><p>Third item of the fourth row of the matrix.</p>
+        <td><p>Second item of the third row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">m33</span></td>
+        <td><p>Third item of the third row of the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">m34</span></td>
+        <td><p>First item of the third row of the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">m41</span></td>
+        <td><p>Fourth item of the fourth row of the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">m42</span></td>
+        <td><p>Second item of the fourth row of the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">m43</span></td>
+        <td><p>Third item of the fourth row of the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">m44</span></td>
         <td><p>Fourth item of the fourth row of the matrix.</p>
 </td>
       </tr>
@@ -301,7 +301,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 Identity</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly double4x4 Identity</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,31 +318,8 @@ of methods are postfixed with &quot;RH&quot;.
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Math_Core_double4x4_Row0" data-uid="Fusee.Math.Core.double4x4.Row0">Row0</h4>
-  <div class="markdown level1 summary"><p>Top row of the matrix</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double4 Row0</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Fusee_Math_Core_double4x4_Row1" data-uid="Fusee.Math.Core.double4x4.Row1">Row1</h4>
-  <div class="markdown level1 summary"><p>2nd row of the matrix</p>
+  <div class="markdown level1 summary"><p>Top row of the matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -365,7 +342,7 @@ of methods are postfixed with &quot;RH&quot;.
     </tbody>
   </table>
   <h4 id="Fusee_Math_Core_double4x4_Row2" data-uid="Fusee.Math.Core.double4x4.Row2">Row2</h4>
-  <div class="markdown level1 summary"><p>3rd row of the matrix</p>
+  <div class="markdown level1 summary"><p>2nd row of the matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -388,12 +365,35 @@ of methods are postfixed with &quot;RH&quot;.
     </tbody>
   </table>
   <h4 id="Fusee_Math_Core_double4x4_Row3" data-uid="Fusee.Math.Core.double4x4.Row3">Row3</h4>
-  <div class="markdown level1 summary"><p>Bottom row of the matrix</p>
+  <div class="markdown level1 summary"><p>3rd row of the matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double4 Row3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_double4x4_Row4" data-uid="Fusee.Math.Core.double4x4.Row4">Row4</h4>
+  <div class="markdown level1 summary"><p>Bottom row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4 Row4</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -416,7 +416,7 @@ of methods are postfixed with &quot;RH&quot;.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 Zero</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly double4x4 Zero</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -435,33 +435,9 @@ of methods are postfixed with &quot;RH&quot;.
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Math_Core_double4x4_Column0_" data-uid="Fusee.Math.Core.double4x4.Column0*"></a>
-  <h4 id="Fusee_Math_Core_double4x4_Column0" data-uid="Fusee.Math.Core.double4x4.Column0">Column0</h4>
-  <div class="markdown level1 summary"><p>The first column of this matrix</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double4 Column0 { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Math_Core_double4x4_Column1_" data-uid="Fusee.Math.Core.double4x4.Column1*"></a>
   <h4 id="Fusee_Math_Core_double4x4_Column1" data-uid="Fusee.Math.Core.double4x4.Column1">Column1</h4>
-  <div class="markdown level1 summary"><p>The second column of this matrix</p>
+  <div class="markdown level1 summary"><p>The first column of this matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -485,7 +461,7 @@ of methods are postfixed with &quot;RH&quot;.
   </table>
   <a id="Fusee_Math_Core_double4x4_Column2_" data-uid="Fusee.Math.Core.double4x4.Column2*"></a>
   <h4 id="Fusee_Math_Core_double4x4_Column2" data-uid="Fusee.Math.Core.double4x4.Column2">Column2</h4>
-  <div class="markdown level1 summary"><p>The third column of this matrix</p>
+  <div class="markdown level1 summary"><p>The second column of this matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -509,12 +485,36 @@ of methods are postfixed with &quot;RH&quot;.
   </table>
   <a id="Fusee_Math_Core_double4x4_Column3_" data-uid="Fusee.Math.Core.double4x4.Column3*"></a>
   <h4 id="Fusee_Math_Core_double4x4_Column3" data-uid="Fusee.Math.Core.double4x4.Column3">Column3</h4>
-  <div class="markdown level1 summary"><p>The fourth column of this matrix</p>
+  <div class="markdown level1 summary"><p>The third column of this matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double4 Column3 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_Column4_" data-uid="Fusee.Math.Core.double4x4.Column4*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_Column4" data-uid="Fusee.Math.Core.double4x4.Column4">Column4</h4>
+  <div class="markdown level1 summary"><p>The fourth column of this matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4 Column4 { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Transform
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -119,17 +119,161 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Transform : SceneComponent, IComponent</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="constructors">Constructors
   </h3>
-  <h4 id="Fusee_Engine_Core_Scene_Transform_Rotation" data-uid="Fusee.Engine.Core.Scene.Transform.Rotation">Rotation</h4>
-  <div class="markdown level1 summary"><p>The rotation (orientation) of the node.</p>
+  <a id="Fusee_Engine_Core_Scene_Transform__ctor_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform__ctor" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor">Transform()</h4>
+  <div class="markdown level1 summary"><p>Creates a Transform component</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Rotation</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform()</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <a id="Fusee_Engine_Core_Scene_Transform__ctor_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform__ctor_Fusee_Math_Core_float3_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.float3,Fusee.Math.Core.float3)">Transform(float3, float3, float3)</h4>
+  <div class="markdown level1 summary"><p>Creates a Transform component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform(float3 translation, float3 rotation, float3 scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">translation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Transform__ctor_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform__ctor_Fusee_Math_Core_float3_Fusee_Math_Core_Quaternion_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.Quaternion,Fusee.Math.Core.float3)">Transform(float3, Quaternion, float3)</h4>
+  <div class="markdown level1 summary"><p>Creates a Transform component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform(float3 translation, Quaternion rotation, float3 scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">translation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Transform__ctor_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform__ctor_Fusee_Math_Core_float4x4_Fusee_Math_Core_float4x4_Fusee_Math_Core_float4x4_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor(Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)">Transform(float4x4, float4x4, float4x4)</h4>
+  <div class="markdown level1 summary"><p>Creates a Transform component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform(float4x4 translation, float4x4 rotation, float4x4 scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">translation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_Engine_Core_Scene_Transform_Matrix_" data-uid="Fusee.Engine.Core.Scene.Transform.Matrix*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform_Matrix" data-uid="Fusee.Engine.Core.Scene.Transform.Matrix">Matrix</h4>
+  <div class="markdown level1 summary"><p>The matrix (position, rotation, scale) of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 Matrix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Transform_Rotation_" data-uid="Fusee.Engine.Core.Scene.Transform.Rotation*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform_Rotation" data-uid="Fusee.Engine.Core.Scene.Transform.Rotation">Rotation</h4>
+  <div class="markdown level1 summary"><p>The rotation (orientation) of the node. Rotation is in euler angles as radiant. Rotation order is ZXY.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 Rotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -144,15 +288,64 @@
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Core_Scene_Transform_RotationMatrix_" data-uid="Fusee.Engine.Core.Scene.Transform.RotationMatrix*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform_RotationMatrix" data-uid="Fusee.Engine.Core.Scene.Transform.RotationMatrix">RotationMatrix</h4>
+  <div class="markdown level1 summary"><p>The rotation (orientation) of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 RotationMatrix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Transform_RotationQuaternion_" data-uid="Fusee.Engine.Core.Scene.Transform.RotationQuaternion*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform_RotationQuaternion" data-uid="Fusee.Engine.Core.Scene.Transform.RotationQuaternion">RotationQuaternion</h4>
+  <div class="markdown level1 summary"><p>The rotation (orientation) of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion RotationQuaternion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Transform_Scale_" data-uid="Fusee.Engine.Core.Scene.Transform.Scale*"></a>
   <h4 id="Fusee_Engine_Core_Scene_Transform_Scale" data-uid="Fusee.Engine.Core.Scene.Transform.Scale">Scale</h4>
   <div class="markdown level1 summary"><p>The scale (size) of the node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Scale</code></pre>
+    <pre><code class="lang-csharp hljs">public float3 Scale { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -167,15 +360,40 @@
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Core_Scene_Transform_ScaleMatrix_" data-uid="Fusee.Engine.Core.Scene.Transform.ScaleMatrix*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform_ScaleMatrix" data-uid="Fusee.Engine.Core.Scene.Transform.ScaleMatrix">ScaleMatrix</h4>
+  <div class="markdown level1 summary"><p>The scale (size) of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 ScaleMatrix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Transform_Translation_" data-uid="Fusee.Engine.Core.Scene.Transform.Translation*"></a>
   <h4 id="Fusee_Engine_Core_Scene_Transform_Translation" data-uid="Fusee.Engine.Core.Scene.Transform.Translation">Translation</h4>
   <div class="markdown level1 summary"><p>The translation (position) of the node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Translation</code></pre>
+    <pre><code class="lang-csharp hljs">public float3 Translation { get; set; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -186,6 +404,30 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Transform_TranslationMatrix_" data-uid="Fusee.Engine.Core.Scene.Transform.TranslationMatrix*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Transform_TranslationMatrix" data-uid="Fusee.Engine.Core.Scene.Transform.TranslationMatrix">TranslationMatrix</h4>
+  <div class="markdown level1 summary"><p>The translation (position) of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4x4 TranslationMatrix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -195,9 +437,6 @@
       <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Matrix_Fusee_Engine_Core_Scene_Transform_">SceneExtensions.Matrix(Transform)</a>
-  </div>
   <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetLocalTransformation_Fusee_Engine_Core_Scene_Transform_">SceneExtensions.GetLocalTransformation(Transform)</a>
   </div>
@@ -221,6 +460,10 @@
   </div>
   <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_FpsView_Fusee_Engine_Core_Scene_Transform_System_Single_System_Single_System_Single_System_Single_System_Single_">SceneExtensions.FpsView(Transform, Single, Single, Single, Single, Single)</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></div>
   </div>
 </article>
           </div>

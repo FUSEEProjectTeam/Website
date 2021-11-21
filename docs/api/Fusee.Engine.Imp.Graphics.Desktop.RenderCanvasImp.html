@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RenderCanvasImp
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,6 +85,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Fusee.Engine.Common.IRenderCanvasImp.html">IRenderCanvasImp</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -107,6 +108,9 @@
       <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_UnLoad">RenderCanvasImpBase.UnLoad</a>
     </div>
     <div>
+      <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_Update">RenderCanvasImpBase.Update</a>
+    </div>
+    <div>
       <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_Render">RenderCanvasImpBase.Render</a>
     </div>
     <div>
@@ -117,6 +121,9 @@
     </div>
     <div>
       <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoUnLoad">RenderCanvasImpBase.DoUnLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoUpdate">RenderCanvasImpBase.DoUpdate()</a>
     </div>
     <div>
       <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImpBase.html#Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImpBase_DoRender">RenderCanvasImpBase.DoRender()</a>
@@ -150,7 +157,7 @@
   <h6><strong>Assembly</strong>: Fusee.Engine.Imp.Graphics.Desktop.dll</h6>
   <h5 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RenderCanvasImp : RenderCanvasImpBase, IRenderCanvasImp</code></pre>
+    <pre><code class="lang-csharp hljs">public class RenderCanvasImp : RenderCanvasImpBase, IRenderCanvasImp, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -164,13 +171,13 @@
     <pre><code class="lang-csharp hljs">public RenderCanvasImp()</code></pre>
   </div>
   <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor*"></a>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_Icon_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon)">RenderCanvasImp(Icon)</h4>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_Icon_System_Boolean_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(Icon,System.Boolean)">RenderCanvasImp(Icon, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html">RenderCanvasImp</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderCanvasImp(Icon appIcon)</code></pre>
+    <pre><code class="lang-csharp hljs">public RenderCanvasImp(Icon appIcon, bool isMultithreaded = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -188,16 +195,22 @@
         <td><p>The icon for the render window.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isMultithreaded</span></td>
+        <td><p>If true OpenTk will call run() in a new Thread. The default value is false.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor*"></a>
-  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_System_Int32_System_Int32_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Int32,System.Int32)">RenderCanvasImp(Int32, Int32)</h4>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_System_Int32_System_Int32_System_Boolean_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.#ctor(System.Int32,System.Int32,System.Boolean)">RenderCanvasImp(Int32, Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.html">RenderCanvasImp</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderCanvasImp(int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public RenderCanvasImp(int width, int height, bool isMultithreaded = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,9 +234,15 @@
         <td><p>The height of the render window.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isMultithreaded</span></td>
+        <td><p>If true OpenTk will call run() in a new Thread. The default value is false.</p>
+</td>
+      </tr>
     </tbody>
   </table>
-  <h5 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_System_Int32_System_Int32__remarks">Remarks</h5>
+  <h5 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp__ctor_System_Int32_System_Int32_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The window created by this constructor is not visible. Should only be used for internal testing.</p>
 </div>
   <h3 id="properties">Properties
@@ -263,6 +282,32 @@ This value can be used to determine the frames per second of the application.</p
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float DeltaTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The delta time in milliseconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp_DeltaTimeUpdate_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.DeltaTimeUpdate*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp_DeltaTimeUpdate" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.DeltaTimeUpdate">DeltaTimeUpdate</h4>
+  <div class="markdown level1 summary"><p>Gets the delta time.
+The delta time is the time that was required to update the last frame in milliseconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DeltaTimeUpdate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -502,6 +547,30 @@ This option is used to reduce &quot;Glitches&quot; during rendering.</p>
         <td><span class="xref">System.Int32</span></td>
         <td><p>The width.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp_WindowHandle_" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.WindowHandle*"></a>
+  <h4 id="Fusee_Engine_Imp_Graphics_Desktop_RenderCanvasImp_WindowHandle" data-uid="Fusee.Engine.Imp.Graphics.Desktop.RenderCanvasImp.WindowHandle">WindowHandle</h4>
+  <div class="markdown level1 summary"><p>Window handle for the window the engine renders to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWindowHandle WindowHandle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IWindowHandle.html">IWindowHandle</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -745,6 +814,9 @@ After Present is called the render buffers get flushed.</p>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Fusee.Engine.Common.IRenderCanvasImp.html">IRenderCanvasImp</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
   </div>
 </article>
           </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GridF&lt;P&gt;
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -253,14 +253,14 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Structures_GridF_1_GridCells_" data-uid="Fusee.Structures.GridF`1.GridCells*"></a>
-  <h4 id="Fusee_Structures_GridF_1_GridCells" data-uid="Fusee.Structures.GridF`1.GridCells">GridCells</h4>
-  <div class="markdown level1 summary"><p>All grid cells as three dimensional array.</p>
+  <a id="Fusee_Structures_GridF_1_GridCellsDict_" data-uid="Fusee.Structures.GridF`1.GridCellsDict*"></a>
+  <h4 id="Fusee_Structures_GridF_1_GridCellsDict" data-uid="Fusee.Structures.GridF`1.GridCellsDict">GridCellsDict</h4>
+  <div class="markdown level1 summary"><p>All grid cells as Dictionary, using the three dimensional index as key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GridCellF&lt;P&gt;[,, ] GridCells { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int3, GridCellF&lt;P&gt;&gt; GridCellsDict { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,7 +272,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Structures.GridCellF-1.html">GridCellF</a>&lt;P&gt;[,,]</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="Fusee.Math.Core.int3.html">int3</a>, <a class="xref" href="Fusee.Structures.GridCellF-1.html">GridCellF</a>&lt;P&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>

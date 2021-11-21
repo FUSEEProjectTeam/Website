@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RenderContext
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,6 +83,10 @@ many similarities in this class' methods and properties.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">RenderContext</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -111,7 +115,7 @@ many similarities in this class' methods and properties.</p>
   <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
   <h5 id="Fusee_Engine_Core_RenderContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RenderContext</code></pre>
+    <pre><code class="lang-csharp hljs">public class RenderContext : IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -139,6 +143,31 @@ many similarities in this class' methods and properties.</p>
         <td><span class="parametername">rci</span></td>
         <td><p>The <a class="xref" href="Fusee.Engine.Common.IRenderContextImp.html">IRenderContextImp</a>.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Fusee_Engine_Core_RenderContext_DefaultEffect" data-uid="Fusee.Engine.Core.RenderContext.DefaultEffect">DefaultEffect</h4>
+  <div class="markdown level1 summary"><p>The default <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a>, that is used if a <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a> has a mesh but no effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceEffectBase DefaultEffect</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html">SurfaceEffectBase</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1121,6 +1150,48 @@ at the beginning of a rendering loop. Thus, rendering the current frame starts w
 z-buffer. <a class="xref" href="Fusee.Engine.Common.ClearFlags.html">ClearFlags</a> for a list of possible buffers to clear. Make sure to use the bitwise
 or-operator (|) to combine several buffers to clear.</p>
 </div>
+  <a id="Fusee_Engine_Core_RenderContext_CreateGBufferTarget_" data-uid="Fusee.Engine.Core.RenderContext.CreateGBufferTarget*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_CreateGBufferTarget_Fusee_Engine_Common_TexRes_" data-uid="Fusee.Engine.Core.RenderContext.CreateGBufferTarget(Fusee.Engine.Common.TexRes)">CreateGBufferTarget(TexRes)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Fusee.Engine.Common.IRenderTarget.html">IRenderTarget</a> with the purpose of being used as CPU GBuffer representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRenderTarget CreateGBufferTarget(TexRes res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.TexRes.html">TexRes</a></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>The texture resolution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRenderTarget.html">IRenderTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Core_RenderContext_DisableDepthClamp_" data-uid="Fusee.Engine.Core.RenderContext.DisableDepthClamp*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_DisableDepthClamp" data-uid="Fusee.Engine.Core.RenderContext.DisableDepthClamp">DisableDepthClamp()</h4>
   <div class="markdown level1 summary"><p>Disables depths clamping. <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_EnableDepthClamp">EnableDepthClamp()</a></p>
@@ -1130,6 +1201,91 @@ or-operator (|) to combine several buffers to clear.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void DisableDepthClamp()</code></pre>
   </div>
+  <a id="Fusee_Engine_Core_RenderContext_DispatchCompute_" data-uid="Fusee.Engine.Core.RenderContext.DispatchCompute*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_DispatchCompute_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Engine.Core.RenderContext.DispatchCompute(System.Int32,System.Int32,System.Int32,System.Int32)">DispatchCompute(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Launch the bound Compute Shader Program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DispatchCompute(int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threadGroupsX</span></td>
+        <td><p>The number of work groups to be launched in the X dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threadGroupsY</span></td>
+        <td><p>The number of work groups to be launched in the Y dimension.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">threadGroupsZ</span></td>
+        <td><p>he number of work groups to be launched in the Z dimension.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_RenderContext_Dispose_" data-uid="Fusee.Engine.Core.RenderContext.Dispose*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Dispose" data-uid="Fusee.Engine.Core.RenderContext.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Core_RenderContext_Dispose_" data-uid="Fusee.Engine.Core.RenderContext.Dispose*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Dispose_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>If disposing equals true, the method has been called directly
+or indirectly by a user's code. Managed and unmanaged resources
+can be disposed.
+If disposing equals false, the method has been called by the
+runtime from inside the finalizer and you should not reference
+other objects. Only unmanaged resources can be disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Core_RenderContext_EnableDepthClamp_" data-uid="Fusee.Engine.Core.RenderContext.EnableDepthClamp*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_EnableDepthClamp" data-uid="Fusee.Engine.Core.RenderContext.EnableDepthClamp">EnableDepthClamp()</h4>
   <div class="markdown level1 summary"><p>The clipping behavior against the Z position of a vertex can be turned off by activating depth clamping.
@@ -1140,6 +1296,15 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void EnableDepthClamp()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Core_RenderContext_Finalize_" data-uid="Fusee.Engine.Core.RenderContext.Finalize*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Finalize" data-uid="Fusee.Engine.Core.RenderContext.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizers (historically referred to as destructors) are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
   <a id="Fusee_Engine_Core_RenderContext_GetHardwareCapabilities_" data-uid="Fusee.Engine.Core.RenderContext.GetHardwareCapabilities*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_GetHardwareCapabilities_Fusee_Engine_Common_HardwareCapability_" data-uid="Fusee.Engine.Core.RenderContext.GetHardwareCapabilities(Fusee.Engine.Common.HardwareCapability)">GetHardwareCapabilities(HardwareCapability)</h4>
@@ -1247,6 +1412,15 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Core_RenderContext_MemoryBarrier_" data-uid="Fusee.Engine.Core.RenderContext.MemoryBarrier*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_MemoryBarrier" data-uid="Fusee.Engine.Core.RenderContext.MemoryBarrier">MemoryBarrier()</h4>
+  <div class="markdown level1 summary"><p>Defines a barrier ordering memory transactions. At the moment it will insert all supported barriers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MemoryBarrier()</code></pre>
+  </div>
   <a id="Fusee_Engine_Core_RenderContext_Render_" data-uid="Fusee.Engine.Core.RenderContext.Render*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_Render_Fusee_Engine_Core_Scene_Mesh_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.Scene.Mesh,System.Boolean)">Render(Mesh, Boolean)</h4>
   <div class="markdown level1 summary"><p>Renders the specified mesh.</p>
@@ -1433,6 +1607,33 @@ method to change more than one render state at once.</p>
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Common_IRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IRenderTarget)">SetRenderTarget(IRenderTarget)</h4>
+  <div class="markdown level1 summary"><p>Sets the RenderTarget, if texture is null render target is the main screen, otherwise the picture will be rendered onto given texture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(IRenderTarget renderTarget = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IRenderTarget.html">IRenderTarget</a></td>
+        <td><span class="parametername">renderTarget</span></td>
+        <td><p>The render target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Common_IWritableArrayTexture_System_Int32_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Common.IWritableArrayTexture,System.Int32)">SetRenderTarget(IWritableArrayTexture, Int32)</h4>
   <div class="markdown level1 summary"><p>Renders into the given texture.</p>
 </div>
@@ -1515,33 +1716,6 @@ method to change more than one render state at once.</p>
         <td><a class="xref" href="Fusee.Engine.Common.IWritableTexture.html">IWritableTexture</a></td>
         <td><span class="parametername">tex</span></td>
         <td><p>The render texture.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Engine_Core_RenderContext_SetRenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget*"></a>
-  <h4 id="Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Core_RenderTarget_" data-uid="Fusee.Engine.Core.RenderContext.SetRenderTarget(Fusee.Engine.Core.RenderTarget)">SetRenderTarget(RenderTarget)</h4>
-  <div class="markdown level1 summary"><p>Sets the RenderTarget, if texture is null render target is the main screen, otherwise the picture will be rendered onto given texture</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetRenderTarget(RenderTarget renderTarget = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.RenderTarget.html">RenderTarget</a></td>
-        <td><span class="parametername">renderTarget</span></td>
-        <td><p>The render target.</p>
 </td>
       </tr>
     </tbody>
@@ -1655,6 +1829,10 @@ After this call the state can be set to a new value again.</p>
   <h5 id="Fusee_Engine_Core_RenderContext_Viewport_System_Int32_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Setting the Viewport limits the rendering output to the specified rectangular region.</p>
 </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
 </article>
           </div>
           

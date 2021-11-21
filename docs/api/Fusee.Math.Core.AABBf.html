@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct AABBf
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -374,7 +374,7 @@
   </table>
   <a id="Fusee_Math_Core_AABBf_InsideOrIntersectingPlane_" data-uid="Fusee.Math.Core.AABBf.InsideOrIntersectingPlane*"></a>
   <h4 id="Fusee_Math_Core_AABBf_InsideOrIntersectingPlane_Fusee_Math_Core_PlaneF_" data-uid="Fusee.Math.Core.AABBf.InsideOrIntersectingPlane(Fusee.Math.Core.PlaneF)">InsideOrIntersectingPlane(PlaneF)</h4>
-  <div class="markdown level1 summary"><p>Checks if a viewing frustum lies within or intersects this AABB.</p>
+  <div class="markdown level1 summary"><p>Checks if a plane lies within or intersects this AABB.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -412,6 +412,48 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><p>false if fully outside, true if inside or intersecting.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_AABBf_IntersectRay_" data-uid="Fusee.Math.Core.AABBf.IntersectRay*"></a>
+  <h4 id="Fusee_Math_Core_AABBf_IntersectRay_Fusee_Math_Core_Rayf_" data-uid="Fusee.Math.Core.AABBf.IntersectRay(Fusee.Math.Core.Rayf)">IntersectRay(Rayf)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given ray originates in, or intersects this AABB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IntersectRay(Rayf ray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a></td>
+        <td><span class="parametername">ray</span></td>
+        <td><p>The ray to test against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

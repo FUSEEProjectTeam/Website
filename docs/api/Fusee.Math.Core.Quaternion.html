@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Quaternion
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -186,7 +186,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Quaternion Identity</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Quaternion Identity</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -781,14 +781,14 @@ the range of [-PI, PI].</p>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Quaternion_FromQuatToEuler_" data-uid="Fusee.Math.Core.Quaternion.FromQuatToEuler*"></a>
-  <h4 id="Fusee_Math_Core_Quaternion_FromQuatToEuler_Fusee_Math_Core_Quaternion_" data-uid="Fusee.Math.Core.Quaternion.FromQuatToEuler(Fusee.Math.Core.Quaternion)">FromQuatToEuler(Quaternion)</h4>
-  <div class="markdown level1 summary"><p>Gets the euler angles from a given quaternion.</p>
+  <a id="Fusee_Math_Core_Quaternion_FromRotationMatrix_" data-uid="Fusee.Math.Core.Quaternion.FromRotationMatrix*"></a>
+  <h4 id="Fusee_Math_Core_Quaternion_FromRotationMatrix_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.Quaternion.FromRotationMatrix(Fusee.Math.Core.float4x4)">FromRotationMatrix(float4x4)</h4>
+  <div class="markdown level1 summary"><p>Build a quaternion from a rotation matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float3 FromQuatToEuler(Quaternion quat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Quaternion FromRotationMatrix(float4x4 mtx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -801,10 +801,9 @@ the range of [-PI, PI].</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
-        <td><span class="parametername">quat</span></td>
-        <td><p>The quaternion.</p>
-</td>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">mtx</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -818,7 +817,7 @@ the range of [-PI, PI].</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>

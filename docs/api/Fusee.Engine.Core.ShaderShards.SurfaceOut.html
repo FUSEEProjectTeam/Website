@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SurfaceOut
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Engine_Core_ShaderShards_SurfaceOut" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut" class="text-break">Class SurfaceOut
   </h1>
-  <div class="markdown level0 summary"><p>Contains all needed information to define the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>.</p>
+  <div class="markdown level0 summary"><p>Contains all needed information to define the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceOutput">SurfaceOutput</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -114,7 +114,7 @@
   <h3 id="fields">Fields
   </h3>
   <h4 id="Fusee_Engine_Core_ShaderShards_SurfaceOut_StructName" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.StructName">StructName</h4>
-  <div class="markdown level1 summary"><p>The surface effects &quot;out&quot;-struct (<a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>) always has this type in the shader code.</p>
+  <div class="markdown level1 summary"><p>The surface effects &quot;out&quot;-struct (<a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceOutput">SurfaceOutput</a>) always has this type in the shader code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -137,7 +137,7 @@
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_SurfaceOut_SurfOutVaryingName" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.SurfOutVaryingName">SurfOutVaryingName</h4>
-  <div class="markdown level1 summary"><p>The surface effects &quot;out&quot;-struct (<a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a>) always has this variable name in the shader code.</p>
+  <div class="markdown level1 summary"><p>The surface effects &quot;out&quot;-struct (<a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceOutput">SurfaceOutput</a>) always has this variable name in the shader code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -163,7 +163,7 @@
   </h3>
   <a id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetChangeSurfFragMethod_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod*"></a>
   <h4 id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetChangeSurfFragMethod_System_Collections_Generic_List_System_String__System_Type_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfFragMethod(System.Collections.Generic.List{System.String},System.Type)">GetChangeSurfFragMethod(List&lt;String&gt;, Type)</h4>
-  <div class="markdown level1 summary"><p>Returns the GLSL method that modifies the values of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a> struct.</p>
+  <div class="markdown level1 summary"><p>Returns the GLSL method that modifies the values of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceOutput">SurfaceOutput</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -189,7 +189,7 @@
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">inputType</span></td>
-        <td><p>The type of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceInput">SurfaceInput</a> struct.</p>
+        <td><p>The type of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceInput">SurfaceInput</a> struct.</p>
 </td>
       </tr>
     </tbody>
@@ -210,13 +210,13 @@
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetChangeSurfVertMethod_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod*"></a>
-  <h4 id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetChangeSurfVertMethod_System_Collections_Generic_List_System_String__Fusee_Engine_Core_ShaderShards_LightingSetupFlags_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod(System.Collections.Generic.List{System.String},Fusee.Engine.Core.ShaderShards.LightingSetupFlags)">GetChangeSurfVertMethod(List&lt;String&gt;, LightingSetupFlags)</h4>
-  <div class="markdown level1 summary"><p>Returns the GLSL method that modifies the values of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a> struct.</p>
+  <h4 id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetChangeSurfVertMethod_System_Collections_Generic_List_System_String__Fusee_Engine_Core_ShaderShards_ShadingModel_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetChangeSurfVertMethod(System.Collections.Generic.List{System.String},Fusee.Engine.Core.ShaderShards.ShadingModel)">GetChangeSurfVertMethod(List&lt;String&gt;, ShadingModel)</h4>
+  <div class="markdown level1 summary"><p>Returns the GLSL method that modifies the values of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceOutput">SurfaceOutput</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetChangeSurfVertMethod(List&lt;string&gt; methodBody, LightingSetupFlags setup)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetChangeSurfVertMethod(List&lt;string&gt; methodBody, ShadingModel setup)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -235,7 +235,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html">LightingSetupFlags</a></td>
+        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.ShadingModel.html">ShadingModel</a></td>
         <td><span class="parametername">setup</span></td>
         <td><p>The lighting setup.</p>
 </td>
@@ -257,14 +257,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetLightingSetupShards_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards*"></a>
-  <h4 id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetLightingSetupShards_Fusee_Engine_Core_ShaderShards_LightingSetupFlags_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetLightingSetupShards(Fusee.Engine.Core.ShaderShards.LightingSetupFlags)">GetLightingSetupShards(LightingSetupFlags)</h4>
-  <div class="markdown level1 summary"><p>Returns the GLSL default constructor and declaration of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffect.html#Fusee_Engine_Core_Effects_SurfaceEffect_SurfaceOutput">SurfaceOutput</a> struct.</p>
+  <a id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetShadingModelShards_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetShadingModelShards*"></a>
+  <h4 id="Fusee_Engine_Core_ShaderShards_SurfaceOut_GetShadingModelShards_Fusee_Engine_Core_ShaderShards_ShadingModel_" data-uid="Fusee.Engine.Core.ShaderShards.SurfaceOut.GetShadingModelShards(Fusee.Engine.Core.ShaderShards.ShadingModel)">GetShadingModelShards(ShadingModel)</h4>
+  <div class="markdown level1 summary"><p>Returns the GLSL default constructor and declaration of the <a class="xref" href="Fusee.Engine.Core.Effects.SurfaceEffectBase.html#Fusee_Engine_Core_Effects_SurfaceEffectBase_SurfaceOutput">SurfaceOutput</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LightingSetupShards GetLightingSetupShards(LightingSetupFlags setup)</code></pre>
+    <pre><code class="lang-csharp hljs">public static ShadingModelShards GetShadingModelShards(ShadingModel setup)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -277,9 +277,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html">LightingSetupFlags</a></td>
+        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.ShadingModel.html">ShadingModel</a></td>
         <td><span class="parametername">setup</span></td>
-        <td><p>The <a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupFlags.html">LightingSetupFlags</a> that decides what the appropriate struct is.</p>
+        <td><p>The <a class="xref" href="Fusee.Engine.Core.ShaderShards.ShadingModel.html">ShadingModel</a> that decides what the appropriate struct is.</p>
 </td>
       </tr>
     </tbody>
@@ -294,7 +294,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.LightingSetupShards.html">LightingSetupShards</a></td>
+        <td><a class="xref" href="Fusee.Engine.Core.ShaderShards.ShadingModelShards.html">ShadingModelShards</a></td>
         <td></td>
       </tr>
     </tbody>

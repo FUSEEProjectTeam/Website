@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct ShaderParamInfo
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -106,52 +106,6 @@ Does NOT contain the actual value of the shader parameter.</p>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Fusee_Engine_Common_ShaderParamInfo_Handle" data-uid="Fusee.Engine.Common.ShaderParamInfo.Handle">Handle</h4>
-  <div class="markdown level1 summary"><p>The Handle to be used when setting or getting the parameter value from the shader.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IShaderParam Handle</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Common.IShaderParam.html">IShaderParam</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Fusee_Engine_Common_ShaderParamInfo_Name" data-uid="Fusee.Engine.Common.ShaderParamInfo.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Contains the name of the shader parameter.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Fusee_Engine_Common_ShaderParamInfo_Size" data-uid="Fusee.Engine.Common.ShaderParamInfo.Size">Size</h4>
   <div class="markdown level1 summary"><p>Contains the number of items stored under this parameter name. Only differs from 1 if the parameter is a uniform array.
 If Size &gt; 1 this value represents the number of array entries.</p>
@@ -198,6 +152,80 @@ If Size &gt; 1 this value represents the number of array entries.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_Engine_Common_ShaderParamInfo_Handle_" data-uid="Fusee.Engine.Common.ShaderParamInfo.Handle*"></a>
+  <h4 id="Fusee_Engine_Common_ShaderParamInfo_Handle" data-uid="Fusee.Engine.Common.ShaderParamInfo.Handle">Handle</h4>
+  <div class="markdown level1 summary"><p>The Handle to be used when setting or getting the parameter value from the shader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IShaderParam Handle { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IShaderParam.html">IShaderParam</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_ShaderParamInfo_Hash_" data-uid="Fusee.Engine.Common.ShaderParamInfo.Hash*"></a>
+  <h4 id="Fusee_Engine_Common_ShaderParamInfo_Hash" data-uid="Fusee.Engine.Common.ShaderParamInfo.Hash">Hash</h4>
+  <div class="markdown level1 summary"><p>The hash code of this ShaderParamInfo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Hash { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Common_ShaderParamInfo_Name_" data-uid="Fusee.Engine.Common.ShaderParamInfo.Name*"></a>
+  <h4 id="Fusee_Engine_Common_ShaderParamInfo_Name" data-uid="Fusee.Engine.Common.ShaderParamInfo.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Contains the name of the shader parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

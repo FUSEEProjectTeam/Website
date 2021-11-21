@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct float3x3
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -107,7 +107,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3x3(float3 row0, float3 row1, float3 row2)</code></pre>
+    <pre><code class="lang-csharp hljs">public float3x3(float3 row1, float3 row2, float3 row3)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,19 +121,19 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td><span class="parametername">row0</span></td>
+        <td><span class="parametername">row1</span></td>
         <td><p>Top row of the matrix</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td><span class="parametername">row1</span></td>
+        <td><span class="parametername">row2</span></td>
         <td><p>Second row of the matrix</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td><span class="parametername">row2</span></td>
+        <td><span class="parametername">row3</span></td>
         <td><p>Third row of the matrix</p>
 </td>
       </tr>
@@ -173,7 +173,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3x3(float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22)</code></pre>
+    <pre><code class="lang-csharp hljs">public float3x3(float m11, float m12, float m13, float m21, float m22, float m23, float m31, float m32, float m33)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,55 +187,55 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m00</span></td>
+        <td><span class="parametername">m11</span></td>
         <td><p>First item of the first row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m01</span></td>
+        <td><span class="parametername">m12</span></td>
         <td><p>Second item of the first row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m02</span></td>
+        <td><span class="parametername">m13</span></td>
         <td><p>Third item of the first row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m10</span></td>
+        <td><span class="parametername">m21</span></td>
         <td><p>First item of the second row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m11</span></td>
+        <td><span class="parametername">m22</span></td>
         <td><p>Second item of the second row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m12</span></td>
+        <td><span class="parametername">m23</span></td>
         <td><p>Third item of the second row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m20</span></td>
+        <td><span class="parametername">m31</span></td>
         <td><p>First item of the third row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m21</span></td>
+        <td><span class="parametername">m32</span></td>
         <td><p>Second item of the third row of the matrix.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">m22</span></td>
+        <td><span class="parametername">m33</span></td>
         <td><p>Third item of the third row of the matrix.</p>
 </td>
       </tr>
@@ -249,7 +249,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float3x3 Identity</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly float3x3 Identity</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -266,31 +266,8 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Math_Core_float3x3_Row0" data-uid="Fusee.Math.Core.float3x3.Row0">Row0</h4>
-  <div class="markdown level1 summary"><p>Top row of the matrix</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Row0</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Fusee_Math_Core_float3x3_Row1" data-uid="Fusee.Math.Core.float3x3.Row1">Row1</h4>
-  <div class="markdown level1 summary"><p>2nd row of the matrix</p>
+  <div class="markdown level1 summary"><p>Top row of the matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -313,12 +290,35 @@
     </tbody>
   </table>
   <h4 id="Fusee_Math_Core_float3x3_Row2" data-uid="Fusee.Math.Core.float3x3.Row2">Row2</h4>
-  <div class="markdown level1 summary"><p>3rd row of the matrix</p>
+  <div class="markdown level1 summary"><p>2nd row of the matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float3 Row2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_float3x3_Row3" data-uid="Fusee.Math.Core.float3x3.Row3">Row3</h4>
+  <div class="markdown level1 summary"><p>3rd row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 Row3</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -341,7 +341,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float3x3 Zero</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly float3x3 Zero</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -360,33 +360,9 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Math_Core_float3x3_Column0_" data-uid="Fusee.Math.Core.float3x3.Column0*"></a>
-  <h4 id="Fusee_Math_Core_float3x3_Column0" data-uid="Fusee.Math.Core.float3x3.Column0">Column0</h4>
-  <div class="markdown level1 summary"><p>The first column of this matrix</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float3 Column0 { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Math_Core_float3x3_Column1_" data-uid="Fusee.Math.Core.float3x3.Column1*"></a>
   <h4 id="Fusee_Math_Core_float3x3_Column1" data-uid="Fusee.Math.Core.float3x3.Column1">Column1</h4>
-  <div class="markdown level1 summary"><p>The second column of this matrix</p>
+  <div class="markdown level1 summary"><p>The first column of this matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -410,12 +386,36 @@
   </table>
   <a id="Fusee_Math_Core_float3x3_Column2_" data-uid="Fusee.Math.Core.float3x3.Column2*"></a>
   <h4 id="Fusee_Math_Core_float3x3_Column2" data-uid="Fusee.Math.Core.float3x3.Column2">Column2</h4>
-  <div class="markdown level1 summary"><p>The third column of this matrix</p>
+  <div class="markdown level1 summary"><p>The second column of this matrix</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float3 Column2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_float3x3_Column3_" data-uid="Fusee.Math.Core.float3x3.Column3*"></a>
+  <h4 id="Fusee_Math_Core_float3x3_Column3" data-uid="Fusee.Math.Core.float3x3.Column3">Column3</h4>
+  <div class="markdown level1 summary"><p>The third column of this matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 Column3 { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SceneInteractionHandler
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Fusee.Engine.GUI.SceneInteractionHandler">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Gui.SceneInteractionHandler">
   
   
-  <h1 id="Fusee_Engine_GUI_SceneInteractionHandler" data-uid="Fusee.Engine.GUI.SceneInteractionHandler" class="text-break">Class SceneInteractionHandler
+  <h1 id="Fusee_Engine_Gui_SceneInteractionHandler" data-uid="Fusee.Engine.Gui.SceneInteractionHandler" class="text-break">Class SceneInteractionHandler
   </h1>
   <div class="markdown level0 summary"><p>Needed for adding interactions/events to objects in the scene graph.
 Traverses the scene via a ScenePicker and invokes the necessary events.</p>
@@ -146,17 +146,17 @@ Traverses the scene via a ScenePicker and invokes the necessary events.</p>
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.GUI.html">Fusee.Engine.GUI</a></h6>
-  <h6><strong>Assembly</strong>: Fusee.Engine.GUI.dll</h6>
-  <h5 id="Fusee_Engine_GUI_SceneInteractionHandler_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Gui.html">Fusee.Engine.Gui</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Gui.dll</h6>
+  <h5 id="Fusee_Engine_Gui_SceneInteractionHandler_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SceneInteractionHandler : Visitor&lt;SceneNode, SceneComponent&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="Fusee_Engine_GUI_SceneInteractionHandler__ctor_" data-uid="Fusee.Engine.GUI.SceneInteractionHandler.#ctor*"></a>
-  <h4 id="Fusee_Engine_GUI_SceneInteractionHandler__ctor_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.GUI.SceneInteractionHandler.#ctor(Fusee.Engine.Core.Scene.SceneContainer)">SceneInteractionHandler(SceneContainer)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.GUI.SceneInteractionHandler.html">SceneInteractionHandler</a> class.</p>
+  <a id="Fusee_Engine_Gui_SceneInteractionHandler__ctor_" data-uid="Fusee.Engine.Gui.SceneInteractionHandler.#ctor*"></a>
+  <h4 id="Fusee_Engine_Gui_SceneInteractionHandler__ctor_Fusee_Engine_Core_Scene_SceneContainer_" data-uid="Fusee.Engine.Gui.SceneInteractionHandler.#ctor(Fusee.Engine.Core.Scene.SceneContainer)">SceneInteractionHandler(SceneContainer)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Fusee.Engine.Gui.SceneInteractionHandler.html">SceneInteractionHandler</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -183,8 +183,8 @@ Traverses the scene via a ScenePicker and invokes the necessary events.</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Fusee_Engine_GUI_SceneInteractionHandler_CheckForInteractiveObjects_" data-uid="Fusee.Engine.GUI.SceneInteractionHandler.CheckForInteractiveObjects*"></a>
-  <h4 id="Fusee_Engine_GUI_SceneInteractionHandler_CheckForInteractiveObjects_Fusee_Engine_Core_RenderContext_Fusee_Math_Core_float2_System_Int32_System_Int32_" data-uid="Fusee.Engine.GUI.SceneInteractionHandler.CheckForInteractiveObjects(Fusee.Engine.Core.RenderContext,Fusee.Math.Core.float2,System.Int32,System.Int32)">CheckForInteractiveObjects(RenderContext, float2, Int32, Int32)</h4>
+  <a id="Fusee_Engine_Gui_SceneInteractionHandler_CheckForInteractiveObjects_" data-uid="Fusee.Engine.Gui.SceneInteractionHandler.CheckForInteractiveObjects*"></a>
+  <h4 id="Fusee_Engine_Gui_SceneInteractionHandler_CheckForInteractiveObjects_Fusee_Engine_Core_RenderContext_Fusee_Math_Core_float2_System_Int32_System_Int32_" data-uid="Fusee.Engine.Gui.SceneInteractionHandler.CheckForInteractiveObjects(Fusee.Engine.Core.RenderContext,Fusee.Math.Core.float2,System.Int32,System.Int32)">CheckForInteractiveObjects(RenderContext, float2, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Picks at the mouse position and traverses the picked objects components.
 If a corresponding component is found the suitable visit method is called which invokes the event.</p>
 </div>
@@ -206,7 +206,8 @@ If a corresponding component is found the suitable visit method is called which 
       <tr>
         <td><a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></td>
         <td><span class="parametername">rc</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>, used for picking operations.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
@@ -228,14 +229,14 @@ If a corresponding component is found the suitable visit method is called which 
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Engine_GUI_SceneInteractionHandler_InvokeInteraction_" data-uid="Fusee.Engine.GUI.SceneInteractionHandler.InvokeInteraction*"></a>
-  <h4 id="Fusee_Engine_GUI_SceneInteractionHandler_InvokeInteraction_Fusee_Engine_GUI_GUIButton_" data-uid="Fusee.Engine.GUI.SceneInteractionHandler.InvokeInteraction(Fusee.Engine.GUI.GUIButton)">InvokeInteraction(GUIButton)</h4>
+  <a id="Fusee_Engine_Gui_SceneInteractionHandler_InvokeInteraction_" data-uid="Fusee.Engine.Gui.SceneInteractionHandler.InvokeInteraction*"></a>
+  <h4 id="Fusee_Engine_Gui_SceneInteractionHandler_InvokeInteraction_Fusee_Engine_Gui_GuiButton_" data-uid="Fusee.Engine.Gui.SceneInteractionHandler.InvokeInteraction(Fusee.Engine.Gui.GuiButton)">InvokeInteraction(GuiButton)</h4>
   <div class="markdown level1 summary"><p>Invokes an interaction on a given button.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeInteraction(GUIButton btn)</code></pre>
+    <pre><code class="lang-csharp hljs">public void InvokeInteraction(GuiButton btn)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -248,7 +249,7 @@ If a corresponding component is found the suitable visit method is called which 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Engine.GUI.GUIButton.html">GUIButton</a></td>
+        <td><a class="xref" href="Fusee.Engine.Gui.GuiButton.html">GuiButton</a></td>
         <td><span class="parametername">btn</span></td>
         <td><p>The button to invoke an interaction on.</p>
 </td>

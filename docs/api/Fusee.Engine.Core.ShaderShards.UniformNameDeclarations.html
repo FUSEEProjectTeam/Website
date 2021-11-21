@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class UniformNameDeclarations
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,8 @@
   
   <h1 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations" class="text-break">Class UniformNameDeclarations
   </h1>
-  <div class="markdown level0 summary"><p>Collection of uniform parameter names, as they should be used in the Shader Shards to make them compatible to each other.</p>
+  <div class="markdown level0 summary"><p>Collection of uniform parameter names, as they should be used in the Shader Shards to make them compatible to each other.
+A hash code is assigned to each parameter, which is used to identify it in the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -114,7 +115,7 @@
   <h3 id="fields">Fields
   </h3>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Albedo" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Albedo">Albedo</h4>
-  <div class="markdown level1 summary"><p>The var name for the uniform DiffuseColor variable within the pixel shaders.</p>
+  <div class="markdown level1 summary"><p>The var name for the uniform Albedo variable within the pixel shaders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -136,8 +137,31 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AlbedoHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoHash">AlbedoHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Albedo">Albedo</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AlbedoHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AlbedoMix" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoMix">AlbedoMix</h4>
-  <div class="markdown level1 summary"><p>The var name for the uniform DiffuseMix variable within the pixel shaders.</p>
+  <div class="markdown level1 summary"><p>The var name for the uniform AlbedoMix variable within the pixel shaders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -155,6 +179,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AlbedoMixHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoMixHash">AlbedoMixHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AlbedoMix">AlbedoMix</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AlbedoMixHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -182,6 +229,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AlbedoTextureHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AlbedoTextureHash">AlbedoTextureHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AlbedoTextureHash">AlbedoTextureHash</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AlbedoTextureHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AmbientStrength" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrength">AmbientStrength</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform AmbientStrength variable within the pixel shaders.</p>
 </div>
@@ -201,6 +271,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AmbientStrengthHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.AmbientStrengthHash">AmbientStrengthHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_AmbientStrength">AmbientStrength</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AmbientStrengthHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -228,6 +321,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ArrayPostfixHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ArrayPostfixHash">ArrayPostfixHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ArrayPostfix">ArrayPostfix</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ArrayPostfixHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BackgroundColor" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BackgroundColor">BackgroundColor</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform BackgroundColor.</p>
 </div>
@@ -247,6 +363,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BackgroundColorHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BackgroundColorHash">BackgroundColorHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BackgroundColor">BackgroundColor</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BackgroundColorHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -274,6 +413,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BitangentHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BitangentHash">BitangentHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Bitangent">Bitangent</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BitangentHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BoneIndex" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BoneIndex">BoneIndex</h4>
   <div class="markdown level1 summary"><p>The bone index attribute name.</p>
 </div>
@@ -293,6 +455,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BoneIndexHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BoneIndexHash">BoneIndexHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BoneIndex">BoneIndex</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BoneIndexHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -343,6 +528,52 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BonesArrayHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BonesArrayHash">BonesArrayHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BonesArray">BonesArray</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BonesArrayHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BonesHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BonesHash">BonesHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Bones">Bones</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BonesHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BoneWeight" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BoneWeight">BoneWeight</h4>
   <div class="markdown level1 summary"><p>The bone weight attribute name.</p>
 </div>
@@ -362,6 +593,75 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BoneWeightHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.BoneWeightHash">BoneWeightHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_BoneWeight">BoneWeight</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BoneWeightHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ClippingPlanes" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ClippingPlanes">ClippingPlanes</h4>
+  <div class="markdown level1 summary"><p>The var name for the uniform ClippingPlanes variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ClippingPlanes = &quot;FUSEE_ClippingPlanes&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ClippingPlanesHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ClippingPlanesHash">ClippingPlanesHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ClippingPlanes">ClippingPlanes</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ClippingPlanesHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -412,6 +712,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_DiffuseTextureTilesHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.DiffuseTextureTilesHash">DiffuseTextureTilesHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_DiffuseTextureTiles">DiffuseTextureTiles</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DiffuseTextureTilesHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveColor" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveColor">EmissiveColor</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform EmissiveColor variable within the pixel shaders.</p>
 </div>
@@ -431,6 +754,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveColorHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveColorHash">EmissiveColorHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveColor">EmissiveColor</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EmissiveColorHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -458,6 +804,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveMixHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveMixHash">EmissiveMixHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveMix">EmissiveMix</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EmissiveMixHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveTexture" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveTexture">EmissiveTexture</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform EmissiveTexture variable within the pixel shaders.</p>
 </div>
@@ -477,6 +846,75 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveTextureHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.EmissiveTextureHash">EmissiveTextureHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_EmissiveTexture">EmissiveTexture</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EmissiveTextureHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_FuseePlatformId" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.FuseePlatformId">FuseePlatformId</h4>
+  <div class="markdown level1 summary"><p>The bones array including the postfix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string FuseePlatformId = &quot;FUSEE_PLATFORM_ID&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_FuseePlatformIdHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.FuseePlatformIdHash">FuseePlatformIdHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_FuseePlatformId">FuseePlatformId</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FuseePlatformIdHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -504,6 +942,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IModelHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IModelHash">IModelHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IModel">IModel</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IModelHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IModelView" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IModelView">IModelView</h4>
   <div class="markdown level1 summary"><p>The inverse model view matrix.</p>
 </div>
@@ -523,6 +984,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IModelViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IModelViewHash">IModelViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IModelView">IModelView</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IModelViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -550,6 +1034,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IModelViewProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IModelViewProjectionHash">IModelViewProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IModelViewProjection">IModelViewProjection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IModelViewProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IProjection" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IProjection">IProjection</h4>
   <div class="markdown level1 summary"><p>The inverse projection matrix.</p>
 </div>
@@ -569,6 +1076,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IProjectionHash">IProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IProjection">IProjection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -596,6 +1126,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITModelHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ITModelHash">ITModelHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITModel">ITModel</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ITModelHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITModelView" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ITModelView">ITModelView</h4>
   <div class="markdown level1 summary"><p>The inversed transposed model view matrix.</p>
 </div>
@@ -615,6 +1168,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITModelViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ITModelViewHash">ITModelViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITModelView">ITModelView</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ITModelViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -642,6 +1218,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITModelViewProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ITModelViewProjectionHash">ITModelViewProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITModelViewProjection">ITModelViewProjection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ITModelViewProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITProjection" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ITProjection">ITProjection</h4>
   <div class="markdown level1 summary"><p>The inversed transposed projection matrix.</p>
 </div>
@@ -661,6 +1260,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ITProjectionHash">ITProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITProjection">ITProjection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ITProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -688,6 +1310,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ITViewHash">ITViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ITView">ITView</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ITViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IView" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IView">IView</h4>
   <div class="markdown level1 summary"><p>The inverse view matrix.</p>
 </div>
@@ -707,6 +1352,213 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.IViewHash">IViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_IView">IView</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightedSceneTexture" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightedSceneTexture">LightedSceneTexture</h4>
+  <div class="markdown level1 summary"><p>The texture name for the lighted scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LightedSceneTexture = &quot;LIGHTED_SCENE_TEX&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightMatClipPlanes" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightMatClipPlanes">LightMatClipPlanes</h4>
+  <div class="markdown level1 summary"><p>The var name for the uniform LightMatClipPlanes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LightMatClipPlanes = &quot;LightMatClipPlanes&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightMatClipPlanesHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightMatClipPlanesHash">LightMatClipPlanesHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightMatClipPlanes">LightMatClipPlanes</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LightMatClipPlanesHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightPos" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightPos">LightPos</h4>
+  <div class="markdown level1 summary"><p>The var name for the uniform LightSpaceMatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LightPos = &quot;LightPos&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightPosHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightPosHash">LightPosHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightPos">LightPos</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LightPosHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightSpaceMatrices" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightSpaceMatrices">LightSpaceMatrices</h4>
+  <div class="markdown level1 summary"><p>The var name for the uniform LightSpaceMatrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LightSpaceMatrices = &quot;LightSpaceMatrices&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightSpaceMatrices6" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightSpaceMatrices6">LightSpaceMatrices6</h4>
+  <div class="markdown level1 summary"><p>The var name for the uniform LightSpaceMatrix with 6 elements e.g. LightSpaceMatrices[6].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string LightSpaceMatrices6 = &quot;LightSpaceMatrices[6]&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightSpaceMatricesHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightSpaceMatricesHash">LightSpaceMatricesHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightSpaceMatrices">LightSpaceMatrices</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LightSpaceMatricesHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -734,6 +1586,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightSpaceMatrixHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.LightSpaceMatrixHash">LightSpaceMatrixHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_LightSpaceMatrix">LightSpaceMatrix</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LightSpaceMatrixHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Model" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Model">Model</h4>
   <div class="markdown level1 summary"><p>The model matrix. Transforms from model into world space.</p>
 </div>
@@ -753,6 +1628,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ModelHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ModelHash">ModelHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Model">Model</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ModelHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -780,6 +1678,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ModelViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ModelViewHash">ModelViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ModelView">ModelView</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ModelViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ModelViewProjection" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ModelViewProjection">ModelViewProjection</h4>
   <div class="markdown level1 summary"><p>The model view projection matrix. Transforms from model into clip space.</p>
 </div>
@@ -799,6 +1720,52 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ModelViewProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ModelViewProjectionHash">ModelViewProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ModelViewProjection">ModelViewProjection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ModelViewProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NoiseTexHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NoiseTexHash">NoiseTexHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NoiseTex">NoiseTex</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NoiseTexHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -826,6 +1793,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalHash">NormalHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Normal">Normal</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NormalHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalMap" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalMap">NormalMap</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform NormalMap variable within the pixel shaders.</p>
 </div>
@@ -845,6 +1835,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalMapHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalMapHash">NormalMapHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalMap">NormalMap</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NormalMapHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -872,8 +1885,31 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalMapIntensityHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalMapIntensityHash">NormalMapIntensityHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalMapIntensity">NormalMapIntensity</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NormalMapIntensityHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalTextureTiles" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalTextureTiles">NormalTextureTiles</h4>
-  <div class="markdown level1 summary"><p>The var name for the uniform DiffuseTexture variable within the pixel shaders.</p>
+  <div class="markdown level1 summary"><p>The var name for the uniform NormalTextureTiles variable within the pixel shaders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -891,6 +1927,75 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalTextureTilesHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.NormalTextureTilesHash">NormalTextureTilesHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_NormalTextureTiles">NormalTextureTiles</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NormalTextureTilesHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_PointSize" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.PointSize">PointSize</h4>
+  <div class="markdown level1 summary"><p>The var name for the uniform PointSize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PointSize = &quot;PointSize&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_PointSizeHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.PointSizeHash">PointSizeHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_PointSize">PointSize</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PointSizeHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -918,6 +2023,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ProjectionHash">ProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Projection">Projection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_RenderPassNo" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.RenderPassNo">RenderPassNo</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform PassNo variable.</p>
 </div>
@@ -937,6 +2065,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_RenderPassNoHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.RenderPassNoHash">RenderPassNoHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_RenderPassNo">RenderPassNo</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RenderPassNoHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -964,13 +2115,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ScreenParams" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ScreenParams">ScreenParams</h4>
-  <div class="markdown level1 summary"><p>The var name for the uniform ScreenParams (width and height of the window).</p>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_RoughnessValueHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.RoughnessValueHash">RoughnessValueHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_RoughnessValue">RoughnessValue</a> parameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string ScreenParams = &quot;ScreenParams&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public static int RoughnessValueHash</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -982,7 +2133,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1010,6 +2161,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ShadowCubeMapHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ShadowCubeMapHash">ShadowCubeMapHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ShadowCubeMap">ShadowCubeMap</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ShadowCubeMapHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ShadowMap" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ShadowMap">ShadowMap</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform ShadowMap.</p>
 </div>
@@ -1029,6 +2203,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ShadowMapHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ShadowMapHash">ShadowMapHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ShadowMap">ShadowMap</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ShadowMapHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1056,6 +2253,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularColorHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularColorHash">SpecularColorHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularColor">SpecularColor</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SpecularColorHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularMix" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularMix">SpecularMix</h4>
   <div class="markdown level1 summary"><p>The var name for the uniform SpecularMix variable within the pixel shaders.</p>
 </div>
@@ -1075,6 +2295,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularMixHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularMixHash">SpecularMixHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularMix">SpecularMix</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SpecularMixHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1102,8 +2345,31 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularShininessHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularShininessHash">SpecularShininessHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularShininess">SpecularShininess</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SpecularShininessHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularStrength" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularStrength">SpecularStrength</h4>
-  <div class="markdown level1 summary"><p>The var name for the uniform SpecularIntensity variable within the pixel shaders.</p>
+  <div class="markdown level1 summary"><p>The var name for the uniform SpecularStrength variable within the pixel shaders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1121,6 +2387,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularStrengthHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularStrengthHash">SpecularStrengthHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularStrength">SpecularStrength</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SpecularStrengthHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1148,6 +2437,75 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularTextureHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SpecularTextureHash">SpecularTextureHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SpecularTexture">SpecularTexture</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SpecularTextureHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SSAOKernelHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SSAOKernelHash">SSAOKernelHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SSAOKernel">SSAOKernel</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SSAOKernelHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SsaoOnHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.SsaoOnHash">SsaoOnHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_SsaoOn">SsaoOn</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SsaoOnHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Tangent" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.Tangent">Tangent</h4>
   <div class="markdown level1 summary"><p>The tangent attribute name.</p>
 </div>
@@ -1167,6 +2525,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TangentHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TangentHash">TangentHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Tangent">Tangent</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TangentHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1194,6 +2575,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TextureCoordinatesHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TextureCoordinatesHash">TextureCoordinatesHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TextureCoordinates">TextureCoordinates</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TextureCoordinatesHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModel" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TModel">TModel</h4>
   <div class="markdown level1 summary"><p>The inverse view matrix.</p>
 </div>
@@ -1213,6 +2617,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModelHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TModelHash">TModelHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModel">TModel</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TModelHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1240,6 +2667,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModelViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TModelViewHash">TModelViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModelView">TModelView</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TModelViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModelViewProjection" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TModelViewProjection">TModelViewProjection</h4>
   <div class="markdown level1 summary"><p>The transposed model view projection matrix.</p>
 </div>
@@ -1259,6 +2709,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModelViewProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TModelViewProjectionHash">TModelViewProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TModelViewProjection">TModelViewProjection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TModelViewProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1286,6 +2759,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TProjectionHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TProjectionHash">TProjectionHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TProjection">TProjection</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TProjectionHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TView" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TView">TView</h4>
   <div class="markdown level1 summary"><p>The inverse transposed view matrix.</p>
 </div>
@@ -1305,6 +2801,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.TViewHash">TViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_TView">TView</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1355,6 +2874,144 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColor1" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor1">VertexColor1</h4>
+  <div class="markdown level1 summary"><p>The color attribute name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string VertexColor1 = &quot;fuColor1&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColor1Hash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor1Hash">VertexColor1Hash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColor">VertexColor</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VertexColor1Hash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColor2" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor2">VertexColor2</h4>
+  <div class="markdown level1 summary"><p>The color attribute name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string VertexColor2 = &quot;fuColor2&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColor2Hash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColor2Hash">VertexColor2Hash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColor">VertexColor</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VertexColor2Hash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColorHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexColorHash">VertexColorHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexColor">VertexColor</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VertexColorHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_VertexHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.VertexHash">VertexHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_Vertex">Vertex</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VertexHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_View" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.View">View</h4>
   <div class="markdown level1 summary"><p>The view matrix. Transforms from world into camera space.</p>
 </div>
@@ -1374,6 +3031,75 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ViewHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ViewHash">ViewHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_View">View</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ViewHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ViewportPx" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ViewportPx">ViewportPx</h4>
+  <div class="markdown level1 summary"><p>The var name for the uniform ScreenParams (width and height of the window).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ViewportPx = &quot;FUSEE_ViewportPx&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ViewportPxHash" data-uid="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.ViewportPxHash">ViewportPxHash</h4>
+  <div class="markdown level1 summary"><p>Hash code for the <a class="xref" href="Fusee.Engine.Core.ShaderShards.UniformNameDeclarations.html#Fusee_Engine_Core_ShaderShards_UniformNameDeclarations_ViewportPx">ViewportPx</a> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ViewportPxHash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

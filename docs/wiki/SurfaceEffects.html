@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SurfaceEffects </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SurfaceEffects ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="surfaceeffects">SurfaceEffects</h1>
+
+<h2 id="prerequisites">[Prerequisites]</h2>
+<p><strong>Using ShaderEffects</strong><br>
+Basic knowledge of how a to build a Scene Graph from code.<br>
+Basic knowledge of materials/shading in FUSEE or other engines.</p>
+<p><strong>Writing ShaderShards</strong><br>
+Additionally to the above: (basic) knowledge of glsl or other shader languages.</p>
+<h2 id="intro">Intro</h2>
+<p><code>SurfaceEffects</code> are one of two ways of adding a Material to a <code>SceneNode's</code> components.
+They provide a simple way for the user to set <code>uniform</code> variables directly in the C# application code.<br>
+For advanced users <code>SurfaceEffects</code> also provide a way to insert <em>shards</em> of shader code to change certain values. Those <em>shader shards</em> will be automatically put in a special function of the shader code and be executed on the GPU (for details see section <a href="#Adding-Shader-Shards-to-a-SurfaceEffect">Adding Shader Shards to a SurfaceEffect</a>).</p>
+<h3 id="how-to-use-surfaceeffects">How to use SurfaceEffects</h3>
+<p>The easiest way of using SurfaceEffects is to choose a predefined one from the static class <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/MakeEffect.cs#L362"><code>Fusee.Engine.Core.MakeEffect</code></a>.
+The class provides methods for each of the supported lighting methods:</p>
+<ul>
+<li>Unlit</li>
+<li>Diffuse</li>
+<li>Diffuse/Specular</li>
+<li>BRDF</li>
+</ul>
+<p>The methods that create the SurfaceEffects expect initial values for the <code>uniform</code> variables. For example:</p>
+<pre><code class="lang-C#">//Create the SurfaceEffect
+_surfFx = MakeEffect.FromDiffuseSpecular
+(
+    albedoColor: new float4(1.0f, 0, 0, 1.0f),
+    emissionColor: float4.Zero,
+    shininess: 255,
+    specularStrength: 1.0f
+);
+
+[...]
+
+//Add the SurfaceEffect to the Components list of a SceneNode (before the Mesh)
+_scene.Children[0].Components[1] = _surfFx;
+</code></pre>
+<p>This will yield in a red object with a specular highlight.</p>
+<p>Where the input that <em>DiffuseSpecular</em> method expects are relatively self-explanatory, even without in-depth knowledge of different shading approaches, <em>BRDF</em> (short for bidirectional reflectance distribution function) provides a more complicated but on the other hand more physically correct way to shade objects.
+With those methods we can create <code>SurfaceEffects</code> that are capable of simulating a wide range of real-world materials with a single Shader - simply by adjusting the different <code>uniform</code> variables.
+Examples can be seen in the picture below. You can find further information regarding BRDF Materials here: <a href="https://learnopengl.com/PBR/Theory"><em>learnopengl/PBR/Theory</em></a>.</p>
+<blockquote>
+<p>💡 <strong>Note:</strong> As for now, FUSEE does not support Environment Lighting / Reflections. Subsurface Scattering is in a early alpha state (no Thickness Map, no Deferred Shading support).</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/wiki/FUSEEProjectTeam/Fusee/Images/Materials/BRDF.png" alt="Examples for BRDF Materials"></p>
+<p>Example Code for generating the Material for the golden object in the right of the picture:</p>
+<pre><code class="lang-C#">//Create the SurfaceEffect
+_gold_brdfFx = MakeEffect.FromBRDF
+(
+    albedoColor: new float4(1.0f, 227f / 256f, 157f / 256, 1.0f).LinearColorFromSRgb(),
+    emissionColor: new float4(0, 0, 0, 0),
+    roughness: 0.2f,
+    metallic: 1,
+    specular: 0,
+    ior: 0.47f,
+    subsurface: 0
+);
+
+[...]
+
+</code></pre>
+<h3 id="adding-shader-shards-to-a-surfaceeffect">Adding Shader Shards to a SurfaceEffect</h3>
+<p>To add custom shader code to a <code>ShaderEffect</code> we need to create a new instance of the class by ourself.</p>
+<pre><code class="lang-C#">public SurfaceEffect(SurfaceInput input, List&lt;string&gt; surfOutVertBody = null, List&lt;string&gt; surfOutFragBody = null, RenderStateSet rendererStates = null)
+</code></pre>
+<p>The constructor expects a <code>SurfaceInput</code> or a object of a derived type.
+The two <em>Shader Shards</em> – named <code>surfOutVertBody</code> and <code>surfOutFragBody</code> of type <code>List&lt;string&gt;</code> – are optional.</p>
+<p>The <em>Surface Input</em> is a C# Class that holds all lighting relevant <em>uniform</em> parameters we may want to customize via <em>Shader Shards</em>. Additionally it defines the lighting method for this effect.<br>
+It enables the users to set the <em>uniform</em> parameters from the C# code from where they are internally routed into the shader on the GPU.</p>
+<p>There is a pre defined <em>Surface Input</em> for every lighting calculation that FUSEE supports at the moment. Those can be found here: <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/master/src/Engine/Core/Effects/SurfaceEffectInput.cs">SurfaceEffectInput.cs</a>.</p>
+<p>The example code below shows the class for specular lighting:</p>
+<pre><code class="lang-C#">public class SpecularInput : INotifyValueChange&lt;SurfaceEffectEventArgs&gt;
+{
+    //The lighting calculation method
+    public ShadingModel ShadingModel { get; protected set; } = ShadingModel.DiffuseSpecular;
+
+    //Property for the base color
+    public float4 Albedo
+    {
+        get =&gt; _albedo;
+        set
+        {
+            if (value != _albedo)
+            {
+                _albedo = value;
+                NotifyValueChanged(_albedo.GetType(), nameof(Albedo), _albedo);
+            }
+        }
+    }
+    private float4 _albedo;
+
+    //Property for roughness of the material
+    public float Roughness[...]
+    private float _roughness;
+   
+    //Property for strength of the specular highlight
+    public float SpecularStrength[...]
+    private float _specularStrength;
+    
+    //Property for the shininess of the specular highlight
+    public float Shininess[...]
+    private float _shininess;
+
+    [...]
+}
+</code></pre>
+<p>From this FUSEE builds a glsl struct. A field of this type serves as <code>out</code> parameter of the vertex shader and <code>in</code> parameter of the fragment shader.</p>
+<pre><code class="lang-glsl">struct SurfOut
+{
+  vec3 position;
+  vec4 albedo;
+  vec4 emission;
+  vec3 normal;
+  float roughness;
+  float specularStrength;
+  float shininess;
+};
+</code></pre>
+<p>The built shader also provides a method to change the values of this struct in the vertex and fragment shaders.
+The <code>List&lt;string&gt; surfOutVertBody</code> of the <code>SurfaceEffects</code> constructor will be added to this methods body as we can see in the code below (lines marked as <em>Shader Shard</em>).</p>
+<p>For the vertex shader you need to calculate the position and normal.</p>
+<pre><code class="lang-C#">//C#
+var surfOutVertBody = new List&lt;string&gt;(){@&quot;
+    OUT.position = fuVertex;
+    OUT.normal = fuNormal;&quot;
+};
+</code></pre>
+<pre><code class="lang-glsl">//VERTEX SHADER
+
+struct SurfOut
+{
+    [...]
+};
+out SurfOut surfOut;
+
+SurfOut ChangeSurfVert()
+{
+    SurfOut OUT = SurfOut(vec3(0), vec4(0), vec4(0), vec3(0), 0.0, 0.0, 0.0);    
+    
+    // ----- Shader Shard ---- //
+    OUT.position = fuVertex;
+    OUT.normal = fuNormal;
+    //------------------------//
+
+    return OUT;
+}
+
+void main()
+{
+    surfOut = ChangeSurfVert();
+    [...]
+}
+
+</code></pre>
+<p>The same principle applies for the fragment shader. There you must make sure to set a value to all lighting relevant properties of your input struct.</p>
+<pre><code class="lang-C#">//C#
+var surfOutFragBody = new List&lt;string&gt;(){@&quot;
+    OUT.albedo = IN.Albedo;
+    OUT.specularStrength = IN.SpecularStrength;
+    OUT.shininess = IN.Shininess;
+    OUT.roughness = IN.Roughness;
+    OUT.emission = IN.Emission;&quot;
+};
+</code></pre>
+<pre><code class="lang-glsl">//FRAGMENT SHADER
+
+//Uniform, the values are settable from C#
+struct SpecularInput
+{
+    vec4 Emission;
+    float SpecularStrength;
+    float Shininess;
+    float Roughness;
+    vec4 Albedo;
+};
+uniform SpecularInput SurfaceInput;
+
+//Input from the vertex shader
+struct SurfOut
+{
+    [...]
+};
+in SurfOut surfOut;
+
+out vec4 oColor;
+
+SurfOut ChangeSurfFrag(SpecularInput IN)
+{
+    SurfOut OUT = surfOut;
+    //--------- Shader Shard ------------------//
+    OUT.albedo = IN.Albedo;
+    OUT.specularStrength = IN.SpecularStrength;
+    OUT.shininess = IN.Shininess;
+    OUT.roughness = IN.Roughness;
+    OUT.emission = IN.Emission;
+    //----------------------------------------//
+    return OUT;
+}
+
+void main()
+{
+    SurfOut surfOut = ChangeSurfFrag(SurfaceInput);
+
+    //lighting calculation using the values in surfOut
+    [...]
+    oColor = [...]
+}
+
+</code></pre>
+<blockquote>
+<p>💡 <strong>Note:</strong> If no custom <em>Shader Shards</em> are given to the constructor of the <code>SurfaceEffect</code> FUSEE will determine standard ones that only transfer the given values into the shaders <code>main</code> method, as we can see in the code above.</p>
+</blockquote>
+<h2 id="-engine-developer">👷 Engine Developer</h2>
+<h3 id="notes-on-how-to-write-a-new-surfaceeffect">Notes on how to write a new SurfaceEffect</h3>
+<ul>
+<li><p>Always derive from <code>SurfaceEffectBase</code> (or its subclasses).</p>
+</li>
+<li><p>If you want to add uniforms directly to it do it as a property and use the appropriate Attributes, for example:</p>
+</li>
+</ul>
+<pre><code class="lang-C#">//Example of how to add a uniform to a custom SurfaceEffect
+
+[FxShader(ShaderCategory.Fragment)]
+[FxShard(ShardCategory.Uniform)]
+public int ColorMode
+{
+    get { return _colorMode; }
+    set
+    {
+        _colorMode = value;
+        SetFxParam(nameof(ColorMode), _colorMode);
+    }
+}
+private int _colorMode;
+
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>Caution:</strong> You <strong>need</strong> to call <code>SetFxParam</code> in the setter to ensure the value is passed form the C# code to the shader.</p>
+</blockquote>
+<ul>
+<li><p>If you want to insert custom shader code, think about whether it can be done inside the <code>ChangeSurf</code> methods (injected via <em>Shader Shards</em>). If this isn't possible refer to the files in the <code>Fusee.Engine.Core.ShaderShards</code> namespace to get an idea on how to add shader code.</p>
+</li>
+<li><p><strong>Make sure the surface effect can be used with forward and deferred rendering</strong>.</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -8,7 +8,7 @@
     <title>Deferred Rendering </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Deferred Rendering ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,14 +83,14 @@ This kind of render pipeline can also easily be extended by various effects like
 <p>Every FUSEE Application is able to render deferred by just using a <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a> instead of a <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererForward.html">SceneRendererForward</a> and that's just it. The G-Buffer used in this scene renderer is composed as follows (geometric information is stored in screen space):</p>
 <p>Geometric information</p>
 <ul>
-<li>Position  (x, y, z, w)</li>
+<li>Position  (x, y, z, shading model)</li>
 <li>Normal    (x, y, z)</li>
 </ul>
 <p>Note that we need to store the geometric information in a texture that can store negative values. When using OpenGL we can use the data type float to achieve this.</p>
 <p>Material information</p>
 <ul>
 <li>Albedo    (r, g, b)</li>
-<li>Specular  (strength, shininess)</li>
+<li>Specular  (shading model dependent)</li>
 </ul>
 <p>Depth information</p>
 <ul>
@@ -105,11 +105,12 @@ This kind of render pipeline can also easily be extended by various effects like
 <p>The heart of the <a href="[RenderTarget](https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html)">RenderTarget</a> is the <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html#Fusee_Engine_Core_RenderTarget_RenderTextures">RenderTextures</a> array. We can fill this by using the appropriate methods. For a albedo texture this is <code>SetAlbedoTex</code>, for a depth texture <code>SetDepthTex</code> and so on. Those calls will create a <code>WritableTexture</code> with the correct format for their type.</p>
 <p>A <a href="[RenderTarget](https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html)">RenderTarget</a> is used in the Geometry Pass in the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a>, but we may also use it with forward rendering directly in a FUSEE Application by calling <code>Render(renderContext, renderTarget)</code> or in a self-made SceneRenderer by calling <a href="https://fusee3d.org/api/Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_SetRenderTarget_Fusee_Engine_Core_RenderTarget_">RenderContext.SetRenderTarget(renderTarget)</a>. If a render target is set, a Framebuffer Object is created on the GPU and its textures are bound. In the last two mentioned cases we have to make sure to use a appropriate fragment shader, that does not have a single output color but as much as our <a href="[RenderTarget](https://fusee3d.org/api/Fusee.Engine.Core.RenderTarget.html)">RenderTarget</a> has textures. For a complete G-Buffer it may look like this:</p>
 <pre><code class="lang-glsl">
-layout (location = 0) out vec4 PositionTexture;
-layout (location = 1) out vec4 NormalTexture;
-layout (location = 2) out vec4 AlbedoTexture;
-layout (location = 3) out vec4 SpecularTexture;
-layout (location = 4) out vec4 DepthTexture;
+layout (location = 0) out vec4 Position;
+layout (location = 1) out vec4 Albedo;
+layout (location = 2) out vec4 Normal;
+layout (location = 3) out vec4 Depth;
+layout (location = 4) out vec4 Specular;
+layout (location = 5) out vec4 Emission;
 
 </code></pre>
 <p>Note that we do not have to handle the shaders ourself if we use the <a href="https://fusee3d.org/api/Fusee.Engine.Core.SceneRendererDeferred.html">SceneRendererDeferred</a>!</p>
