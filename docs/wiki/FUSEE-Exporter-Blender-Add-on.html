@@ -67,30 +67,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-
-<blockquote>
-<p>⚠️ <strong>Pre-Release Content</strong></p>
-</blockquote>
 <h2 id="installing-the-blender-add-on">Installing the Blender Add-on</h2>
-<p>The FUSEE Blender Add-on is part of the FUSEE commmand line tool (<code>fusee.exe</code>). The FUSEE command line tool is available as a dotnet tool. To donload and install dotnet tools the latest version of the dotnet framework is required. Thus, to install the FUSEE Blender Add-on:</p>
-<ol>
-<li><p>Make sure Blender (v2.82 or higher) is installed at its default installation directory</p>
-</li>
-<li><p>Download and install the latest version of .NET Core (version 3.0 or higher):
-<a href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a></p>
-</li>
-<li><p>Open a command terminal window (shell) and dwonload and install the FUSEE command line tool by typing</p>
-<pre><code>dotnet tool install -g Fusee.Tools.CmdLine
-</code></pre>
-</li>
-<li><p>Advise the FUSEE command line tool (fusee.exe) to identify your Blender installation and copy the necessary Add-on files to the Blender installation location by typing</p>
-<pre><code>fusee install -b
-</code></pre>
-</li>
-<li><p>In Blender activate the export Add-on by going to Edit → Preferences → Add-ons Tab → Testing category and checking [☑ Import-Export: .fus format]</p>
-</li>
-</ol>
-<p>As a result you should see the [FUS (.fus)] entry in Blender's File → Export menu.</p>
+
+<p>The FUSEE Blender Add-on is contained in a zip-file named <a href="https://github.com/FUSEEProjectTeam/Fusee/releases/latest/download/io_export_fus.zip">io_export_fus.zip</a> and always part of the <a href="https://github.com/FUSEEProjectTeam/Fusee/releases/latest/">latest release</a>. Follow the <a href="https://fusee3d.org/getting-started/install-fusee.html#installenable-the-fusee-blender-add-on-within-blender">installation instructions</a> on the FUSEE project web site.</p>
 <h2 id="exported-features">Exported Features</h2>
 <h3 id="hierarchies-parentchild-relations">Hierarchies (Parent/Child Relations)</h3>
 <p>Hierarchies of nodes in a Blender scene are fully exported to the resulting .fus files. Transformations (position/rotation) applied to a exported Blender scene in a FUSEE application e.g. as a result of user interaction will show the expected result.</p>
