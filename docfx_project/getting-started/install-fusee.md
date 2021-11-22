@@ -19,7 +19,7 @@ Before following the FUSEE installation instructions on this page, make sure all
 
 `dotnet new -i Fusee.Template.dotnet`
 
-On HFU Pcs you in addition have to `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`
+On Computers managed by an administrator such as classroom PCs it might be necessary to additionally `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`.
 
 ## Uninstalling
 
@@ -36,7 +36,7 @@ On HFU Pcs you in addition have to `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`
 `fusee` and follow the help text.
 
 
-### Install/Enable the FUSEE Blender Add-on within Blender
+## Install/Enable the FUSEE Blender Add-on within Blender
 
 1. Download the [io_export_fus.zip](https://github.com/FUSEEProjectTeam/Fusee/releases/latest/download/io_export_fus.zip)
 1. Open Blender
