@@ -78,7 +78,7 @@
 <p>💡 <strong>Note:</strong> Applying the scale transformation to the mesh and children during export can be suppressed by unchecking the [☑ Apply Scale] settings in the Export FUS File View dialog (in the settings region at the right border of the dialog).</p>
 </blockquote>
 <h3 id="geometry">Geometry</h3>
-<p>Blender's capabilities of representing 3D geometry is much richer than FUSEE's. In general, only Blender Mesh Objects will exported resulting in FUSEE geometry. To export as much of the geometry's visual impression within the FUSEE file format's  limited capabilities, the Blender exporter automatically takes the following actions</p>
+<p>Blender's capabilities of representing 3D geometry is much richer than FUSEE's. In general, only Blender Mesh Objects will be exported resulting in FUSEE geometry. To export as much of the geometry's visual impression within the FUSEE file format's  limited capabilities, the Blender exporter automatically takes the following actions</p>
 <ol>
 <li>Re-calculate all normal directions to make them face to the object's outside</li>
 <li>Apply Modifiers such as Multiresolution, Subdivision Surface, Mirror or Edge Split</li>
@@ -111,17 +111,40 @@
 <p>Currently the exporter only support textures as Image Texture nodes connected to a Principled BSDF's Base Color or Normal value. The only supported file formats by FUSEE are .jpg or .png. Make sure to make the textures' dimensions powers of 2 (256, 512, 1024, ...). The image files will be copied to the destination .fus file's directory.</p>
 <h4 id="multiple-materials">Multiple Materials</h4>
 <p>A Blender mesh referencing more than one material will be split up into a as many FUSEE nodes as there are materials referenced from the mesh geometry. All of these FUSEE nodes belonging to a single original Blender Mesh are sub-grouped under a FUSEE node with the same name as the original Mesh object. The geometry part belonging to a single material is possibly further subdivided if the part will generate more than 65K vertices on export (see <a href="#Huge-Meshes">Huge Meshes</a>).</p>
+<h3 id="animation">Animation</h3>
+<p>Currently only simple NLA animations are exportable. This means changing the location, scale and rotation. These are then written into the fus file. At the moment an animation cannot be played or stopped manually. If an animation exists it will be played directly.</p>
+<blockquote>
+<p>💡 <strong>Note:</strong> Scaling is only exported if you don't check the Do Apply Scaling box when exporting.</p>
+</blockquote>
 <h2 id="-developer-information">👷 Developer Information</h2>
+<h3 id="simple-nla-animation-exporter-for-blender">Simple NLA-Animation Exporter for Blender</h3>
+<h4 id="the-animation-system-has-the-following-classes">The animation system has the following classes:</h4>
+<p>Blender Level:</p>
+<ul>
+<li>FusAnimation</li>
+<li>FusAnimationChannel</li>
+<li>FusAnimationKeyBase and children</li>
+</ul>
+<p>FUSEE level:</p>
+<ul>
+<li>Animation</li>
+<li>FusSceneConverter</li>
+<li>SceneRendererForward</li>
+</ul>
+<h4 id="the-blenderexporter">The Blenderexporter</h4>
+<p>In Blender there are NLA strips these are strips with individual tracks. These in turn have individual channels. For example, an NLA strip has a location and scale track, which in turn consist of the X,Y and Z channel. The BlenderExporter checks if there are one or more NLA-Strips in the Blender file. If this is the case, empty temporary lists are created for the individual tracks. These are filled with the existing tracks. If there is a track that is not used, this list is simply deleted. The reading must be done so that you can change the values in these without changing anything in Blender. When these are filled, it is checked if you have all channels. It can be possible that a location track only has the channels X and Y but not Z. If this is the case, a new Z channel is created. It is the same if another channel or several channels are missing. Now that all channels have been created for the existing tracks, the keyframes can be compared, and if there are differences, the missing ones are created. When they are created, they are stored in another temporary list. This is done so that they can be deleted again afterwards, so that nothing changes in the Blender file and everything is the same as before exporting. Finally, this data is written to the Fus file.</p>
+<h4 id="in-fusee">In FUSEE</h4>
+<p>When a .fus file with animations is loaded into FUSEE it is processed using the FusSceneConverter. When it gets to the FusAnimation component, a high-level animation component is created. This component has a single variable and that is a Xirkit animation component. In the FusSceneConverter this Xirkit animation component is filled with the data from the FusAnimation. Finally, the SceneRendererForward class has a VisitMethod method that plays the animation.</p>
 <h3 id="overall-structure">Overall Structure</h3>
 <p>The Blender FUSEE Export Add-on follows the general Blender Add-on rules written in Python. It consists of four parts depending on each others in the following order:</p>
 <ol>
 <li>The Add-on glue code to make it appear in Blender's File → Export menu (<code>__init__.py</code>). On export this calls:</li>
 <li>The Visitor to traverse the Blender scene graph in a Pre-order manner (<code>BlenderVisitor.py</code>). It contains various methods for the different types of Blender objects appearing in a Blender scene graph. This class can be reused in other scenarios than an export menu entry where a FUSEE scene should be generated from within blender (see <a href="#Command-Line">Command Line</a>). During Blender scene traversal it uses:</li>
-<li>A Blender Python (bpy)-agnostic FUSEE scene writer class taking to-be-exported payload (such as materials, transformation settings, mesh geometry) in a structured way while traversing the original scene graph (<code>FusWriter.py</code>). This class could be reused in other situations where a FUSEE scene should be generated from Python code. To assemble the serialized FUSEE file stream, it uses:</li>
+<li>A Blender Python (bpy)-agnostic FUSEE scene writer class taking to-be-exported payload (such as materials, transformation settings, mesh geometry) in a structured way while traversing the original scene graph (<code>FusSceneWriter.py</code>). This class could be reused in other situations where a FUSEE scene should be generated from Python code. To assemble the serialized FUSEE file stream, it uses:</li>
 <li>The Google-Protobuf Python classes (<code>proto/FusSerialization_pb2.py</code>). These classes are automatically generated in a two-step process during the FUSEE build process:
 <ol>
 <li>The command <code>fusee protoschema</code> generates a Google-Protobuf schema from the C# classes found in Fusee (mainly in the Fusee.Serialization project).</li>
-<li>A call to the Protobuf compoiler <code>protoc.exe</code> generates Python code from the schema.</li>
+<li>A call to the Protobuf compiler <code>protoc.exe</code> generates Python code from the schema.</li>
 </ol>
 </li>
 </ol>

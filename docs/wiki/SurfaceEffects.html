@@ -104,7 +104,7 @@ _surfFx = MakeEffect.FromDiffuseSpecular
 _scene.Children[0].Components[1] = _surfFx;
 </code></pre>
 <p>This will yield in a red object with a specular highlight.</p>
-<p>Where the input that <em>DiffuseSpecular</em> method expects are relatively self-explanatory, even without in-depth knowledge of different shading approaches, <em>BRDF</em> (short for bidirectional reflectance distribution function) provides a more complicated but on the other hand more physically correct way to shade objects.
+<p>The input that <em>DiffuseSpecular</em> method expects is relatively self-explanatory, even without in-depth knowledge of different shading approaches. This may not be the case for <em>BRDF</em> (short for bidirectional reflectance distribution function) methods, but they do provide a more physically correct way to shade objects.
 With those methods we can create <code>SurfaceEffects</code> that are capable of simulating a wide range of real-world materials with a single Shader - simply by adjusting the different <code>uniform</code> variables.
 Examples can be seen in the picture below. You can find further information regarding BRDF Materials here: <a href="https://learnopengl.com/PBR/Theory"><em>learnopengl/PBR/Theory</em></a>.</p>
 <blockquote>

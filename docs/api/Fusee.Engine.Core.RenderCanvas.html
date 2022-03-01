@@ -115,6 +115,31 @@ one containing the more view oriented aspects and the other containing the more 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RenderCanvas</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Fusee_Engine_Core_RenderCanvas_LoadingCompleted" data-uid="Fusee.Engine.Core.RenderCanvas.LoadingCompleted">LoadingCompleted</h4>
+  <div class="markdown level1 summary"><p>This event is usually triggered when loading is completed (after init() method)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventHandler&lt;EventArgs&gt; LoadingCompleted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="Fusee_Engine_Core_RenderCanvas_CanvasImplementor_" data-uid="Fusee.Engine.Core.RenderCanvas.CanvasImplementor*"></a>
@@ -239,6 +264,31 @@ one containing the more view oriented aspects and the other containing the more 
         <td><a class="xref" href="Fusee.Engine.Common.IInputDriverImp.html">IInputDriverImp</a></td>
         <td><p>The input driver implementor.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_RenderCanvas_IsLoaded_" data-uid="Fusee.Engine.Core.RenderCanvas.IsLoaded*"></a>
+  <h4 id="Fusee_Engine_Core_RenderCanvas_IsLoaded" data-uid="Fusee.Engine.Core.RenderCanvas.IsLoaded">IsLoaded</h4>
+  <div class="markdown level1 summary"><p><span class="xref">true</span> when InitAsync() finished
+Prevents <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_RenderAFrame">RenderAFrame()</a> and <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_Update">Update()</a> while <span class="xref">false</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLoaded { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -486,6 +536,30 @@ will call one-time initialization code on the render context (<a class="xref" hr
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void InitApp()</code></pre>
   </div>
+  <a id="Fusee_Engine_Core_RenderCanvas_InitAsync_" data-uid="Fusee.Engine.Core.RenderCanvas.InitAsync*"></a>
+  <h4 id="Fusee_Engine_Core_RenderCanvas_InitAsync" data-uid="Fusee.Engine.Core.RenderCanvas.InitAsync">InitAsync()</h4>
+  <div class="markdown level1 summary"><p>Called after <a class="xref" href="Fusee.Engine.Core.RenderCanvas.html#Fusee_Engine_Core_RenderCanvas_Init">Init()</a> can be used to await async tasks (e.g. loading methods)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual async Task InitAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Core_RenderCanvas_OpenLink_" data-uid="Fusee.Engine.Core.RenderCanvas.OpenLink*"></a>
   <h4 id="Fusee_Engine_Core_RenderCanvas_OpenLink_System_String_" data-uid="Fusee.Engine.Core.RenderCanvas.OpenLink(System.String)">OpenLink(String)</h4>
   <div class="markdown level1 summary"><p>Opens the given URL in the user's standard web browser. The link MUST start with &quot;http://&quot;.</p>

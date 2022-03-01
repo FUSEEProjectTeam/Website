@@ -69,13 +69,17 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="render-layer">Render Layer</h1>
 
-<p>The <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.RenderLayer.html">Render Layer</a> is used to render different Camaras on different layers. This way you can add a kind of minimap for example.</p>
+<p>The <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.RenderLayer.html">RenderLayer</a> component is used control the visibility of object when rendered with different <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">Cameras</a>. This feature can be used in various situations, e. g. to implement an overview map using an individual camera rendering different objects than the camera used to render the 3D main view.</p>
 <h2 id="using-render-layer">Using Render Layer</h2>
 <p>The objects that should be present in a <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.RenderLayer.html">Render Layer</a> need the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.RenderLayer.html">Render Layer</a> as the first component.
 The camera itself also needs to specify which Render Layer it should use. This can be entered as a parameter when creating the <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">camera</a> or changed later.
 <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.RenderLayer.html">Render Layers</a> can also work with multiple <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html">cameras</a>, but note that the higher <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html#Fusee_Engine_Core_Scene_Camera_Layer">camera layer</a> is displayed above the lower <a href="https://fusee3d.org/api/Fusee.Engine.Core.Scene.Camera.html#Fusee_Engine_Core_Scene_Camera_Layer">camera layer</a>.</p>
 <h2 id="example">Example</h2>
-<pre><code class="lang-C#">      public override void Init()
+<pre><code class="lang-C#">    // This example builds two rockets rendered by 2 cameras.
+    // - The left camera is on RenderLayers.Layer01 the right is on RenderLayers.Layer02.
+    // - The left rocket is on RenderLayers.Layer01 =&gt; only rendered by the left camera.
+    // - The right rocket is on RenderLayers.Layer02 =&gt; only rendered by the right camera.
+      public override void Init()
         {
             _scene = new SceneContainer();
 
