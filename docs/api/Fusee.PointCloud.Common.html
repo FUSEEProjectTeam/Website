@@ -77,89 +77,43 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a></h4>
-      <section><p>Every point cloud needs a point accessor. Provides access to the point parameters like position or color.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.MakePointCloudEffect.html">MakePointCloudEffect</a></h4>
+      <section><p>Static class that contains methods that create <a class="xref" href="Fusee.Engine.Core.Effects.Effect.html">Effect</a>s for rendering point clouds.</p>
 </section>
-    <h3 id="structs">Structs
-  </h3>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos32.html">Pos32</a></h4>
-      <section><p>Point type: Position float3.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64.html">Pos64</a></h4>
-      <section><p>Point type: Position double3.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64Col32.html">Pos64Col32</a></h4>
-      <section><p>Point type: Position, color.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64Col32IShort.html">Pos64Col32IShort</a></h4>
-      <section><p>Point type: Position, color, intensity.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64IShort.html">Pos64IShort</a></h4>
-      <section><p>Point type: Position, intensity.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64Label8.html">Pos64Label8</a></h4>
-      <section><p>Point type: Position, color of the structification.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64Nor32Col32.html">Pos64Nor32Col32</a></h4>
-      <section><p>Point type: Position, normal, color.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64Nor32Col32IShort.html">Pos64Nor32Col32IShort</a></h4>
-      <section><p>Point type: Position, normal, color, intensity.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Pos64Nor32IShort.html">Pos64Nor32IShort</a></h4>
-      <section><p>Point type: Position, normal, intensity.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html">PointCloudDataHandlerBase</a></h4>
+      <section><p>Manages the caching and loading of point and mesh data.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.IPcRendering.html">IPcRendering</a></h4>
-      <section><p>Implement this interface into wpf apps that use point cloud ooc rendering.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.IPointCloud.html">IPointCloud</a></h4>
+      <section><p>Interface for file type independent point cloud implementations.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.IPointCloudMetaInfo.html">IPointCloudMetaInfo</a></h4>
-      <section><p>Interface used in <a class="xref" href="Fusee.PointCloud.Common.IPointReader.html">IPointReader</a>.
-Used to store the meta info of a point cloud, which is usually found in the header of the file.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.IPointCloudImp.html">IPointCloudImp</a></h4>
+      <section><p>Smallest common set of properties that are needed to render point clouds out of core.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.IPointFormat.html">IPointFormat</a></h4>
-      <section><p>Interface used in <a class="xref" href="Fusee.PointCloud.Common.IPointReader.html">IPointReader</a>.
-Used to describe the point type.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.IPointCloudOctant.html">IPointCloudOctant</a></h4>
+      <section><p>Used in <a class="xref" href="Fusee.PointCloud.Common.IPointCloudOctree.html">IPointCloudOctree</a>. Allows the use in non-generic context, e.g. in <a class="xref" href="Fusee.PointCloud.Common.IPointReader.html">IPointReader</a>s.</p>
+</section>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.IPointCloudOctree.html">IPointCloudOctree</a></h4>
+      <section><p>This octree's purpose is the out of core rendering of point clouds. It is used to determine the visibility of point chunks in octants.
+Allows the use in non-generic context, e.g. in <a class="xref" href="Fusee.PointCloud.Common.IPointReader.html">IPointReader</a>s.</p>
 </section>
       <h4><a class="xref" href="Fusee.PointCloud.Common.IPointReader.html">IPointReader</a></h4>
       <section><p>Implement this into any Point Cloud Reader.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.IPtOctantLoader.html">IPtOctantLoader</a></h4>
-      <section><p>Type-independent interface for classes that manage the out-of-core (on demand) loading of point clouds.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.IPtOctreeFileReader.html">IPtOctreeFileReader</a></h4>
-      <section><p>Type-independent interface for classes that can read out-of-core-files.</p>
-</section>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.ColorMode.html">ColorMode</a></h4>
-      <section><p>Available color modes.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.Lighting.html">Lighting</a></h4>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.PointCloudLighting.html">PointCloudLighting</a></h4>
       <section><p>Available Lighting methods.</p>
+</section>
+      <h4><a class="xref" href="Fusee.PointCloud.Common.PointColorMode.html">PointColorMode</a></h4>
+      <section><p>Available color modes.</p>
 </section>
       <h4><a class="xref" href="Fusee.PointCloud.Common.PointShape.html">PointShape</a></h4>
       <section><p>Available point shapes.</p>
 </section>
       <h4><a class="xref" href="Fusee.PointCloud.Common.PointSizeMode.html">PointSizeMode</a></h4>
       <section><p>Available point size modes.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.PointType.html">PointType</a></h4>
-      <section><p>Enum that contains all available point types.
-Abbreviations:
-32: float
-64: double
-8: ushort
-Pos: position
-Col: Color
-I: Intensity
-Nor: Normal</p>
-</section>
-    <h3 id="delegates">Delegates
-  </h3>
-      <h4><a class="xref" href="Fusee.PointCloud.Common.AppSetupDelegate.html">AppSetupDelegate</a></h4>
-      <section><p>Delegate that allows us to implement a setup method in the app's Main.cs</p>
 </section>
 </article>
           </div>

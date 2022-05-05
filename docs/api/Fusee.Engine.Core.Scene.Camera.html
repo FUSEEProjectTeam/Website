@@ -93,6 +93,9 @@ A the Projection and View matrices, generated from a CameraComponent will overwr
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
     </div>
     <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Active">SceneComponent.Active</a>
+    </div>
+    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
@@ -175,29 +178,6 @@ A the Projection and View matrices, generated from a CameraComponent will overwr
   </table>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Fusee_Engine_Core_Scene_Camera_Active" data-uid="Fusee.Engine.Core.Scene.Camera.Active">Active</h4>
-  <div class="markdown level1 summary"><p>A camera is active by default. Set this to false to deactivate it.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Active</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_BackgroundColor" data-uid="Fusee.Engine.Core.Scene.Camera.BackgroundColor">BackgroundColor</h4>
   <div class="markdown level1 summary"><p>The background color for this camera's viewport.</p>
 </div>
@@ -222,7 +202,8 @@ A the Projection and View matrices, generated from a CameraComponent will overwr
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_ClearColor" data-uid="Fusee.Engine.Core.Scene.Camera.ClearColor">ClearColor</h4>
-  <div class="markdown level1 summary"><p>If set to false, the color bit won't be cleared before this camera is rendered.</p>
+  <div class="markdown level1 summary"><p>Is true per default. If set to false, the color bit won't be cleared before this camera is rendered.
+Set this to false if the background color should be transparent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -245,7 +226,7 @@ A the Projection and View matrices, generated from a CameraComponent will overwr
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_ClearDepth" data-uid="Fusee.Engine.Core.Scene.Camera.ClearDepth">ClearDepth</h4>
-  <div class="markdown level1 summary"><p>If set to false, the depth bit won't be cleared before this camera is rendered.</p>
+  <div class="markdown level1 summary"><p>Is true per default. If set to false, the depth bit won't be cleared before this camera is rendered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -268,7 +249,7 @@ A the Projection and View matrices, generated from a CameraComponent will overwr
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_ClippingPlanes" data-uid="Fusee.Engine.Core.Scene.Camera.ClippingPlanes">ClippingPlanes</h4>
-  <div class="markdown level1 summary"><p>Distance to the near and far clipping planes.</p>
+  <div class="markdown level1 summary"><p>Distance to the near (x value) and far (y value) clipping planes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -291,7 +272,13 @@ A the Projection and View matrices, generated from a CameraComponent will overwr
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_CustomCameraUpdate" data-uid="Fusee.Engine.Core.Scene.Camera.CustomCameraUpdate">CustomCameraUpdate</h4>
-  <div class="markdown level1 summary"><p>Allows to overwrite the calculation of the projection matrix. E.g. if <a class="xref" href="Fusee.Engine.Core.Scene.Camera.html#Fusee_Engine_Core_Scene_Camera_ProjectionMethod">ProjectionMethod</a> does not contain your desired projection calculation.</p>
+  <div class="markdown level1 summary"><p>Allows to overwrite the calculation of the projection matrix.
+E.g. if <a class="xref" href="Fusee.Engine.Core.Scene.Camera.html#Fusee_Engine_Core_Scene_Camera_ProjectionMethod">ProjectionMethod</a> does not contain your desired projection calculation.
+Is null by default. This delegate enables us to add a custom projection method.
+If we choose to use this delegate we need to provide a method that calculates a projection matrix
+and outputs a Viewport in percent in the range [0, 100]. Note that this is optional
+but if this delegate is not null its out values (Projection matrix and Viewport)
+will overwrite the ones calculated from the other camera parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -361,7 +348,8 @@ Note that only <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_Layer" data-uid="Fusee.Engine.Core.Scene.Camera.Layer">Layer</h4>
-  <div class="markdown level1 summary"><p>If there is more than one CameraComponent in one scene, the rendered output of the camera with a higher layer will be drawn above the output of a camera with a lower layer.</p>
+  <div class="markdown level1 summary"><p>If there is more than one CameraComponent in one scene,
+the rendered output of the camera with a higher layer will be drawn above the output of a camera with a lower layer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -384,7 +372,8 @@ Note that only <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_ProjectionMethod" data-uid="Fusee.Engine.Core.Scene.Camera.ProjectionMethod">ProjectionMethod</h4>
-  <div class="markdown level1 summary"><p>You can choose from a set of projection methods. This will automatically calculate the correct projection matrix.</p>
+  <div class="markdown level1 summary"><p>You can choose from a set of projection methods. At the moment we can choose between perspective and orthographic.
+This will automatically calculate the correct projection matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -430,7 +419,8 @@ Note that only <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>
     </tbody>
   </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_RenderTexture" data-uid="Fusee.Engine.Core.Scene.Camera.RenderTexture">RenderTexture</h4>
-  <div class="markdown level1 summary"><p>The texture given here will be used as render target.</p>
+  <div class="markdown level1 summary"><p>The texture given here will be used as render target.
+If this is not null the output gets rendered into the texture, otherwise to the screen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -452,8 +442,32 @@ Note that only <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a>
       </tr>
     </tbody>
   </table>
+  <h4 id="Fusee_Engine_Core_Scene_Camera_Scale" data-uid="Fusee.Engine.Core.Scene.Camera.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>Scales the orthograpic viewing frustum. Dosn't have an effect if <a class="xref" href="Fusee.Engine.Core.Scene.ProjectionMethod.html#Fusee_Engine_Core_Scene_ProjectionMethod_Perspective">Perspective</a> is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="Fusee_Engine_Core_Scene_Camera_Viewport" data-uid="Fusee.Engine.Core.Scene.Camera.Viewport">Viewport</h4>
-  <div class="markdown level1 summary"><p>The viewport in percent [0, 100].
+  <div class="markdown level1 summary"><p>The output is rendered to the section of the application window defined by the Viewport values:
+The viewport in percent [0, 100].
 x: start
 y: end
 z: width

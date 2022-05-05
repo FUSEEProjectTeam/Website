@@ -856,194 +856,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_M_Diagonalizer_" data-uid="Fusee.Math.Core.M.Diagonalizer*"></a>
-  <h4 id="Fusee_Math_Core_M_Diagonalizer_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.M.Diagonalizer(Fusee.Math.Core.double4x4)">Diagonalizer(double4x4)</h4>
-  <div class="markdown level1 summary"><p>Diagonalizes a given covariance matrix with double precision.</p>
-<p>
-    Credits to: https://github.com/melax/sandbox
-    http://melax.github.io/diag.html
-    A must be a symmetric matrix.
-    returns quaternion q such that its corresponding matrix Q
-    can be used to Diagonalize A
-    Diagonal matrix D = transpose(Q) * A * (Q); thus A == Q * D * QT
-    The directions of Q (cols of Q) are the eigenvectors D&apos;s diagonal is the eigenvalues.
-    As per &apos;col&apos; convention if float3x3 Q = qgetmatrix(q); then Q*v = q*v*conj(q).
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static EigenD Diagonalizer(double4x4 A)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><span class="parametername">A</span></td>
-        <td><p>The covariance matrix</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.EigenD.html">EigenD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Math_Core_M_Diagonalizer_" data-uid="Fusee.Math.Core.M.Diagonalizer*"></a>
-  <h4 id="Fusee_Math_Core_M_Diagonalizer_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.M.Diagonalizer(Fusee.Math.Core.float4x4)">Diagonalizer(float4x4)</h4>
-  <div class="markdown level1 summary"><p>Diagonalizes a given covariance matrix with single precision.
-Currently only for 3x3 matrices, therefore three values but for the sake of convenience you can (and have to) feed a 4x4 matrix into this method.</p>
-<p>
-    Credits to: https://github.com/melax/sandbox
-    http://melax.github.io/diag.html
-    A must be a symmetric matrix.
-    returns quaternion q such that its corresponding matrix Q
-    can be used to Diagonalize A
-    Diagonal matrix D = transpose(Q) * A * (Q); thus A == Q * D * QT
-    The directions of Q (cols of Q) are the eigenvectors D&apos;s diagonal is the eigenvalues.
-    As per &apos;col&apos; convention if float3x3 Q = qgetmatrix(q); then Q*v = q*v*conj(q).
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static EigenF Diagonalizer(float4x4 A)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
-        <td><span class="parametername">A</span></td>
-        <td><p>The covariance matrix.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.EigenF.html">EigenF</a></td>
-        <td><p>EigenF with 3 Eigen vectors and 3 eigen values.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Math_Core_M_EigenFromCovarianceMat_" data-uid="Fusee.Math.Core.M.EigenFromCovarianceMat*"></a>
-  <h4 id="Fusee_Math_Core_M_EigenFromCovarianceMat_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.M.EigenFromCovarianceMat(Fusee.Math.Core.double4x4)">EigenFromCovarianceMat(double4x4)</h4>
-  <div class="markdown level1 summary"><p>Generates an Eigen structure (values and vectors) from a given covariance matrix in double precision.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static EigenD EigenFromCovarianceMat(double4x4 covarianceMatrix)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><span class="parametername">covarianceMatrix</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.EigenD.html">EigenD</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Math_Core_M_EigenFromCovarianceMat_" data-uid="Fusee.Math.Core.M.EigenFromCovarianceMat*"></a>
-  <h4 id="Fusee_Math_Core_M_EigenFromCovarianceMat_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.M.EigenFromCovarianceMat(Fusee.Math.Core.float4x4)">EigenFromCovarianceMat(float4x4)</h4>
-  <div class="markdown level1 summary"><p>Generates an Eigen structure (values and vectors) from a given covariance matrix in single precision.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static EigenF EigenFromCovarianceMat(float4x4 covarianceMatrix)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
-        <td><span class="parametername">covarianceMatrix</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.EigenF.html">EigenF</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Math_Core_M_Equals_" data-uid="Fusee.Math.Core.M.Equals*"></a>
   <h4 id="Fusee_Math_Core_M_Equals_System_Double_System_Double_" data-uid="Fusee.Math.Core.M.Equals(System.Double,System.Double)">Equals(Double, Double)</h4>
   <div class="markdown level1 summary"><p>Compares two double values for equality.</p>
@@ -2523,6 +2335,55 @@ which is found in the Quake III source code. This implementation comes from
         <td><span class="xref">System.Single</span></td>
         <td><p>Returns a value between 0.0 and 1.0, corresponding to t.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_M_Step_" data-uid="Fusee.Math.Core.M.Step*"></a>
+  <h4 id="Fusee_Math_Core_M_Step_System_Double_System_Double_" data-uid="Fusee.Math.Core.M.Step(System.Double,System.Double)">Step(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Generates a step function by comparing &quot;val&quot; to &quot;edge&quot;.
+0.0 is returned if &quot;val&quot; is smaller than &quot;edge&quot; and 1.0 is returned otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Step(double edge, double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">edge</span></td>
+        <td><p>Specifies the location of the edge of the step function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>Specifies the value to be used to generate the step function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Math_Core_FrustumD" data-uid="Fusee.Math.Core.FrustumD" class="text-break">Class FrustumD
   </h1>
-  <div class="markdown level0 summary"><p>Describes a frustum by using six <a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a>s.</p>
+  <div class="markdown level0 summary"><p>Describes a frustum by using six <a class="xref" href="Fusee.Math.Core.PlaneD.html">PlaneD</a>s.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -260,13 +260,13 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Fusee_Math_Core_FrustumD_CalculateFrustumCorners_" data-uid="Fusee.Math.Core.FrustumD.CalculateFrustumCorners*"></a>
-  <h4 id="Fusee_Math_Core_FrustumD_CalculateFrustumCorners_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.FrustumD.CalculateFrustumCorners(Fusee.Math.Core.float4x4)">CalculateFrustumCorners(float4x4)</h4>
+  <h4 id="Fusee_Math_Core_FrustumD_CalculateFrustumCorners_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.FrustumD.CalculateFrustumCorners(Fusee.Math.Core.double4x4)">CalculateFrustumCorners(double4x4)</h4>
   <div class="markdown level1 summary"><p>Calculates the eight frustum corners from an input matrix. In most cases this matrix will be the View-Projection-Matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;float3&gt; CalculateFrustumCorners(float4x4 mat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;double3&gt; CalculateFrustumCorners(double4x4 mat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -279,7 +279,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
         <td><span class="parametername">mat</span></td>
         <td><p>The matrix from which to calculate the frustum corners.</p>
 </td>
@@ -296,13 +296,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_FrustumD_CalculateFrustumPlanes_" data-uid="Fusee.Math.Core.FrustumD.CalculateFrustumPlanes*"></a>
-  <h4 id="Fusee_Math_Core_FrustumD_CalculateFrustumPlanes_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.FrustumD.CalculateFrustumPlanes(Fusee.Math.Core.float4x4)">CalculateFrustumPlanes(float4x4)</h4>
+  <h4 id="Fusee_Math_Core_FrustumD_CalculateFrustumPlanes_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.FrustumD.CalculateFrustumPlanes(Fusee.Math.Core.double4x4)">CalculateFrustumPlanes(double4x4)</h4>
   <div class="markdown level1 summary"><p>(Re)Calculates the frustum planes.
 If feeded with a projection matrix, the frustum planes are in View Space.
 If feeded with a view projection matrix, the frustum planes are in World Space.
@@ -312,7 +312,7 @@ See: <a href="http://www8.cs.umu.se/kurser/5DV051/HT12/lab/plane_extraction.pdf"
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CalculateFrustumPlanes(float4x4 mat)</code></pre>
+    <pre><code class="lang-csharp hljs">public void CalculateFrustumPlanes(double4x4 mat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -325,7 +325,7 @@ See: <a href="http://www8.cs.umu.se/kurser/5DV051/HT12/lab/plane_extraction.pdf"
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
         <td><span class="parametername">mat</span></td>
         <td><p>The matrix from which to extract the planes.</p>
 </td>

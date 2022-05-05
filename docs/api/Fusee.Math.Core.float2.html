@@ -1728,6 +1728,61 @@ Each component of vector a is blended with its equivalent in vector b.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_float2_PointInRectangle_" data-uid="Fusee.Math.Core.float2.PointInRectangle*"></a>
+  <h4 id="Fusee_Math_Core_float2_PointInRectangle_Fusee_Math_Core_float2_Fusee_Math_Core_float2_Fusee_Math_Core_float2_" data-uid="Fusee.Math.Core.float2.PointInRectangle(Fusee.Math.Core.float2,Fusee.Math.Core.float2,Fusee.Math.Core.float2)">PointInRectangle(float2, float2, float2)</h4>
+  <div class="markdown level1 summary"><p>Checks if the given point lies within the given rectangle using screen coordinates (meaning top is smaller than bottom).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PointInRectangle(float2 topLeft, float2 bottomRight, float2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
+        <td><span class="parametername">topLeft</span></td>
+        <td><p>The top left point of the rectangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
+        <td><span class="parametername">bottomRight</span></td>
+        <td><p>The bottom right point of the triangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the point lies withing the rectangle. False if the point lies outside the rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_float2_PointInTriangle_" data-uid="Fusee.Math.Core.float2.PointInTriangle*"></a>
   <h4 id="Fusee_Math_Core_float2_PointInTriangle_Fusee_Math_Core_float2_Fusee_Math_Core_float2_Fusee_Math_Core_float2_Fusee_Math_Core_float2_System_Single__System_Single__" data-uid="Fusee.Math.Core.float2.PointInTriangle(Fusee.Math.Core.float2,Fusee.Math.Core.float2,Fusee.Math.Core.float2,Fusee.Math.Core.float2,System.Single@,System.Single@)">PointInTriangle(float2, float2, float2, float2, out Single, out Single)</h4>
   <div class="markdown level1 summary"><p>Checks if the give point is inside the given triangle (a, b, c). Returns the barycentric coordinates using <a class="xref" href="Fusee.Math.Core.float2.html#Fusee_Math_Core_float2_GetBarycentric_Fusee_Math_Core_float2_Fusee_Math_Core_float2_Fusee_Math_Core_float2_Fusee_Math_Core_float2_System_Single__System_Single__">GetBarycentric(float2, float2, float2, float2, out Single, out Single)</a>.</p>

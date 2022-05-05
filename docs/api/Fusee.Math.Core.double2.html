@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Math_Core_double2" data-uid="Fusee.Math.Core.double2" class="text-break">Struct double2
   </h1>
-  <div class="markdown level0 summary"><p>Represents a 2D vector using two double-precision floating-point numbers.</p>
+  <div class="markdown level0 summary"><p>Represents a 2D vector using two double-precision.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
@@ -99,10 +99,37 @@
     <pre><code class="lang-csharp hljs">public struct double2 : IEquatable&lt;double2&gt;</code></pre>
   </div>
   <h5 id="Fusee_Math_Core_double2_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The double2 structure is suitable for interoperation with unmanaged code requiring two consecutive doubles.</p>
+  <div class="markdown level0 remarks"><p>The double2 structure is suitable for inter-operation with unmanaged code requiring two consecutive doubles.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
+  <a id="Fusee_Math_Core_double2__ctor_" data-uid="Fusee.Math.Core.double2.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_double2__ctor_System_Double_" data-uid="Fusee.Math.Core.double2.#ctor(System.Double)">double2(Double)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new double2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>This value will be set for the x and y component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double2__ctor_" data-uid="Fusee.Math.Core.double2.#ctor*"></a>
   <h4 id="Fusee_Math_Core_double2__ctor_System_Double_System_Double_" data-uid="Fusee.Math.Core.double2.#ctor(System.Double,System.Double)">double2(Double, Double)</h4>
   <div class="markdown level1 summary"><p>Constructs a new double2.</p>
@@ -278,6 +305,30 @@
   </table>
   <h3 id="properties">Properties
   </h3>
+  <a id="Fusee_Math_Core_double2_g_" data-uid="Fusee.Math.Core.double2.g*"></a>
+  <h4 id="Fusee_Math_Core_double2_g" data-uid="Fusee.Math.Core.double2.g">g</h4>
+  <div class="markdown level1 summary"><p>The green component (same as y)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double g { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double2_Item_" data-uid="Fusee.Math.Core.double2.Item*"></a>
   <h4 id="Fusee_Math_Core_double2_Item_System_Int32_" data-uid="Fusee.Math.Core.double2.Item(System.Int32)">Item[Int32]</h4>
   <div class="markdown level1 summary"><p>Gets or sets the individual components x and y, depending on their index.</p>
@@ -346,10 +397,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Fusee_Math_Core_double2_Length_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Fusee.Math.Core.double2.html#Fusee_Math_Core_double2_LengthSquared">LengthSquared</a></div>
-  </div>
   <a id="Fusee_Math_Core_double2_LengthSquared_" data-uid="Fusee.Math.Core.double2.LengthSquared*"></a>
   <h4 id="Fusee_Math_Core_double2_LengthSquared" data-uid="Fusee.Math.Core.double2.LengthSquared">LengthSquared</h4>
   <div class="markdown level1 summary"><p>Gets the square of the vector length (magnitude).</p>
@@ -451,6 +498,102 @@ for comparisons.</p>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
         <td><p>The perpendicular right.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_r_" data-uid="Fusee.Math.Core.double2.r*"></a>
+  <h4 id="Fusee_Math_Core_double2_r" data-uid="Fusee.Math.Core.double2.r">r</h4>
+  <div class="markdown level1 summary"><p>The red component (same as x)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double r { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_rg_" data-uid="Fusee.Math.Core.double2.rg*"></a>
+  <h4 id="Fusee_Math_Core_double2_rg" data-uid="Fusee.Math.Core.double2.rg">rg</h4>
+  <div class="markdown level1 summary"><p>The rg component (same as xy)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 rg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_xy_" data-uid="Fusee.Math.Core.double2.xy*"></a>
+  <h4 id="Fusee_Math_Core_double2_xy" data-uid="Fusee.Math.Core.double2.xy">xy</h4>
+  <div class="markdown level1 summary"><p>Gets and sets an OpenTK.double2 with the x and y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 xy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_yx_" data-uid="Fusee.Math.Core.double2.yx*"></a>
+  <h4 id="Fusee_Math_Core_double2_yx" data-uid="Fusee.Math.Core.double2.yx">yx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double2 with the y and x components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 yx { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -567,7 +710,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
-        <td><p>a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise</p>
+        <td><p>a when u=1,v=9, b when u=0,v=1, c when u=v=1, and a linear combination of a,b,c otherwise</p>
 </td>
       </tr>
     </tbody>
@@ -1006,13 +1149,13 @@ for comparisons.</p>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">u</span></td>
-        <td><p>The resulting u coordinate.</p>
+        <td><p>The resulting barycentric u coordinate (weight for vertex a).</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">v</span></td>
-        <td><p>The resulting v coordinate.</p>
+        <td><p>The resulting barycentric v coordinate (weight for vertex b).</p>
 </td>
       </tr>
     </tbody>
@@ -1046,7 +1189,7 @@ for comparisons.</p>
   <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <a id="Fusee_Math_Core_double2_IsTriangleCW_" data-uid="Fusee.Math.Core.double2.IsTriangleCW*"></a>
   <h4 id="Fusee_Math_Core_double2_IsTriangleCW_Fusee_Math_Core_double2_Fusee_Math_Core_double2_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double2.IsTriangleCW(Fusee.Math.Core.double2,Fusee.Math.Core.double2,Fusee.Math.Core.double2)">IsTriangleCW(double2, double2, double2)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified triangle is in clockwise winding order.</p>
+  <div class="markdown level1 summary"><p>Checks if the three given 2D points form a clockwise (CW) triangle</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1096,6 +1239,61 @@ for comparisons.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>true if the triangle is clockwise, otherwise false.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_Lerp_" data-uid="Fusee.Math.Core.double2.Lerp*"></a>
+  <h4 id="Fusee_Math_Core_double2_Lerp_Fusee_Math_Core_double2_Fusee_Math_Core_double2_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double2.Lerp(Fusee.Math.Core.double2,Fusee.Math.Core.double2,Fusee.Math.Core.double2)">Lerp(double2, double2, double2)</h4>
+  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.
+Each component of vector a is blended with its equivalent in vector b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double2 Lerp(double2 a, double2 b, double2 blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1254,7 +1452,7 @@ for comparisons.</p>
   </table>
   <a id="Fusee_Math_Core_double2_Multiply_" data-uid="Fusee.Math.Core.double2.Multiply*"></a>
   <h4 id="Fusee_Math_Core_double2_Multiply_Fusee_Math_Core_double2_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double2.Multiply(Fusee.Math.Core.double2,Fusee.Math.Core.double2)">Multiply(double2, double2)</h4>
-  <div class="markdown level1 summary"><p>Multiplies a vector by the components of a vector (scale).</p>
+  <div class="markdown level1 summary"><p>Multiplies a vector by the components a vector (scale).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1530,6 +1728,175 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double2_PointInTriangle_" data-uid="Fusee.Math.Core.double2.PointInTriangle*"></a>
+  <h4 id="Fusee_Math_Core_double2_PointInTriangle_Fusee_Math_Core_double2_Fusee_Math_Core_double2_Fusee_Math_Core_double2_Fusee_Math_Core_double2_System_Double__System_Double__" data-uid="Fusee.Math.Core.double2.PointInTriangle(Fusee.Math.Core.double2,Fusee.Math.Core.double2,Fusee.Math.Core.double2,Fusee.Math.Core.double2,System.Double@,System.Double@)">PointInTriangle(double2, double2, double2, double2, out Double, out Double)</h4>
+  <div class="markdown level1 summary"><p>Checks if the give point is inside the given triangle (a, b, c). Returns the barycentric coordinates using <a class="xref" href="Fusee.Math.Core.double2.html#Fusee_Math_Core_double2_GetBarycentric_Fusee_Math_Core_double2_Fusee_Math_Core_double2_Fusee_Math_Core_double2_Fusee_Math_Core_double2_System_Double__System_Double__">GetBarycentric(double2, double2, double2, double2, out Double, out Double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PointInTriangle(double2 a, double2 b, double2 c, double2 point, out double u, out double v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first point of the triangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second point of the triangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The third point of the triangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to calculate the barycentric coordinates for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">u</span></td>
+        <td><p>The resulting barycentric u coordinate (weight for vertex a).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The resulting barycentric v coordinate (weight for vertex b).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true, if the point is inside the triangle a, b, c. Otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_Pow_" data-uid="Fusee.Math.Core.double2.Pow*"></a>
+  <h4 id="Fusee_Math_Core_double2_Pow_Fusee_Math_Core_double2_System_Double_" data-uid="Fusee.Math.Core.double2.Pow(Fusee.Math.Core.double2,System.Double)">Pow(double2, Double)</h4>
+  <div class="markdown level1 summary"><p>Returns a double2 where all components are raised to the specified power.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double2 Pow(double2 val, double exp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The double3 to be raised to a power.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">exp</span></td>
+        <td><p>A double that specifies a power.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_Step_" data-uid="Fusee.Math.Core.double2.Step*"></a>
+  <h4 id="Fusee_Math_Core_double2_Step_Fusee_Math_Core_double2_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double2.Step(Fusee.Math.Core.double2,Fusee.Math.Core.double2)">Step(double2, double2)</h4>
+  <div class="markdown level1 summary"><p>Performs <a class="xref" href="Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_System_Double_System_Double_">Step(Double, Double)</a> for each component of the input vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double2 Step(double2 edge, double2 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td><p>Specifies the location of the edge of the step function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>Specifies the value to be used to generate the step function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double2_Subtract_" data-uid="Fusee.Math.Core.double2.Subtract*"></a>
   <h4 id="Fusee_Math_Core_double2_Subtract_Fusee_Math_Core_double2_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double2.Subtract(Fusee.Math.Core.double2,Fusee.Math.Core.double2)">Subtract(double2, double2)</h4>
   <div class="markdown level1 summary"><p>Subtract one Vector from another</p>
@@ -1606,7 +1973,7 @@ for comparisons.</p>
   </table>
   <a id="Fusee_Math_Core_double2_ToString_" data-uid="Fusee.Math.Core.double2.ToString*"></a>
   <h4 id="Fusee_Math_Core_double2_ToString" data-uid="Fusee.Math.Core.double2.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a System.String that represents the current double3.</p>
+  <div class="markdown level1 summary"><p>Returns a System.String that represents the current double2.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1633,7 +2000,7 @@ for comparisons.</p>
   <div><span class="xref">System.ValueType.ToString()</span></div>
   <a id="Fusee_Math_Core_double2_ToString_" data-uid="Fusee.Math.Core.double2.ToString*"></a>
   <h4 id="Fusee_Math_Core_double2_ToString_System_IFormatProvider_" data-uid="Fusee.Math.Core.double2.ToString(System.IFormatProvider)">ToString(IFormatProvider)</h4>
-  <div class="markdown level1 summary"><p>Returns a System.String that represents the current double3.</p>
+  <div class="markdown level1 summary"><p>Returns a System.String that represents the current double2.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1705,6 +2072,55 @@ for comparisons.</p>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
         <td><span class="parametername">right</span></td>
         <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><p>Result of addition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_op_Addition_" data-uid="Fusee.Math.Core.double2.op_Addition*"></a>
+  <h4 id="Fusee_Math_Core_double2_op_Addition_Fusee_Math_Core_double2_System_Double_" data-uid="Fusee.Math.Core.double2.op_Addition(Fusee.Math.Core.double2,System.Double)">Addition(double2, Double)</h4>
+  <div class="markdown level1 summary"><p>Adds a scalar to the specified instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double2 operator +(double2 left, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>The scalar.</p>
 </td>
       </tr>
     </tbody>
@@ -1874,12 +2290,12 @@ for comparisons.</p>
   </table>
   <a id="Fusee_Math_Core_double2_op_Multiply_" data-uid="Fusee.Math.Core.double2.op_Multiply*"></a>
   <h4 id="Fusee_Math_Core_double2_op_Multiply_Fusee_Math_Core_double2_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double2.op_Multiply(Fusee.Math.Core.double2,Fusee.Math.Core.double2)">Multiply(double2, double2)</h4>
-  <div class="markdown level1 summary"><p>Multiplies a vector by the components of a vector (scale).</p>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double2 operator *(double2 vector, double2 scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double2 operator *(double2 vec1, double2 vec2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1893,13 +2309,13 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
-        <td><span class="parametername">vector</span></td>
+        <td><span class="parametername">vec1</span></td>
         <td><p>Left operand.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
-        <td><span class="parametername">scale</span></td>
+        <td><span class="parametername">vec2</span></td>
         <td><p>Right operand.</p>
 </td>
       </tr>
@@ -1916,7 +2332,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
-        <td><p>Result of the operation.</p>
+        <td><p>Result of multiplication.</p>
 </td>
       </tr>
     </tbody>
@@ -2064,6 +2480,55 @@ for comparisons.</p>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
         <td><p>Result of subtraction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double2_op_Subtraction_" data-uid="Fusee.Math.Core.double2.op_Subtraction*"></a>
+  <h4 id="Fusee_Math_Core_double2_op_Subtraction_Fusee_Math_Core_double2_System_Double_" data-uid="Fusee.Math.Core.double2.op_Subtraction(Fusee.Math.Core.double2,System.Double)">Subtraction(double2, Double)</h4>
+  <div class="markdown level1 summary"><p>Subtracts a scalar from the specified instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double2 operator -(double2 left, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><p>Result of addition.</p>
 </td>
       </tr>
     </tbody>

@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Math_Core_double4" data-uid="Fusee.Math.Core.double4" class="text-break">Struct double4
   </h1>
-  <div class="markdown level0 summary"><p>Represents a 4D vector using four double-precision floating-point numbers.</p>
+  <div class="markdown level0 summary"><p>Represents a 4D vector using four double-precision.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
@@ -213,6 +213,60 @@
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
         <td><span class="parametername">v</span></td>
         <td><p>The double4 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4__ctor_" data-uid="Fusee.Math.Core.double4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_double4__ctor_Fusee_Math_Core_float4_" data-uid="Fusee.Math.Core.double4.#ctor(Fusee.Math.Core.float4)">double4(float4)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new double4 by converting from a double4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4(float4 d4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><span class="parametername">d4</span></td>
+        <td><p>The double4 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4__ctor_" data-uid="Fusee.Math.Core.double4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_double4__ctor_System_Double_" data-uid="Fusee.Math.Core.double4.#ctor(System.Double)">double4(Double)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new double4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>This value will be set for the x, y, z and w component.</p>
 </td>
       </tr>
     </tbody>
@@ -570,7 +624,7 @@
   </table>
   <a id="Fusee_Math_Core_double4_Item_" data-uid="Fusee.Math.Core.double4.Item*"></a>
   <h4 id="Fusee_Math_Core_double4_Item_System_Int32_" data-uid="Fusee.Math.Core.double4.Item(System.Int32)">Item[Int32]</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the individual components x, y, z, or w depending on their index.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the individual components x, y, z, or w, depending on their index.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -631,15 +685,34 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><p>The length.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Fusee_Math_Core_double4_Length_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Fusee.Math.Core.double4.html#Fusee_Math_Core_double4_LengthSquared">LengthSquared</a></div>
+  <a id="Fusee_Math_Core_double4_Length1_" data-uid="Fusee.Math.Core.double4.Length1*"></a>
+  <h4 id="Fusee_Math_Core_double4_Length1" data-uid="Fusee.Math.Core.double4.Length1">Length1</h4>
+  <div class="markdown level1 summary"><p>Gets the length in 1-norm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly double Length1 { get; }</code></pre>
   </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double4_LengthSquared_" data-uid="Fusee.Math.Core.double4.LengthSquared*"></a>
   <h4 id="Fusee_Math_Core_double4_LengthSquared" data-uid="Fusee.Math.Core.double4.LengthSquared">LengthSquared</h4>
   <div class="markdown level1 summary"><p>Gets the square of the vector length (magnitude).</p>
@@ -660,8 +733,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td><p>The length squared.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -718,6 +790,30 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double4_rg_" data-uid="Fusee.Math.Core.double4.rg*"></a>
+  <h4 id="Fusee_Math_Core_double4_rg" data-uid="Fusee.Math.Core.double4.rg">rg</h4>
+  <div class="markdown level1 summary"><p>The rg component (same as xy)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 rg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double4_rgb_" data-uid="Fusee.Math.Core.double4.rgb*"></a>
   <h4 id="Fusee_Math_Core_double4_rgb" data-uid="Fusee.Math.Core.double4.rgb">rgb</h4>
   <div class="markdown level1 summary"><p>The rgb component (same as xyz)</p>
@@ -762,8 +858,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
-        <td><p>The xy.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -787,8 +882,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><p>The xyz.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -905,7 +999,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><p>a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise</p>
+        <td><p>a when u=1, v=0, b when v=1,u=0, c when u=v=0, and a linear combination of a,b,c otherwise</p>
 </td>
       </tr>
     </tbody>
@@ -1228,6 +1322,61 @@ for comparisons.</p>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <a id="Fusee_Math_Core_double4_Lerp_" data-uid="Fusee.Math.Core.double4.Lerp*"></a>
+  <h4 id="Fusee_Math_Core_double4_Lerp_Fusee_Math_Core_double4_Fusee_Math_Core_double4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.Lerp(Fusee.Math.Core.double4,Fusee.Math.Core.double4,Fusee.Math.Core.double4)">Lerp(double4, double4, double4)</h4>
+  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.
+Each component of vector a is blended with its equivalent in vector b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 Lerp(double4 a, double4 b, double4 blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_Lerp_" data-uid="Fusee.Math.Core.double4.Lerp*"></a>
   <h4 id="Fusee_Math_Core_double4_Lerp_Fusee_Math_Core_double4_Fusee_Math_Core_double4_System_Double_" data-uid="Fusee.Math.Core.double4.Lerp(Fusee.Math.Core.double4,Fusee.Math.Core.double4,System.Double)">Lerp(double4, double4, Double)</h4>
   <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors</p>
 </div>
@@ -1279,6 +1428,216 @@ for comparisons.</p>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
         <td><p>a when blend=0, b when blend=1, and a linear combination otherwise</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double4_LinearColorFromSRgb" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb">LinearColorFromSRgb()</h4>
+  <div class="markdown level1 summary"><p>Converts this double4 - which is interpreted as a color - from sRgb space to linear color space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4 LinearColorFromSRgb()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double4_LinearColorFromSRgb_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb(Fusee.Math.Core.double4)">LinearColorFromSRgb(double4)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 LinearColorFromSRgb(double4 sRGBCol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">sRGBCol</span></td>
+        <td><p>The sRgb color value as <a class="xref" href="Fusee.Math.Core.double4.html">double4</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double4_LinearColorFromSRgb_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)">LinearColorFromSRgb(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 LinearColorFromSRgb(int r, int g, int b, int a)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The red color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>The green color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The blue color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The alpha value in range 0 - 255.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double4_LinearColorFromSRgb_System_String_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb(System.String)">LinearColorFromSRgb(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 LinearColorFromSRgb(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td><p>The color value as hex code in form of a &quot;FFFFFFFF&quot; string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double4_LinearColorFromSRgb_System_UInt32_" data-uid="Fusee.Math.Core.double4.LinearColorFromSRgb(System.UInt32)">LinearColorFromSRgb(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 LinearColorFromSRgb(uint col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p>The color value as uint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1545,6 +1904,73 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double4_Normalize1_" data-uid="Fusee.Math.Core.double4.Normalize1*"></a>
+  <h4 id="Fusee_Math_Core_double4_Normalize1" data-uid="Fusee.Math.Core.double4.Normalize1">Normalize1()</h4>
+  <div class="markdown level1 summary"><p>Scales the double4 to unit length in 1-norm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4 Normalize1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_Normalize1_" data-uid="Fusee.Math.Core.double4.Normalize1*"></a>
+  <h4 id="Fusee_Math_Core_double4_Normalize1_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.Normalize1(Fusee.Math.Core.double4)">Normalize1(double4)</h4>
+  <div class="markdown level1 summary"><p>Scales the vector to unit length in 1-norm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 Normalize1(double4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The input vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><p>The scaled vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double4_NormalizeFast_" data-uid="Fusee.Math.Core.double4.NormalizeFast*"></a>
   <h4 id="Fusee_Math_Core_double4_NormalizeFast" data-uid="Fusee.Math.Core.double4.NormalizeFast">NormalizeFast()</h4>
   <div class="markdown level1 summary"><p>Scales the double4 to approximately unit length.</p>
@@ -1658,6 +2084,379 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double4_Pow_" data-uid="Fusee.Math.Core.double4.Pow*"></a>
+  <h4 id="Fusee_Math_Core_double4_Pow_Fusee_Math_Core_double4_System_Double_" data-uid="Fusee.Math.Core.double4.Pow(Fusee.Math.Core.double4,System.Double)">Pow(double4, Double)</h4>
+  <div class="markdown level1 summary"><p>Returns a double4 where all components are raised to the specified power.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 Pow(double4 val, double exp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The double4 to be raised to a power.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">exp</span></td>
+        <td><p>A double that specifies a power.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_Round_" data-uid="Fusee.Math.Core.double4.Round*"></a>
+  <h4 id="Fusee_Math_Core_double4_Round" data-uid="Fusee.Math.Core.double4.Round">Round()</h4>
+  <div class="markdown level1 summary"><p>Rounds the double4 to 6 digits (max double precision).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4 Round()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_Round_" data-uid="Fusee.Math.Core.double4.Round*"></a>
+  <h4 id="Fusee_Math_Core_double4_Round_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.Round(Fusee.Math.Core.double4)">Round(double4)</h4>
+  <div class="markdown level1 summary"><p>Rounds a vector to 6 digits (max double precision).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 Round(double4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The input vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><p>The rounded vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double4_SRgbFromLinearColor" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor">SRgbFromLinearColor()</h4>
+  <div class="markdown level1 summary"><p>Converts this double4 - which is interpreted as a color - from linear color space to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4 SRgbFromLinearColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double4_SRgbFromLinearColor_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor(Fusee.Math.Core.double4)">SRgbFromLinearColor(double4)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 SRgbFromLinearColor(double4 sRGBCol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">sRGBCol</span></td>
+        <td><p>The linear color value as <a class="xref" href="Fusee.Math.Core.double4.html">double4</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double4_SRgbFromLinearColor_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)">SRgbFromLinearColor(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 SRgbFromLinearColor(int r, int g, int b, int a)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The red color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>The green color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The blue color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The alpha value in range 0 - 255.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double4_SRgbFromLinearColor_System_String_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor(System.String)">SRgbFromLinearColor(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 SRgbFromLinearColor(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td><p>The color value as hex code in form of a &quot;FFFFFFFF&quot; string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double4_SRgbFromLinearColor_System_UInt32_" data-uid="Fusee.Math.Core.double4.SRgbFromLinearColor(System.UInt32)">SRgbFromLinearColor(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 SRgbFromLinearColor(uint col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p>The color value as uint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4_Step_" data-uid="Fusee.Math.Core.double4.Step*"></a>
+  <h4 id="Fusee_Math_Core_double4_Step_Fusee_Math_Core_double4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.Step(Fusee.Math.Core.double4,Fusee.Math.Core.double4)">Step(double4, double4)</h4>
+  <div class="markdown level1 summary"><p>Performs <a class="xref" href="Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_System_Double_System_Double_">Step(Double, Double)</a> for each component of the input vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 Step(double4 edge, double4 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td><p>Specifies the location of the edge of the step function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>Specifies the value to be used to generate the step function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double4_Subtract_" data-uid="Fusee.Math.Core.double4.Subtract*"></a>
   <h4 id="Fusee_Math_Core_double4_Subtract_Fusee_Math_Core_double4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.Subtract(Fusee.Math.Core.double4,Fusee.Math.Core.double4)">Subtract(double4, double4)</h4>
   <div class="markdown level1 summary"><p>Subtract one Vector from another</p>
@@ -1709,7 +2508,7 @@ for comparisons.</p>
   </table>
   <a id="Fusee_Math_Core_double4_ToArray_" data-uid="Fusee.Math.Core.double4.ToArray*"></a>
   <h4 id="Fusee_Math_Core_double4_ToArray" data-uid="Fusee.Math.Core.double4.ToArray">ToArray()</h4>
-  <div class="markdown level1 summary"><p>Returns an array of doubles with the four components of the vector.</p>
+  <div class="markdown level1 summary"><p>XML-Comment</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1727,7 +2526,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span>[]</td>
-        <td><p>Returns an array of doubles with the four components of the vector.</p>
+        <td><p>An double array of size 4 that contains the x,y,z,w components.</p>
 </td>
       </tr>
     </tbody>
@@ -1951,6 +2750,49 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double4_op_Explicit_" data-uid="Fusee.Math.Core.double4.op_Explicit*"></a>
+  <h4 id="Fusee_Math_Core_double4_op_Explicit_Fusee_Math_Core_float4__Fusee_Math_Core_double4" data-uid="Fusee.Math.Core.double4.op_Explicit(Fusee.Math.Core.float4)~Fusee.Math.Core.double4">Explicit(float4 to double4)</h4>
+  <div class="markdown level1 summary"><p>Explicit cast operator to cast a double4 into a double4 value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator double4(float4 d4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><span class="parametername">d4</span></td>
+        <td><p>The double4 value to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><p>A double4 value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double4_op_Inequality_" data-uid="Fusee.Math.Core.double4.op_Inequality*"></a>
   <h4 id="Fusee_Math_Core_double4_op_Inequality_Fusee_Math_Core_double4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.op_Inequality(Fusee.Math.Core.double4,Fusee.Math.Core.double4)">Inequality(double4, double4)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
@@ -1995,19 +2837,19 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if left does not equa lright; false otherwise.</p>
+        <td><p>True, if left does not equal right; false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_double4_op_Multiply_" data-uid="Fusee.Math.Core.double4.op_Multiply*"></a>
   <h4 id="Fusee_Math_Core_double4_op_Multiply_Fusee_Math_Core_double4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4.op_Multiply(Fusee.Math.Core.double4,Fusee.Math.Core.double4)">Multiply(double4, double4)</h4>
-  <div class="markdown level1 summary"><p>Multiplies a vector by the components a vector (scale).</p>
+  <div class="markdown level1 summary"><p>Multiplies two instances (component-wise).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4 operator *(double4 vec, double4 scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4 operator *(double4 left, double4 right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2021,14 +2863,14 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><span class="parametername">vec</span></td>
-        <td><p>Left operand.</p>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><span class="parametername">scale</span></td>
-        <td><p>Right operand.</p>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance.</p>
 </td>
       </tr>
     </tbody>
@@ -2044,7 +2886,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><p>Result of the operation.</p>
+        <td><p>The result of the calculation.</p>
 </td>
       </tr>
     </tbody>

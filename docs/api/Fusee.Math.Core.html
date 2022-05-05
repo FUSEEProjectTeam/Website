@@ -99,7 +99,7 @@ A CurveSgment does not know its own start point. For the first CurveSegment in a
 The start point for the CurveSegment with index i is the last vertex in the CurveSegent[i-1]'s list of vertices.</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.FrustumD.html">FrustumD</a></h4>
-      <section><p>Describes a frustum by using six <a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a>s.</p>
+      <section><p>Describes a frustum by using six <a class="xref" href="Fusee.Math.Core.PlaneD.html">PlaneD</a>s.</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.FrustumF.html">FrustumF</a></h4>
       <section><p>Describes a frustum by using six <a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a>s.</p>
@@ -121,22 +121,22 @@ The start point for the CurveSegment with index i is the last vertex in the Curv
       <section><p>Represents an axis aligned bounding box.</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></h4>
-      <section><p>Represents a 2D vector using two double-precision floating-point numbers.</p>
+      <section><p>Represents a 2D vector using two double-precision.</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></h4>
-      <section><p>Represents a 3D vector using three double-precision floating-point numbers.</p>
+      <section><p>Represents a 3D vector using three double-precision numbers.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Math.Core.double3x3.html">double3x3</a></h4>
+      <section><p>Represents a 3x3 Matrix</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></h4>
-      <section><p>Represents a 4D vector using four double-precision floating-point numbers.</p>
+      <section><p>Represents a 4D vector using four double-precision.</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></h4>
       <section><p>Represents a 4x4 Matrix typically used in ComputerGraphics algorithms.</p>
 </section>
-      <h4><a class="xref" href="Fusee.Math.Core.EigenD.html">EigenD</a></h4>
+      <h4><a class="xref" href="Fusee.Math.Core.Eigen.html">Eigen</a></h4>
       <section><p>Eigen data structure with values and vectors in double precision.</p>
-</section>
-      <h4><a class="xref" href="Fusee.Math.Core.EigenF.html">EigenF</a></h4>
-      <section><p>Eigen data structure with values and vectors in single precision.</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></h4>
       <section><p>Represents a 2D vector using two single-precision floating-point numbers.</p>
@@ -153,8 +153,14 @@ The start point for the CurveSegment with index i is the last vertex in the Curv
       <h4><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></h4>
       <section><p>Represents a 4x4 Matrix typically used in ComputerGraphics algorithms.</p>
 </section>
+      <h4><a class="xref" href="Fusee.Math.Core.int2.html">int2</a></h4>
+      <section><p>Represents a 2D vector using two single-precision integers.</p>
+</section>
       <h4><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></h4>
-      <section><p>Represents a 3D vector or an index (eg. for a grid-like structure) using three integers.</p>
+      <section><p>Represents a 3D vector using integers.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></h4>
+      <section><p>Represents a 4D vector using four integers.</p>
 </section>
       <h4><a class="xref" href="Fusee.Math.Core.MinMaxRect.html">MinMaxRect</a></h4>
       <section><p>Class containing an axis aligned (two-dimensional) rectangle specified by its minimum (lower-left) and maximum (upper-right)
@@ -178,13 +184,16 @@ The plane's normal equals n = (A, B, C) and may NOT necessarily be of unit lengt
 The plane divides a space into two half-spaces.The direction plane's normal vector defines the &quot;outer&quot; or negative half-space.
 Points that lie in the positive half space of the plane do have a negative signed distance to the plane.</p>
 </section>
-      <h4><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></h4>
+      <h4><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></h4>
+      <section><p>Represents a QuaternionD (single precision).</p>
+</section>
+      <h4><a class="xref" href="Fusee.Math.Core.QuaternionF.html">QuaternionF</a></h4>
       <section><p>Represents a Quaternion (single precision).</p>
 </section>
-      <h4><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></h4>
-      <section><p>Represents a QuaternionD (double precision).</p>
+      <h4><a class="xref" href="Fusee.Math.Core.RayD.html">RayD</a></h4>
+      <section><p>Represents a ray with a given origin and direction.</p>
 </section>
-      <h4><a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a></h4>
+      <h4><a class="xref" href="Fusee.Math.Core.RayF.html">RayF</a></h4>
       <section><p>Represents a ray with a given origin and direction.</p>
 </section>
     <h3 id="delegates">Delegates

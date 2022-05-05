@@ -79,44 +79,43 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Fusee.Base.Core.FontCore.html">FontCore</a></div>
+    <div class="level1"><a class="xref" href="Fusee.Base.Core.FontImpBase.html">FontImpBase</a></div>
     <div class="level2"><span class="xref">FontImp</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Fusee.Base.Common.IFontImp.html">IFontImp</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore__font">FontCore._font</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase__font">FontImpBase._font</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore__collection">FontCore._collection</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase__collection">FontImpBase._collection</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_UseKerning">FontCore.UseKerning</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_UseKerning">FontImpBase.UseKerning</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_PixelHeight">FontCore.PixelHeight</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_Dpi">FontImpBase.Dpi</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_GetGlyphCurve_System_UInt32_">FontCore.GetGlyphCurve(UInt32)</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_PixelHeight">FontImpBase.PixelHeight</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_GetGlyphInfo_System_UInt32_">FontCore.GetGlyphInfo(UInt32)</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetGlyphCurve_System_UInt32_">FontImpBase.GetGlyphCurve(UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_GetKerning_System_UInt32_System_UInt32_">FontCore.GetKerning(UInt32, UInt32)</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetGlyphInfo_System_UInt32_">FontImpBase.GetGlyphInfo(UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_GetUnscaledAdvance_System_UInt32_">FontCore.GetUnscaledAdvance(UInt32)</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetKerning_System_UInt32_System_UInt32_">FontImpBase.GetKerning(UInt32, UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_GetUnscaledKerning_System_UInt32_System_UInt32_">FontCore.GetUnscaledKerning(UInt32, UInt32)</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetUnscaledAdvance_System_UInt32_">FontImpBase.GetUnscaledAdvance(UInt32)</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Core.FontCore.html#Fusee_Base_Core_FontCore_RenderGlyph_System_UInt32_System_Int32__System_Int32__">FontCore.RenderGlyph(UInt32, Int32, Int32)</a>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetUnscaledKerning_System_UInt32_System_UInt32_">FontImpBase.GetUnscaledKerning(UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetImageDataForGlyph_System_UInt32_Fusee_Base_Common_GlyphInfo__">FontImpBase.GetImageDataForGlyph(UInt32, GlyphInfo)</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -144,7 +143,7 @@
   <h6><strong>Assembly</strong>: Fusee.Base.Imp.Desktop.dll</h6>
   <h5 id="Fusee_Base_Imp_Desktop_FontImp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FontImp : FontCore, IFontImp</code></pre>
+    <pre><code class="lang-csharp hljs">public class FontImp : FontImpBase</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -174,10 +173,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Fusee.Base.Common.IFontImp.html">IFontImp</a>
-  </div>
 </article>
           </div>
           

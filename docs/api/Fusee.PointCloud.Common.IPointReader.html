@@ -84,15 +84,14 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_PointCloud_Common_IPointReader_Format_" data-uid="Fusee.PointCloud.Common.IPointReader.Format*"></a>
-  <h4 id="Fusee_PointCloud_Common_IPointReader_Format" data-uid="Fusee.PointCloud.Common.IPointReader.Format">Format</h4>
-  <div class="markdown level1 summary"><p>This is the point description: Which type am I, which variables do I hold?
-E.g. PointXYZI with normals</p>
+  <a id="Fusee_PointCloud_Common_IPointReader_PointAccessor_" data-uid="Fusee.PointCloud.Common.IPointReader.PointAccessor*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointReader_PointAccessor" data-uid="Fusee.PointCloud.Common.IPointReader.PointAccessor">PointAccessor</h4>
+  <div class="markdown level1 summary"><p>A PointAccessor allows access to the point information (position, color, ect.) without casting it to a specific <a class="xref" href="Fusee.PointCloud.Common.Accessors.PointType.html">PointType</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IPointFormat Format { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IPointAccessor PointAccessor { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -104,46 +103,45 @@ E.g. PointXYZI with normals</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.PointCloud.Common.IPointFormat.html">IPointFormat</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_PointCloud_Common_IPointReader_MetaInfo_" data-uid="Fusee.PointCloud.Common.IPointReader.MetaInfo*"></a>
-  <h4 id="Fusee_PointCloud_Common_IPointReader_MetaInfo" data-uid="Fusee.PointCloud.Common.IPointReader.MetaInfo">MetaInfo</h4>
-  <div class="markdown level1 summary"><p>Meta information about the point cloud, usually saved in a header</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IPointCloudMetaInfo MetaInfo { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.PointCloud.Common.IPointCloudMetaInfo.html">IPointCloudMetaInfo</a></td>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.IPointAccessor.html">IPointAccessor</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="Fusee_PointCloud_Common_IPointReader_ReadNextPoint_" data-uid="Fusee.PointCloud.Common.IPointReader.ReadNextPoint*"></a>
-  <h4 id="Fusee_PointCloud_Common_IPointReader_ReadNextPoint__1___0__Fusee_PointCloud_Common_PointAccessor___0__" data-uid="Fusee.PointCloud.Common.IPointReader.ReadNextPoint``1(``0@,Fusee.PointCloud.Common.PointAccessor{``0})">ReadNextPoint&lt;TPoint&gt;(ref TPoint, PointAccessor&lt;TPoint&gt;)</h4>
-  <div class="markdown level1 summary"><p>While we have a point read the next with given point accessor
-The &quot;raw&quot; read within this method should happen with one delegate</p>
+  <a id="Fusee_PointCloud_Common_IPointReader_GetOctree_" data-uid="Fusee.PointCloud.Common.IPointReader.GetOctree*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointReader_GetOctree" data-uid="Fusee.PointCloud.Common.IPointReader.GetOctree">GetOctree()</h4>
+  <div class="markdown level1 summary"><p>Reads the Potree file and returns an octree.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool ReadNextPoint&lt;TPoint&gt;(ref TPoint point, PointAccessor&lt;TPoint&gt; pa)</code></pre>
+    <pre><code class="lang-csharp hljs">IPointCloudOctree GetOctree()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.IPointCloudOctree.html">IPointCloudOctree</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointReader_GetPointCloudComponent_" data-uid="Fusee.PointCloud.Common.IPointReader.GetPointCloudComponent*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointReader_GetPointCloudComponent_System_String_" data-uid="Fusee.PointCloud.Common.IPointReader.GetPointCloudComponent(System.String)">GetPointCloudComponent(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a renderable point cloud component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPointCloud GetPointCloudComponent(string fileFolderPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,15 +154,9 @@ The &quot;raw&quot; read within this method should happen with one delegate</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TPoint</span></td>
-        <td><span class="parametername">point</span></td>
-        <td><p>The point we want to write to</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor</a>&lt;TPoint&gt;</td>
-        <td><span class="parametername">pa</span></td>
-        <td><p>The accessor how to write to the point</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileFolderPath</span></td>
+        <td><p>Path to the file.</p>
 </td>
       </tr>
     </tbody>
@@ -179,7 +171,74 @@ The &quot;raw&quot; read within this method should happen with one delegate</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="Fusee.PointCloud.Common.IPointCloud.html">IPointCloud</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointReader_GetPointType_" data-uid="Fusee.PointCloud.Common.IPointReader.GetPointType*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointReader_GetPointType" data-uid="Fusee.PointCloud.Common.IPointReader.GetPointType">GetPointType()</h4>
+  <div class="markdown level1 summary"><p>Returns the point type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PointType GetPointType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.PointType.html">PointType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointReader_LoadNodeData_" data-uid="Fusee.PointCloud.Common.IPointReader.LoadNodeData*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointReader_LoadNodeData__1_System_String_" data-uid="Fusee.PointCloud.Common.IPointReader.LoadNodeData``1(System.String)">LoadNodeData&lt;TPoint&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the points for one octant as generic array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TPoint[] LoadNodeData&lt;TPoint&gt;(string id)
+    where TPoint : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The unique id of the octant.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TPoint[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -195,7 +254,7 @@ The &quot;raw&quot; read within this method should happen with one delegate</p>
     <tbody>
       <tr>
         <td><span class="parametername">TPoint</span></td>
-        <td><p>The point type we want to write to</p>
+        <td><p>The generic point type.</p>
 </td>
       </tr>
     </tbody>

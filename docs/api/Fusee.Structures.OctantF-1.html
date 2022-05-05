@@ -544,12 +544,57 @@ If the minimum distance between a point and its nearest neighbor is smaller then
   </table>
   <a id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustum_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustum*"></a>
   <h4 id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustum_Fusee_Math_Core_FrustumF_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustum(Fusee.Math.Core.FrustumF)">InsideOrIntersectingFrustum(FrustumF)</h4>
-  <div class="markdown level1 summary"><p>Checks if a viewing frustum lies within or intersects this Octant.</p>
+  <div class="markdown level1 summary"><p>Checks if this Octant lies within or intersects a Frustum.
+Returns true if one of the Frustum planes is intersecting this octant.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingFrustum(FrustumF frustum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.FrustumF.html">FrustumF</a></td>
+        <td><span class="parametername">frustum</span></td>
+        <td><p>The frustum to test against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>false if fully outside, true if inside or intersecting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustumFast_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustumFast*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustumFast_Fusee_Math_Core_FrustumF_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustumFast(Fusee.Math.Core.FrustumF)">InsideOrIntersectingFrustumFast(FrustumF)</h4>
+  <div class="markdown level1 summary"><p>Checks if this Octant lies within or intersects a Frustum.
+Assumes that we do not need to process this octant if the near plane is completely inside it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingFrustumFast(FrustumF frustum)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

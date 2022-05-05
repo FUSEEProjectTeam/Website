@@ -132,6 +132,9 @@
       <a class="xref" href="Fusee.Xene.ViseratorBase-3.html#Fusee_Xene_ViseratorBase_3_Viserate">ViseratorBase&lt;RayCastResult, SceneNode, SceneComponent&gt;.Viserate()</a>
     </div>
     <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_IgnoreInactiveComponents">Visitor&lt;SceneNode, SceneComponent&gt;.IgnoreInactiveComponents</a>
+    </div>
+    <div>
       <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_Traverse__0_">Visitor&lt;SceneNode, SceneComponent&gt;.Traverse(SceneNode)</a>
     </div>
     <div>
@@ -169,6 +172,9 @@
     </div>
     <div>
       <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumMoveNextNoComponent">Visitor&lt;SceneNode, SceneComponent&gt;.EnumMoveNextNoComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_VisitorModules">Visitor&lt;SceneNode, SceneComponent&gt;.VisitorModules</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -228,6 +234,32 @@
       <tr>
         <td><a class="xref" href="Fusee.Engine.Common.Cull.html">Cull</a></td>
         <td><span class="parametername">cullMode</span></td>
+        <td><p>The <a class="xref" href="Fusee.Engine.Common.Cull.html">Cull</a> mode to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Fusee_Engine_Core_SceneRayCaster__sc" data-uid="Fusee.Engine.Core.SceneRayCaster._sc">_sc</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a>, containing the scene that gets rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SceneContainer _sc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -260,12 +292,12 @@
   </table>
   <a id="Fusee_Engine_Core_SceneRayCaster_Ray_" data-uid="Fusee.Engine.Core.SceneRayCaster.Ray*"></a>
   <h4 id="Fusee_Engine_Core_SceneRayCaster_Ray" data-uid="Fusee.Engine.Core.SceneRayCaster.Ray">Ray</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a> to check intersections with.</p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Math.Core.RayF.html">RayF</a> to check intersections with.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rayf Ray { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public RayF Ray { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -277,7 +309,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.RayF.html">RayF</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -323,13 +355,13 @@
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">Fusee.Xene.Viserator&lt;Fusee.Engine.Core.RayCastResult, Fusee.Engine.Core.SceneRayCaster.RayCasterState, Fusee.Engine.Core.Scene.SceneNode, Fusee.Engine.Core.Scene.SceneComponent&gt;.InitState()</span></div>
   <a id="Fusee_Engine_Core_SceneRayCaster_RayCast_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayCast*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRayCaster_RayCast_Fusee_Math_Core_Rayf_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayCast(Fusee.Math.Core.Rayf)">RayCast(Rayf)</h4>
+  <h4 id="Fusee_Engine_Core_SceneRayCaster_RayCast_Fusee_Math_Core_RayF_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayCast(Fusee.Math.Core.RayF)">RayCast(RayF)</h4>
   <div class="markdown level1 summary"><p>Returns a collection of objects that are hit by the ray and that can be iterated over.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RayCastResult&gt; RayCast(Rayf ray)</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RayCastResult&gt; RayCast(RayF ray)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -342,9 +374,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Rayf.html">Rayf</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.RayF.html">RayF</a></td>
         <td><span class="parametername">ray</span></td>
-        <td></td>
+        <td><p>The ray to test.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -361,6 +394,52 @@
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.RayCastResult.html">RayCastResult</a>&gt;</td>
         <td><p>A collection of <a class="xref" href="Fusee.Engine.Core.RayCastResult.html">RayCastResult</a> that can be iterated over.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_SceneRayCaster_RayPick_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayPick*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRayCaster_RayPick_Fusee_Engine_Core_RenderContext_Fusee_Math_Core_float2_" data-uid="Fusee.Engine.Core.SceneRayCaster.RayPick(Fusee.Engine.Core.RenderContext,Fusee.Math.Core.float2)">RayPick(RenderContext, float2)</h4>
+  <div class="markdown level1 summary"><p>Returns a collection of objects that are hit by the ray and that can be iterated over.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RayCastResult&gt; RayPick(RenderContext rc, float2 pickPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></td>
+        <td><span class="parametername">rc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
+        <td><span class="parametername">pickPos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.RayCastResult.html">RayCastResult</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

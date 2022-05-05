@@ -86,12 +86,16 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
+    <div><a class="xref" href="Fusee.Engine.Common.IManagedMesh.html">IManagedMesh</a></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_MeshChanged">Mesh.MeshChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_DisposeData">Mesh.DisposeData</a>
     </div>
     <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_SessionUniqueIdentifier">Mesh.SessionUniqueIdentifier</a>
@@ -166,9 +170,6 @@
       <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_BiTangents">Mesh.BiTangents</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_Active">Mesh.Active</a>
-    </div>
-    <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html#Fusee_Engine_Core_Scene_Mesh_MeshType">Mesh.MeshType</a>
     </div>
     <div>
@@ -179,6 +180,9 @@
     </div>
     <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Active">SceneComponent.Active</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -206,7 +210,7 @@
   <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
   <h5 id="Fusee_Engine_Core_Primitives_Icosahedron_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Icosahedron : Mesh, IComponent, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Icosahedron : Mesh, IComponent, IManagedMesh, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -223,6 +227,9 @@ All Vertices of the Icosahedron are lying on the unit sphere.</p>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.Engine.Common.IManagedMesh.html">IManagedMesh</a>
   </div>
   <div>
       <span class="xref">System.IDisposable</span>

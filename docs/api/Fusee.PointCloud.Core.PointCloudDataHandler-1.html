@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PointCloudDataHandler&lt;TPoint&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PointCloudDataHandler&lt;TPoint&gt;
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1">
+  
+  
+  <h1 id="Fusee_PointCloud_Core_PointCloudDataHandler_1" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1" class="text-break">Class PointCloudDataHandler&lt;TPoint&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Manages the caching and loading of point and mesh data.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html">PointCloudDataHandlerBase</a></div>
+    <div class="level2"><span class="xref">PointCloudDataHandler&lt;TPoint&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_DisposeRate">PointCloudDataHandlerBase.DisposeRate</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_MaxNumberOfNodesToLoad">PointCloudDataHandlerBase.MaxNumberOfNodesToLoad</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_LoadingQueue">PointCloudDataHandlerBase.LoadingQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_DisposeQueue">PointCloudDataHandlerBase.DisposeQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_LockLoadingQueue">PointCloudDataHandlerBase.LockLoadingQueue</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_LockDisposeQueue">PointCloudDataHandlerBase.LockDisposeQueue</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.PointCloud.Core.html">Fusee.PointCloud.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.PointCloud.Core.dll</h6>
+  <h5 id="Fusee_PointCloud_Core_PointCloudDataHandler_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PointCloudDataHandler&lt;TPoint&gt; : PointCloudDataHandlerBase where TPoint : new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Fusee_PointCloud_Core_PointCloudDataHandler_1__ctor_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.#ctor*"></a>
+  <h4 id="Fusee_PointCloud_Core_PointCloudDataHandler_1__ctor_Fusee_PointCloud_Core_Accessors_PointAccessor__0__Fusee_PointCloud_Core_CreateMesh__0__Fusee_PointCloud_Core_LoadPointsHandler__0__" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.#ctor(Fusee.PointCloud.Core.Accessors.PointAccessor{`0},Fusee.PointCloud.Core.CreateMesh{`0},Fusee.PointCloud.Core.LoadPointsHandler{`0})">PointCloudDataHandler(PointAccessor&lt;TPoint&gt;, CreateMesh&lt;TPoint&gt;, LoadPointsHandler&lt;TPoint&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointCloudDataHandler(PointAccessor&lt;TPoint&gt; pointAccessor, CreateMesh&lt;TPoint&gt; createMeshHandler, LoadPointsHandler&lt;TPoint&gt; loadPointsHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.Accessors.PointAccessor-1.html">PointAccessor</a>&lt;TPoint&gt;</td>
+        <td><span class="parametername">pointAccessor</span></td>
+        <td><p>The point accessor that allows to access the point data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.CreateMesh-1.html">CreateMesh</a>&lt;TPoint&gt;</td>
+        <td><span class="parametername">createMeshHandler</span></td>
+        <td><p>Method that knows how to create a mesh for the explicit point type (see <a class="xref" href="Fusee.PointCloud.Core.MeshMaker.html">MeshMaker</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.LoadPointsHandler-1.html">LoadPointsHandler</a>&lt;TPoint&gt;</td>
+        <td><span class="parametername">loadPointsHandler</span></td>
+        <td><p>The method that is able to load the points from the hard drive/file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_PointCloud_Core_PointCloudDataHandler_1_Dispose_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.Dispose*"></a>
+  <h4 id="Fusee_PointCloud_Core_PointCloudDataHandler_1_Dispose" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Core_PointCloudDataHandler_1_Dispose_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.Dispose*"></a>
+  <h4 id="Fusee_PointCloud_Core_PointCloudDataHandler_1_Dispose_System_Boolean_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>If disposing equals true, the method has been called directly
+or indirectly by a user's code. Managed and unmanaged resources
+can be disposed.
+If disposing equals false, the method has been called by the
+runtime from inside the finalizer and you should not reference
+other objects. Only unmanaged resources can be disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Core_PointCloudDataHandler_1_Finalize_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.Finalize*"></a>
+  <h4 id="Fusee_PointCloud_Core_PointCloudDataHandler_1_Finalize" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizers (historically referred to as destructors) are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Core_PointCloudDataHandler_1_GetMeshes_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.GetMeshes*"></a>
+  <h4 id="Fusee_PointCloud_Core_PointCloudDataHandler_1_GetMeshes_System_String_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.GetMeshes(System.String)">GetMeshes(String)</h4>
+  <div class="markdown level1 summary"><p>First looks in the mesh cache, if there are meshes return,
+else look in the DisposeQueue, if there are meshes return,
+else look in the point cache, if there are points create a mesh and add to the _meshCache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;GpuMesh&gt; GetMeshes(string guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>The unique id of an octant.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_GetMeshes_System_String_">PointCloudDataHandlerBase.GetMeshes(String)</a></div>
+  <a id="Fusee_PointCloud_Core_PointCloudDataHandler_1_ProcessDisposeQueue_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.ProcessDisposeQueue*"></a>
+  <h4 id="Fusee_PointCloud_Core_PointCloudDataHandler_1_ProcessDisposeQueue" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.ProcessDisposeQueue">ProcessDisposeQueue()</h4>
+  <div class="markdown level1 summary"><p>Disposes of unused meshes, if needed. Depends on the dispose rate and the expiration frequency of the _meshCache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessDisposeQueue()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_ProcessDisposeQueue">PointCloudDataHandlerBase.ProcessDisposeQueue()</a></div>
+  <a id="Fusee_PointCloud_Core_PointCloudDataHandler_1_TriggerPointLoading_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.TriggerPointLoading*"></a>
+  <h4 id="Fusee_PointCloud_Core_PointCloudDataHandler_1_TriggerPointLoading_System_String_" data-uid="Fusee.PointCloud.Core.PointCloudDataHandler`1.TriggerPointLoading(System.String)">TriggerPointLoading(String)</h4>
+  <div class="markdown level1 summary"><p>Loads points from the hard drive if they are neither in the loading queue nor in the PointCahce.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TriggerPointLoading(string guid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>The octant for which the points should be loaded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Fusee.PointCloud.Common.PointCloudDataHandlerBase.html#Fusee_PointCloud_Common_PointCloudDataHandlerBase_TriggerPointLoading_System_String_">PointCloudDataHandlerBase.TriggerPointLoading(String)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

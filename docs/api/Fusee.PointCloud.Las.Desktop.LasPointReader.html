@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LasPointReader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LasPointReader
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader">
+  
+  
+  <h1 id="Fusee_PointCloud_Las_Desktop_LasPointReader" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader" class="text-break">Class LasPointReader
+  </h1>
+  <div class="markdown level0 summary"><p>A reader for points in LAZ or LAS format</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LasPointReader</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Fusee.PointCloud.Common.IPointReader.html">IPointReader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.PointCloud.Las.Desktop.html">Fusee.PointCloud.Las.Desktop</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.PointCloud.Las.Desktop.dll</h6>
+  <h5 id="Fusee_PointCloud_Las_Desktop_LasPointReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LasPointReader : IDisposable, IPointReader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader__ctor_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.#ctor*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader__ctor" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.#ctor">LasPointReader()</h4>
+  <div class="markdown level1 summary"><p>A LASPointReader can open point files encoded by the las format v. 1.4 with the following extensions:</p>
+<ul>
+<li>*.asc</li>
+<li>*.bil</li>
+<li>*.bin</li>
+<li>*.dtm</li>
+<li>*.las</li>
+<li>*.ply</li>
+<li>*.qfit</li>
+<li>*.shp</li>
+<li>*.txt</li>
+<li>*.laz</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LasPointReader()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader__ctor_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.#ctor*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader__ctor_System_String_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.#ctor(System.String)">LasPointReader(String)</h4>
+  <div class="markdown level1 summary"><p>A LASPointReader can open point files encoded by the las format v. 1.4 with the following extensions:</p>
+<ul>
+<li>*.asc</li>
+<li>*.bil</li>
+<li>*.bin</li>
+<li>*.dtm</li>
+<li>*.las</li>
+<li>*.ply</li>
+<li>*.qfit</li>
+<li>*.shp</li>
+<li>*.txt</li>
+<li>*.laz</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LasPointReader(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The path to a las encoded file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_MetaInfo_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.MetaInfo*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_MetaInfo" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.MetaInfo">MetaInfo</h4>
+  <div class="markdown level1 summary"><p>The point cloud meta data, usually stored in the header of the las file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LasMetaInfo MetaInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Las.Desktop.LasMetaInfo.html">LasMetaInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_PointAccessor_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.PointAccessor*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_PointAccessor" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.PointAccessor">PointAccessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPointAccessor PointAccessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.IPointAccessor.html">IPointAccessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_Dispose_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.Dispose*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_Dispose" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_Dispose_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.Dispose*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_Dispose_System_Boolean_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_Finalize_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.Finalize*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_Finalize" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_GetOctree_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.GetOctree*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_GetOctree" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.GetOctree">GetOctree()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPointCloudOctree GetOctree()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.IPointCloudOctree.html">IPointCloudOctree</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_GetPointCloudComponent_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.GetPointCloudComponent*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_GetPointCloudComponent_System_String_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.GetPointCloudComponent(System.String)">GetPointCloudComponent(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPointCloud GetPointCloudComponent(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.IPointCloud.html">IPointCloud</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_GetPointType_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.GetPointType*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_GetPointType" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.GetPointType">GetPointType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointType GetPointType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.PointType.html">PointType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_LoadNodeData_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.LoadNodeData*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_LoadNodeData__1_System_String_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.LoadNodeData``1(System.String)">LoadNodeData&lt;TPoint&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TPoint[] LoadNodeData&lt;TPoint&gt;(string id)
+    where TPoint : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TPoint[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_LoadNodeData_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.LoadNodeData*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_LoadNodeData__1_System_String_Fusee_PointCloud_Common_Accessors_IPointAccessor_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.LoadNodeData``1(System.String,Fusee.PointCloud.Common.Accessors.IPointAccessor)">LoadNodeData&lt;TPoint&gt;(String, IPointAccessor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TPoint[] LoadNodeData&lt;TPoint&gt;(string id, IPointAccessor pointAccessor)
+    where TPoint : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.IPointAccessor.html">IPointAccessor</a></td>
+        <td><span class="parametername">pointAccessor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TPoint[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_LoadPointsForNodeAsync_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.LoadPointsForNodeAsync*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_LoadPointsForNodeAsync__1_System_String_Fusee_PointCloud_Common_Accessors_IPointAccessor_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.LoadPointsForNodeAsync``1(System.String,Fusee.PointCloud.Common.Accessors.IPointAccessor)">LoadPointsForNodeAsync&lt;TPoint&gt;(String, IPointAccessor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TPoint[]&gt; LoadPointsForNodeAsync&lt;TPoint&gt;(string guid, IPointAccessor pointAccessor)
+    where TPoint : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.IPointAccessor.html">IPointAccessor</a></td>
+        <td><span class="parametername">pointAccessor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TPoint[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_ReadNextPoint_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.ReadNextPoint*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_ReadNextPoint__1___0__Fusee_PointCloud_Common_Accessors_IPointAccessor_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.ReadNextPoint``1(``0@,Fusee.PointCloud.Common.Accessors.IPointAccessor)">ReadNextPoint&lt;TPoint&gt;(ref TPoint, IPointAccessor)</h4>
+  <div class="markdown level1 summary"><p>Reads the next point and writes it to the given point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadNextPoint&lt;TPoint&gt;(ref TPoint point, IPointAccessor pa)
+    where TPoint : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPoint</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.IPointAccessor.html">IPointAccessor</a></td>
+        <td><span class="parametername">pa</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Las_Desktop_LasPointReader_ReadNPoints_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.ReadNPoints*"></a>
+  <h4 id="Fusee_PointCloud_Las_Desktop_LasPointReader_ReadNPoints__1_System_Int32_Fusee_PointCloud_Common_Accessors_IPointAccessor_" data-uid="Fusee.PointCloud.Las.Desktop.LasPointReader.ReadNPoints``1(System.Int32,Fusee.PointCloud.Common.Accessors.IPointAccessor)">ReadNPoints&lt;TPoint&gt;(Int32, IPointAccessor)</h4>
+  <div class="markdown level1 summary"><p>Reads the given amount of points from stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TPoint[] ReadNPoints&lt;TPoint&gt;(int n, IPointAccessor pa)
+    where TPoint : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Common.Accessors.IPointAccessor.html">IPointAccessor</a></td>
+        <td><span class="parametername">pa</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TPoint[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.PointCloud.Common.IPointReader.html">IPointReader</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

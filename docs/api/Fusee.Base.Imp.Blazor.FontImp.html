@@ -79,14 +79,44 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FontImp</span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Fusee.Base.Common.IFontImp.html">IFontImp</a></div>
+    <div class="level1"><a class="xref" href="Fusee.Base.Core.FontImpBase.html">FontImpBase</a></div>
+    <div class="level2"><span class="xref">FontImp</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase__font">FontImpBase._font</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase__collection">FontImpBase._collection</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_UseKerning">FontImpBase.UseKerning</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_Dpi">FontImpBase.Dpi</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_PixelHeight">FontImpBase.PixelHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetGlyphCurve_System_UInt32_">FontImpBase.GetGlyphCurve(UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetGlyphInfo_System_UInt32_">FontImpBase.GetGlyphInfo(UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetKerning_System_UInt32_System_UInt32_">FontImpBase.GetKerning(UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetUnscaledAdvance_System_UInt32_">FontImpBase.GetUnscaledAdvance(UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetUnscaledKerning_System_UInt32_System_UInt32_">FontImpBase.GetUnscaledKerning(UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Base.Core.FontImpBase.html#Fusee_Base_Core_FontImpBase_GetImageDataForGlyph_System_UInt32_Fusee_Base_Common_GlyphInfo__">FontImpBase.GetImageDataForGlyph(UInt32, GlyphInfo)</a>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -113,7 +143,7 @@
   <h6><strong>Assembly</strong>: Fusee.Base.Imp.Blazor.dll</h6>
   <h5 id="Fusee_Base_Imp_Blazor_FontImp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FontImp : IFontImp</code></pre>
+    <pre><code class="lang-csharp hljs">public class FontImp : FontImpBase</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -143,333 +173,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_PixelHeight_" data-uid="Fusee.Base.Imp.Blazor.FontImp.PixelHeight*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_PixelHeight" data-uid="Fusee.Base.Imp.Blazor.FontImp.PixelHeight">PixelHeight</h4>
-  <div class="markdown level1 summary"><p>Gets and sets the currently used pixel height</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint PixelHeight { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_UseKerning_" data-uid="Fusee.Base.Imp.Blazor.FontImp.UseKerning*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_UseKerning" data-uid="Fusee.Base.Imp.Blazor.FontImp.UseKerning">UseKerning</h4>
-  <div class="markdown level1 summary"><p>Use kerning</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseKerning { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_GetGlyphCurve_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetGlyphCurve*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_GetGlyphCurve_System_UInt32_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetGlyphCurve(System.UInt32)">GetGlyphCurve(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Returns the glyph curve from a given char</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Curve GetGlyphCurve(uint c)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">c</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Curve.html">Curve</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_GetGlyphInfo_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetGlyphInfo*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_GetGlyphInfo_System_UInt32_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetGlyphInfo(System.UInt32)">GetGlyphInfo(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Get glyph info from letter</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GlyphInfo GetGlyphInfo(uint c)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">c</span></td>
-        <td><p>letter char</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Base.Common.GlyphInfo.html">GlyphInfo</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_GetKerning_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetKerning*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_GetKerning_System_UInt32_System_UInt32_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetKerning(System.UInt32,System.UInt32)">GetKerning(UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Returns the kerning between two chars</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float GetKerning(uint leftC, uint rightC)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">leftC</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">rightC</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_GetUnscaledAdvance_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetUnscaledAdvance*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_GetUnscaledAdvance_System_UInt32_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetUnscaledAdvance(System.UInt32)">GetUnscaledAdvance(UInt32)</h4>
-  <div class="markdown level1 summary"><p>Returns the unscaled advance of one glyph</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float GetUnscaledAdvance(uint c)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">c</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_GetUnscaledKerning_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetUnscaledKerning*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_GetUnscaledKerning_System_UInt32_System_UInt32_" data-uid="Fusee.Base.Imp.Blazor.FontImp.GetUnscaledKerning(System.UInt32,System.UInt32)">GetUnscaledKerning(UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Returns the unscaled kerning, currently TODO</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float GetUnscaledKerning(uint leftC, uint rightC)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">leftC</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">rightC</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Base_Imp_Blazor_FontImp_RenderGlyph_" data-uid="Fusee.Base.Imp.Blazor.FontImp.RenderGlyph*"></a>
-  <h4 id="Fusee_Base_Imp_Blazor_FontImp_RenderGlyph_System_UInt32_System_Int32__System_Int32__" data-uid="Fusee.Base.Imp.Blazor.FontImp.RenderGlyph(System.UInt32,System.Int32@,System.Int32@)">RenderGlyph(UInt32, out Int32, out Int32)</h4>
-  <div class="markdown level1 summary"><p>Renders a glyph to an IImageData for further use</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IImageData RenderGlyph(uint c, out int bitmapLeft, out int bitmapTop)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">c</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">bitmapLeft</span></td>
-        <td><p>The x-Bearing of the glyph on the bitmap (in pixels). The number of pixels from the left border of the image
-to the leftmost pixel of the glyph within the rendered image.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">bitmapTop</span></td>
-        <td><p>The y-Bearing of the glyph on the bitmap (in pixels). The number of pixels from the character's origin
-(base line) of the image to the topmost pixel of the glyph within the rendered image.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Fusee.Base.Common.IFontImp.html">IFontImp</a>
-  </div>
 </article>
           </div>
           

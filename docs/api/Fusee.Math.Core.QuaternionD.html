@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Math_Core_QuaternionD" data-uid="Fusee.Math.Core.QuaternionD" class="text-break">Struct QuaternionD
   </h1>
-  <div class="markdown level0 summary"><p>Represents a QuaternionD (double precision).</p>
+  <div class="markdown level0 summary"><p>Represents a QuaternionD (single precision).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
@@ -181,7 +181,7 @@
   <h3 id="fields">Fields
   </h3>
   <h4 id="Fusee_Math_Core_QuaternionD_Identity" data-uid="Fusee.Math.Core.QuaternionD.Identity">Identity</h4>
-  <div class="markdown level1 summary"><p>Defines the identity QuaternionD.</p>
+  <div class="markdown level1 summary"><p>Defines the identity quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -248,7 +248,7 @@
   </table>
   <a id="Fusee_Math_Core_QuaternionD_Length_" data-uid="Fusee.Math.Core.QuaternionD.Length*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Length" data-uid="Fusee.Math.Core.QuaternionD.Length">Length</h4>
-  <div class="markdown level1 summary"><p>Gets the length (magnitude) of the QuaternionD.</p>
+  <div class="markdown level1 summary"><p>Gets the length (magnitude) of the quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -276,7 +276,7 @@
   </div>
   <a id="Fusee_Math_Core_QuaternionD_LengthSquared_" data-uid="Fusee.Math.Core.QuaternionD.LengthSquared*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_LengthSquared" data-uid="Fusee.Math.Core.QuaternionD.LengthSquared">LengthSquared</h4>
-  <div class="markdown level1 summary"><p>Gets the square of the QuaternionD length (magnitude).</p>
+  <div class="markdown level1 summary"><p>Gets the square of the quaternion length (magnitude).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -422,7 +422,7 @@
   </h3>
   <a id="Fusee_Math_Core_QuaternionD_Add_" data-uid="Fusee.Math.Core.QuaternionD.Add*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Add_Fusee_Math_Core_QuaternionD_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.Add(Fusee.Math.Core.QuaternionD,Fusee.Math.Core.QuaternionD)">Add(QuaternionD, QuaternionD)</h4>
-  <div class="markdown level1 summary"><p>Add two QuaternionDs</p>
+  <div class="markdown level1 summary"><p>Add two quaternions</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -471,7 +471,7 @@
   </table>
   <a id="Fusee_Math_Core_QuaternionD_Conjugate_" data-uid="Fusee.Math.Core.QuaternionD.Conjugate*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Conjugate" data-uid="Fusee.Math.Core.QuaternionD.Conjugate">Conjugate()</h4>
-  <div class="markdown level1 summary"><p>Convert this QuaternionD to its conjugate.</p>
+  <div class="markdown level1 summary"><p>Convert this quaternion to its conjugate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -495,7 +495,7 @@
   </table>
   <a id="Fusee_Math_Core_QuaternionD_Conjugate_" data-uid="Fusee.Math.Core.QuaternionD.Conjugate*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Conjugate_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.Conjugate(Fusee.Math.Core.QuaternionD)">Conjugate(QuaternionD)</h4>
-  <div class="markdown level1 summary"><p>Get the conjugate of the given QuaternionD</p>
+  <div class="markdown level1 summary"><p>Get the conjugate of the given quaternion</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -515,7 +515,7 @@
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
         <td><span class="parametername">q</span></td>
-        <td><p>The QuaternionD</p>
+        <td><p>The quaternion</p>
 </td>
       </tr>
     </tbody>
@@ -531,11 +531,64 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><p>The conjugate of the given QuaternionD</p>
+        <td><p>The conjugate of the given quaternion</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_QuaternionD_CopySign_" data-uid="Fusee.Math.Core.QuaternionD.CopySign*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_CopySign_System_Double_System_Double_" data-uid="Fusee.Math.Core.QuaternionD.CopySign(System.Double,System.Double)">CopySign(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>a with the algebraic sign of b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double CopySign(double a, double b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Absolut value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>A positiv/negativ number or zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>Returns a with the algebraic sign of b.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Math_Core_QuaternionD_CopySign_System_Double_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Takes a as an absolute value and multiplies it with: +1 for any positiv number for b, -1 for any negative
+number for b or 0 for 0 for b.</p>
+</div>
   <a id="Fusee_Math_Core_QuaternionD_Equals_" data-uid="Fusee.Math.Core.QuaternionD.Equals*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Equals_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.Equals(Fusee.Math.Core.QuaternionD)">Equals(QuaternionD)</h4>
   <div class="markdown level1 summary"><p>Compares this QuaternionD instance to another QuaternionD for equality.</p>
@@ -624,64 +677,9 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
-  <a id="Fusee_Math_Core_QuaternionD_EulerToQuaternion_" data-uid="Fusee.Math.Core.QuaternionD.EulerToQuaternion*"></a>
-  <h4 id="Fusee_Math_Core_QuaternionD_EulerToQuaternion_Fusee_Math_Core_double3_System_Boolean_" data-uid="Fusee.Math.Core.QuaternionD.EulerToQuaternion(Fusee.Math.Core.double3,System.Boolean)">EulerToQuaternion(double3, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Convert Euler angle to Quaternion rotation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static QuaternionD EulerToQuaternion(double3 e, bool inDegrees = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">e</span></td>
-        <td><p>Euler angle to convert.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">inDegrees</span></td>
-        <td><p>Whether the angles are in degrees or radians.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><p>A Quaternion representing the euler angle passed to this method.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Fusee_Math_Core_QuaternionD_EulerToQuaternion_Fusee_Math_Core_double3_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The euler angle is assumed to be in common aviation order where the y axis is up. Thus x is pitch/attitude,
-y is yaw/heading, and z is roll/bank. In practice x is never out of [-PI/2, PI/2] while y and z may well be in
-the range of [-PI, PI].</p>
-<p>See also <a href="http://www.euclideanspace.com/maths/geometry/rotations/conversions/eulerToQuaternion/index.htm">the euclideanspace website</a>.</p>
-</div>
   <a id="Fusee_Math_Core_QuaternionD_FromAxisAngle_" data-uid="Fusee.Math.Core.QuaternionD.FromAxisAngle*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_FromAxisAngle_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.QuaternionD.FromAxisAngle(Fusee.Math.Core.double3,System.Double)">FromAxisAngle(double3, Double)</h4>
-  <div class="markdown level1 summary"><p>Build a QuaternionD from the given axis and angle</p>
+  <div class="markdown level1 summary"><p>Build a quaternion from the given axis and angle</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -723,7 +721,217 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><p>A QuaternionD that represents the orientation.</p>
+        <td><p>A normalized quaternion rotation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_QuaternionD_FromEuler_" data-uid="Fusee.Math.Core.QuaternionD.FromEuler*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_FromEuler_Fusee_Math_Core_double3_System_Boolean_" data-uid="Fusee.Math.Core.QuaternionD.FromEuler(Fusee.Math.Core.double3,System.Boolean)">FromEuler(double3, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Convert Euler angle to Quaternion rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuaternionD FromEuler(double3 e, bool inDegrees = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>Euler angle to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inDegrees</span></td>
+        <td><p>Whether the angles are in degrees or radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
+        <td><p>A Quaternion representing the euler angle passed to this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Math_Core_QuaternionD_FromEuler_Fusee_Math_Core_double3_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The euler angle is assumed to be in common aviation order where the y axis is up. Thus x is pitch/attitude,
+y is yaw/heading, and z is roll/bank. In practice x is never out of [-PI/2, PI/2] while y and z may well be in
+the range of [-PI, PI].</p>
+<p>See also <a href="http://www.euclideanspace.com/maths/geometry/rotations/conversions/eulerToQuaternion/index.htm">the euclideanspace website</a>.</p>
+</div>
+  <a id="Fusee_Math_Core_QuaternionD_FromEuler_" data-uid="Fusee.Math.Core.QuaternionD.FromEuler*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_FromEuler_System_Double_System_Double_System_Double_System_Boolean_" data-uid="Fusee.Math.Core.QuaternionD.FromEuler(System.Double,System.Double,System.Double,System.Boolean)">FromEuler(Double, Double, Double, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Convert Euler angle to Quaternion rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuaternionD FromEuler(double x, double y, double z, bool inDegrees = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Angle around x.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Angle around x.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Angle around x.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inDegrees</span></td>
+        <td><p>Whether the angles are in degrees or radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
+        <td><p>A Quaternion representing the euler angle passed to this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Math_Core_QuaternionD_FromEuler_System_Double_System_Double_System_Double_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The euler angle is assumed to be in common aviation order where the y axis is up. Thus x is pitch/attitude,
+y is yaw/heading, and z is roll/bank. In practice x is never out of [-PI/2, PI/2] while y and z may well be in
+the range of [-PI, PI].</p>
+<p>See also <a href="http://www.euclideanspace.com/maths/geometry/rotations/conversions/eulerToQuaternion/index.htm">the euclideanspace website</a>.</p>
+</div>
+  <a id="Fusee_Math_Core_QuaternionD_FromRotationMatrix_" data-uid="Fusee.Math.Core.QuaternionD.FromRotationMatrix*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_FromRotationMatrix_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.QuaternionD.FromRotationMatrix(Fusee.Math.Core.double4x4)">FromRotationMatrix(double4x4)</h4>
+  <div class="markdown level1 summary"><p>Build a quaternion from a rotation matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuaternionD FromRotationMatrix(double4x4 mtx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><span class="parametername">mtx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_QuaternionD_FromToRotation_" data-uid="Fusee.Math.Core.QuaternionD.FromToRotation*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_FromToRotation_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.QuaternionD.FromToRotation(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">FromToRotation(double3, double3)</h4>
+  <div class="markdown level1 summary"><p>Build a quaternion with the shortest rotation from to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuaternionD FromToRotation(double3 from, double3 to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
+        <td><p>A normalized quaternion rotation.</p>
 </td>
       </tr>
     </tbody>
@@ -757,7 +965,7 @@ the range of [-PI, PI].</p>
   <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <a id="Fusee_Math_Core_QuaternionD_Invert_" data-uid="Fusee.Math.Core.QuaternionD.Invert*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Invert" data-uid="Fusee.Math.Core.QuaternionD.Invert">Invert()</h4>
-  <div class="markdown level1 summary"><p>Convert this QuaternionD to its inverse.</p>
+  <div class="markdown level1 summary"><p>Convert this quaternion to its inverse.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -781,7 +989,7 @@ the range of [-PI, PI].</p>
   </table>
   <a id="Fusee_Math_Core_QuaternionD_Invert_" data-uid="Fusee.Math.Core.QuaternionD.Invert*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Invert_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.Invert(Fusee.Math.Core.QuaternionD)">Invert(QuaternionD)</h4>
-  <div class="markdown level1 summary"><p>Get the inverse of the given QuaternionD</p>
+  <div class="markdown level1 summary"><p>Get the inverse of the given quaternion</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -801,7 +1009,7 @@ the range of [-PI, PI].</p>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
         <td><span class="parametername">q</span></td>
-        <td><p>The QuaternionD to invert</p>
+        <td><p>The quaternion to invert</p>
 </td>
       </tr>
     </tbody>
@@ -817,7 +1025,56 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><p>The inverse of the given QuaternionD</p>
+        <td><p>The inverse of the given quaternion</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_QuaternionD_LookRotation_" data-uid="Fusee.Math.Core.QuaternionD.LookRotation*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_LookRotation_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.QuaternionD.LookRotation(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">LookRotation(double3, double3)</h4>
+  <div class="markdown level1 summary"><p>Takes a lookAt and upDirection vector and returns a quaternion rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuaternionD LookRotation(double3 lookAt, double3 upDirection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">lookAt</span></td>
+        <td><p>The look at.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">upDirection</span></td>
+        <td><p>Up direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
+        <td><p>A QuaternionD.</p>
 </td>
       </tr>
     </tbody>
@@ -878,7 +1135,7 @@ the range of [-PI, PI].</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static QuaternionD Multiply(QuaternionD quaternionD, double scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public static QuaternionD Multiply(QuaternionD quaternion, double scale)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -892,7 +1149,7 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><span class="parametername">quaternionD</span></td>
+        <td><span class="parametername">quaternion</span></td>
         <td><p>The instance.</p>
 </td>
       </tr>
@@ -946,7 +1203,7 @@ the range of [-PI, PI].</p>
   </table>
   <a id="Fusee_Math_Core_QuaternionD_Normalize_" data-uid="Fusee.Math.Core.QuaternionD.Normalize*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Normalize_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.Normalize(Fusee.Math.Core.QuaternionD)">Normalize(QuaternionD)</h4>
-  <div class="markdown level1 summary"><p>Scale the given QuaternionD to unit length</p>
+  <div class="markdown level1 summary"><p>Scale the given quaternion to unit length</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -966,7 +1223,7 @@ the range of [-PI, PI].</p>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
         <td><span class="parametername">q</span></td>
-        <td><p>The QuaternionD to normalize</p>
+        <td><p>The quaternion to normalize</p>
 </td>
       </tr>
     </tbody>
@@ -982,14 +1239,14 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><p>The normalized QuaternionD</p>
+        <td><p>The normalized quaternion</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_QuaternionD_Slerp_" data-uid="Fusee.Math.Core.QuaternionD.Slerp*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Slerp_Fusee_Math_Core_QuaternionD_Fusee_Math_Core_QuaternionD_System_Double_" data-uid="Fusee.Math.Core.QuaternionD.Slerp(Fusee.Math.Core.QuaternionD,Fusee.Math.Core.QuaternionD,System.Double)">Slerp(QuaternionD, QuaternionD, Double)</h4>
-  <div class="markdown level1 summary"><p>Do Spherical linear interpolation between two QuaternionDs</p>
+  <div class="markdown level1 summary"><p>Do Spherical linear interpolation between two quaternions</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1009,13 +1266,13 @@ the range of [-PI, PI].</p>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
         <td><span class="parametername">q1</span></td>
-        <td><p>The first QuaternionD</p>
+        <td><p>The first quaternion</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
         <td><span class="parametername">q2</span></td>
-        <td><p>The second QuaternionD</p>
+        <td><p>The second quaternion</p>
 </td>
       </tr>
       <tr>
@@ -1037,7 +1294,7 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><p>A smooth blend between the given QuaternionDs</p>
+        <td><p>A smooth blend between the given quaternions</p>
 </td>
       </tr>
     </tbody>
@@ -1111,19 +1368,19 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><p>A double4 that is the axis-angle representation of this QuaternionD.</p>
+        <td><p>A double4 that is the axis-angle representation of this quaternion.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_QuaternionD_ToAxisAngle_" data-uid="Fusee.Math.Core.QuaternionD.ToAxisAngle*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_ToAxisAngle_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.ToAxisAngle(Fusee.Math.Core.QuaternionD)">ToAxisAngle(QuaternionD)</h4>
-  <div class="markdown level1 summary"><p>Output an axis-angle representation of the given Quaternion.</p>
+  <div class="markdown level1 summary"><p>Angle axis representation of the given quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4 ToAxisAngle(QuaternionD q)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4 ToAxisAngle(QuaternionD quat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1137,8 +1394,8 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><span class="parametername">q</span></td>
-        <td><p>The given Quaternion.</p>
+        <td><span class="parametername">quat</span></td>
+        <td><p>The quaternion to transform.</p>
 </td>
       </tr>
     </tbody>
@@ -1154,19 +1411,72 @@ the range of [-PI, PI].</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
-        <td><p>The resulting axis-angle representation.</p>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_QuaternionD_ToEuler_" data-uid="Fusee.Math.Core.QuaternionD.ToEuler*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_ToEuler_Fusee_Math_Core_QuaternionD_System_Boolean_" data-uid="Fusee.Math.Core.QuaternionD.ToEuler(Fusee.Math.Core.QuaternionD,System.Boolean)">ToEuler(QuaternionD, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Convert QuaternionD rotation to Euler Angles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 ToEuler(QuaternionD q, bool inDegrees = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
+        <td><span class="parametername">q</span></td>
+        <td><p>QuaternionD rotation to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inDegrees</span></td>
+        <td><p>Whether the angles shall be in degrees or radians.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_QuaternionD_ToRotMat_" data-uid="Fusee.Math.Core.QuaternionD.ToRotMat*"></a>
-  <h4 id="Fusee_Math_Core_QuaternionD_ToRotMat" data-uid="Fusee.Math.Core.QuaternionD.ToRotMat">ToRotMat()</h4>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Math_Core_QuaternionD_ToEuler_Fusee_Math_Core_QuaternionD_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The euler angle is assumed to be in common aviation order where the y axis is up. Thus x is pitch/attitude,
+y is yaw/heading, and z is roll/bank. In practice x is never out of [-PI/2, PI/2] while y and z may well be in
+the range of [-PI, PI].</p>
+<p>See also <a href="http://www.euclideanspace.com/maths/geometry/rotations/conversions/eulerToQuaternionD/index.htm">the euclidean space website</a>.</p>
+</div>
+  <a id="Fusee_Math_Core_QuaternionD_ToRotationMatrix_" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrix*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_ToRotationMatrix" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrix">ToRotationMatrix()</h4>
   <div class="markdown level1 summary"><p>Converts the quaternion into a rotation matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double4x4 ToRotMat()</code></pre>
+    <pre><code class="lang-csharp hljs">public double4x4 ToRotationMatrix()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1183,8 +1493,75 @@ the range of [-PI, PI].</p>
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_QuaternionD_ToRotMat_" data-uid="Fusee.Math.Core.QuaternionD.ToRotMat*"></a>
-  <h4 id="Fusee_Math_Core_QuaternionD_ToRotMat_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.ToRotMat(Fusee.Math.Core.QuaternionD)">ToRotMat(QuaternionD)</h4>
+  <a id="Fusee_Math_Core_QuaternionD_ToRotationMatrix_" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrix*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_ToRotationMatrix_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrix(Fusee.Math.Core.QuaternionD)">ToRotationMatrix(QuaternionD)</h4>
+  <div class="markdown level1 summary"><p>Convert QuaternionD to rotation matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 ToRotationMatrix(QuaternionD q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
+        <td><span class="parametername">q</span></td>
+        <td><p>QuaternionD to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><p>A matrix of type double4x4 from the passed QuaternionD.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_QuaternionD_ToRotationMatrixFast_" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrixFast*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_ToRotationMatrixFast" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrixFast">ToRotationMatrixFast()</h4>
+  <div class="markdown level1 summary"><p>Converts the quaternion into a rotation matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4x4 ToRotationMatrixFast()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_QuaternionD_ToRotationMatrixFast_" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrixFast*"></a>
+  <h4 id="Fusee_Math_Core_QuaternionD_ToRotationMatrixFast_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.ToRotationMatrixFast(Fusee.Math.Core.QuaternionD)">ToRotationMatrixFast(QuaternionD)</h4>
   <div class="markdown level1 summary"><p>Constructs a rotation matrix from a given quaternion
 This uses some geometric algebra magic <a href="https://en.wikipedia.org/wiki/Geometric_algebra">https://en.wikipedia.org/wiki/Geometric_algebra</a>
 From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c59339da/#62ce">https://sourceforge.net/p/mjbworld/discussion/122133/thread/c59339da/#62ce</a></p>
@@ -1192,7 +1569,7 @@ From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c5933
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 ToRotMat(QuaternionD quat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4x4 ToRotationMatrixFast(QuaternionD quat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1299,7 +1676,7 @@ From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c5933
   </table>
   <a id="Fusee_Math_Core_QuaternionD_Transform_" data-uid="Fusee.Math.Core.QuaternionD.Transform*"></a>
   <h4 id="Fusee_Math_Core_QuaternionD_Transform_Fusee_Math_Core_double4_Fusee_Math_Core_QuaternionD_" data-uid="Fusee.Math.Core.QuaternionD.Transform(Fusee.Math.Core.double4,Fusee.Math.Core.QuaternionD)">Transform(double4, QuaternionD)</h4>
-  <div class="markdown level1 summary"><p>Transforms a vector by a QuaternionD rotation.</p>
+  <div class="markdown level1 summary"><p>Transforms a vector by a quaternion rotation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1325,7 +1702,7 @@ From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c5933
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
         <td><span class="parametername">quat</span></td>
-        <td><p>The QuaternionD to rotate the vector by.</p>
+        <td><p>The quaternion to rotate the vector by.</p>
 </td>
       </tr>
     </tbody>
@@ -1551,7 +1928,7 @@ From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c5933
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static QuaternionD operator *(QuaternionD quaternionD, double scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public static QuaternionD operator *(QuaternionD quaternion, double scale)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1565,7 +1942,7 @@ From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c5933
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><span class="parametername">quaternionD</span></td>
+        <td><span class="parametername">quaternion</span></td>
         <td><p>The instance.</p>
 </td>
       </tr>
@@ -1600,7 +1977,7 @@ From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c5933
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static QuaternionD operator *(double scale, QuaternionD quaternionD)</code></pre>
+    <pre><code class="lang-csharp hljs">public static QuaternionD operator *(double scale, QuaternionD quaternion)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1620,7 +1997,7 @@ From: <a href="https://sourceforge.net/p/mjbworld/discussion/122133/thread/c5933
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.QuaternionD.html">QuaternionD</a></td>
-        <td><span class="parametername">quaternionD</span></td>
+        <td><span class="parametername">quaternion</span></td>
         <td><p>The instance.</p>
 </td>
       </tr>

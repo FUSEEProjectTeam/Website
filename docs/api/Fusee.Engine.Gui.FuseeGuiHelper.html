@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Engine_Gui_FuseeGuiHelper" data-uid="Fusee.Engine.Gui.FuseeGuiHelper" class="text-break">Class FuseeGuiHelper
   </h1>
-  <div class="markdown level0 summary"><p>Static helper class which conains methods to create predefined GUIs.s</p>
+  <div class="markdown level0 summary"><p>Static helper class which contains methods to create predefined GUIs.s</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -114,13 +114,13 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Fusee_Engine_Gui_FuseeGuiHelper_CreateDefaultGui_" data-uid="Fusee.Engine.Gui.FuseeGuiHelper.CreateDefaultGui*"></a>
-  <h4 id="Fusee_Engine_Gui_FuseeGuiHelper_CreateDefaultGui_Fusee_Engine_Core_RenderCanvas_Fusee_Engine_Core_Scene_CanvasRenderMode_System_String_" data-uid="Fusee.Engine.Gui.FuseeGuiHelper.CreateDefaultGui(Fusee.Engine.Core.RenderCanvas,Fusee.Engine.Core.Scene.CanvasRenderMode,System.String)">CreateDefaultGui(RenderCanvas, CanvasRenderMode, String)</h4>
-  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a> which conatins the default Fusee-UI (Logo and app title)</p>
+  <h4 id="Fusee_Engine_Gui_FuseeGuiHelper_CreateDefaultGui_Fusee_Engine_Core_RenderCanvas_Fusee_Engine_Core_Scene_CanvasRenderMode_System_String_System_Boolean_" data-uid="Fusee.Engine.Gui.FuseeGuiHelper.CreateDefaultGui(Fusee.Engine.Core.RenderCanvas,Fusee.Engine.Core.Scene.CanvasRenderMode,System.String,System.Boolean)">CreateDefaultGui(RenderCanvas, CanvasRenderMode, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a> which contains the default Fusee-UI (Logo and app title)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SceneContainer CreateDefaultGui(RenderCanvas rc, CanvasRenderMode canvasRenderMode, string title)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SceneContainer CreateDefaultGui(RenderCanvas rc, CanvasRenderMode canvasRenderMode, string title, bool useCamera = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,6 +148,12 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">title</span></td>
         <td><p>The app title.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCamera</span></td>
+        <td><p>Default is &quot;true&quot;. If set to &quot;false&quot; this will deactivate the <a class="xref" href="Fusee.Engine.Core.Scene.Camera.html">Camera</a> Component and the view and projection matrices need to be set on the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></p>
 </td>
       </tr>
     </tbody>
@@ -168,13 +174,13 @@
     </tbody>
   </table>
   <a id="Fusee_Engine_Gui_FuseeGuiHelper_CreateDefaultGuiAsync_" data-uid="Fusee.Engine.Gui.FuseeGuiHelper.CreateDefaultGuiAsync*"></a>
-  <h4 id="Fusee_Engine_Gui_FuseeGuiHelper_CreateDefaultGuiAsync_Fusee_Engine_Core_RenderCanvas_Fusee_Engine_Core_Scene_CanvasRenderMode_System_String_" data-uid="Fusee.Engine.Gui.FuseeGuiHelper.CreateDefaultGuiAsync(Fusee.Engine.Core.RenderCanvas,Fusee.Engine.Core.Scene.CanvasRenderMode,System.String)">CreateDefaultGuiAsync(RenderCanvas, CanvasRenderMode, String)</h4>
-  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a> which conatins the default Fusee-UI (Logo and app title)</p>
+  <h4 id="Fusee_Engine_Gui_FuseeGuiHelper_CreateDefaultGuiAsync_Fusee_Engine_Core_RenderCanvas_Fusee_Engine_Core_Scene_CanvasRenderMode_System_String_System_Boolean_" data-uid="Fusee.Engine.Gui.FuseeGuiHelper.CreateDefaultGuiAsync(Fusee.Engine.Core.RenderCanvas,Fusee.Engine.Core.Scene.CanvasRenderMode,System.String,System.Boolean)">CreateDefaultGuiAsync(RenderCanvas, CanvasRenderMode, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Fusee.Engine.Core.Scene.SceneContainer.html">SceneContainer</a> which contains the default Fusee-UI (Logo and app title)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task&lt;SceneContainer&gt; CreateDefaultGuiAsync(RenderCanvas rc, CanvasRenderMode canvasRenderMode, string title)</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task&lt;SceneContainer&gt; CreateDefaultGuiAsync(RenderCanvas rc, CanvasRenderMode canvasRenderMode, string title, bool useCamera = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -202,6 +208,12 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">title</span></td>
         <td><p>The app title.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useCamera</span></td>
+        <td><p>Default is &quot;true&quot;. If set to &quot;false&quot; this will deactivate the <a class="xref" href="Fusee.Engine.Core.Scene.Camera.html">Camera</a> Component and the view and projection matrices need to be set on the <a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></p>
 </td>
       </tr>
     </tbody>

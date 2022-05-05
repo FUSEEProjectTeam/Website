@@ -120,7 +120,7 @@ description (TrueType or OpenType fonts).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IFontImp _fontImp</code></pre>
+    <pre><code class="lang-csharp hljs">public FontImpBase _fontImp</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,7 +132,7 @@ description (TrueType or OpenType fonts).</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Base.Common.IFontImp.html">IFontImp</a></td>
+        <td><a class="xref" href="Fusee.Base.Core.FontImpBase.html">FontImpBase</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -276,6 +276,54 @@ description (TrueType or OpenType fonts).</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Base_Core_Font_GetImageDataForGlyph_" data-uid="Fusee.Base.Core.Font.GetImageDataForGlyph*"></a>
+  <h4 id="Fusee_Base_Core_Font_GetImageDataForGlyph_System_UInt32_Fusee_Base_Common_GlyphInfo__" data-uid="Fusee.Base.Core.Font.GetImageDataForGlyph(System.UInt32,Fusee.Base.Common.GlyphInfo@)">GetImageDataForGlyph(UInt32, in GlyphInfo)</h4>
+  <div class="markdown level1 summary"><p>Renders the given glyph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IImageData GetImageDataForGlyph(uint c, in GlyphInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The character code (Unicode) of the character to render.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Base.Common.GlyphInfo.html">GlyphInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</a></td>
+        <td><p>An image data structure containing an image of the given character.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Base_Core_Font_GetKerning_" data-uid="Fusee.Base.Core.Font.GetKerning*"></a>
   <h4 id="Fusee_Base_Core_Font_GetKerning_System_UInt32_System_UInt32_" data-uid="Fusee.Base.Core.Font.GetKerning(System.UInt32,System.UInt32)">GetKerning(UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Gets the kerning offset between a pair of two consecutive characters in a text string.</p>
@@ -412,63 +460,6 @@ description (TrueType or OpenType fonts).</p>
       <tr>
         <td><span class="xref">System.Single</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Base_Core_Font_RenderGlyph_" data-uid="Fusee.Base.Core.Font.RenderGlyph*"></a>
-  <h4 id="Fusee_Base_Core_Font_RenderGlyph_System_UInt32_System_Int32__System_Int32__" data-uid="Fusee.Base.Core.Font.RenderGlyph(System.UInt32,System.Int32@,System.Int32@)">RenderGlyph(UInt32, out Int32, out Int32)</h4>
-  <div class="markdown level1 summary"><p>Renders the given glyph.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IImageData RenderGlyph(uint c, out int bitmapLeft, out int bitmapTop)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">c</span></td>
-        <td><p>The character code (Unicode) of the character to render.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">bitmapLeft</span></td>
-        <td><p>The x-Bearing of the glyph on the bitmap (in pixels). The number of pixels from the left border of the image
-to the leftmost pixel of the glyph within the rendered image.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">bitmapTop</span></td>
-        <td><p>The y-Bearing of the glyph on the bitmap (in pixels). The number of pixels from the character's origin
-(base line) of the image to the topmost pixel of the glyph within the rendered image.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</a></td>
-        <td><p>An image data structure containing an image of the given character.</p>
-</td>
       </tr>
     </tbody>
   </table>

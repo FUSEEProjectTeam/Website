@@ -1192,6 +1192,137 @@ or-operator (|) to combine several buffers to clear.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Core_RenderContext_CreateGpuMesh_" data-uid="Fusee.Engine.Core.RenderContext.CreateGpuMesh*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_CreateGpuMesh_Fusee_Engine_Common_PrimitiveType_Fusee_Math_Core_float3___System_UInt16___Fusee_Math_Core_float3___System_UInt32___System_UInt32___System_UInt32___Fusee_Math_Core_float2___Fusee_Math_Core_float4___Fusee_Math_Core_float3___Fusee_Math_Core_float4___Fusee_Math_Core_float4___" data-uid="Fusee.Engine.Core.RenderContext.CreateGpuMesh(Fusee.Engine.Common.PrimitiveType,Fusee.Math.Core.float3[],System.UInt16[],Fusee.Math.Core.float3[],System.UInt32[],System.UInt32[],System.UInt32[],Fusee.Math.Core.float2[],Fusee.Math.Core.float4[],Fusee.Math.Core.float3[],Fusee.Math.Core.float4[],Fusee.Math.Core.float4[])">CreateGpuMesh(PrimitiveType, float3[], UInt16[], float3[], UInt32[], UInt32[], UInt32[], float2[], float4[], float3[], float4[], float4[])</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>, registers it in the <span class="xref">Fusee.Engine.Core.MeshManager</span> and uploads the data to the gpu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GpuMesh CreateGpuMesh(PrimitiveType primitiveType, float3[] vertices, ushort[] triangles = null, float3[] normals = null, uint[] colors = null, uint[] colors1 = null, uint[] colors2 = null, float2[] uvs = null, float4[] tangents = null, float3[] bitangents = null, float4[] boneIndices = null, float4[] boneWeights = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.PrimitiveType.html">PrimitiveType</a></td>
+        <td><span class="parametername">primitiveType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a>[]</td>
+        <td><span class="parametername">vertices</span></td>
+        <td><p>The vertex data of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span>[]</td>
+        <td><span class="parametername">triangles</span></td>
+        <td><p>The triangle indices of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a>[]</td>
+        <td><span class="parametername">normals</span></td>
+        <td><p>The normal vectors of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>The first color set of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">colors1</span></td>
+        <td><p>The second color set of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span>[]</td>
+        <td><span class="parametername">colors2</span></td>
+        <td><p>The third color set of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a>[]</td>
+        <td><span class="parametername">uvs</span></td>
+        <td><p>The uv coordinates of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a>[]</td>
+        <td><span class="parametername">tangents</span></td>
+        <td><p>The tangent vectors of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a>[]</td>
+        <td><span class="parametername">bitangents</span></td>
+        <td><p>The bitangent vectors of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a>[]</td>
+        <td><span class="parametername">boneIndices</span></td>
+        <td><p>The bone indices of the mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a>[]</td>
+        <td><span class="parametername">boneWeights</span></td>
+        <td><p>The bone weights of the mesh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_RenderContext_CreateMeshImp_" data-uid="Fusee.Engine.Core.RenderContext.CreateMeshImp*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_CreateMeshImp" data-uid="Fusee.Engine.Core.RenderContext.CreateMeshImp">CreateMeshImp()</h4>
+  <div class="markdown level1 summary"><p>Creates a platform specific <a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMeshImp CreateMeshImp()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Core_RenderContext_DisableDepthClamp_" data-uid="Fusee.Engine.Core.RenderContext.DisableDepthClamp*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_DisableDepthClamp" data-uid="Fusee.Engine.Core.RenderContext.DisableDepthClamp">DisableDepthClamp()</h4>
   <div class="markdown level1 summary"><p>Disables depths clamping. <a class="xref" href="Fusee.Engine.Core.RenderContext.html#Fusee_Engine_Core_RenderContext_EnableDepthClamp">EnableDepthClamp()</a></p>
@@ -1422,13 +1553,50 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
     <pre><code class="lang-csharp hljs">public void MemoryBarrier()</code></pre>
   </div>
   <a id="Fusee_Engine_Core_RenderContext_Render_" data-uid="Fusee.Engine.Core.RenderContext.Render*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_Render_Fusee_Engine_Core_GpuMesh_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.GpuMesh,System.Boolean)">Render(GpuMesh, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Renders the specified mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Render(GpuMesh mesh, bool doRenderForward = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td><p>The mesh that should be rendered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doRenderForward</span></td>
+        <td><p>Is a forward or deferred renderer used? Will fetch the proper shader for the render method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Engine_Core_RenderContext_Render_Fusee_Engine_Core_GpuMesh_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Passes geometry to be pushed through the rendering pipeline. <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a> for a description how geometry is made up.
+The geometry is transformed and rendered by the currently active shader program.</p>
+</div>
+  <a id="Fusee_Engine_Core_RenderContext_Render_" data-uid="Fusee.Engine.Core.RenderContext.Render*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_Render_Fusee_Engine_Core_Scene_Mesh_System_Boolean_" data-uid="Fusee.Engine.Core.RenderContext.Render(Fusee.Engine.Core.Scene.Mesh,System.Boolean)">Render(Mesh, Boolean)</h4>
   <div class="markdown level1 summary"><p>Renders the specified mesh.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Render(Mesh m, bool renderForward = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Render(Mesh mesh, bool doRenderForward = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1442,13 +1610,13 @@ See: <a href="https://www.khronos.org/opengl/wiki/Vertex_Post-Processing#Depth_c
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a></td>
-        <td><span class="parametername">m</span></td>
+        <td><span class="parametername">mesh</span></td>
         <td><p>The mesh that should be rendered.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">renderForward</span></td>
+        <td><span class="parametername">doRenderForward</span></td>
         <td><p>Is a forward or deferred renderer used? Will fetch the proper shader for the render method.</p>
 </td>
       </tr>
@@ -1496,6 +1664,40 @@ Will compile a shader by calling <a class="xref" href="Fusee.Engine.Common.IRend
 task performed in this method is compiling the provided shader source code and uploading the shaders to
 the gpu.</p>
 </div>
+  <a id="Fusee_Engine_Core_RenderContext_SetGlobalEffectParam_" data-uid="Fusee.Engine.Core.RenderContext.SetGlobalEffectParam*"></a>
+  <h4 id="Fusee_Engine_Core_RenderContext_SetGlobalEffectParam_System_Int32_System_Object_" data-uid="Fusee.Engine.Core.RenderContext.SetGlobalEffectParam(System.Int32,System.Object)">SetGlobalEffectParam(Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets global effect parameters by updating or adding them in the GlobalFXParams list.
+Changes will only have an effect when rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGlobalEffectParam(int hash, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hash</span></td>
+        <td><p>Effect parameter hash (generated from its name).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Effect parameter value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Core_RenderContext_SetLineWidth_" data-uid="Fusee.Engine.Core.RenderContext.SetLineWidth*"></a>
   <h4 id="Fusee_Engine_Core_RenderContext_SetLineWidth_System_Single_" data-uid="Fusee.Engine.Core.RenderContext.SetLineWidth(System.Single)">SetLineWidth(Single)</h4>
   <div class="markdown level1 summary"><p>Specifies the rasterized width of both aliased and antialiased lines.</p>

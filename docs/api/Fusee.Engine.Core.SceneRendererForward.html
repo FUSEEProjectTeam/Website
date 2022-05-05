@@ -87,6 +87,9 @@ to have each visited element contribute to the result rendered against a given r
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_IgnoreInactiveComponents">Visitor&lt;SceneNode, SceneComponent&gt;.IgnoreInactiveComponents</a>
+    </div>
+    <div>
       <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_Traverse__0_">Visitor&lt;SceneNode, SceneComponent&gt;.Traverse(SceneNode)</a>
     </div>
     <div>
@@ -124,6 +127,9 @@ to have each visited element contribute to the result rendered against a given r
     </div>
     <div>
       <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_EnumMoveNextNoComponent">Visitor&lt;SceneNode, SceneComponent&gt;.EnumMoveNextNoComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Xene.Visitor-2.html#Fusee_Xene_Visitor_2_VisitorModules">Visitor&lt;SceneNode, SceneComponent&gt;.VisitorModules</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -622,6 +628,33 @@ If we render with one or more cameras this value will be overwritten by <a class
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh*"></a>
+  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_Fusee_Engine_Core_GpuMesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh(Fusee.Engine.Core.GpuMesh)">RenderMesh(GpuMesh)</h4>
+  <div class="markdown level1 summary"><p>If a Mesh is visited the shader parameters for all lights in the scene are updated and the geometry is passed to be pushed through the rendering pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderMesh(GpuMesh mesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td><p>The Mesh.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh*"></a>
   <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderMesh_Fusee_Engine_Core_Scene_Mesh_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderMesh(Fusee.Engine.Core.Scene.Mesh)">RenderMesh(Mesh)</h4>
   <div class="markdown level1 summary"><p>If a Mesh is visited and it has a <a class="xref" href="Fusee.Engine.Core.Scene.Weight.html">Weight</a> the BoneIndices and  BoneWeights get set,
 the shader parameters for all lights in the scene are updated and the geometry is passed to be pushed through the rendering pipeline.</p>
@@ -646,32 +679,6 @@ the shader parameters for all lights in the scene are updated and the geometry i
         <td><span class="parametername">mesh</span></td>
         <td><p>The Mesh.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Engine_Core_SceneRendererForward_RenderOctant_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderOctant*"></a>
-  <h4 id="Fusee_Engine_Core_SceneRendererForward_RenderOctant_Fusee_Engine_Core_Scene_OctantD_" data-uid="Fusee.Engine.Core.SceneRendererForward.RenderOctant(Fusee.Engine.Core.Scene.OctantD)">RenderOctant(OctantD)</h4>
-  <div class="markdown level1 summary"><p>If a PtOctant is visited the level of this octant is set in the shader.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RenderOctant(OctantD ptOctant)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.OctantD.html">OctantD</a></td>
-        <td><span class="parametername">ptOctant</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

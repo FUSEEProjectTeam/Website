@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct Rayf
+    <title>Struct RayF
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct Rayf
+    <meta name="title" content="Struct RayF
    ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Fusee.Math.Core.Rayf">
+            <article class="content wrap" id="_content" data-uid="Fusee.Math.Core.RayF">
   
   
-  <h1 id="Fusee_Math_Core_Rayf" data-uid="Fusee.Math.Core.Rayf" class="text-break">Struct Rayf
+  <h1 id="Fusee_Math_Core_RayF" data-uid="Fusee.Math.Core.RayF" class="text-break">Struct RayF
   </h1>
   <div class="markdown level0 summary"><p>Represents a ray with a given origin and direction.</p>
 </div>
@@ -99,20 +99,59 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Math.Core.html">Fusee.Math.Core</a></h6>
   <h6><strong>Assembly</strong>: Fusee.Math.Core.dll</h6>
-  <h5 id="Fusee_Math_Core_Rayf_syntax">Syntax</h5>
+  <h5 id="Fusee_Math_Core_RayF_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Rayf</code></pre>
+    <pre><code class="lang-csharp hljs">public struct RayF</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="Fusee_Math_Core_Rayf__ctor_" data-uid="Fusee.Math.Core.Rayf.#ctor*"></a>
-  <h4 id="Fusee_Math_Core_Rayf__ctor_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.Rayf.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.float3)">Rayf(float3, float3)</h4>
+  <a id="Fusee_Math_Core_RayF__ctor_" data-uid="Fusee.Math.Core.RayF.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_RayF__ctor_Fusee_Math_Core_float2_Fusee_Math_Core_float4x4_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.RayF.#ctor(Fusee.Math.Core.float2,Fusee.Math.Core.float4x4,Fusee.Math.Core.float4x4)">RayF(float2, float4x4, float4x4)</h4>
+  <div class="markdown level1 summary"><p>Creates a new ray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RayF(float2 pickPosClip, float4x4 view, float4x4 projection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float2.html">float2</a></td>
+        <td><span class="parametername">pickPosClip</span></td>
+        <td><p>A mouse position in Clip Space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The View Matrix of the rendered scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">projection</span></td>
+        <td><p>The Projection Matrix of the rendered scene.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_RayF__ctor_" data-uid="Fusee.Math.Core.RayF.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_RayF__ctor_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.RayF.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.float3)">RayF(float3, float3)</h4>
   <div class="markdown level1 summary"><p>Create a new ray.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rayf(float3 origin_, float3 direction_)</code></pre>
+    <pre><code class="lang-csharp hljs">public RayF(float3 origin_, float3 direction_)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,7 +179,7 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Fusee_Math_Core_Rayf_Origin" data-uid="Fusee.Math.Core.Rayf.Origin">Origin</h4>
+  <h4 id="Fusee_Math_Core_RayF_Origin" data-uid="Fusee.Math.Core.RayF.Origin">Origin</h4>
   <div class="markdown level1 summary"><p>The point in world coordinates from which the ray originates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -165,8 +204,8 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Math_Core_Rayf_Direction_" data-uid="Fusee.Math.Core.Rayf.Direction*"></a>
-  <h4 id="Fusee_Math_Core_Rayf_Direction" data-uid="Fusee.Math.Core.Rayf.Direction">Direction</h4>
+  <a id="Fusee_Math_Core_RayF_Direction_" data-uid="Fusee.Math.Core.RayF.Direction*"></a>
+  <h4 id="Fusee_Math_Core_RayF_Direction" data-uid="Fusee.Math.Core.RayF.Direction">Direction</h4>
   <div class="markdown level1 summary"><p>The direction of the ray.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -189,8 +228,8 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_Rayf_Inverse_" data-uid="Fusee.Math.Core.Rayf.Inverse*"></a>
-  <h4 id="Fusee_Math_Core_Rayf_Inverse" data-uid="Fusee.Math.Core.Rayf.Inverse">Inverse</h4>
+  <a id="Fusee_Math_Core_RayF_Inverse_" data-uid="Fusee.Math.Core.RayF.Inverse*"></a>
+  <h4 id="Fusee_Math_Core_RayF_Inverse" data-uid="Fusee.Math.Core.RayF.Inverse">Inverse</h4>
   <div class="markdown level1 summary"><p>The inverse of the direction vector of the ray (1 / direction).</p>
 </div>
   <div class="markdown level1 conceptual"></div>

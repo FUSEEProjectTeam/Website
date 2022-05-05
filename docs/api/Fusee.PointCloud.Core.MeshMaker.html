@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MeshMaker
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MeshMaker
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.PointCloud.Core.MeshMaker">
+  
+  
+  <h1 id="Fusee_PointCloud_Core_MeshMaker" data-uid="Fusee.PointCloud.Core.MeshMaker" class="text-break">Class MeshMaker
+  </h1>
+  <div class="markdown level0 summary"><p>Static class that provides generic methods that take point cloud points and return <a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>s.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MeshMaker</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.PointCloud.Core.html">Fusee.PointCloud.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.PointCloud.Core.dll</h6>
+  <h5 id="Fusee_PointCloud_Core_MeshMaker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MeshMaker</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_PointCloud_Core_MeshMaker_CreateMeshes_" data-uid="Fusee.PointCloud.Core.MeshMaker.CreateMeshes*"></a>
+  <h4 id="Fusee_PointCloud_Core_MeshMaker_CreateMeshes__1_Fusee_PointCloud_Core_Accessors_PointAccessor___0____0___Fusee_PointCloud_Core_CreateMesh___0__" data-uid="Fusee.PointCloud.Core.MeshMaker.CreateMeshes``1(Fusee.PointCloud.Core.Accessors.PointAccessor{``0},``0[],Fusee.PointCloud.Core.CreateMesh{``0})">CreateMeshes&lt;TPoint&gt;(PointAccessor&lt;TPoint&gt;, TPoint[], CreateMesh&lt;TPoint&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generic method that creates meshes with 65k points maximum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;GpuMesh&gt; CreateMeshes&lt;TPoint&gt;(PointAccessor&lt;TPoint&gt; pointAccessor, TPoint[] points, CreateMesh&lt;TPoint&gt; createMeshHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.Accessors.PointAccessor-1.html">PointAccessor</a>&lt;TPoint&gt;</td>
+        <td><span class="parametername">pointAccessor</span></td>
+        <td><p>The point accessor allows access to the point data without casting to explicit a explicit point type.&quot;/&gt;</p>
+</td>
+      </tr>
+      <tr>
+        <td>TPoint[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The generic point cloud points.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.CreateMesh-1.html">CreateMesh</a>&lt;TPoint&gt;</td>
+        <td><span class="parametername">createMeshHandler</span></td>
+        <td><p>The method that defines how to create a GpuMesh from the point cloud points.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Core_MeshMaker_CreateMeshPosD3_" data-uid="Fusee.PointCloud.Core.MeshMaker.CreateMeshPosD3*"></a>
+  <h4 id="Fusee_PointCloud_Core_MeshMaker_CreateMeshPosD3__1_Fusee_PointCloud_Core_Accessors_PointAccessor___0____0___Fusee_Engine_Core_CreateGpuMesh_" data-uid="Fusee.PointCloud.Core.MeshMaker.CreateMeshPosD3``1(Fusee.PointCloud.Core.Accessors.PointAccessor{``0},``0[],Fusee.Engine.Core.CreateGpuMesh)">CreateMeshPosD3&lt;TPoint&gt;(PointAccessor&lt;TPoint&gt;, TPoint[], CreateGpuMesh)</h4>
+  <div class="markdown level1 summary"><p>Returns meshes for point clouds of type <a class="xref" href="Fusee.PointCloud.Common.Accessors.PosD3.html">PosD3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GpuMesh CreateMeshPosD3&lt;TPoint&gt;(PointAccessor&lt;TPoint&gt; pointAccessor, TPoint[] points, CreateGpuMesh createMesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.Accessors.PointAccessor-1.html">PointAccessor</a>&lt;TPoint&gt;</td>
+        <td><span class="parametername">pointAccessor</span></td>
+        <td><p>The point accessor allows access to the point data without casting to explicit a explicit point type.&quot;/&gt;</p>
+</td>
+      </tr>
+      <tr>
+        <td>TPoint[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The lists of &quot;raw&quot; points.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.CreateGpuMesh.html">CreateGpuMesh</a></td>
+        <td><span class="parametername">createMesh</span></td>
+        <td><p>Function for creating the <a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Core_MeshMaker_CreateMeshPosD3ColF3LblB_" data-uid="Fusee.PointCloud.Core.MeshMaker.CreateMeshPosD3ColF3LblB*"></a>
+  <h4 id="Fusee_PointCloud_Core_MeshMaker_CreateMeshPosD3ColF3LblB__1_Fusee_PointCloud_Core_Accessors_PointAccessor___0____0___Fusee_Engine_Core_CreateGpuMesh_" data-uid="Fusee.PointCloud.Core.MeshMaker.CreateMeshPosD3ColF3LblB``1(Fusee.PointCloud.Core.Accessors.PointAccessor{``0},``0[],Fusee.Engine.Core.CreateGpuMesh)">CreateMeshPosD3ColF3LblB&lt;TPoint&gt;(PointAccessor&lt;TPoint&gt;, TPoint[], CreateGpuMesh)</h4>
+  <div class="markdown level1 summary"><p>Returns meshes for point clouds of type <a class="xref" href="Fusee.PointCloud.Common.Accessors.PosD3LblB.html">PosD3LblB</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GpuMesh CreateMeshPosD3ColF3LblB&lt;TPoint&gt;(PointAccessor&lt;TPoint&gt; pointAccessor, TPoint[] points, CreateGpuMesh createMesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.Accessors.PointAccessor-1.html">PointAccessor</a>&lt;TPoint&gt;</td>
+        <td><span class="parametername">pointAccessor</span></td>
+        <td><p>The point accessor allows access to the point data without casting to explicit a explicit point type.&quot;/&gt;</p>
+</td>
+      </tr>
+      <tr>
+        <td>TPoint[]</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The lists of &quot;raw&quot; points.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.CreateGpuMesh.html">CreateGpuMesh</a></td>
+        <td><span class="parametername">createMesh</span></td>
+        <td><p>Function for creating the <a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

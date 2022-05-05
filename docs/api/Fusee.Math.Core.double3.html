@@ -73,7 +73,7 @@
   
   <h1 id="Fusee_Math_Core_double3" data-uid="Fusee.Math.Core.double3" class="text-break">Struct double3
   </h1>
-  <div class="markdown level0 summary"><p>Represents a 3D vector using three double-precision floating-point numbers.</p>
+  <div class="markdown level0 summary"><p>Represents a 3D vector using three double-precision numbers.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
@@ -99,7 +99,7 @@
     <pre><code class="lang-csharp hljs">public struct double3 : IEquatable&lt;double3&gt;</code></pre>
   </div>
   <h5 id="Fusee_Math_Core_double3_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The double3 structure is suitable for interoperation with unmanaged code requiring three consecutive doubles.</p>
+  <div class="markdown level0 remarks"><p>The double3 structure is suitable for inter-operation with unmanaged code requiring three consecutive doubles.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -180,6 +180,60 @@
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
         <td><span class="parametername">v</span></td>
         <td><p>The double4 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3__ctor_" data-uid="Fusee.Math.Core.double3.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_double3__ctor_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.double3.#ctor(Fusee.Math.Core.float3)">double3(float3)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new double3 by converting from a double3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double3(float3 d3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">d3</span></td>
+        <td><p>The double3 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3__ctor_" data-uid="Fusee.Math.Core.double3.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_double3__ctor_System_Double_" data-uid="Fusee.Math.Core.double3.#ctor(System.Double)">double3(Double)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new double3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double3(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>This value will be set for the x, y and z component.</p>
 </td>
       </tr>
     </tbody>
@@ -485,7 +539,7 @@
   </table>
   <a id="Fusee_Math_Core_double3_IsNaN_" data-uid="Fusee.Math.Core.double3.IsNaN*"></a>
   <h4 id="Fusee_Math_Core_double3_IsNaN" data-uid="Fusee.Math.Core.double3.IsNaN">IsNaN</h4>
-  <div class="markdown level1 summary"><p>Returns a bool which determines wether this float3 isNaN</p>
+  <div class="markdown level1 summary"><p>Returns a bool which determines whether this double3 isNaN</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -575,10 +629,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Fusee_Math_Core_double3_Length_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Fusee.Math.Core.double3.html#Fusee_Math_Core_double3_LengthSquared">LengthSquared</a></div>
-  </div>
   <a id="Fusee_Math_Core_double3_LengthSquared_" data-uid="Fusee.Math.Core.double3.LengthSquared*"></a>
   <h4 id="Fusee_Math_Core_double3_LengthSquared" data-uid="Fusee.Math.Core.double3.LengthSquared">LengthSquared</h4>
   <div class="markdown level1 summary"><p>Gets the square of the vector length (magnitude).</p>
@@ -707,7 +757,7 @@ for comparisons.</p>
   </table>
   <a id="Fusee_Math_Core_double3_xy_" data-uid="Fusee.Math.Core.double3.xy*"></a>
   <h4 id="Fusee_Math_Core_double3_xy" data-uid="Fusee.Math.Core.double3.xy">xy</h4>
-  <div class="markdown level1 summary"><p>Gets and sets an OpenTK.double2 with the x and y components of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double2 with the x and y components of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -725,14 +775,13 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
-        <td><p>The xy.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_double3_xyz_" data-uid="Fusee.Math.Core.double3.xyz*"></a>
   <h4 id="Fusee_Math_Core_double3_xyz" data-uid="Fusee.Math.Core.double3.xyz">xyz</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.float3 with the x, y and z components of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double3 with the x, y and z components of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -754,9 +803,33 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_xz_" data-uid="Fusee.Math.Core.double3.xz*"></a>
+  <h4 id="Fusee_Math_Core_double3_xz" data-uid="Fusee.Math.Core.double3.xz">xz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double2 with the x and z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 xz { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_xzy_" data-uid="Fusee.Math.Core.double3.xzy*"></a>
   <h4 id="Fusee_Math_Core_double3_xzy" data-uid="Fusee.Math.Core.double3.xzy">xzy</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.float3 with the x, z and y components of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double3 with the x, z and y components of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -778,9 +851,33 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_yx_" data-uid="Fusee.Math.Core.double3.yx*"></a>
+  <h4 id="Fusee_Math_Core_double3_yx" data-uid="Fusee.Math.Core.double3.yx">yx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double2 with the y and x components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 yx { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_yxz_" data-uid="Fusee.Math.Core.double3.yxz*"></a>
   <h4 id="Fusee_Math_Core_double3_yxz" data-uid="Fusee.Math.Core.double3.yxz">yxz</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.float3 with the y, x and z components of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double3 with the y, x and z components of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -802,9 +899,33 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_yz_" data-uid="Fusee.Math.Core.double3.yz*"></a>
+  <h4 id="Fusee_Math_Core_double3_yz" data-uid="Fusee.Math.Core.double3.yz">yz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double2 with the y and z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 yz { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_yzx_" data-uid="Fusee.Math.Core.double3.yzx*"></a>
   <h4 id="Fusee_Math_Core_double3_yzx" data-uid="Fusee.Math.Core.double3.yzx">yzx</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.float3 with the y, z and x components of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double3 with the y, z and x components of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -826,9 +947,33 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_zx_" data-uid="Fusee.Math.Core.double3.zx*"></a>
+  <h4 id="Fusee_Math_Core_double3_zx" data-uid="Fusee.Math.Core.double3.zx">zx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double2 with the z and x components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 zx { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_zxy_" data-uid="Fusee.Math.Core.double3.zxy*"></a>
   <h4 id="Fusee_Math_Core_double3_zxy" data-uid="Fusee.Math.Core.double3.zxy">zxy</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.float3 with the z, x and y components of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double3 with the z, x and y components of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -850,9 +995,33 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_zy_" data-uid="Fusee.Math.Core.double3.zy*"></a>
+  <h4 id="Fusee_Math_Core_double3_zy" data-uid="Fusee.Math.Core.double3.zy">zy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double2 with the z and y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double2 zy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_zyx_" data-uid="Fusee.Math.Core.double3.zyx*"></a>
   <h4 id="Fusee_Math_Core_double3_zyx" data-uid="Fusee.Math.Core.double3.zyx">zyx</h4>
-  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.float3 with the z, y and x components of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.double3 with the z, y and x components of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -925,6 +1094,55 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_Add_" data-uid="Fusee.Math.Core.double3.Add*"></a>
+  <h4 id="Fusee_Math_Core_double3_Add_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.double3.Add(Fusee.Math.Core.double3,System.Double)">Add(double3, Double)</h4>
+  <div class="markdown level1 summary"><p>Adds a scalar to a instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 Add(double3 vec, double scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_Barycentric_" data-uid="Fusee.Math.Core.double3.Barycentric*"></a>
   <h4 id="Fusee_Math_Core_double3_Barycentric_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_System_Double_System_Double_" data-uid="Fusee.Math.Core.double3.Barycentric(Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.double3,System.Double,System.Double)">Barycentric(double3, double3, double3, Double, Double)</h4>
   <div class="markdown level1 summary"><p>Interpolate 3 Vectors using Barycentric coordinates</p>
@@ -987,7 +1205,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><p>a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise</p>
+        <td><p>a when u=1, v=0, b when v=1,u=0, c when u=v=0, and a linear combination of a,b,c otherwise</p>
 </td>
       </tr>
     </tbody>
@@ -1199,7 +1417,7 @@ for comparisons.</p>
   </table>
   <a id="Fusee_Math_Core_double3_Cross_" data-uid="Fusee.Math.Core.double3.Cross*"></a>
   <h4 id="Fusee_Math_Core_double3_Cross_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.Cross(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">Cross(double3, double3)</h4>
-  <div class="markdown level1 summary"><p>Caclulate the cross (vector) product of two vectors</p>
+  <div class="markdown level1 summary"><p>Calculate the cross (vector) product of two vectors</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1540,7 +1758,7 @@ for comparisons.</p>
   </table>
   <a id="Fusee_Math_Core_double3_GetHashCode_" data-uid="Fusee.Math.Core.double3.GetHashCode*"></a>
   <h4 id="Fusee_Math_Core_double3_GetHashCode" data-uid="Fusee.Math.Core.double3.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>Returns the hashcode for this instance.</p>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1558,13 +1776,68 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><p>A System.Int32 containing the unique hashcode for this instance.</p>
+        <td><p>A System.Int32 containing the unique hash code for this instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <a id="Fusee_Math_Core_double3_Lerp_" data-uid="Fusee.Math.Core.double3.Lerp*"></a>
+  <h4 id="Fusee_Math_Core_double3_Lerp_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.Lerp(Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.double3)">Lerp(double3, double3, double3)</h4>
+  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.
+Each component of vector a is blended with its equivalent in vector b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 Lerp(double3 a, double3 b, double3 blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_Lerp_" data-uid="Fusee.Math.Core.double3.Lerp*"></a>
   <h4 id="Fusee_Math_Core_double3_Lerp_Fusee_Math_Core_double3_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.double3.Lerp(Fusee.Math.Core.double3,Fusee.Math.Core.double3,System.Double)">Lerp(double3, double3, Double)</h4>
   <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors</p>
@@ -1620,9 +1893,213 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double3_LinearColorFromSRgb" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb">LinearColorFromSRgb()</h4>
+  <div class="markdown level1 summary"><p>Converts this double3 - which is interpreted as a color - from linear color space to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double3 LinearColorFromSRgb()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double3_LinearColorFromSRgb_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb(Fusee.Math.Core.double3)">LinearColorFromSRgb(double3)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 LinearColorFromSRgb(double3 sRGBCol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">sRGBCol</span></td>
+        <td><p>The sRgb color value as <a class="xref" href="Fusee.Math.Core.double3.html">double3</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double3_LinearColorFromSRgb_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32)">LinearColorFromSRgb(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 LinearColorFromSRgb(int r, int g, int b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The red color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>The green color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The blue color value in range 0 - 255.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double3_LinearColorFromSRgb_System_String_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb(System.String)">LinearColorFromSRgb(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 LinearColorFromSRgb(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td><p>The color value as hex code in form of a &quot;FFFFFF&quot; string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_double3_LinearColorFromSRgb_System_UInt32_" data-uid="Fusee.Math.Core.double3.LinearColorFromSRgb(System.UInt32)">LinearColorFromSRgb(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 LinearColorFromSRgb(uint col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p>The color value as uint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_Max_" data-uid="Fusee.Math.Core.double3.Max*"></a>
   <h4 id="Fusee_Math_Core_double3_Max_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.Max(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">Max(double3, double3)</h4>
-  <div class="markdown level1 summary"><p>Returns the double3 with the minimum magnitude</p>
+  <div class="markdown level1 summary"><p>Returns the double3 with the maximum magnitude</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1664,7 +2141,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><p>The minimum double3</p>
+        <td><p>The maximum double3</p>
 </td>
       </tr>
     </tbody>
@@ -1950,6 +2427,55 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_OrthoNormalize_" data-uid="Fusee.Math.Core.double3.OrthoNormalize*"></a>
+  <h4 id="Fusee_Math_Core_double3_OrthoNormalize_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.OrthoNormalize(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">OrthoNormalize(double3, double3)</h4>
+  <div class="markdown level1 summary"><p>Orthoes the normalize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3[] OrthoNormalize(double3 normal, double3 tangent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">normal</span></td>
+        <td><p>The normal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">tangent</span></td>
+        <td><p>The tangent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a>[]</td>
+        <td><p>An double3 Array of size 2 with orthonormalized normal and tangent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_Parse_" data-uid="Fusee.Math.Core.double3.Parse*"></a>
   <h4 id="Fusee_Math_Core_double3_Parse_System_String_System_IFormatProvider_" data-uid="Fusee.Math.Core.double3.Parse(System.String,System.IFormatProvider)">Parse(String, IFormatProvider)</h4>
   <div class="markdown level1 summary"><p>Parses a string into a double3.</p>
@@ -1978,6 +2504,127 @@ for comparisons.</p>
         <td><span class="xref">System.IFormatProvider</span></td>
         <td><span class="parametername">provider</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_PointInTriangle_" data-uid="Fusee.Math.Core.double3.PointInTriangle*"></a>
+  <h4 id="Fusee_Math_Core_double3_PointInTriangle_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_System_Double__System_Double__" data-uid="Fusee.Math.Core.double3.PointInTriangle(Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.double3,Fusee.Math.Core.double3,System.Double@,System.Double@)">PointInTriangle(double3, double3, double3, double3, out Double, out Double)</h4>
+  <div class="markdown level1 summary"><p>Checks if the given point is inside the given triangle (a, b, c). Returns the barycentric coordinates using <a class="xref" href="Fusee.Math.Core.double3.html#Fusee_Math_Core_double3_GetBarycentric_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_Fusee_Math_Core_double3_System_Double__System_Double__">GetBarycentric(double3, double3, double3, double3, out Double, out Double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PointInTriangle(double3 a, double3 b, double3 c, double3 point, out double u, out double v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first point of the triangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second point of the triangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The third point of the triangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>the point to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">u</span></td>
+        <td><p>The resulting barycentric u coordinate (weight for vertex a).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The resulting barycentric v coordinate (weight for vertex b).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the point is inside the triangle a, b, c. Otherwise returns false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_Pow_" data-uid="Fusee.Math.Core.double3.Pow*"></a>
+  <h4 id="Fusee_Math_Core_double3_Pow_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.double3.Pow(Fusee.Math.Core.double3,System.Double)">Pow(double3, Double)</h4>
+  <div class="markdown level1 summary"><p>Returns a double3 where all components are raised to the specified power.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 Pow(double3 val, double exp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The double3 to be raised to a power.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">exp</span></td>
+        <td><p>A double that specifies a power.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2030,7 +2677,7 @@ for comparisons.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">inDegrees</span></td>
-        <td><p>Optional: Whether the angles are given in degrees (true) or radians (false). Defautl is radians.</p>
+        <td><p>Optional: Whether the angles are given in degrees (true) or radians (false). Default is radians.</p>
 </td>
       </tr>
     </tbody>
@@ -2100,6 +2747,258 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double3_SRgbFromLinearColor" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor">SRgbFromLinearColor()</h4>
+  <div class="markdown level1 summary"><p>Converts this double3 - which is interpreted as a color - from sRgb space to linear color space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double3 SRgbFromLinearColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double3_SRgbFromLinearColor_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor(Fusee.Math.Core.double3)">SRgbFromLinearColor(double3)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 SRgbFromLinearColor(double3 linearColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">linearColor</span></td>
+        <td><p>The linear color value as <a class="xref" href="Fusee.Math.Core.double3.html">double3</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double3_SRgbFromLinearColor_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32)">SRgbFromLinearColor(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 SRgbFromLinearColor(int r, int g, int b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The red color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>The green color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The blue color value in range 0 - 255.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double3_SRgbFromLinearColor_System_String_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor(System.String)">SRgbFromLinearColor(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 SRgbFromLinearColor(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td><p>The color value as hex code in form of a &quot;FFFFFF&quot; string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_double3_SRgbFromLinearColor_System_UInt32_" data-uid="Fusee.Math.Core.double3.SRgbFromLinearColor(System.UInt32)">SRgbFromLinearColor(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 SRgbFromLinearColor(uint col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p>The color value as uint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_Step_" data-uid="Fusee.Math.Core.double3.Step*"></a>
+  <h4 id="Fusee_Math_Core_double3_Step_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.Step(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">Step(double3, double3)</h4>
+  <div class="markdown level1 summary"><p>Performs <a class="xref" href="Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_System_Double_System_Double_">Step(Double, Double)</a> for each component of the input vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 Step(double3 edge, double3 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td><p>Specifies the location of the edge of the step function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>Specifies the value to be used to generate the step function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_Subtract_" data-uid="Fusee.Math.Core.double3.Subtract*"></a>
   <h4 id="Fusee_Math_Core_double3_Subtract_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.Subtract(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">Subtract(double3, double3)</h4>
   <div class="markdown level1 summary"><p>Subtract one Vector from another</p>
@@ -2145,6 +3044,55 @@ for comparisons.</p>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
         <td><p>Result of subtraction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_Subtract_" data-uid="Fusee.Math.Core.double3.Subtract*"></a>
+  <h4 id="Fusee_Math_Core_double3_Subtract_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.double3.Subtract(Fusee.Math.Core.double3,System.Double)">Subtract(double3, Double)</h4>
+  <div class="markdown level1 summary"><p>Adds a scalar from a instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 Subtract(double3 vec, double scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><p>The result of the calculation.</p>
 </td>
       </tr>
     </tbody>
@@ -2295,6 +3243,55 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_op_Addition_" data-uid="Fusee.Math.Core.double3.op_Addition*"></a>
+  <h4 id="Fusee_Math_Core_double3_op_Addition_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.double3.op_Addition(Fusee.Math.Core.double3,System.Double)">Addition(double3, Double)</h4>
+  <div class="markdown level1 summary"><p>Adds a scalar to a instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 operator +(double3 left, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_op_Division_" data-uid="Fusee.Math.Core.double3.op_Division*"></a>
   <h4 id="Fusee_Math_Core_double3_op_Division_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.double3.op_Division(Fusee.Math.Core.double3,System.Double)">Division(double3, Double)</h4>
   <div class="markdown level1 summary"><p>Divides an instance by a scalar.</p>
@@ -2393,6 +3390,49 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double3_op_Explicit_" data-uid="Fusee.Math.Core.double3.op_Explicit*"></a>
+  <h4 id="Fusee_Math_Core_double3_op_Explicit_Fusee_Math_Core_float3__Fusee_Math_Core_double3" data-uid="Fusee.Math.Core.double3.op_Explicit(Fusee.Math.Core.float3)~Fusee.Math.Core.double3">Explicit(float3 to double3)</h4>
+  <div class="markdown level1 summary"><p>Explicit cast operator to cast a double3 into a double3 value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator double3(float3 d3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">d3</span></td>
+        <td><p>The double3 value to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><p>A double3 value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double3_op_Inequality_" data-uid="Fusee.Math.Core.double3.op_Inequality*"></a>
   <h4 id="Fusee_Math_Core_double3_op_Inequality_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.op_Inequality(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">Inequality(double3, double3)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
@@ -2437,19 +3477,19 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True, if left does not equa lright; false otherwise.</p>
+        <td><p>True, if left does not equal right; false otherwise.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_double3_op_Multiply_" data-uid="Fusee.Math.Core.double3.op_Multiply*"></a>
   <h4 id="Fusee_Math_Core_double3_op_Multiply_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double3.op_Multiply(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">Multiply(double3, double3)</h4>
-  <div class="markdown level1 summary"><p>Multiplies a vector by the components a vector (scale).</p>
+  <div class="markdown level1 summary"><p>Multiplies two instances (component-wise).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double3 operator *(double3 vec, double3 scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double3 operator *(double3 vec1, double3 vec2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2463,14 +3503,14 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">vec</span></td>
-        <td><p>Left operand.</p>
+        <td><span class="parametername">vec1</span></td>
+        <td><p>The first instance.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><span class="parametername">scale</span></td>
-        <td><p>Right operand.</p>
+        <td><span class="parametername">vec2</span></td>
+        <td><p>The second instance.</p>
 </td>
       </tr>
     </tbody>
@@ -2486,7 +3526,7 @@ for comparisons.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><p>Result of the operation.</p>
+        <td><p>The result of the multiplication.</p>
 </td>
       </tr>
     </tbody>
@@ -2618,6 +3658,55 @@ for comparisons.</p>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
         <td><span class="parametername">right</span></td>
         <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double3_op_Subtraction_" data-uid="Fusee.Math.Core.double3.op_Subtraction*"></a>
+  <h4 id="Fusee_Math_Core_double3_op_Subtraction_Fusee_Math_Core_double3_System_Double_" data-uid="Fusee.Math.Core.double3.op_Subtraction(Fusee.Math.Core.double3,System.Double)">Subtraction(double3, Double)</h4>
+  <div class="markdown level1 summary"><p>Adds a scalar from a instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double3 operator -(double3 left, double scalar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scalar</span></td>
+        <td><p>The scalar.</p>
 </td>
       </tr>
     </tbody>

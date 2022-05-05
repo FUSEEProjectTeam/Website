@@ -132,6 +132,33 @@ of methods are postfixed with &quot;RH&quot;.
   <h3 id="constructors">Constructors
   </h3>
   <a id="Fusee_Math_Core_double4x4__ctor_" data-uid="Fusee.Math.Core.double4x4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_double4x4__ctor_Fusee_Math_Core_double3x3_" data-uid="Fusee.Math.Core.double4x4.#ctor(Fusee.Math.Core.double3x3)">double4x4(double3x3)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new double4x4 from a double3x3 by setting the 4th column and row to UnitW respectively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4x4(double3x3 f3x3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3x3.html">double3x3</a></td>
+        <td><span class="parametername">f3x3</span></td>
+        <td><p>The double3x3 matrix to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4__ctor_" data-uid="Fusee.Math.Core.double4x4.#ctor*"></a>
   <h4 id="Fusee_Math_Core_double4x4__ctor_Fusee_Math_Core_double4_Fusee_Math_Core_double4_Fusee_Math_Core_double4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4x4.#ctor(Fusee.Math.Core.double4,Fusee.Math.Core.double4,Fusee.Math.Core.double4,Fusee.Math.Core.double4)">double4x4(double4, double4, double4, double4)</h4>
   <div class="markdown level1 summary"><p>Constructs a new instance.</p>
 </div>
@@ -172,6 +199,33 @@ of methods are postfixed with &quot;RH&quot;.
         <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
         <td><span class="parametername">row4</span></td>
         <td><p>Bottom row of the matrix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4__ctor_" data-uid="Fusee.Math.Core.double4x4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_double4x4__ctor_Fusee_Math_Core_float4x4_" data-uid="Fusee.Math.Core.double4x4.#ctor(Fusee.Math.Core.float4x4)">double4x4(float4x4)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new double4x4 by converting from a double4x4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4x4(float4x4 d4x4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">d4x4</span></td>
+        <td><p>The double4x4 to copy components from.</p>
 </td>
       </tr>
     </tbody>
@@ -1090,13 +1144,13 @@ of methods are postfixed with &quot;RH&quot;.
   <h3 id="methods">Methods
   </h3>
   <a id="Fusee_Math_Core_double4x4_Add_" data-uid="Fusee.Math.Core.double4x4.Add*"></a>
-  <h4 id="Fusee_Math_Core_double4x4_Add_Fusee_Math_Core_double4x4_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.Add(Fusee.Math.Core.double4x4,Fusee.Math.Core.double4x4)">Add(double4x4, double4x4)</h4>
+  <h4 id="Fusee_Math_Core_double4x4_Add_Fusee_Math_Core_double4x4__Fusee_Math_Core_double4x4__" data-uid="Fusee.Math.Core.double4x4.Add(Fusee.Math.Core.double4x4@,Fusee.Math.Core.double4x4@)">Add(in double4x4, in double4x4)</h4>
   <div class="markdown level1 summary"><p>Adds two instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 Add(double4x4 left, double4x4 right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4x4 Add(in double4x4 left, in double4x4 right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1166,7 +1220,7 @@ of methods are postfixed with &quot;RH&quot;.
       <tr>
         <td><span class="xref">System.Double</span></td>
         <td><span class="parametername">angle</span></td>
-        <td><p>Angle in radians to rotate counter-clockwise (looking in the direction of the given axis).</p>
+        <td><p>Angle to rotate counter-clockwise (looking in the direction of the given axis).</p>
 </td>
       </tr>
     </tbody>
@@ -1243,7 +1297,7 @@ of methods are postfixed with &quot;RH&quot;.
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1316,7 +1370,7 @@ of methods are postfixed with &quot;RH&quot;.
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1389,7 +1443,7 @@ of methods are postfixed with &quot;RH&quot;.
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1630,7 +1684,8 @@ of methods are postfixed with &quot;RH&quot;.
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td></td>
+        <td><p>A right handed projection matrix that transforms camera space to raster space</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1698,8 +1753,98 @@ camera coordinate system.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationXY_" data-uid="Fusee.Math.Core.double4x4.CreateRotationXY*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationXY_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double4x4.CreateRotationXY(Fusee.Math.Core.double2)">CreateRotationXY(double2)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationXY(double2 xy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">xy</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationXY_" data-uid="Fusee.Math.Core.double4x4.CreateRotationXY*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationXY_System_Double_System_Double_" data-uid="Fusee.Math.Core.double4x4.CreateRotationXY(System.Double,System.Double)">CreateRotationXY(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationXY(double x, double y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1741,7 +1886,7 @@ camera coordinate system.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1784,7 +1929,424 @@ camera coordinate system.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationZX_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZX*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationZX_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZX(Fusee.Math.Core.double2)">CreateRotationZX(double2)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationZX(double2 xz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">xz</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationZX_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZX*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationZX_System_Double_System_Double_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZX(System.Double,System.Double)">CreateRotationZX(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationZX(double x, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationZXY_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZXY*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationZXY_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZXY(Fusee.Math.Core.double3)">CreateRotationZXY(double3)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationZXY(double3 xyz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationZXY_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZXY*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationZXY_System_Double_System_Double_System_Double_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZXY(System.Double,System.Double,System.Double)">CreateRotationZXY(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationZXY(double x, double y, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationZY_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZY*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationZY_Fusee_Math_Core_double2_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZY(Fusee.Math.Core.double2)">CreateRotationZY(double2)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and z-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationZY(double2 yz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double2.html">double2</a></td>
+        <td><span class="parametername">yz</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateRotationZY_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZY*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateRotationZY_System_Double_System_Double_" data-uid="Fusee.Math.Core.double4x4.CreateRotationZY(System.Double,System.Double)">CreateRotationZY(Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y and x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateRotationZY(double y, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>counter-clockwise angles in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateScale_" data-uid="Fusee.Math.Core.double4x4.CreateScale*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateScale_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double4x4.CreateScale(Fusee.Math.Core.double3)">CreateScale(double3)</h4>
+  <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateScale(double3 vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>The scale vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><p>The resulting double4x4 instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateScale_" data-uid="Fusee.Math.Core.double4x4.CreateScale*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateScale_System_Double_" data-uid="Fusee.Math.Core.double4x4.CreateScale(System.Double)">CreateScale(Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a uniform scale matrix with the same scale value along all three dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateScale(double scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>The value to scale about x, y, and z.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><p>The resulting double4x4 instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_CreateScale_" data-uid="Fusee.Math.Core.double4x4.CreateScale*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_CreateScale_System_Double_System_Double_System_Double_" data-uid="Fusee.Math.Core.double4x4.CreateScale(System.Double,System.Double,System.Double)">CreateScale(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 CreateScale(double x, double y, double z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X scale.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y scale.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z scale.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1827,7 +2389,7 @@ camera coordinate system.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1882,7 +2444,7 @@ camera coordinate system.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The resulting Matrix4 instance.</p>
+        <td><p>The resulting double4x4 instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1894,7 +2456,7 @@ camera coordinate system.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(double4x4 other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(double4x4 other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1937,7 +2499,7 @@ camera coordinate system.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1952,7 +2514,7 @@ camera coordinate system.</p>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The object to compare this instance to.</p>
+        <td><p>The object to compare the result.</p>
 </td>
       </tr>
     </tbody>
@@ -2109,14 +2671,14 @@ camera coordinate system.</p>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_double4x4_Invert_" data-uid="Fusee.Math.Core.double4x4.Invert*"></a>
-  <h4 id="Fusee_Math_Core_double4x4_Invert_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.Invert(Fusee.Math.Core.double4x4)">Invert(double4x4)</h4>
+  <h4 id="Fusee_Math_Core_double4x4_Invert_Fusee_Math_Core_double4x4__" data-uid="Fusee.Math.Core.double4x4.Invert(Fusee.Math.Core.double4x4@)">Invert(in double4x4)</h4>
   <div class="markdown level1 summary"><p>Calculate the inverse of the given matrix.
 If you are unsure whether the matrix is invertible, check it with IsInvertable() first.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 Invert(double4x4 mat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4x4 Invert(in double4x4 matrix)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2130,74 +2692,7 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><span class="parametername">mat</span></td>
-        <td><p>The matrix to invert.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>The inverse of the given matrix.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Math_Core_double4x4_InvertAffine_" data-uid="Fusee.Math.Core.double4x4.InvertAffine*"></a>
-  <h4 id="Fusee_Math_Core_double4x4_InvertAffine" data-uid="Fusee.Math.Core.double4x4.InvertAffine">InvertAffine()</h4>
-  <div class="markdown level1 summary"><p>Converts this instance into its inverse.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double4x4 InvertAffine()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Fusee_Math_Core_double4x4_InvertAffine_" data-uid="Fusee.Math.Core.double4x4.InvertAffine*"></a>
-  <h4 id="Fusee_Math_Core_double4x4_InvertAffine_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.InvertAffine(Fusee.Math.Core.double4x4)">InvertAffine(double4x4)</h4>
-  <div class="markdown level1 summary"><p>Calculate the inverse of a given matrix which represents an affine transformation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 InvertAffine(double4x4 mat)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><span class="parametername">mat</span></td>
+        <td><span class="parametername">matrix</span></td>
         <td><p>The matrix to invert.</p>
 </td>
       </tr>
@@ -2450,7 +2945,7 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>A Matrix4 that transforms world space to camera space</p>
+        <td><p>A double4x4 that transforms world space to camera space</p>
 </td>
       </tr>
     </tbody>
@@ -2505,19 +3000,19 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><p>A Matrix4 that transforms world space to camera space</p>
+        <td><p>A double4x4 that transforms world space to camera space</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_double4x4_Mult_" data-uid="Fusee.Math.Core.double4x4.Mult*"></a>
-  <h4 id="Fusee_Math_Core_double4x4_Mult_Fusee_Math_Core_double4x4_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.Mult(Fusee.Math.Core.double4x4,Fusee.Math.Core.double4x4)">Mult(double4x4, double4x4)</h4>
+  <h4 id="Fusee_Math_Core_double4x4_Mult_Fusee_Math_Core_double4x4__Fusee_Math_Core_double4x4__" data-uid="Fusee.Math.Core.double4x4.Mult(Fusee.Math.Core.double4x4@,Fusee.Math.Core.double4x4@)">Mult(in double4x4, in double4x4)</h4>
   <div class="markdown level1 summary"><p>Multiplies two instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 Mult(double4x4 left, double4x4 right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4x4 Mult(in double4x4 left, in double4x4 right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2672,7 +3167,7 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
   </table>
   <a id="Fusee_Math_Core_double4x4_RotMatToEuler_" data-uid="Fusee.Math.Core.double4x4.RotMatToEuler*"></a>
   <h4 id="Fusee_Math_Core_double4x4_RotMatToEuler_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.RotMatToEuler(Fusee.Math.Core.double4x4)">RotMatToEuler(double4x4)</h4>
-  <div class="markdown level1 summary"><p>Takes a rotation matrix and returns its euler angle representation as a double3.</p>
+  <div class="markdown level1 summary"><p>Returns the euler angles from a given rotation matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2692,7 +3187,7 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
         <td><span class="parametername">rotMat</span></td>
-        <td><p>The given rotation matrix.</p>
+        <td><p>The rotation matrix.</p>
 </td>
       </tr>
     </tbody>
@@ -2708,7 +3203,73 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><p>The euler representation as a double3.</p>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_Round_" data-uid="Fusee.Math.Core.double4x4.Round*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_Round" data-uid="Fusee.Math.Core.double4x4.Round">Round()</h4>
+  <div class="markdown level1 summary"><p>Rounds this instance to 6 digits (max double precision).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double4x4 Round()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_Round_" data-uid="Fusee.Math.Core.double4x4.Round*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_Round_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.Round(Fusee.Math.Core.double4x4)">Round(double4x4)</h4>
+  <div class="markdown level1 summary"><p>Rounds the given matrix to 6 digits (max double precision).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4x4 Round(double4x4 mat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The matrix to round.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><p>The rounded matrix.</p>
 </td>
       </tr>
     </tbody>
@@ -2944,13 +3505,13 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
     </tbody>
   </table>
   <a id="Fusee_Math_Core_double4x4_Subtract_" data-uid="Fusee.Math.Core.double4x4.Subtract*"></a>
-  <h4 id="Fusee_Math_Core_double4x4_Subtract_Fusee_Math_Core_double4x4_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.Subtract(Fusee.Math.Core.double4x4,Fusee.Math.Core.double4x4)">Subtract(double4x4, double4x4)</h4>
+  <h4 id="Fusee_Math_Core_double4x4_Subtract_Fusee_Math_Core_double4x4__Fusee_Math_Core_double4x4__" data-uid="Fusee.Math.Core.double4x4.Subtract(Fusee.Math.Core.double4x4@,Fusee.Math.Core.double4x4@)">Subtract(in double4x4, in double4x4)</h4>
   <div class="markdown level1 summary"><p>Subtracts the right instance from the left instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 Subtract(double4x4 left, double4x4 right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4x4 Subtract(in double4x4 left, in double4x4 right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3088,7 +3649,7 @@ If you are unsure whether the matrix is invertible, check it with IsInvertable()
   </table>
   <a id="Fusee_Math_Core_double4x4_Transform_" data-uid="Fusee.Math.Core.double4x4.Transform*"></a>
   <h4 id="Fusee_Math_Core_double4x4_Transform_Fusee_Math_Core_double4x4_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double4x4.Transform(Fusee.Math.Core.double4x4,Fusee.Math.Core.double3)">Transform(double4x4, double3)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given 3D vector by a matrix using perspective division via matrix*vector (post-multiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given 3D vector by a matrix using perspective division via matrix*vector (Postmultiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3142,7 +3703,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
 </div>
   <a id="Fusee_Math_Core_double4x4_Transform_" data-uid="Fusee.Math.Core.double4x4.Transform*"></a>
   <h4 id="Fusee_Math_Core_double4x4_Transform_Fusee_Math_Core_double4x4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4x4.Transform(Fusee.Math.Core.double4x4,Fusee.Math.Core.double4)">Transform(double4x4, double4)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via matrix*vector (Postmultiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3191,7 +3752,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
   </table>
   <a id="Fusee_Math_Core_double4x4_TransformPerspective_" data-uid="Fusee.Math.Core.double4x4.TransformPerspective*"></a>
   <h4 id="Fusee_Math_Core_double4x4_TransformPerspective_Fusee_Math_Core_double4x4_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double4x4.TransformPerspective(Fusee.Math.Core.double4x4,Fusee.Math.Core.double3)">TransformPerspective(double4x4, double3)</h4>
-  <div class="markdown level1 summary"><p>Transform a double3 by the given Matrix, and project the resulting double4 back to a double3</p>
+  <div class="markdown level1 summary"><p>Transforms a given 3D vector by a matrix, and projects the resulting double4 back to a double3.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3211,13 +3772,13 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
         <td><span class="parametername">mat</span></td>
-        <td><p>The desired transformation</p>
+        <td><p>The desired transformation matrix.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
         <td><span class="parametername">vec</span></td>
-        <td><p>The vector to transform</p>
+        <td><p>The given vector.</p>
 </td>
       </tr>
     </tbody>
@@ -3233,14 +3794,63 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
-        <td><p>The transformed vector</p>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_double4x4_TransformPerspective_" data-uid="Fusee.Math.Core.double4x4.TransformPerspective*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_TransformPerspective_Fusee_Math_Core_double4x4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4x4.TransformPerspective(Fusee.Math.Core.double4x4,Fusee.Math.Core.double4)">TransformPerspective(double4x4, double4)</h4>
+  <div class="markdown level1 summary"><p>Transforms the given vector by the given matrix and applies a perspective division.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double4 TransformPerspective(double4x4 mat, double4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The desired transformation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The given vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><p>The transformed vector.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_double4x4_TransformPremult_" data-uid="Fusee.Math.Core.double4x4.TransformPremult*"></a>
   <h4 id="Fusee_Math_Core_double4x4_TransformPremult_Fusee_Math_Core_double3_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.TransformPremult(Fusee.Math.Core.double3,Fusee.Math.Core.double4x4)">TransformPremult(double3, double4x4)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given 3D vector by a matrix using perspective division via vector*matrix (pre-multiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given 3D vector by a matrix using perspective division via vector*matrix (Premultiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3294,7 +3904,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
 </div>
   <a id="Fusee_Math_Core_double4x4_TransformPremult_" data-uid="Fusee.Math.Core.double4x4.TransformPremult*"></a>
   <h4 id="Fusee_Math_Core_double4x4_TransformPremult_Fusee_Math_Core_double4_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.TransformPremult(Fusee.Math.Core.double4,Fusee.Math.Core.double4x4)">TransformPremult(double4, double4x4)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via vector*matrix (pre-multiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via vector*matrix (Premultiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3461,7 +4071,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double4x4 Transpose(double4x4 mat)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double4x4 Transpose(double4x4 matrix)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3475,7 +4085,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
-        <td><span class="parametername">mat</span></td>
+        <td><span class="parametername">matrix</span></td>
         <td><p>The matrix to transpose</p>
 </td>
       </tr>
@@ -3597,6 +4207,49 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Math_Core_double4x4_op_Explicit_" data-uid="Fusee.Math.Core.double4x4.op_Explicit*"></a>
+  <h4 id="Fusee_Math_Core_double4x4_op_Explicit_Fusee_Math_Core_float4x4__Fusee_Math_Core_double4x4" data-uid="Fusee.Math.Core.double4x4.op_Explicit(Fusee.Math.Core.float4x4)~Fusee.Math.Core.double4x4">Explicit(float4x4 to double4x4)</h4>
+  <div class="markdown level1 summary"><p>Explicit cast operator to cast a double4x4 into a double4x4 value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator double4x4(float4x4 d4x4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td><span class="parametername">d4x4</span></td>
+        <td><p>The double4x4 value to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
+        <td><p>A double4x4 value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Math_Core_double4x4_op_Inequality_" data-uid="Fusee.Math.Core.double4x4.op_Inequality*"></a>
   <h4 id="Fusee_Math_Core_double4x4_op_Inequality_Fusee_Math_Core_double4x4_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.op_Inequality(Fusee.Math.Core.double4x4,Fusee.Math.Core.double4x4)">Inequality(double4x4, double4x4)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
@@ -3648,7 +4301,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
   </table>
   <a id="Fusee_Math_Core_double4x4_op_Multiply_" data-uid="Fusee.Math.Core.double4x4.op_Multiply*"></a>
   <h4 id="Fusee_Math_Core_double4x4_op_Multiply_Fusee_Math_Core_double3_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.op_Multiply(Fusee.Math.Core.double3,Fusee.Math.Core.double4x4)">Multiply(double3, double4x4)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given threedimensional vector by a matrix via vector*matrix (Premultiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given three dimensional vector by a matrix via vector*matrix (pre-multiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3702,7 +4355,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
 </div>
   <a id="Fusee_Math_Core_double4x4_op_Multiply_" data-uid="Fusee.Math.Core.double4x4.op_Multiply*"></a>
   <h4 id="Fusee_Math_Core_double4x4_op_Multiply_Fusee_Math_Core_double4_Fusee_Math_Core_double4x4_" data-uid="Fusee.Math.Core.double4x4.op_Multiply(Fusee.Math.Core.double4,Fusee.Math.Core.double4x4)">Multiply(double4, double4x4)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via vector*matrix (Premultiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via vector*matrix (pre-multiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3751,7 +4404,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
   </table>
   <a id="Fusee_Math_Core_double4x4_op_Multiply_" data-uid="Fusee.Math.Core.double4x4.op_Multiply*"></a>
   <h4 id="Fusee_Math_Core_double4x4_op_Multiply_Fusee_Math_Core_double4x4_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.double4x4.op_Multiply(Fusee.Math.Core.double4x4,Fusee.Math.Core.double3)">Multiply(double4x4, double3)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given threedimensional vector by a matrix via matrix*vector (Postmultiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given three dimensional vector by a matrix via matrix*vector (post-multiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3805,7 +4458,7 @@ After the matrix multiplication the resulting 4D vector is transformed to 3D by 
 </div>
   <a id="Fusee_Math_Core_double4x4_op_Multiply_" data-uid="Fusee.Math.Core.double4x4.op_Multiply*"></a>
   <h4 id="Fusee_Math_Core_double4x4_op_Multiply_Fusee_Math_Core_double4x4_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.double4x4.op_Multiply(Fusee.Math.Core.double4x4,Fusee.Math.Core.double4)">Multiply(double4x4, double4)</h4>
-  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via matrix*vector (Postmultiplication of the vector).</p>
+  <div class="markdown level1 summary"><p>Transforms a given vector by a matrix via matrix*vector (post-multiplication of the vector).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

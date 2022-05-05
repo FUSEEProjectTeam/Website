@@ -99,6 +99,9 @@ by Application browsers.</p>
       <h4><a class="xref" href="Fusee.Engine.Common.KeyEventArgs.html">KeyEventArgs</a></h4>
       <section><p>Provides data for the KeyDown or KeyUp event.</p>
 </section>
+      <h4><a class="xref" href="Fusee.Engine.Common.MeshChangedEventArgs.html">MeshChangedEventArgs</a></h4>
+      <section><p>EventArgs to propagate changes of a <a class="xref" href="Fusee.Engine.Common.MeshChangedEventArgs.html#Fusee_Engine_Common_MeshChangedEventArgs_Mesh">Mesh</a> object's life cycle and property changes.</p>
+</section>
       <h4><a class="xref" href="Fusee.Engine.Common.MouseEventArgs.html">MouseEventArgs</a></h4>
       <section><p>Provides data for the MouseUp, MouseDown, and MouseMove events.</p>
 </section>
@@ -169,6 +172,8 @@ types.</p>
       <section><p>Implementations of this interface represent a piece of software capable of connecting to
 one or more input devices (<a class="xref" href="Fusee.Engine.Common.IInputDeviceImp.html">IInputDeviceImp</a>. Members of this interface allow access to the devices.</p>
 </section>
+      <h4><a class="xref" href="Fusee.Engine.Common.IManagedMesh.html">IManagedMesh</a></h4>
+      <section></section>
       <h4><a class="xref" href="Fusee.Engine.Common.IMeshImp.html">IMeshImp</a></h4>
       <section><p>Interface for Mesh implementations. The implementation should handle typical mesh informations like: vertices, triangles, normals, colors, UV's.
 It is also required to implement a connection to the current RenderContext in order to apply the Mesh for rendering.
@@ -202,8 +207,7 @@ like OpenGL, DirectX, or WebGL</p>
       <section><p>Type independent abstraction for an Shader Storage Buffer Object.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.ITexture.html">ITexture</a></h4>
-      <section><p>Cross platform abstraction for Textures.
-Implements <a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</a> and <a class="xref" href="Fusee.Engine.Common.ITextureBase.html">ITextureBase</a>and offers access to internal <a class="xref" href="Fusee.Engine.Common.ITexture.html#Fusee_Engine_Common_ITexture_PixelData">PixelData</a> for GPU upload.</p>
+      <section><p>Cross platform abstraction for textures, that are used on the gpu.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.ITextureBase.html">ITextureBase</a></h4>
       <section><p>Collection of members all texture types need to implement.
@@ -224,6 +228,9 @@ to load a video.</p>
       <section><p>TODO: Write the actual VideoStream implementations.
 The interface for all VideoStream implementations.
 This interface contains all functions to control the playback of a video.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Common.IVisitorModule.html">IVisitorModule</a></h4>
+      <section><p>Used to inject a object that is able to extend a visitor.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.IWindowHandle.html">IWindowHandle</a></h4>
       <section><p>Cross-platform abstraction to represent a window handle for the window the engine renders to.</p>
@@ -300,13 +307,16 @@ If a numeric value is expected, this will be returned as a uint from the <a clas
       <h4><a class="xref" href="Fusee.Engine.Common.KeyCodes.html">KeyCodes</a></h4>
       <section><p>Specifies the possible key values on a keyboard.</p>
 </section>
+      <h4><a class="xref" href="Fusee.Engine.Common.MeshChangedEnum.html">MeshChangedEnum</a></h4>
+      <section><p>Propagates Mesh properties changed status to the MeshManager</p>
+</section>
       <h4><a class="xref" href="Fusee.Engine.Common.MouseAxes.html">MouseAxes</a></h4>
       <section><p>Specifies the axis types for mouse devices.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.MouseButtons.html">MouseButtons</a></h4>
       <section><p>Which mouse button was pressed.</p>
 </section>
-      <h4><a class="xref" href="Fusee.Engine.Common.OpenGLPrimitiveType.html">OpenGLPrimitiveType</a></h4>
+      <h4><a class="xref" href="Fusee.Engine.Common.PrimitiveType.html">PrimitiveType</a></h4>
       <section><p>This is the primitive type used by the RenderContext internally to distinguish between the different OpenGL primitives</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Common.RenderState.html">RenderState</a></h4>

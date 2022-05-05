@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPointCloudImp
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPointCloudImp
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.PointCloud.Common.IPointCloudImp">
+  
+  
+  <h1 id="Fusee_PointCloud_Common_IPointCloudImp" data-uid="Fusee.PointCloud.Common.IPointCloudImp" class="text-break">Interface IPointCloudImp
+  </h1>
+  <div class="markdown level0 summary"><p>Smallest common set of properties that are needed to render point clouds out of core.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.PointCloud.Common.html">Fusee.PointCloud.Common</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.PointCloud.Common.dll</h6>
+  <h5 id="Fusee_PointCloud_Common_IPointCloudImp_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPointCloudImp</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_Center_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.Center*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_Center" data-uid="Fusee.PointCloud.Common.IPointCloudImp.Center">Center</h4>
+  <div class="markdown level1 summary"><p>Center of the PointCloud's AABB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float3 Center { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_MeshesToRender_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.MeshesToRender*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_MeshesToRender" data-uid="Fusee.PointCloud.Common.IPointCloudImp.MeshesToRender">MeshesToRender</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>, created from visible octants/point chunks, that are ready to be rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;GpuMesh&gt; MeshesToRender { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_MinProjSizeModifier_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.MinProjSizeModifier*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_MinProjSizeModifier" data-uid="Fusee.PointCloud.Common.IPointCloudImp.MinProjSizeModifier">MinProjSizeModifier</h4>
+  <div class="markdown level1 summary"><p>Changes the minimum, screen projected, size of a octant. If an octant is smaller it won't be rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float MinProjSizeModifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_NumberOfVisiblePoints_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.NumberOfVisiblePoints*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_NumberOfVisiblePoints" data-uid="Fusee.PointCloud.Common.IPointCloudImp.NumberOfVisiblePoints">NumberOfVisiblePoints</h4>
+  <div class="markdown level1 summary"><p>The number of points that are currently visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int NumberOfVisiblePoints { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_PointThreshold_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.PointThreshold*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_PointThreshold" data-uid="Fusee.PointCloud.Common.IPointCloudImp.PointThreshold">PointThreshold</h4>
+  <div class="markdown level1 summary"><p>Maximal number of points that are visible in one frame - trade-off between performance and quality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PointThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_Size_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.Size*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_Size" data-uid="Fusee.PointCloud.Common.IPointCloudImp.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Dimensions of the PointCloud's AABB</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float3 Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_UpdateRate_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.UpdateRate*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_UpdateRate" data-uid="Fusee.PointCloud.Common.IPointCloudImp.UpdateRate">UpdateRate</h4>
+  <div class="markdown level1 summary"><p>The amount of milliseconds needed to pass before rendering next frame</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float UpdateRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_PointCloud_Common_IPointCloudImp_Update_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.Update*"></a>
+  <h4 id="Fusee_PointCloud_Common_IPointCloudImp_Update_System_Single_System_Int32_Fusee_Math_Core_FrustumF_Fusee_Math_Core_float3_" data-uid="Fusee.PointCloud.Common.IPointCloudImp.Update(System.Single,System.Int32,Fusee.Math.Core.FrustumF,Fusee.Math.Core.float3)">Update(Single, Int32, FrustumF, float3)</h4>
+  <div class="markdown level1 summary"><p>Triggers a visibility check for the point cloud octree.
+Is called every frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Update(float fov, int viewportHeight, FrustumF renderFrustum, float3 camPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fov</span></td>
+        <td><p>The current field of view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">viewportHeight</span></td>
+        <td><p>The current viewport height.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.FrustumF.html">FrustumF</a></td>
+        <td><span class="parametername">renderFrustum</span></td>
+        <td><p>The current viewport width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">camPos</span></td>
+        <td><p>The current camera position in world coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

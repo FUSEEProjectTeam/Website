@@ -92,6 +92,9 @@
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
     </div>
     <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Active">SceneComponent.Active</a>
+    </div>
+    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
@@ -167,13 +170,13 @@
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_Scene_Transform__ctor_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_Transform__ctor_Fusee_Math_Core_float3_Fusee_Math_Core_Quaternion_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.Quaternion,Fusee.Math.Core.float3)">Transform(float3, Quaternion, float3)</h4>
+  <h4 id="Fusee_Engine_Core_Scene_Transform__ctor_Fusee_Math_Core_float3_Fusee_Math_Core_QuaternionF_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.Transform.#ctor(Fusee.Math.Core.float3,Fusee.Math.Core.QuaternionF,Fusee.Math.Core.float3)">Transform(float3, QuaternionF, float3)</h4>
   <div class="markdown level1 summary"><p>Creates a Transform component</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform(float3 translation, Quaternion rotation, float3 scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform(float3 translation, QuaternionF rotation, float3 scale)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -191,7 +194,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionF.html">QuaternionF</a></td>
         <td><span class="parametername">rotation</span></td>
         <td></td>
       </tr>
@@ -319,7 +322,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Quaternion RotationQuaternion { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public QuaternionF RotationQuaternion { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -331,7 +334,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionF.html">QuaternionF</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -441,22 +444,28 @@
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetLocalTransformation_Fusee_Engine_Core_Scene_Transform_">SceneExtensions.GetLocalTransformation(Transform)</a>
   </div>
   <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetLocalTranslation_Fusee_Engine_Core_Scene_Transform_">SceneExtensions.GetLocalTranslation(Transform)</a>
+  </div>
+  <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Translate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_">SceneExtensions.Translate(Transform, float3)</a>
   </div>
   <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Translate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float4x4_">SceneExtensions.Translate(Transform, float4x4)</a>
   </div>
   <div>
-      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_Fusee_Engine_Core_Scene_SceneExtensions_Space_">SceneExtensions.Rotate(Transform, float3, SceneExtensions.Space)</a>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_">SceneExtensions.Rotate(Transform, float3)</a>
   </div>
   <div>
-      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_Quaternion_Fusee_Engine_Core_Scene_SceneExtensions_Space_">SceneExtensions.Rotate(Transform, Quaternion, SceneExtensions.Space)</a>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_QuaternionF_">SceneExtensions.Rotate(Transform, QuaternionF)</a>
   </div>
   <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_RotateAround_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_Fusee_Math_Core_float3_">SceneExtensions.RotateAround(Transform, float3, float3)</a>
   </div>
   <div>
-      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float4x4_Fusee_Engine_Core_Scene_SceneExtensions_Space_">SceneExtensions.Rotate(Transform, float4x4, SceneExtensions.Space)</a>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float4x4_">SceneExtensions.Rotate(Transform, float4x4)</a>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_RotateGlobal_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_QuaternionF_Fusee_Math_Core_QuaternionF_">SceneExtensions.RotateGlobal(Transform, QuaternionF, QuaternionF)</a>
   </div>
   <div>
       <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_FpsView_Fusee_Engine_Core_Scene_Transform_System_Single_System_Single_System_Single_System_Single_System_Single_">SceneExtensions.FpsView(Transform, Single, Single, Single, Single, Single)</a>

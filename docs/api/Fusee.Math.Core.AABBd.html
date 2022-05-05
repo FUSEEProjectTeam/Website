@@ -101,7 +101,7 @@
   </h3>
   <a id="Fusee_Math_Core_AABBd__ctor_" data-uid="Fusee.Math.Core.AABBd.#ctor*"></a>
   <h4 id="Fusee_Math_Core_AABBd__ctor_Fusee_Math_Core_double3_Fusee_Math_Core_double3_" data-uid="Fusee.Math.Core.AABBd.#ctor(Fusee.Math.Core.double3,Fusee.Math.Core.double3)">AABBd(double3, double3)</h4>
-  <div class="markdown level1 summary"><p>Create a new axis aligned bounding box</p>
+  <div class="markdown level1 summary"><p>Create a new axis aligned bounding box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -121,13 +121,40 @@
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
         <td><span class="parametername">min_</span></td>
-        <td><p>the minimum x y and z values</p>
+        <td><p>the minimum x y and z values.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double3.html">double3</a></td>
         <td><span class="parametername">max_</span></td>
-        <td><p>the maximum x y and z values</p>
+        <td><p>the maximum x y and z values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_AABBd__ctor_" data-uid="Fusee.Math.Core.AABBd.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_AABBd__ctor_System_Collections_Generic_IList_Fusee_Math_Core_double3__" data-uid="Fusee.Math.Core.AABBd.#ctor(System.Collections.Generic.IList{Fusee.Math.Core.double3})">AABBd(IList&lt;double3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create a new axis aligned bounding box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBd(IList&lt;double3&gt; vertices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td><p>The list of vertices the bounding box is created for.</p>
 </td>
       </tr>
     </tbody>
@@ -234,7 +261,7 @@
   </h3>
   <a id="Fusee_Math_Core_AABBd_Equals_" data-uid="Fusee.Math.Core.AABBd.Equals*"></a>
   <h4 id="Fusee_Math_Core_AABBd_Equals_System_Object_" data-uid="Fusee.Math.Core.AABBd.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Indicates whether this plane is equal to another object.</p>
+  <div class="markdown level1 summary"><p>Indicates whether this AABBd is equal to another object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -278,7 +305,7 @@
   <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
   <a id="Fusee_Math_Core_AABBd_GetHashCode_" data-uid="Fusee.Math.Core.AABBd.GetHashCode*"></a>
   <h4 id="Fusee_Math_Core_AABBd_GetHashCode" data-uid="Fusee.Math.Core.AABBd.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>Generates a hash code for this plane.</p>
+  <div class="markdown level1 summary"><p>Generates a hash code for this AABBd.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -303,13 +330,13 @@
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <a id="Fusee_Math_Core_AABBd_InsideOrIntersectingFrustum_" data-uid="Fusee.Math.Core.AABBd.InsideOrIntersectingFrustum*"></a>
-  <h4 id="Fusee_Math_Core_AABBd_InsideOrIntersectingFrustum_Fusee_Math_Core_PlaneD___" data-uid="Fusee.Math.Core.AABBd.InsideOrIntersectingFrustum(Fusee.Math.Core.PlaneD[])">InsideOrIntersectingFrustum(PlaneD[])</h4>
+  <h4 id="Fusee_Math_Core_AABBd_InsideOrIntersectingFrustum_Fusee_Math_Core_FrustumD_" data-uid="Fusee.Math.Core.AABBd.InsideOrIntersectingFrustum(Fusee.Math.Core.FrustumD)">InsideOrIntersectingFrustum(FrustumD)</h4>
   <div class="markdown level1 summary"><p>Checks if a viewing frustum lies within or intersects this AABB.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingFrustum(PlaneD[] frustumPlanes)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingFrustum(FrustumD frustum)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -322,9 +349,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.PlaneD.html">PlaneD</a>[]</td>
-        <td><span class="parametername">frustumPlanes</span></td>
-        <td><p>The frustum planes to test against.</p>
+        <td><a class="xref" href="Fusee.Math.Core.FrustumD.html">FrustumD</a></td>
+        <td><span class="parametername">frustum</span></td>
+        <td><p>The frustum to test against.</p>
 </td>
       </tr>
     </tbody>
@@ -385,6 +412,48 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><p>false if fully outside, true if inside or intersecting.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_AABBd_IntersectRay_" data-uid="Fusee.Math.Core.AABBd.IntersectRay*"></a>
+  <h4 id="Fusee_Math_Core_AABBd_IntersectRay_Fusee_Math_Core_RayD_" data-uid="Fusee.Math.Core.AABBd.IntersectRay(Fusee.Math.Core.RayD)">IntersectRay(RayD)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given ray originates in, or intersects this AABB.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IntersectRay(RayD ray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.RayD.html">RayD</a></td>
+        <td><span class="parametername">ray</span></td>
+        <td><p>The ray to test against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -690,7 +759,7 @@
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.AABBd.html">AABBd</a></td>
         <td><span class="parametername">b</span></td>
-        <td><p>The other bounding box to build the union from</p>
+        <td><p>The other bounding box, to build the union from</p>
 </td>
       </tr>
     </tbody>
@@ -762,7 +831,7 @@
   </table>
   <h5 id="Fusee_Math_Core_AABBd_op_BitwiseOr_Fusee_Math_Core_AABBd_Fusee_Math_Core_double3__examples">Examples</h5>
   <p>Use this operator e.g. to calculate the bounding box for a given list of points.</p>
-<pre><code>  AABB box = new AABB(pointList.First());
+<pre><code>  AABB box = new AABB(pointList.First(), pointList.First());
   foreach (double3 p in pointList)
       box |= p;</code></pre>
 
@@ -788,7 +857,7 @@
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.AABBd.html">AABBd</a></td>
         <td><span class="parametername">left</span></td>
-        <td><p>The plane.</p>
+        <td><p>The AABBd.</p>
 </td>
       </tr>
       <tr>
@@ -814,57 +883,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="Fusee_Math_Core_AABBd_op_ExclusiveOr_" data-uid="Fusee.Math.Core.AABBd.op_ExclusiveOr*"></a>
-  <h4 id="Fusee_Math_Core_AABBd_op_ExclusiveOr_System_Func_Fusee_Math_Core_double3_Fusee_Math_Core_double3__Fusee_Math_Core_AABBd_" data-uid="Fusee.Math.Core.AABBd.op_ExclusiveOr(System.Func{Fusee.Math.Core.double3,Fusee.Math.Core.double3},Fusee.Math.Core.AABBd)">ExclusiveOr(Func&lt;double3, double3&gt;, AABBd)</h4>
-  <div class="markdown level1 summary"><p>Applies a transformation function on the bounding box. After the transformation another
-axis aligned bounding box results. This is done by transforming all eight
-vertices of the box with the given transformation function and re-aligning to the axes afterwards.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static AABBd operator ^(Func&lt;double3, double3&gt; func, AABBd box)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Fusee.Math.Core.double3.html">double3</a>, <a class="xref" href="Fusee.Math.Core.double3.html">double3</a>&gt;</td>
-        <td><span class="parametername">func</span></td>
-        <td><p>The transformation function</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.AABBd.html">AABBd</a></td>
-        <td><span class="parametername">box</span></td>
-        <td><p>the box to transform</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Fusee.Math.Core.AABBd.html">AABBd</a></td>
-        <td><p>A new axis aligned bounding box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Fusee_Math_Core_AABBd_op_Inequality_" data-uid="Fusee.Math.Core.AABBd.op_Inequality*"></a>
   <h4 id="Fusee_Math_Core_AABBd_op_Inequality_Fusee_Math_Core_AABBd_Fusee_Math_Core_AABBd_" data-uid="Fusee.Math.Core.AABBd.op_Inequality(Fusee.Math.Core.AABBd,Fusee.Math.Core.AABBd)">Inequality(AABBd, AABBd)</h4>
   <div class="markdown level1 summary"><p>Operator override for inequality.</p>
@@ -887,7 +905,7 @@ vertices of the box with the given transformation function and re-aligning to th
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.AABBd.html">AABBd</a></td>
         <td><span class="parametername">left</span></td>
-        <td><p>The plane.</p>
+        <td><p>The AABBd.</p>
 </td>
       </tr>
       <tr>
@@ -937,13 +955,13 @@ vertices of the box and re-aligning to the axes afterwards.</p>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.double4x4.html">double4x4</a></td>
         <td><span class="parametername">m</span></td>
-        <td><p>The transformation matrix</p>
+        <td><p>The transformation matrix.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.AABBd.html">AABBd</a></td>
         <td><span class="parametername">box</span></td>
-        <td><p>the box to transform</p>
+        <td><p>the box to transform.</p>
 </td>
       </tr>
     </tbody>

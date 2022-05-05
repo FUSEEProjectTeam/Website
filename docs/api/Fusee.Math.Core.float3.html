@@ -2429,12 +2429,12 @@ Each component of vector a is blended with its equivalent in vector b.</p>
   </table>
   <a id="Fusee_Math_Core_float3_OrthoNormalize_" data-uid="Fusee.Math.Core.float3.OrthoNormalize*"></a>
   <h4 id="Fusee_Math_Core_float3_OrthoNormalize_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.float3.OrthoNormalize(Fusee.Math.Core.float3,Fusee.Math.Core.float3)">OrthoNormalize(float3, float3)</h4>
-  <div class="markdown level1 summary"><p>Orthoes the normalize.</p>
+  <div class="markdown level1 summary"><p>Normalizes the given vectors and makes sure they are orthogonal to each other.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float3[] OrthoNormalize(float3 normal, float3 tangent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float3[] OrthoNormalize(float3 vecOne, float3 vecTwo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2448,14 +2448,14 @@ Each component of vector a is blended with its equivalent in vector b.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td><span class="parametername">normal</span></td>
-        <td><p>The normal.</p>
+        <td><span class="parametername">vecOne</span></td>
+        <td><p>The first vector.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
-        <td><span class="parametername">tangent</span></td>
-        <td><p>The tangent.</p>
+        <td><span class="parametername">vecTwo</span></td>
+        <td><p>The second vector.</p>
 </td>
       </tr>
     </tbody>
@@ -2471,7 +2471,7 @@ Each component of vector a is blended with its equivalent in vector b.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a>[]</td>
-        <td><p>An float3 Array of size 2 with orthonormalized normal and tangent.</p>
+        <td><p>An float3 Array of size 2 with orthonormalized vectors.</p>
 </td>
       </tr>
     </tbody>
@@ -2699,13 +2699,13 @@ Each component of vector a is blended with its equivalent in vector b.</p>
     </tbody>
   </table>
   <a id="Fusee_Math_Core_float3_Rotate_" data-uid="Fusee.Math.Core.float3.Rotate*"></a>
-  <h4 id="Fusee_Math_Core_float3_Rotate_Fusee_Math_Core_Quaternion_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.float3.Rotate(Fusee.Math.Core.Quaternion,Fusee.Math.Core.float3)">Rotate(Quaternion, float3)</h4>
+  <h4 id="Fusee_Math_Core_float3_Rotate_Fusee_Math_Core_QuaternionF_Fusee_Math_Core_float3_" data-uid="Fusee.Math.Core.float3.Rotate(Fusee.Math.Core.QuaternionF,Fusee.Math.Core.float3)">Rotate(QuaternionF, float3)</h4>
   <div class="markdown level1 summary"><p>Rotates a vector by the given quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float3 Rotate(Quaternion quat, float3 vec)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float3 Rotate(QuaternionF quat, float3 vec)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2718,7 +2718,7 @@ Each component of vector a is blended with its equivalent in vector b.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionF.html">QuaternionF</a></td>
         <td><span class="parametername">quat</span></td>
         <td><p>The quaternion used for the rotation.</p>
 </td>

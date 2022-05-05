@@ -1117,6 +1117,47 @@ to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.ht
       </tr>
     </tbody>
   </table>
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetLocalTranslation_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTranslation*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetLocalTranslation_Fusee_Engine_Core_Scene_Transform_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetLocalTranslation(Fusee.Engine.Core.Scene.Transform)">GetLocalTranslation(Transform)</h4>
+  <div class="markdown level1 summary"><p>Get the local transformation matrix from this TransformationComponent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4x4 GetLocalTranslation(this Transform tansThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tansThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4x4.html">float4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Engine_Core_Scene_SceneExtensions_GetMesh_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetMesh*"></a>
   <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_GetMesh_Fusee_Engine_Core_Scene_SceneNode_System_Int32_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.GetMesh(Fusee.Engine.Core.Scene.SceneNode,System.Int32)">GetMesh(SceneNode, Int32)</h4>
   <div class="markdown level1 summary"><p>Shortcut for <pre><code>GetComponent&lt;Mesh&gt;(snThisThis, inx);</code></pre>. See <a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.html#Fusee_Engine_Core_Scene_SceneExtensions_GetComponent__1_Fusee_Engine_Core_Scene_SceneNode_System_Int32_">GetComponent&lt;TComp&gt;(SceneNode, Int32)</a>.</p>
@@ -1431,13 +1472,13 @@ to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.ht
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_Fusee_Engine_Core_Scene_SceneExtensions_Space_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Engine.Core.Scene.SceneExtensions.Space)">Rotate(Transform, float3, SceneExtensions.Space)</h4>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3)">Rotate(Transform, float3)</h4>
   <div class="markdown level1 summary"><p>Rotates this node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, float3 xyz, SceneExtensions.Space space = SceneExtensions.Space.Model)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, float3 xyz)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1460,22 +1501,16 @@ to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.ht
         <td><p>Rotation amount as float3.</p>
 </td>
       </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.Space.html">SceneExtensions.Space</a></td>
-        <td><span class="parametername">space</span></td>
-        <td><p>Rotation in reference to model or world space.</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float4x4_Fusee_Engine_Core_Scene_SceneExtensions_Space_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4,Fusee.Engine.Core.Scene.SceneExtensions.Space)">Rotate(Transform, float4x4, SceneExtensions.Space)</h4>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float4x4_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float4x4)">Rotate(Transform, float4x4)</h4>
   <div class="markdown level1 summary"><p>Rotates this node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, float4x4 rotationMtx, SceneExtensions.Space space = SceneExtensions.Space.Model)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, float4x4 rotationMtx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1498,22 +1533,16 @@ to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.ht
         <td><p>Rotation amount as represented in float4x4.</p>
 </td>
       </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.Space.html">SceneExtensions.Space</a></td>
-        <td><span class="parametername">space</span></td>
-        <td><p>Rotation in reference to model or world space.</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate*"></a>
-  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_Quaternion_Fusee_Engine_Core_Scene_SceneExtensions_Space_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.Quaternion,Fusee.Engine.Core.Scene.SceneExtensions.Space)">Rotate(Transform, Quaternion, SceneExtensions.Space)</h4>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_Rotate_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_QuaternionF_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.Rotate(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.QuaternionF)">Rotate(Transform, QuaternionF)</h4>
   <div class="markdown level1 summary"><p>Rotates this node.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, Quaternion quaternion, SceneExtensions.Space space = SceneExtensions.Space.Model)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Rotate(this Transform tc, QuaternionF quaternion)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1531,22 +1560,19 @@ to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.ht
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Fusee.Math.Core.Quaternion.html">Quaternion</a></td>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionF.html">QuaternionF</a></td>
         <td><span class="parametername">quaternion</span></td>
         <td><p>Rotation amount in Quaternion.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneExtensions.Space.html">SceneExtensions.Space</a></td>
-        <td><span class="parametername">space</span></td>
-        <td><p>Rotation in reference to model or world space.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_Scene_SceneExtensions_RotateAround_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RotateAround*"></a>
   <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_RotateAround_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_float3_Fusee_Math_Core_float3_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RotateAround(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.float3,Fusee.Math.Core.float3)">RotateAround(Transform, float3, float3)</h4>
-  <div class="markdown level1 summary"><p>Roates around a given center and angle</p>
+  <div class="markdown level1 summary"><p>Rotates around a center with the given angles.
+CAREFUL: this method will only produce correct results if
+a) the SceneNode of this transform is in the first level of the scene graph, directly beneath the SceneContainer
+b) this Transform's global rotation and translation equals its local ones (non of the SceneNodes that are in the levels above are translated or rotated).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1577,6 +1603,44 @@ to the concrete Types <a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.ht
         <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
         <td><span class="parametername">angles</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_SceneExtensions_RotateGlobal_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RotateGlobal*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_SceneExtensions_RotateGlobal_Fusee_Engine_Core_Scene_Transform_Fusee_Math_Core_QuaternionF_Fusee_Math_Core_QuaternionF_" data-uid="Fusee.Engine.Core.Scene.SceneExtensions.RotateGlobal(Fusee.Engine.Core.Scene.Transform,Fusee.Math.Core.QuaternionF,Fusee.Math.Core.QuaternionF)">RotateGlobal(Transform, QuaternionF, QuaternionF)</h4>
+  <div class="markdown level1 summary"><p>Rotates this node around the (static) global axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RotateGlobal(this Transform tc, QuaternionF rotation, QuaternionF parentGlobalRot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Transform.html">Transform</a></td>
+        <td><span class="parametername">tc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionF.html">QuaternionF</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Rotation amount as represented in Quaternion.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.QuaternionF.html">QuaternionF</a></td>
+        <td><span class="parametername">parentGlobalRot</span></td>
+        <td><p>Global (accumulated) rotation of the parent node.</p>
+</td>
       </tr>
     </tbody>
   </table>

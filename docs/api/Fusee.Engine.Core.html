@@ -113,6 +113,9 @@ the gamepad dpad axes.</p>
       <section><p>Stores three dimensional, polygonal geometry and provides methods for manipulation.
 To actually render the geometry in the engine, convert Geometry to <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a> objects.</p>
 </section>
+      <h4><a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a></h4>
+      <section><p>This type of mesh doesn't create a copy of the mesh data in the RAM.</p>
+</section>
       <h4><a class="xref" href="Fusee.Engine.Core.Input.html">Input</a></h4>
       <section><p>Handles and manages all input devices. Input is a staticton (a singleton with an additional
 static interface).</p>
@@ -134,11 +137,11 @@ Defines convenience methods to access the keyboard buttons.</p>
       <h4><a class="xref" href="Fusee.Engine.Core.MakeEffect.html">MakeEffect</a></h4>
       <section><p>Provides helper methods for creating <a class="xref" href="Fusee.Engine.Core.Effects.ShaderEffect.html">ShaderEffect</a>s.</p>
 </section>
-      <h4><a class="xref" href="Fusee.Engine.Core.MeshDataEventArgs.html">MeshDataEventArgs</a></h4>
-      <section><p>EventArgs to propagate changes of a <a class="xref" href="Fusee.Engine.Core.MeshDataEventArgs.html#Fusee_Engine_Core_MeshDataEventArgs_Mesh">Mesh</a> object's life cycle and property changes.</p>
-</section>
       <h4><a class="xref" href="Fusee.Engine.Core.MeshReader.html">MeshReader</a></h4>
       <section><p>This class is used to load 3D Models in .obj format into memory.</p>
+</section>
+      <h4><a class="xref" href="Fusee.Engine.Core.ModuleExtensionPoint.html">ModuleExtensionPoint</a></h4>
+      <section><p>Allows the use of Engine specific objects, properties and methods in Modules, e.g. PointCloud.</p>
 </section>
       <h4><a class="xref" href="Fusee.Engine.Core.MouseDevice.html">MouseDevice</a></h4>
       <section><p>Special case of an <a class="xref" href="Fusee.Engine.Core.InputDevice.html">InputDevice</a> identifying itself as a <a class="xref" href="Fusee.Engine.Common.DeviceCategory.html#Fusee_Engine_Common_DeviceCategory_Mouse">Mouse</a>.
@@ -247,11 +250,13 @@ Does NOT offer access to the pixel data.</p>
       <section><p>Used in conjunction with a <a class="xref" href="Fusee.Engine.Core.FontMap.html">FontMap</a> containing information about
 a rendered character (glyph) on a font map texture.</p>
 </section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Fusee.Engine.Core.IRendererModule.html">IRendererModule</a></h4>
+      <section><p>Implement this to extend the SceneRenderer with visit methods for modules that contain <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a>s.</p>
+</section>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Fusee.Engine.Core.MeshChangedEnum.html">MeshChangedEnum</a></h4>
-      <section><p>Propagates Mesh properties changed status inside <a class="xref" href="Fusee.Engine.Core.MeshDataEventArgs.html">MeshDataEventArgs</a></p>
-</section>
       <h4><a class="xref" href="Fusee.Engine.Core.RenderPasses.html">RenderPasses</a></h4>
       <section><p>Contains all types of render passes. Is used to control behavior in the SceneRenderer, based on the current type of pass.</p>
 </section>
@@ -260,6 +265,9 @@ a rendered character (glyph) on a font map texture.</p>
 </section>
     <h3 id="delegates">Delegates
   </h3>
+      <h4><a class="xref" href="Fusee.Engine.Core.CreateGpuMesh.html">CreateGpuMesh</a></h4>
+      <section><p>Delegate that points to a method that is able to create a <a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a></p>
+</section>
       <h4><a class="xref" href="Fusee.Engine.Core.CreatorFunc.html">CreatorFunc</a></h4>
       <section><p>Creates the input device.</p>
 </section>

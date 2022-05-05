@@ -86,7 +86,6 @@ Does NOT offer access to the pixel data.</p>
     <h5>Implements</h5>
     <div><a class="xref" href="Fusee.Engine.Common.IWritableTexture.html">IWritableTexture</a></div>
     <div><a class="xref" href="Fusee.Engine.Common.ITextureBase.html">ITextureBase</a></div>
-    <div><a class="xref" href="Fusee.Base.Common.IImageBase.html">IImageBase</a></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
@@ -117,7 +116,7 @@ Does NOT offer access to the pixel data.</p>
   <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
   <h5 id="Fusee_Engine_Core_WritableTexture_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WritableTexture : IWritableTexture, ITextureBase, IImageBase, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class WritableTexture : IWritableTexture, ITextureBase, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -850,13 +849,13 @@ Does NOT offer access to the pixel data.</p>
     </tbody>
   </table>
   <a id="Fusee_Engine_Core_WritableTexture_CreateSSAOTex_" data-uid="Fusee.Engine.Core.WritableTexture.CreateSSAOTex*"></a>
-  <h4 id="Fusee_Engine_Core_WritableTexture_CreateSSAOTex_System_Int32_System_Int32_" data-uid="Fusee.Engine.Core.WritableTexture.CreateSSAOTex(System.Int32,System.Int32)">CreateSSAOTex(Int32, Int32)</h4>
+  <h4 id="Fusee_Engine_Core_WritableTexture_CreateSSAOTex_System_Int32_System_Int32_Fusee_Base_Common_ImagePixelFormat_" data-uid="Fusee.Engine.Core.WritableTexture.CreateSSAOTex(System.Int32,System.Int32,Fusee.Base.Common.ImagePixelFormat)">CreateSSAOTex(Int32, Int32, ImagePixelFormat)</h4>
   <div class="markdown level1 summary"><p>Create a texture that is intended to save SSAO information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static WritableTexture CreateSSAOTex(int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public static WritableTexture CreateSSAOTex(int width, int height, ImagePixelFormat pxFormat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -878,6 +877,12 @@ Does NOT offer access to the pixel data.</p>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">height</span></td>
         <td><p>Height in px.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Base.Common.ImagePixelFormat.html">ImagePixelFormat</a></td>
+        <td><span class="parametername">pxFormat</span></td>
+        <td><p>The color format of this texture.</p>
 </td>
       </tr>
     </tbody>
@@ -1026,9 +1031,6 @@ Does NOT offer access to the pixel data.</p>
   </div>
   <div>
       <a class="xref" href="Fusee.Engine.Common.ITextureBase.html">ITextureBase</a>
-  </div>
-  <div>
-      <a class="xref" href="Fusee.Base.Common.IImageBase.html">IImageBase</a>
   </div>
   <div>
       <span class="xref">System.IDisposable</span>

@@ -93,6 +93,9 @@ TODO (MR): check with/against blender</p>
       <a class="xref" href="Fusee.Serialization.V1.FusComponent.html#Fusee_Serialization_V1_FusComponent_Name">FusComponent.Name</a>
     </div>
     <div>
+      <a class="xref" href="Fusee.Serialization.V1.FusComponent.html#Fusee_Serialization_V1_FusComponent_Active">FusComponent.Active</a>
+    </div>
+    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
@@ -122,29 +125,6 @@ TODO (MR): check with/against blender</p>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Fusee_Serialization_V1_FusCamera_Active" data-uid="Fusee.Serialization.V1.FusCamera.Active">Active</h4>
-  <div class="markdown level1 summary"><p>A camera is active by default. Set this to false to deactivate it.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Active</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="Fusee_Serialization_V1_FusCamera_BackgroundColor" data-uid="Fusee.Serialization.V1.FusCamera.BackgroundColor">BackgroundColor</h4>
   <div class="markdown level1 summary"><p>The background color for this camera's viewport.</p>
 </div>
@@ -302,6 +282,29 @@ TODO (MR): check with/against blender</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Fusee.Serialization.V1.ProjectionMethod.html">ProjectionMethod</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Serialization_V1_FusCamera_Scale" data-uid="Fusee.Serialization.V1.FusCamera.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>Scales the orthograpic viewing frustum. Dosn't have an effect if <a class="xref" href="Fusee.Serialization.V1.ProjectionMethod.html#Fusee_Serialization_V1_ProjectionMethod_Perspective">Perspective</a> is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>

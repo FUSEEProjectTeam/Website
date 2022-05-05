@@ -77,50 +77,35 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.FuseePointCloudHelper.html">FuseePointCloudHelper</a></h4>
-      <section><p>Static class that contains helper methods to setup a app that renders point clouds.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.MeshMaker.html">MeshMaker</a></h4>
+      <section><p>Static class that provides generic methods that take point cloud points and return <a class="xref" href="Fusee.Engine.Core.GpuMesh.html">GpuMesh</a>s.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.MeshFromPoints.html">MeshFromPoints</a></h4>
-      <section><p>Provides static methods for creating meshes from lists of point cloud points.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.PointCloudDataHandler-1.html">PointCloudDataHandler&lt;TPoint&gt;</a></h4>
+      <section><p>Manages the caching and loading of point and mesh data.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.OoCFileGenerationHelper.html">OoCFileGenerationHelper</a></h4>
-      <section><p>Provides methods to create the ooc files according to the user-given point type.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a></h4>
+      <section><p>Used in <a class="xref" href="Fusee.PointCloud.Core.PointCloudOctree.html">PointCloudOctree</a>. This octant does not contain actual point data.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64_Accessor.html">Pos64_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position information only.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.PointCloudOctree.html">PointCloudOctree</a></h4>
+      <section><p>This octree's purpose is the out of core rendering of point clouds. It is used to determine the visibility of point chunks in octants.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64Col32_Accessor.html">Pos64Col32_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position and color values.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.VisibilityTester.html">VisibilityTester</a></h4>
+      <section><p>Class that manages the on demand loading of point cloud points.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64Col32IShort_Accessor.html">Pos64Col32IShort_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position, color and intensity values.</p>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.CreateMesh-1.html">CreateMesh&lt;TPoint&gt;</a></h4>
+      <section><p>Generic delegate to inject a method that nows how to actually create a GpuMesh for the given point type.
+The injected methods decide which point values are assigned to which mesh properties (primarily important for the various color values).</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64IShort_Accessor.html">Pos64IShort_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position and intensity values.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.GetMeshes.html">GetMeshes</a></h4>
+      <section><p>Delegate for a method that tries to get the mesh(es) of an octant. If they are not cached yet, they should be created an added to the _meshCache.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64Label8_Accessor.html">Pos64Label8_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position and label values.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.LoadPointsHandler-1.html">LoadPointsHandler&lt;TPoint&gt;</a></h4>
+      <section><p>Delegate that allows to inject the loading method of the PointReader - loads the points from file.</p>
 </section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64Nor32Col32_Accessor.html">Pos64Nor32Col32_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position, color and intensity values.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64Nor32Col32IShort_Accessor.html">Pos64Nor32Col32IShort_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position, normal vectors, color and intensity values.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.Pos64Nor32IShort_Accessor.html">Pos64Nor32IShort_Accessor</a></h4>
-      <section><p><a class="xref" href="Fusee.PointCloud.Common.PointAccessor-1.html">PointAccessor&lt;TPoint&gt;</a> for Point Clouds wich position, normal vectors and intensity values.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.PtGrid-1.html">PtGrid&lt;TPoint&gt;</a></h4>
-      <section><p>Data structure that filters points and determines which fall into the next octree level.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.PtOctantWrite-1.html">PtOctantWrite&lt;TPoint&gt;</a></h4>
-      <section><p>Node/Bucket data structure that is used in a <a class="xref" href="Fusee.PointCloud.Core.PtOctree-1.html">PtOctree&lt;TPoint&gt;</a>. Needed to save a point cloud into a file format that can be used for out of core rendering.</p>
-</section>
-      <h4><a class="xref" href="Fusee.PointCloud.Core.PtOctree-1.html">PtOctree&lt;TPoint&gt;</a></h4>
-      <section><p>Tree data structure in which each internal node has up to eight children.
-Octrees are most often used to partition a three-dimensional space by recursively subdividing it into eight octants.
-See <a class="xref" href="Fusee.Structures.OctreeD-1.html">OctreeD&lt;P&gt;</a>
-This subclass is used for point cloud rendering. It has the additional fields <a class="xref" href="Fusee.PointCloud.Core.PtOctree-1.html#Fusee_PointCloud_Core_PtOctree_1_MaxNoOfPointsInBucket">MaxNoOfPointsInBucket</a> and <a class="xref" href="Fusee.PointCloud.Core.PtOctree-1.html#Fusee_PointCloud_Core_PtOctree_1_PtAccessor">PtAccessor</a>.</p>
+      <h4><a class="xref" href="Fusee.PointCloud.Core.TriggerPointLoading.html">TriggerPointLoading</a></h4>
+      <section><p>Called in &quot;determine visibility for node&quot; - if the _pointCache does not contain the points load them.</p>
 </section>
 </article>
           </div>

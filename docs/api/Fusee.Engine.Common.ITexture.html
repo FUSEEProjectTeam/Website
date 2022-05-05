@@ -73,21 +73,11 @@
   
   <h1 id="Fusee_Engine_Common_ITexture" data-uid="Fusee.Engine.Common.ITexture" class="text-break">Interface ITexture
   </h1>
-  <div class="markdown level0 summary"><p>Cross platform abstraction for Textures.
-Implements <a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</a> and <a class="xref" href="Fusee.Engine.Common.ITextureBase.html">ITextureBase</a>and offers access to internal <a class="xref" href="Fusee.Engine.Common.ITexture.html#Fusee_Engine_Common_ITexture_PixelData">PixelData</a> for GPU upload.</p>
+  <div class="markdown level0 summary"><p>Cross platform abstraction for textures, that are used on the gpu.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageData.html#Fusee_Base_Common_IImageData_Blt_System_Int32_System_Int32_Fusee_Base_Common_IImageData_System_Int32_System_Int32_System_Int32_System_Int32_">IImageData.Blt(Int32, Int32, IImageData, Int32, Int32, Int32, Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageData.html#Fusee_Base_Common_IImageData_ScanLines_System_Int32_System_Int32_System_Int32_System_Int32_">IImageData.ScanLines(Int32, Int32, Int32, Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageData.html#Fusee_Base_Common_IImageData_IsEmpty">IImageData.IsEmpty</a>
-    </div>
     <div>
       <a class="xref" href="Fusee.Engine.Common.ITextureBase.html#Fusee_Engine_Common_ITextureBase_TextureChanged">ITextureBase.TextureChanged</a>
     </div>
@@ -104,15 +94,6 @@ Implements <a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</
       <a class="xref" href="Fusee.Engine.Common.ITextureBase.html#Fusee_Engine_Common_ITextureBase_FilterMode">ITextureBase.FilterMode</a>
     </div>
     <div>
-      <a class="xref" href="Fusee.Base.Common.IImageBase.html#Fusee_Base_Common_IImageBase_Width">IImageBase.Width</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageBase.html#Fusee_Base_Common_IImageBase_Height">IImageBase.Height</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageBase.html#Fusee_Base_Common_IImageBase_PixelFormat">IImageBase.PixelFormat</a>
-    </div>
-    <div>
       <span class="xref">System.IDisposable.Dispose()</span>
     </div>
   </div>
@@ -120,18 +101,18 @@ Implements <a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</
   <h6><strong>Assembly</strong>: Fusee.Engine.Common.dll</h6>
   <h5 id="Fusee_Engine_Common_ITexture_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ITexture : IImageData, ITextureBase, IImageBase, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITexture : ITextureBase, IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="Fusee_Engine_Common_ITexture_PixelData_" data-uid="Fusee.Engine.Common.ITexture.PixelData*"></a>
-  <h4 id="Fusee_Engine_Common_ITexture_PixelData" data-uid="Fusee.Engine.Common.ITexture.PixelData">PixelData</h4>
-  <div class="markdown level1 summary"><p>The byte buffer that makes up the <a class="xref" href="Fusee.Engine.Common.ITexture.html">ITexture</a> instance.</p>
+  <a id="Fusee_Engine_Common_ITexture_ImageData_" data-uid="Fusee.Engine.Common.ITexture.ImageData*"></a>
+  <h4 id="Fusee_Engine_Common_ITexture_ImageData" data-uid="Fusee.Engine.Common.ITexture.ImageData">ImageData</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</a> that makes up the <a class="xref" href="Fusee.Engine.Common.ITexture.html">ITexture</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">byte[] PixelData { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IImageData ImageData { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +124,7 @@ Implements <a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><a class="xref" href="Fusee.Base.Common.IImageData.html">IImageData</a></td>
         <td></td>
       </tr>
     </tbody>

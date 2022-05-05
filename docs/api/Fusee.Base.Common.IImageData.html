@@ -76,26 +76,38 @@
   <div class="markdown level0 summary"><p>Interface describing operations that are possible on arbitrary image data types.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageBase.html#Fusee_Base_Common_IImageBase_Width">IImageBase.Width</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageBase.html#Fusee_Base_Common_IImageBase_Height">IImageBase.Height</a>
-    </div>
-    <div>
-      <a class="xref" href="Fusee.Base.Common.IImageBase.html#Fusee_Base_Common_IImageBase_PixelFormat">IImageBase.PixelFormat</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Base.Common.html">Fusee.Base.Common</a></h6>
   <h6><strong>Assembly</strong>: Fusee.Base.Common.dll</h6>
   <h5 id="Fusee_Base_Common_IImageData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IImageData : IImageBase</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IImageData</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
+  <a id="Fusee_Base_Common_IImageData_Height_" data-uid="Fusee.Base.Common.IImageData.Height*"></a>
+  <h4 id="Fusee_Base_Common_IImageData_Height" data-uid="Fusee.Base.Common.IImageData.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Height in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Fusee_Base_Common_IImageData_IsEmpty_" data-uid="Fusee.Base.Common.IImageData.IsEmpty*"></a>
   <h4 id="Fusee_Base_Common_IImageData_IsEmpty" data-uid="Fusee.Base.Common.IImageData.IsEmpty">IsEmpty</h4>
   <div class="markdown level1 summary"><p>Returns true if IImageData has not been initialized with an byte array.</p>
@@ -116,6 +128,78 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Base_Common_IImageData_PixelData_" data-uid="Fusee.Base.Common.IImageData.PixelData*"></a>
+  <h4 id="Fusee_Base_Common_IImageData_PixelData" data-uid="Fusee.Base.Common.IImageData.PixelData">PixelData</h4>
+  <div class="markdown level1 summary"><p>The pixel values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] PixelData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Base_Common_IImageData_PixelFormat_" data-uid="Fusee.Base.Common.IImageData.PixelFormat*"></a>
+  <h4 id="Fusee_Base_Common_IImageData_PixelFormat" data-uid="Fusee.Base.Common.IImageData.PixelFormat">PixelFormat</h4>
+  <div class="markdown level1 summary"><p>Offers additional Information about the color format of the texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImagePixelFormat PixelFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Base.Common.ImagePixelFormat.html">ImagePixelFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Base_Common_IImageData_Width_" data-uid="Fusee.Base.Common.IImageData.Width*"></a>
+  <h4 id="Fusee_Base_Common_IImageData_Width" data-uid="Fusee.Base.Common.IImageData.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Width in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
