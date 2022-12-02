@@ -1,0 +1,2990 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct int4
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct int4
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Math.Core.int4">
+  
+  
+  <h1 id="Fusee_Math_Core_int4" data-uid="Fusee.Math.Core.int4" class="text-break">Struct int4
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a 4D vector using four integers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Fusee.Math.Core.int4.html">int4</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Math.Core.html">Fusee.Math.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Math.Core.dll</h6>
+  <h5 id="Fusee_Math_Core_int4_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct int4 : IEquatable&lt;int4&gt;</code></pre>
+  </div>
+  <h5 id="Fusee_Math_Core_int4_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The int4 structure is suitable for interoperation with unmanaged code requiring four consecutive ints.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Fusee_Math_Core_int4__ctor_" data-uid="Fusee.Math.Core.int4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_int4__ctor_Fusee_Math_Core_double4_" data-uid="Fusee.Math.Core.int4.#ctor(Fusee.Math.Core.double4)">int4(double4)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new int4 by converting from a double4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4(double4 d4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">d4</span></td>
+        <td><p>The double4 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4__ctor_" data-uid="Fusee.Math.Core.int4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_int4__ctor_Fusee_Math_Core_int2_" data-uid="Fusee.Math.Core.int4.#ctor(Fusee.Math.Core.int2)">int4(int2)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new int4 from the given int2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4(int2 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int2.html">int2</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The int2 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4__ctor_" data-uid="Fusee.Math.Core.int4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_int4__ctor_Fusee_Math_Core_int3_" data-uid="Fusee.Math.Core.int4.#ctor(Fusee.Math.Core.int3)">int4(int3)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new int4 from the given int3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4(int3 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The int3 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4__ctor_" data-uid="Fusee.Math.Core.int4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_int4__ctor_Fusee_Math_Core_int3_System_Int32_" data-uid="Fusee.Math.Core.int4.#ctor(Fusee.Math.Core.int3,System.Int32)">int4(int3, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new int4 from the specified int3 and ww component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4(int3 v, int ww)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The int3 to copy components from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ww</span></td>
+        <td><p>The ww component of the new int4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4__ctor_" data-uid="Fusee.Math.Core.int4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_int4__ctor_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.#ctor(Fusee.Math.Core.int4)">int4(int4)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new int4 from the given int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4(int4 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The int4 to copy components from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4__ctor_" data-uid="Fusee.Math.Core.int4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_int4__ctor_System_Int32_" data-uid="Fusee.Math.Core.int4.#ctor(System.Int32)">int4(Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4(int val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>This value will be set for the x, y, z and w component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4__ctor_" data-uid="Fusee.Math.Core.int4.#ctor*"></a>
+  <h4 id="Fusee_Math_Core_int4__ctor_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Math.Core.int4.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">int4(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4(int x, int y, int z, int w)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The x component of the int4.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The y component of the int4.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the int4.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the int4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Fusee_Math_Core_int4_One" data-uid="Fusee.Math.Core.int4.One">One</h4>
+  <div class="markdown level1 summary"><p>Defines an instance with all components set to 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int4 One</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_UnitW" data-uid="Fusee.Math.Core.int4.UnitW">UnitW</h4>
+  <div class="markdown level1 summary"><p>Defines a unit-length int4 that points towards the w-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int4 UnitW</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_UnitX" data-uid="Fusee.Math.Core.int4.UnitX">UnitX</h4>
+  <div class="markdown level1 summary"><p>Defines a unit-length int4 that points towards the x-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int4 UnitX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_UnitY" data-uid="Fusee.Math.Core.int4.UnitY">UnitY</h4>
+  <div class="markdown level1 summary"><p>Defines a unit-length int4 that points towards the y-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int4 UnitY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_UnitZ" data-uid="Fusee.Math.Core.int4.UnitZ">UnitZ</h4>
+  <div class="markdown level1 summary"><p>Defines a unit-length int4 that points towards the z-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int4 UnitZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_w" data-uid="Fusee.Math.Core.int4.w">w</h4>
+  <div class="markdown level1 summary"><p>The w component of the int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int w</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_x" data-uid="Fusee.Math.Core.int4.x">x</h4>
+  <div class="markdown level1 summary"><p>The x component of the int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int x</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_y" data-uid="Fusee.Math.Core.int4.y">y</h4>
+  <div class="markdown level1 summary"><p>The y component of the int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int y</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_z" data-uid="Fusee.Math.Core.int4.z">z</h4>
+  <div class="markdown level1 summary"><p>The z component of the int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int z</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_Math_Core_int4_Zero" data-uid="Fusee.Math.Core.int4.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>Defines a zero-length int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int4 Zero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_Math_Core_int4_a_" data-uid="Fusee.Math.Core.int4.a*"></a>
+  <h4 id="Fusee_Math_Core_int4_a" data-uid="Fusee.Math.Core.int4.a">a</h4>
+  <div class="markdown level1 summary"><p>The alpha component (same as w)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int a { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_b_" data-uid="Fusee.Math.Core.int4.b*"></a>
+  <h4 id="Fusee_Math_Core_int4_b" data-uid="Fusee.Math.Core.int4.b">b</h4>
+  <div class="markdown level1 summary"><p>The blue component (same as z)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int b { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_g_" data-uid="Fusee.Math.Core.int4.g*"></a>
+  <h4 id="Fusee_Math_Core_int4_g" data-uid="Fusee.Math.Core.int4.g">g</h4>
+  <div class="markdown level1 summary"><p>The green component (same as y)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int g { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Item_" data-uid="Fusee.Math.Core.int4.Item*"></a>
+  <h4 id="Fusee_Math_Core_int4_Item_System_Int32_" data-uid="Fusee.Math.Core.int4.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the individual components x, y, z, or w, depending on their index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int this[int idx] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">idx</span></td>
+        <td><p>The index (between 0 and 3).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The x or y component of the int4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Length_" data-uid="Fusee.Math.Core.int4.Length*"></a>
+  <h4 id="Fusee_Math_Core_int4_Length" data-uid="Fusee.Math.Core.int4.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the length (magnitude) of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Length1_" data-uid="Fusee.Math.Core.int4.Length1*"></a>
+  <h4 id="Fusee_Math_Core_int4_Length1" data-uid="Fusee.Math.Core.int4.Length1">Length1</h4>
+  <div class="markdown level1 summary"><p>Gets the length in 1-norm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Length1 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_LengthSquared_" data-uid="Fusee.Math.Core.int4.LengthSquared*"></a>
+  <h4 id="Fusee_Math_Core_int4_LengthSquared" data-uid="Fusee.Math.Core.int4.LengthSquared">LengthSquared</h4>
+  <div class="markdown level1 summary"><p>Gets the square of the vector length (magnitude).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int LengthSquared { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Fusee_Math_Core_int4_LengthSquared_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property avoids the costly square root operation required by the Length property. This makes it more suitable
+for comparisons.</p>
+</div>
+  <a id="Fusee_Math_Core_int4_ParseConverter_" data-uid="Fusee.Math.Core.int4.ParseConverter*"></a>
+  <h4 id="Fusee_Math_Core_int4_ParseConverter" data-uid="Fusee.Math.Core.int4.ParseConverter">ParseConverter</h4>
+  <div class="markdown level1 summary"><p>Gets and sets the Converter object. Has the ability to convert a string to a int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Converter&lt;string, int4&gt; ParseConverter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.Converter-2.html">Converter</a>&lt;<span class="xref">System.String</span>, <a class="xref" href="Fusee.Math.Core.int4.html">int4</a>&gt;</td>
+        <td><p>The parse property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_r_" data-uid="Fusee.Math.Core.int4.r*"></a>
+  <h4 id="Fusee_Math_Core_int4_r" data-uid="Fusee.Math.Core.int4.r">r</h4>
+  <div class="markdown level1 summary"><p>The red component (same as x)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int r { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_rg_" data-uid="Fusee.Math.Core.int4.rg*"></a>
+  <h4 id="Fusee_Math_Core_int4_rg" data-uid="Fusee.Math.Core.int4.rg">rg</h4>
+  <div class="markdown level1 summary"><p>The rg component (same as xy)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int2 rg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int2.html">int2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_rgb_" data-uid="Fusee.Math.Core.int4.rgb*"></a>
+  <h4 id="Fusee_Math_Core_int4_rgb" data-uid="Fusee.Math.Core.int4.rgb">rgb</h4>
+  <div class="markdown level1 summary"><p>The rgb component (same as xyz)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int3 rgb { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_xy_" data-uid="Fusee.Math.Core.int4.xy*"></a>
+  <h4 id="Fusee_Math_Core_int4_xy" data-uid="Fusee.Math.Core.int4.xy">xy</h4>
+  <div class="markdown level1 summary"><p>Gets and sets an OpenTK.int2 with the x and y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int2 xy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int2.html">int2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_xyz_" data-uid="Fusee.Math.Core.int4.xyz*"></a>
+  <h4 id="Fusee_Math_Core_int4_xyz" data-uid="Fusee.Math.Core.int4.xyz">xyz</h4>
+  <div class="markdown level1 summary"><p>Gets and sets an OpenTK.int3 with the x, y and z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int3 xyz { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int3.html">int3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_Math_Core_int4_Add_" data-uid="Fusee.Math.Core.int4.Add*"></a>
+  <h4 id="Fusee_Math_Core_int4_Add_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Add(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Add(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Adds two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Add(int4 a, int4 b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>Result of operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Clamp_" data-uid="Fusee.Math.Core.int4.Clamp*"></a>
+  <h4 id="Fusee_Math_Core_int4_Clamp_Fusee_Math_Core_int4_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Clamp(Fusee.Math.Core.int4,Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Clamp(int4, int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Clamp a vector to the given minimum and maximum vectors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Clamp(int4 vec, int4 min, int4 max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>Input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>Minimum vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>Maximum vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The clamped vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Divide_" data-uid="Fusee.Math.Core.int4.Divide*"></a>
+  <h4 id="Fusee_Math_Core_int4_Divide_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Divide(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Divide(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Divides a vector by the components of a vector (scale).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Divide(int4 vector, int4 scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>Result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Divide_" data-uid="Fusee.Math.Core.int4.Divide*"></a>
+  <h4 id="Fusee_Math_Core_int4_Divide_Fusee_Math_Core_int4_System_Int32_" data-uid="Fusee.Math.Core.int4.Divide(Fusee.Math.Core.int4,System.Int32)">Divide(int4, Int32)</h4>
+  <div class="markdown level1 summary"><p>Divides a vector by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Divide(int4 vector, int scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>Result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Dot_" data-uid="Fusee.Math.Core.int4.Dot*"></a>
+  <h4 id="Fusee_Math_Core_int4_Dot_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Dot(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Dot(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Calculate the dot product of two vectors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Dot(int4 left, int4 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>First operand</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Second operand</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dot product of the two inputs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Equals_" data-uid="Fusee.Math.Core.int4.Equals*"></a>
+  <h4 id="Fusee_Math_Core_int4_Equals_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Equals(Fusee.Math.Core.int4)">Equals(int4)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current vector is equal to another vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(int4 other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>A vector to compare with this vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the current vector is equal to the vector parameter; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Equals_" data-uid="Fusee.Math.Core.int4.Equals*"></a>
+  <h4 id="Fusee_Math_Core_int4_Equals_System_Object_" data-uid="Fusee.Math.Core.int4.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the instances are equal; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <a id="Fusee_Math_Core_int4_GetHashCode_" data-uid="Fusee.Math.Core.int4.GetHashCode*"></a>
+  <h4 id="Fusee_Math_Core_int4_GetHashCode" data-uid="Fusee.Math.Core.int4.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A System.Int32 containing the unique hash code for this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <a id="Fusee_Math_Core_int4_Lerp_" data-uid="Fusee.Math.Core.int4.Lerp*"></a>
+  <h4 id="Fusee_Math_Core_int4_Lerp_Fusee_Math_Core_int4_Fusee_Math_Core_int4_Fusee_Math_Core_float4_" data-uid="Fusee.Math.Core.int4.Lerp(Fusee.Math.Core.int4,Fusee.Math.Core.int4,Fusee.Math.Core.float4)">Lerp(int4, int4, float4)</h4>
+  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.
+Each component of vector a is blended with its equivalent in vector b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4 Lerp(int4 a, int4 b, float4 blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Lerp_" data-uid="Fusee.Math.Core.int4.Lerp*"></a>
+  <h4 id="Fusee_Math_Core_int4_Lerp_Fusee_Math_Core_int4_Fusee_Math_Core_int4_System_Single_" data-uid="Fusee.Math.Core.int4.Lerp(Fusee.Math.Core.int4,Fusee.Math.Core.int4,System.Single)">Lerp(int4, int4, Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4 Lerp(int4 a, int4 b, float blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><p>a when blend=0, b when blend=1, and a linear combination otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_int4_LinearColorFromSRgb" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb">LinearColorFromSRgb()</h4>
+  <div class="markdown level1 summary"><p>Converts this int4 - which is interpreted as a color - from sRgb space to linear color space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4 LinearColorFromSRgb()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_int4_LinearColorFromSRgb_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb(Fusee.Math.Core.int4)">LinearColorFromSRgb(int4)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 LinearColorFromSRgb(int4 sRGBCol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">sRGBCol</span></td>
+        <td><p>The sRgb color value as <a class="xref" href="Fusee.Math.Core.int4.html">int4</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_int4_LinearColorFromSRgb_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb(System.Int32,System.Int32,System.Int32,System.Int32)">LinearColorFromSRgb(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 LinearColorFromSRgb(int r, int g, int b, int a)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The red color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>The green color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The blue color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The alpha value in range 0 - 255.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_int4_LinearColorFromSRgb_System_String_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb(System.String)">LinearColorFromSRgb(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 LinearColorFromSRgb(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td><p>The color value as hex code in form of a &quot;FFFFFFFF&quot; string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_LinearColorFromSRgb_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb*"></a>
+  <h4 id="Fusee_Math_Core_int4_LinearColorFromSRgb_System_UInt32_" data-uid="Fusee.Math.Core.int4.LinearColorFromSRgb(System.UInt32)">LinearColorFromSRgb(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from sRgb to linear space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 LinearColorFromSRgb(uint col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p>The color value as uint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Max_" data-uid="Fusee.Math.Core.int4.Max*"></a>
+  <h4 id="Fusee_Math_Core_int4_Max_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Max(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Max(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Calculate the component-wise maximum of two vectors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Max(int4 a, int4 b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The component-wise maximum</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Min_" data-uid="Fusee.Math.Core.int4.Min*"></a>
+  <h4 id="Fusee_Math_Core_int4_Min_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Min(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Min(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Calculate the component-wise minimum of two vectors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Min(int4 a, int4 b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The component-wise minimum</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Multiply_" data-uid="Fusee.Math.Core.int4.Multiply*"></a>
+  <h4 id="Fusee_Math_Core_int4_Multiply_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Multiply(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Multiply(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a vector by the components a vector (scale).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Multiply(int4 vector, int4 scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>Result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Multiply_" data-uid="Fusee.Math.Core.int4.Multiply*"></a>
+  <h4 id="Fusee_Math_Core_int4_Multiply_Fusee_Math_Core_int4_System_Int32_" data-uid="Fusee.Math.Core.int4.Multiply(Fusee.Math.Core.int4,System.Int32)">Multiply(int4, Int32)</h4>
+  <div class="markdown level1 summary"><p>Multiplies a vector by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Multiply(int4 vector, int scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>Result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Normalize_" data-uid="Fusee.Math.Core.int4.Normalize*"></a>
+  <h4 id="Fusee_Math_Core_int4_Normalize" data-uid="Fusee.Math.Core.int4.Normalize">Normalize()</h4>
+  <div class="markdown level1 summary"><p>Scales the int4 to unit length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4 Normalize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Normalize_" data-uid="Fusee.Math.Core.int4.Normalize*"></a>
+  <h4 id="Fusee_Math_Core_int4_Normalize_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Normalize(Fusee.Math.Core.int4)">Normalize(int4)</h4>
+  <div class="markdown level1 summary"><p>Scale a vector to unit length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4 Normalize(int4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The input vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><p>The normalized vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Normalize1_" data-uid="Fusee.Math.Core.int4.Normalize1*"></a>
+  <h4 id="Fusee_Math_Core_int4_Normalize1" data-uid="Fusee.Math.Core.int4.Normalize1">Normalize1()</h4>
+  <div class="markdown level1 summary"><p>Scales the int4 to unit length in 1-norm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4 Normalize1()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Normalize1_" data-uid="Fusee.Math.Core.int4.Normalize1*"></a>
+  <h4 id="Fusee_Math_Core_int4_Normalize1_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Normalize1(Fusee.Math.Core.int4)">Normalize1(int4)</h4>
+  <div class="markdown level1 summary"><p>Scales the vector to unit length in 1-norm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4 Normalize1(int4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The input vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><p>The scaled vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_NormalizeFast_" data-uid="Fusee.Math.Core.int4.NormalizeFast*"></a>
+  <h4 id="Fusee_Math_Core_int4_NormalizeFast" data-uid="Fusee.Math.Core.int4.NormalizeFast">NormalizeFast()</h4>
+  <div class="markdown level1 summary"><p>Scales the int4 to approximately unit length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float4 NormalizeFast()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_NormalizeFast_" data-uid="Fusee.Math.Core.int4.NormalizeFast*"></a>
+  <h4 id="Fusee_Math_Core_int4_NormalizeFast_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.NormalizeFast(Fusee.Math.Core.int4)">NormalizeFast(int4)</h4>
+  <div class="markdown level1 summary"><p>Scale a vector to approximately unit length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float4 NormalizeFast(int4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The input vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float4.html">float4</a></td>
+        <td><p>The normalized vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Parse_" data-uid="Fusee.Math.Core.int4.Parse*"></a>
+  <h4 id="Fusee_Math_Core_int4_Parse_System_String_System_IFormatProvider_" data-uid="Fusee.Math.Core.int4.Parse(System.String,System.IFormatProvider)">Parse(String, IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Parses a string into a int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Parse(string source, IFormatProvider provider = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Pow_" data-uid="Fusee.Math.Core.int4.Pow*"></a>
+  <h4 id="Fusee_Math_Core_int4_Pow_Fusee_Math_Core_int4_System_Int32_" data-uid="Fusee.Math.Core.int4.Pow(Fusee.Math.Core.int4,System.Int32)">Pow(int4, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a int4 where all components are raised to the specified power.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Pow(int4 val, int exp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The int4 to be raised to a power.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">exp</span></td>
+        <td><p>A int that specifies a power.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_int4_SRgbFromLinearColor" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor">SRgbFromLinearColor()</h4>
+  <div class="markdown level1 summary"><p>Converts this int4 - which is interpreted as a color - from linear color space to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int4 SRgbFromLinearColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_int4_SRgbFromLinearColor_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor(Fusee.Math.Core.int4)">SRgbFromLinearColor(int4)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 SRgbFromLinearColor(int4 sRGBCol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">sRGBCol</span></td>
+        <td><p>The linear color value as <a class="xref" href="Fusee.Math.Core.int4.html">int4</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_int4_SRgbFromLinearColor_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor(System.Int32,System.Int32,System.Int32,System.Int32)">SRgbFromLinearColor(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 SRgbFromLinearColor(int r, int g, int b, int a)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The red color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>The green color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The blue color value in range 0 - 255.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The alpha value in range 0 - 255.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_int4_SRgbFromLinearColor_System_String_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor(System.String)">SRgbFromLinearColor(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 SRgbFromLinearColor(string hex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">hex</span></td>
+        <td><p>The color value as hex code in form of a &quot;FFFFFFFF&quot; string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_SRgbFromLinearColor_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor*"></a>
+  <h4 id="Fusee_Math_Core_int4_SRgbFromLinearColor_System_UInt32_" data-uid="Fusee.Math.Core.int4.SRgbFromLinearColor(System.UInt32)">SRgbFromLinearColor(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Converts a color value from linear to sRgb space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 SRgbFromLinearColor(uint col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p>The color value as uint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Step_" data-uid="Fusee.Math.Core.int4.Step*"></a>
+  <h4 id="Fusee_Math_Core_int4_Step_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Step(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Step(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Performs <a class="xref" href="Fusee.Math.Core.M.html#Fusee_Math_Core_M_Step_System_Single_System_Single_">Step(Single, Single)</a> for each component of the input vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Step(int4 edge, int4 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td><p>Specifies the location of the edge of the step function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>Specifies the value to be used to generate the step function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_Subtract_" data-uid="Fusee.Math.Core.int4.Subtract*"></a>
+  <h4 id="Fusee_Math_Core_int4_Subtract_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.Subtract(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Subtract(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Subtract one Vector from another</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 Subtract(int4 a, int4 b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>Result of subtraction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_ToArray_" data-uid="Fusee.Math.Core.int4.ToArray*"></a>
+  <h4 id="Fusee_Math_Core_int4_ToArray" data-uid="Fusee.Math.Core.int4.ToArray">ToArray()</h4>
+  <div class="markdown level1 summary"><p>XML-Comment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>An int array of size 4 that cobtains the x,y,z,w components.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_ToString_" data-uid="Fusee.Math.Core.int4.ToString*"></a>
+  <h4 id="Fusee_Math_Core_int4_ToString" data-uid="Fusee.Math.Core.int4.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a System.String that represents the current int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A <span class="xref">System.String</span> that represents this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  <a id="Fusee_Math_Core_int4_ToString_" data-uid="Fusee.Math.Core.int4.ToString*"></a>
+  <h4 id="Fusee_Math_Core_int4_ToString_System_IFormatProvider_" data-uid="Fusee.Math.Core.int4.ToString(System.IFormatProvider)">ToString(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Returns a System.String that represents the current int4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>Provides information about a specific culture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A <span class="xref">System.String</span> that represents this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="Fusee_Math_Core_int4_op_Addition_" data-uid="Fusee.Math.Core.int4.op_Addition*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Addition_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.op_Addition(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Addition(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Adds two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 operator +(int4 left, int4 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Division_" data-uid="Fusee.Math.Core.int4.op_Division*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Division_Fusee_Math_Core_int4_System_Int32_" data-uid="Fusee.Math.Core.int4.op_Division(Fusee.Math.Core.int4,System.Int32)">Division(int4, Int32)</h4>
+  <div class="markdown level1 summary"><p>Divides an instance by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 operator /(int4 vec, int scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Equality_" data-uid="Fusee.Math.Core.int4.op_Equality*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Equality_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.op_Equality(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Equality(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Compares two instances for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(int4 left, int4 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if left equals right; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Explicit_" data-uid="Fusee.Math.Core.int4.op_Explicit*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Explicit_Fusee_Math_Core_double4__Fusee_Math_Core_int4" data-uid="Fusee.Math.Core.int4.op_Explicit(Fusee.Math.Core.double4)~Fusee.Math.Core.int4">Explicit(double4 to int4)</h4>
+  <div class="markdown level1 summary"><p>Explicit cast operator to cast a double4 into a int4 value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator int4(double4 d4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.double4.html">double4</a></td>
+        <td><span class="parametername">d4</span></td>
+        <td><p>The double4 value to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>A int4 value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Inequality_" data-uid="Fusee.Math.Core.int4.op_Inequality*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Inequality_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.op_Inequality(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Inequality(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(int4 left, int4 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if left does not equal right; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Multiply_" data-uid="Fusee.Math.Core.int4.op_Multiply*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Multiply_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.op_Multiply(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Multiply(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances (component-wise).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 operator *(int4 left, int4 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Multiply_" data-uid="Fusee.Math.Core.int4.op_Multiply*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Multiply_Fusee_Math_Core_int4_System_Int32_" data-uid="Fusee.Math.Core.int4.op_Multiply(Fusee.Math.Core.int4,System.Int32)">Multiply(int4, Int32)</h4>
+  <div class="markdown level1 summary"><p>Multiplies an instance by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 operator *(int4 vec, int scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Multiply_" data-uid="Fusee.Math.Core.int4.op_Multiply*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Multiply_System_Int32_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.op_Multiply(System.Int32,Fusee.Math.Core.int4)">Multiply(Int32, int4)</h4>
+  <div class="markdown level1 summary"><p>Multiplies an instance by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 operator *(int scale, int4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_Subtraction_" data-uid="Fusee.Math.Core.int4.op_Subtraction*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_Subtraction_Fusee_Math_Core_int4_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.op_Subtraction(Fusee.Math.Core.int4,Fusee.Math.Core.int4)">Subtraction(int4, int4)</h4>
+  <div class="markdown level1 summary"><p>Subtracts two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 operator -(int4 left, int4 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Math_Core_int4_op_UnaryNegation_" data-uid="Fusee.Math.Core.int4.op_UnaryNegation*"></a>
+  <h4 id="Fusee_Math_Core_int4_op_UnaryNegation_Fusee_Math_Core_int4_" data-uid="Fusee.Math.Core.int4.op_UnaryNegation(Fusee.Math.Core.int4)">UnaryNegation(int4)</h4>
+  <div class="markdown level1 summary"><p>Negates an instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int4 operator -(int4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.int4.html">int4</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

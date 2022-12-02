@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OctantF&lt;P&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OctantF&lt;P&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Structures.OctantF`1">
+  
+  
+  <h1 id="Fusee_Structures_OctantF_1" data-uid="Fusee.Structures.OctantF`1" class="text-break">Class OctantF&lt;P&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Single-precision Octant implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OctantF&lt;P&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>, <span class="xref">System.Single</span>, P&gt;</div>
+    <div><a class="xref" href="Fusee.Structures.IBucket-2.html">IBucket</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>, <span class="xref">System.Single</span>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Structures.html">Fusee.Structures</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Structures.dll</h6>
+  <h5 id="Fusee_Structures_OctantF_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OctantF&lt;P&gt; : IOctant&lt;float3, float, P&gt;, IBucket&lt;float3, float&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">P</span></td>
+        <td><p>The type of the octants payload.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Fusee_Structures_OctantF_1__ctor_" data-uid="Fusee.Structures.OctantF`1.#ctor*"></a>
+  <h4 id="Fusee_Structures_OctantF_1__ctor" data-uid="Fusee.Structures.OctantF`1.#ctor">OctantF()</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of type PtOctant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OctantF()</code></pre>
+  </div>
+  <a id="Fusee_Structures_OctantF_1__ctor_" data-uid="Fusee.Structures.OctantF`1.#ctor*"></a>
+  <h4 id="Fusee_Structures_OctantF_1__ctor_Fusee_Math_Core_float3_System_Single_Fusee_Structures_IOctant_Fusee_Math_Core_float3_System_Single__0____" data-uid="Fusee.Structures.OctantF`1.#ctor(Fusee.Math.Core.float3,System.Single,Fusee.Structures.IOctant{Fusee.Math.Core.float3,System.Single,`0}[])">OctantF(float3, Single, IOctant&lt;float3, Single, P&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of type PtOctant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OctantF(float3 center, float size, IOctant&lt;float3, float, P&gt;[] children = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The center point of this octant, <a class="xref" href="Fusee.Structures.IBucket-2.html#Fusee_Structures_IBucket_2_Center">Center</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of this octant, <a class="xref" href="Fusee.Structures.IBucket-2.html#Fusee_Structures_IBucket_2_Size">Size</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>, <span class="xref">System.Single</span>, P&gt;[]</td>
+        <td><span class="parametername">children</span></td>
+        <td><p>The children of this octant - can be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Fusee_Structures_OctantF_1_Resolution" data-uid="Fusee.Structures.OctantF`1.Resolution">Resolution</h4>
+  <div class="markdown level1 summary"><p>The Resolution of an Octant is defined by the minimum distance (spacing) between points.
+If the minimum distance between a point and its nearest neighbor is smaller then this distance, it will fall into a child octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Resolution</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_Structures_OctantF_1_Center_" data-uid="Fusee.Structures.OctantF`1.Center*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_Center" data-uid="Fusee.Structures.OctantF`1.Center">Center</h4>
+  <div class="markdown level1 summary"><p>Center of this Bucket in world space coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 Center { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_Children_" data-uid="Fusee.Structures.OctantF`1.Children*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_Children" data-uid="Fusee.Structures.OctantF`1.Children">Children</h4>
+  <div class="markdown level1 summary"><p>Children of this Octant. Must contain eight or null (leaf node) children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOctant&lt;float3, float, P&gt;[] Children { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>, <span class="xref">System.Single</span>, P&gt;[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_Guid_" data-uid="Fusee.Structures.OctantF`1.Guid*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_Guid" data-uid="Fusee.Structures.OctantF`1.Guid">Guid</h4>
+  <div class="markdown level1 summary"><p>The globally unique identifier for this octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Guid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_IsLeaf_" data-uid="Fusee.Structures.OctantF`1.IsLeaf*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_IsLeaf" data-uid="Fusee.Structures.OctantF`1.IsLeaf">IsLeaf</h4>
+  <div class="markdown level1 summary"><p>Is this octant a leaf node in the octree?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLeaf { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_Level_" data-uid="Fusee.Structures.OctantF`1.Level*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_Level" data-uid="Fusee.Structures.OctantF`1.Level">Level</h4>
+  <div class="markdown level1 summary"><p>The level of the octree this octant belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Level { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_Payload_" data-uid="Fusee.Structures.OctantF`1.Payload*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_Payload" data-uid="Fusee.Structures.OctantF`1.Payload">Payload</h4>
+  <div class="markdown level1 summary"><p>The payload of this octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;P&gt; Payload { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;P&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_PosInParent_" data-uid="Fusee.Structures.OctantF`1.PosInParent*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_PosInParent" data-uid="Fusee.Structures.OctantF`1.PosInParent">PosInParent</h4>
+  <div class="markdown level1 summary"><p>Integer that defines this octants position in its parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PosInParent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_Size_" data-uid="Fusee.Structures.OctantF`1.Size*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_Size" data-uid="Fusee.Structures.OctantF`1.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Length, width and height of this Octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_Structures_OctantF_1_CalcChildCenterAtPos_" data-uid="Fusee.Structures.OctantF`1.CalcChildCenterAtPos*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_CalcChildCenterAtPos_System_Int32_" data-uid="Fusee.Structures.OctantF`1.CalcChildCenterAtPos(System.Int32)">CalcChildCenterAtPos(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the center of the child octant at the given position of the parent octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float3 CalcChildCenterAtPos(int posInParent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">posInParent</span></td>
+        <td><p>The position in the parent octant.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_CalcChildCenterAtPos_" data-uid="Fusee.Structures.OctantF`1.CalcChildCenterAtPos*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_CalcChildCenterAtPos_System_Int32_System_Single_Fusee_Math_Core_float3_" data-uid="Fusee.Structures.OctantF`1.CalcChildCenterAtPos(System.Int32,System.Single,Fusee.Math.Core.float3)">CalcChildCenterAtPos(Int32, Single, float3)</h4>
+  <div class="markdown level1 summary"><p>Returns the center of the child octant at the given position of the parent octant from the parents center and size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float3 CalcChildCenterAtPos(int posInParent, float parentSize, float3 parentCenter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">posInParent</span></td>
+        <td><p>The position in the parent octant.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">parentSize</span></td>
+        <td><p>The size of the parent octant.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td><span class="parametername">parentCenter</span></td>
+        <td><p>The center of the parent octant.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.float3.html">float3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_CreateChild_" data-uid="Fusee.Structures.OctantF`1.CreateChild*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_CreateChild_System_Int32_" data-uid="Fusee.Structures.OctantF`1.CreateChild(System.Int32)">CreateChild(Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a child octant at the given position in its parent octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IOctant&lt;float3, float, P&gt; CreateChild(int posInParent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">posInParent</span></td>
+        <td><p>The position in the parent octant.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>, <span class="xref">System.Single</span>, P&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustum_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustum*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustum_Fusee_Math_Core_FrustumF_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustum(Fusee.Math.Core.FrustumF)">InsideOrIntersectingFrustum(FrustumF)</h4>
+  <div class="markdown level1 summary"><p>Checks if this Octant lies within or intersects a Frustum.
+Returns true if one of the Frustum planes is intersecting this octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingFrustum(FrustumF frustum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.FrustumF.html">FrustumF</a></td>
+        <td><span class="parametername">frustum</span></td>
+        <td><p>The frustum to test against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>false if fully outside, true if inside or intersecting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustumFast_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustumFast*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_InsideOrIntersectingFrustumFast_Fusee_Math_Core_FrustumF_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingFrustumFast(Fusee.Math.Core.FrustumF)">InsideOrIntersectingFrustumFast(FrustumF)</h4>
+  <div class="markdown level1 summary"><p>Checks if this Octant lies within or intersects a Frustum.
+Assumes that we do not need to process this octant if the near plane is completely inside it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingFrustumFast(FrustumF frustum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.FrustumF.html">FrustumF</a></td>
+        <td><span class="parametername">frustum</span></td>
+        <td><p>The frustum to test against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>false if fully outside, true if inside or intersecting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Structures_OctantF_1_InsideOrIntersectingPlane_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingPlane*"></a>
+  <h4 id="Fusee_Structures_OctantF_1_InsideOrIntersectingPlane_Fusee_Math_Core_PlaneF_" data-uid="Fusee.Structures.OctantF`1.InsideOrIntersectingPlane(Fusee.Math.Core.PlaneF)">InsideOrIntersectingPlane(PlaneF)</h4>
+  <div class="markdown level1 summary"><p>Checks if a viewing frustum lies within or intersects this Octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsideOrIntersectingPlane(PlaneF plane)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.PlaneF.html">PlaneF</a></td>
+        <td><span class="parametername">plane</span></td>
+        <td><p>The plane to test against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>false if fully outside, true if inside or intersecting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Structures.IOctant-3.html">IOctant&lt;T, K, P&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.Structures.IBucket-2.html">IBucket&lt;T, K&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

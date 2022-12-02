@@ -1,0 +1,1055 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Mesh
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Mesh
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.Engine.Core.Scene.Mesh">
+  
+  
+  <h1 id="Fusee_Engine_Core_Scene_Mesh" data-uid="Fusee.Engine.Core.Scene.Mesh" class="text-break">Class Mesh
+  </h1>
+  <div class="markdown level0 summary"><p>Provides the ability to create or interact directly with the point data.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html">SceneComponent</a></div>
+    <div class="level2"><span class="xref">Mesh</span></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.JometriMesh.html">JometriMesh</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.Circle.html">Circle</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.Cube.html">Cube</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.Icosahedron.html">Icosahedron</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.Icosphere.html">Icosphere</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.Line.html">Line</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.NineSlicePlane.html">NineSlicePlane</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.Plane.html">Plane</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.Sphere.html">Sphere</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Core.Primitives.WireframeCube.html">WireframeCube</a></div>
+      <div class="level3"><a class="xref" href="Fusee.Engine.Gui.GuiText.html">GuiText</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a></div>
+    <div><a class="xref" href="Fusee.Engine.Common.IManagedMesh.html">IManagedMesh</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Name">SceneComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Fusee.Engine.Core.Scene.SceneComponent.html#Fusee_Engine_Core_Scene_SceneComponent_Active">SceneComponent.Active</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.Engine.Core.Scene.html">Fusee.Engine.Core.Scene</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.Engine.Core.dll</h6>
+  <h5 id="Fusee_Engine_Core_Scene_Mesh_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Mesh : SceneComponent, IComponent, IManagedMesh, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Fusee_Engine_Core_Scene_Mesh__ctor_" data-uid="Fusee.Engine.Core.Scene.Mesh.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh__ctor" data-uid="Fusee.Engine.Core.Scene.Mesh.#ctor">Mesh()</h4>
+  <div class="markdown level1 summary"><p>Protected ctor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Mesh()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Core_Scene_Mesh__ctor_" data-uid="Fusee.Engine.Core.Scene.Mesh.#ctor*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh__ctor_System_Collections_Generic_ICollection_System_UInt32__System_Collections_Generic_ICollection_Fusee_Math_Core_float3__System_Collections_Generic_ICollection_Fusee_Math_Core_float3__System_Collections_Generic_ICollection_Fusee_Math_Core_float2__System_Collections_Generic_ICollection_Fusee_Math_Core_float4__System_Collections_Generic_ICollection_Fusee_Math_Core_float4__System_Collections_Generic_ICollection_Fusee_Math_Core_float4__System_Collections_Generic_ICollection_Fusee_Math_Core_float3__System_Collections_Generic_ICollection_System_UInt32__System_Collections_Generic_ICollection_System_UInt32__System_Collections_Generic_ICollection_System_UInt32__System_Collections_Generic_ICollection_System_UInt32__" data-uid="Fusee.Engine.Core.Scene.Mesh.#ctor(System.Collections.Generic.ICollection{System.UInt32},System.Collections.Generic.ICollection{Fusee.Math.Core.float3},System.Collections.Generic.ICollection{Fusee.Math.Core.float3},System.Collections.Generic.ICollection{Fusee.Math.Core.float2},System.Collections.Generic.ICollection{Fusee.Math.Core.float4},System.Collections.Generic.ICollection{Fusee.Math.Core.float4},System.Collections.Generic.ICollection{Fusee.Math.Core.float4},System.Collections.Generic.ICollection{Fusee.Math.Core.float3},System.Collections.Generic.ICollection{System.UInt32},System.Collections.Generic.ICollection{System.UInt32},System.Collections.Generic.ICollection{System.UInt32},System.Collections.Generic.ICollection{System.UInt32})">Mesh(ICollection&lt;UInt32&gt;, ICollection&lt;float3&gt;, ICollection&lt;float3&gt;, ICollection&lt;float2&gt;, ICollection&lt;float4&gt;, ICollection&lt;float4&gt;, ICollection&lt;float4&gt;, ICollection&lt;float3&gt;, ICollection&lt;UInt32&gt;, ICollection&lt;UInt32&gt;, ICollection&lt;UInt32&gt;, ICollection&lt;UInt32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generates a new <a class="xref" href="Fusee.Engine.Core.Scene.Mesh.html">Mesh</a> instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh(ICollection&lt;uint&gt; triangles, ICollection&lt;float3&gt; vertices, ICollection&lt;float3&gt; normals = null, ICollection&lt;float2&gt; uvs = null, ICollection&lt;float4&gt; boneWeights = null, ICollection&lt;float4&gt; boneIndices = null, ICollection&lt;float4&gt; tangents = null, ICollection&lt;float3&gt; biTangents = null, ICollection&lt;uint&gt; colors = null, ICollection&lt;uint&gt; colors1 = null, ICollection&lt;uint&gt; colors2 = null, ICollection&lt;uint&gt; flags = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td><span class="parametername">triangles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td><span class="parametername">normals</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Fusee.Math.Core.float2.html">float2</a>&gt;</td>
+        <td><span class="parametername">uvs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Fusee.Math.Core.float4.html">float4</a>&gt;</td>
+        <td><span class="parametername">boneWeights</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Fusee.Math.Core.float4.html">float4</a>&gt;</td>
+        <td><span class="parametername">boneIndices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Fusee.Math.Core.float4.html">float4</a>&gt;</td>
+        <td><span class="parametername">tangents</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td><span class="parametername">biTangents</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td><span class="parametername">colors1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td><span class="parametername">colors2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Fusee_Engine_Core_Scene_Mesh_BiTangents_" data-uid="Fusee.Engine.Core.Scene.Mesh.BiTangents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_BiTangents" data-uid="Fusee.Engine.Core.Scene.Mesh.BiTangents">BiTangents</h4>
+  <div class="markdown level1 summary"><p>The bi tangents</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;float3&gt; BiTangents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_BiTangentsSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.BiTangentsSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_BiTangentsSet" data-uid="Fusee.Engine.Core.Scene.Mesh.BiTangentsSet">BiTangentsSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether bi tangents are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BiTangentsSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if bi tangents are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_BoneIndices_" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneIndices*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_BoneIndices" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneIndices">BoneIndices</h4>
+  <div class="markdown level1 summary"><p>The bone indices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;float4&gt; BoneIndices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<a class="xref" href="Fusee.Math.Core.float4.html">float4</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_BoneIndicesSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneIndicesSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_BoneIndicesSet" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneIndicesSet">BoneIndicesSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether bone indices are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BoneIndicesSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if bone indices are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_BoneWeights_" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneWeights*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_BoneWeights" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneWeights">BoneWeights</h4>
+  <div class="markdown level1 summary"><p>The bine weights</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;float4&gt; BoneWeights { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<a class="xref" href="Fusee.Math.Core.float4.html">float4</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_BoneWeightsSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneWeightsSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_BoneWeightsSet" data-uid="Fusee.Engine.Core.Scene.Mesh.BoneWeightsSet">BoneWeightsSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether bone weights are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BoneWeightsSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if bone weights are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_BoundingBox_" data-uid="Fusee.Engine.Core.Scene.Mesh.BoundingBox*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_BoundingBox" data-uid="Fusee.Engine.Core.Scene.Mesh.BoundingBox">BoundingBox</h4>
+  <div class="markdown level1 summary"><p>The bounding box of this geometry chunk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AABBf BoundingBox { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Math.Core.AABBf.html">AABBf</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Colors0_" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors0*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Colors0" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors0">Colors0</h4>
+  <div class="markdown level1 summary"><p>The vertex color field 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;uint&gt; Colors0 { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Colors0Set_" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors0Set*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Colors0Set" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors0Set">Colors0Set</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether a color is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Colors0Set { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if a color is set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Colors1_" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors1*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Colors1" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors1">Colors1</h4>
+  <div class="markdown level1 summary"><p>The vertex color field 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;uint&gt; Colors1 { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Colors1Set_" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors1Set*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Colors1Set" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors1Set">Colors1Set</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether a color is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Colors1Set { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if a color is set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Colors2_" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors2*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Colors2" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors2">Colors2</h4>
+  <div class="markdown level1 summary"><p>The vertex color field 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;uint&gt; Colors2 { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Colors2Set_" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors2Set*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Colors2Set" data-uid="Fusee.Engine.Core.Scene.Mesh.Colors2Set">Colors2Set</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether a color is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Colors2Set { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if a color is set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Flags_" data-uid="Fusee.Engine.Core.Scene.Mesh.Flags*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Flags" data-uid="Fusee.Engine.Core.Scene.Mesh.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>The vertex flags field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;uint&gt; Flags { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_FlagsSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.FlagsSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_FlagsSet" data-uid="Fusee.Engine.Core.Scene.Mesh.FlagsSet">FlagsSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether flags are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FlagsSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if triangles are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_MeshType_" data-uid="Fusee.Engine.Core.Scene.Mesh.MeshType*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_MeshType" data-uid="Fusee.Engine.Core.Scene.Mesh.MeshType">MeshType</h4>
+  <div class="markdown level1 summary"><p>The type of mesh which is represented by this instance (e. g. triangle mesh, point, line, etc...)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrimitiveType MeshType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.PrimitiveType.html">PrimitiveType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Normals_" data-uid="Fusee.Engine.Core.Scene.Mesh.Normals*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Normals" data-uid="Fusee.Engine.Core.Scene.Mesh.Normals">Normals</h4>
+  <div class="markdown level1 summary"><p>The normals</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;float3&gt; Normals { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_NormalsSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.NormalsSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_NormalsSet" data-uid="Fusee.Engine.Core.Scene.Mesh.NormalsSet">NormalsSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether normals are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NormalsSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if normals are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_SessionUniqueIdentifier_" data-uid="Fusee.Engine.Core.Scene.Mesh.SessionUniqueIdentifier*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_SessionUniqueIdentifier" data-uid="Fusee.Engine.Core.Scene.Mesh.SessionUniqueIdentifier">SessionUniqueIdentifier</h4>
+  <div class="markdown level1 summary"><p>SessionUniqueIdentifier is used to verify a Mesh's uniqueness in the current session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Suid SessionUniqueIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Common.Suid.html">Suid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Tangents_" data-uid="Fusee.Engine.Core.Scene.Mesh.Tangents*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Tangents" data-uid="Fusee.Engine.Core.Scene.Mesh.Tangents">Tangents</h4>
+  <div class="markdown level1 summary"><p>The tangents</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;float4&gt; Tangents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<a class="xref" href="Fusee.Math.Core.float4.html">float4</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_TangentsSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.TangentsSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_TangentsSet" data-uid="Fusee.Engine.Core.Scene.Mesh.TangentsSet">TangentsSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether tangents are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TangentsSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if tangents are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Triangles_" data-uid="Fusee.Engine.Core.Scene.Mesh.Triangles*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Triangles" data-uid="Fusee.Engine.Core.Scene.Mesh.Triangles">Triangles</h4>
+  <div class="markdown level1 summary"><p>The triangles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;uint&gt; Triangles { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_TrianglesSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.TrianglesSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_TrianglesSet" data-uid="Fusee.Engine.Core.Scene.Mesh.TrianglesSet">TrianglesSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether triangles are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrianglesSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if triangles are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_UpdatePerFrame_" data-uid="Fusee.Engine.Core.Scene.Mesh.UpdatePerFrame*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_UpdatePerFrame" data-uid="Fusee.Engine.Core.Scene.Mesh.UpdatePerFrame">UpdatePerFrame</h4>
+  <div class="markdown level1 summary"><p>Update all changed <a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes&lt;T&gt;</a> data after each frame?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePerFrame { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_UVs_" data-uid="Fusee.Engine.Core.Scene.Mesh.UVs*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_UVs" data-uid="Fusee.Engine.Core.Scene.Mesh.UVs">UVs</h4>
+  <div class="markdown level1 summary"><p>The UV coordinates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;float2&gt; UVs { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<a class="xref" href="Fusee.Math.Core.float2.html">float2</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_UVsSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.UVsSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_UVsSet" data-uid="Fusee.Engine.Core.Scene.Mesh.UVsSet">UVsSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether UVs are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UVsSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if UVs are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Vertices_" data-uid="Fusee.Engine.Core.Scene.Mesh.Vertices*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Vertices" data-uid="Fusee.Engine.Core.Scene.Mesh.Vertices">Vertices</h4>
+  <div class="markdown level1 summary"><p>The vertices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshAttributes&lt;float3&gt; Vertices { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.MeshAttributes-1.html">MeshAttributes</a>&lt;<a class="xref" href="Fusee.Math.Core.float3.html">float3</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_VerticesSet_" data-uid="Fusee.Engine.Core.Scene.Mesh.VerticesSet*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_VerticesSet" data-uid="Fusee.Engine.Core.Scene.Mesh.VerticesSet">VerticesSet</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether vertices are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool VerticesSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if vertices are set; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Dispose_" data-uid="Fusee.Engine.Core.Scene.Mesh.Dispose*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Dispose" data-uid="Fusee.Engine.Core.Scene.Mesh.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Dispose_" data-uid="Fusee.Engine.Core.Scene.Mesh.Dispose*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Dispose_System_Boolean_" data-uid="Fusee.Engine.Core.Scene.Mesh.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>If disposing equals true, the method has been called directly
+or indirectly by a user's code. Managed and unmanaged resources
+can be disposed.
+If disposing equals false, the method has been called by the
+runtime from inside the finalizer and you should not reference
+other objects. Only unmanaged resources can be disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_Engine_Core_Scene_Mesh_Finalize_" data-uid="Fusee.Engine.Core.Scene.Mesh.Finalize*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_Finalize" data-uid="Fusee.Engine.Core.Scene.Mesh.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizers (historically referred to as destructors) are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <a id="Fusee_Engine_Core_Scene_Mesh_ResetIndexLists_" data-uid="Fusee.Engine.Core.Scene.Mesh.ResetIndexLists*"></a>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_ResetIndexLists" data-uid="Fusee.Engine.Core.Scene.Mesh.ResetIndexLists">ResetIndexLists()</h4>
+  <div class="markdown level1 summary"><p>Reset all dirty flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetIndexLists()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="Fusee_Engine_Core_Scene_Mesh_DisposeData" data-uid="Fusee.Engine.Core.Scene.Mesh.DisposeData">DisposeData</h4>
+  <div class="markdown level1 summary"><p>MeshChanged event notifies observing MeshManager about property changes and the Mesh's disposal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;MeshChangedEventArgs&gt; DisposeData</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Fusee.Engine.Common.MeshChangedEventArgs.html">MeshChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Fusee.Xene.IComponent.html">IComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.Engine.Common.IManagedMesh.html">IManagedMesh</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Fusee.Engine.Core.TangentSpaceCalulator.html#Fusee_Engine_Core_TangentSpaceCalulator_CalculateTangents_Fusee_Engine_Core_Scene_Mesh_">TangentSpaceCalulator.CalculateTangents(Mesh)</a>
+  </div>
+  <div>
+      <a class="xref" href="Fusee.Engine.Core.TangentSpaceCalulator.html#Fusee_Engine_Core_TangentSpaceCalulator_CalculateBiTangents_Fusee_Engine_Core_Scene_Mesh_">TangentSpaceCalulator.CalculateBiTangents(Mesh)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

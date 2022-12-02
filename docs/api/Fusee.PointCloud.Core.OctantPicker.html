@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OctantPicker
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OctantPicker
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Fusee.PointCloud.Core.OctantPicker">
+  
+  
+  <h1 id="Fusee_PointCloud_Core_OctantPicker" data-uid="Fusee.PointCloud.Core.OctantPicker" class="text-break">Class OctantPicker
+  </h1>
+  <div class="markdown level0 summary"><p>Picker for octants.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OctantPicker</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Fusee.PointCloud.Core.html">Fusee.PointCloud.Core</a></h6>
+  <h6><strong>Assembly</strong>: Fusee.PointCloud.Core.dll</h6>
+  <h5 id="Fusee_PointCloud_Core_OctantPicker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OctantPicker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Fusee_PointCloud_Core_OctantPicker__ctor_" data-uid="Fusee.PointCloud.Core.OctantPicker.#ctor*"></a>
+  <h4 id="Fusee_PointCloud_Core_OctantPicker__ctor_Fusee_PointCloud_Core_PointCloudOctree_Fusee_Engine_Core_RenderContext_Fusee_Engine_Core_Scene_Camera_float3_" data-uid="Fusee.PointCloud.Core.OctantPicker.#ctor(Fusee.PointCloud.Core.PointCloudOctree,Fusee.Engine.Core.RenderContext,Fusee.Engine.Core.Scene.Camera,float3)">OctantPicker(PointCloudOctree, RenderContext, Camera, float3)</h4>
+  <div class="markdown level1 summary"><p>Constructor for the octant picker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OctantPicker(PointCloudOctree octree, RenderContext rc, Camera cam, float3 camPosWorld)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.PointCloudOctree.html">PointCloudOctree</a></td>
+        <td><span class="parametername">octree</span></td>
+        <td><p>The octree to pick from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.RenderContext.html">RenderContext</a></td>
+        <td><span class="parametername">rc</span></td>
+        <td><p>The render context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Camera.html">Camera</a></td>
+        <td><span class="parametername">cam</span></td>
+        <td><p>The camera the calculation is based on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float3</span></td>
+        <td><span class="parametername">camPosWorld</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Fusee_PointCloud_Core_OctantPicker_Cam" data-uid="Fusee.PointCloud.Core.OctantPicker.Cam">Cam</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera Cam</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.Camera.html">Camera</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Fusee_PointCloud_Core_OctantPicker_CamPosWorld" data-uid="Fusee.PointCloud.Core.OctantPicker.CamPosWorld">CamPosWorld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float3 CamPosWorld</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Fusee_PointCloud_Core_OctantPicker_CreateCubeFromNode_" data-uid="Fusee.PointCloud.Core.OctantPicker.CreateCubeFromNode*"></a>
+  <h4 id="Fusee_PointCloud_Core_OctantPicker_CreateCubeFromNode_Fusee_PointCloud_Core_PointCloudOctant_" data-uid="Fusee.PointCloud.Core.OctantPicker.CreateCubeFromNode(Fusee.PointCloud.Core.PointCloudOctant)">CreateCubeFromNode(PointCloudOctant)</h4>
+  <div class="markdown level1 summary"><p>Generate a cube with the same size and position as given octant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneNode CreateCubeFromNode(PointCloudOctant node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The octant to extract information on size and position from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.Engine.Core.Scene.SceneNode.html">SceneNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Core_OctantPicker_PickAllOctants_" data-uid="Fusee.PointCloud.Core.OctantPicker.PickAllOctants*"></a>
+  <h4 id="Fusee_PointCloud_Core_OctantPicker_PickAllOctants_float2_int2_" data-uid="Fusee.PointCloud.Core.OctantPicker.PickAllOctants(float2,int2)">PickAllOctants(float2, int2)</h4>
+  <div class="markdown level1 summary"><p>Returns all <a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a> under given mouse position, without filtering or sorting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PointCloudOctant&gt; PickAllOctants(float2 pickPosClip, int2 viewportSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float2</span></td>
+        <td><span class="parametername">pickPosClip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int2</span></td>
+        <td><span class="parametername">viewportSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Core_OctantPicker_PickClosestOctant_" data-uid="Fusee.PointCloud.Core.OctantPicker.PickClosestOctant*"></a>
+  <h4 id="Fusee_PointCloud_Core_OctantPicker_PickClosestOctant_float2_int2_" data-uid="Fusee.PointCloud.Core.OctantPicker.PickClosestOctant(float2,int2)">PickClosestOctant(float2, int2)</h4>
+  <div class="markdown level1 summary"><p>Pick the <a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a> that is closest to the camera under given mouse position.
+Octants are ignored if the camera is inside or the distance from the camera to the octant is smaller than the octant size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointCloudOctant PickClosestOctant(float2 pickPosClip, int2 viewportSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float2</span></td>
+        <td><span class="parametername">pickPosClip</span></td>
+        <td><p>The mouse position in clip space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int2</span></td>
+        <td><span class="parametername">viewportSize</span></td>
+        <td><p>Width and height of the window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Fusee_PointCloud_Core_OctantPicker_PickDensestOctant_" data-uid="Fusee.PointCloud.Core.OctantPicker.PickDensestOctant*"></a>
+  <h4 id="Fusee_PointCloud_Core_OctantPicker_PickDensestOctant_float2_int2_" data-uid="Fusee.PointCloud.Core.OctantPicker.PickDensestOctant(float2,int2)">PickDensestOctant(float2, int2)</h4>
+  <div class="markdown level1 summary"><p>Pick the <a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a> that is densest to the camera under given mouse position.
+Octants are ignored if the camera is inside or the distance from the camera to the octant is smaller than the octant size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointCloudOctant PickDensestOctant(float2 pickPosClip, int2 viewportSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float2</span></td>
+        <td><span class="parametername">pickPosClip</span></td>
+        <td><p>The mouse position in clip space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int2</span></td>
+        <td><span class="parametername">viewportSize</span></td>
+        <td><p>Width and height of the window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Fusee.PointCloud.Core.PointCloudOctant.html">PointCloudOctant</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
