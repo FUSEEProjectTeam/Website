@@ -17,7 +17,7 @@ Before following the FUSEE installation instructions on this page, make sure all
 
 `dotnet tool install -g Fusee.Tools.CmdLine`
 
-`dotnet new -i Fusee.Template.dotnet`
+`dotnet new install Fusee.Template.dotnet`
 
 On Computers managed by an administrator such as classroom PCs it might be necessary to additionally `set PATH=%PATH%;%USERPROFILE%\.dotnet\tools`.
 
@@ -25,7 +25,7 @@ On Computers managed by an administrator such as classroom PCs it might be neces
 
 `dotnet tool uninstall -g Fusee.Tools.CmdLine`
 
-`dotnet new -u Fusee.Template.dotnet`
+`dotnet new uninstall Fusee.Template.dotnet`
 
 ## Updating
 
