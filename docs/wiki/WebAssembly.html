@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>WebAssembly </title>
+    <title>Blazor/WebAssembly </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="WebAssembly ">
+    <meta name="title" content="Blazor/WebAssembly ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,71 +67,139 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="blazorwebassembly">Blazor/WebAssembly</h1>
 
-<blockquote>
-<p>⚠️ <strong>Pre-Release Content</strong></p>
-</blockquote>
-<h1 id="webassembly">WebAssembly</h1>
 <h2 id="introduction">Introduction</h2>
 <p>WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications. (see: <a href="https://webassembly.org/">webassembly.org</a>).</p>
-<p>The Mono project managed to compile the dotnet runtime to Wasm (see: <a href="https://github.com/mono/mono/tree/master/sdks/wasm">github.com/mono/sdks/wasm</a>). Therefore it's possible to run native C# DLLs within the browser.</p>
-<p>Furthermore, Wave Engine (<a href="https://waveengine.net/">waveengine.net</a>) developers are providing their implementation of .NET bindings for WebGL through WebAssembly <a href="https://github.com/WaveEngine/WebGL.NET">WebGL.NET</a> to the public.</p>
+<p>The Wave Engine (<a href="https://waveengine.net/">waveengine.net</a>) developers are providing their implementation of .NET bindings for WebGL through WebAssembly <a href="https://github.com/WaveEngine/WebGL.NET">WebGL.NET</a> to the public.</p>
 <p>These tools enable Fusee to compile web applications without relying on <a href="http://www.jsil.org/">JSIL</a> cross compilation anymore (from v0.8 onward).</p>
+<p>Fusee hereby  relies upon <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor">Blazor</a> for compiling and running.</p>
 <h2 id="usage">Usage</h2>
-<p>A minimal Fusee Wasm project needs, besides the actual Fusee core application, at least, the following two user generated files:</p>
-<h3 id="indexhtml">index.html</h3>
-<p>The following <code>*.js</code> files needs to be included within <code>&lt;head&gt;</code>:</p>
-<pre><code class="lang-javascript">&lt;script src=&quot;runtime.js&quot;&gt;&lt;/script&gt;
-&lt;script defer src=&quot;Scripts/mono_support.js&quot;&gt;&lt;/script&gt;
-&lt;script defer src=&quot;Scripts/SkiaSharp.js&quot;&gt;&lt;/script&gt;
-&lt;script defer src=&quot;canvaskit.js&quot;&gt;&lt;/script&gt;
-&lt;script defer src=&quot;dotnet.js&quot;&gt;&lt;/script&gt;
+<p>A minimal Fusee Wasm project needs, besides the actual Fusee core application, at least, an <code>Microsoft.NET.Sdk.BlazorWebAssembly</code> project.</p>
+<h3 id="project-file">Project file</h3>
+<p>Add the following lines to the <code>Blazor</code> project file inside the first <code>&lt;PropertyGroup&gt;</code>:</p>
+<pre><code class="lang-xml">&lt;BlazorEnableCompression&gt;false&lt;/BlazorEnableCompression&gt;
+&lt;BlazorCacheBootResources&gt;false&lt;/BlazorCacheBootResources&gt;
+&lt;ErrorOnDuplicatePublishOutputFiles&gt;false&lt;/ErrorOnDuplicatePublishOutputFiles&gt;
 </code></pre>
-<p>The following javascript snippet starts the C# program inside <code>&lt;body&gt;</code>:</p>
-<pre><code class="lang-javascript">        var App = {
-            init: function () {
+<p>At the end of the file, paste these lines. This handles the <code>Asset</code> management during build.</p>
+<pre><code class="lang-xml">&lt;Target Name=&quot;MovingAssetsToServerRoot&quot; BeforeTargets=&quot;PostBuildEvent&quot;&gt;
+		&lt;ItemGroup&gt;
+			&lt;AssetsDir Include=&quot;$(OutputPath)$(TargetFramework)\Assets\**\*.*&quot; /&gt;
+		&lt;/ItemGroup&gt;
+		&lt;Message Text=&quot;Moving 'Assets' folder to http server root folder&quot; Importance=&quot;high&quot; /&gt;
+		&lt;Move SourceFiles=&quot;@(AssetsDir)&quot; DestinationFolder=&quot;$(OutputPath)$(TargetFramework)\wwwroot\Assets\%(RecursiveDir)&quot; /&gt;
+		&lt;RemoveDir Directories=&quot;$(OutputPath)$(TargetFramework)\Assets&quot; /&gt;
+&lt;/Target&gt;
+</code></pre>
+<p>This modifies the build process and removes some pitfalls while publishing and running a <code>Fusee Blazor</code> project from Visual Studio.</p>
+<h3 id="_importsrazor">_Imports.razor</h3>
+<p>After creation, one needs to add the following lines to <code>_Imports.razor</code>:</p>
+<pre><code class="lang-razor">@using Fusee.Base.Imp.Blazor
+@using Fusee.Engine.Imp.Graphics.Blazor
+@using Fusee.Engine.Imp.Blazor
+</code></pre>
+<h3 id="maincs">Main.cs</h3>
+<p>Create a file called <code>Main.cs</code> (if not already present) and paste the typical Fusee application code, alter paths and names accordingly.</p>
+<pre><code class="lang-csharp">using Fusee.Base.Common;
+using Fusee.Base.Core;
+using Fusee.Base.Imp.Blazor;
+using Fusee.Engine.Core;
+using Fusee.Engine.Core.Scene;
+using Fusee.Engine.Imp.Graphics.Blazor;
+using Fusee.Serialization;
+using Microsoft.JSInterop;
+using ProtoBuf;
+using System;
+using System.Threading.Tasks;
+using Path = System.IO.Path;
+using Stream = System.IO.Stream;
 
-                BINDING.call_static_method(&quot;[Fusee.NAMESPACE] Fusee.NAMESPACE.CLASS_NAME:METHOD_NAME&quot;, []);
-            },
-        };
-</code></pre>
-<h3 id="a-c-class-with-this-or-a-similar-content-replace-namespace-and-class_name-accordingly">A C# class with this or a similar content (replace <em>NAMESPACE</em> and <em>CLASS_NAME</em> accordingly)</h3>
-<pre><code class="lang-csharp">
-namespace Fusee.NAMESPACE
+namespace Fusee.[NAMESPACE].Blazor
 {
-    internal static class CLASS_NAME
-    {
-        public static void METHOD_NAME()
-        {
-            // This method takes care of everything
-            WebAsmProgram.Start(new MyWasmImpl());
-        }
-    }
-
-    public class MyWasmImpl : WebAsmBase
+    public class Main : BlazorBase
     {
         private RenderCanvasImp _canvasImp;
-        private Core.MyFuseeApp _app;
+        private Core.Simple _app;
 
         public override void Run()
         {
+            Console.WriteLine(&quot;Starting Blazor program&quot;);
+
+            // Disable colored console ouput, not supported
+            Diagnostics.UseConsoleColor(false);
+            Diagnostics.SetMinDebugOutputLoggingSeverityLevel(Diagnostics.SeverityLevel.Verbose);
+
             base.Run();
+
             // Inject Fusee.Engine.Base InjectMe dependencies
-            IO.IOImp = new Fusee.Base.Imp.WebAsm.IOImp();
+            Base.Core.IO.IOImp = new Fusee.Base.Imp.Blazor.IO();
 
-            // AssetProvider
-            // ...
-            //
+            #region FAP
 
-            // create an instance of the actual Fusee core application
-            // which can be found in another project
-            _app = new Core.MyFuseeApp();
+            var fap = new Fusee.Base.Imp.Blazor.AssetProvider(Runtime);
+            fap.RegisterTypeHandler(
+                new AssetHandler
+                {
+                    ReturnedType = typeof(Base.Core.Font),
+                    Decoder = (_, __) =&gt; throw new System.NotImplementedException(&quot;Non-async decoder isn't supported in Blazor builds&quot;),
+                    DecoderAsync = async (string id, object storage) =&gt;
+                    {
+                        if (Path.GetExtension(id).Contains(&quot;ttf&quot;, System.StringComparison.OrdinalIgnoreCase))
+                        {
+                            var font = new Base.Core.Font
+                            {
+                                _fontImp = new FontImp((Stream)storage)
+                            };
+
+                            return await Task.FromResult(font);
+                        }
+
+                        return null;
+                    },
+                    Checker = (string id) =&gt;
+                    {
+                        return Path.GetExtension(id).Contains(&quot;ttf&quot;, System.StringComparison.OrdinalIgnoreCase);
+                    }
+                });
+
+            fap.RegisterTypeHandler(
+                new AssetHandler
+                {
+                    ReturnedType = typeof(SceneContainer),
+                    Decoder = (_, __) =&gt; throw new System.NotImplementedException(&quot;Non-async decoder isn't supported in Blazor builds&quot;),
+                    DecoderAsync = async (string id, object storage) =&gt;
+                    {
+                        if (Path.GetExtension(id).IndexOf(&quot;fus&quot;, System.StringComparison.OrdinalIgnoreCase) &gt;= 0)
+                        {
+                            return await FusSceneConverter.ConvertFromAsync(Serializer.Deserialize&lt;FusFile&gt;((System.IO.Stream)storage));
+                        }
+                        return null;
+                    },
+                    Checker = (string id) =&gt;
+                    {
+                        return Path.GetExtension(id).Contains(&quot;fus&quot;, System.StringComparison.OrdinalIgnoreCase);
+                    }
+                });
+            AssetStorage.RegisterProvider(fap);
+
+            #endregion
+
+            _app = new Core.Simple();
 
             // Inject Fusee.Engine InjectMe dependencies (hard coded)
-            _canvasImp = new RenderCanvasImp(canvas, gl, canvasWidth, canvasHeight);
+            _canvasImp = new RenderCanvasImp(canvas, Runtime, gl, canvasWidth, canvasHeight);
             _app.CanvasImplementor = _canvasImp;
             _app.ContextImplementor = new RenderContextImp(_app.CanvasImplementor);
-            Input.AddDriverImp(new RenderCanvasInputDriverImp(_app.CanvasImplementor));
+            Input.AddDriverImp(new RenderCanvasInputDriverImp(_app.CanvasImplementor, Runtime));
+
+            _app.LoadingCompleted += (s, e) =&gt;
+            {
+                Console.WriteLine(&quot;Loading finished&quot;);
+                ((IJSInProcessRuntime)Runtime).InvokeVoid(&quot;LoadingFinished&quot;);
+            };
+
+            _app.InitApp();
 
             // Start the app
             _app.Run();
@@ -140,44 +208,128 @@ namespace Fusee.NAMESPACE
         public override void Update(double elapsedMilliseconds)
         {
             if (_canvasImp != null)
-                _canvasImp.DeltaTime = (float)(elapsedMilliseconds / 1000.0);
+                _canvasImp.DeltaTimeUpdate = (float)(elapsedMilliseconds / 1000.0);
+
+            _canvasImp?.DoUpdate();
         }
 
-        public override void Draw()
+        public override void Draw(double elapsedMilliseconds)
         {
+            if (_canvasImp != null)
+                _canvasImp.DeltaTime = (float)(elapsedMilliseconds / 1000.0);
+
             _canvasImp?.DoRender();
         }
 
         public override void Resize(int width, int height)
         {
             base.Resize(width, height);
-            _canvasImp.DoResize(width, height);
+            _canvasImp?.DoResize(width, height);
         }
     }
 }
 </code></pre>
-<p>Furthermore one needs the following files which can be copied from any example project:</p>
-<ul>
-<li>canvaskit.js</li>
-<li>canvaskit.wasm</li>
-<li>Scripts/mono_support.js</li>
-<li>Scripts/SkiaSharp.js</li>
-</ul>
-<p>Anything else will be added/copied during compilation.</p>
-<p>Please make sure to include the <code>FuseeWasmCopyInheritedAssets</code> target within your <code>*.csproj</code> file, as well as the <code>WebAssembly.*</code> references and the <code>MonoWasmLinkSkip</code> property. The easiest way is to just copy an example project <code>*.csproj</code> and modify it to your needs.</p>
+<p>Note that non async file handler are not supported within Blazor. These block the whole application. Therefore, be extra careful to use <code>AssetStorage.GetAsync&lt;T&gt;</code> everywhere!</p>
+<h3 id="pagesindexrazor">Pages/Index.razor</h3>
+<p>Replace the content inside <code>Pages/Index.razor</code> with the following lines:</p>
+<pre><code class="lang-csharp">@page &quot;/&quot;
+@using System.Runtime.CompilerServices
+@using System.Diagnostics.CodeAnalysis
+@inject IJSRuntime JS
+
+
+@code
+{
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var program = new Fusee.Base.Imp.Blazor.BlazorProgramm();
+            var main = new Main();
+            program.Start(main, (IJSInProcessRuntime)JS);
+        }
+
+
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}
+</code></pre>
+<p>This takes care of injecting the <code>Javascript Runtime</code> and creates all necessary instances for Fusee to run.</p>
+<h3 id="wwwrootindexhtml">wwwroot/index.html</h3>
+<p>Replace the content of <code>wwwroot/index.html</code> with the following lines:</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+    &lt;title&gt;Fusee.Examples.Simple.Blazor&lt;/title&gt;
+    &lt;base href=&quot;/&quot; /&gt;
+    &lt;link href=&quot;manifest.json&quot; rel=&quot;manifest&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Lato:wght@700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style/style.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div id=&quot;LoadingOverlay&quot;&gt;
+        &lt;div id=&quot;center&quot;&gt;
+            &lt;p&gt;
+                &lt;img src=&quot;style/FuseeSpinning.gif&quot; alt=&quot;Loading Animation&quot; /&gt;
+            &lt;/p&gt;
+            &lt;p&gt;Loading&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div id=&quot;LoadingFinishedOverlay&quot;&gt;
+        &lt;div id=&quot;center&quot;&gt;
+            &lt;p&gt;
+                &lt;img src=&quot;style/FuseeAnim.gif&quot; alt=&quot;Startup animation&quot; /&gt;
+            &lt;/p&gt;
+            &lt;p&gt;Made with Fusee&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div id=&quot;app&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&quot;./_framework/blazor.webassembly.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;navigator.serviceWorker.register('service-worker.js');&lt;/script&gt;
+    &lt;script src=&quot;./_content/Fusee.Base.Imp.Blazor/Fusee.Base.Imp.Blazor.Native.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;./_content/Fusee.Engine.Imp.Graphics.Blazor/Fusee.Engine.Imp.Graphics.Blazor.Native.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="final-touches">Final touches</h3>
+<p>Copy the <code>style</code> folder from any existing <code>Blazor</code> project to <code>wwwroot</code>.</p>
 <h2 id="-engine-developer">👷 Engine Developer</h2>
 <h3 id="short-implementation-overview-of-webassembly-in-fusee">Short implementation overview of WebAssembly in Fusee</h3>
-<p>As written above, Fusee utilizes mono's dotnet for Wasm implementation on the one hand, on the other hand, WebGL.NET bindings generated by the WaveEngine team.</p>
-<p>The architecture of Fusee allows separate implementations for arbitrary renderer and build targets. To implement the new WebGL Wasm backend, one needs to implement the <code>RenderContextImp</code> which implements the <code>IRenderContextImp</code> interface, which anon represents the methods within the non platform specific <code>RenderContext</code>. This implementation (and the WebGL.NET bindings) can be found within <code>Base.Engine.Imp.Graphics.WebAsm</code>. This implementation relies upon the Mono WebAssembly bindings which are currently under development and therefore not available via NuGet. The file <code>$(FuseeRoot)\NuGet.config</code> therefore adds a new package source <code>wasm</code> and the corresponding source folder <code>$(FuseeRoot)\packages\*.*</code> in which the Mono bindings can be found.</p>
-<p>This suffices for VS 2019 and the corresponding *.csproj files to find and obtain the correct packages (as of today: <code>WebAssembly.Bindings</code>, <code>WebAssembly.Net.Http</code> and <code>WebAssembly.Net.WebSockets</code>).</p>
-<p>Futhermore it contains the new build task <code>Mono.WebAssembly.Sdk</code> as a usable NuGet package.</p>
-<h4 id="build-via-monowebassemblysdk">Build via <code>Mono.WebAssembly.Sdk</code></h4>
-<p>The build task gathers all used C# DLLs in a first step and tries to slim and optimize the code with the help of <a href="https://github.com/mono/linker">mono linker</a>. This little tool steps through the generated IL code and tries to optimize.</p>
-<p>Unfortunately the linker crashes while traversing <code>System.ServiceModel</code> and <code>System.ServiceModel.Primitives</code>. Therefore these dependencies are removed from our protobuf-net-fusee version.</p>
-<p>Beyond that, it also needs a package reference to <code>System.Collections.Immutable</code> within the <code>*.csproj</code> file, as this dependency isn't gathered automatically during traversal.</p>
-<p>In addition, we need to make sure, that the linking process skips the namespaces <code>Fusee.Engine.Core</code>, <code>Fusee.Serialization</code>, <code>Fusee.Math.Core</code> and <code>protobuf-net.Core</code>. This is done inside the <code>*.csproj</code> file via <code>&lt;MonoWasmLinkMode&gt;Full&lt;/MonoWasmLinkMode&gt;</code> in combination with <code>&lt;MonoWasmLinkSkip&gt;Fusee.Engine.Core;Fusee.Serialization;...&lt;/MonoWasmLinkSkip&gt;</code>. Otherwise the optimization process removes (empty) classes or (base) methods / attributes which are needed for de-serialization.</p>
-<p>The C# DLLs are being copied to <code>output_folder/managed</code> after that, and all other necessary files (dotnet.wasm, etc.) are added, too.</p>
-<p>The resulting build folder is self-contained.</p>
+<p>As written above, Fusee utilizes Blazor for its Wasm implementation on the one hand, on the other hand, the WebGL.NET bindings generated by the <code>WaveEngine</code> team.</p>
+<p>The architecture of Fusee allows separate implementations for arbitrary renderer and build targets. To implement the new WebGL Wasm backend, one needs to implement the <code>RenderContextImp</code> which implements the <code>IRenderContextImp</code> interface, which anon represents the methods within the non platform specific <code>RenderContext</code>. This implementation (and the WebGL.NET bindings) can be found within <code>Base.Engine.Imp.Graphics.WebAsm</code>.</p>
+<h3 id="manual-javascript-implementation">Manual <code>Javascript</code> implementation</h3>
+<p><code>Blazor</code> serializes variables to <code>json</code> while crossing the barrier between managed (<code>C#</code>) and &quot;unmanged&quot; (<code>javascript</code>, <code>Webassembly</code>) code. This works well for primitive data types (<code>POD</code>, <code>struct</code>, etc.), however sometimes it fails as the compiler is unable to work out how to serialize certain types. Furthermore, sometimes we do not want to serialize our data, think of large <code>Textures</code> or <code>Meshes</code>. A serialization of one <code>Mesh</code> to <code>json</code> every frame is something we certainly do not want to happen.
+To prevent this behavior <code>Blazor</code> provides the method</p>
+<pre><code class="lang-csharp">IJSUnmarshalledRuntime.InvokeUnmarshalled&lt;T, T, T, T&gt;({MethodName}, T, T, T);
+</code></pre>
+<p>with a fixed maximum of three <code>{T}</code> arguments. The first three are the arguments, the last <code>T</code> represents the return value of the method.</p>
+<p>This method searches for a <code>Javascript</code> method named <code>{MethodName}</code> and calls it while passing the given parameters to the managed memory. The passed parameters can be used directly inside the <code>Javascript</code> method, as long as one passes <code>POD</code>s.</p>
+<p>However, <code>Blazor</code> is unable to pass arrays as datatypes, therefore, on the <code>javscript</code> side some <code>IntPtr</code>unpacking needs to be done. Please note, that it's possible to pass more than three <code>{T}</code> arguments with a workaround. Just pass <code>{T}[]</code> or a <code>struct</code> as one of the arguments.</p>
+<p>For the unpacking, <code>Blazor</code> provides the following methods inside any <code>Javascript</code> code of the current project.</p>
+<pre><code class="lang-javascript"> // extract values from array
+const pointerToValue = Blazor.platform.getArrayEntryPtr(value, 0, 4); // value, startIdx, bytes per entry
+const lengthOfArray = Blazor.platform.getArrayLength(value);
+var result = new Float32Array(Module.HEAPU8.buffer, pointerToValue, lengthOfArray); // Make sure to use matching type to `getArrayEntryPtr` 
+</code></pre>
+<p>Fusee relies heavily upon unmarshalled invocation for <code>OpenGL</code> buffers and texture binding, as we do not have the time and resources to wait for <code>Json</code> serialization. When implementing a new feature, be certain to use <code>InvokeUnmarshalled</code> where appropriate.</p>
+<p>Sometimes, as mentioned above, one needs to use this feature for certain <code>OpenGL</code> functions because the serialization fails. When you encounter an <code>Exception</code> inside the browser that reads something along the lines: <code>Unable to serialize [datatype] ...</code>, replace the function call with <code>InvokeUnmarshalled</code> and implement the <code>Javascript</code> functionality by hand inside <code>Fusee.Engine.Imp.Graphics.Blazor/wwwroot/Fusee.Engine.Imp.Graphics.Blazor.Native.js</code> for any <code>OpenGL</code> or graphic related stuff. Any engine related implementation goes into <code>Fusee.Base.Imp.Blazor/wwwroot/Fusee.Base.Imp.Blazor.Native.js</code>.</p>
+<h3 id="fuseeengineplayerblazor">Fusee.Engine.Player.Blazor</h3>
+<p>Any <code>Fusee.Core.dll</code> can be played with our pre-built <code>Fusee.Engine.Player.Blazor</code>. This project provides the possibility to load and present those and is used for our <code>VSCode Fusee</code> template where a user can create a <code>Fusee</code> application inside a lightweight environment.</p>
+<p>The implementation is nearly the same as inside <code>Fusee.Engine.Player.Desktop</code>. Try to load the <code>Fusee.App.dll</code>, if not found, load the standard <code>Fusee.Engine.Player.Core.dll</code>. For more information consult the source code file.</p>
 </article>
           </div>
           

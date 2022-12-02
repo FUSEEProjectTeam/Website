@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fusee's Dear ImGui implementation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Fusee's Dear ImGui implementation ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="fusees-dear-imgui-implementation">Fusee's Dear ImGui implementation</h1>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#usage">Usage</a>
+<ul>
+<li><a href="#example-code">Example code</a>
+<ul>
+<li><a href="#imguicore">ImGuiCore</a></li>
+<li><a href="#fuseecontrol">FuseeControl</a></li>
+</ul>
+</li>
+<li><a href="#simple-example">Simple example</a></li>
+<li><a href="#file-picking">File picking</a></li>
+<li><a href="#multisampletexture-for-smooth-borders">MultisampleTexture for smooth borders</a></li>
+<li><a href="#multiple-camerasviewport">Multiple cameras/viewport</a></li>
+<li><a href="#image-rendering">Image rendering</a></li>
+<li><a href="#changing-font">Changing font</a></li>
+</ul>
+</li>
+<li><a href="#-engine-developer">Engine Developer</a>
+<ul>
+<li><a href="#short-implementation-overview">Short implementation overview</a></li>
+<li><a href="#on-the-usage-of-assembly-internalsvisibletootherassembly">On the usage of [assembly: InternalsVisibleTo(&quot;OtherAssembly&quot;)]</a>
+<ul>
+<li><a href="#changes-inside-fuseecontroltotexturecs">Changes inside FuseeControlToTexture.cs</a></li>
+<li><a href="#added-assembly-internalsvisibletofuseeimguidesktop-at-these-places">Added [assembly: InternalsVisibleTo(&quot;Fusee.ImGuiDesktop&quot;)] at these places</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Fusee implements <code>Dear ImGui.NET</code> via NuGet.</p>
+<blockquote>
+<p>⚠️ Currently only <code>Desktop</code> is supported.</p>
+</blockquote>
+<p>For a documentation and/or examples of <code>Dear ImGui</code> visit:</p>
+<ul>
+<li><code>General documentation/intro</code>: <a href="https://github.com/ocornut/imgui#readme">https://github.com/ocornut/imgui#readme</a></li>
+<li><code>Dear ImGui Wiki</code>: <a href="https://github.com/ocornut/imgui/wiki">https://github.com/ocornut/imgui/wiki</a></li>
+<li><code>Dear ImGui FAQ</code>: <a href="https://github.com/ocornut/imgui/blob/master/docs/FAQ.md">https://github.com/ocornut/imgui/blob/master/docs/FAQ.md</a></li>
+<li><code>Intermediate Mode paradigm</code>: <a href="https://github.com/ocornut/imgui/wiki/About-the-IMGUI-paradigm">https://github.com/ocornut/imgui/wiki/About-the-IMGUI-paradigm</a></li>
+<li><code>Using Begin() and BeginChild()</code>: <a href="https://github.com/ocornut/imgui/wiki/Tips#using-beginbeginchild">https://github.com/ocornut/imgui/wiki/Tips#using-beginbeginchild</a></li>
+<li><code>CPP demo application</code>: <a href="https://github.com/ocornut/imgui/blob/master/imgui_demo.cpp">https://github.com/ocornut/imgui/blob/master/imgui_demo.cpp</a></li>
+<li><code>Simple example inside this readme</code>: <a href="#simple-example">Simple example</a></li>
+</ul>
+<p>Note: <code>Dear ImGui</code> is written in and for C++. However, due to the direct translation of <code>ImGui.NET</code> all functions can be called with the exact naming as the C++ examples/code snippets. Replace all <code>ImGui::</code> namespace calls with <code>ImGui.</code> static class calls. All enum calls to <code>ImGuiStyleVar_...</code> with <code>ImGuiStyleVar.</code> enums, etc. For the data types, replace <code>ImGui::Vec2</code> et al. with <code>System.Numerics.Vector2/3/4/&lt;T&gt;</code>.</p>
+<p>Another very good resource for learning is <code>Dear ImGui</code>'s GitHub issue tracker: <a href="https://github.com/ocornut/imgui/issues">https://github.com/ocornut/imgui/issues</a></p>
+<h2 id="usage">Usage</h2>
+<p>i) Generate a new <code>Desktop</code> project. Replace the <code>RenderCanvasImp</code> and <code>InputDriverImp</code> with the <code>ImGui</code> flavored onces:</p>
+<pre><code class="lang-csharp">app.CanvasImplementor = new Fusee.ImGuiDesktop.ImGuiRenderCanvasImp(icon);
+app.ContextImplementor = new Fusee.Engine.Imp.Graphics.Desktop.RenderContextImp(app.CanvasImplementor); // careful RCI stays the desktop variant
+Input.AddDriverImp(new Fusee.ImGuiDesktop.ImGuiInputImp(app.CanvasImplementor));
+</code></pre>
+<p>ii) Generate a <code>Core</code> file and a <code>FuseeControl</code></p>
+<p>Generate a new <code>RenderCanvas</code> <code>ImGuiCore</code> file. This is our main render loop. Within this class the <code>ImGui</code> is being rendered. The <code>Fusee</code> window however, is being rendered to a <code>WritableTexture</code> and displayed as an image inside an <code>ImGui.Image()</code>. This is achieved by generating another class which inherits from <code>ImGuiDesktop.Templates.FuseeControlToTexture</code> and implements a render loop that renders to a texture and returns the <code>IntPtr</code> from this texture for usage with <code>ImGui.Image()</code>. The render loop inside this <code>FuseeControl</code> is triggered from the <code>ImGuiCore</code> file (see diagram and example code below). <strong>Attention:</strong> one must override the <code>Resize()</code> method in <code>ImGuiCore</code> and pass the changed width and height values to the <code>FuseeControl</code>. Otherwise the window isn't resized properly after rendering everything inside <code>FuseeControl</code>!</p>
+<p><img src="https://user-images.githubusercontent.com/4386896/177519526-c7d7531f-0848-43c4-9db3-7940a7e01897.png" alt="grafik"></p>
+<h3 id="example-code">Example code</h3>
+<h4 id="imguicore">ImGuiCore</h4>
+<pre><code class="lang-csharp">[FuseeApplication(Name = &quot;FUSEE ImGui Example&quot;,
+        Description = &quot;A very simple example how to use ImGui within a Fusee application.&quot;)]
+    public class ImGuiCore : RenderCanvas
+    {
+        // check if mouse is inside FuseeControl, if not -&gt; prevent input
+        private static bool _isMouseInsideFuControl;
+        private FuseeControl _fuControl;
+
+        private async void Load()
+        {
+            // generate FuseeControl instance which renders to texture
+            _fuControl = new FuseeControl(RC);
+            _fuControl.Init();        
+        }
+
+        public override async Task InitAsync()
+        {
+            Load();
+            await base.InitAsync();
+
+        }
+
+        public override void Update()
+        {
+            // update FuseeControl 
+            _fuControl.Update(_isMouseInsideFuControl);
+        }
+
+        public override void Resize(ResizeEventArgs e)
+        {
+            // Resize event, must be set!
+            _fuControl.UpdateOriginalGameWindowDimensions(e.Width, e.Height);
+        }
+
+        public override async void RenderAFrame()
+        {            
+            // new window
+            ImGui.Begin(&quot;FuseeWindow&quot;);
+
+            // get size of current window
+            var fuseeViewportSize = ImGui.GetWindowSize();
+
+            // get IntPtr to texture
+            var textureWithFuseeContent = _fuControl.RenderToTexture((int)size.X, (int)size.Y);
+            
+            // draw image with size of current window, adapt uv coordinates to fit Fusee's OpenGL viewport            
+            ImGui.Image(textureWithFuseeContent, fuseeViewportSize,
+                new Vector2(0, 1),
+                new Vector2(1, 0));
+
+            // check if mouse is inside window, if true, accept update() inputs
+            _isMouseInsideFuControl = ImGui.IsItemHovered();
+
+            ImGui.End();
+        }
+    }
+</code></pre>
+<h4 id="fuseecontrol">FuseeControl</h4>
+<p>This looks and feels like an &quot;usual&quot; <code>Fusee</code> application with the exception, that we do render inside a <code>RenderTexture</code> via a <code>Camera</code> and return the <code>IntPtr</code> to the <code>WritableTexture</code> in the <code>RenderAFrame()</code> method.</p>
+<pre><code class="lang-csharp"> internal class FuseeControl : ImGuiDesktop.Templates.FuseeControlToTexture, IDisposable
+    {
+        private SceneContainer _rocketScene;
+        private SceneRendererForward _renderer;
+        private WritableTexture _renderTexture;
+
+        private Transform _camPivotTransform;
+
+        public int Width;
+        public int Height;
+
+        private const float RotationSpeed = 7;
+        private const float Damping = 0.8f;
+
+        // angle variables
+        private static float _angleHorz, _angleVert, _angleVelHorz, _angleVelVert;
+
+        private const float ZNear = 1f;
+        private const float ZFar = 1000;
+        private readonly float _fovy = M.PiOver4;
+
+        private Camera _cam;
+        private bool disposedValue;
+
+
+        public CoreControl(RenderContext ctx) : base(ctx)
+        {
+            _rc = ctx;
+        }
+        public override void Init()
+        {
+            _rocketScene = AssetStorage.Get&lt;SceneContainer&gt;(&quot;RocketFus.fus&quot;);
+            _camPivotTransform = new Transform();
+            _cam = new Camera(ProjectionMethod.Perspective, ZNear, ZFar, _fovy) { BackgroundColor = new float4(0, 0, 0, 0) };
+
+            var camNode = new SceneNode()
+            {
+                Name = &quot;CamPivoteNode&quot;,
+                Children = new ChildList()
+                {
+                    new SceneNode()
+                    {
+                        Name = &quot;MainCam&quot;,
+                        Components = new List&lt;SceneComponent&gt;()
+                        {
+                            new Transform() { Translation = new float3(0, 2, -10) },
+                            _cam
+                        }
+                    }
+                },
+                Components = new List&lt;SceneComponent&gt;()
+                {
+                    _camPivotTransform
+                }
+            };
+
+            _rocketScene.Children.Add(camNode);
+
+            _renderer = new SceneRendererForward(_rocketScene);
+        }
+
+        // check if mouse is inside FuseeControl (done and passed by ImGuiControl), if not, prevent any input
+        public override void Update(bool allowInput)
+        {
+            if (!allowInput)
+            {
+                _angleVelHorz = 0;
+                _angleVelVert = 0;
+                return;
+            }
+
+            if (Input.Mouse.LeftButton)
+            {
+                _angleVelHorz = RotationSpeed * Input.Mouse.XVel * Time.DeltaTimeUpdate * 0.0005f;
+                _angleVelVert = RotationSpeed * Input.Mouse.YVel * Time.DeltaTimeUpdate * 0.0005f;
+            }
+
+            else
+            {
+                var curDamp = (float)System.Math.Exp(-Damping * Time.DeltaTimeUpdate);
+                _angleVelHorz *= curDamp;
+                _angleVelVert *= curDamp;
+            }
+
+            _angleHorz += _angleVelHorz;
+            _angleVert += _angleVelVert;
+        }
+
+        // render to RenderTexture and return the `TextureHandle`
+        protected override ITextureHandle RenderAFrame()
+        {
+            _camPivotTransform.RotationQuaternion = QuaternionF.FromEuler(_angleVert, _angleHorz, 0);
+            _renderer.Render(_rc);
+
+            return _renderTexture.TextureHandle;
+        }
+
+        // re-create RenderTexture on each resize
+        protected override void Resize(int width, int height)
+        {
+            if (width &lt;= 0 || height &lt;= 0)
+                return;
+
+            Width = width;
+            Height = height;
+
+            _renderTexture?.Dispose();
+            _renderTexture = WritableTexture.CreateAlbedoTex(_rc, Width, Height);
+
+            // attach RenderTexture to camera, everything the camera sees goes into this texture
+            // which is being returned as an IntPtr to the data inside the RenderAFrame() method
+            _cam.RenderTexture = _renderTexture;
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    _renderTexture.Dispose();
+                }
+
+
+                disposedValue = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
+        }
+    }
+</code></pre>
+<h3 id="simple-example">Simple example</h3>
+<p>How to start.</p>
+<p><code>ImGui</code> works like a state machine: &quot;Push and pop settings, generate commands and execute them, draw inside a window until the window is finished, etc.&quot;.</p>
+<pre><code class="lang-csharp"> void Render()
+{
+    // ImGui needs to have at least one window / panel in which elements can be renderer
+    // When no window is present, a default Debug window is being created
+    // in this example we generate a new window with ImGui.Begin()
+    // The way to specify a window size is by setting the size beforehand
+
+    // Set size of the next window
+    ImGui.SetNextWindowSize(new Vector2(200, 200));
+
+    // Generate a new window, title is &quot;Title&quot;
+    ImGui.Begin(&quot;Title&quot;);
+
+    // everything that follows is drawn in this window
+
+    // Generate an input field which expects an int value
+    // The value is being passed and updated via a reference to the actual value
+    // Therefore, do not generate any variables inside the main loop, as they are being overwritten every frame
+    // and we can't use them. Just generate a private attribute &quot;_myIntValue&quot; inside your class.
+    // The initial value is also the initial default value. This is important for e. g. a selection dropdown menu.
+    // ImGui references the index inside an array. The initial value inside the index specifies the default selected menu item
+    ImGui.InputInt(&quot;Enter an int here&quot;, ref _myIntValue);
+
+    // Generate a new Button
+    // If the button is being clicked the method returns true for a single frame.
+    // Therefore, if this button shouldn't trigger a one time action but a state, one needs to set all state variables by themselves
+    if(ImGui.Button(&quot;Click me!&quot;))
+    {
+        Console.WriteLine(&quot;Someone clicked me!&quot;);
+        _buttonClickedState = !_buttonClickedState;
+    }
+
+    // For any style changes for any element one has to use the built in stack
+    // Push changes to it, pop styles from it, if not longer needed
+
+    // Color all following text elements red
+    ImGui.PushStyleColor(ImGuiCol.Text, new Vector4(1, 0, 0, 1).ToUintColor());
+
+    ImGui.Text(&quot;Red text&quot;);
+
+    // Stop coloring text elements
+    // The parameter defines how many elements are being popped
+    // Do not pop more than available -&gt; exception
+    ImGui.PopStyleColor(1);
+
+    // Same as style color. However be careful, the PushStyleVar methods accepts an &quot;object&quot; as the second parameter
+    // WindowRounding for example expects a float value. Other ImGuiStyleVars expect a Vector2, an array or something else.
+    // If one pushes the wrong datatype the best outcome is no visible changes, the worst is an exception while setting or, worse, after popping
+    ImGui.PushStyleVar(ImGuiStyleVar.WindowRounding, 2f);
+
+    ImGui.PopStyleVar();
+
+    // For placing elements on the same line, use SameLine()
+    // One can pass a x-offset to this method for spacing between the elements
+    ImGui.Text(&quot;This text is &quot;);
+    ImGui.SameLine();
+    ImGui.Text(&quot;besides this text&quot;);
+
+    // Add a new line
+    ImGui.NewLine();
+
+    // This is dropdown selection, the default value is specified by the default value of the index ref variable (as described above)
+    // After user input one needs to process the index which is best be done by using the new switch-case syntax
+    // Method parameters are as follows: Name, index, array with values which can be selected, size of array (needed because of cpp invocation)
+    ImGui.Combo(&quot;Combo Selection Box&quot;, ref _comboSelectionIdx, new string[] { &quot;Item1&quot;, &quot;Item2&quot;, &quot;Item3&quot; }, 3);
+
+    // just an example, no production code ;)
+    var selectedString = _comboSelectionIdx switch
+    {
+        0 =&gt; &quot;Item1&quot;,
+        1 =&gt; &quot;Item2&quot;,
+        2 =&gt; &quot;Item2&quot;,
+        _ =&gt; &quot;&lt;null&gt;&quot;,
+    };
+
+    ImGui.Text(&quot;EOF&quot;);
+
+    // For raw geometric figures use the following method
+
+    // Add a filled circle with radius 2 and pink color to the current window only.
+    // There also exist methods for foreground, background, ... -drawing via GetForegroundDrawList(), etc.
+    var windowPos = ImGui.GetWindowPos();
+    ImGui.GetWindowDrawList().AddCircleFilled(windowPos, 2, new Vector4(1, 0, 1, 1).ToUintColor());
+
+    // Finish current window
+    ImGui.End();
+}
+
+// variables used inside Render()
+private int _myIntValue;
+private bool _buttonClickedState;
+private int _comboSelectionIdx = 2; // set &quot;Item3&quot; as default
+</code></pre>
+<h3 id="file-picking">File picking</h3>
+<p>For a file selection one can use the rather wonky and undocumented <code>Fusee.ImGuiDesktop.Templates.ImGuiFileDialog</code>. However, if the platform is windows and runtime and size is no issue, add <code>&lt;UseWpf&gt;true&lt;/UseWpf&gt;</code> to your project file.
+This enables <code>WPF</code> and one can use the simple <code>OpenFileDialog</code> inside an <code>ImGui</code> project:</p>
+<pre><code class="lang-csharp">// Todo: pin to *.txt extension, add all checks, etc.
+OpenFileDialog openFileDialog = new();
+    // example code, do not call this construct every frame!
+    if(openFileDialog.ShowDialog())
+        ImGui.TextWrapped(File.ReadAllText(openFileDialog.FileName)); 
+</code></pre>
+<h3 id="multisampletexture-for-smooth-borders"><code>MultisampleTexture</code> for smooth borders</h3>
+<p>Besides the usual <code>WritableTexture</code> a user can utilize the class <code>WritableMultisampleTexture</code> which enables anti aliasing for the texture rendering and generates smooth edges.
+Just change the following lines inside the example above:</p>
+<pre><code class="lang-csharp">WritableMultisampleTexture _renderTexture;
+_renderTexture = WritableMultisampleTexture.CreateAlbedoTex(_rc, Width, Height, 8); // pass samplingFactor [1, 8]
+</code></pre>
+<h3 id="multiple-camerasviewport">Multiple cameras/viewport</h3>
+<p>For multiple cameras define them as usually, however, set each <code>Camera</code>'s <code>RenderTarget</code> to the same <code>RenderTexture</code> which renders multiple times inside the same texture.</p>
+<pre><code class="lang-csharp">
+_cam1.Viewport(0, 0, 50, 50);
+_cam2.Viewport(0, 50, 25, 25);
+_cam3.Viewport(12, 1, 60, 24);
+
+// _renderTexture is always as big as the whole window, therefore viewport works as expected
+_cam1.RenderTexture = _renderTexture;
+_cam2.RenderTexture = _renderTexture;
+_cam3.RenderTexture = _renderTexture;
+
+</code></pre>
+<h3 id="image-rendering">Image rendering</h3>
+<p>Unfortunately <code>Fusee</code>'s <code>ImGui</code> implementation is unable to work directly with our internal <code>IImageData</code> but only with <code>IntPtr</code>s to already bound and uploaded (to the GPU) textures. Therefore one needs to use the wrapper <code>ExposedTexture</code>. This wrapper exposes the internal handle to the bound texture. Hence the name. Use as any <code>Texture</code>, however, do not forget to call <code>RC.RegisterTexture()</code> after loading, which registers the <code>ExposedTexture</code> to the <code>RenderContext</code>. This is necessary as we do not render this <code>Texture</code> via our usual <code>SceneRenderer</code> procedure.</p>
+<pre><code class="lang-csharp">
+// Inside ImGuiControl.cs
+
+private ExposedTexture _imageTexture;
+private static Vector2 _imgUv1 = new(0, 1);
+private static Vector2 _imgUv2 = new(1, 0);
+
+public async void Load()
+{
+    var img = await AssetStorage.GetAsync&lt;ImageData&gt;(&quot;FuseeIconTop32.png&quot;);
+    _imageTexture = new ExposedTexture(img);
+    
+    // register texture to the RenderContext, do not neglect, otherwise no image :) 
+    RC.RegisterTexture(_imageTexture);
+}
+
+public void RenderAFrame()
+{
+    ImGui.Begin(&quot;WindowWithImage&quot;);
+                
+    var hndl = ((TextureHandle)_imageTexture.TextureHandle).TexHandle;
+    //Note: by default images will be upside down. Pass uv coodinates to fix this. 
+    ImGui.Image(new IntPtr(hndl), new Vector2(_imageTexture.Width, _imageTexture.Height), _imgUv1 , _imgUv2);
+
+    ImGui.End();
+}            
+</code></pre>
+<h3 id="changing-font">Changing font</h3>
+<p>Currently there is no easy way to change the font. It is set inside the class <code>Fusee.ImGuiDesktop.ImGuiRenderCanvasImp</code> from the <code>DoInit()</code> method. Change the path to the desired font and font size there.</p>
+<p>To use two or more fonts one currently has to combine them. For a documentation visit: <a href="https://github.com/ocornut/imgui/blob/master/docs/FONTS.md#font-loading-instructions">https://github.com/ocornut/imgui/blob/master/docs/FONTS.md#font-loading-instructions</a></p>
+<h2 id="-engine-developer">👷 Engine Developer</h2>
+<h3 id="short-implementation-overview">Short implementation overview</h3>
+<p><code>Dear ImGui.NET</code> is implemented inside the <code>Fusee.ImGuiDesktop</code> project. It utilizes an <code>ImGuiController</code> class which in itself has a render loop with custom <code>OpenGL</code> commands. All we get from the <code>Dear ImGui.NET</code> implementation are <code>DrawData</code> arrays with vertices and triangles representing the current state of the <code>2D GUI</code>. All the rendering, state-setting, shader binding, etc. needs to be done by hand. On the one hand we use the <code>RenderContext</code> to present all our states and settings, on the other hand we have this low level implementation which sets state, too. Be very careful when changing anything inside the <code>ImGuiController</code> as it quickly destroys states or assumptions inside the <code>RenderContext</code>. This leads directly to the next chapter.</p>
+<h3 id="on-the-usage-of-assembly-internalsvisibletootherassembly">On the usage of <code>[assembly: InternalsVisibleTo(&quot;OtherAssembly&quot;)]</code></h3>
+<p>Inside the <code>ImGuiController</code> a shader is set for rendering <code>ImGui</code>. As this isn't done via our <code>RenderContext</code> the dirty flag for a new shader isn't being set, and the <code>RenderContext</code> thinks the old <code>ShaderProgram</code> is still bound and ready to go. As this isn't the case, the <code>ImGuiController</code> needs to notify the <code>RenderContext</code> that the <code>ShaderProgram</code> has been changed from the outside. However, all the logic is encapsulated in <code>internal</code> values. Therefore, we use the <code>friend</code>-pattern (<code>InternalsVisibleTo</code>) and let the <code>ImGuiController</code> set the <code>CurrentShaderProgram</code> of the <code>RenderContext</code>. For this to work, the <code>ImGuiDesktop</code> namespace needs to have access to the <code>CurrentShaderProgram</code> variable inside <code>RenderContext</code> as well as the <code>Handle</code> itself inside <code>Desktop.ShaderHandleImp</code>.</p>
+<h4 id="changes-inside-fuseecontroltotexturecs">Changes inside FuseeControlToTexture.cs</h4>
+<p>Tell the <code>RenderContext</code> that our current shader program has changed.</p>
+<pre><code class="lang-csharp">if (prgmHndl == null)
+    prgmHndl = new ShaderHandleImp() { Handle = ImGuiController.ShaderProgram };
+    _rc.CurrentShaderProgram = prgmHndl;
+</code></pre>
+<p>see: <a href="https://github.com/FUSEEProjectTeam/Fusee/blob/f5549d5d0242a6907393a65a702e6cd4f998d5c3/src/ImGui/Desktop/Fusee.ImGui.Desktop/Templates/FuseeControlToTexture.cs#L114">https://github.com/FUSEEProjectTeam/Fusee/blob/f5549d5d0242a6907393a65a702e6cd4f998d5c3/src/ImGui/Desktop/Fusee.ImGui.Desktop/Templates/FuseeControlToTexture.cs#L114</a></p>
+<h4 id="added-assembly-internalsvisibletofuseeimguidesktop-at-these-places">Added <code>[assembly: InternalsVisibleTo(&quot;Fusee.ImGuiDesktop&quot;)]</code> at these places</h4>
+<ul>
+<li><a href="https://github.com/FUSEEProjectTeam/Fusee/blob/f5549d5d0242a6907393a65a702e6cd4f998d5c3/src/Engine/Core/RenderContext.cs#L12">https://github.com/FUSEEProjectTeam/Fusee/blob/f5549d5d0242a6907393a65a702e6cd4f998d5c3/src/Engine/Core/RenderContext.cs#L12</a></li>
+<li><a href="https://github.com/FUSEEProjectTeam/Fusee/blob/f5549d5d0242a6907393a65a702e6cd4f998d5c3/src/Engine/Imp/Graphics/Shared/ShaderHandleImp.cs#L5">https://github.com/FUSEEProjectTeam/Fusee/blob/f5549d5d0242a6907393a65a702e6cd4f998d5c3/src/Engine/Imp/Graphics/Shared/ShaderHandleImp.cs#L5</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+      	<div class="grad-bottom"></div>
+      		<div class="footer">
+      			<div class="container" style="display:flex">
+      				<div style="flex:1; justify-content:flex-start">
+      					Generated by <strong>DocFX</strong>
+      				</div>
+      				<div style="flex:1; justify-content:center; text-align:center">
+      					<a href="https://github.com/FUSEEProjectTeam/Fusee"><img alt="GitHub Repo" src="/images/github.png" width="auto" height="25" border="0"></a>
+      				</div>
+      				<div style="flex:1; justify-content:flex-end; text-align:right">
+      					<a href="#top">Back to top</a>
+      				</div>
+      			</div>
+      		</div>
+      	</footer></div>
+      
+    
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
