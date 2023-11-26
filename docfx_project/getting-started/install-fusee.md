@@ -38,7 +38,8 @@ On Computers managed by an administrator such as classroom PCs it might be neces
 
 ## Install/Enable the FUSEE Blender Add-on within Blender
 
-1. Download the [io_export_fus.zip](https://github.com/FUSEEProjectTeam/Fusee/releases/latest/download/io_export_fus.zip)
+<!-- 1. Download the [io_export_fus.zip](https://github.com/FUSEEProjectTeam/Fusee/releases/latest/download/io_export_fus.zip) -->
+1. Download the [io_export_fus.zip](https://1drv.ms/u/s!Ao-v0mLc0txskbBbEBjIHciGEyrAQg?e=bmx3zu) Blender Add-On
 1. Open Blender
 1. Open the `User Preferences` window ("File &rarr; Preferences" or `Ctrl+Alt+U`)
 1. Open the `Add-ons` Tab
