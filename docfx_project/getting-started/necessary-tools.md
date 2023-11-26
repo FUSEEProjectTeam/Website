@@ -30,7 +30,7 @@ Install Visual Studio Code from
 https://code.visualstudio.com/download
 
 
-### Extension: C# for Visual Studio Code powered by OmniSharp (_required_)
+### Extension: C# Dev Kit (_required_)
 
 To develop C#/.NET applications in Visual Studio Code an Extension is required:
 https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit
